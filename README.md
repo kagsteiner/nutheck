@@ -11,6 +11,9 @@ brief wand effects, such as lightning, remain a possible addition.
 The [dungeon lighting](Docs/Atmosphere.md) combines local candles, ambient light
 and a readable map overview while keeping NetHack authoritative for sight and illumination.
 
+[Framed doors](Docs/DoorFrames.md) use a side hinge so open leaves leave the
+passage centre clear, while preserving the high dungeon walls.
+
 For creature-art sessions, start with [CreatureAssetContext](Docs/CreatureAssetContext.md).
 The [restrained fur study](Docs/FurStudy.md) compares dog/cat surface treatments without replacing the live models.
 Use the [asset backlog](backlog.md) to choose the next batch and track generated drafts and finishing work.

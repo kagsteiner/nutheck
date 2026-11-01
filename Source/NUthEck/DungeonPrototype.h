@@ -66,6 +66,8 @@ private:
     UInstancedStaticMeshComponent* GetDisplayedObjectBatch(const FNetHackCell& Cell);
     UInstancedStaticMeshComponent* GetFountainBatch(const FNetHackCell& Cell);
     void VerifySpecialBatch1();
+    void AddFramedDoor(const FNetHackCell& Cell,int32 X,int32 Y);
+    void VerifyDoorFrames();
     void VerifyObjectBatch1();
     bool AddTileFallback(const FNetHackCell& Cell,int32 X,int32 Y,bool Hero=false);
     void UpdateTileFallbackFacing();

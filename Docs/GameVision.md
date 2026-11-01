@@ -53,3 +53,7 @@ Keep high walls in overview and first person: the user likes their enclosed,
 slightly claustrophobic dungeon feeling. Do not lower/fade/cut away walls to
 solve doorway visibility. The selected first adjustment is darker floor tint,
 preserving the existing texture and lighting. See [FloorContrast.md](FloorContrast.md).
+
+The darker floors were accepted on 2026-11-01. Doorways now use a fixed timber
+frame and a side-hinged leaf, leaving the opening's centre clear when open.
+See [DoorFrames.md](DoorFrames.md).

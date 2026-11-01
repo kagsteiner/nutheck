@@ -1,0 +1,20 @@
+{
+  "backup": "Backups/NetHackSaves/20261101T144719.440849Z.zip",
+  "baseline_file_count": 1076,
+  "all_original_save_and_runtime_files_unchanged": true,
+  "played_file_set_unchanged": true,
+  "last_session_pointer_unchanged": true,
+  "capture_isolated": true,
+  "states": 2,
+  "orientations": 2,
+  "visibility_states": 2,
+  "creature_styles": 2,
+  "open_centre_clear": true,
+  "closed_centre_blocked": true,
+  "hinge_fixed": true,
+  "full_height_walls_preserved": true,
+  "native_turn_before": 5,
+  "native_turn_after": 5,
+  "native_sequence_before": 7,
+  "native_sequence_after": 7
+}
