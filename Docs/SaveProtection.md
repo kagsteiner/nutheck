@@ -51,3 +51,15 @@ live files and all backups. If an actual crash left native level/lock files,
 perform native NetHack recovery only on a preserved working copy, retaining the
 originals. Do not silently roll back a newer run or install an older backend;
 resolve the intended run/compatibility before applying the staged recovery.
+
+
+## Initial verified baseline
+
+The baseline archive is `Backups/NetHackSaves/20261101T075321.151456Z.zip`.
+It contains 1,023 files, including all existing player sessions, their pointer
+and the matching runtime. A complete verified recovery was staged under
+`Backups/RecoveredNetHack/Baseline-20261101T075321`; live saves/runtime were
+rechecked against the archive and remained unchanged. No player game was
+launched or advanced. Four safety tests pass in `Tests/SaveBackup.py`: round-trip
+integrity/hidden files, overwrite refusal, corrupt-backup rejection before
+extraction, and active-backend refusal.
