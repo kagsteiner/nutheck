@@ -18,6 +18,7 @@ UInstancedStaticMeshComponent* ADungeonPrototype::GetFountainBatch(const FNetHac
     auto* Batch=NewObject<UInstancedStaticMeshComponent>(this,Name);
     Batch->SetupAttachment(RootComponent);Batch->SetStaticMesh(Mesh);
     Batch->SetCollisionEnabled(ECollisionEnabled::NoCollision);Batch->SetCastShadow(true);
+    Batch->SetLightingChannels(Cell.Visible,!Cell.Visible,false);
     if(!Cell.Visible) for(int32 I=0;I<Mesh->GetStaticMaterials().Num();++I)
     {
         const FString Material=GetNameSafe(Mesh->GetMaterial(I))+TEXT("Memory");

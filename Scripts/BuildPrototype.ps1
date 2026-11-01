@@ -10,4 +10,6 @@ $editor = Join-Path $EngineRoot 'Engine\Binaries\Win64\UnrealEditor-Cmd.exe'
 $assets = Join-Path $PSScriptRoot 'CreatePrototypeAssets.py'
 & $editor $project "-ExecutePythonScript=$assets" -unattended -NullRHI -nosound -nop4
 if ($LASTEXITCODE -ne 0) { throw "Prototype asset generation failed: $LASTEXITCODE" }
+& $editor $project "-ExecutePythonScript=$(Join-Path $PSScriptRoot 'CreateAtmosphereAssets.py')" -unattended -NullRHI -nosound -nop4
+if ($LASTEXITCODE -ne 0) { throw "Atmosphere asset generation failed: $LASTEXITCODE" }
 & (Join-Path $PSScriptRoot 'BuildDefaultTiles.ps1') -EngineRoot $EngineRoot -AssetsOnly -SkipGalleryRender

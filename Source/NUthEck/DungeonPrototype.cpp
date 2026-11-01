@@ -98,6 +98,7 @@ UInstancedStaticMeshComponent* ADungeonPrototype::MakeBatch(const TCHAR* Name, c
     Batch->SetStaticMesh(Mesh);
     Batch->SetCollisionEnabled(ECollisionEnabled::NoCollision);
     Batch->SetCastShadow(true);
+    Batch->SetLightingChannels(!FString(Name).EndsWith(TEXT("Memory")),FString(Name).EndsWith(TEXT("Memory")),false);
     auto* Base = LoadObject<UMaterialInterface>(nullptr, TEXT("/Game/Materials/M_Prototype.M_Prototype"));
     checkf(Base, TEXT("Run Scripts/CreatePrototypeAssets.py to create prototype assets."));
     // World-space stone keeps a consistent grain across slab faces and wall caps.
@@ -206,7 +207,8 @@ void ADungeonPrototype::BeginPlay()
     auto* Sun = GetWorld()->SpawnActor<ADirectionalLight>();
     Sun->GetComponent()->SetMobility(EComponentMobility::Movable);
     Sun->SetActorRotation(ArtStudy?FRotator(-42,-100,0):FRotator(-32,-120,0));
-    Sun->GetComponent()->SetIntensity(ArtStudy?4.2f:5.f);
+    Sun->GetComponent()->SetIntensity(ArtStudy?4.2f:StaticStudy?5.f:1.5f);
+    Sun->GetComponent()->LightingChannels.bChannel1=true;
     Sun->GetComponent()->SetCastShadows(true);
     Sun->GetComponent()->bUseRayTracedDistanceFieldShadows = false;
     Sun->GetComponent()->SetForwardShadingPriority(1);
@@ -214,7 +216,8 @@ void ADungeonPrototype::BeginPlay()
     auto* Fill = GetWorld()->SpawnActor<ADirectionalLight>();
     Fill->GetComponent()->SetMobility(EComponentMobility::Movable);
     Fill->SetActorRotation(FRotator(-65,130,0));
-    Fill->GetComponent()->SetIntensity(ArtStudy?1.15f:.8f);
+    Fill->GetComponent()->SetIntensity(ArtStudy?1.15f:StaticStudy?.8f:.45f);
+    Fill->GetComponent()->LightingChannels.bChannel1=true;
     Fill->GetComponent()->SetCastShadows(false);
     Fill->GetComponent()->SetLightColor(FLinearColor(.65f,.79f,1.f));
     if(ArtStudy)

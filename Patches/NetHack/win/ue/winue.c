@@ -41,6 +41,11 @@ static void state(void)
     printf("{\"event\":\"state\",\"x\":%d,\"y\":%d,\"moves\":%ld,\"hp\":%d,\"maxhp\":%d,\"ac\":%d,\"level\":%d,\"depth\":%d,\"dungeon\":%d,\"vision\":\"",
         u.ux-1,u.uy,svm.moves,Upolyd ? u.mh : u.uhp,Upolyd ? u.mhmax : u.uhpmax,u.uac,u.ulevel,depth(&u.uz),u.uz.dnum);
     for(y=0;y<ROWNO;++y) for(x=1;x<COLNO;++x) putchar(cansee(x,y)?'1':'0');
+    /* Illumination is disclosed only on currently visible squares. */
+    printf("\",\"lighting\":\"");
+    for(y=0;y<ROWNO;++y) for(x=1;x<COLNO;++x)
+        putchar('0' + (cansee(x,y) ? ((levl[x][y].lit ? 1 : 0)
+                                  | (templit(x,y) ? 2 : 0)) : 0));
     printf("\",\"hero_race\":"); quote(gu.urace.noun ? gu.urace.noun : "");
     printf(",\"hero_polymorphed\":%s}\n",Upolyd ? "true" : "false");
 }

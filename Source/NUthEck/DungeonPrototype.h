@@ -56,6 +56,10 @@ private:
     FVector CellPosition(int32 X, int32 Y, float Z = 0.f) const;
     void StartLiveGame(bool NewGame=false);
     void RebuildLiveMap();
+    void UpdateAtmosphere();
+    void TickAtmosphere();
+    UPROPERTY() TArray<TObjectPtr<class UPointLightComponent>> AtmosphereLights;
+    UPROPERTY() TArray<TObjectPtr<class ULocalFogVolumeComponent>> AtmosphereFog;
     UInstancedStaticMeshComponent* GetDefaultTileBatch(const FNetHackCell& Cell,bool Hero);
     UInstancedStaticMeshComponent* GetDisplayedObjectBatch(const FNetHackCell& Cell);
     UInstancedStaticMeshComponent* GetFountainBatch(const FNetHackCell& Cell);

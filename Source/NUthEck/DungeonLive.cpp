@@ -137,6 +137,7 @@ UInstancedStaticMeshComponent* ADungeonPrototype::GetDisplayedObjectBatch(const 
     auto* Batch=NewObject<UInstancedStaticMeshComponent>(this,BatchName);
     Batch->SetupAttachment(RootComponent);Batch->SetStaticMesh(Mesh);
     Batch->SetCollisionEnabled(ECollisionEnabled::NoCollision);Batch->SetCastShadow(true);
+    Batch->SetLightingChannels(Cell.Visible,!Cell.Visible,false);
     if(!Cell.Visible)
         for(int32 Slot=0;Slot<Mesh->GetStaticMaterials().Num();++Slot)
         {
@@ -223,6 +224,7 @@ void ADungeonPrototype::EndPlay(const EEndPlayReason::Type Reason)
 void ADungeonPrototype::RebuildLiveMap()
 {
     for(auto& Batch:LiveBatches) Batch.Value->ClearInstances();
+    UpdateAtmosphere();
     const auto Put=[this](const FString& Name,int32 X,int32 Y,float Z,FVector Scale,FQuat Rotation=FQuat::Identity) {
         if(auto* Batch=LiveBatches.Find(FName(*Name))) (*Batch)->AddInstance(FTransform(Rotation,CellPosition(X,Y,Z),Scale));
     };
@@ -281,6 +283,7 @@ void ADungeonPrototype::RebuildLiveMap()
 void ADungeonPrototype::TickLiveGame()
 {
     Session->Pump();
+    TickAtmosphere();
     if(AutoFirstPosition.X>=0 && Session->IsReady() && Session->Hero!=AutoFirstPosition) AutoMoved=true;
     if(Session->IsReady() && Session->Hero!=PreviousHero)
     {

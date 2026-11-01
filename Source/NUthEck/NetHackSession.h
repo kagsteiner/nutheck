@@ -12,6 +12,7 @@ struct FNetHackCell
     FString DisplayObject;
     bool Female=false;
     bool Visible=false,Horizontal=false;
+    bool PermanentLight=false,TemporaryLight=false;
 };
 struct FNetHackMenuItem
 {

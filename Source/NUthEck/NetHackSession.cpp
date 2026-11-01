@@ -18,7 +18,7 @@ bool FNetHackSession::Start(bool NewGame,bool Remember)
         Error=TEXT("NetHack bridge is missing. Run Scripts/BuildNetHackBridge.ps1.");
         AddMessage(Error); Ended=true; return false;
     }
-    const FString SessionsRoot=FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("NetHack"));
+    const FString SessionsRoot=FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/(Remember?TEXT("NetHack"):TEXT("NetHackCaptures")));
     FString SessionId;
     FGuid ExistingId;
     if(Remember && !NewGame) FFileHelper::LoadFileToString(SessionId,*(SessionsRoot/TEXT("LastSession.txt")));
@@ -149,7 +149,16 @@ void FNetHackSession::Event(const TSharedPtr<FJsonObject>& O)
         Turn=O->GetIntegerField(TEXT("moves")); HP=O->GetIntegerField(TEXT("hp")); MaxHP=O->GetIntegerField(TEXT("maxhp"));
         AC=O->GetIntegerField(TEXT("ac")); Level=O->GetIntegerField(TEXT("level")); Depth=O->GetIntegerField(TEXT("depth")); Dungeon=O->GetIntegerField(TEXT("dungeon"));
         const FString Vision=O->GetStringField(TEXT("vision"));
-        for(int32 I=0;I<Cells.Num();++I) Cells[I].Visible=Vision.IsValidIndex(I) && Vision[I]=='1';
+        FString Lighting;
+        O->TryGetStringField(TEXT("lighting"),Lighting);
+        for(int32 I=0;I<Cells.Num();++I)
+        {
+            auto& Cell=Cells[I];
+            Cell.Visible=Vision.IsValidIndex(I) && Vision[I]=='1';
+            const int32 Bits=Cell.Visible && Lighting.IsValidIndex(I)?Lighting[I]-'0':0;
+            Cell.PermanentLight=(Bits&1)!=0;
+            Cell.TemporaryLight=(Bits&2)!=0;
+        }
         MapDirty=true; return;
     }
     if(Type==TEXT("menu"))
