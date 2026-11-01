@@ -5,5 +5,6 @@ public class NUthEck : ModuleRules
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
         PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "Json" });
+        PrivateDependencyModuleNames.Add("SlateCore");
     }
 }

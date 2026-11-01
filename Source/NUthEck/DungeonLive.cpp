@@ -677,7 +677,7 @@ void ADungeonPrototypeHUD::DrawLiveHUD(FNetHackSession& Live)
     const FLinearColor Ink(.81f,.86f,.84f),Muted(.40f,.51f,.53f),Gold(.95f,.66f,.23f),Panel(.018f,.028f,.036f,.98f);
     DrawRect(Panel,0,0,W,84*S);
     DrawRect(Gold,32*S,24*S,3*S,38*S);
-    DrawText(TEXT("nUthEck"),Ink,48*S,19*S,GEngine->GetLargeFont(),1.25f*S);
+    DrawGameTitle(48*S,19*S,S,Ink);
     DrawText(TEXT("THE DUNGEONS OF DOOM"),Muted,49*S,53*S,GEngine->GetSmallFont(),.9f*S);
     DrawText(Live.IsReady()?FString::Printf(TEXT("DLVL %d  /  TURN %d"),Live.Depth,Live.Turn):TEXT("A NEW ADVENTURE"),Gold,W-290*S,31*S,GEngine->GetSmallFont(),S);
     if(auto* View=Cast<ADungeonPrototype>(GetOwningPlayerController()->GetViewTarget()))

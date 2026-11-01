@@ -117,6 +117,8 @@ public:
     virtual void DrawHUD() override;
 private:
     void DrawLiveHUD(FNetHackSession& Session);
+    float DrawGameTitle(float X,float Y,float Scale,FLinearColor Color);
+    UPROPERTY() TObjectPtr<class UFont> TitleFont;
 };
 
 UCLASS()

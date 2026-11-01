@@ -19,6 +19,9 @@
 #include "Misc/Paths.h"
 #include "TimerManager.h"
 #include "UnrealClient.h"
+#include "CanvasItem.h"
+#include "Fonts/SlateFontInfo.h"
+#include "Engine/Font.h"
 
 void ADungeonPrototype::GenerateArtStudy()
 {
@@ -464,6 +467,23 @@ void ADungeonPrototype::CaptureAndValidate()
     GetWorldTimerManager().SetTimer(Handle,[bFits](){ FPlatformMisc::RequestExitWithStatus(false,bFits?0:1); },3.f,false);
 }
 
+float ADungeonPrototypeHUD::DrawGameTitle(float X,float Y,float Scale,FLinearColor Color)
+{
+    if(!TitleFont) TitleFont=LoadObject<UFont>(nullptr,TEXT("/Engine/EngineFonts/Roboto.Roboto"));
+    check(TitleFont);
+    const float Start=X;
+    const TCHAR* Runs[]={TEXT("n"),TEXT("u"),TEXT("th"),TEXT("e"),TEXT("ck")};
+    for(int32 I=0;I<UE_ARRAY_COUNT(Runs);++I)
+    {
+        const FSlateFontInfo Font(TitleFont,12,I==1 || I==3?FName(TEXT("Bold")):FName(TEXT("Regular")));
+        FCanvasTextItem Text(FVector2D(X,Y),FText::FromString(Runs[I]),Font,Color);
+        Text.Scale=FVector2D(Scale);
+        Canvas->DrawItem(Text);
+        X+=Text.DrawnSize.X;
+    }
+    return X-Start;
+}
+
 void ADungeonPrototypeHUD::DrawHUD()
 {
     Super::DrawHUD();
@@ -475,7 +495,9 @@ void ADungeonPrototypeHUD::DrawHUD()
         if(Dungeon->IsArtStudy())
         {
             const float Scale=Canvas->SizeX/1600.f;
-            DrawText(TEXT("nUthEck  /  PAINTED MINIATURE STUDY"),FLinearColor(.85f,.74f,.55f),32*Scale,24*Scale,GEngine->GetMediumFont(),Scale);
+            const FLinearColor TitleColor(.85f,.74f,.55f);
+            const float TitleWidth=DrawGameTitle(32*Scale,24*Scale,Scale,TitleColor);
+            DrawText(TEXT("  /  PAINTED MINIATURE STUDY"),TitleColor,32*Scale+TitleWidth,24*Scale,GEngine->GetMediumFont(),Scale);
             DrawText(TEXT("BLENDER MESHES / UNREAL REAL-TIME RENDER  |  WHEEL Zoom  |  MIDDLE-DRAG Pan  |  Ctrl+F First person  |  RIGHT-DRAG Look  |  F5 Reset"),FLinearColor(.65f,.7f,.7f),32*Scale,Canvas->SizeY-36*Scale,GEngine->GetSmallFont(),.85f*Scale);
             return;
         }
@@ -485,7 +507,7 @@ void ADungeonPrototypeHUD::DrawHUD()
     const FLinearColor Ink(.81f,.86f,.84f),Muted(.40f,.51f,.53f),Gold(.95f,.66f,.23f);
     DrawRect(FLinearColor(.018f,.028f,.036f,.98f),0,0,W,84*S);
     DrawRect(Gold,32*S,24*S,3*S,38*S);
-    DrawText(TEXT("nUthEck"),Ink,48*S,19*S,GEngine->GetLargeFont(),1.25f*S);
+    DrawGameTitle(48*S,19*S,S,Ink);
     DrawText(TEXT("THE DUNGEONS OF DOOM"),Muted,49*S,53*S,GEngine->GetSmallFont(),.9f*S);
     DrawText(TEXT("DLVL 1   /   THE ENTRANCE"),Gold,W-300*S,31*S,GEngine->GetSmallFont(),1.f*S);
     DrawRect(FLinearColor(.15f,.23f,.25f),32*S,84*S,W-64*S,1);
