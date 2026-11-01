@@ -46,3 +46,10 @@ backed up before save-affecting development/backend changes, and recovered from
 verified staged copies if needed. Earlier permission to reset development saves
 is revoked. Tests use isolated sessions; do not force-stop or test against a
 played session. See [SaveProtection.md](SaveProtection.md) and root `AGENTS.md`.
+
+## Overhead wall/floor readability (2026-11-01)
+
+Keep high walls in overview and first person: the user likes their enclosed,
+slightly claustrophobic dungeon feeling. Do not lower/fade/cut away walls to
+solve doorway visibility. The selected first adjustment is darker floor tint,
+preserving the existing texture and lighting. See [FloorContrast.md](FloorContrast.md).
