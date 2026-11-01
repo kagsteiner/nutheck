@@ -1,0 +1,714 @@
+[
+  {
+    "key": "gnomish_wizard",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        10,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.2558942437171936,
+        -0.18884436786174774,
+        0.0
+      ],
+      [
+        0.2558944821357727,
+        0.20877256989479065,
+        1.0891010761260986
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 45,
+      "silhouette_iou": 0.625,
+      "file": "gnomish_wizard-pixel--90-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.5714,
+        "file": "gnomish_wizard-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.5893,
+        "file": "gnomish_wizard-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.6071,
+        "file": "gnomish_wizard-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.625,
+        "file": "gnomish_wizard-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.5714,
+        "file": "gnomish_wizard-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.5893,
+        "file": "gnomish_wizard-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "gnome_mummy",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        10,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.2558942437171936,
+        -0.18884436786174774,
+        0.0
+      ],
+      [
+        0.2558944821357727,
+        0.13199999928474426,
+        1.0891010761260986
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 45,
+      "silhouette_iou": 0.7,
+      "file": "gnome_mummy-pixel--90-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.5208,
+        "file": "gnome_mummy-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.52,
+        "file": "gnome_mummy-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.5208,
+        "file": "gnome_mummy-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.7,
+        "file": "gnome_mummy-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.4694,
+        "file": "gnome_mummy-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.551,
+        "file": "gnome_mummy-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "gnome_zombie",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        3,
+        10
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        10,
+        9
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.2558942437171936,
+        -0.18884436786174774,
+        0.0
+      ],
+      [
+        0.2558944821357727,
+        0.20877256989479065,
+        1.0891010761260986
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 45,
+      "silhouette_iou": 0.6739,
+      "file": "gnome_zombie-pixel--90-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.6087,
+        "file": "gnome_zombie-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.5957,
+        "file": "gnome_zombie-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.6522,
+        "file": "gnome_zombie-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.6739,
+        "file": "gnome_zombie-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.6444,
+        "file": "gnome_zombie-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.6304,
+        "file": "gnome_zombie-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "gnomish_wizard_female",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        10,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.2558942437171936,
+        -0.18884436786174774,
+        0.0
+      ],
+      [
+        0.2558944821357727,
+        0.20877256989479065,
+        1.0891010761260986
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 45,
+      "silhouette_iou": 0.625,
+      "file": "gnomish_wizard_female-pixel--90-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.5714,
+        "file": "gnomish_wizard_female-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.5893,
+        "file": "gnomish_wizard_female-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.6071,
+        "file": "gnomish_wizard_female-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.625,
+        "file": "gnomish_wizard_female-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.5714,
+        "file": "gnomish_wizard_female-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.5893,
+        "file": "gnomish_wizard_female-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "gnome_zombie_female",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        3,
+        10
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        10,
+        9
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.2558942437171936,
+        -0.18884436786174774,
+        0.0
+      ],
+      [
+        0.2558944821357727,
+        0.20877256989479065,
+        1.0891010761260986
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 45,
+      "silhouette_iou": 0.6739,
+      "file": "gnome_zombie_female-pixel--90-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.6087,
+        "file": "gnome_zombie_female-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.5957,
+        "file": "gnome_zombie_female-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.6522,
+        "file": "gnome_zombie_female-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.6739,
+        "file": "gnome_zombie_female-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.6444,
+        "file": "gnome_zombie_female-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.6304,
+        "file": "gnome_zombie_female-pixel--65-45.png"
+      }
+    ]
+  }
+]

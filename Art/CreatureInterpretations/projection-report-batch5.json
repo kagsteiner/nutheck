@@ -1,0 +1,190 @@
+[
+  {
+    "key": "wolf",
+    "excluded_shadow_palette": [
+      "A"
+    ],
+    "bounds_m": [
+      [
+        -0.4696899652481079,
+        -0.1199377030134201,
+        0.0005608797073364258
+      ],
+      [
+        0.41369688510894775,
+        0.11993766576051712,
+        0.8028761148452759
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 25,
+      "silhouette_iou": 0.4271,
+      "file": "wolf-pixel--90-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.3,
+        "file": "wolf-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.2637,
+        "file": "wolf-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.4271,
+        "file": "wolf-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.4021,
+        "file": "wolf-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.3402,
+        "file": "wolf-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.3626,
+        "file": "wolf-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "winter_wolf_cub",
+    "excluded_shadow_palette": [
+      "A",
+      "B"
+    ],
+    "bounds_m": [
+      [
+        -0.3860199749469757,
+        -0.09604061394929886,
+        0.0006847381591796875
+      ],
+      [
+        0.35759684443473816,
+        0.09604060649871826,
+        0.6698760390281677
+      ]
+    ],
+    "best_projection": {
+      "yaw": -65,
+      "elevation": 25,
+      "silhouette_iou": 0.5143,
+      "file": "winter_wolf_cub-pixel--65-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.3803,
+        "file": "winter_wolf_cub-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.3846,
+        "file": "winter_wolf_cub-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.4571,
+        "file": "winter_wolf_cub-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.4179,
+        "file": "winter_wolf_cub-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.5143,
+        "file": "winter_wolf_cub-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.4706,
+        "file": "winter_wolf_cub-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "winter_wolf",
+    "excluded_shadow_palette": [
+      "A",
+      "B"
+    ],
+    "bounds_m": [
+      [
+        -0.5277199745178223,
+        -0.14301565289497375,
+        0.00046247243881225586
+      ],
+      [
+        0.4466969072818756,
+        0.14301559329032898,
+        0.8798761367797852
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 45,
+      "silhouette_iou": 0.419,
+      "file": "winter_wolf-pixel--90-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.3854,
+        "file": "winter_wolf-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.3367,
+        "file": "winter_wolf-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.4057,
+        "file": "winter_wolf-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.419,
+        "file": "winter_wolf-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.3396,
+        "file": "winter_wolf-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.3854,
+        "file": "winter_wolf-pixel--65-45.png"
+      }
+    ]
+  }
+]

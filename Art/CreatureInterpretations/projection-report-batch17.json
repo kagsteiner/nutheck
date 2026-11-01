@@ -1,0 +1,290 @@
+[
+  {
+    "key": "dwarf_mummy",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        10,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.3191346526145935,
+        -0.1697235107421875,
+        0.0010000020265579224
+      ],
+      [
+        0.3191346824169159,
+        0.12879341840744019,
+        1.1039999723434448
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 25,
+      "silhouette_iou": 0.6538,
+      "file": "dwarf_mummy-pixel--90-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.48,
+        "file": "dwarf_mummy-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.5,
+        "file": "dwarf_mummy-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.6538,
+        "file": "dwarf_mummy-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.6,
+        "file": "dwarf_mummy-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.4423,
+        "file": "dwarf_mummy-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.56,
+        "file": "dwarf_mummy-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "dwarf_zombie",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        10,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.3191346526145935,
+        -0.1697235107421875,
+        0.0010000020265579224
+      ],
+      [
+        0.3191346824169159,
+        0.13699999451637268,
+        1.1039999723434448
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 25,
+      "silhouette_iou": 0.6346,
+      "file": "dwarf_zombie-pixel--90-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.549,
+        "file": "dwarf_zombie-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.6327,
+        "file": "dwarf_zombie-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.6346,
+        "file": "dwarf_zombie-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.6296,
+        "file": "dwarf_zombie-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.5,
+        "file": "dwarf_zombie-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.4906,
+        "file": "dwarf_zombie-pixel--65-45.png"
+      }
+    ]
+  }
+]

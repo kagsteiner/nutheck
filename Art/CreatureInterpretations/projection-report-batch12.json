@@ -1,0 +1,494 @@
+[
+  {
+    "key": "white_unicorn",
+    "mask_method": "unicorn_shadow_fringe_mouth_and_mane_retained",
+    "excluded_shadow_pixels": [
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        6,
+        14
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        8,
+        6
+      ],
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        14,
+        9
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.6049981117248535,
+        -0.13915497064590454,
+        0.003000000026077032
+      ],
+      [
+        0.47905805706977844,
+        0.13911518454551697,
+        1.2625268697738647
+      ]
+    ],
+    "best_projection": {
+      "yaw": -65,
+      "elevation": 45,
+      "silhouette_iou": 0.4368,
+      "file": "white_unicorn-pixel--65-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.383,
+        "file": "white_unicorn-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.3152,
+        "file": "white_unicorn-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.4091,
+        "file": "white_unicorn-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.3409,
+        "file": "white_unicorn-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.4176,
+        "file": "white_unicorn-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.4368,
+        "file": "white_unicorn-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "gray_unicorn",
+    "mask_method": "unicorn_shadow_fringe_mouth_and_mane_retained",
+    "excluded_shadow_pixels": [
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        6,
+        14
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        8,
+        6
+      ],
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        14,
+        9
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.6049981117248535,
+        -0.13915497064590454,
+        0.003000000026077032
+      ],
+      [
+        0.47905805706977844,
+        0.13911518454551697,
+        1.2625268697738647
+      ]
+    ],
+    "best_projection": {
+      "yaw": -65,
+      "elevation": 25,
+      "silhouette_iou": 0.3881,
+      "file": "gray_unicorn-pixel--65-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.3239,
+        "file": "gray_unicorn-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.3134,
+        "file": "gray_unicorn-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.2857,
+        "file": "gray_unicorn-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.303,
+        "file": "gray_unicorn-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.3881,
+        "file": "gray_unicorn-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.3333,
+        "file": "gray_unicorn-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "black_unicorn",
+    "mask_method": "paired_white_unicorn_anatomy_black_body_retained",
+    "excluded_shadow_pixels": [
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        6,
+        14
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        8,
+        6
+      ],
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        14,
+        9
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.6049981117248535,
+        -0.13915497064590454,
+        0.003000000026077032
+      ],
+      [
+        0.47905805706977844,
+        0.13911518454551697,
+        1.2625268697738647
+      ]
+    ],
+    "best_projection": {
+      "yaw": -65,
+      "elevation": 45,
+      "silhouette_iou": 0.4368,
+      "file": "black_unicorn-pixel--65-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.383,
+        "file": "black_unicorn-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.3152,
+        "file": "black_unicorn-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.4091,
+        "file": "black_unicorn-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.3409,
+        "file": "black_unicorn-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.4176,
+        "file": "black_unicorn-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.4368,
+        "file": "black_unicorn-pixel--65-45.png"
+      }
+    ]
+  }
+]

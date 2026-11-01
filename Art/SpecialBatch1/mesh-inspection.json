@@ -1,0 +1,65 @@
+{
+  "grid_bug": {
+    "parts": 31,
+    "triangles": 16648,
+    "bounds_m": [
+      [
+        -0.3450949192047119,
+        -0.29277315735816956,
+        0.006564075127243996
+      ],
+      [
+        0.25316038727760315,
+        0.29277315735816956,
+        0.3009999990463257
+      ]
+    ],
+    "closed_geometry": true,
+    "paint_valid": true,
+    "static": true,
+    "fbx": "Art\\CreatureInterpretations\\grid_bug.fbx"
+  },
+  "corpse": {
+    "parts": 13,
+    "triangles": 27224,
+    "bounds_m": [
+      [
+        -0.2849999964237213,
+        -0.1719999760389328,
+        0.004304610192775726
+      ],
+      [
+        0.2919999957084656,
+        0.17299997806549072,
+        0.1516954004764557
+      ]
+    ],
+    "closed_geometry": true,
+    "paint_valid": true,
+    "static": true,
+    "fbx": "Art\\ObjectInterpretations\\corpse.fbx"
+  },
+  "fountain": {
+    "parts": 31,
+    "triangles": 36624,
+    "bounds_m": [
+      [
+        -0.42925000190734863,
+        -0.42925000190734863,
+        0.0
+      ],
+      [
+        0.42925000190734863,
+        0.42925000190734863,
+        0.9770256280899048
+      ]
+    ],
+    "closed_geometry": true,
+    "paint_valid": true,
+    "static": true,
+    "fbx": "Art\\EnvironmentInterpretations\\fountain.fbx"
+  },
+  "grid_bug_source_sex_tiles_identical": true,
+  "grid_bug_has_no_native_flight_flag": true,
+  "previous_67_exports_unchanged": true
+}

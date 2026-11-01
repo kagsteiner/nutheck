@@ -1,0 +1,179 @@
+[
+  {
+    "key": "jackal",
+    "bounds_m": [
+      [
+        -0.46254998445510864,
+        -0.12099998444318771,
+        0.0
+      ],
+      [
+        0.36472252011299133,
+        0.12099996209144592,
+        0.7490879893302917
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 25,
+      "silhouette_iou": 0.4828,
+      "file": "jackal-pixel--90-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.4096,
+        "file": "jackal-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.381,
+        "file": "jackal-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.4828,
+        "file": "jackal-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.4535,
+        "file": "jackal-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.3951,
+        "file": "jackal-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.4444,
+        "file": "jackal-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "fox",
+    "bounds_m": [
+      [
+        -0.42719998955726624,
+        -0.12099998444318771,
+        0.0
+      ],
+      [
+        0.5434169173240662,
+        0.12099996209144592,
+        0.5845534801483154
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 45,
+      "silhouette_iou": 0.5897,
+      "file": "fox-pixel--90-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.4762,
+        "file": "fox-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.3571,
+        "file": "fox-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.5814,
+        "file": "fox-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.5897,
+        "file": "fox-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.4091,
+        "file": "fox-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.3659,
+        "file": "fox-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "gnome",
+    "bounds_m": [
+      [
+        -0.2558942437171936,
+        -0.18884436786174774,
+        0.0
+      ],
+      [
+        0.3700000047683716,
+        0.20877256989479065,
+        1.1019999980926514
+      ]
+    ],
+    "best_projection": {
+      "yaw": -115,
+      "elevation": 45,
+      "silhouette_iou": 0.6667,
+      "file": "gnome-pixel--115-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.6154,
+        "file": "gnome-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.6667,
+        "file": "gnome-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.5926,
+        "file": "gnome-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.614,
+        "file": "gnome-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.6471,
+        "file": "gnome-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.6667,
+        "file": "gnome-pixel--65-45.png"
+      }
+    ]
+  }
+]

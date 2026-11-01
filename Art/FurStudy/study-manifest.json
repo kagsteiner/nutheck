@@ -1,0 +1,56 @@
+[
+  {
+    "key": "little_dog_smooth",
+    "species": "little_dog",
+    "variant": "smooth",
+    "parts": 25,
+    "triangles": 52642,
+    "fur_parts": 0,
+    "added_triangles": 0
+  },
+  {
+    "key": "little_dog_painted",
+    "species": "little_dog",
+    "variant": "painted",
+    "parts": 25,
+    "triangles": 52642,
+    "fur_parts": 12,
+    "added_triangles": 0
+  },
+  {
+    "key": "little_dog_tufted",
+    "species": "little_dog",
+    "variant": "tufted",
+    "parts": 35,
+    "triangles": 52722,
+    "fur_parts": 22,
+    "added_triangles": 80
+  },
+  {
+    "key": "housecat_smooth",
+    "species": "housecat",
+    "variant": "smooth",
+    "parts": 33,
+    "triangles": 57420,
+    "fur_parts": 0,
+    "added_triangles": 0
+  },
+  {
+    "key": "housecat_painted",
+    "species": "housecat",
+    "variant": "painted",
+    "parts": 33,
+    "triangles": 57420,
+    "fur_parts": 6,
+    "added_triangles": 0
+  },
+  {
+    "key": "housecat_tufted",
+    "species": "housecat",
+    "variant": "tufted",
+    "parts": 37,
+    "triangles": 57452,
+    "fur_parts": 10,
+    "added_triangles": 32
+  }
+]

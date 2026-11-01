@@ -1,0 +1,57 @@
+{
+  "valkyrie_female_human": {
+    "mesh_objects": 1,
+    "fixed_icon_costume": true,
+    "paint_valid": true,
+    "body_connected_components": 1,
+    "triangles": 155408,
+    "eye_centers": [
+      [
+        -0.0430000014603138,
+        -0.0839168131351471,
+        1.5299999713897705
+      ],
+      [
+        0.0430000014603138,
+        -0.08392870426177979,
+        1.5299999713897705
+      ]
+    ],
+    "fitted_eyes": true,
+    "integral_legwear_corners": [
+      96,
+      96
+    ],
+    "costume_low_z": 0.0009999871253967285,
+    "ancestry": "human",
+    "sex": "female"
+  },
+  "barbarian_male_human": {
+    "mesh_objects": 1,
+    "fixed_icon_costume": true,
+    "paint_valid": true,
+    "body_connected_components": 1,
+    "triangles": 183888,
+    "eye_centers": [
+      [
+        -0.0430000014603138,
+        -0.08390526473522186,
+        1.5800000429153442
+      ],
+      [
+        0.0430000014603138,
+        -0.08392184972763062,
+        1.5800000429153442
+      ]
+    ],
+    "fitted_eyes": true,
+    "integral_legwear_corners": [
+      0,
+      0
+    ],
+    "costume_low_z": 0.7547547221183777,
+    "ancestry": "human",
+    "sex": "male"
+  },
+  "prior_36_exports_unchanged": true
+}

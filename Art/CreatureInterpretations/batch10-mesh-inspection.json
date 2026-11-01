@@ -1,0 +1,141 @@
+{
+  "tiger": {
+    "parts": 42,
+    "triangles": 120468,
+    "bounds_m": [
+      [
+        -0.48720505833625793,
+        -0.20313425362110138,
+        0.0002357959747314453
+      ],
+      [
+        0.4194912314414978,
+        0.20313425362110138,
+        0.9745737910270691
+      ]
+    ],
+    "paint_valid": true,
+    "fur_uv_valid": true,
+    "eye_symmetry_valid": true,
+    "eye_surface_conforming": true,
+    "eye_centers_m": [
+      [
+        -0.4332183003425598,
+        -0.06781213730573654,
+        0.6242276430130005
+      ],
+      [
+        -0.43321800231933594,
+        0.06781189143657684,
+        0.6242275238037109
+      ]
+    ],
+    "body_length": 0.372,
+    "body_width": 0.158,
+    "head_to_body_length": 0.41397849462365593,
+    "head_length": 0.154,
+    "leg_height": 0.31,
+    "stripe_region_corners": {
+      "spine": [
+        20914,
+        8933
+      ],
+      "left_flank": [
+        13540,
+        5660
+      ],
+      "right_flank": [
+        13540,
+        5473
+      ]
+    },
+    "stripes_paint_only": true
+  },
+  "hell_hound_pup": {
+    "parts": 27,
+    "triangles": 48116,
+    "bounds_m": [
+      [
+        -0.4002399742603302,
+        -0.10367240756750107,
+        0.0006158947944641113
+      ],
+      [
+        0.3349986672401428,
+        0.10367465019226074,
+        0.7203007936477661
+      ]
+    ],
+    "paint_valid": true,
+    "fur_uv_valid": true,
+    "eye_symmetry_valid": true,
+    "eye_surface_conforming": true,
+    "eye_centers_m": [
+      [
+        -0.3165901005268097,
+        -0.05494429171085358,
+        0.4522278606891632
+      ],
+      [
+        -0.3166034519672394,
+        0.05495757609605789,
+        0.45223209261894226
+      ]
+    ],
+    "body_length": 0.232,
+    "body_width": 0.1,
+    "head_to_body_length": 0.5043103448275862,
+    "head_length": 0.117,
+    "leg_height": 0.205,
+    "muzzle_length": 0.087,
+    "breath_effect_hook": [
+      -0.39076,
+      0.0,
+      0.35008
+    ]
+  },
+  "hell_hound": {
+    "parts": 27,
+    "triangles": 79674,
+    "bounds_m": [
+      [
+        -0.525879979133606,
+        -0.14838941395282745,
+        0.0004131495952606201
+      ],
+      [
+        0.40587857365608215,
+        0.14838944375514984,
+        0.8924028277397156
+      ]
+    ],
+    "paint_valid": true,
+    "fur_uv_valid": true,
+    "eye_symmetry_valid": true,
+    "eye_surface_conforming": true,
+    "eye_centers_m": [
+      [
+        -0.39009594917297363,
+        -0.06328978389501572,
+        0.6742587089538574
+      ],
+      [
+        -0.39008328318595886,
+        0.06327718496322632,
+        0.6742547154426575
+      ]
+    ],
+    "body_length": 0.331,
+    "body_width": 0.143,
+    "head_to_body_length": 0.4078549848942598,
+    "head_length": 0.135,
+    "leg_height": 0.326,
+    "muzzle_length": 0.147,
+    "breath_effect_hook": [
+      -0.5224,
+      0.0,
+      0.55643
+    ]
+  },
+  "previous_27_exports_unchanged": true
+}

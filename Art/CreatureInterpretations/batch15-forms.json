@@ -1,0 +1,32 @@
+[
+  {
+    "id": "PM_GNOMISH_WIZARD",
+    "key": "gnomish_wizard",
+    "sex": "male",
+    "fbx": "gnomish_wizard.fbx"
+  },
+  {
+    "id": "PM_GNOME_MUMMY",
+    "key": "gnome_mummy",
+    "sex": "both",
+    "fbx": "gnome_mummy.fbx"
+  },
+  {
+    "id": "PM_GNOME_ZOMBIE",
+    "key": "gnome_zombie",
+    "sex": "male",
+    "fbx": "gnome_zombie.fbx"
+  },
+  {
+    "id": "PM_GNOMISH_WIZARD",
+    "key": "gnomish_wizard_female",
+    "sex": "female",
+    "fbx": "gnomish_wizard_female.fbx"
+  },
+  {
+    "id": "PM_GNOME_ZOMBIE",
+    "key": "gnome_zombie_female",
+    "sex": "female",
+    "fbx": "gnome_zombie_female.fbx"
+  }
+]

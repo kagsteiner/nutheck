@@ -1,0 +1,80 @@
+{
+  "floating_eye": {
+    "parts": 2,
+    "triangles": 7360,
+    "bounds_m": [
+      [
+        -0.23499977588653564,
+        -0.2369803786277771,
+        0.4049999713897705
+      ],
+      [
+        0.23499992489814758,
+        0.23499971628189087,
+        0.875
+      ]
+    ],
+    "paint_valid": true,
+    "closed_geometry": true,
+    "hover_clearance_m": 0.4049999713897705,
+    "curved_closed_iris": true,
+    "iris_radius_range_m": [
+      0.23599995707529128,
+      0.23700004745384043
+    ],
+    "three_source_iris_colours": true
+  },
+  "newt": {
+    "parts": 3,
+    "triangles": 85820,
+    "bounds_m": [
+      [
+        -0.3704577088356018,
+        -0.19198887050151825,
+        0.010529346764087677
+      ],
+      [
+        0.38665786385536194,
+        0.19198888540267944,
+        0.17277029156684875
+      ]
+    ],
+    "paint_valid": true,
+    "closed_geometry": true,
+    "continuous_body": true,
+    "paired_eyes_surface_gaps_m": [
+      0.0010000001639127731,
+      0.0010000073816627264
+    ],
+    "four_splayed_feet_surface_gaps_m": [
+      0.014748500660061836,
+      0.014750571921467781,
+      0.014748194254934788,
+      0.014745095744729042
+    ],
+    "tapered_tail_present": true
+  },
+  "lichen": {
+    "parts": 1,
+    "triangles": 87364,
+    "bounds_m": [
+      [
+        -0.22034940123558044,
+        -0.21726766228675842,
+        0.00299999862909317
+      ],
+      [
+        0.23026107251644135,
+        0.2130679488182068,
+        0.18097317218780518
+      ]
+    ],
+    "paint_valid": true,
+    "closed_geometry": true,
+    "continuous_foliose_body": true,
+    "eyeless_headless_limbless": true,
+    "orange_and_pale_surface_paint": true
+  },
+  "previous_61_exports_unchanged": true,
+  "source_sex_tiles_identical": true
+}

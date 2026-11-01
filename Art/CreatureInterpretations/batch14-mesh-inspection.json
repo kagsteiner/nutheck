@@ -1,0 +1,94 @@
+{
+  "kobold_shaman": {
+    "parts": 23,
+    "triangles": 61876,
+    "bounds_m": [
+      [
+        -0.25005343556404114,
+        -0.2069999873638153,
+        0.0003400444984436035
+      ],
+      [
+        0.25005343556404114,
+        0.13837499916553497,
+        0.949510395526886
+      ]
+    ],
+    "paint_valid": true,
+    "paired_eyes": true,
+    "eye_surface_distances_m": [
+      0.0030149465892463923,
+      0.00301377777941525
+    ],
+    "wrap_count": 0,
+    "wrap_max_surface_gaps_m": {},
+    "body_vertex_hash": "b8807cca90bef2d59129de34d6845aa6fb888b4d09cbf17c9aef9143bd2033e8"
+  },
+  "kobold_mummy": {
+    "parts": 32,
+    "triangles": 71348,
+    "bounds_m": [
+      [
+        -0.2426052838563919,
+        -0.2069999873638153,
+        -0.0004924548557028174
+      ],
+      [
+        0.24228835105895996,
+        0.09951815754175186,
+        0.949510395526886
+      ]
+    ],
+    "paint_valid": true,
+    "paired_eyes": true,
+    "eye_surface_distances_m": [
+      0.0038066674023866653,
+      0.003802564460784197
+    ],
+    "wrap_count": 14,
+    "wrap_max_surface_gaps_m": {
+      "kobold_mummy_crown_linen": 0.004492172971367836,
+      "kobold_mummy_foot_linen": 0.0035000108182430267,
+      "kobold_mummy_foot_linen.001": 0.003499866696074605,
+      "kobold_mummy_forearm_linen": 0.004499999340623617,
+      "kobold_mummy_forearm_linen.001": 0.004499981179833412,
+      "kobold_mummy_forehead_linen": 0.004494363442063332,
+      "kobold_mummy_jaw_linen": 0.004496115725487471,
+      "kobold_mummy_lower_leg_linen": 0.004500009119510651,
+      "kobold_mummy_lower_leg_linen.001": 0.004500000737607479,
+      "kobold_mummy_torso_linen": 0.004499786999076605,
+      "kobold_mummy_upper_arm_linen": 0.004500002600252628,
+      "kobold_mummy_upper_arm_linen.001": 0.004499992821365595,
+      "kobold_mummy_upper_leg_linen": 0.004500009119510651,
+      "kobold_mummy_upper_leg_linen.001": 0.004500010050833225
+    },
+    "body_vertex_hash": "e1575d149868710739ef2666dff7fd5eee32faed2335d9ba72bc1d1ebc20e28b"
+  },
+  "kobold_zombie": {
+    "parts": 18,
+    "triangles": 54916,
+    "bounds_m": [
+      [
+        -0.24228835105895996,
+        -0.2069999873638153,
+        0.0003400444984436035
+      ],
+      [
+        0.24228835105895996,
+        0.09502223879098892,
+        0.949510395526886
+      ]
+    ],
+    "paint_valid": true,
+    "paired_eyes": true,
+    "eye_surface_distances_m": [
+      0.0038066674023866653,
+      0.003802564460784197
+    ],
+    "wrap_count": 0,
+    "wrap_max_surface_gaps_m": {},
+    "body_vertex_hash": "e1575d149868710739ef2666dff7fd5eee32faed2335d9ba72bc1d1ebc20e28b"
+  },
+  "previous_45_exports_unchanged": true,
+  "exact_ancestry_shape_reuse": true
+}

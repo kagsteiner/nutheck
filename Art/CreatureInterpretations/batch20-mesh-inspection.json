@@ -1,0 +1,77 @@
+{
+  "uruk_hai": {
+    "parts": 21,
+    "triangles": 102844,
+    "bounds_m": [
+      [
+        -0.268960565328598,
+        -0.15380382537841797,
+        0.0010000020265579224
+      ],
+      [
+        0.36899998784065247,
+        0.12700000405311584,
+        1.1649999618530273
+      ]
+    ],
+    "paint_valid": true,
+    "paired_eyes_surface_gaps_m": [
+      0.0025401224847882986,
+      0.0025388100184500217
+    ],
+    "body_vertex_hash": "c19a04650c305e95c3c883b11fb46bbdead8f9f66a21380b693ea5acc4d5f6f3",
+    "closed_state_modules": true,
+    "shield_count": 1
+  },
+  "orc_shaman": {
+    "parts": 19,
+    "triangles": 101648,
+    "bounds_m": [
+      [
+        -0.268960565328598,
+        -0.15380382537841797,
+        0.0010000020265579224
+      ],
+      [
+        0.2689605951309204,
+        0.12700000405311584,
+        1.1649999618530273
+      ]
+    ],
+    "paint_valid": true,
+    "paired_eyes_surface_gaps_m": [
+      0.0025401224847882986,
+      0.0025388100184500217
+    ],
+    "body_vertex_hash": "c19a04650c305e95c3c883b11fb46bbdead8f9f66a21380b693ea5acc4d5f6f3",
+    "closed_state_modules": true,
+    "shield_count": 0
+  },
+  "orc_captain": {
+    "parts": 21,
+    "triangles": 102716,
+    "bounds_m": [
+      [
+        -0.268960565328598,
+        -0.15380382537841797,
+        0.0010000020265579224
+      ],
+      [
+        0.3297615945339203,
+        0.12700000405311584,
+        1.1649999618530273
+      ]
+    ],
+    "paint_valid": true,
+    "paired_eyes_surface_gaps_m": [
+      0.0025401224847882986,
+      0.0025388100184500217
+    ],
+    "body_vertex_hash": "c19a04650c305e95c3c883b11fb46bbdead8f9f66a21380b693ea5acc4d5f6f3",
+    "closed_state_modules": true,
+    "shield_count": 0
+  },
+  "previous_64_exports_unchanged": true,
+  "source_sex_tiles_identical": true,
+  "saved_orc_ancestry_exact": true
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "Selected fountain feature only; full terrain inventory remains pending.",
+  "features": [
+    {
+      "id": "FOUNTAIN",
+      "display_glyph": "S_fountain",
+      "name": "fountain",
+      "official_tile_file": "upstream/NetHack/win/share/other.txt",
+      "file_local_tile_index": 41,
+      "fbx": "fountain.fbx",
+      "native_source": "../SpecialBatch1/SpecialBatch1.blend",
+      "unreal_asset": "/Game/EnvironmentInterpretations/Meshes/SM_fountain",
+      "asset_status": "generated and verified static draft",
+      "evidence": "Docs/SpecialBatch1.md",
+      "scope": "Known displayed/remembered fountain; static water; no magic/blessed/looted indication; sink excluded."
+    }
+  ]
+}

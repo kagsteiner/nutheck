@@ -1,0 +1,190 @@
+[
+  {
+    "key": "dog",
+    "excluded_shadow_palette": [
+      "A",
+      "P"
+    ],
+    "bounds_m": [
+      [
+        -0.4843999743461609,
+        -0.1346031129360199,
+        0.0004056692123413086
+      ],
+      [
+        0.36900511384010315,
+        0.13460320234298706,
+        0.7932564616203308
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 25,
+      "silhouette_iou": 0.5243,
+      "file": "dog-pixel--90-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.4078,
+        "file": "dog-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.36,
+        "file": "dog-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.5243,
+        "file": "dog-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.5,
+        "file": "dog-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.4095,
+        "file": "dog-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.4286,
+        "file": "dog-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "large_dog",
+    "excluded_shadow_palette": [
+      "A",
+      "P"
+    ],
+    "bounds_m": [
+      [
+        -0.5392799973487854,
+        -0.15568707883358002,
+        0.00036776065826416016
+      ],
+      [
+        0.4052163064479828,
+        0.1556871384382248,
+        0.8728187680244446
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 25,
+      "silhouette_iou": 0.5727,
+      "file": "large_dog-pixel--90-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.4956,
+        "file": "large_dog-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.4623,
+        "file": "large_dog-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.5727,
+        "file": "large_dog-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.5566,
+        "file": "large_dog-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.5045,
+        "file": "large_dog-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.4906,
+        "file": "large_dog-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "dingo",
+    "excluded_shadow_palette": [
+      "A"
+    ],
+    "bounds_m": [
+      [
+        -0.5007599592208862,
+        -0.1116020679473877,
+        0.000658571720123291
+      ],
+      [
+        0.5327086448669434,
+        0.11160469055175781,
+        0.7431660890579224
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 45,
+      "silhouette_iou": 0.3827,
+      "file": "dingo-pixel--90-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.3187,
+        "file": "dingo-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.3214,
+        "file": "dingo-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.3448,
+        "file": "dingo-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.3827,
+        "file": "dingo-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.3596,
+        "file": "dingo-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.3529,
+        "file": "dingo-pixel--65-45.png"
+      }
+    ]
+  }
+]

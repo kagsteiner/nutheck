@@ -1,0 +1,446 @@
+[
+  {
+    "key": "floating_eye",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        6,
+        12
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        14,
+        12
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.23499977588653564,
+        -0.2369803786277771,
+        0.4049999713897705
+      ],
+      [
+        0.23499992489814758,
+        0.23499971628189087,
+        0.875
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 25,
+      "silhouette_iou": 0.6222,
+      "file": "floating_eye-pixel--90-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.4889,
+        "file": "floating_eye-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.3778,
+        "file": "floating_eye-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.6222,
+        "file": "floating_eye-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.5111,
+        "file": "floating_eye-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.4889,
+        "file": "floating_eye-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.3778,
+        "file": "floating_eye-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "newt",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        8,
+        7
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        14,
+        9
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.3704577088356018,
+        -0.19198887050151825,
+        0.010529346764087677
+      ],
+      [
+        0.38665786385536194,
+        0.19198888540267944,
+        0.17277029156684875
+      ]
+    ],
+    "best_projection": {
+      "yaw": -115,
+      "elevation": 45,
+      "silhouette_iou": 0.3542,
+      "file": "newt-pixel--115-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.26,
+        "file": "newt-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.3542,
+        "file": "newt-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.2364,
+        "file": "newt-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.2909,
+        "file": "newt-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.1887,
+        "file": "newt-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.1552,
+        "file": "newt-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "lichen",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        3,
+        7
+      ],
+      [
+        5,
+        13
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        12,
+        7
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        13,
+        4
+      ],
+      [
+        13,
+        5
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        13,
+        12
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.22034940123558044,
+        -0.21726766228675842,
+        0.00299999862909317
+      ],
+      [
+        0.23026107251644135,
+        0.2130679488182068,
+        0.18097317218780518
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 45,
+      "silhouette_iou": 0.6087,
+      "file": "lichen-pixel--90-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.3241,
+        "file": "lichen-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.4259,
+        "file": "lichen-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.469,
+        "file": "lichen-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.6087,
+        "file": "lichen-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.3241,
+        "file": "lichen-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.4312,
+        "file": "lichen-pixel--65-45.png"
+      }
+    ]
+  }
+]

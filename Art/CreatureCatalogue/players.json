@@ -1,0 +1,969 @@
+{
+  "id": "PLAYER",
+  "name": "Player",
+  "node_type": "base_class",
+  "description": "Player presentation family: role subclasses with permitted starting-sex subclasses. Role is a profession, not a biological species.",
+  "model_recipe": {
+    "base": "player_body",
+    "changes": [
+      "Reuse compatible anatomy; integrate icon-derived costuming into one fixed character",
+      "Race/ancestry is an independent anatomy axis; these nodes are not a full race/role/sex cross-product",
+      "Never assume current inventory from a role or concept accessory"
+    ]
+  },
+  "restriction_scope": "Initial character selection only; not a restriction on later transformations, polymorph or monster appearances.",
+  "children": [
+    {
+      "id": "PLAYER_ROLE_ARCHEOLOGIST",
+      "parent_id": "PLAYER",
+      "name": "Archeologist",
+      "node_type": "role_subclass",
+      "aliases": [
+        "Archeologist"
+      ],
+      "creature_id": "PM_ARCHEOLOGIST",
+      "description": "Explorer and scholar; reusable expedition clothing and tool accessories. Visual modules are proposals, not live inventory facts.",
+      "source": {
+        "path": "upstream/NetHack/src/role.c",
+        "line": 31,
+        "allow_mask": "MH_HUMAN | MH_DWARF | MH_GNOME | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL\n          | ROLE_NEUTRAL"
+      },
+      "allowed_starting_sexes": [
+        "male",
+        "female"
+      ],
+      "children": [
+        {
+          "id": "PLAYER_ROLE_ARCHEOLOGIST_MALE",
+          "parent_id": "PLAYER_ROLE_ARCHEOLOGIST",
+          "name": "Archeologist",
+          "sex": "male",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_ARCHEOLOGIST",
+          "description": "Male starting Archeologist; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 676,
+              "label": "archeologist,male"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 31,
+            "allow_mask": "MH_HUMAN | MH_DWARF | MH_GNOME | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL\n          | ROLE_NEUTRAL"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        },
+        {
+          "id": "PLAYER_ROLE_ARCHEOLOGIST_FEMALE",
+          "parent_id": "PLAYER_ROLE_ARCHEOLOGIST",
+          "name": "Archeologist",
+          "sex": "female",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_ARCHEOLOGIST",
+          "description": "Female starting Archeologist; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 677,
+              "label": "archeologist,female"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 31,
+            "allow_mask": "MH_HUMAN | MH_DWARF | MH_GNOME | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL\n          | ROLE_NEUTRAL"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        }
+      ],
+      "model_recipe": {
+        "base": "player_body",
+        "role_appearance": "archeologist",
+        "clothing_detachable": false,
+        "changes": [
+          "Reuse compatible anatomy/rig; fit role silhouette and official default-tile colours",
+          "Fixed icon appearance; no detachable clothing (explicit user correction); sex variants may share compatible anatomy"
+        ],
+        "status": "planning only; existing tile-volume proxies are separate"
+      }
+    },
+    {
+      "id": "PLAYER_ROLE_BARBARIAN",
+      "parent_id": "PLAYER",
+      "name": "Barbarian",
+      "node_type": "role_subclass",
+      "aliases": [
+        "Barbarian"
+      ],
+      "creature_id": "PM_BARBARIAN",
+      "description": "Martial adventurer; distinct muscular proportions and fixed icon-derived appearance. Visual modules are proposals, not live inventory facts.",
+      "source": {
+        "path": "upstream/NetHack/src/role.c",
+        "line": 72,
+        "allow_mask": "MH_HUMAN | MH_ORC | ROLE_MALE | ROLE_FEMALE | ROLE_NEUTRAL\n          | ROLE_CHAOTIC"
+      },
+      "allowed_starting_sexes": [
+        "male",
+        "female"
+      ],
+      "children": [
+        {
+          "id": "PLAYER_ROLE_BARBARIAN_MALE",
+          "parent_id": "PLAYER_ROLE_BARBARIAN",
+          "name": "Barbarian",
+          "sex": "male",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_BARBARIAN",
+          "description": "Male starting Barbarian; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 678,
+              "label": "barbarian,male"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 72,
+            "allow_mask": "MH_HUMAN | MH_ORC | ROLE_MALE | ROLE_FEMALE | ROLE_NEUTRAL\n          | ROLE_CHAOTIC"
+          },
+          "asset_status": "existing anatomical draft (human player)"
+        },
+        {
+          "id": "PLAYER_ROLE_BARBARIAN_FEMALE",
+          "parent_id": "PLAYER_ROLE_BARBARIAN",
+          "name": "Barbarian",
+          "sex": "female",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_BARBARIAN",
+          "description": "Female starting Barbarian; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 679,
+              "label": "barbarian,female"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 72,
+            "allow_mask": "MH_HUMAN | MH_ORC | ROLE_MALE | ROLE_FEMALE | ROLE_NEUTRAL\n          | ROLE_CHAOTIC"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        }
+      ],
+      "model_recipe": {
+        "base": "player_body",
+        "role_appearance": "barbarian",
+        "clothing_detachable": false,
+        "changes": [
+          "Reuse compatible anatomy/rig; fit role silhouette and official default-tile colours",
+          "Fixed icon appearance; no detachable clothing (explicit user correction); sex variants may share compatible anatomy"
+        ],
+        "status": "partial: human male draft verified; female unmodelled"
+      },
+      "generated_ancestries": [
+        "human"
+      ],
+      "asset_status": "partial: human male draft verified; female unmodelled"
+    },
+    {
+      "id": "PLAYER_ROLE_CAVE_DWELLER",
+      "parent_id": "PLAYER",
+      "name": "Cave Dweller",
+      "node_type": "role_subclass",
+      "aliases": [
+        "Caveman",
+        "Cavewoman",
+        "Cave Dweller"
+      ],
+      "creature_id": "PM_CAVE_DWELLER",
+      "description": "Prehistoric adventurer; shared body with primitive clothing and tool modules. Visual modules are proposals, not live inventory facts.",
+      "source": {
+        "path": "upstream/NetHack/src/role.c",
+        "line": 113,
+        "allow_mask": "MH_HUMAN | MH_DWARF | MH_GNOME | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL\n          | ROLE_NEUTRAL"
+      },
+      "allowed_starting_sexes": [
+        "male",
+        "female"
+      ],
+      "children": [
+        {
+          "id": "PLAYER_ROLE_CAVE_DWELLER_MALE",
+          "parent_id": "PLAYER_ROLE_CAVE_DWELLER",
+          "name": "Caveman",
+          "sex": "male",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_CAVE_DWELLER",
+          "description": "Male starting Caveman; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 680,
+              "label": "cave dweller,male"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 113,
+            "allow_mask": "MH_HUMAN | MH_DWARF | MH_GNOME | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL\n          | ROLE_NEUTRAL"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        },
+        {
+          "id": "PLAYER_ROLE_CAVE_DWELLER_FEMALE",
+          "parent_id": "PLAYER_ROLE_CAVE_DWELLER",
+          "name": "Cavewoman",
+          "sex": "female",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_CAVE_DWELLER",
+          "description": "Female starting Cavewoman; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 681,
+              "label": "cave dweller,female"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 113,
+            "allow_mask": "MH_HUMAN | MH_DWARF | MH_GNOME | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL\n          | ROLE_NEUTRAL"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        }
+      ],
+      "model_recipe": {
+        "base": "player_body",
+        "role_appearance": "cave_dweller",
+        "clothing_detachable": false,
+        "changes": [
+          "Reuse compatible anatomy/rig; fit role silhouette and official default-tile colours",
+          "Fixed icon appearance; no detachable clothing (explicit user correction); sex variants may share compatible anatomy"
+        ],
+        "status": "planning only; existing tile-volume proxies are separate"
+      }
+    },
+    {
+      "id": "PLAYER_ROLE_HEALER",
+      "parent_id": "PLAYER",
+      "name": "Healer",
+      "node_type": "role_subclass",
+      "aliases": [
+        "Healer"
+      ],
+      "creature_id": "PM_HEALER",
+      "description": "Medical adventurer; fixed icon-derived medical role appearance. Visual modules are proposals, not live inventory facts.",
+      "source": {
+        "path": "upstream/NetHack/src/role.c",
+        "line": 154,
+        "allow_mask": "MH_HUMAN | MH_GNOME | ROLE_MALE | ROLE_FEMALE | ROLE_NEUTRAL"
+      },
+      "allowed_starting_sexes": [
+        "male",
+        "female"
+      ],
+      "children": [
+        {
+          "id": "PLAYER_ROLE_HEALER_MALE",
+          "parent_id": "PLAYER_ROLE_HEALER",
+          "name": "Healer",
+          "sex": "male",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_HEALER",
+          "description": "Male starting Healer; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 682,
+              "label": "healer,male"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 154,
+            "allow_mask": "MH_HUMAN | MH_GNOME | ROLE_MALE | ROLE_FEMALE | ROLE_NEUTRAL"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        },
+        {
+          "id": "PLAYER_ROLE_HEALER_FEMALE",
+          "parent_id": "PLAYER_ROLE_HEALER",
+          "name": "Healer",
+          "sex": "female",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_HEALER",
+          "description": "Female starting Healer; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 683,
+              "label": "healer,female"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 154,
+            "allow_mask": "MH_HUMAN | MH_GNOME | ROLE_MALE | ROLE_FEMALE | ROLE_NEUTRAL"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        }
+      ],
+      "model_recipe": {
+        "base": "player_body",
+        "role_appearance": "healer",
+        "clothing_detachable": false,
+        "changes": [
+          "Reuse compatible anatomy/rig; fit role silhouette and official default-tile colours",
+          "Fixed icon appearance; no detachable clothing (explicit user correction); sex variants may share compatible anatomy"
+        ],
+        "status": "planning only; existing tile-volume proxies are separate"
+      }
+    },
+    {
+      "id": "PLAYER_ROLE_KNIGHT",
+      "parent_id": "PLAYER",
+      "name": "Knight",
+      "node_type": "role_subclass",
+      "aliases": [
+        "Knight"
+      ],
+      "creature_id": "PM_KNIGHT",
+      "description": "Armoured warrior; fixed icon-derived armour appearance on a compatible body. Visual modules are proposals, not live inventory facts.",
+      "source": {
+        "path": "upstream/NetHack/src/role.c",
+        "line": 194,
+        "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL"
+      },
+      "allowed_starting_sexes": [
+        "male",
+        "female"
+      ],
+      "children": [
+        {
+          "id": "PLAYER_ROLE_KNIGHT_MALE",
+          "parent_id": "PLAYER_ROLE_KNIGHT",
+          "name": "Knight",
+          "sex": "male",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_KNIGHT",
+          "description": "Male starting Knight; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 684,
+              "label": "knight,male"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 194,
+            "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        },
+        {
+          "id": "PLAYER_ROLE_KNIGHT_FEMALE",
+          "parent_id": "PLAYER_ROLE_KNIGHT",
+          "name": "Knight",
+          "sex": "female",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_KNIGHT",
+          "description": "Female starting Knight; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 685,
+              "label": "knight,female"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 194,
+            "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        }
+      ],
+      "model_recipe": {
+        "base": "player_body",
+        "role_appearance": "knight",
+        "clothing_detachable": false,
+        "changes": [
+          "Reuse compatible anatomy/rig; fit role silhouette and official default-tile colours",
+          "Fixed icon appearance; no detachable clothing (explicit user correction); sex variants may share compatible anatomy"
+        ],
+        "status": "planning only; existing tile-volume proxies are separate"
+      }
+    },
+    {
+      "id": "PLAYER_ROLE_MONK",
+      "parent_id": "PLAYER",
+      "name": "Monk",
+      "node_type": "role_subclass",
+      "aliases": [
+        "Monk"
+      ],
+      "creature_id": "PM_MONK",
+      "description": "Unarmed martial artist; robes, exposed hands and martial movement requirements. Visual modules are proposals, not live inventory facts.",
+      "source": {
+        "path": "upstream/NetHack/src/role.c",
+        "line": 234,
+        "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL | ROLE_NEUTRAL\n          | ROLE_CHAOTIC"
+      },
+      "allowed_starting_sexes": [
+        "male",
+        "female"
+      ],
+      "children": [
+        {
+          "id": "PLAYER_ROLE_MONK_MALE",
+          "parent_id": "PLAYER_ROLE_MONK",
+          "name": "Monk",
+          "sex": "male",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_MONK",
+          "description": "Male starting Monk; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 686,
+              "label": "monk,male"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 234,
+            "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL | ROLE_NEUTRAL\n          | ROLE_CHAOTIC"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        },
+        {
+          "id": "PLAYER_ROLE_MONK_FEMALE",
+          "parent_id": "PLAYER_ROLE_MONK",
+          "name": "Monk",
+          "sex": "female",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_MONK",
+          "description": "Female starting Monk; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 687,
+              "label": "monk,female"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 234,
+            "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL | ROLE_NEUTRAL\n          | ROLE_CHAOTIC"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        }
+      ],
+      "model_recipe": {
+        "base": "player_body",
+        "role_appearance": "monk",
+        "clothing_detachable": false,
+        "changes": [
+          "Reuse compatible anatomy/rig; fit role silhouette and official default-tile colours",
+          "Fixed icon appearance; no detachable clothing (explicit user correction); sex variants may share compatible anatomy"
+        ],
+        "status": "planning only; existing tile-volume proxies are separate"
+      }
+    },
+    {
+      "id": "PLAYER_ROLE_CLERIC",
+      "parent_id": "PLAYER",
+      "name": "Cleric",
+      "node_type": "role_subclass",
+      "aliases": [
+        "Priest",
+        "Priestess",
+        "Cleric"
+      ],
+      "creature_id": "PM_CLERIC",
+      "description": "Religious adventurer; fixed icon-derived vestments and religious appearance. Visual modules are proposals, not live inventory facts.",
+      "source": {
+        "path": "upstream/NetHack/src/role.c",
+        "line": 275,
+        "allow_mask": "MH_HUMAN | MH_ELF | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL | ROLE_NEUTRAL\n          | ROLE_CHAOTIC"
+      },
+      "allowed_starting_sexes": [
+        "male",
+        "female"
+      ],
+      "children": [
+        {
+          "id": "PLAYER_ROLE_CLERIC_MALE",
+          "parent_id": "PLAYER_ROLE_CLERIC",
+          "name": "Priest",
+          "sex": "male",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_CLERIC",
+          "description": "Male starting Priest; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 688,
+              "label": "cleric,male"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 275,
+            "allow_mask": "MH_HUMAN | MH_ELF | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL | ROLE_NEUTRAL\n          | ROLE_CHAOTIC"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        },
+        {
+          "id": "PLAYER_ROLE_CLERIC_FEMALE",
+          "parent_id": "PLAYER_ROLE_CLERIC",
+          "name": "Priestess",
+          "sex": "female",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_CLERIC",
+          "description": "Female starting Priestess; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 689,
+              "label": "cleric,female"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 275,
+            "allow_mask": "MH_HUMAN | MH_ELF | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL | ROLE_NEUTRAL\n          | ROLE_CHAOTIC"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        }
+      ],
+      "model_recipe": {
+        "base": "player_body",
+        "role_appearance": "cleric",
+        "clothing_detachable": false,
+        "changes": [
+          "Reuse compatible anatomy/rig; fit role silhouette and official default-tile colours",
+          "Fixed icon appearance; no detachable clothing (explicit user correction); sex variants may share compatible anatomy"
+        ],
+        "status": "planning only; existing tile-volume proxies are separate"
+      }
+    },
+    {
+      "id": "PLAYER_ROLE_ROGUE",
+      "parent_id": "PLAYER",
+      "name": "Rogue",
+      "node_type": "role_subclass",
+      "aliases": [
+        "Rogue"
+      ],
+      "creature_id": "PM_ROGUE",
+      "description": "Stealth adventurer; fixed icon-derived light clothing appearance. Visual modules are proposals, not live inventory facts.",
+      "source": {
+        "path": "upstream/NetHack/src/role.c",
+        "line": 318,
+        "allow_mask": "MH_HUMAN | MH_ORC | ROLE_MALE | ROLE_FEMALE | ROLE_CHAOTIC"
+      },
+      "allowed_starting_sexes": [
+        "male",
+        "female"
+      ],
+      "children": [
+        {
+          "id": "PLAYER_ROLE_ROGUE_MALE",
+          "parent_id": "PLAYER_ROLE_ROGUE",
+          "name": "Rogue",
+          "sex": "male",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_ROGUE",
+          "description": "Male starting Rogue; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 692,
+              "label": "rogue,male"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 318,
+            "allow_mask": "MH_HUMAN | MH_ORC | ROLE_MALE | ROLE_FEMALE | ROLE_CHAOTIC"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        },
+        {
+          "id": "PLAYER_ROLE_ROGUE_FEMALE",
+          "parent_id": "PLAYER_ROLE_ROGUE",
+          "name": "Rogue",
+          "sex": "female",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_ROGUE",
+          "description": "Female starting Rogue; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 693,
+              "label": "rogue,female"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 318,
+            "allow_mask": "MH_HUMAN | MH_ORC | ROLE_MALE | ROLE_FEMALE | ROLE_CHAOTIC"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        }
+      ],
+      "model_recipe": {
+        "base": "player_body",
+        "role_appearance": "rogue",
+        "clothing_detachable": false,
+        "changes": [
+          "Reuse compatible anatomy/rig; fit role silhouette and official default-tile colours",
+          "Fixed icon appearance; no detachable clothing (explicit user correction); sex variants may share compatible anatomy"
+        ],
+        "status": "planning only; existing tile-volume proxies are separate"
+      }
+    },
+    {
+      "id": "PLAYER_ROLE_RANGER",
+      "parent_id": "PLAYER",
+      "name": "Ranger",
+      "node_type": "role_subclass",
+      "aliases": [
+        "Ranger"
+      ],
+      "creature_id": "PM_RANGER",
+      "description": "Wilderness adventurer; fixed icon-derived outdoor clothing appearance. Visual modules are proposals, not live inventory facts.",
+      "source": {
+        "path": "upstream/NetHack/src/role.c",
+        "line": 358,
+        "allow_mask": "MH_HUMAN | MH_ELF | MH_GNOME | MH_ORC | ROLE_MALE | ROLE_FEMALE\n          | ROLE_NEUTRAL | ROLE_CHAOTIC"
+      },
+      "allowed_starting_sexes": [
+        "male",
+        "female"
+      ],
+      "children": [
+        {
+          "id": "PLAYER_ROLE_RANGER_MALE",
+          "parent_id": "PLAYER_ROLE_RANGER",
+          "name": "Ranger",
+          "sex": "male",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_RANGER",
+          "description": "Male starting Ranger; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 690,
+              "label": "ranger,male"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 358,
+            "allow_mask": "MH_HUMAN | MH_ELF | MH_GNOME | MH_ORC | ROLE_MALE | ROLE_FEMALE\n          | ROLE_NEUTRAL | ROLE_CHAOTIC"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        },
+        {
+          "id": "PLAYER_ROLE_RANGER_FEMALE",
+          "parent_id": "PLAYER_ROLE_RANGER",
+          "name": "Ranger",
+          "sex": "female",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_RANGER",
+          "description": "Female starting Ranger; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 691,
+              "label": "ranger,female"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 358,
+            "allow_mask": "MH_HUMAN | MH_ELF | MH_GNOME | MH_ORC | ROLE_MALE | ROLE_FEMALE\n          | ROLE_NEUTRAL | ROLE_CHAOTIC"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        }
+      ],
+      "model_recipe": {
+        "base": "player_body",
+        "role_appearance": "ranger",
+        "clothing_detachable": false,
+        "changes": [
+          "Reuse compatible anatomy/rig; fit role silhouette and official default-tile colours",
+          "Fixed icon appearance; no detachable clothing (explicit user correction); sex variants may share compatible anatomy"
+        ],
+        "status": "planning only; existing tile-volume proxies are separate"
+      }
+    },
+    {
+      "id": "PLAYER_ROLE_SAMURAI",
+      "parent_id": "PLAYER",
+      "name": "Samurai",
+      "node_type": "role_subclass",
+      "aliases": [
+        "Samurai"
+      ],
+      "creature_id": "PM_SAMURAI",
+      "description": "Martial adventurer; distinct armour/clothing silhouette and weapon modules. Visual modules are proposals, not live inventory facts.",
+      "source": {
+        "path": "upstream/NetHack/src/role.c",
+        "line": 413,
+        "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL"
+      },
+      "allowed_starting_sexes": [
+        "male",
+        "female"
+      ],
+      "children": [
+        {
+          "id": "PLAYER_ROLE_SAMURAI_MALE",
+          "parent_id": "PLAYER_ROLE_SAMURAI",
+          "name": "Samurai",
+          "sex": "male",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_SAMURAI",
+          "description": "Male starting Samurai; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 694,
+              "label": "samurai,male"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 413,
+            "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        },
+        {
+          "id": "PLAYER_ROLE_SAMURAI_FEMALE",
+          "parent_id": "PLAYER_ROLE_SAMURAI",
+          "name": "Samurai",
+          "sex": "female",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_SAMURAI",
+          "description": "Female starting Samurai; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 695,
+              "label": "samurai,female"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 413,
+            "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        }
+      ],
+      "model_recipe": {
+        "base": "player_body",
+        "role_appearance": "samurai",
+        "clothing_detachable": false,
+        "changes": [
+          "Reuse compatible anatomy/rig; fit role silhouette and official default-tile colours",
+          "Fixed icon appearance; no detachable clothing (explicit user correction); sex variants may share compatible anatomy"
+        ],
+        "status": "planning only; existing tile-volume proxies are separate"
+      }
+    },
+    {
+      "id": "PLAYER_ROLE_TOURIST",
+      "parent_id": "PLAYER",
+      "name": "Tourist",
+      "node_type": "role_subclass",
+      "aliases": [
+        "Tourist"
+      ],
+      "creature_id": "PM_TOURIST",
+      "description": "Travelling adventurer; distinctive travel clothing and accessory modules. Visual modules are proposals, not live inventory facts.",
+      "source": {
+        "path": "upstream/NetHack/src/role.c",
+        "line": 453,
+        "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_NEUTRAL"
+      },
+      "allowed_starting_sexes": [
+        "male",
+        "female"
+      ],
+      "children": [
+        {
+          "id": "PLAYER_ROLE_TOURIST_MALE",
+          "parent_id": "PLAYER_ROLE_TOURIST",
+          "name": "Tourist",
+          "sex": "male",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_TOURIST",
+          "description": "Male starting Tourist; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 696,
+              "label": "tourist,male"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 453,
+            "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_NEUTRAL"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        },
+        {
+          "id": "PLAYER_ROLE_TOURIST_FEMALE",
+          "parent_id": "PLAYER_ROLE_TOURIST",
+          "name": "Tourist",
+          "sex": "female",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_TOURIST",
+          "description": "Female starting Tourist; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 697,
+              "label": "tourist,female"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 453,
+            "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_NEUTRAL"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        }
+      ],
+      "model_recipe": {
+        "base": "player_body",
+        "role_appearance": "tourist",
+        "clothing_detachable": false,
+        "changes": [
+          "Reuse compatible anatomy/rig; fit role silhouette and official default-tile colours",
+          "Fixed icon appearance; no detachable clothing (explicit user correction); sex variants may share compatible anatomy"
+        ],
+        "status": "planning only; existing tile-volume proxies are separate"
+      }
+    },
+    {
+      "id": "PLAYER_ROLE_VALKYRIE",
+      "parent_id": "PLAYER",
+      "name": "Valkyrie",
+      "node_type": "role_subclass",
+      "aliases": [
+        "Valkyrie"
+      ],
+      "creature_id": "PM_VALKYRIE",
+      "description": "Warrior role; female-only at initial character selection in this source version. Visual modules are proposals, not live inventory facts.",
+      "source": {
+        "path": "upstream/NetHack/src/role.c",
+        "line": 493,
+        "allow_mask": "MH_HUMAN | MH_DWARF | ROLE_FEMALE | ROLE_LAWFUL | ROLE_NEUTRAL"
+      },
+      "allowed_starting_sexes": [
+        "female"
+      ],
+      "children": [
+        {
+          "id": "PLAYER_ROLE_VALKYRIE_FEMALE",
+          "parent_id": "PLAYER_ROLE_VALKYRIE",
+          "name": "Valkyrie",
+          "sex": "female",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_VALKYRIE",
+          "description": "Female starting Valkyrie; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 699,
+              "label": "valkyrie,female"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 493,
+            "allow_mask": "MH_HUMAN | MH_DWARF | ROLE_FEMALE | ROLE_LAWFUL | ROLE_NEUTRAL"
+          },
+          "asset_status": "existing anatomical draft (human player)"
+        }
+      ],
+      "model_recipe": {
+        "base": "player_body",
+        "role_appearance": "valkyrie",
+        "clothing_detachable": false,
+        "changes": [
+          "Reuse compatible anatomy/rig; fit role silhouette and official default-tile colours",
+          "Fixed icon appearance; no detachable clothing (explicit user correction); sex variants may share compatible anatomy"
+        ],
+        "status": "human female draft verified"
+      },
+      "generated_ancestries": [
+        "human"
+      ],
+      "asset_status": "human female draft verified"
+    },
+    {
+      "id": "PLAYER_ROLE_WIZARD",
+      "parent_id": "PLAYER",
+      "name": "Wizard",
+      "node_type": "role_subclass",
+      "aliases": [
+        "Wizard"
+      ],
+      "creature_id": "PM_WIZARD",
+      "description": "Arcane adventurer; fixed icon-derived robe silhouette. Visual modules are proposals, not live inventory facts.",
+      "source": {
+        "path": "upstream/NetHack/src/role.c",
+        "line": 533,
+        "allow_mask": "MH_HUMAN | MH_ELF | MH_GNOME | MH_ORC | ROLE_MALE | ROLE_FEMALE\n          | ROLE_NEUTRAL | ROLE_CHAOTIC"
+      },
+      "allowed_starting_sexes": [
+        "male",
+        "female"
+      ],
+      "children": [
+        {
+          "id": "PLAYER_ROLE_WIZARD_MALE",
+          "parent_id": "PLAYER_ROLE_WIZARD",
+          "name": "Wizard",
+          "sex": "male",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_WIZARD",
+          "description": "Male starting Wizard; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 700,
+              "label": "wizard,male"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 533,
+            "allow_mask": "MH_HUMAN | MH_ELF | MH_GNOME | MH_ORC | ROLE_MALE | ROLE_FEMALE\n          | ROLE_NEUTRAL | ROLE_CHAOTIC"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        },
+        {
+          "id": "PLAYER_ROLE_WIZARD_FEMALE",
+          "parent_id": "PLAYER_ROLE_WIZARD",
+          "name": "Wizard",
+          "sex": "female",
+          "node_type": "sex_subclass",
+          "creature_id": "PM_WIZARD",
+          "description": "Female starting Wizard; inherits player body and role modules. Separate catalogue variant does not require a separate sculpt.",
+          "official_tiles": [
+            {
+              "index": 701,
+              "label": "wizard,female"
+            }
+          ],
+          "source": {
+            "path": "upstream/NetHack/src/role.c",
+            "line": 533,
+            "allow_mask": "MH_HUMAN | MH_ELF | MH_GNOME | MH_ORC | ROLE_MALE | ROLE_FEMALE\n          | ROLE_NEUTRAL | ROLE_CHAOTIC"
+          },
+          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+        }
+      ],
+      "model_recipe": {
+        "base": "player_body",
+        "role_appearance": "wizard",
+        "clothing_detachable": false,
+        "changes": [
+          "Reuse compatible anatomy/rig; fit role silhouette and official default-tile colours",
+          "Fixed icon appearance; no detachable clothing (explicit user correction); sex variants may share compatible anatomy"
+        ],
+        "status": "planning only; existing tile-volume proxies are separate"
+      }
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+[
+  {
+    "key": "coyote",
+    "excluded_shadow_palette": [
+      "A"
+    ],
+    "bounds_m": [
+      [
+        -0.4406399726867676,
+        -0.09593731164932251,
+        0.0006881356239318848
+      ],
+      [
+        0.48662635684013367,
+        0.09593819081783295,
+        0.6433752775192261
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 25,
+      "silhouette_iou": 0.4396,
+      "file": "coyote-pixel--90-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.413,
+        "file": "coyote-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.3953,
+        "file": "coyote-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.4396,
+        "file": "coyote-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.4333,
+        "file": "coyote-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.3778,
+        "file": "coyote-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.3444,
+        "file": "coyote-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "warg",
+    "excluded_shadow_palette": [
+      "A"
+    ],
+    "bounds_m": [
+      [
+        -0.5629599690437317,
+        -0.16392384469509125,
+        0.00040915608406066895
+      ],
+      [
+        0.4175349473953247,
+        0.16393230855464935,
+        0.8905194997787476
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 25,
+      "silhouette_iou": 0.5152,
+      "file": "warg-pixel--90-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.4403,
+        "file": "warg-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.4252,
+        "file": "warg-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.5152,
+        "file": "warg-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.4923,
+        "file": "warg-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.4478,
+        "file": "warg-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.4762,
+        "file": "warg-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "rabid_rat",
+    "excluded_shadow_palette": [
+      "A",
+      "P"
+    ],
+    "bounds_m": [
+      [
+        -0.31442001461982727,
+        -0.11062375456094742,
+        0.0010000001639127731
+      ],
+      [
+        0.4447844624519348,
+        0.19787590205669403,
+        0.2001662403345108
+      ]
+    ],
+    "best_projection": {
+      "yaw": -115,
+      "elevation": 25,
+      "silhouette_iou": 0.2766,
+      "file": "rabid_rat-pixel--115-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.2766,
+        "file": "rabid_rat-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.2766,
+        "file": "rabid_rat-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.2292,
+        "file": "rabid_rat-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.25,
+        "file": "rabid_rat-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.1915,
+        "file": "rabid_rat-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.1684,
+        "file": "rabid_rat-pixel--65-45.png"
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+/Binaries/
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+/.vs/
+/*.sln
+/build-*.log
+__pycache__/
+/upstream/
+/Backups/
+*.blend[0-9]*
+*.tmp
+*.temp
+*.log

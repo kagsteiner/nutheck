@@ -1,0 +1,179 @@
+[
+  {
+    "key": "kitten",
+    "bounds_m": [
+      [
+        -0.30212506651878357,
+        -0.1302257478237152,
+        0.0006483346223831177
+      ],
+      [
+        0.2684205174446106,
+        0.1302257478237152,
+        0.5350766777992249
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 25,
+      "silhouette_iou": 0.6071,
+      "file": "kitten-pixel--90-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.5577,
+        "file": "kitten-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.4038,
+        "file": "kitten-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.6071,
+        "file": "kitten-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.5263,
+        "file": "kitten-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.5,
+        "file": "kitten-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.4386,
+        "file": "kitten-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "housecat",
+    "bounds_m": [
+      [
+        -0.35280945897102356,
+        -0.14620204269886017,
+        0.000660628080368042
+      ],
+      [
+        0.313235878944397,
+        0.14620204269886017,
+        0.6999499201774597
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 45,
+      "silhouette_iou": 0.527,
+      "file": "housecat-pixel--90-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.3824,
+        "file": "housecat-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.3714,
+        "file": "housecat-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.4789,
+        "file": "housecat-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.527,
+        "file": "housecat-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.4583,
+        "file": "housecat-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.3733,
+        "file": "housecat-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "large_cat",
+    "bounds_m": [
+      [
+        -0.3908887207508087,
+        -0.15520015358924866,
+        0.0005297660827636719
+      ],
+      [
+        0.34507399797439575,
+        0.15520015358924866,
+        0.7974344491958618
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 45,
+      "silhouette_iou": 0.6709,
+      "file": "large_cat-pixel--90-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.3797,
+        "file": "large_cat-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.4079,
+        "file": "large_cat-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.4878,
+        "file": "large_cat-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.6709,
+        "file": "large_cat-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.4419,
+        "file": "large_cat-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.4118,
+        "file": "large_cat-pixel--65-45.png"
+      }
+    ]
+  }
+]

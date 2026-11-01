@@ -1,0 +1,54 @@
+{
+  "scope": "Four selected object presentations; full source object/unidentified-appearance inventory remains pending.",
+  "objects": [
+    {
+      "id": "LARGE_BOX",
+      "name": "large box",
+      "official_tile_file": "upstream/NetHack/win/share/objects.txt",
+      "file_local_tile_index": 216,
+      "source_material": "WOOD",
+      "asset_status": "generated and verified static draft",
+      "fbx": "large_box.fbx",
+      "native_source": "ObjectBatch1.blend",
+      "unreal_asset": "/Game/ObjectInterpretations/Meshes/SM_large_box",
+      "evidence": "Docs/ObjectBatch1.md"
+    },
+    {
+      "id": "CHEST",
+      "name": "chest",
+      "official_tile_file": "upstream/NetHack/win/share/objects.txt",
+      "file_local_tile_index": 217,
+      "source_material": "WOOD",
+      "asset_status": "generated and verified static draft",
+      "fbx": "chest.fbx",
+      "native_source": "ObjectBatch1.blend",
+      "unreal_asset": "/Game/ObjectInterpretations/Meshes/SM_chest",
+      "evidence": "Docs/ObjectBatch1.md"
+    },
+    {
+      "id": "GOLD_PIECE",
+      "name": "gold piece",
+      "official_tile_file": "upstream/NetHack/win/share/objects.txt",
+      "file_local_tile_index": 440,
+      "source_material": "GOLD",
+      "asset_status": "generated and verified static draft",
+      "fbx": "gold_piece.fbx",
+      "native_source": "ObjectBatch1.blend",
+      "unreal_asset": "/Game/ObjectInterpretations/Meshes/SM_gold_piece",
+      "evidence": "Docs/ObjectBatch1.md"
+    },
+    {
+      "id": "CORPSE",
+      "name": "generic corpse",
+      "official_tile_file": "upstream/NetHack/win/share/objects.txt",
+      "file_local_tile_index": 267,
+      "source_material": "FLESH",
+      "asset_status": "generated and verified static draft",
+      "fbx": "corpse.fbx",
+      "native_source": "../SpecialBatch1/SpecialBatch1.blend",
+      "unreal_asset": "/Game/ObjectInterpretations/Meshes/SM_corpse",
+      "evidence": "Docs/SpecialBatch1.md",
+      "scope": "Generic displayed corpse only; no species, freshness, size or edibility claim."
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "gnomish_wizard": {
+    "parts": 24,
+    "triangles": 62184,
+    "bounds_m": [
+      [
+        -0.2558942437171936,
+        -0.18884436786174774,
+        0.0
+      ],
+      [
+        0.2558944821357727,
+        0.20877256989479065,
+        1.0891010761260986
+      ]
+    ],
+    "paint_valid": true,
+    "paired_eyes": true,
+    "eye_surface_distances_m": [
+      0.0007296728435903788,
+      0.0007377067813649774
+    ],
+    "wrap_count": 0,
+    "wrap_max_surface_gaps_m": {},
+    "body_vertex_hash": "bc3af28b39348925f15d2147968f7cdc4287e8fea87bf053c8c90ff41da4b0a5",
+    "pointed_hat_retained": true,
+    "beard_present": true
+  },
+  "gnome_mummy": {
+    "parts": 30,
+    "triangles": 70236,
+    "bounds_m": [
+      [
+        -0.2558942437171936,
+        -0.18884436786174774,
+        0.0
+      ],
+      [
+        0.2558944821357727,
+        0.13199999928474426,
+        1.0891010761260986
+      ]
+    ],
+    "paint_valid": true,
+    "paired_eyes": true,
+    "eye_surface_distances_m": [
+      0.0007296728435903788,
+      0.0007377067813649774
+    ],
+    "wrap_count": 10,
+    "wrap_max_surface_gaps_m": {
+      "gnome_mummy_forearm_linen": 0.0044999998062849045,
+      "gnome_mummy_forearm_linen.001": 0.004500009585171938,
+      "gnome_mummy_lower_leg_linen": 0.004500000737607479,
+      "gnome_mummy_lower_leg_linen.001": 0.0044999984093010426,
+      "gnome_mummy_neck_linen": 0.0044995942153036594,
+      "gnome_mummy_torso_linen": 0.004500020761042833,
+      "gnome_mummy_upper_arm_linen": 0.004500006791204214,
+      "gnome_mummy_upper_arm_linen.001": 0.004499978385865688,
+      "gnome_mummy_upper_leg_linen": 0.004500014707446098,
+      "gnome_mummy_upper_leg_linen.001": 0.004500010050833225
+    },
+    "body_vertex_hash": "bc3af28b39348925f15d2147968f7cdc4287e8fea87bf053c8c90ff41da4b0a5",
+    "pointed_hat_retained": true,
+    "beard_present": true
+  },
+  "gnome_zombie": {
+    "parts": 24,
+    "triangles": 62184,
+    "bounds_m": [
+      [
+        -0.2558942437171936,
+        -0.18884436786174774,
+        0.0
+      ],
+      [
+        0.2558944821357727,
+        0.20877256989479065,
+        1.0891010761260986
+      ]
+    ],
+    "paint_valid": true,
+    "paired_eyes": true,
+    "eye_surface_distances_m": [
+      0.0007296728435903788,
+      0.0007377067813649774
+    ],
+    "wrap_count": 0,
+    "wrap_max_surface_gaps_m": {},
+    "body_vertex_hash": "bc3af28b39348925f15d2147968f7cdc4287e8fea87bf053c8c90ff41da4b0a5",
+    "pointed_hat_retained": true,
+    "beard_present": true
+  },
+  "gnomish_wizard_female": {
+    "parts": 17,
+    "triangles": 60704,
+    "bounds_m": [
+      [
+        -0.2558942437171936,
+        -0.18884436786174774,
+        0.0
+      ],
+      [
+        0.2558944821357727,
+        0.20877256989479065,
+        1.0891010761260986
+      ]
+    ],
+    "paint_valid": true,
+    "paired_eyes": true,
+    "eye_surface_distances_m": [
+      0.0007296728435903788,
+      0.0007377067813649774
+    ],
+    "wrap_count": 0,
+    "wrap_max_surface_gaps_m": {},
+    "body_vertex_hash": "bc3af28b39348925f15d2147968f7cdc4287e8fea87bf053c8c90ff41da4b0a5",
+    "pointed_hat_retained": true,
+    "beard_present": false
+  },
+  "gnome_zombie_female": {
+    "parts": 17,
+    "triangles": 60704,
+    "bounds_m": [
+      [
+        -0.2558942437171936,
+        -0.18884436786174774,
+        0.0
+      ],
+      [
+        0.2558944821357727,
+        0.20877256989479065,
+        1.0891010761260986
+      ]
+    ],
+    "paint_valid": true,
+    "paired_eyes": true,
+    "eye_surface_distances_m": [
+      0.0007296728435903788,
+      0.0007377067813649774
+    ],
+    "wrap_count": 0,
+    "wrap_max_surface_gaps_m": {},
+    "body_vertex_hash": "bc3af28b39348925f15d2147968f7cdc4287e8fea87bf053c8c90ff41da4b0a5",
+    "pointed_hat_retained": true,
+    "beard_present": false
+  },
+  "previous_48_exports_unchanged": true,
+  "exact_ancestry_shape_reuse": true
+}

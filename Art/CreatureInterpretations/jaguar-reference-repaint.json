@@ -1,0 +1,79 @@
+{
+  "geometry_unchanged": true,
+  "protected": {
+    "lynx": {
+      "mesh_paint": "88be8fdd3df3bdfb5759a12f7cf9a8dbb32728c8b7f10b073a388d892666b3eb",
+      "fbx": "3bcafc7d0875ec44888b06950de145259324de44c849fd05999dccbc11d76166"
+    },
+    "panther": {
+      "mesh_paint": "d8998c0aeff95cbd7979afb562fb1af320796efabbc58483fa35877af3342ece",
+      "fbx": "d5bcead3ec52f71359fe2d645b240dab83546e256aecd33d6c96c21d6062a7f5"
+    }
+  },
+  "paint": {
+    "jaguar_continuous_anatomy": {
+      "corners": 176976,
+      "dark_corners": 50494
+    },
+    "jaguar_lower_eyelid": {
+      "corners": 600,
+      "dark_corners": 0
+    },
+    "jaguar_lower_eyelid.001": {
+      "corners": 600,
+      "dark_corners": 0
+    },
+    "jaguar_muzzle_pad": {
+      "corners": 2496,
+      "dark_corners": 436
+    },
+    "jaguar_muzzle_pad.001": {
+      "corners": 2496,
+      "dark_corners": 484
+    },
+    "jaguar_raised_tail": {
+      "corners": 3456,
+      "dark_corners": 1803
+    },
+    "jaguar_rounded_ear": {
+      "corners": 2496,
+      "dark_corners": 492
+    },
+    "jaguar_rounded_ear.001": {
+      "corners": 2496,
+      "dark_corners": 492
+    },
+    "jaguar_upper_eyelid": {
+      "corners": 600,
+      "dark_corners": 0
+    },
+    "jaguar_upper_eyelid.001": {
+      "corners": 600,
+      "dark_corners": 0
+    },
+    "jaguar_whisker": {
+      "corners": 72,
+      "dark_corners": 0
+    },
+    "jaguar_whisker.001": {
+      "corners": 72,
+      "dark_corners": 0
+    },
+    "jaguar_whisker.002": {
+      "corners": 72,
+      "dark_corners": 0
+    },
+    "jaguar_whisker.003": {
+      "corners": 72,
+      "dark_corners": 0
+    },
+    "jaguar_whisker.004": {
+      "corners": 72,
+      "dark_corners": 0
+    },
+    "jaguar_whisker.005": {
+      "corners": 72,
+      "dark_corners": 0
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sewer_rat": {
+    "parts": 45,
+    "vertices": 20316,
+    "paint_valid": true
+  },
+  "giant_rat": {
+    "parts": 45,
+    "vertices": 27258,
+    "paint_valid": true
+  },
+  "gnome_ruler": {
+    "parts": 28,
+    "vertices": 32046,
+    "paint_valid": true,
+    "original_body_reused_exactly": true
+  }
+}

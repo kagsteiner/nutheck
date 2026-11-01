@@ -1,0 +1,151 @@
+{
+  "white_unicorn": {
+    "parts": 28,
+    "triangles": 108016,
+    "bounds_m": [
+      [
+        -0.6049981117248535,
+        -0.13915497064590454,
+        0.003000000026077032
+      ],
+      [
+        0.47905805706977844,
+        0.13911518454551697,
+        1.2625268697738647
+      ]
+    ],
+    "paint_valid": true,
+    "fur_uv_valid": true,
+    "single_hooves": 4,
+    "eye_symmetry_valid": true,
+    "lateral_eyes": true,
+    "iris": "equine_blue",
+    "eye_centers_m": [
+      [
+        -0.36591586470603943,
+        -0.07171652466058731,
+        0.9920564889907837
+      ],
+      [
+        -0.3659217655658722,
+        0.07173658162355423,
+        0.9920585751533508
+      ]
+    ],
+    "fitted_ear_max_gaps_m": [
+      0.0004961626254953444,
+      0.0004961626837030053
+    ],
+    "horn_manifold": true,
+    "horn_root_depth_m": 0.0059999399818480015,
+    "horn_length_m": 0.245,
+    "horn_axis": [
+      -0.5200738906860352,
+      0.0,
+      0.8541213274002075
+    ],
+    "source_alignment": 7,
+    "body_vertex_hash": "30973dfbd3af8023dcab264d6eb02245d75d3e8236b7ceed3849f0919a3bb0ac",
+    "body_mean_brightness": 0.7178392435743925
+  },
+  "gray_unicorn": {
+    "parts": 28,
+    "triangles": 108016,
+    "bounds_m": [
+      [
+        -0.6049981117248535,
+        -0.13915497064590454,
+        0.003000000026077032
+      ],
+      [
+        0.47905805706977844,
+        0.13911518454551697,
+        1.2625268697738647
+      ]
+    ],
+    "paint_valid": true,
+    "fur_uv_valid": true,
+    "single_hooves": 4,
+    "eye_symmetry_valid": true,
+    "lateral_eyes": true,
+    "iris": "unicorn_green",
+    "eye_centers_m": [
+      [
+        -0.36591586470603943,
+        -0.07171652466058731,
+        0.9920564889907837
+      ],
+      [
+        -0.3659217655658722,
+        0.07173658162355423,
+        0.9920585751533508
+      ]
+    ],
+    "fitted_ear_max_gaps_m": [
+      0.0004961626254953444,
+      0.0004961626837030053
+    ],
+    "horn_manifold": true,
+    "horn_root_depth_m": 0.0059999399818480015,
+    "horn_length_m": 0.245,
+    "horn_axis": [
+      -0.5200738906860352,
+      0.0,
+      0.8541213274002075
+    ],
+    "source_alignment": 0,
+    "body_vertex_hash": "30973dfbd3af8023dcab264d6eb02245d75d3e8236b7ceed3849f0919a3bb0ac",
+    "body_mean_brightness": 0.3173917317195526
+  },
+  "black_unicorn": {
+    "parts": 28,
+    "triangles": 108016,
+    "bounds_m": [
+      [
+        -0.6049981117248535,
+        -0.13915497064590454,
+        0.003000000026077032
+      ],
+      [
+        0.47905805706977844,
+        0.13911518454551697,
+        1.2625268697738647
+      ]
+    ],
+    "paint_valid": true,
+    "fur_uv_valid": true,
+    "single_hooves": 4,
+    "eye_symmetry_valid": true,
+    "lateral_eyes": true,
+    "iris": "unicorn_red",
+    "eye_centers_m": [
+      [
+        -0.36591586470603943,
+        -0.07171652466058731,
+        0.9920564889907837
+      ],
+      [
+        -0.3659217655658722,
+        0.07173658162355423,
+        0.9920585751533508
+      ]
+    ],
+    "fitted_ear_max_gaps_m": [
+      0.0004961626254953444,
+      0.0004961626837030053
+    ],
+    "horn_manifold": true,
+    "horn_root_depth_m": 0.0059999399818480015,
+    "horn_length_m": 0.245,
+    "horn_axis": [
+      -0.5200738906860352,
+      0.0,
+      0.8541213274002075
+    ],
+    "source_alignment": -7,
+    "body_vertex_hash": "30973dfbd3af8023dcab264d6eb02245d75d3e8236b7ceed3849f0919a3bb0ac",
+    "body_mean_brightness": 0.021950456208903124
+  },
+  "previous_33_exports_unchanged": true,
+  "shared_compatible_anatomy_verified": true
+}

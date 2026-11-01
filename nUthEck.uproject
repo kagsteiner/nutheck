@@ -1,0 +1,12 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.7",
+  "Category": "Games",
+  "Description": "A live NetHack 5.0 dungeon presented in Unreal Engine.",
+  "Modules": [{ "Name": "NUthEck", "Type": "Runtime", "LoadingPhase": "Default" }],
+  "Plugins": [
+    { "Name": "PythonScriptPlugin", "Enabled": true },
+    { "Name": "EditorScriptingUtilities", "Enabled": true },
+    { "Name": "AndroidFileServer", "Enabled": false }
+  ]
+}

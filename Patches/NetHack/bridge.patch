@@ -1,0 +1,167 @@
+diff --git a/src/windows.c b/src/windows.c
+index f8490f9b5..434bb7714 100644
+--- a/src/windows.c
++++ b/src/windows.c
+@@ -3,6 +3,11 @@
+ /* NetHack may be freely redistributed.  See license for details. */
+ 
+ #include "hack.h"
++/* nUthEck modification, 2026-10-30: optional process-based UE window port. */
++#ifdef UEBRIDGE
++extern struct window_procs ue_procs;
++extern void ue_win_init(int);
++#endif
+ #include "dlb.h"
+ #ifdef TTY_GRAPHICS
+ #include "wintty.h"
+@@ -96,6 +101,9 @@ static struct win_choices {
+     void *(*chain_routine)(int, int, void *, void *, void *);
+ #endif
+ } winchoices[] = {
++#ifdef UEBRIDGE
++    { &ue_procs, ue_win_init CHAINR(0) },
++#endif
+ #ifdef TTY_GRAPHICS
+     { &tty_procs, win_tty_init CHAINR(0) },
+ #endif
+diff --git a/sys/windows/vs/NetHack.sln b/sys/windows/vs/NetHack.sln
+index 2c70f0491..e3e99b450 100644
+--- a/sys/windows/vs/NetHack.sln
++++ b/sys/windows/vs/NetHack.sln
+@@ -60,6 +60,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uudecode", "uudecode\uudeco
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetHack", "NetHack\NetHack.vcxproj", "{609BC774-C6F8-4B2B-AA7D-5B3D0EA95751}"
+ 	ProjectSection(ProjectDependencies) = postProject
++		{93F10526-209E-41D7-BBEA-775787876895} = {93F10526-209E-41D7-BBEA-775787876895}
+ 		{0303A585-3F83-4BB7-AF6B-1E12C8FB54AC} = {0303A585-3F83-4BB7-AF6B-1E12C8FB54AC}
+ 		{096FD6BB-256A-4E68-9B09-2ACA7C606FF3} = {096FD6BB-256A-4E68-9B09-2ACA7C606FF3}
+ 		{63F9B82B-F589-4082-ABE5-D4F0682050AB} = {63F9B82B-F589-4082-ABE5-D4F0682050AB}
+diff --git a/sys/windows/vs/NetHack/NetHack.vcxproj b/sys/windows/vs/NetHack/NetHack.vcxproj
+index 1d29c4f80..e127e3b8d 100644
+--- a/sys/windows/vs/NetHack/NetHack.vcxproj
++++ b/sys/windows/vs/NetHack/NetHack.vcxproj
+@@ -77,7 +77,8 @@
+       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+       <OmitFramePointers>true</OmitFramePointers>
+       <AdditionalIncludeDirectories>$(WinWin32Dir);$(IncDir);$(SysWindDir);$(SysShareDir);$(WinShareDir);$(LuaDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+-      <PreprocessorDefinitions>WIN32CON;NO_TILE_C;DLB;SND_LIB_WINDSOUND;USER_SOUNDS;SND_SOUNDEFFECTS_AUTOMAP;_LIB;HAS_STDINT_H;HAS_INTTYPES_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
++      <!-- nUthEck modification, 2026-10-30: compile optional UE window port. -->
++      <PreprocessorDefinitions>UEBRIDGE;WIN32CON;TILES_IN_GLYPHMAP;DLB;SND_LIB_WINDSOUND;USER_SOUNDS;SND_SOUNDEFFECTS_AUTOMAP;_LIB;HAS_STDINT_H;HAS_INTTYPES_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <LanguageStandard_C>stdclatest</LanguageStandard_C>
+     </ClCompile>
+     <Link>
+@@ -89,6 +90,7 @@
+   </ItemDefinitionGroup>
+   <ItemGroup>
+     <ClCompile Include="$(SrcDir)allmain.c" />
++    <ClCompile Include="$(RootDir)win\ue\winue.c" />
+     <ClCompile Include="$(SrcDir)alloc.c" />
+     <ClCompile Include="$(SrcDir)apply.c" />
+     <ClCompile Include="$(SrcDir)artifact.c" />
+@@ -114,6 +116,8 @@
+     <ClCompile Include="$(SrcDir)dothrow.c" />
+     <ClCompile Include="$(SrcDir)do_name.c" />
+     <ClCompile Include="$(SrcDir)do_wear.c" />
++    <!-- nUthEck 2026-10-31: use native tile mapping, including appearance shuffling. -->
++    <ClCompile Include="$(SrcDir)tile.c" />
+     <ClCompile Include="$(SrcDir)drawing.c" />
+     <ClCompile Include="$(SrcDir)dungeon.c" />
+     <ClCompile Include="$(SrcDir)earlyarg.c" />
+@@ -332,4 +336,4 @@
+   <Target Name="AfterRebuild">
+     <MSBuild Projects="afternethack.proj" Targets="Build" Properties="Configuration=$(Configuration)" />
+   </Target>
+-</Project>
+\ No newline at end of file
++</Project>
+diff --git a/sys/windows/vs/package/package.nmake b/sys/windows/vs/package/package.nmake
+index 9842b20c1..2d3749b73 100644
+--- a/sys/windows/vs/package/package.nmake
++++ b/sys/windows/vs/package/package.nmake
+@@ -1,4 +1,5 @@
+ # NetHack 5.0 package.nmake
++# Modified for nUthEck, 2026-10-30: package the current version's data archive.
+ #==============================================================================
+ #
+ #  The version of the game this Makefile was designed for
+@@ -66,11 +67,11 @@ default: packageall
+ #===============================================================================
+ 
+ PKGFILES=Guidebook.txt license NetHack.exe NetHack.txt \
+-	 NetHackW.exe opthelp nhdat370 record symbols.template sysconf.template \
++	 NetHackW.exe opthelp nhdat$(NHV) record symbols.template sysconf.template \
+ 	nethackrc.template
+ FILESTOZIP=$(VSBINDIR)\Guidebook.txt $(VSBINDIR)\license \
+ 	$(VSBINDIR)\NetHack.exe $(VSBINDIR)\NetHack.txt $(VSBINDIR)\NetHackW.exe \
+-	$(VSBINDIR)\opthelp $(VSBINDIR)\nhdat370 $(VSBINDIR)\record \
++	$(VSBINDIR)\opthelp $(VSBINDIR)\nhdat$(NHV) $(VSBINDIR)\record \
+ 	$(VSBINDIR)\symbols.template $(VSBINDIR)\sysconf.template $(VSBINDIR)\nethackrc.template
+ DBGSYMS = NetHack.PDB NetHackW.PDB
+ PDBTOZIP = ..\NetHack\symbols\$(Configuration)\$(Platform)\NetHack.PDB \
+diff --git a/sys/windows/windmain.c b/sys/windows/windmain.c
+index b437ad98e..68ce74e90 100644
+--- a/sys/windows/windmain.c
++++ b/sys/windows/windmain.c
+@@ -149,6 +149,11 @@ int nethackw_main(int, char **);
+ int
+ MAIN(int argc, char *argv[])
+ {
++    /* nUthEck modification, 2026-10-30: preserve pipes and isolate bridge data. */
++#ifdef UEBRIDGE
++    extern boolean ue_bridge_bootstrap(int *, char **);
++    boolean ue_bridge = ue_bridge_bootstrap(&argc, argv);
++#endif
+     boolean resuming = FALSE; /* assume new game */
+     NHFILE *nhfp;
+     char *windowtype = NULL;
+@@ -220,8 +225,14 @@ _CrtSetReportFile(_CRT_ASSERT, _CRTDBG_FILE_STDERR);*/
+     //   windowtype = gc.chosen_windowtype;
+ 
+ #if !defined(MSWIN_GRAPHICS)
++#ifdef UEBRIDGE
++    if (!ue_bridge) {
++#endif
+     nethack_enter_consoletty();
+     consoletty_open(1);
++#ifdef UEBRIDGE
++    }
++#endif
+ #endif
+ 
+ #ifdef EARLY_CONFIGFILE_PASS
+@@ -231,6 +242,10 @@ _CrtSetReportFile(_CRT_ASSERT, _CRTDBG_FILE_STDERR);*/
+ #endif
+ 
+     if (!windowtype) {
++#ifdef UEBRIDGE
++        if (ue_bridge) windowtype = "ue";
++        else
++#endif
+ #ifdef MSWIN_GRAPHICS
+         windowtype = "mswin";
+ #else
+diff --git a/sys/windows/windsys.c b/sys/windows/windsys.c
+index 3dad0d330..c103288b5 100644
+--- a/sys/windows/windsys.c
++++ b/sys/windows/windsys.c
+@@ -1041,6 +1041,20 @@ set_default_prefix_locations(const char *programPath UNUSED)
+     strcpy(executable_path, get_executable_path());
+     append_slash(executable_path);
+ 
++    /* nUthEck modification, 2026-10-30: keep every writable prefix in the
++       explicit child-process session directory, away from native saves. */
++#ifdef UEBRIDGE
++    if (getenv("NUTHECK_SESSION")) {
++        static char ue_session_path[MAX_PATH];
++        int prefix;
++        strcpy_s(ue_session_path,sizeof ue_session_path,getenv("NUTHECK_SESSION"));
++        append_slash(ue_session_path);
++        for(prefix=0;prefix<PREFIX_COUNT;++prefix) gf.fqn_prefix[prefix]=ue_session_path;
++        gf.fqn_prefix[DATAPREFIX]=executable_path;
++        return;
++    }
++#endif
++
+ #ifndef SFCTOOL
+     if (test_portable_config(executable_path, portable_device_path,
+                              sizeof portable_device_path)) {

@@ -1,0 +1,209 @@
+[
+  {
+    "key": "bat",
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "bounds_m": [
+      [
+        -0.1707499772310257,
+        -0.35114535689353943,
+        0.16036702692508698
+      ],
+      [
+        0.1959095150232315,
+        0.35114535689353943,
+        0.47724130749702454
+      ]
+    ],
+    "best_projection": {
+      "yaw": -180,
+      "elevation": 45,
+      "silhouette_iou": 0.1923,
+      "file": "bat-pixel--180-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -180,
+        "elevation": 25,
+        "silhouette_iou": 0.1538,
+        "file": "bat-pixel--180-25.png"
+      },
+      {
+        "yaw": -180,
+        "elevation": 45,
+        "silhouette_iou": 0.1923,
+        "file": "bat-pixel--180-45.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 25,
+        "silhouette_iou": 0.1538,
+        "file": "bat-pixel--155-25.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 45,
+        "silhouette_iou": 0.0385,
+        "file": "bat-pixel--155-45.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 25,
+        "silhouette_iou": 0.1154,
+        "file": "bat-pixel--125-25.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 45,
+        "silhouette_iou": 0.1154,
+        "file": "bat-pixel--125-45.png"
+      }
+    ]
+  },
+  {
+    "key": "giant_bat",
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "bounds_m": [
+      [
+        -0.21554996073246002,
+        -0.471029669046402,
+        0.17232759296894073
+      ],
+      [
+        0.24558568000793457,
+        0.471029669046402,
+        0.5130715370178223
+      ]
+    ],
+    "best_projection": {
+      "yaw": -180,
+      "elevation": 45,
+      "silhouette_iou": 0.4048,
+      "file": "giant_bat-pixel--180-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -180,
+        "elevation": 25,
+        "silhouette_iou": 0.2143,
+        "file": "giant_bat-pixel--180-25.png"
+      },
+      {
+        "yaw": -180,
+        "elevation": 45,
+        "silhouette_iou": 0.4048,
+        "file": "giant_bat-pixel--180-45.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 25,
+        "silhouette_iou": 0.186,
+        "file": "giant_bat-pixel--155-25.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 45,
+        "silhouette_iou": 0.1778,
+        "file": "giant_bat-pixel--155-45.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 25,
+        "silhouette_iou": 0.1395,
+        "file": "giant_bat-pixel--125-25.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 45,
+        "silhouette_iou": 0.1628,
+        "file": "giant_bat-pixel--125-45.png"
+      }
+    ]
+  },
+  {
+    "key": "vampire_bat",
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "bounds_m": [
+      [
+        -0.2140299677848816,
+        -0.4460492730140686,
+        0.16993531584739685
+      ],
+      [
+        0.2663045823574066,
+        0.4460492730140686,
+        0.49581122398376465
+      ]
+    ],
+    "best_projection": {
+      "yaw": -180,
+      "elevation": 45,
+      "silhouette_iou": 0.375,
+      "file": "vampire_bat-pixel--180-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -180,
+        "elevation": 25,
+        "silhouette_iou": 0.175,
+        "file": "vampire_bat-pixel--180-25.png"
+      },
+      {
+        "yaw": -180,
+        "elevation": 45,
+        "silhouette_iou": 0.375,
+        "file": "vampire_bat-pixel--180-45.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 25,
+        "silhouette_iou": 0.1795,
+        "file": "vampire_bat-pixel--155-25.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 45,
+        "silhouette_iou": 0.1163,
+        "file": "vampire_bat-pixel--155-45.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 25,
+        "silhouette_iou": 0.1,
+        "file": "vampire_bat-pixel--125-25.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 45,
+        "silhouette_iou": 0.1538,
+        "file": "vampire_bat-pixel--125-45.png"
+      }
+    ]
+  }
+]

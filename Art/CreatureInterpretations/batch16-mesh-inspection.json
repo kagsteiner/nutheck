@@ -1,0 +1,77 @@
+{
+  "dwarf": {
+    "parts": 27,
+    "triangles": 154348,
+    "bounds_m": [
+      [
+        -0.3191346526145935,
+        -0.1697235107421875,
+        0.0010000020265579224
+      ],
+      [
+        0.3191346824169159,
+        0.13699999451637268,
+        1.1039999723434448
+      ]
+    ],
+    "paint_valid": true,
+    "eye_center_surface_distances_m": [
+      0.0023932880721986294,
+      0.0023931406904011965
+    ],
+    "rank_modules": 0,
+    "body_vertex_hash": "43761b09cebe90ffe02c42db7127155859983048ce5ee36376a74513bd5d99ef",
+    "closed_tunic": true
+  },
+  "dwarf_leader": {
+    "parts": 28,
+    "triangles": 154860,
+    "bounds_m": [
+      [
+        -0.3191346526145935,
+        -0.1697235107421875,
+        0.0010000020265579224
+      ],
+      [
+        0.3191346824169159,
+        0.13699999451637268,
+        1.1039999723434448
+      ]
+    ],
+    "paint_valid": true,
+    "eye_center_surface_distances_m": [
+      0.0023932880721986294,
+      0.0023931406904011965
+    ],
+    "rank_modules": 1,
+    "body_vertex_hash": "43761b09cebe90ffe02c42db7127155859983048ce5ee36376a74513bd5d99ef",
+    "closed_tunic": true
+  },
+  "dwarf_ruler": {
+    "parts": 37,
+    "triangles": 157232,
+    "bounds_m": [
+      [
+        -0.3191346526145935,
+        -0.1697235107421875,
+        0.0010000020265579224
+      ],
+      [
+        0.3191346824169159,
+        0.13699999451637268,
+        1.0971498489379883
+      ]
+    ],
+    "paint_valid": true,
+    "eye_center_surface_distances_m": [
+      0.0023932880721986294,
+      0.0023931406904011965
+    ],
+    "rank_modules": 11,
+    "body_vertex_hash": "43761b09cebe90ffe02c42db7127155859983048ce5ee36376a74513bd5d99ef",
+    "closed_tunic": true
+  },
+  "previous_49_exports_unchanged": true,
+  "source_sex_tiles_identical": true,
+  "shared_ancestry_exact": true
+}

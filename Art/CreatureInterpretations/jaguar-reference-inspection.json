@@ -1,0 +1,26 @@
+{
+  "regions": {
+    "spine": {
+      "corners": 6512,
+      "dark": 2493
+    },
+    "left_flank": {
+      "corners": 15955,
+      "dark": 6869
+    },
+    "right_flank": {
+      "corners": 15952,
+      "dark": 6431
+    },
+    "head": {
+      "corners": 24060,
+      "dark": 5356
+    },
+    "legs": {
+      "corners": 43279,
+      "dark": 8780
+    }
+  },
+  "approved_cats_unchanged": true,
+  "geometry_unchanged": true
+}

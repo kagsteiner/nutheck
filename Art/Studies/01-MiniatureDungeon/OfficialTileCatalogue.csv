@@ -1,0 +1,1499 @@
+reference_key,name,category,source,model_family,asset,status
+monsters:0,"giant ant,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:1,"giant ant,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:2,"killer bee,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:3,"killer bee,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:4,"soldier ant,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:5,"soldier ant,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:6,"fire ant,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:7,"fire ant,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:8,"giant beetle,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:9,"giant beetle,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:10,"queen bee,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:11,"queen bee,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:12,"acid blob,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:13,"acid blob,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:14,"quivering blob,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:15,"quivering blob,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:16,"gelatinous cube,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:17,"gelatinous cube,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:18,"chickatrice,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:19,"chickatrice,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:20,"cockatrice,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:21,"cockatrice,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:22,"pyrolisk,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:23,"pyrolisk,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:24,"jackal,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:25,"jackal,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:26,"fox,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:27,"fox,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:28,"coyote,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:29,"coyote,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:30,"werejackal,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:31,"werejackal,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:32,"little dog,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:33,"little dog,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:34,"dingo,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:35,"dingo,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:36,"dog,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:37,"dog,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:38,"large dog,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:39,"large dog,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:40,"wolf,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:41,"wolf,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:42,"werewolf,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:43,"werewolf,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:44,"winter wolf cub,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:45,"winter wolf cub,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:46,"warg,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:47,"warg,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:48,"winter wolf,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:49,"winter wolf,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:50,"hell hound pup,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:51,"hell hound pup,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:52,"hell hound,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:53,"hell hound,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:54,"Cerberus,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:55,"Cerberus,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:56,"gas spore,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:57,"gas spore,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:58,"floating eye,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:59,"floating eye,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:60,"freezing sphere,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:61,"freezing sphere,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:62,"flaming sphere,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:63,"flaming sphere,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:64,"shocking sphere,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:65,"shocking sphere,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:66,"beholder,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:67,"beholder,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:68,"kitten,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:69,"kitten,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:70,"housecat,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:71,"housecat,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:72,"jaguar,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:73,"jaguar,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:74,"lynx,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:75,"lynx,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:76,"panther,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:77,"panther,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:78,"large cat,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:79,"large cat,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:80,"tiger,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:81,"tiger,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:82,"displacer beast,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:83,"displacer beast,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:84,"gremlin,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:85,"gremlin,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:86,"gargoyle,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:87,"gargoyle,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:88,"winged gargoyle,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:89,"winged gargoyle,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:90,"hobbit,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:91,"hobbit,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:92,"dwarf,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:93,"dwarf,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:94,"bugbear,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:95,"bugbear,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:96,"dwarf leader,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:97,"dwarf leader,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:98,"dwarf ruler,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:99,"dwarf ruler,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:100,"mind flayer,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:101,"mind flayer,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:102,"master mind flayer,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:103,"master mind flayer,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:104,"manes,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:105,"manes,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:106,"homunculus,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:107,"homunculus,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:108,"imp,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:109,"imp,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:110,"lemure,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:111,"lemure,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:112,"quasit,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:113,"quasit,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:114,"tengu,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:115,"tengu,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:116,"blue jelly,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:117,"blue jelly,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:118,"spotted jelly,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:119,"spotted jelly,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:120,"ochre jelly,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:121,"ochre jelly,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:122,"kobold,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:123,"kobold,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:124,"large kobold,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:125,"large kobold,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:126,"kobold leader,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:127,"kobold leader,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:128,"kobold shaman,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:129,"kobold shaman,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:130,"leprechaun,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:131,"leprechaun,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:132,"small mimic,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:133,"small mimic,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:134,"large mimic,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:135,"large mimic,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:136,"giant mimic,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:137,"giant mimic,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:138,"wood nymph,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:139,"wood nymph,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:140,"water nymph,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:141,"water nymph,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:142,"mountain nymph,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:143,"mountain nymph,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:144,"goblin,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:145,"goblin,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:146,"hobgoblin,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:147,"hobgoblin,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:148,"orc,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:149,"orc,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:150,"hill orc,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:151,"hill orc,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:152,"Mordor orc,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:153,"Mordor orc,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:154,"Uruk-hai,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:155,"Uruk-hai,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:156,"orc shaman,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:157,"orc shaman,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:158,"orc-captain,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:159,"orc-captain,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:160,"rock piercer,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:161,"rock piercer,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:162,"iron piercer,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:163,"iron piercer,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:164,"glass piercer,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:165,"glass piercer,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:166,"rothe,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:167,"rothe,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:168,"mumak,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:169,"mumak,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:170,"leocrotta,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:171,"leocrotta,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:172,"wumpus,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:173,"wumpus,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:174,"titanothere,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:175,"titanothere,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:176,"baluchitherium,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:177,"baluchitherium,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:178,"mastodon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:179,"mastodon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:180,"sewer rat,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:181,"sewer rat,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:182,"giant rat,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:183,"giant rat,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:184,"rabid rat,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:185,"rabid rat,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:186,"wererat,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:187,"wererat,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:188,"rock mole,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:189,"rock mole,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:190,"woodchuck,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:191,"woodchuck,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:192,"cave spider,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:193,"cave spider,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:194,"centipede,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:195,"centipede,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:196,"giant spider,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:197,"giant spider,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:198,"scorpion,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:199,"scorpion,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:200,"lurker above,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:201,"lurker above,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:202,"trapper,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:203,"trapper,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:204,"pony,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:205,"pony,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:206,"white unicorn,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:207,"white unicorn,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:208,"gray unicorn,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:209,"gray unicorn,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:210,"black unicorn,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:211,"black unicorn,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:212,"horse,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:213,"horse,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:214,"warhorse,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:215,"warhorse,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:216,"fog cloud,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:217,"fog cloud,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:218,"dust vortex,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:219,"dust vortex,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:220,"ice vortex,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:221,"ice vortex,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:222,"energy vortex,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:223,"energy vortex,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:224,"steam vortex,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:225,"steam vortex,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:226,"fire vortex,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:227,"fire vortex,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:228,"baby long worm,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:229,"baby long worm,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:230,"baby purple worm,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:231,"baby purple worm,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:232,"long worm,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:233,"long worm,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:234,"purple worm,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:235,"purple worm,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:236,"grid bug,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:237,"grid bug,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:238,"xan,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:239,"xan,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:240,"yellow light,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:241,"yellow light,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:242,"black light,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:243,"black light,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:244,"zruty,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:245,"zruty,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:246,"couatl,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:247,"couatl,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:248,"Aleax,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:249,"Aleax,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:250,"Angel,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:251,"Angel,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:252,"ki-rin,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:253,"ki-rin,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:254,"Archon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:255,"Archon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:256,"bat,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:257,"bat,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:258,"giant bat,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:259,"giant bat,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:260,"raven,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:261,"raven,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:262,"vampire bat,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:263,"vampire bat,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:264,"plains centaur,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:265,"plains centaur,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:266,"forest centaur,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:267,"forest centaur,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:268,"mountain centaur,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:269,"mountain centaur,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:270,"baby gray dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:271,"baby gray dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:272,"baby gold dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:273,"baby gold dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:274,"baby silver dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:275,"baby silver dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:276,"baby shimmering dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:277,"baby shimmering dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:278,"baby red dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:279,"baby red dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:280,"baby white dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:281,"baby white dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:282,"baby orange dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:283,"baby orange dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:284,"baby black dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:285,"baby black dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:286,"baby blue dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:287,"baby blue dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:288,"baby green dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:289,"baby green dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:290,"baby yellow dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:291,"baby yellow dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:292,"gray dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:293,"gray dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:294,"gold dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:295,"gold dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:296,"silver dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:297,"silver dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:298,"shimmering dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:299,"shimmering dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:300,"red dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:301,"red dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:302,"white dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:303,"white dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:304,"orange dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:305,"orange dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:306,"black dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:307,"black dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:308,"blue dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:309,"blue dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:310,"green dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:311,"green dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:312,"yellow dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:313,"yellow dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:314,"stalker,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:315,"stalker,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:316,"air elemental,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:317,"air elemental,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:318,"fire elemental,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:319,"fire elemental,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:320,"earth elemental,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:321,"earth elemental,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:322,"water elemental,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:323,"water elemental,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:324,"lichen,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:325,"lichen,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:326,"brown mold,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:327,"brown mold,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:328,"yellow mold,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:329,"yellow mold,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:330,"green mold,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:331,"green mold,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:332,"red mold,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:333,"red mold,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:334,"shrieker,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:335,"shrieker,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:336,"violet fungus,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:337,"violet fungus,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:338,"gnome,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:339,"gnome,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:340,"gnome leader,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:341,"gnome leader,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:342,"gnomish wizard,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:343,"gnomish wizard,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:344,"gnome ruler,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:345,"gnome ruler,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:346,"giant,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:347,"giant,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:348,"stone giant,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:349,"stone giant,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:350,"hill giant,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:351,"hill giant,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:352,"fire giant,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:353,"fire giant,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:354,"frost giant,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:355,"frost giant,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:356,"ettin,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:357,"ettin,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:358,"storm giant,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:359,"storm giant,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:360,"titan,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:361,"titan,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:362,"minotaur,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:363,"minotaur,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:364,"jabberwock,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:365,"jabberwock,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:366,"vorpal jabberwock,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:367,"vorpal jabberwock,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:368,"Keystone Kop,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:369,"Keystone Kop,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:370,"Kop Sergeant,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:371,"Kop Sergeant,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:372,"Kop Lieutenant,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:373,"Kop Lieutenant,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:374,"Kop Kaptain,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:375,"Kop Kaptain,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:376,"lich,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:377,"lich,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:378,"demilich,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:379,"demilich,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:380,"master lich,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:381,"master lich,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:382,"arch-lich,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:383,"arch-lich,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:384,"kobold mummy,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:385,"kobold mummy,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:386,"gnome mummy,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:387,"gnome mummy,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:388,"orc mummy,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:389,"orc mummy,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:390,"dwarf mummy,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:391,"dwarf mummy,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:392,"elf mummy,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:393,"elf mummy,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:394,"human mummy,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:395,"human mummy,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:396,"ettin mummy,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:397,"ettin mummy,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:398,"giant mummy,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:399,"giant mummy,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:400,"red naga hatchling,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:401,"red naga hatchling,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:402,"black naga hatchling,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:403,"black naga hatchling,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:404,"golden naga hatchling,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:405,"golden naga hatchling,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:406,"guardian naga hatchling,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:407,"guardian naga hatchling,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:408,"red naga,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:409,"red naga,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:410,"black naga,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:411,"black naga,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:412,"golden naga,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:413,"golden naga,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:414,"guardian naga,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:415,"guardian naga,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:416,"ogre,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:417,"ogre,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:418,"ogre leader,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:419,"ogre leader,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:420,"ogre tyrant,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:421,"ogre tyrant,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:422,"gray ooze,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:423,"gray ooze,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:424,"brown pudding,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:425,"brown pudding,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:426,"green slime,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:427,"green slime,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:428,"black pudding,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:429,"black pudding,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:430,"quantum mechanic,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:431,"quantum mechanic,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:432,"genetic engineer,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:433,"genetic engineer,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:434,"rust monster,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:435,"rust monster,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:436,"disenchanter,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:437,"disenchanter,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:438,"garter snake,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:439,"garter snake,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:440,"snake,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:441,"snake,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:442,"water moccasin,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:443,"water moccasin,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:444,"python,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:445,"python,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:446,"pit viper,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:447,"pit viper,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:448,"cobra,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:449,"cobra,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:450,"troll,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:451,"troll,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:452,"ice troll,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:453,"ice troll,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:454,"rock troll,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:455,"rock troll,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:456,"water troll,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:457,"water troll,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:458,"Olog-hai,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:459,"Olog-hai,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:460,"umber hulk,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:461,"umber hulk,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:462,"vampire,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:463,"vampire,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:464,"vampire leader,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:465,"vampire leader,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:466,"vampire mage,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:467,"vampire mage,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:468,"Vlad the Impaler,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:469,"Vlad the Impaler,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:470,"barrow wight,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:471,"barrow wight,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:472,"wraith,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:473,"wraith,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:474,"Nazgul,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:475,"Nazgul,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:476,"xorn,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:477,"xorn,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:478,"monkey,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:479,"monkey,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:480,"ape,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:481,"ape,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:482,"owlbear,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:483,"owlbear,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:484,"yeti,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:485,"yeti,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:486,"carnivorous ape,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:487,"carnivorous ape,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:488,"sasquatch,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:489,"sasquatch,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:490,"kobold zombie,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:491,"kobold zombie,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:492,"gnome zombie,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:493,"gnome zombie,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:494,"orc zombie,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:495,"orc zombie,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:496,"dwarf zombie,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:497,"dwarf zombie,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:498,"elf zombie,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:499,"elf zombie,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:500,"human zombie,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:501,"human zombie,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:502,"ettin zombie,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:503,"ettin zombie,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:504,"ghoul,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:505,"ghoul,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:506,"giant zombie,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:507,"giant zombie,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:508,"skeleton,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:509,"skeleton,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:510,"straw golem,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:511,"straw golem,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:512,"paper golem,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:513,"paper golem,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:514,"rope golem,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:515,"rope golem,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:516,"gold golem,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:517,"gold golem,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:518,"leather golem,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:519,"leather golem,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:520,"wood golem,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:521,"wood golem,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:522,"flesh golem,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:523,"flesh golem,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:524,"clay golem,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:525,"clay golem,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:526,"stone golem,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:527,"stone golem,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:528,"glass golem,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:529,"glass golem,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:530,"iron golem,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:531,"iron golem,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:532,"human,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:533,"human,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:534,"wererat,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:535,"wererat,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:536,"werejackal,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:537,"werejackal,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:538,"werewolf,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:539,"werewolf,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:540,"elf,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:541,"elf,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:542,"Woodland-elf,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:543,"Woodland-elf,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:544,"Green-elf,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:545,"Green-elf,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:546,"Grey-elf,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:547,"Grey-elf,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:548,"elf-noble,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:549,"elf-noble,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:550,"elven monarch,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:551,"elven monarch,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:552,"doppelganger,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:553,"doppelganger,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:554,"shopkeeper,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:555,"shopkeeper,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:556,"guard,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:557,"guard,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:558,"prisoner,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:559,"prisoner,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:560,"Oracle,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:561,"Oracle,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:562,"aligned cleric,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:563,"aligned cleric,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:564,"high cleric,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:565,"high cleric,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:566,"soldier,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:567,"soldier,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:568,"sergeant,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:569,"sergeant,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:570,"nurse,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:571,"nurse,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:572,"lieutenant,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:573,"lieutenant,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:574,"captain,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:575,"captain,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:576,"watchman,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:577,"watchman,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:578,"watch captain,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:579,"watch captain,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:580,"Medusa,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:581,"Medusa,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:582,"Wizard of Yendor,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:583,"Wizard of Yendor,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:584,"Croesus,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:585,"Croesus,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:586,"Charon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:587,"Charon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:588,"ghost,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:589,"ghost,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:590,"shade,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:591,"shade,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:592,"water demon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:593,"water demon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:594,"amorous demon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:595,"amorous demon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:596,"horned devil,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:597,"horned devil,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:598,"erinys,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:599,"erinys,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:600,"barbed devil,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:601,"barbed devil,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:602,"marilith,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:603,"marilith,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:604,"vrock,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:605,"vrock,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:606,"hezrou,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:607,"hezrou,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:608,"bone devil,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:609,"bone devil,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:610,"ice devil,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:611,"ice devil,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:612,"nalfeshnee,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:613,"nalfeshnee,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:614,"pit fiend,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:615,"pit fiend,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:616,"sandestin,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:617,"sandestin,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:618,"balrog,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:619,"balrog,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:620,"Juiblex,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:621,"Juiblex,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:622,"Yeenoghu,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:623,"Yeenoghu,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:624,"Orcus,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:625,"Orcus,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:626,"Geryon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:627,"Geryon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:628,"Dispater,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:629,"Dispater,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:630,"Baalzebub,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:631,"Baalzebub,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:632,"Asmodeus,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:633,"Asmodeus,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:634,"Demogorgon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:635,"Demogorgon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:636,"Death,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:637,"Death,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:638,"Pestilence,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:639,"Pestilence,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:640,"Famine,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:641,"Famine,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:642,"mail daemon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:643,"mail daemon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:644,"djinni,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:645,"djinni,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:646,"jellyfish,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:647,"jellyfish,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:648,"piranha,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:649,"piranha,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:650,"shark,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:651,"shark,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:652,"giant eel,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:653,"giant eel,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:654,"electric eel,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:655,"electric eel,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:656,"kraken,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:657,"kraken,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:658,"newt,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:659,"newt,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:660,"gecko,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:661,"gecko,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:662,"iguana,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:663,"iguana,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:664,"baby crocodile,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:665,"baby crocodile,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:666,"lizard,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:667,"lizard,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:668,"chameleon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:669,"chameleon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:670,"crocodile,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:671,"crocodile,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:672,"salamander,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:673,"salamander,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:674,"long worm tail,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:675,"long worm tail,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:676,"archeologist,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:677,"archeologist,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:678,"barbarian,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:679,"barbarian,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:680,"cave dweller,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:681,"cave dweller,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:682,"healer,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:683,"healer,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:684,"knight,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:685,"knight,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:686,"monk,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:687,"monk,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:688,"cleric,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:689,"cleric,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:690,"ranger,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:691,"ranger,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:692,"rogue,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:693,"rogue,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:694,"samurai,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:695,"samurai,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:696,"tourist,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:697,"tourist,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:698,"valkyrie,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:699,"valkyrie,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:700,"wizard,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:701,"wizard,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:702,"Lord Carnarvon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:703,"Lord Carnarvon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:704,"Pelias,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:705,"Pelias,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:706,"Shaman Karnov,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:707,"Shaman Karnov,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:708,"Earendil,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:709,"Earendil,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:710,"Elwing,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:711,"Elwing,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:712,"Hippocrates,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:713,"Hippocrates,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:714,"King Arthur,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:715,"King Arthur,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:716,"Grand Master,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:717,"Grand Master,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:718,"Arch Priest,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:719,"Arch Priest,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:720,"Orion,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:721,"Orion,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:722,"Master of Thieves,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:723,"Master of Thieves,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:724,"Lord Sato,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:725,"Lord Sato,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:726,"Twoflower,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:727,"Twoflower,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:728,"Norn,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:729,"Norn,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:730,"Neferet the Green,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:731,"Neferet the Green,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:732,"Minion of Huhetotl,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:733,"Minion of Huhetotl,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:734,"Thoth Amon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:735,"Thoth Amon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:736,"Chromatic Dragon,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:737,"Chromatic Dragon,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:738,"Goblin King,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:739,"Goblin King,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:740,"Cyclops,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:741,"Cyclops,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:742,"Ixoth,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:743,"Ixoth,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:744,"Master Kaen,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:745,"Master Kaen,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:746,"Nalzok,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:747,"Nalzok,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:748,"Scorpius,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:749,"Scorpius,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:750,"Master Assassin,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:751,"Master Assassin,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:752,"Ashikaga Takauji,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:753,"Ashikaga Takauji,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:754,"Lord Surtur,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:755,"Lord Surtur,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:756,"Dark One,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:757,"Dark One,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:758,"student,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:759,"student,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:760,"chieftain,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:761,"chieftain,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:762,"neanderthal,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:763,"neanderthal,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:764,"High-elf,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:765,"High-elf,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:766,"attendant,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:767,"attendant,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:768,"page,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:769,"page,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:770,"abbot,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:771,"abbot,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:772,"acolyte,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:773,"acolyte,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:774,"hunter,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:775,"hunter,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:776,"thug,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:777,"thug,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:778,"ninja,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:779,"ninja,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:780,"roshi,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:781,"roshi,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:782,"guide,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:783,"guide,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:784,"warrior,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:785,"warrior,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:786,"apprentice,male",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:787,"apprentice,female",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+monsters:788,"invisible monster, nogender",monsters,upstream/NetHack/win/share/monsters.txt,,,reference only
+objects:0,strange object,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:18,arrow,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:19,runed arrow / elven arrow,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:20,crude arrow / orcish arrow,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:21,silver arrow,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:22,bamboo arrow / ya,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:23,crossbow bolt,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:24,dart,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:25,throwing star / shuriken,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:26,boomerang,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:27,spear,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:28,runed spear / elven spear,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:29,crude spear / orcish spear,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:30,stout spear / dwarvish spear,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:31,silver spear,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:32,throwing spear / javelin,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:33,trident,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:34,dagger,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:35,runed dagger / elven dagger,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:36,crude dagger / orcish dagger,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:37,silver dagger,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:38,athame,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:39,scalpel,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:40,knife,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:41,stiletto,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:42,worm tooth,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:43,crysknife,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:44,axe,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:45,double-headed axe / battle-axe,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:46,short sword,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:47,runed short sword / elven short sword,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:48,crude short sword / orcish short sword,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:49,broad short sword / dwarvish short sword,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:50,curved sword / scimitar,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:51,silver saber,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:52,broadsword,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:53,runed broadsword / elven broadsword,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:54,long sword,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:55,two-handed sword,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:56,samurai sword / katana,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:57,long samurai sword / tsurugi,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:58,runed broadsword / runesword,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:59,vulgar polearm / partisan,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:60,hilted polearm / ranseur,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:61,forked polearm / spetum,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:62,single-edged polearm / glaive,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:63,angled poleaxe / halberd,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:64,long poleaxe / bardiche,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:65,pole cleaver / voulge,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:66,pole sickle / fauchard,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:67,pruning hook / guisarme,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:68,hooked polearm / bill-guisarme,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:69,pronged polearm / lucern hammer,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:70,beaked polearm / bec de corbin,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:71,broad pick / dwarvish mattock,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:72,lance,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:73,mace,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:74,silver mace,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:75,morning star,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:76,war hammer,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:77,club,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:78,rubber hose,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:79,staff / quarterstaff,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:80,thonged club / aklys,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:81,flail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:82,bullwhip,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:83,bow,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:84,runed bow / elven bow,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:85,crude bow / orcish bow,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:86,long bow / yumi,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:87,sling,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:88,crossbow,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:89,leather hat / elven leather helm,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:90,iron skull cap / orcish helm,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:91,hard hat / dwarvish iron helm,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:92,fedora,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:93,conical hat / cornuthaum,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:94,conical hat / dunce cap,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:95,dented pot,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:96,crystal helmet / helm of brilliance,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:97,plumed helmet / helmet,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:98,etched helmet / helm of caution,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:99,crested helmet / helm of opposite alignment,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:100,visored helmet / helm of telepathy,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:101,gray dragon scale mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:102,gold dragon scale mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:103,silver dragon scale mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:104,shimmering dragon scale mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:105,red dragon scale mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:106,white dragon scale mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:107,orange dragon scale mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:108,black dragon scale mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:109,blue dragon scale mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:110,green dragon scale mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:111,yellow dragon scale mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:112,gray dragon scales,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:113,gold dragon scales,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:114,silver dragon scales,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:115,shimmering dragon scales,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:116,red dragon scales,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:117,white dragon scales,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:118,orange dragon scales,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:119,black dragon scales,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:120,blue dragon scales,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:121,green dragon scales,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:122,yellow dragon scales,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:123,plate mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:124,crystal plate mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:125,bronze plate mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:126,splint mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:127,banded mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:128,dwarvish mithril-coat,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:129,elven mithril-coat,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:130,chain mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:131,crude chain mail / orcish chain mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:132,scale mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:133,studded leather armor,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:134,ring mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:135,crude ring mail / orcish ring mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:136,leather armor,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:137,leather jacket,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:138,Hawaiian shirt,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:139,T-shirt,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:140,mummy wrapping,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:141,faded pall / elven cloak,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:142,coarse mantelet / orcish cloak,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:143,hooded cloak / dwarvish cloak,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:144,slippery cloak / oilskin cloak,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:145,robe,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:146,apron / alchemy smock,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:147,leather cloak,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:148,tattered cape / cloak of protection,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:149,opera cloak / cloak of invisibility,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:150,ornamental cope / cloak of magic resistance,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:151,piece of cloth / cloak of displacement,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:152,wooden shield / small shield,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:153,wooden shield / shield of drain resistance,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:154,wooden shield / shield of shock resistance,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:155,blue and green shield / elven shield,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:156,white-handed shield / Uruk-hai shield,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:157,red-eyed shield / orcish shield,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:158,large shield,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:159,large round shield / dwarvish roundshield,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:160,polished silver shield / shield of reflection,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:161,old gloves / leather gloves,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:162,padded gloves / gauntlets of fumbling,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:163,riding gloves / gauntlets of power,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:164,fencing gloves / gauntlets of dexterity,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:165,walking shoes / low boots,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:166,hard shoes / iron shoes,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:167,jackboots / high boots,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:168,combat boots / speed boots,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:169,jungle boots / water walking boots,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:170,hiking boots / jumping boots,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:171,mud boots / elven boots,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:172,buckled boots / kicking boots,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:173,riding boots / fumble boots,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:174,snow boots / levitation boots,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:175,wooden / adornment,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:176,granite / gain strength,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:177,opal / gain constitution,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:178,clay / increase accuracy,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:179,coral / increase damage,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:180,black onyx / protection,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:181,moonstone / regeneration,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:182,tiger eye / searching,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:183,jade / stealth,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:184,bronze / sustain ability,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:185,agate / levitation,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:186,topaz / hunger,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:187,sapphire / aggravate monster,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:188,ruby / conflict,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:189,diamond / warning,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:190,pearl / poison resistance,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:191,iron / fire resistance,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:192,brass / cold resistance,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:193,copper / shock resistance,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:194,twisted / free action,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:195,steel / slow digestion,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:196,silver / teleportation,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:197,gold / teleport control,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:198,ivory / polymorph,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:199,emerald / polymorph control,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:200,wire / invisibility,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:201,engagement / see invisible,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:202,shiny / protection from shape changers,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:203,circular / amulet of ESP,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:204,spherical / amulet of life saving,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:205,oval / amulet of strangulation,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:206,triangular / amulet of restful sleep,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:207,pyramidal / amulet versus poison,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:208,square / amulet of change,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:209,concave / amulet of unchanging,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:210,hexagonal / amulet of reflection,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:211,octagonal / amulet of magical breathing,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:212,perforated / amulet of guarding,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:213,cubical / amulet of flying,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:214,Amulet of Yendor / cheap plastic imitation of the Amulet of Yendor,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:215,Amulet of Yendor / Amulet of Yendor,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:216,large box,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:217,chest,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:218,ice box,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:219,bag / sack,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:220,bag / oilskin sack,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:221,bag / bag of holding,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:222,bag / bag of tricks,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:223,key / skeleton key,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:224,lock pick,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:225,credit card,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:226,candle / tallow candle,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:227,candle / wax candle,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:228,brass lantern,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:229,lamp / oil lamp,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:230,lamp / magic lamp,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:231,expensive camera,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:232,looking glass / mirror,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:233,glass orb / crystal ball,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:234,lenses,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:235,blindfold,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:236,towel,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:237,saddle,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:238,leash,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:239,stethoscope,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:240,tinning kit,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:241,tin opener,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:242,can of grease,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:243,figurine,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:244,magic marker,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:245,land mine,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:246,beartrap,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:247,whistle / tin whistle,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:248,whistle / magic whistle,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:249,flute / wooden flute,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:250,flute / magic flute,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:251,horn / tooled horn,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:252,horn / frost horn,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:253,horn / fire horn,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:254,horn / horn of plenty,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:255,harp / wooden harp,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:256,harp / magic harp,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:257,bell,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:258,bugle,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:259,drum / leather drum,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:260,drum / drum of earthquake,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:261,pick-axe,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:262,grappling hook,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:263,unicorn horn,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:264,candelabrum / Candelabrum of Invocation,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:265,silver bell / Bell of Opening,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:266,tripe ration,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:267,corpse,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:268,egg,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:269,meatball,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:270,meat stick,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:271,enormous meatball,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:272,meat ring,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:273,glob of gray ooze,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:274,glob of brown pudding,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:275,glob of green slime,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:276,glob of black pudding,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:277,kelp frond,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:278,eucalyptus leaf,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:279,apple,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:280,orange,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:281,pear,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:282,melon,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:283,banana,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:284,carrot,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:285,sprig of wolfsbane,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:286,clove of garlic,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:287,slime mold,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:288,lump of royal jelly,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:289,cream pie,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:290,candy bar,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:291,fortune cookie,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:292,pancake,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:293,lembas wafer,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:294,cram ration,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:295,food ration,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:296,K-ration,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:297,C-ration,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:298,tin,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:299,ruby / gain ability,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:300,pink / restore ability,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:301,orange / confusion,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:302,yellow / blindness,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:303,emerald / paralysis,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:304,dark green / speed,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:305,cyan / levitation,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:306,sky blue / hallucination,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:307,brilliant blue / invisibility,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:308,magenta / see invisible,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:309,purple-red / healing,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:310,puce / extra healing,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:311,milky / gain level,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:312,swirly / enlightenment,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:313,bubbly / monster detection,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:314,smoky / object detection,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:315,cloudy / gain energy,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:316,effervescent / sleeping,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:317,black / full healing,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:318,golden / polymorph,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:319,brown / booze,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:320,fizzy / sickness,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:321,dark / fruit juice,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:322,white / acid,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:323,murky / oil,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:324,clear / water,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:325,ZELGO MER / enchant armor,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:326,JUYED AWK YACC / destroy armor,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:327,NR 9 / confuse monster,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:328,XIXAXA XOXAXA XUXAXA / scare monster,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:329,PRATYAVAYAH / remove curse,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:330,DAIYEN FOOELS / enchant weapon,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:331,LEP GEX VEN ZEA / create monster,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:332,PRIRUTSENIE / taming,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:333,ELBIB YLOH / genocide,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:334,VERR YED HORRE / light,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:335,VENZAR BORGAVVE / teleportation,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:336,THARR / gold detection,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:337,YUM YUM / food detection,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:338,KERNOD WEL / identify,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:339,ELAM EBOW / magic mapping,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:340,DUAM XNAHT / amnesia,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:341,ANDOVA BEGARIN / fire,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:342,KIRJE / earth,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:343,VE FORBRYDERNE / punishment,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:344,HACKEM MUCHE / charging,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:345,VELOX NEB / stinking cloud,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:346,FOOBIE BLETCH,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:347,TEMOV,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:348,GARVEN DEH,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:349,READ ME,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:350,ETAOIN SHRDLU,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:351,LOREM IPSUM,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:352,FNORD,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:353,KO BATE,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:354,ABRA KA DABRA,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:355,ASHPD SODALG,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:356,ZLORFIK,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:357,GNIK SISI VLE,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:358,HAPAX LEGOMENON,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:359,EIRIS SAZUN IDISI,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:360,PHOL ENDE WODAN,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:361,GHOTI,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:362,MAPIRO MAHAMA DIROMAT,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:363,VAS CORP BET MANI,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:364,XOR OTA,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:365,STRC PRST SKRZ KRK,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:366,stamped / mail,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:367,unlabeled / blank paper,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:368,parchment / dig,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:369,vellum / magic missile,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:370,ragged / fireball,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:371,dog eared / cone of cold,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:372,mottled / sleep,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:373,stained / finger of death,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:374,cloth / light,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:375,leathery / detect monsters,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:376,white / healing,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:377,pink / knock,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:378,red / force bolt,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:379,orange / confuse monster,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:380,yellow / cure blindness,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:381,velvet / drain life,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:382,light green / slow monster,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:383,dark green / wizard lock,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:384,turquoise / create monster,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:385,cyan / detect food,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:386,light blue / cause fear,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:387,dark blue / clairvoyance,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:388,indigo / cure sickness,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:389,magenta / charm monster,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:390,purple / haste self,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:391,violet / detect unseen,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:392,tan / levitation,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:393,plaid / extra healing,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:394,light brown / restore ability,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:395,dark brown / invisibility,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:396,gray / detect treasure,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:397,wrinkled / remove curse,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:398,dusty / magic mapping,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:399,bronze / identify,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:400,copper / turn undead,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:401,silver / polymorph,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:402,gold / teleport away,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:403,glittering / create familiar,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:404,shining / cancellation,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:405,dull / protection,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:406,thin / jumping,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:407,thick / stone to flesh,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:408,checkered / chain lightning,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:409,plain / blank paper,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:410,paperback / novel,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:411,papyrus / Book of the Dead,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:412,glass / light,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:413,balsa / secret door detection,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:414,crystal / enlightenment,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:415,maple / create monster,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:416,pine / wishing,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:417,redwood / stasis,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:418,oak / nothing,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:419,ebony / striking,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:420,marble / make invisible,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:421,tin / slow monster,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:422,brass / speed monster,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:423,copper / undead turning,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:424,silver / polymorph,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:425,platinum / cancellation,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:426,iridium / teleportation,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:427,zinc / opening,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:428,aluminum / locking,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:429,uranium / probing,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:430,iron / digging,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:431,steel / magic missile,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:432,hexagonal / fire,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:433,short / cold,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:434,runed / sleep,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:435,long / death,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:436,curved / lightning,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:437,forked,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:438,spiked,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:439,jeweled,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:440,gold piece,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:441,white / dilithium crystal,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:442,white / diamond,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:443,red / ruby,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:444,orange / jacinth,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:445,blue / sapphire,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:446,black / black opal,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:447,green / emerald,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:448,green / turquoise,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:449,yellow / citrine,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:450,green / aquamarine,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:451,yellowish brown / amber,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:452,yellowish brown / topaz,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:453,black / jet,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:454,white / opal,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:455,yellow / chrysoberyl,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:456,red / garnet,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:457,violet / amethyst,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:458,red / jasper,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:459,violet / fluorite,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:460,black / obsidian,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:461,orange / agate,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:462,green / jade,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:463,white / worthless piece of white glass,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:464,blue / worthless piece of blue glass,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:465,red / worthless piece of red glass,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:466,yellowish brown / worthless piece of yellowish brown glass,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:467,orange / worthless piece of orange glass,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:468,yellow / worthless piece of yellow glass,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:469,black / worthless piece of black glass,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:470,green / worthless piece of green glass,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:471,violet / worthless piece of violet glass,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:472,gray / luckstone,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:473,gray / loadstone,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:474,gray / touchstone,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:475,gray / flint,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:476,rock,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:477,boulder,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:478,statue,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:479,heavy iron ball,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:480,iron chain,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:481,splash of venom / splash of blinding venom,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+objects:482,splash of venom / splash of acid venom,objects,upstream/NetHack/win/share/objects.txt,,,reference only
+other:0,stone,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:1,main walls vertical,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:2,main walls horizontal,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:3,main walls tlcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:4,main walls trcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:5,main walls blcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:6,main walls brcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:7,main walls cross wall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:8,main walls tuwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:9,main walls tdwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:10,main walls tlwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:11,main walls trwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:12,no door,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:13,vertical open door,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:14,horizontal open door,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:15,vertical closed door,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:16,horizontal closed door,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:17,iron bars,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:18,tree,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:19,floor of a room,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:20,dark part of a room,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:21,engraving in a room,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:22,corridor,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:23,lit corridor,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:24,engraving in a corridor,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:25,staircase up,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:26,staircase down,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:27,ladder up,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:28,ladder down,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:29,branch staircase up,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:30,branch staircase down,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:31,branch ladder up,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:32,branch ladder down,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:33,unaligned altar,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:34,chaotic altar,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:35,neutral altar,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:36,lawful altar,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:37,other altar,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:38,grave,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:39,throne,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:40,sink,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:41,fountain,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:42,pool,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:43,ice,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:44,molten lava,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:45,wall of lava,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:46,vertical open drawbridge,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:47,horizontal open drawbridge,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:48,vertical closed drawbridge,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:49,horizontal closed drawbridge,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:50,air,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:51,cloud,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:52,water,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:53,arrow trap,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:54,dart trap,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:55,falling rock trap,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:56,squeaky board,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:57,bear trap,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:58,land mine,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:59,rolling boulder trap,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:60,sleeping gas trap,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:61,rust trap,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:62,fire trap,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:63,pit,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:64,spiked pit,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:65,hole,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:66,trap door,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:67,teleportation trap,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:68,level teleporter,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:69,magic portal,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:70,web,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:71,statue trap,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:72,magic trap,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:73,anti-magic field,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:74,polymorph trap,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:75,vibrating square,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:76,trapped door,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:77,trapped chest,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:78,missile zap 1 0,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:79,missile zap 1 1,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:80,missile zap 1 2,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:81,missile zap 1 3,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:82,fire zap 2 0,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:83,fire zap 2 1,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:84,fire zap 2 2,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:85,fire zap 2 3,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:86,frost zap 3 0,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:87,frost zap 3 1,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:88,frost zap 3 2,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:89,frost zap 3 3,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:90,sleep zap 4 0,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:91,sleep zap 4 1,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:92,sleep zap 4 2,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:93,sleep zap 4 3,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:94,death zap 5 0,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:95,death zap 5 1,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:96,death zap 5 2,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:97,death zap 5 3,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:98,lightning zap 6 0,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:99,lightning zap 6 1,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:100,lightning zap 6 2,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:101,lightning zap 6 3,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:102,poison gas zap 7 0,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:103,poison gas zap 7 1,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:104,poison gas zap 7 2,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:105,poison gas zap 7 3,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:106,acid zap 8 0,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:107,acid zap 8 1,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:108,acid zap 8 2,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:109,acid zap 8 3,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:110,dig beam,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:111,flash beam,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:112,boom left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:113,boom right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:114,shield1,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:115,shield2,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:116,shield3,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:117,shield4,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:118,poison cloud,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:119,valid position,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:120,swallow top left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:121,swallow top center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:122,swallow top right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:123,swallow middle left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:124,swallow middle right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:125,swallow bottom left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:126,swallow bottom center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:127,swallow bottom right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:128,explosion dark top left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:129,explosion dark top center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:130,explosion dark top right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:131,explosion dark middle left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:132,explosion dark middle center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:133,explosion dark middle right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:134,explosion dark bottom left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:135,explosion dark bottom center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:136,explosion dark bottom right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:137,explosion noxious top left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:138,explosion noxious top center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:139,explosion noxious top right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:140,explosion noxious middle left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:141,explosion noxious middle center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:142,explosion noxious middle right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:143,explosion noxious bottom left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:144,explosion noxious bottom center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:145,explosion noxious bottom right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:146,explosion muddy top left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:147,explosion muddy top center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:148,explosion muddy top right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:149,explosion muddy middle left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:150,explosion muddy middle center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:151,explosion muddy middle right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:152,explosion muddy bottom left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:153,explosion muddy bottom center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:154,explosion muddy bottom right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:155,explosion wet top left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:156,explosion wet top center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:157,explosion wet top right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:158,explosion wet middle left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:159,explosion wet middle center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:160,explosion wet middle right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:161,explosion wet bottom left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:162,explosion wet bottom center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:163,explosion wet bottom right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:164,explosion magical top left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:165,explosion magical top center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:166,explosion magical top right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:167,explosion magical middle left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:168,explosion magical middle center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:169,explosion magical middle right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:170,explosion magical bottom left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:171,explosion magical bottom center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:172,explosion magical bottom right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:173,explosion fiery top left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:174,explosion fiery top center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:175,explosion fiery top right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:176,explosion fiery middle left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:177,explosion fiery middle center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:178,explosion fiery middle right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:179,explosion fiery bottom left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:180,explosion fiery bottom center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:181,explosion fiery bottom right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:182,explosion frosty top left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:183,explosion frosty top center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:184,explosion frosty top right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:185,explosion frosty middle left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:186,explosion frosty middle center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:187,explosion frosty middle right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:188,explosion frosty bottom left,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:189,explosion frosty bottom center,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:190,explosion frosty bottom right,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:191,warning 0,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:192,warning 1,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:193,warning 2,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:194,warning 3,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:195,warning 4,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:196,warning 5,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:197,unexplored,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:198,nothing,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:199,mines walls vertical,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:200,mines walls horizontal,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:201,mines walls tlcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:202,mines walls trcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:203,mines walls blcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:204,mines walls brcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:205,mines walls cross wall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:206,mines walls tuwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:207,mines walls tdwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:208,mines walls tlwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:209,mines walls trwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:210,gehennom walls vertical,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:211,gehennom walls horizontal,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:212,gehennom walls tlcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:213,gehennom walls trcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:214,gehennom walls blcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:215,gehennom walls brcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:216,gehennom walls cross wall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:217,gehennom walls tuwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:218,gehennom walls tdwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:219,gehennom walls tlwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:220,gehennom walls trwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:221,knox walls vertical,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:222,knox walls horizontal,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:223,knox walls tlcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:224,knox walls trcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:225,knox walls blcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:226,knox walls brcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:227,knox walls cross wall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:228,knox walls tuwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:229,knox walls tdwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:230,knox walls tlwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:231,knox walls trwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:232,sokoban walls vertical,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:233,sokoban walls horizontal,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:234,sokoban walls tlcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:235,sokoban walls trcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:236,sokoban walls blcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:237,sokoban walls brcorn,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:238,sokoban walls cross wall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:239,sokoban walls tuwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:240,sokoban walls tdwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:241,sokoban walls tlwall,other,upstream/NetHack/win/share/other.txt,,,reference only
+other:242,sokoban walls trwall,other,upstream/NetHack/win/share/other.txt,,,reference only

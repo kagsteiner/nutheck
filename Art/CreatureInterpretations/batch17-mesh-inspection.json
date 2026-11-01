@@ -1,0 +1,71 @@
+{
+  "dwarf_mummy": {
+    "parts": 33,
+    "triangles": 117636,
+    "bounds_m": [
+      [
+        -0.3191346526145935,
+        -0.1697235107421875,
+        0.0010000020265579224
+      ],
+      [
+        0.3191346824169159,
+        0.12879341840744019,
+        1.1039999723434448
+      ]
+    ],
+    "paint_valid": true,
+    "paired_eyes": true,
+    "eye_surface_distances_m": [
+      0.0023932880721986294,
+      0.0023931406904011965
+    ],
+    "wrap_count": 11,
+    "wrap_max_surface_gaps_m": {
+      "dwarf_mummy_forearm_linen": 0.004499996546655893,
+      "dwarf_mummy_forearm_linen.001": 0.004499999340623617,
+      "dwarf_mummy_forehead_linen": 0.00449843006208539,
+      "dwarf_mummy_lower_leg_linen": 0.004500006791204214,
+      "dwarf_mummy_lower_leg_linen.001": 0.004500012844800949,
+      "dwarf_mummy_red_linen_accent": 0.004500006791204214,
+      "dwarf_mummy_torso_linen": 0.004499917384237051,
+      "dwarf_mummy_upper_arm_linen": 0.004500026814639568,
+      "dwarf_mummy_upper_arm_linen.001": 0.004499912261962891,
+      "dwarf_mummy_upper_leg_linen": 0.0045000119134783745,
+      "dwarf_mummy_upper_leg_linen.001": 0.0045000105164945126
+    },
+    "body_vertex_hash": "43761b09cebe90ffe02c42db7127155859983048ce5ee36376a74513bd5d99ef",
+    "pointed_hat_retained": true,
+    "beard_present": true
+  },
+  "dwarf_zombie": {
+    "parts": 27,
+    "triangles": 154348,
+    "bounds_m": [
+      [
+        -0.3191346526145935,
+        -0.1697235107421875,
+        0.0010000020265579224
+      ],
+      [
+        0.3191346824169159,
+        0.13699999451637268,
+        1.1039999723434448
+      ]
+    ],
+    "paint_valid": true,
+    "paired_eyes": true,
+    "eye_surface_distances_m": [
+      0.0023932880721986294,
+      0.0023931406904011965
+    ],
+    "wrap_count": 0,
+    "wrap_max_surface_gaps_m": {},
+    "body_vertex_hash": "43761b09cebe90ffe02c42db7127155859983048ce5ee36376a74513bd5d99ef",
+    "pointed_hat_retained": true,
+    "beard_present": true
+  },
+  "previous_56_exports_unchanged": true,
+  "exact_ancestry_shape_reuse": true,
+  "source_sex_tiles_identical": true
+}

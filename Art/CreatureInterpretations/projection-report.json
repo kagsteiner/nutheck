@@ -1,0 +1,179 @@
+[
+  {
+    "key": "giant_ant",
+    "bounds_m": [
+      [
+        -0.5617203712463379,
+        -0.4365644156932831,
+        0.022868068888783455
+      ],
+      [
+        0.489999920129776,
+        0.4365644156932831,
+        0.43875718116760254
+      ]
+    ],
+    "best_projection": {
+      "yaw": -115,
+      "elevation": 25,
+      "silhouette_iou": 0.4043,
+      "file": "giant_ant-pixel--115-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.4043,
+        "file": "giant_ant-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.3333,
+        "file": "giant_ant-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.32,
+        "file": "giant_ant-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.3333,
+        "file": "giant_ant-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.2353,
+        "file": "giant_ant-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.2766,
+        "file": "giant_ant-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "little_dog",
+    "bounds_m": [
+      [
+        -0.5049999952316284,
+        -0.15248174965381622,
+        0.008881986141204834
+      ],
+      [
+        0.4131680727005005,
+        0.15248174965381622,
+        0.7881870865821838
+      ]
+    ],
+    "best_projection": {
+      "yaw": -115,
+      "elevation": 25,
+      "silhouette_iou": 0.55,
+      "file": "little_dog-pixel--115-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.55,
+        "file": "little_dog-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.375,
+        "file": "little_dog-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.5063,
+        "file": "little_dog-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.5263,
+        "file": "little_dog-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.5263,
+        "file": "little_dog-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.52,
+        "file": "little_dog-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "goblin",
+    "bounds_m": [
+      [
+        -0.3644302487373352,
+        -0.29904597997665405,
+        0.0
+      ],
+      [
+        0.3700000047683716,
+        0.2370259016752243,
+        1.2366992235183716
+      ]
+    ],
+    "best_projection": {
+      "yaw": -115,
+      "elevation": 45,
+      "silhouette_iou": 0.4923,
+      "file": "goblin-pixel--115-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.4412,
+        "file": "goblin-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.4923,
+        "file": "goblin-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.4366,
+        "file": "goblin-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.4658,
+        "file": "goblin-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.4091,
+        "file": "goblin-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.4412,
+        "file": "goblin-pixel--65-45.png"
+      }
+    ]
+  }
+]
