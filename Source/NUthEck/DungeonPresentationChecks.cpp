@@ -2,6 +2,8 @@
 #include "DungeonCameraTransition.h"
 #include "Camera/CameraComponent.h"
 #include "Components/PointLightComponent.h"
+#include "Components/InstancedStaticMeshComponent.h"
+#include "Materials/MaterialInstanceDynamic.h"
 #include "Misc/CommandLine.h"
 #include "Misc/Paths.h"
 #include "TimerManager.h"
@@ -20,14 +22,39 @@ bool ADungeonPrototype::VerifyPresentationControls()
     // scale/first person. Exercise real camera updates without native input.
     Passed &= MapFillLights.Num()==2;
     FirstPerson=false;FirstPersonBlend=0;ZoomFactor=1;FitCamera();
+    float MistAmount=-1;
+    Passed &= MistMaterial && MistMaterial->GetScalarParameterValue(FMaterialParameterInfo(TEXT("MistAmount")),MistAmount) && MistAmount==0;
     for(const auto& Light:MapFillLights)
         Passed &= Light->Intensity>0 && !Light->CastShadows
             && !Light->LightingChannels.bChannel0 && Light->LightingChannels.bChannel1;
     ZoomFactor=2.5f;FitCamera();
+    Passed &= MistMaterial->GetScalarParameterValue(FMaterialParameterInfo(TEXT("MistAmount")),MistAmount) && MistAmount==1;
     for(const auto& Light:MapFillLights) Passed &= Light->Intensity==0;
     ZoomFactor=1;FirstPerson=true;FirstPersonBlend=1;FitCamera();
+    Passed &= MistMaterial->GetScalarParameterValue(FMaterialParameterInfo(TEXT("MistAmount")),MistAmount) && MistAmount==1;
     for(const auto& Light:MapFillLights) Passed &= Light->Intensity==0;
     FirstPerson=SavedFirstPerson;FirstPersonBlend=SavedBlend;ZoomFactor=SavedZoom;FitCamera();
+    int32 MistTiles=0;
+    if(auto* Mist=LiveBatches.Find(FName(TEXT("FloorMist"))))
+    {
+        Passed &= !(*Mist)->CastShadow;
+        for(int32 I=0;I<(*Mist)->GetInstanceCount();++I)
+        {
+            FTransform Transform;(*Mist)->GetInstanceTransform(I,Transform,true);
+            const FVector P=Transform.GetLocation();
+            const int32 X=FMath::RoundToInt(P.X/CellSize+(Columns-1)*.5f);
+            const int32 Y=FMath::RoundToInt(P.Y/CellSize+(Rows-1)*.5f);
+            const bool Inside=X>=0 && X<Columns && Y>=0 && Y<Rows;
+            Passed &= Inside && Transform.GetScale3D().X<=1 && Transform.GetScale3D().Y<=1;
+            if(Inside) Passed &= Session->Cells[Y*Columns+X].Visible && Session->Cells[Y*Columns+X].Terrain==TEXT("floor");
+        }
+        MistTiles=(*Mist)->GetInstanceCount()/3;
+        int32 VisibleFloors=0;
+        for(const auto& Cell:Session->Cells) if(Cell.Visible && Cell.Terrain==TEXT("floor") && Cell.Kind!=TEXT("unknown")) ++VisibleFloors;
+        Passed &= MistTiles==VisibleFloors;
+    }
+    else Passed=false;
+    UE_LOG(LogTemp,Display,TEXT("DRIFTING_MIST_CHECK %s visible_floor_tiles=%d overview=clear room=mist first_person=mist"),Passed?TEXT("PASS"):TEXT("FAIL"),MistTiles);
     Passed &= HandleLiveKey(EKeys::F7,false) && ShowEntityGlyphs==Labels;
     const FVector Eye=CellPosition(Session->Hero.X,Session->Hero.Y,80.f);
     const FRotator Overhead(-58,-75,0);
@@ -141,9 +168,17 @@ void ADungeonPrototype::CaptureFirstPersonTransition()
             GetWorldTimerManager().SetTimer(Hide,[this,Enter,Capture]()
             {
                 HandleLiveKey(EKeys::F7,false);Capture(TEXT("Presentation-Labels-Off.png"));
-                FTimerHandle Begin;GetWorldTimerManager().SetTimer(Begin,Enter,.3f,false);
+                FTimerHandle FlowA;GetWorldTimerManager().SetTimer(FlowA,[this,Enter,Capture]()
+                {
+                    Capture(TEXT("Mist-Flow-A.png"));
+                    FTimerHandle FlowB;GetWorldTimerManager().SetTimer(FlowB,[this,Enter,Capture]()
+                    {
+                        Capture(TEXT("Mist-Flow-B.png"));
+                        FTimerHandle Begin;GetWorldTimerManager().SetTimer(Begin,Enter,.3f,false);
+                    },3.f,false);
+                },.3f,false);
             },.3f,false);
-        },2.f,false);
+        },8.f,false);
     }
     else Enter();
 }
