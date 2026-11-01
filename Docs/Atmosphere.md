@@ -1,7 +1,7 @@
 # Dungeon atmosphere
 
-The live renderer uses neutral ambient illumination, warm wall candles,
-and gently drifting floor mist. There is no alternate
+The live renderer uses neutral ambient illumination and warm wall candles.
+Ordinary dungeon rooms and corridors have no decorative fog. There is no alternate
 appearance mode; use Git to review or revert the experiment.
 The shadow-casting directional studio light is limited to art/study fixtures;
 only candles cast lighting shadows in live gameplay. The ambient light is a
@@ -42,34 +42,20 @@ Dynamic global illumination remains disabled: indirect light does not obey
 these direct-light channels. Point-light falloff is artistic and never grants
 vision. Special perception still uses the existing displayed-glyph system.
 
-Mist uses three translucent layers at 16, 30 and 44 cm above the tile origin.
-An animated material combines two scales of procedural world-space noise,
-drifting in different directions at a few centimetres per second. The world
-pattern stays continuous across tile boundaries while each tile's geometry and
-soft edge keep the effect inside currently visible floor cells. Depth fading
-softens intersections with models. Surface lighting lets candles tint the wisps;
-a small neutral emissive contribution keeps mist readable in ambient light.
-
-This is layered mist, not a simulation of smoke or global volumetric fog.
-It adds no particles, gameplay RNG, save data, or native turns. It fades in from
-1x to 2.4x zoom, is completely hidden at full overview, and remains in first
-person. Existing candle light and native visibility are unchanged. Fog density
-does not determine which objects may be displayed.
+The rejected floor-mist experiment and its implementation are documented in
+[MistExperiment.md](MistExperiment.md). Fog is reserved as a future possibility
+for appropriate environments such as the Castle moat; no such effect is active.
 
 ## Build and checks
 
 `BuildPrototype.ps1` builds the bridge and UE module, and generates the candle
-flame and drifting mist materials with `CreateAtmosphereAssets.py`.
+flame material with `CreateAtmosphereAssets.py`.
 
 `Tests/BridgeLighting.py` uses a fresh isolated wizard session to check the
 lighting mask, a real oil lamp switched on/off, and blindness with the lamp lit.
 Normal capture launches now use `Saved/NetHackCaptures`, separate from the player
 tree and its LastSession pointer. Overhead and first-person captures exercise
 the live renderer. No player session is resumed by these checks.
-Presentation checks additionally verify mist coverage of visible floor cells,
-tile bounds, shadow exclusion and overview/room/first-person opacity. Paired
-`Mist-Flow-A.png` and `Mist-Flow-B.png` captures show motion three seconds apart
-without advancing the native game.
 
 The experimental backend changes only window-port output, not native save
 structures or game rules. Before building/staging it, a verified whole-session

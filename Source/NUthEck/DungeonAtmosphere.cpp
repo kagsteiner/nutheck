@@ -2,7 +2,6 @@
 #include "Components/InstancedStaticMeshComponent.h"
 #include "Components/PointLightComponent.h"
 #include "Materials/MaterialInterface.h"
-#include "Materials/MaterialInstanceDynamic.h"
 #include "Engine/SkyLight.h"
 #include "Engine/TextureCube.h"
 #include "Components/SkyLightComponent.h"
@@ -53,13 +52,6 @@ void ADungeonPrototype::CreateAmbientLight()
 
 void ADungeonPrototype::UpdateOverviewLighting()
 {
-    if(MistMaterial)
-    {
-        const float Detail=FMath::SmoothStep(1.f,2.4f,ZoomFactor);
-        const float MistAmount=FMath::Lerp(Detail,1.f,FirstPersonBlend);
-        MistMaterial->SetScalarParameterValue(TEXT("MistAmount"),MistAmount);
-        if(auto* Mist=LiveBatches.Find(FName(TEXT("FloorMist")))) (*Mist)->SetVisibility(MistAmount>0.f);
-    }
     // Full support at level scale, smoothly gone by room scale. Never alter
     // the candle-lit current view, native visibility, or first-person lighting.
     const float Amount=(1.f-FMath::SmoothStep(1.f,2.5f,ZoomFactor))*(1.f-FirstPersonBlend);
@@ -101,16 +93,6 @@ void ADungeonPrototype::UpdateAtmosphere()
     auto* Flame=Batch(TEXT("CandleFlame"),TEXT("/Engine/BasicShapes/Sphere.Sphere"),FLinearColor(1.f,.5f,.1f));
     if(auto* Material=LoadObject<UMaterialInterface>(nullptr,TEXT("/Game/Materials/M_CandleFlame.M_CandleFlame"))) Flame->SetMaterial(0,Material);
     Flame->SetCastShadow(false);
-    auto* Mist=Batch(TEXT("FloorMist"),TEXT("/Engine/BasicShapes/Plane.Plane"),FLinearColor::White);
-    Mist->SetNumCustomDataFloats(1);
-    if(!MistMaterial)
-    {
-        auto* Material=LoadObject<UMaterialInterface>(nullptr,TEXT("/Game/Materials/M_DriftingMist.M_DriftingMist"));
-        checkf(Material,TEXT("Run Scripts/CreateAtmosphereAssets.py to create the mist material."));
-        MistMaterial=UMaterialInstanceDynamic::Create(Material,this);
-        Mist->SetMaterial(0,MistMaterial);
-    }
-    Mist->SetCastShadow(false);
     for(int32 Y=0;Y<Rows;++Y) for(int32 X=0;X<Columns;++X)
     {
         const auto& Cell=Session->Cells[Y*Columns+X];
@@ -141,26 +123,8 @@ void ADungeonPrototype::UpdateAtmosphere()
         if((Cell.TemporaryLight && X%3==1 && Y%3==1)
             || (Cell.TemporaryLight && Session->Hero==FIntPoint(X,Y)))
             Light(CellPosition(X,Y,95),250.f,85.f,false);
-        if(Cell.Terrain!=TEXT("floor")) continue;
-        int32 Edges=0;
-        const FIntPoint Neighbours[]={FIntPoint(-1,0),FIntPoint(1,0),FIntPoint(0,-1),FIntPoint(0,1)};
-        for(int32 I=0;I<4;++I)
-        {
-            const int32 NX=X+Neighbours[I].X,NY=Y+Neighbours[I].Y;
-            if(NX<0 || NX>=Columns || NY<0 || NY>=Rows) { Edges|=1<<I;continue; }
-            const auto& Near=Session->Cells[NY*Columns+NX];
-            if(!Near.Visible || Near.Terrain!=TEXT("floor") || Near.Kind==TEXT("unknown")) Edges|=1<<I;
-        }
-        // World-space noise flows continuously across these layers. Geometry
-        // never leaves its visible cell, even while the shader pattern drifts.
-        for(float Height:{16.f,30.f,44.f})
-        {
-            const int32 Instance=Mist->AddInstance(FTransform(FQuat::Identity,CellPosition(X,Y,Height),FVector::OneVector));
-            Mist->SetCustomDataValue(Instance,0,float(Edges),false);
-        }
     }
     for(int32 I=LightCount;I<AtmosphereLights.Num();++I) AtmosphereLights[I]->SetVisibility(false);
-    Mist->MarkRenderStateDirty();
 }
 
 void ADungeonPrototype::TickAtmosphere()

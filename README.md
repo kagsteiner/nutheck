@@ -8,8 +8,8 @@ The [game vision](Docs/GameVision.md) is NetHack's turn-based tactical play with
 modern graphics and static models. Character/object animation is out of scope;
 brief wand effects, such as lightning, remain a possible addition.
 
-The [atmosphere experiment](Docs/Atmosphere.md) adds local candle lighting and
-floor haze while keeping NetHack authoritative for sight and illumination.
+The [dungeon lighting](Docs/Atmosphere.md) combines local candles, ambient light
+and a readable map overview while keeping NetHack authoritative for sight and illumination.
 
 For creature-art sessions, start with [CreatureAssetContext](Docs/CreatureAssetContext.md).
 The [restrained fur study](Docs/FurStudy.md) compares dog/cat surface treatments without replacing the live models.

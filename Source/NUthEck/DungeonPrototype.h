@@ -62,7 +62,6 @@ private:
     UPROPERTY() TArray<TObjectPtr<class UPointLightComponent>> MapFillLights;
     void TickAtmosphere();
     UPROPERTY() TArray<TObjectPtr<class UPointLightComponent>> AtmosphereLights;
-    UPROPERTY() TObjectPtr<class UMaterialInstanceDynamic> MistMaterial;
     UInstancedStaticMeshComponent* GetDefaultTileBatch(const FNetHackCell& Cell,bool Hero);
     UInstancedStaticMeshComponent* GetDisplayedObjectBatch(const FNetHackCell& Cell);
     UInstancedStaticMeshComponent* GetFountainBatch(const FNetHackCell& Cell);
