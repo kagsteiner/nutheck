@@ -204,19 +204,24 @@ void ADungeonPrototype::BeginPlay()
     else if(ArtStudy) GenerateArtStudy();
     else if(StaticStudy) GenerateDungeon();
     else StartLiveGame();
-    auto* Sun = GetWorld()->SpawnActor<ADirectionalLight>();
-    Sun->GetComponent()->SetMobility(EComponentMobility::Movable);
-    Sun->SetActorRotation(ArtStudy?FRotator(-42,-100,0):FRotator(-32,-120,0));
-    Sun->GetComponent()->SetIntensity(ArtStudy?4.2f:StaticStudy?5.f:1.5f);
-    Sun->GetComponent()->LightingChannels.bChannel1=true;
-    Sun->GetComponent()->SetCastShadows(true);
-    Sun->GetComponent()->bUseRayTracedDistanceFieldShadows = false;
-    Sun->GetComponent()->SetForwardShadingPriority(1);
-    Sun->GetComponent()->SetLightColor(ArtStudy?FLinearColor(1.f,.86f,.69f):FLinearColor(1.f,.91f,.77f));
+    // Studio lighting belongs to the art fixtures. The live cave has no sun;
+    // only its local sources cast shadows.
+    if(ArtStudy || StaticStudy || FurStudy)
+    {
+        auto* Sun = GetWorld()->SpawnActor<ADirectionalLight>();
+        Sun->GetComponent()->SetMobility(EComponentMobility::Movable);
+        Sun->SetActorRotation(ArtStudy?FRotator(-42,-100,0):FRotator(-32,-120,0));
+        Sun->GetComponent()->SetIntensity(ArtStudy?4.2f:StaticStudy?5.f:1.5f);
+        Sun->GetComponent()->LightingChannels.bChannel1=true;
+        Sun->GetComponent()->SetCastShadows(true);
+        Sun->GetComponent()->bUseRayTracedDistanceFieldShadows = false;
+        Sun->GetComponent()->SetForwardShadingPriority(1);
+        Sun->GetComponent()->SetLightColor(ArtStudy?FLinearColor(1.f,.86f,.69f):FLinearColor(1.f,.91f,.77f));
+    }
     auto* Fill = GetWorld()->SpawnActor<ADirectionalLight>();
     Fill->GetComponent()->SetMobility(EComponentMobility::Movable);
     Fill->SetActorRotation(FRotator(-65,130,0));
-    Fill->GetComponent()->SetIntensity(ArtStudy?1.15f:StaticStudy?.8f:.45f);
+    Fill->GetComponent()->SetIntensity(ArtStudy?1.15f:StaticStudy?.8f:.85f);
     Fill->GetComponent()->LightingChannels.bChannel1=true;
     Fill->GetComponent()->SetCastShadows(false);
     Fill->GetComponent()->SetLightColor(FLinearColor(.65f,.79f,1.f));

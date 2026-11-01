@@ -1,8 +1,10 @@
 # Dungeon atmosphere
 
-The live renderer uses restrained general lighting, warm wall candles, cooler
+The live renderer uses a soft shadowless fill, warm wall candles, cooler
 local fill, and small local fog volumes at floor height. There is no alternate
 appearance mode; use Git to review or revert the experiment.
+The shadow-casting directional studio light is limited to art/study fixtures;
+only local sources cast shadows in live gameplay.
 
 ## Authority and persistence
 
