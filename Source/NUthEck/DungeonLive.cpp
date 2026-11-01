@@ -26,6 +26,8 @@ void ADungeonPrototype::StartLiveGame(bool NewGame)
         Add(TEXT("FloorMemory"),TEXT("/Game/DefaultTiles/Meshes/SM_GreyFloor.SM_GreyFloor"),FLinearColor(.075f,.08f,.085f));
         Add(TEXT("Wall"),TEXT("/Game/DefaultTiles/Meshes/SM_GreyWall.SM_GreyWall"),FLinearColor(.43f,.44f,.45f));
         Add(TEXT("WallMemory"),TEXT("/Game/DefaultTiles/Meshes/SM_GreyWall.SM_GreyWall"),FLinearColor(.14f,.15f,.16f));
+        Add(TEXT("Mortar"),Cube,FLinearColor(.16f,.15f,.13f));
+        Add(TEXT("MortarMemory"),Cube,FLinearColor(.045f,.043f,.039f));
         Add(TEXT("Door"),Cube,FLinearColor(.55f,.29f,.10f));
         Add(TEXT("DoorMemory"),Cube,FLinearColor(.16f,.085f,.03f));
         Add(TEXT("Water"),Cube,FLinearColor(.025f,.32f,.48f));
@@ -233,7 +235,28 @@ void ADungeonPrototype::RebuildLiveMap()
         const auto& Cell=Session->Cells[Y*Columns+X];
         if(Cell.Kind==TEXT("unknown") || Cell.Terrain==TEXT("stone") || Cell.Terrain==TEXT("none")) continue;
         const FString Suffix=Cell.Visible?TEXT(""):TEXT("Memory");
-        if(Cell.Terrain==TEXT("wall")) { Put(TEXT("Wall")+Suffix,X,Y,60,FVector(.98f,.98f,1.2f)); continue; }
+        if(Cell.Terrain==TEXT("wall"))
+        {
+            Put(TEXT("Wall")+Suffix,X,Y,60,FVector(.98f,.98f,1.2f));
+            // The beveled stones are individual solids. Recessed mortar closes
+            // their joints without covering the masonry faces or changing light.
+            Put(TEXT("Mortar")+Suffix,X,Y,60,FVector(.93f,.93f,1.182f));
+            // Each known wall pair gets one continuous backing across its tile
+            // seam. Never bridge a door, unknown cell, or diagonal corner.
+            for(const FIntPoint Step:{FIntPoint(1,0),FIntPoint(0,1)})
+            {
+                const int32 NX=X+Step.X,NY=Y+Step.Y;
+                if(NX>=Columns || NY>=Rows) continue;
+                const auto& Near=Session->Cells[NY*Columns+NX];
+                if(Near.Kind==TEXT("unknown") || Near.Terrain!=TEXT("wall")) continue;
+                const FString JointSuffix=Cell.Visible && Near.Visible?TEXT(""):TEXT("Memory");
+                if(auto* Mortar=LiveBatches.Find(FName(*(TEXT("Mortar")+JointSuffix))))
+                    (*Mortar)->AddInstance(FTransform(FQuat::Identity,
+                        CellPosition(X,Y,60)+FVector(Step.X*50.f,Step.Y*50.f,0),
+                        Step.X?FVector(.10f,.93f,1.182f):FVector(.93f,.10f,1.182f)));
+            }
+            continue;
+        }
         Put(TEXT("Floor")+Suffix,X,Y,0,FVector(.96f,.96f,.16f));
         if(Cell.Terrain==TEXT("closed")) Put(TEXT("Door")+Suffix,X,Y,58,Cell.Horizontal?FVector(.86f,.20f,1):FVector(.20f,.86f,1));
         else if(Cell.Terrain==TEXT("open")) Put(TEXT("Door")+Suffix,X,Y,58,Cell.Horizontal?FVector(.12f,.86f,1):FVector(.86f,.12f,1));

@@ -9,6 +9,15 @@ movable Sky Light supplied with a constant white cubemap, with shadowing and
 the black lower hemisphere disabled. It does not capture the level or require
 a visible sky. The directional fill and cool room point lights are removed.
 
+Wall stones retain their bevels and shallow masonry joints. Recessed, opaque
+mortar cores (93 x 93 x 118.2 cm) back each wall tile, and short connectors close
+the seams between cardinally adjacent known wall tiles. These shadow-casting
+solids stop candlelight passing through the separated stones. Mortar reaches
+1 mm below the stone caps to close the top joints without covering their texture,
+while staying recessed behind side faces. Connectors never
+cross doors or unknown cells; remembered mortar uses the separate memory
+lighting channel. The original stone meshes and candle settings are unchanged.
+
 ## Authority and persistence
 
 NetHack still determines sight, illumination, detection, and all gameplay.
