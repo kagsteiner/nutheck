@@ -3,20 +3,44 @@
 #include "Components/PointLightComponent.h"
 #include "Components/LocalFogVolumeComponent.h"
 #include "Materials/MaterialInterface.h"
+#include "Engine/SkyLight.h"
+#include "Engine/TextureCube.h"
+#include "Components/SkyLightComponent.h"
+
+void ADungeonPrototype::CreateAmbientLight()
+{
+    // Constant environment radiance supplies light from every direction. It
+    // neither captures unknown geometry nor introduces a sky or another sun.
+    auto* Environment=UTextureCube::CreateTransient(16,16,PF_B8G8R8A8);
+    check(Environment);
+    Environment->SRGB=false;
+    auto& Mip=Environment->GetPlatformData()->Mips[0];
+    void* Pixels=Mip.BulkData.Lock(LOCK_READ_WRITE);
+    FMemory::Memset(Pixels,255,Mip.BulkData.GetBulkDataSize());
+    Mip.BulkData.Unlock();
+    Environment->UpdateResource();
+    auto* Ambient=GetWorld()->SpawnActor<ASkyLight>()->GetLightComponent();
+    Ambient->SetMobility(EComponentMobility::Movable);
+    Ambient->SourceType=SLS_SpecifiedCubemap;
+    Ambient->bLowerHemisphereIsBlack=false;
+    Ambient->SetCastShadows(false);
+    Ambient->SetLightColor(FLinearColor(.88f,.90f,.94f));
+    Ambient->SetIntensity(.6f);
+    Ambient->SetCubemap(Environment);
+}
 
 // Cosmetic fixtures are a function of level coordinates, never discovery order
 // or gameplay RNG. No presentation state needs to be written to native saves.
 void ADungeonPrototype::UpdateAtmosphere()
 {
     int32 LightCount=0,FogCount=0;
-    const auto Light=[&](FVector Position,bool Warm,float Radius,float Lumens) {
+    const auto Light=[&](FVector Position,float Radius,float Lumens,bool Shadows) {
         if(LightCount==AtmosphereLights.Num())
         {
             auto* Component=NewObject<UPointLightComponent>(this);
             Component->SetupAttachment(RootComponent);
             Component->SetMobility(EComponentMobility::Movable);
             Component->IntensityUnits=ELightUnits::Lumens;
-            Component->SetCastShadows(true);
             Component->SetSourceRadius(5.f);
             AddInstanceComponent(Component);Component->RegisterComponent();
             AtmosphereLights.Add(Component);
@@ -24,7 +48,8 @@ void ADungeonPrototype::UpdateAtmosphere()
         auto* Component=AtmosphereLights[LightCount++].Get();
         Component->SetWorldLocation(Position);
         Component->SetAttenuationRadius(Radius);
-        Component->SetLightColor(Warm?FLinearColor(1.f,.57f,.25f):FLinearColor(.68f,.78f,1.f));
+        Component->SetLightColor(FLinearColor(1.f,.57f,.25f));
+        Component->SetCastShadows(Shadows);
         Component->SetIntensity(Lumens);
         Component->SetVisibility(true);
     };
@@ -48,7 +73,8 @@ void ADungeonPrototype::UpdateAtmosphere()
             // influence placement or be exposed by a decorative light source.
             const uint32 Seed=uint32(X)*73856093u ^ uint32(Y)*19349663u
                 ^ uint32(Session->Depth)*83492791u ^ uint32(Session->Dungeon)*2654435761u;
-            if(Seed%3!=0) continue;
+            // Retain all original candidates and add a second seeded subset.
+            if(Seed%3==2) continue;
             const FIntPoint Directions[]={FIntPoint(1,0),FIntPoint(0,1),FIntPoint(-1,0),FIntPoint(0,-1)};
             const auto D=Directions[(Seed/3)%4];
             const int32 NX=X+D.X,NY=Y+D.Y;
@@ -59,14 +85,14 @@ void ADungeonPrototype::UpdateAtmosphere()
             Iron->AddInstance(FTransform(FQuat::Identity,Position-FVector(0,0,10),FVector(.20f,.20f,.045f)));
             Wax->AddInstance(FTransform(FQuat::Identity,Position,FVector(.055f,.055f,.18f)));
             Flame->AddInstance(FTransform(FQuat::Identity,Position+FVector(0,0,12),FVector(.045f,.045f,.09f)));
-            Light(Position+FVector(0,0,14),true,340.f,180.f);
+            Light(Position+FVector(0,0,14),340.f,180.f,true);
             continue;
         }
-        // Distributed fill represents NH's illuminated cells, including light
-        // spells and mobile sources. Never approximate their radius in UE.
-        if(((Cell.PermanentLight || Cell.TemporaryLight) && X%3==1 && Y%3==1)
+        // Temporary light retains a warm accent within NH's visibility. Room
+        // illumination comes from ambient light and actual candle fixtures.
+        if((Cell.TemporaryLight && X%3==1 && Y%3==1)
             || (Cell.TemporaryLight && Session->Hero==FIntPoint(X,Y)))
-            Light(CellPosition(X,Y,95),Cell.TemporaryLight,250.f,Cell.TemporaryLight?85.f:55.f);
+            Light(CellPosition(X,Y,95),250.f,85.f,false);
         if(Cell.Terrain!=TEXT("floor") || (X+Y)%2!=0) continue;
         if(FogCount==AtmosphereFog.Num())
         {

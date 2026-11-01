@@ -217,14 +217,15 @@ void ADungeonPrototype::BeginPlay()
         Sun->GetComponent()->bUseRayTracedDistanceFieldShadows = false;
         Sun->GetComponent()->SetForwardShadingPriority(1);
         Sun->GetComponent()->SetLightColor(ArtStudy?FLinearColor(1.f,.86f,.69f):FLinearColor(1.f,.91f,.77f));
+        auto* Fill = GetWorld()->SpawnActor<ADirectionalLight>();
+        Fill->GetComponent()->SetMobility(EComponentMobility::Movable);
+        Fill->SetActorRotation(FRotator(-65,130,0));
+        Fill->GetComponent()->SetIntensity(ArtStudy?1.15f:StaticStudy?.8f:.85f);
+        Fill->GetComponent()->LightingChannels.bChannel1=true;
+        Fill->GetComponent()->SetCastShadows(false);
+        Fill->GetComponent()->SetLightColor(FLinearColor(.65f,.79f,1.f));
     }
-    auto* Fill = GetWorld()->SpawnActor<ADirectionalLight>();
-    Fill->GetComponent()->SetMobility(EComponentMobility::Movable);
-    Fill->SetActorRotation(FRotator(-65,130,0));
-    Fill->GetComponent()->SetIntensity(ArtStudy?1.15f:StaticStudy?.8f:.85f);
-    Fill->GetComponent()->LightingChannels.bChannel1=true;
-    Fill->GetComponent()->SetCastShadows(false);
-    Fill->GetComponent()->SetLightColor(FLinearColor(.65f,.79f,1.f));
+    else CreateAmbientLight();
     if(ArtStudy)
     {
         auto* Bounce=GetWorld()->SpawnActor<ADirectionalLight>();

@@ -1,10 +1,13 @@
 # Dungeon atmosphere
 
-The live renderer uses a soft shadowless fill, warm wall candles, cooler
-local fill, and small local fog volumes at floor height. There is no alternate
+The live renderer uses neutral ambient illumination, warm wall candles,
+and small local fog volumes at floor height. There is no alternate
 appearance mode; use Git to review or revert the experiment.
 The shadow-casting directional studio light is limited to art/study fixtures;
-only local sources cast shadows in live gameplay.
+only candles cast lighting shadows in live gameplay. The ambient light is a
+movable Sky Light supplied with a constant white cubemap, with shadowing and
+the black lower hemisphere disabled. It does not capture the level or require
+a visible sky. The directional fill and cool room point lights are removed.
 
 ## Authority and persistence
 
@@ -14,9 +17,9 @@ bit 0 means permanent illumination and bit 1 means temporary illumination.
 Both bits are zero outside `cansee()`, including while blind. No unseen room
 layout, light-source positions, or item identities are exported.
 
-UE does not calculate a lamp's gameplay radius. Local fill follows the native
-illuminated visible cells. Temporary illumination is warm; permanent fill is
-cooler. This is a presentation of illumination, not identification of its source:
+UE does not calculate a lamp's gameplay radius. A warm shadowless accent follows
+the native temporarily illuminated visible cells. This is a presentation of
+illumination, not identification of its source:
 the protocol does not distinguish a lamp from another temporary light source.
 Permanently lit cells can also result from magic.
 
@@ -28,7 +31,9 @@ outside current sight; remembered map geometry remains subdued. This adds no
 native save fields or cosmetic save files.
 
 Local lights affect current geometry on lighting channel 0. Remembered terrain,
-objects and fountains use channel 1, lit only by the subdued general lights.
+objects and fountains use channel 1, excluding candle and temporary accents.
+Ambient illumination affects both, with the existing dim memory materials
+preserving the distinction between currently visible and remembered geometry.
 Dynamic global illumination remains disabled: indirect light does not obey
 these direct-light channels. Point-light falloff is artistic and never grants
 vision. Special perception still uses the existing displayed-glyph system.

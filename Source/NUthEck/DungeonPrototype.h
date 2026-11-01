@@ -57,6 +57,7 @@ private:
     void StartLiveGame(bool NewGame=false);
     void RebuildLiveMap();
     void UpdateAtmosphere();
+    void CreateAmbientLight();
     void TickAtmosphere();
     UPROPERTY() TArray<TObjectPtr<class UPointLightComponent>> AtmosphereLights;
     UPROPERTY() TArray<TObjectPtr<class ULocalFogVolumeComponent>> AtmosphereFog;
