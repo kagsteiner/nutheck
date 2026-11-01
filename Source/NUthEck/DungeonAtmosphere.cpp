@@ -27,6 +27,37 @@ void ADungeonPrototype::CreateAmbientLight()
     Ambient->SetLightColor(FLinearColor(.88f,.90f,.94f));
     Ambient->SetIntensity(.6f);
     Ambient->SetCubemap(Environment);
+
+    // This is map presentation, not dungeon illumination: only remembered
+    // geometry receives the shadowless fill, on its separate lighting channel.
+    for(const FVector Position:{FVector(-3500,-3000,7000),FVector(3500,3000,5000)})
+    {
+        auto* Fill=NewObject<UPointLightComponent>(this);
+        Fill->SetupAttachment(RootComponent);
+        Fill->SetMobility(EComponentMobility::Movable);
+        Fill->bUseInverseSquaredFalloff=false;
+        Fill->IntensityUnits=ELightUnits::Unitless;
+        Fill->SetAttenuationRadius(50000.f);
+        Fill->SetVolumetricScatteringIntensity(0.f);
+        Fill->SetAffectTranslucentLighting(false);
+        Fill->LightingChannels.bChannel0=false;
+        Fill->LightingChannels.bChannel1=true;
+        Fill->SetCastShadows(false);
+        Fill->SetLightColor(FLinearColor(.80f,.86f,1.f));
+        Fill->SetIntensity(0.f);
+        AddInstanceComponent(Fill);Fill->RegisterComponent();
+        Fill->SetWorldLocation(Position);
+        MapFillLights.Add(Fill);
+    }
+}
+
+void ADungeonPrototype::UpdateOverviewLighting()
+{
+    // Full support at level scale, smoothly gone by room scale. Never alter
+    // the candle-lit current view, native visibility, or first-person lighting.
+    const float Amount=(1.f-FMath::SmoothStep(1.f,2.5f,ZoomFactor))*(1.f-FirstPersonBlend);
+    for(int32 I=0;I<MapFillLights.Num();++I)
+        MapFillLights[I]->SetIntensity(Amount*(I==0?1.8f:.6f));
 }
 
 // Cosmetic fixtures are a function of level coordinates, never discovery order

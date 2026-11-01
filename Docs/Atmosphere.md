@@ -34,6 +34,10 @@ Local lights affect current geometry on lighting channel 0. Remembered terrain,
 objects and fountains use channel 1, excluding candle and temporary accents.
 Ambient illumination affects both, with the existing dim memory materials
 preserving the distinction between currently visible and remembered geometry.
+At overview scale, a soft shadowless map fill affects only remembered geometry
+on channel 1. It fades smoothly between 1x and 2.5x zoom and fades away during
+entry to first person. This lifts explored rooms and connecting corridors for
+navigation without brightening current candle lighting or revealing new cells.
 Dynamic global illumination remains disabled: indirect light does not obey
 these direct-light channels. Point-light falloff is artistic and never grants
 vision. Special perception still uses the existing displayed-glyph system.

@@ -1,6 +1,7 @@
 #include "DungeonPrototype.h"
 #include "DungeonCameraTransition.h"
 #include "Camera/CameraComponent.h"
+#include "Components/PointLightComponent.h"
 #include "Misc/CommandLine.h"
 #include "Misc/Paths.h"
 #include "TimerManager.h"
@@ -15,6 +16,18 @@ bool ADungeonPrototype::VerifyPresentationControls()
     const FVector SavedFocus=CameraFocus;
     const FRotator SavedLook=EyeRotation;
     bool Passed=HandleLiveKey(EKeys::F7,false) && ShowEntityGlyphs!=Labels;
+    // The overview lift must never reach current geometry or survive at room
+    // scale/first person. Exercise real camera updates without native input.
+    Passed &= MapFillLights.Num()==2;
+    FirstPerson=false;FirstPersonBlend=0;ZoomFactor=1;FitCamera();
+    for(const auto& Light:MapFillLights)
+        Passed &= Light->Intensity>0 && !Light->CastShadows
+            && !Light->LightingChannels.bChannel0 && Light->LightingChannels.bChannel1;
+    ZoomFactor=2.5f;FitCamera();
+    for(const auto& Light:MapFillLights) Passed &= Light->Intensity==0;
+    ZoomFactor=1;FirstPerson=true;FirstPersonBlend=1;FitCamera();
+    for(const auto& Light:MapFillLights) Passed &= Light->Intensity==0;
+    FirstPerson=SavedFirstPerson;FirstPersonBlend=SavedBlend;ZoomFactor=SavedZoom;FitCamera();
     Passed &= HandleLiveKey(EKeys::F7,false) && ShowEntityGlyphs==Labels;
     const FVector Eye=CellPosition(Session->Hero.X,Session->Hero.Y,80.f);
     const FRotator Overhead(-58,-75,0);

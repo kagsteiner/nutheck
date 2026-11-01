@@ -58,6 +58,8 @@ private:
     void RebuildLiveMap();
     void UpdateAtmosphere();
     void CreateAmbientLight();
+    void UpdateOverviewLighting();
+    UPROPERTY() TArray<TObjectPtr<class UPointLightComponent>> MapFillLights;
     void TickAtmosphere();
     UPROPERTY() TArray<TObjectPtr<class UPointLightComponent>> AtmosphereLights;
     UPROPERTY() TArray<TObjectPtr<class ULocalFogVolumeComponent>> AtmosphereFog;

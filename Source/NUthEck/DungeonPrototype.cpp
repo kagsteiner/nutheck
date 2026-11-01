@@ -298,6 +298,7 @@ void ADungeonPrototype::Tick(float DeltaSeconds)
 
 void ADungeonPrototype::FitCamera()
 {
+    UpdateOverviewLighting();
     auto* PC=GetWorld()->GetFirstPlayerController();
     int32 W=0,H=0;
     if (PC) PC->GetViewportSize(W,H);
