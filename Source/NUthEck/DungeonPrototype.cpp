@@ -356,7 +356,10 @@ void ADungeonPrototype::FitCamera()
     // Reserve 6% at each side and 16% above/below for HUD and breathing room.
     const float Aspect=float(W)/H;
     Camera->SetAspectRatio(Aspect);
-    OverviewWidth=FMath::Max(2*ExtentX/.88f,2*ExtentY*Aspect/(ArtStudy?.86f:.68f));
+    float VerticalBudget=ArtStudy?.86f:.68f;
+    if(!ArtStudy && ZoomFactor<=1.001f && LiveFooterHeight>0)
+        VerticalBudget=FMath::Clamp(2.f*(H*.5f-LiveFooterHeight-12.f)/H,.20f,.68f);
+    OverviewWidth=FMath::Max(2*ExtentX/.88f,2*ExtentY*Aspect/VerticalBudget);
     Camera->SetOrthoWidth(OverviewWidth/ZoomFactor);
     if(IsFirstPerson())
     {
@@ -422,6 +425,7 @@ void ADungeonPrototype::AdjustZoom(float Steps)
 
 void ADungeonPrototype::ResetOverview()
 {
+    LevelOverviewActive=false;
     FirstPerson=false; FirstPersonBlend=0.f; WasLooking=false;
     OverviewOrbitOffset=FRotator::ZeroRotator;WasOrbiting=false;
     ZoomFactor=1.f; CameraFocus=FVector::ZeroVector; FollowHero=true; WasPanning=false;
@@ -432,6 +436,7 @@ void ADungeonPrototype::ResetOverview()
 void ADungeonPrototype::ToggleFirstPerson()
 {
     if(Session && !Session->IsReady()) return;
+    if(LevelOverviewActive)ToggleLevelOverview();
     FirstPerson=!FirstPerson;
     // EyeRotation already records the latest actual movement or right-drag look.
     // Entry must not replace that facing with an unrelated open corridor.
@@ -456,9 +461,19 @@ void ADungeonPrototype::CaptureAndValidate()
         Min.X=FMath::Min(Min.X,Screen.X); Min.Y=FMath::Min(Min.Y,Screen.Y);
         Max.X=FMath::Max(Max.X,Screen.X); Max.Y=FMath::Max(Max.Y,Screen.Y);
     }
-    bFits &= Min.X>=0 && Max.X<=LastViewport.X && Min.Y>=LastViewport.Y*.15f && Max.Y<=LastViewport.Y*.85f;
-    // Containment alone would also pass a tiny board. Require useful screen coverage.
-    bFits &= (Max.X-Min.X)>=LastViewport.X*.85f || (Max.Y-Min.Y)>=LastViewport.Y*.65f;
+    if(CaptureLive && Session)
+    {
+        const float S=FMath::Clamp(LastViewport.X/1600.f,.65f,1.5f);
+        const float Footer=LiveFooterHeight>0?LiveFooterHeight:214*S;
+        const float AvailableHeight=2*FMath::Min(LastViewport.Y*.5f-84*S,LastViewport.Y*.5f-Footer);
+        bFits &= Min.X>=0 && Max.X<=LastViewport.X && Min.Y>=84*S && Max.Y<=LastViewport.Y-Footer;
+        bFits &= (Max.X-Min.X)>=LastViewport.X*.85f || (Max.Y-Min.Y)>=AvailableHeight*.85f;
+    }
+    else
+    {
+        bFits &= Min.X>=0 && Max.X<=LastViewport.X && Min.Y>=LastViewport.Y*.15f && Max.Y<=LastViewport.Y*.85f;
+        bFits &= (Max.X-Min.X)>=LastViewport.X*.85f || (Max.Y-Min.Y)>=LastViewport.Y*.65f;
+    }
     const bool ZoomCapture=FParse::Param(FCommandLine::Get(),TEXT("CaptureZoom"));
     const bool EyeCapture=FParse::Param(FCommandLine::Get(),TEXT("CaptureFirstPerson"));
     if(EyeCapture)
@@ -472,7 +487,7 @@ void ADungeonPrototype::CaptureAndValidate()
     else if(ZoomCapture)
     {
         FVector2D HeroScreen=FVector2D::ZeroVector;
-        const float ExpectedZoom=(FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch3")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch4")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch5")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch6")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch7")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch8")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch9")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch10")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch11")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch12")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch13")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch14")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch20")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch19")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch18")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch17")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch16")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch15")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewDoorFrames")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewSpecialBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewObjectBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewTileFallback")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewHumanPlayers")))?8.f:3.f;
+        const float ExpectedZoom=(FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch3")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch4")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch5")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch6")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch7")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch8")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch9")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch10")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch11")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch12")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch13")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch14")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch20")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch19")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch18")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch17")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch16")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch15")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewStairs")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewDoorFrames")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewSpecialBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewObjectBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewTileFallback")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewHumanPlayers")))?8.f:3.f;
         bFits=Session && Session->IsReady() && FMath::Abs(ZoomFactor-ExpectedZoom)<.1f
             && FMath::IsNearlyEqual(Camera->OrthoWidth*ZoomFactor,OverviewWidth,1.f)
             && PC->ProjectWorldLocationToScreen(CellPosition(Session->Hero.X,Session->Hero.Y),HeroScreen)

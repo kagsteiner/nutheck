@@ -14,6 +14,7 @@
 
 void ADungeonPrototype::StartLiveGame(bool NewGame)
 {
+    LevelOverviewActive=false;StairPreview.Reset();
     if(LiveBatches.IsEmpty())
     {
         auto* Base=MakeBatch(TEXT("LiveFoundation"),TEXT("/Engine/BasicShapes/Cube.Cube"),FLinearColor(.014f,.022f,.027f));
@@ -40,8 +41,7 @@ void ADungeonPrototype::StartLiveGame(bool NewGame)
         Add(TEXT("WaterMemory"),Cube,FLinearColor(.01f,.08f,.12f));
         Add(TEXT("Lava"),Cube,FLinearColor(.7f,.12f,.02f));
         Add(TEXT("LavaMemory"),Cube,FLinearColor(.17f,.035f,.01f));
-        Add(TEXT("Stairs"),Cube,FLinearColor(.71f,.77f,.67f));
-        Add(TEXT("StairsMemory"),Cube,FLinearColor(.22f,.25f,.20f));
+        CreateStairBatches();
         Add(TEXT("Feature"),TEXT("/Engine/BasicShapes/Cylinder.Cylinder"),FLinearColor(.33f,.48f,.63f));
         Add(TEXT("FeatureMemory"),TEXT("/Engine/BasicShapes/Cylinder.Cylinder"),FLinearColor(.08f,.13f,.17f));
         Add(TEXT("Player"),TEXT("/Engine/BasicShapes/Cone.Cone"),FLinearColor(1,.65f,.13f));
@@ -238,7 +238,11 @@ void ADungeonPrototype::RebuildLiveMap()
     };
     for(int32 Y=0;Y<Rows;++Y) for(int32 X=0;X<Columns;++X)
     {
-        const auto& Cell=Session->Cells[Y*Columns+X];
+        FNetHackCell Preview;
+        const auto* Presented=&Session->Cells[Y*Columns+X];
+        if(const auto* Terrain=StairPreview.Find(FIntPoint(X,Y)))
+        {Preview=*Presented;Preview.Kind=TEXT("terrain");Preview.Terrain=*Terrain;Presented=&Preview;}
+        const auto& Cell=*Presented;
         if(Cell.Kind==TEXT("unknown") || Cell.Terrain==TEXT("stone") || Cell.Terrain==TEXT("none")) continue;
         const FString Suffix=Cell.Visible?TEXT(""):TEXT("Memory");
         if(Cell.Terrain==TEXT("wall"))
@@ -263,17 +267,11 @@ void ADungeonPrototype::RebuildLiveMap()
             }
             continue;
         }
-        Put(TEXT("Floor")+Suffix,X,Y,0,FVector(.96f,.96f,.16f));
+        if(Cell.Terrain!=TEXT("down"))Put(TEXT("Floor")+Suffix,X,Y,0,FVector(.96f,.96f,.16f));
         if(Cell.Terrain==TEXT("closed") || Cell.Terrain==TEXT("open")) AddFramedDoor(Cell,X,Y);
         else if(Cell.Terrain==TEXT("water")) Put(TEXT("Water")+Suffix,X,Y,10,FVector(.95f,.95f,.06f));
         else if(Cell.Terrain==TEXT("lava")) Put(TEXT("Lava")+Suffix,X,Y,10,FVector(.95f,.95f,.06f));
-        else if(Cell.Terrain==TEXT("up") || Cell.Terrain==TEXT("down"))
-            for(int32 I=0;I<4;++I)
-            {
-                const int32 Step=Cell.Terrain==TEXT("up")?I:3-I;
-                auto* Batch=LiveBatches.Find(FName(*(TEXT("Stairs")+Suffix)));
-                (*Batch)->AddInstance(FTransform(FQuat::Identity,CellPosition(X,Y,14+Step*7)+FVector(0,I*21-32,0),FVector(.75f,.19f,.12f+Step*.14f)));
-            }
+        else if(Cell.Terrain==TEXT("up") || Cell.Terrain==TEXT("down"))AddStair(Cell,X,Y);
         else if(Cell.Terrain==TEXT("fountain"))
         {
             if(auto* Fountain=GetFountainBatch(Cell)) Fountain->AddInstance(FTransform(FQuat::Identity,CellPosition(X,Y,8),FVector(1)));
@@ -526,6 +524,7 @@ void ADungeonPrototype::TickLiveGame()
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifySpecialBatch1"))) VerifySpecialBatch1();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyDoorFrames"))) VerifyDoorFrames();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyMouseTravel"))) VerifyMouseTravel();
+            if(FParse::Param(FCommandLine::Get(),TEXT("VerifyNavigation"))) VerifyNavigation();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyHumanPlayers")))
             {
                 VerifyAndCaptureHumanPlayers();
@@ -539,7 +538,7 @@ void ADungeonPrototype::TickLiveGame()
             if(FParse::Param(FCommandLine::Get(),TEXT("CaptureZoom")))
             {
                 ResetOverview();
-                AdjustZoom((FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch3")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch4")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch5")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch6")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch7")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch8")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch9")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch10")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch11")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch12")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch13")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch14")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch20")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch19")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch18")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch17")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch16")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch15")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewDoorFrames")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewSpecialBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewObjectBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewTileFallback")))?12.f:6.f);
+                AdjustZoom((FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch3")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch4")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch5")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch6")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch7")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch8")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch9")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch10")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch11")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch12")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch13")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch14")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch20")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch19")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch18")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch17")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch16")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch15")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewStairs")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewDoorFrames")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewSpecialBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewObjectBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewTileFallback")))?12.f:6.f);
             }
             // Let the updated meshes render before capturing.
             FTimerHandle Handle;
@@ -591,6 +590,7 @@ bool ADungeonPrototype::HandleLiveKey(FKey Key,bool Control)
     }
     if(Control && Key==EKeys::F) { ToggleFirstPerson(); return true; }
     if(Key==EKeys::F5) { ResetOverview(); return true; }
+    if(Key==EKeys::F6) { ToggleLevelOverview(); return true; }
     if(Key==EKeys::F8) { FollowHero=true; FitCamera(); return true; }
     if(Key==EKeys::MouseScrollUp || Key==EKeys::MouseScrollDown)
     {
@@ -693,7 +693,7 @@ void ADungeonPrototypeHUD::DrawLiveHUD(FNetHackSession& Live)
     DrawText(TEXT("THE DUNGEONS OF DOOM"),Muted,49*S,53*S,GEngine->GetSmallFont(),.9f*S);
     DrawText(Live.IsReady()?FString::Printf(TEXT("DLVL %d  /  TURN %d"),Live.Depth,Live.Turn):TEXT("A NEW ADVENTURE"),Gold,W-290*S,31*S,GEngine->GetSmallFont(),S);
     if(auto* View=Cast<ADungeonPrototype>(GetOwningPlayerController()->GetViewTarget()))
-        DrawText(View->IsFirstPerson()?TEXT("FIRST PERSON  |  Esc / Ctrl+F Return  |  Right-drag Look"):FString::Printf(TEXT("%.1fx  |  F5 Full level  |  F8 Follow  |  Ctrl+F First person"),View->GetZoomFactor()),Muted,W-460*S,54*S,GEngine->GetSmallFont(),.85f*S);
+        DrawText(View->IsFirstPerson()?TEXT("FIRST PERSON  |  Esc / Ctrl+F Return  |  Right-drag Look"):FString::Printf(TEXT("%.1fx | F5 Reset | F6 %s | F8 Follow | Ctrl+F Eye"),View->GetZoomFactor(),View->IsLevelOverview()?TEXT("Back"):TEXT("Level")),Muted,W-460*S,54*S,GEngine->GetSmallFont(),.85f*S);
     DrawLiveFooter(Live);
 
     // Labels remain readable when a tall foreground wall obscures a small token.
@@ -736,6 +736,8 @@ void ADungeonPrototypeHUD::DrawLiveHUD(FNetHackSession& Live)
             DrawText(Glyph,Color,Left,Top,GlyphFont,Scale);
         }
     }
+
+    if(Dungeon)DrawStairMarkers(*Dungeon);
 
     if(Dungeon && Dungeon->GetMouseTravelCell().X>=0)
     {

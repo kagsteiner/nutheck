@@ -4,6 +4,9 @@ Implemented for the user's request before continuing creature generation.
 
 ## Controls
 
+- **F6** temporarily shows the whole level; press again to restore the prior
+  zoom, angle and pan/follow state. **F5** still resets unconditionally.
+  See [level peek and readable stairs](NavigationReadability.md).
 - **Right-drag in overview** tilts the camera with vertical movement and rotates
   around the dungeon's vertical axis with horizontal movement. There is no roll.
   Dragging upward gives a steeper overhead view; downward gives a shallower view.

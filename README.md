@@ -117,6 +117,7 @@ conditions remain visible beside it; crowded status rows wrap.
 | Right-mouse drag in overview | Tilt up/down; rotate around the vertical axis left/right |
 | Middle-mouse drag while zoomed | Pan around the level |
 | F5 | Restore the full-level overview and default camera angle |
+| F6 | Peek at the whole level; press again to restore the previous zoom, angle and pan/follow state |
 | F7 | Show/hide floating entity glyphs and badges |
 | F8 | Recenter on the hero and follow movement |
 | F9 | Compare tile volumes with sculpted ant/dog/goblin candidates |
@@ -145,6 +146,10 @@ Left-click travel uses NetHack's own `#travel` pathfinding and stopping rules.
 A turquoise outline previews the floor square under the mouse. Unknown squares,
 HUD panels and prompts are excluded; dragging or losing focus cancels the click.
 Right-drag in first person remains mouse look. See [mouse travel](Docs/MouseTravel.md).
+
+[Level peek and stairs](Docs/NavigationReadability.md): F6 temporarily shows the
+whole level. Up stairs rise to a stone portal; down stairs spiral into a dark
+well. At level scale, **< UP** / **> DOWN** badges identify known stairs.
 
 Supported creatures and roles use their original default-tile colours on
 tile-derived volume meshes. The hero's glyph is gold and pet glyphs are violet;

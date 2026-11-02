@@ -1,0 +1,26 @@
+{
+  "backup": "Backups/NetHackSaves/20261102T085701.590664Z.zip",
+  "baseline_file_count": 1078,
+  "player_file_count": 1069,
+  "all_player_and_runtime_files_unchanged": true,
+  "played_file_set_unchanged": true,
+  "last_session_pointer_unchanged": true,
+  "shortcut": "F6",
+  "reversible_camera_view": true,
+  "stairs": [
+    "raised pale flight",
+    "recessed dark spiral"
+  ],
+  "known_terrain_only": true,
+  "editor_build_passed": true,
+  "checks": {
+    "build-navigation-close.log": "NAVIGATION_CHECK PASS key=F6 views=18 exact_restore=1 f5_cancels=1 first_person_restore=1 stair_types=2 memory=2 styles=2 native_cells_unchanged=1 turn_before=5 turn_after=5 sequence_before=7 sequence_after=7",
+    "build-navigation-wide.log": "NAVIGATION_CHECK PASS key=F6 views=18 exact_restore=1 f5_cancels=1 first_person_restore=1 stair_types=2 memory=2 styles=2 native_cells_unchanged=1 turn_before=5 turn_after=5 sequence_before=7 sequence_after=7",
+    "build-presentation-controls-live.log": "PRESENTATION_CONTROLS_CHECK PASS key=F7 return=Escape/Ctrl+F paths=240 headings=8 orbit=right_drag tilt_limits=20:85 roll=0 orbit_return=preserved interruption=continuous turn_before=5 turn_after=5 sequence_before=7 sequence_after=7"
+  },
+  "full_level_map_above_status_footer": true,
+  "camera_round_trip_cases": 18,
+  "stair_types": 2,
+  "visibility_states": 2,
+  "creature_styles": 2
+}

@@ -30,6 +30,9 @@ public:
     void CancelCameraDrag() { WasOrbiting=WasPanning=WasLooking=WasTravelHeld=false; }
     void AdjustZoom(float Steps);
     void ResetOverview();
+    void ToggleLevelOverview();
+    bool IsLevelOverview() const { return LevelOverviewActive; }
+    TMap<FIntPoint,FString> KnownStairs() const;
     void HandleTravelMouseButton(bool Pressed);
     FIntPoint GetMouseTravelCell() const { return MouseTravelCell; }
     void SetLiveFooterHeight(float Height) { LiveFooterHeight=Height; }
@@ -81,6 +84,10 @@ private:
     UInstancedStaticMeshComponent* GetDisplayedObjectBatch(const FNetHackCell& Cell);
     UInstancedStaticMeshComponent* GetFountainBatch(const FNetHackCell& Cell);
     void VerifySpecialBatch1();
+    void CreateStairBatches();
+    void AddStair(const FNetHackCell& Cell,int32 X,int32 Y);
+    void VerifyNavigation();
+    TMap<FIntPoint,FString> StairPreview;
     void AddFramedDoor(const FNetHackCell& Cell,int32 X,int32 Y);
     void VerifyDoorFrames();
     void VerifyObjectBatch1();
@@ -104,6 +111,11 @@ private:
     bool AutoMoved=false;
     FIntPoint AutoFirstPosition=FIntPoint(-1,-1);
     double LiveStartedTime=0;
+    bool LevelOverviewActive=false,LevelOverviewFollow=true;
+    float LevelOverviewZoom=1.f;
+    FVector LevelOverviewFocus=FVector::ZeroVector;
+    FRotator LevelOverviewOrbit=FRotator::ZeroRotator;
+    FIntPoint LevelOverviewLocation=FIntPoint(-1,-1);
     float ZoomFactor=1.f,OverviewWidth=10000.f;
     FVector CameraFocus=FVector::ZeroVector;
     FVector2D LastPanMouse=FVector2D::ZeroVector;
@@ -138,6 +150,7 @@ public:
 private:
     void DrawLiveHUD(FNetHackSession& Session);
     void DrawLiveFooter(FNetHackSession& Session);
+    void DrawStairMarkers(ADungeonPrototype& Dungeon);
     float DrawGameTitle(float X,float Y,float Scale,FLinearColor Color);
     UPROPERTY() TObjectPtr<class UFont> TitleFont;
 };
