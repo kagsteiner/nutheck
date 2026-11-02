@@ -1,0 +1,16 @@
+{
+  "backup": "Backups/NetHackSaves/20261101T223018.872149Z.zip",
+  "baseline_file_count": 1078,
+  "all_original_save_and_runtime_files_unchanged": true,
+  "played_file_set_unchanged": true,
+  "last_session_pointer_unchanged": true,
+  "capture_isolated": true,
+  "editor_build_passed": true,
+  "checks": [
+    "PRESENTATION_CONTROLS_CHECK PASS",
+    "DUNGEON_FIRST_PERSON_CHECK PASS",
+    "NETHACK_LIVE_CHECK PASS",
+    "CREATURE_BATCH11_CHECK PASS"
+  ],
+  "orbit_check": "PRESENTATION_CONTROLS_CHECK PASS key=F7 return=Escape/Ctrl+F paths=240 headings=8 orbit=left_drag tilt_limits=20:85 roll=0 orbit_return=preserved interruption=continuous turn_before=4 turn_after=4 sequence_before=7 sequence_after=7"
+}

@@ -1,0 +1,12 @@
+{
+  "backup": "Backups/NetHackSaves/20261102T072606.717406Z.zip",
+  "baseline_file_count": 1078,
+  "all_player_and_runtime_files_unchanged": true,
+  "played_file_set_unchanged": true,
+  "last_session_pointer_unchanged": true,
+  "travel_button": "left",
+  "overview_orbit_button": "right",
+  "first_person_look_button": "right",
+  "middle_drag": "pan",
+  "editor_build_passed": true
+}

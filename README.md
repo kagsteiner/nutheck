@@ -108,8 +108,10 @@ leaves the hero's current view. The camera always frames the entire level.
 | F1 | NetHack help |
 | # | Type an extended command, then Enter |
 | Mouse wheel outside a menu | Zoom in/out, from 1x to 8x |
+| Left-click in overview | Native travel to the highlighted known square; release to confirm |
+| Right-mouse drag in overview | Tilt up/down; rotate around the vertical axis left/right |
 | Middle-mouse drag while zoomed | Pan around the level |
-| F5 | Restore the full-level overview |
+| F5 | Restore the full-level overview and default camera angle |
 | F7 | Show/hide floating entity glyphs and badges |
 | F8 | Recenter on the hero and follow movement |
 | F9 | Compare tile volumes with sculpted ant/dog/goblin candidates |
@@ -131,7 +133,13 @@ active keyboard layout. Arrows, numpad movement, and control keys are handled
 separately. NetHack still accepts ASCII commands/text; non-ASCII name entry
 is not implemented. At more than 1x zoom the view follows the hero until
 you pan; F8 resumes following. Zooming all the way out or pressing F5
-restores the whole level. The mouse wheel scrolls menus while a menu is open.
+restores the whole level. Zooming retains the chosen camera angle; F5 also resets
+the angle. The mouse wheel scrolls menus while a menu is open.
+
+Left-click travel uses NetHack's own `#travel` pathfinding and stopping rules.
+A turquoise outline previews the floor square under the mouse. Unknown squares,
+HUD panels and prompts are excluded; dragging or losing focus cancels the click.
+Right-drag in first person remains mouse look. See [mouse travel](Docs/MouseTravel.md).
 
 Supported creatures and roles use their original default-tile colours on
 tile-derived volume meshes. The hero's glyph is gold and pet glyphs are violet;
@@ -242,8 +250,9 @@ actual Blender/Unreal renders are saved in `Art/Studies/01-MiniatureDungeon/`.
 - Blender assets should use a floor-centred origin and the same cell scale.
 - Terrain, walls/doors, items, and characters occupy separate mesh batches.
 - Walls are 1.2 m tall, doors are 1 m tall, and real-time shadows are enabled.
-- The orthographic camera keeps its overhead angle while zooming and panning.
-  F5 always restores the full-level framing.
+- Right-drag tilts and rotates the overview without roll. The selected angle
+  survives zooming, panning and first-person visits. F5 restores the default
+  angle and full-level framing.
 
 Native source provenance, local modifications, and the original Windows
 build are described in `UPSTREAM.md`. The bridge protocol and current

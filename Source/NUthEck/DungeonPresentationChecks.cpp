@@ -14,7 +14,7 @@ bool ADungeonPrototype::VerifyPresentationControls()
     const bool Labels=ShowEntityGlyphs,SavedFirstPerson=FirstPerson,SavedFollow=FollowHero;
     const float SavedBlend=FirstPersonBlend,SavedZoom=ZoomFactor;
     const FVector SavedFocus=CameraFocus;
-    const FRotator SavedLook=EyeRotation;
+    const FRotator SavedLook=EyeRotation,SavedOrbit=OverviewOrbitOffset;
     bool Passed=HandleLiveKey(EKeys::F7,false) && ShowEntityGlyphs!=Labels;
     // The overview lift must never reach current geometry or survive at room
     // scale/first person. Exercise real camera updates without native input.
@@ -30,7 +30,40 @@ bool ADungeonPrototype::VerifyPresentationControls()
     FirstPerson=SavedFirstPerson;FirstPersonBlend=SavedBlend;ZoomFactor=SavedZoom;FitCamera();
     Passed &= HandleLiveKey(EKeys::F7,false) && ShowEntityGlyphs==Labels;
     const FVector Eye=CellPosition(Session->Hero.X,Session->Hero.Y,80.f);
-    const FRotator Overhead(-58,-75,0);
+    // Exercise the same gesture handler as the viewport and real camera fit.
+    // Horizontal motion only changes heading; vertical motion only changes tilt.
+    FirstPerson=false;FirstPersonBlend=0;ZoomFactor=3;FollowHero=false;
+    CameraFocus=SavedFocus;OverviewOrbitOffset=FRotator::ZeroRotator;
+    UpdateOverviewDrag(FVector2D(100,100),false);
+    UpdateOverviewDrag(FVector2D(100,100),true);
+    const FRotator InitialOrbit=OverviewRotation();
+    Passed &= OverviewOrbitOffset.IsZero();
+    UpdateOverviewDrag(FVector2D(340,100),true);
+    Passed &= FMath::IsNearlyEqual(OverviewRotation().Yaw,InitialOrbit.Yaw+60.f)
+        && OverviewRotation().Pitch==InitialOrbit.Pitch && OverviewRotation().Roll==0;
+    UpdateOverviewDrag(FVector2D(340,28),true);
+    const FRotator DraggedOrbit=OverviewRotation();
+    Passed &= FMath::IsNearlyEqual(DraggedOrbit.Pitch,InitialOrbit.Pitch+18.f)
+        && DraggedOrbit.Yaw==InitialOrbit.Yaw+60.f && DraggedOrbit.Roll==0;
+    FitCamera();
+    Passed &= Camera->GetComponentRotation().Equals(DraggedOrbit,.001)
+        && CameraFocus.Equals(SavedFocus,.001) && !FollowHero;
+    const FRotator ReleasedOffset=OverviewOrbitOffset;
+    UpdateOverviewDrag(FVector2D(10000,10000),false);
+    UpdateOverviewDrag(FVector2D(-10000,-10000),true);
+    Passed &= OverviewOrbitOffset.Equals(ReleasedOffset,.001);
+    UpdateOverviewDrag(FVector2D(-10000,10000),true);
+    Passed &= FMath::IsNearlyEqual(OverviewRotation().Pitch,-85.f);
+    UpdateOverviewDrag(FVector2D(-10000,-10000),true);
+    Passed &= FMath::IsNearlyEqual(OverviewRotation().Pitch,-20.f) && OverviewRotation().Roll==0;
+    UpdateOverviewDrag(FVector2D::ZeroVector,false);
+    OverviewOrbitOffset=ReleasedOffset;
+    AdjustZoom(-100.f); // Reaching full-level zoom preserves the selected angle.
+    Passed &= OverviewRotation().Equals(DraggedOrbit,.001);
+    HandleLiveKey(EKeys::F5,false);
+    Passed &= OverviewOrbitOffset.IsZero() && ZoomFactor==1.f;
+    OverviewOrbitOffset=ReleasedOffset;ZoomFactor=SavedZoom;FitCamera();
+    const FRotator Overhead=OverviewRotation();
     int32 Paths=0;
     for(const FVector Offset:{FVector::ZeroVector,FVector(3000,-1800,0)})
     for(float Zoom:{1.f,3.f,8.f}) for(float Pitch:{-70.f,-35.f,0.f,40.f,70.f}) for(int32 Heading=0;Heading<8;++Heading)
@@ -70,12 +103,12 @@ bool ADungeonPrototype::VerifyPresentationControls()
         FitCamera();
         Passed &= Camera->GetComponentLocation().Equals(Before,.001) && Camera->GetComponentQuat().Equals(BeforeRotation,.00001);
         FirstPersonBlend=0;FitCamera();
-        Passed &= Camera->ProjectionMode==ECameraProjectionMode::Orthographic && CameraFocus.Equals(PannedFocus,.001) && !FollowHero;
+        Passed &= Camera->ProjectionMode==ECameraProjectionMode::Orthographic && CameraFocus.Equals(PannedFocus,.001) && !FollowHero && Camera->GetComponentRotation().Equals(Overhead,.001);
     }
-    FirstPerson=SavedFirstPerson;FirstPersonBlend=SavedBlend;EyeRotation=SavedLook;
+    FirstPerson=SavedFirstPerson;FirstPersonBlend=SavedBlend;EyeRotation=SavedLook;OverviewOrbitOffset=SavedOrbit;WasOrbiting=false;
     ZoomFactor=SavedZoom;CameraFocus=SavedFocus;FollowHero=SavedFollow;ShowEntityGlyphs=Labels;FitCamera();
     Passed &= Session->Turn==Turn && Session->Sequence==Sequence;
-    UE_LOG(LogTemp,Display,TEXT("PRESENTATION_CONTROLS_CHECK %s key=F7 return=Escape/Ctrl+F paths=%d headings=8 interruption=continuous turn_before=%d turn_after=%d sequence_before=%d sequence_after=%d"),
+    UE_LOG(LogTemp,Display,TEXT("PRESENTATION_CONTROLS_CHECK %s key=F7 return=Escape/Ctrl+F paths=%d headings=8 orbit=right_drag tilt_limits=20:85 roll=0 orbit_return=preserved interruption=continuous turn_before=%d turn_after=%d sequence_before=%d sequence_after=%d"),
         Passed?TEXT("PASS"):TEXT("FAIL"),Paths,Turn,Session->Turn,Sequence,Session->Sequence);
     return Passed;
 }

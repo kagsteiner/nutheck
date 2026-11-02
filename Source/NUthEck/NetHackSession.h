@@ -31,6 +31,9 @@ public:
     void Pump();
     bool Reply(const FString& Payload);
     void Key(int32 Character);
+    bool CanTravelTo(FIntPoint Cell) const;
+    bool TravelTo(FIntPoint Cell);
+    bool MouseTravelSupported=false;
     void Scroll(int32 Delta);
     bool TakeMapDirty() { bool Result=MapDirty; MapDirty=false; return Result; }
     bool IsCommand() const { return Awaiting && PromptType==TEXT("command"); }

@@ -302,7 +302,30 @@ void ADungeonPrototype::Tick(float DeltaSeconds)
     if(Session) TickLiveGame();
     FirstPersonBlend=FMath::FInterpConstantTo(FirstPersonBlend,FirstPerson?1.f:0.f,DeltaSeconds,1.25f);
     FitCamera();
+    TickMouseTravel();
     if(Session) UpdateTileFallbackFacing();
+}
+
+FRotator ADungeonPrototype::OverviewRotation() const
+{
+    const FRotator Base=ArtStudy?FRotator(-55,-125,0):FRotator(-58,-75,0);
+    return FRotator(Base.Pitch+OverviewOrbitOffset.Pitch,Base.Yaw+OverviewOrbitOffset.Yaw,0);
+}
+
+void ADungeonPrototype::UpdateOverviewDrag(FVector2D Mouse,bool Dragging)
+{
+    // Seed each new gesture without moving the camera. A release, prompt or
+    // mode switch breaks the gesture so cursor travel cannot become a jump.
+    if(Dragging && WasOrbiting)
+    {
+        const FVector2D Delta=Mouse-LastOrbitMouse;
+        const float BasePitch=ArtStudy?-55.f:-58.f;
+        OverviewOrbitOffset.Yaw=FRotator::NormalizeAxis(OverviewOrbitOffset.Yaw+Delta.X*.25f);
+        const float Pitch=FMath::Clamp(BasePitch+OverviewOrbitOffset.Pitch-Delta.Y*.25f,-85.f,-20.f);
+        OverviewOrbitOffset.Pitch=Pitch-BasePitch;
+    }
+    WasOrbiting=Dragging;
+    if(Dragging)LastOrbitMouse=Mouse;
 }
 
 void ADungeonPrototype::FitCamera()
@@ -314,7 +337,12 @@ void ADungeonPrototype::FitCamera()
     if (W<=0 || H<=0) return;
     const bool Resized=LastViewport!=FIntPoint(W,H);
     LastViewport=FIntPoint(W,H);
-    const FRotator Rotation=ArtStudy?FRotator(-55,-125,0):FRotator(-58,-75,0);
+    FVector2D OrbitMouse=FVector2D::ZeroVector;
+    const bool Orbiting=!IsFirstPerson() && !(Session && (Session->Ended || (Session->Awaiting && !Session->IsCommand())))
+        && PC->IsInputKeyDown(EKeys::RightMouseButton) && !PC->IsInputKeyDown(EKeys::LeftMouseButton) && !PC->IsInputKeyDown(EKeys::MiddleMouseButton)
+        && PC->GetMousePosition(OrbitMouse.X,OrbitMouse.Y);
+    UpdateOverviewDrag(OrbitMouse,Orbiting);
+    const FRotator Rotation=OverviewRotation();
     const FVector Forward=Rotation.Vector();
     const FVector Right=FRotationMatrix(Rotation).GetUnitAxis(EAxis::Y);
     const FVector Up=FRotationMatrix(Rotation).GetUnitAxis(EAxis::Z);
@@ -387,7 +415,7 @@ void ADungeonPrototype::AdjustZoom(float Steps)
 {
     if(IsFirstPerson()) return;
     ZoomFactor=FMath::Clamp(ZoomFactor*FMath::Pow(1.2f,Steps),1.f,8.f);
-    if(ZoomFactor<=1.001f) ResetOverview();
+    if(ZoomFactor<=1.001f) { ZoomFactor=1.f;CameraFocus=FVector::ZeroVector;FollowHero=true;WasPanning=false; }
     FitCamera();
     UE_LOG(LogTemp,Display,TEXT("DUNGEON_ZOOM factor=%.3f width=%.1f"),ZoomFactor,Camera->OrthoWidth);
 }
@@ -395,6 +423,7 @@ void ADungeonPrototype::AdjustZoom(float Steps)
 void ADungeonPrototype::ResetOverview()
 {
     FirstPerson=false; FirstPersonBlend=0.f; WasLooking=false;
+    OverviewOrbitOffset=FRotator::ZeroRotator;WasOrbiting=false;
     ZoomFactor=1.f; CameraFocus=FVector::ZeroVector; FollowHero=true; WasPanning=false;
     FitCamera();
     UE_LOG(LogTemp,Display,TEXT("DUNGEON_OVERVIEW_RESTORED width=%.1f"),Camera->OrthoWidth);
@@ -406,7 +435,7 @@ void ADungeonPrototype::ToggleFirstPerson()
     FirstPerson=!FirstPerson;
     // EyeRotation already records the latest actual movement or right-drag look.
     // Entry must not replace that facing with an unrelated open corridor.
-    WasPanning=false; WasLooking=false;
+    WasPanning=false; WasLooking=false; WasOrbiting=false;
     UE_LOG(LogTemp,Display,TEXT("DUNGEON_FIRST_PERSON %s turn=%d"),FirstPerson?TEXT("ON"):TEXT("OFF"),Session?Session->Turn:0);
 }
 
@@ -504,7 +533,7 @@ void ADungeonPrototypeHUD::DrawHUD()
             const FLinearColor TitleColor(.85f,.74f,.55f);
             const float TitleWidth=DrawGameTitle(32*Scale,24*Scale,Scale,TitleColor);
             DrawText(TEXT("  /  PAINTED MINIATURE STUDY"),TitleColor,32*Scale+TitleWidth,24*Scale,GEngine->GetMediumFont(),Scale);
-            DrawText(TEXT("BLENDER MESHES / UNREAL REAL-TIME RENDER  |  WHEEL Zoom  |  MIDDLE-DRAG Pan  |  Ctrl+F First person  |  RIGHT-DRAG Look  |  F5 Reset"),FLinearColor(.65f,.7f,.7f),32*Scale,Canvas->SizeY-36*Scale,GEngine->GetSmallFont(),.85f*Scale);
+            DrawText(TEXT("BLENDER MESHES / UNREAL REAL-TIME RENDER  |  WHEEL Zoom  |  RIGHT-DRAG Orbit  |  MIDDLE-DRAG Pan  |  Ctrl+F First person  |  RIGHT-DRAG Look  |  F5 Reset"),FLinearColor(.65f,.7f,.7f),32*Scale,Canvas->SizeY-36*Scale,GEngine->GetSmallFont(),.85f*Scale);
             return;
         }
     }

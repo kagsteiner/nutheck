@@ -4,6 +4,17 @@ Implemented for the user's request before continuing creature generation.
 
 ## Controls
 
+- **Right-drag in overview** tilts the camera with vertical movement and rotates
+  around the dungeon's vertical axis with horizontal movement. There is no roll.
+  Dragging upward gives a steeper overhead view; downward gives a shallower view.
+  Tilt stays 20–85 degrees below the horizon, at 0.25 degrees per mouse pixel.
+  Rotation uses the current view focus, at both full-level and room zoom.
+  Middle-drag still pans. The selected angle survives zooming (including 1x),
+  following, panning and first-person entry/exit. **F5** resets angle and framing.
+  Releasing the button or losing window focus ends the gesture. Prompts and the
+  session-ended panel do not rotate the camera; their controls remain usable.
+  Angle is an in-memory preference for the current app launch.
+
 - **F7** toggles all existing floating entity glyphs and their background badges
   (hero, pets and monsters). Labels start visible on a fresh launch. The setting
   stays in effect across camera changes, map rebuilds and creature-style changes.
@@ -14,6 +25,9 @@ Implemented for the user's request before continuing creature generation.
   is north. The former first-entry longest-corridor override has been removed.
 - **Escape** also leaves first person, including during entry, without sending
   a cancel command to NetHack. In the overview it retains normal prompt/menu cancellation.
+- **Left-click in overview** invokes native travel to the highlighted known
+  square. [Mouse travel](MouseTravel.md) describes selection, native behaviour
+  and verification.
 - **Right-drag** looks around once entry settles. Movement retains map directions
   and faces actual travel. Exit restores the prior zoom, focus and follow state.
   **F5** still returns directly to the full-level overview.
@@ -86,3 +100,18 @@ presentation-only; they are not native monster spawns.
 For unattended model captures, `-HideEntityGlyphs` starts with labels hidden.
 F7 still toggles them, and ordinary launches retain labels-on by default. Batch 12
 verifies this launch state and supplies a clear three-unicorn engine capture.
+
+## Overview drag verification (2026-11-01)
+
+`build-camera-orbit-unreal.log` and the expanded presentation suite pass. The
+same drag handler used by the viewport is exercised against real camera
+components: isolated horizontal/vertical motion, tilt limits, zero roll,
+release/restart without cursor jumps, full-level zoom retaining the angle and
+F5 restoring the default. The existing eight-heading first-person checks now
+also verify return to a custom overview angle. Native turn and sequence remain
+unchanged. These are automated gesture/camera checks, not a manual mouse test.
+
+Save/runtime preservation was checked against the verified backup
+`Backups/NetHackSaves/20261101T223018.872149Z.zip`: all 1,078 files and the complete
+file set, including the player session pointer, match. Tests used fresh isolated
+capture sessions. [Audit](Images/PresentationControls/CameraOrbitVerification.json).

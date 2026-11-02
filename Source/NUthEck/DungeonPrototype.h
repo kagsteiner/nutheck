@@ -27,8 +27,11 @@ public:
     bool HandleLiveKey(FKey Key, bool Control);
     bool HandleLiveCharacter(TCHAR Character);
     void SetTextRepeatSuppressed(bool Suppressed) { TextRepeatSuppressed=Suppressed; }
+    void CancelCameraDrag() { WasOrbiting=WasPanning=WasLooking=WasTravelHeld=false; }
     void AdjustZoom(float Steps);
     void ResetOverview();
+    void HandleTravelMouseButton(bool Pressed);
+    FIntPoint GetMouseTravelCell() const { return MouseTravelCell; }
     float GetZoomFactor() const { return ZoomFactor; }
     void ToggleFirstPerson();
     bool IsFirstPerson() const { return FirstPerson || FirstPersonBlend>0.f; }
@@ -52,6 +55,15 @@ private:
     void FitFurCamera();
     void CaptureFurStudy();
     void FitCamera();
+    bool PickTravelCell(FVector2D Screen,FIntPoint& Cell) const;
+    void TickMouseTravel();
+    void UpdateTravelButton(FVector2D Mouse,bool Pressed);
+    void VerifyMouseTravel();
+    FIntPoint MouseTravelCell=FIntPoint(-1,-1),PressedTravelCell=FIntPoint(-1,-1);
+    FVector2D TravelPressMouse=FVector2D::ZeroVector;
+    bool WasTravelHeld=false,TravelDragCancelled=false;
+    FRotator OverviewRotation() const;
+    void UpdateOverviewDrag(FVector2D Mouse,bool Dragging);
     void CaptureAndValidate();
     FVector CellPosition(int32 X, int32 Y, float Z = 0.f) const;
     void StartLiveGame(bool NewGame=false);
@@ -92,6 +104,9 @@ private:
     float ZoomFactor=1.f,OverviewWidth=10000.f;
     FVector CameraFocus=FVector::ZeroVector;
     FVector2D LastPanMouse=FVector2D::ZeroVector;
+    FVector2D LastOrbitMouse=FVector2D::ZeroVector;
+    FRotator OverviewOrbitOffset=FRotator::ZeroRotator;
+    bool WasOrbiting=false;
     bool FollowHero=true,WasPanning=false,TextRepeatSuppressed=false;
     TCHAR SuppressedNumpadCharacter=0;
     double NumpadCharacterTime=0;

@@ -115,7 +115,7 @@ void FNetHackSession::Event(const TSharedPtr<FJsonObject>& O)
 {
     FString Type;
     if(!O->TryGetStringField(TEXT("event"),Type)) return;
-    if(Type==TEXT("hello")) { Connected=true; return; }
+    if(Type==TEXT("hello")) { Connected=true; O->TryGetBoolField(TEXT("mouse_travel"),MouseTravelSupported); return; }
     if(Type==TEXT("cursor")) { Cursor=FIntPoint(O->GetIntegerField(TEXT("x")),O->GetIntegerField(TEXT("y"))); return; }
     if(Type==TEXT("message")) { AddMessage(O->GetStringField(TEXT("text"))); return; }
     if(Type==TEXT("end")) { Ended=true; Awaiting=false; AddMessage(TEXT("Game ended. Press F2 for a new game.")); return; }
@@ -213,6 +213,20 @@ void FNetHackSession::ToggleItem(const FNetHackMenuItem& Item)
     if(MenuMode==1) Reply(FString::Printf(TEXT("%d:%d"),Item.Index,Count));
     else if(Selection.Contains(Item.Index)) Selection.Remove(Item.Index);
     else Selection.Add(Item.Index,Count);
+}
+
+bool FNetHackSession::CanTravelTo(FIntPoint Cell) const
+{
+    if(!MouseTravelSupported || !IsCommand() || Ended || !IsReady()
+        || Cell.X<0 || Cell.X>=79 || Cell.Y<0 || Cell.Y>=21)return false;
+    const auto& Tile=Cells[Cell.Y*79+Cell.X];
+    return Tile.Kind!=TEXT("unknown") && Tile.Terrain!=TEXT("stone")
+        && Tile.Terrain!=TEXT("wall") && Tile.Terrain!=TEXT("none");
+}
+
+bool FNetHackSession::TravelTo(FIntPoint Cell)
+{
+    return CanTravelTo(Cell) && Reply(FString::Printf(TEXT("travel %d %d"),Cell.X,Cell.Y));
 }
 
 void FNetHackSession::Key(int32 C)

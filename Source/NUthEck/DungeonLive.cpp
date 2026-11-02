@@ -525,6 +525,7 @@ void ADungeonPrototype::TickLiveGame()
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyObjectBatch1"))) VerifyObjectBatch1();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifySpecialBatch1"))) VerifySpecialBatch1();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyDoorFrames"))) VerifyDoorFrames();
+            if(FParse::Param(FCommandLine::Get(),TEXT("VerifyMouseTravel"))) VerifyMouseTravel();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyHumanPlayers")))
             {
                 VerifyAndCaptureHumanPlayers();
@@ -653,11 +654,16 @@ bool UDungeonGameViewportClient::InputChar(FViewport* InViewport,int32 Controlle
 void ADungeonPlayerController::FlushPressedKeys()
 {
     LeftControlHeld=RightControlHeld=LeftAltHeld=RightAltHeld=false;
+    if(auto* Dungeon=Cast<ADungeonPrototype>(GetViewTarget()))Dungeon->CancelCameraDrag();
     Super::FlushPressedKeys();
 }
 
 bool ADungeonPlayerController::InputKey(const FInputKeyEventArgs& Params)
 {
+    // Handle both edges as events so a quick click between rendered frames
+    // still selects exactly once. First-person right-drag remains mouse look.
+    if(Params.Key==EKeys::LeftMouseButton && (Params.Event==IE_Pressed || Params.Event==IE_Released))
+        if(auto* Dungeon=Cast<ADungeonPrototype>(GetViewTarget()))Dungeon->HandleTravelMouseButton(Params.Event==IE_Pressed);
     // Track modifiers in event order; PlayerInput state can lag behind a chord
     // when Windows delivers press/release events within the same engine frame.
     const bool Held=Params.Event!=IE_Released;
@@ -707,7 +713,7 @@ void ADungeonPrototypeHUD::DrawLiveHUD(FNetHackSession& Live)
     for(int32 I=FMath::Max(0,Lines.Num()-3),Row=0;I<Lines.Num();++I,++Row)
         DrawText(Lines[I],Ink,32*S,H-(114-Row*18)*S,GEngine->GetSmallFont(),S);
     DrawText(Live.IsReady()?FString::Printf(TEXT("ADVENTURER    HP %d/%d    AC %d    LV %d"),Live.HP,Live.MaxHP,Live.AC,Live.Level):TEXT("Choose your character to enter the dungeon."),Gold,32*S,H-48*S,GEngine->GetSmallFont(),S);
-    DrawText(TEXT("ARROWS / NUMPAD Move   i Inventory   o Open   , Pick up   F1 Help   WHEEL Zoom   MIDDLE-DRAG Pan   F7 Labels   F9 Creature style"),Muted,32*S,H-25*S,GEngine->GetSmallFont(),.9f*S);
+    DrawText(TEXT("ARROWS / NUMPAD Move   i Inventory   o Open   , Pick up   F1 Help   WHEEL Zoom   LEFT-CLICK Travel   RIGHT-DRAG Orbit   MIDDLE-DRAG Pan   F7 Labels   F9 Creature style"),Muted,32*S,H-25*S,GEngine->GetSmallFont(),.9f*S);
     DrawText(Live.Ended?TEXT("F2  New game"):TEXT("@ You  /  VIOLET LABEL Pet"),Muted,W-290*S,H-48*S,GEngine->GetSmallFont(),.9f*S);
 
     // Labels remain readable when a tall foreground wall obscures a small token.
@@ -749,6 +755,17 @@ void ADungeonPrototypeHUD::DrawLiveHUD(FNetHackSession& Live)
             DrawRect(FLinearColor(.01f,.015f,.02f,.85f),Left-GlyphPadding,Top-GlyphPadding,GlyphWidth+2*GlyphPadding,GlyphHeight+2*GlyphPadding);
             DrawText(Glyph,Color,Left,Top,GlyphFont,Scale);
         }
+    }
+
+    if(Dungeon && Dungeon->GetMouseTravelCell().X>=0)
+    {
+        const FIntPoint Target=Dungeon->GetMouseTravelCell();
+        const FVector Centre((Target.X-39)*100.f,(Target.Y-10)*100.f,10);
+        const FVector Corners[]={FVector(-43,-43,0),FVector(43,-43,0),FVector(43,43,0),FVector(-43,43,0)};
+        FVector2D Points[4];bool Projected=true;
+        for(int32 I=0;I<4;++I)Projected &= GetOwningPlayerController()->ProjectWorldLocationToScreen(Centre+Corners[I],Points[I]);
+        if(Projected)for(int32 I=0;I<4;++I)
+            DrawLine(Points[I].X,Points[I].Y,Points[(I+1)%4].X,Points[(I+1)%4].Y,FLinearColor(.3f,.9f,.85f),2*S);
     }
 
     if(Live.Awaiting && Live.PromptType==TEXT("position") && Live.Cursor.X>=0)

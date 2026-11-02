@@ -1,0 +1,63 @@
+{
+  "backup": "Backups/NetHackSaves/20261101T223834.724795Z.zip",
+  "baseline_file_count": 1078,
+  "player_file_count": 1069,
+  "played_files_unchanged": true,
+  "played_file_set_unchanged": true,
+  "last_session_pointer_unchanged": true,
+  "runtime_changes": [
+    "Runtime/NetHackBridge.exe"
+  ],
+  "new_backend_sha256": "0de1951900f15749a0f5f782b5294400bd270a48c65676a70a87d492129d7ece",
+  "all_other_runtime_files_unchanged": true,
+  "post_update_backup": "Backups/NetHackSaves/20261101T225359.472248Z.zip",
+  "native_test": {
+    "root": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\mouse-travel-dfbe131223fe4dcd959c4d4eb076ae71",
+    "cases": [
+      {
+        "threat": false,
+        "result": {
+          "position": [
+            29,
+            10
+          ],
+          "turns": 22,
+          "hp": 16,
+          "detoured": true
+        }
+      },
+      {
+        "threat": true,
+        "result": {
+          "position": [
+            10,
+            9
+          ],
+          "turns": 1,
+          "hp": 16,
+          "detoured": false
+        }
+      }
+    ],
+    "mouse_equals_native_keyboard": true,
+    "invalid_coordinates_no_turn": true
+  },
+  "compatibility_test": {
+    "backup": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Backups\\NetHackSaves\\20261101T223834.724795Z.zip",
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\backend-compatibility-d35194c08c6a48eb9a83bd3cecc5ed91\\session",
+    "state": [
+      [
+        18,
+        4
+      ],
+      2,
+      16
+    ]
+  },
+  "editor_build_passed": true,
+  "checks": {
+    "build-mouse-travel-live.log": "MOUSE_TRAVEL_CHECK PASS picks=12 hud_rejected=1 bounds_rejected=1 prompts_rejected=1 first_person_rejected=1 turn_before=5 turn_after=5 sequence_before=7 sequence_after=7",
+    "build-presentation-controls-live.log": "PRESENTATION_CONTROLS_CHECK PASS key=F7 return=Escape/Ctrl+F paths=240 headings=8 orbit=left_drag tilt_limits=20:85 roll=0 orbit_return=preserved interruption=continuous turn_before=5 turn_after=5 sequence_before=7 sequence_after=7",
+    "build-mouse-travel-lifecycle.log": "BRIDGE_LIFECYCLE_PASS ((72, 8), 3, 16) resumed and advanced to 4"
+  }
+}

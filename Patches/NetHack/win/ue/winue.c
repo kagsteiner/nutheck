@@ -15,6 +15,8 @@ typedef struct { int type, count; UEEntry *entries; char prompt[BUFSZ]; } UEWind
 static UEWindow ue_windows[64];
 static int sequence;
 static char reply[16384];
+static boolean ue_travel_pending;
+static coord ue_travel_target;
 struct window_procs ue_procs = { "ue", wp_shim };
 
 static void quote(const char *s)
@@ -226,7 +228,7 @@ static void ue_glyph(winid w,coordxy x,coordxy y,const glyph_info *fg,const glyp
         printf(",\"symbol\":%d,\"horizontal\":%s}\n",fg->ttychar,(s==S_hcdoor || s==S_hodoor)?"true":"false");
     }
 }
-static void ue_init(int *argc,char **argv) { iflags.window_inited=TRUE; puts("{\"event\":\"hello\",\"protocol\":1,\"cols\":79,\"rows\":21}"); }
+static void ue_init(int *argc,char **argv) { iflags.window_inited=TRUE; puts("{\"event\":\"hello\",\"protocol\":1,\"cols\":79,\"rows\":21,\"mouse_travel\":true}"); }
 static void ue_player(void) { (void)genl_player_setup(80); }
 static void ue_name(void) { const char *s=request("line","What is your name?"); copynchars(svp.plname,*s?s:"Adventurer",PL_NSIZ-1); }
 static void ue_exit(const char *s) { if(s && *s) message(s); puts("{\"event\":\"end\"}"); }
@@ -241,8 +243,40 @@ static int ue_getch(void) { return keyrequest("key","Choose a key or direction")
 static int ue_poskey(coordxy *x,coordxy *y,int *mod)
 {
     const char *type=program_state.input_state==commandInp?"command":program_state.input_state==getposInp?"position":"key";
+    const char *input;
     *x=*y=0; *mod=0;
-    return keyrequest(type,program_state.input_state==getposInp?"Move the cursor; . selects, Esc cancels":"");
+    /* Supply one mouse selection only to #travel's native getpos(). The core
+       owns pathfinding, movement, hazards, interruption and destination memory. */
+    if (ue_travel_pending && program_state.input_state==getposInp
+        && iflags.getloc_travelmode) {
+        ue_travel_pending=FALSE;
+        *x=ue_travel_target.x; *y=ue_travel_target.y; *mod=CLICK_1;
+        return 0;
+    }
+    ue_travel_pending=FALSE;
+    input=request(type,program_state.input_state==getposInp?"Move the cursor; . selects, Esc cancels":"");
+    if (!strncmp(input,"travel",6)) {
+        int tx,ty; char extra;
+        if (program_state.input_state==commandInp
+            && sscanf(input,"travel %d %d %c",&tx,&ty,&extra)==2
+            && tx>=0 && tx<COLNO-1 && ty>=0 && ty<ROWNO) {
+            const struct ext_func_tab *cmd;
+            for (cmd=extcmdlist;cmd->ef_txt;++cmd) {
+                if (!strcmp(cmd->ef_txt,"travel")) {
+                    char key=cmd_from_func(cmd->ef_funct);
+                    if (key) {
+                        ue_travel_target.x=tx+1; ue_travel_target.y=ty;
+                        ue_travel_pending=TRUE;
+                        return (unsigned char)key;
+                    }
+                    break;
+                }
+            }
+            message("Travel needs a native key binding; use #travel instead.");
+        }
+        return '\033';
+    }
+    return atoi(input);
 }
 static char ue_yn(const char *query,const char *choices,char def)
 {
