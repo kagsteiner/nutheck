@@ -94,6 +94,11 @@ an option. The scene starts with only the terrain NetHack has revealed;
 exploration fills in the map. Previously seen terrain is dimmed when it
 leaves the hero's current view. The camera always frames the entire level.
 
+The [status HUD](Docs/StatusHUD.md) shows the full enabled native status fields,
+with a large HP display and health bar (yellow at 50%, red at 25%) and an always
+visible hunger label. Attributes, power, gold, rank, location, burden and active
+conditions remain visible beside it; crowded status rows wrap.
+
 | Key | Action |
 | --- | --- |
 | Arrow keys | Move north, south, east, west |

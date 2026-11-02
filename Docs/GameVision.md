@@ -57,3 +57,11 @@ preserving the existing texture and lighting. See [FloorContrast.md](FloorContra
 The darker floors were accepted on 2026-11-01. Doorways now use a fixed timber
 frame and a side-hinged leaf, leaving the opening's centre clear when open.
 See [DoorFrames.md](DoorFrames.md).
+
+## Gameplay status visibility (2026-11-02)
+
+All native status information matters during play. Preserve the complete native
+status field set and active conditions as graphics evolve. Current/max HP must
+remain prominent, with yellow/red low-health cues, and hunger must always be
+visible. Do not reduce the display to a selected HP/AC/level subset.
+See [StatusHUD.md](StatusHUD.md) for the current implementation and evidence.

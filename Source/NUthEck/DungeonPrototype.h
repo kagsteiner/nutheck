@@ -32,6 +32,8 @@ public:
     void ResetOverview();
     void HandleTravelMouseButton(bool Pressed);
     FIntPoint GetMouseTravelCell() const { return MouseTravelCell; }
+    void SetLiveFooterHeight(float Height) { LiveFooterHeight=Height; }
+    float GetLiveFooterHeight() const { return LiveFooterHeight; }
     float GetZoomFactor() const { return ZoomFactor; }
     void ToggleFirstPerson();
     bool IsFirstPerson() const { return FirstPerson || FirstPersonBlend>0.f; }
@@ -44,6 +46,7 @@ private:
     static constexpr float CellSize = 100.f;
     TArray<uint8> Cells;
     UPROPERTY() TObjectPtr<UCameraComponent> Camera;
+    float LiveFooterHeight=0.f;
     FVector BoardMin;
     FVector BoardMax;
     FIntPoint LastViewport = FIntPoint::ZeroValue;
@@ -134,6 +137,7 @@ public:
     virtual void DrawHUD() override;
 private:
     void DrawLiveHUD(FNetHackSession& Session);
+    void DrawLiveFooter(FNetHackSession& Session);
     float DrawGameTitle(float X,float Y,float Scale,FLinearColor Color);
     UPROPERTY() TObjectPtr<class UFont> TitleFont;
 };

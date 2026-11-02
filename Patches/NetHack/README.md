@@ -19,3 +19,7 @@ with zero-based presentation coordinates. The port invokes the existing native
 travel command's bound key, then returns one mouse selection to that command's
 `getpos` call. It does not change core pathfinding or the save format. See
 [MouseTravel.md](../../Docs/MouseTravel.md).
+
+The additive `status` event copies all native status field values, formatting,
+enabled flags and active condition names at status flush/reset. It does not
+derive new gameplay state or change the save format. See [StatusHUD.md](../../Docs/StatusHUD.md).

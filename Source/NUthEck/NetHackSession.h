@@ -21,6 +21,13 @@ struct FNetHackMenuItem
     bool Selectable=false;
 };
 
+struct FNetHackStatusField
+{
+    FString Value,Text;
+    bool Enabled=false;
+    int32 Color=0;
+};
+
 // The child owns NetHack's globals and blocking loop. All access here is on the game thread.
 class FNetHackSession
 {
@@ -40,6 +47,10 @@ public:
     bool IsReady() const { return Hero.X>=0 && Turn>0; }
     int32 KnownCellCount() const;
 
+    TMap<FString,FNetHackStatusField> Status;
+    TArray<FString> Conditions;
+    FString StatusValue(const TCHAR* Name) const { const auto* F=Status.Find(Name);return F && F->Enabled?F->Value.TrimStartAndEnd():FString(); }
+    FString StatusText(const TCHAR* Name) const { const auto* F=Status.Find(Name);return F && F->Enabled?F->Text.TrimStartAndEnd():FString(); }
     TArray<FNetHackCell> Cells;
     TArray<FString> Messages;
     TArray<FNetHackMenuItem> Menu;

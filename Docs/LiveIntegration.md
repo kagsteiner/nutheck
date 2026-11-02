@@ -39,6 +39,8 @@ Output consists of newline-delimited JSON events:
   displayed character, and displayed door orientation.
 - `state`: hero position, turn, HP, AC, experience level, depth, branch id,
   and a row-major visibility mask. Status is the hero's own information.
+- `status`: complete native enabled-field metadata, raw/formatted values and
+  active conditions from the native status window callbacks; see [StatusHUD.md](StatusHUD.md).
 - `message`: messages and raw startup diagnostics.
 - `menu`: ordered entries with opaque backend indices, accelerators, group
   accelerators, selection flags, and text.
@@ -166,12 +168,12 @@ controls.
 
 ## Current limits
 
-This is the first live presentation milestone. Meshes are placeholders,
-the status strip shows essential values rather than NetHack's full status
-field set, and game commands are keyboard-based. ASCII text input follows
-the active Windows keyboard layout. Non-ASCII text entry, mouse targeting,
-animation, sound, and
-individual Blender assets remain subsequent increments. This is an editor
+The [status HUD](StatusHUD.md) now shows the full enabled native status field
+set, including prominent HP and hunger. [Native mouse travel](MouseTravel.md)
+and individual creature models supplement keyboard commands and tile fallback.
+ASCII text input follows the active Windows keyboard layout. Non-ASCII text
+entry, general mouse targeting and sound remain subsequent increments;
+character animation is outside the current game vision. This is an editor
 project and staged native helper, not yet a packaged Unreal release.
 
 

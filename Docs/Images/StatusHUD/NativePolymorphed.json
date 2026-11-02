@@ -1,0 +1,195 @@
+{
+  "event": "status",
+  "fields": [
+    {
+      "name": "title",
+      "enabled": true,
+      "value": "Wizard the Giant Ant          ",
+      "text": "Wizard the Giant Ant          ",
+      "color": 8
+    },
+    {
+      "name": "strength",
+      "enabled": true,
+      "value": "17",
+      "text": " St:17",
+      "color": 8
+    },
+    {
+      "name": "dexterity",
+      "enabled": true,
+      "value": "15",
+      "text": " Dx:15",
+      "color": 8
+    },
+    {
+      "name": "constitution",
+      "enabled": true,
+      "value": "18",
+      "text": " Co:18",
+      "color": 8
+    },
+    {
+      "name": "intelligence",
+      "enabled": true,
+      "value": "8",
+      "text": " In:8",
+      "color": 8
+    },
+    {
+      "name": "wisdom",
+      "enabled": true,
+      "value": "8",
+      "text": " Wi:8",
+      "color": 8
+    },
+    {
+      "name": "charisma",
+      "enabled": true,
+      "value": "8",
+      "text": " Ch:8",
+      "color": 8
+    },
+    {
+      "name": "alignment",
+      "enabled": true,
+      "value": "Lawful",
+      "text": " Lawful",
+      "color": 8
+    },
+    {
+      "name": "score",
+      "enabled": false,
+      "value": "",
+      "text": " S:",
+      "color": 0
+    },
+    {
+      "name": "carrying-capacity",
+      "enabled": true,
+      "value": "Overloaded",
+      "text": " Overloaded",
+      "color": 8
+    },
+    {
+      "name": "gold",
+      "enabled": true,
+      "value": "$:0",
+      "text": " $:0",
+      "color": 8
+    },
+    {
+      "name": "power",
+      "enabled": true,
+      "value": "2",
+      "text": " Pw:2",
+      "color": 8
+    },
+    {
+      "name": "power-max",
+      "enabled": true,
+      "value": "2",
+      "text": "(2)",
+      "color": 8
+    },
+    {
+      "name": "experience-level",
+      "enabled": false,
+      "value": "1",
+      "text": " Xp:1",
+      "color": 8
+    },
+    {
+      "name": "armor-class",
+      "enabled": true,
+      "value": "3",
+      "text": " AC:3",
+      "color": 8
+    },
+    {
+      "name": "HD",
+      "enabled": true,
+      "value": "2",
+      "text": " HD:2",
+      "color": 8
+    },
+    {
+      "name": "time",
+      "enabled": true,
+      "value": "851",
+      "text": " T:851",
+      "color": 8
+    },
+    {
+      "name": "hunger",
+      "enabled": true,
+      "value": "Weak    ",
+      "text": " Weak    ",
+      "color": 8
+    },
+    {
+      "name": "hitpoints",
+      "enabled": true,
+      "value": "14",
+      "text": " HP:14",
+      "color": 8
+    },
+    {
+      "name": "hitpoints-max",
+      "enabled": true,
+      "value": "14",
+      "text": "(14)",
+      "color": 8
+    },
+    {
+      "name": "dungeon-level",
+      "enabled": true,
+      "value": "Dlvl:1  ",
+      "text": "Dlvl:1  ",
+      "color": 8
+    },
+    {
+      "name": "experience",
+      "enabled": false,
+      "value": "0",
+      "text": "/0",
+      "color": 8
+    },
+    {
+      "name": "condition",
+      "enabled": true,
+      "value": "",
+      "text": "",
+      "color": 8
+    },
+    {
+      "name": "weapon",
+      "enabled": true,
+      "value": "No-weapon",
+      "text": " No-weapon",
+      "color": 8
+    },
+    {
+      "name": "armor",
+      "enabled": true,
+      "value": "Naked",
+      "text": " Naked",
+      "color": 8
+    },
+    {
+      "name": "terrain",
+      "enabled": true,
+      "value": "Stairs",
+      "text": " Stairs",
+      "color": 8
+    },
+    {
+      "name": "version",
+      "enabled": true,
+      "value": "5.0.0",
+      "text": " 5.0.0",
+      "color": 8
+    }
+  ],
+  "conditions": []
+}

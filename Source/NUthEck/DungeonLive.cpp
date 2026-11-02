@@ -694,27 +694,7 @@ void ADungeonPrototypeHUD::DrawLiveHUD(FNetHackSession& Live)
     DrawText(Live.IsReady()?FString::Printf(TEXT("DLVL %d  /  TURN %d"),Live.Depth,Live.Turn):TEXT("A NEW ADVENTURE"),Gold,W-290*S,31*S,GEngine->GetSmallFont(),S);
     if(auto* View=Cast<ADungeonPrototype>(GetOwningPlayerController()->GetViewTarget()))
         DrawText(View->IsFirstPerson()?TEXT("FIRST PERSON  |  Esc / Ctrl+F Return  |  Right-drag Look"):FString::Printf(TEXT("%.1fx  |  F5 Full level  |  F8 Follow  |  Ctrl+F First person"),View->GetZoomFactor()),Muted,W-460*S,54*S,GEngine->GetSmallFont(),.85f*S);
-    DrawRect(Panel,0,H-132*S,W,132*S);
-    DrawRect(FLinearColor(.15f,.23f,.25f),32*S,H-132*S,W-64*S,1);
-    const int32 MaxChars=FMath::Max(35,int32((W/S-64)/7.5f));
-    TArray<FString> Lines;
-    for(const auto& Message:Live.Messages)
-    {
-        FString Rest=Message;
-        while(Rest.Len()>MaxChars)
-        {
-            int32 Break=MaxChars;
-            while(Break>MaxChars/2 && Rest[Break]!=' ') --Break;
-            if(Break<=MaxChars/2) Break=MaxChars;
-            Lines.Add(Rest.Left(Break)); Rest=Rest.Mid(Break).TrimStart();
-        }
-        Lines.Add(Rest);
-    }
-    for(int32 I=FMath::Max(0,Lines.Num()-3),Row=0;I<Lines.Num();++I,++Row)
-        DrawText(Lines[I],Ink,32*S,H-(114-Row*18)*S,GEngine->GetSmallFont(),S);
-    DrawText(Live.IsReady()?FString::Printf(TEXT("ADVENTURER    HP %d/%d    AC %d    LV %d"),Live.HP,Live.MaxHP,Live.AC,Live.Level):TEXT("Choose your character to enter the dungeon."),Gold,32*S,H-48*S,GEngine->GetSmallFont(),S);
-    DrawText(TEXT("ARROWS / NUMPAD Move   i Inventory   o Open   , Pick up   F1 Help   WHEEL Zoom   LEFT-CLICK Travel   RIGHT-DRAG Orbit   MIDDLE-DRAG Pan   F7 Labels   F9 Creature style"),Muted,32*S,H-25*S,GEngine->GetSmallFont(),.9f*S);
-    DrawText(Live.Ended?TEXT("F2  New game"):TEXT("@ You  /  VIOLET LABEL Pet"),Muted,W-290*S,H-48*S,GEngine->GetSmallFont(),.9f*S);
+    DrawLiveFooter(Live);
 
     // Labels remain readable when a tall foreground wall obscures a small token.
     auto* Dungeon=Cast<ADungeonPrototype>(GetOwningPlayerController()->GetViewTarget());

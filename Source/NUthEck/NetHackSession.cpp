@@ -141,6 +141,19 @@ void FNetHackSession::Event(const TSharedPtr<FJsonObject>& O)
         else if(Cell.Terrain==TEXT("none") || Cell.Terrain==TEXT("stone")) Cell.Terrain=TEXT("floor");
         MapDirty=true; return;
     }
+    if(Type==TEXT("status"))
+    {
+        Status.Reset();Conditions.Reset();
+        for(const auto& Value:O->GetArrayField(TEXT("fields")))
+        {
+            const auto Field=Value->AsObject();FNetHackStatusField Entry;
+            Entry.Value=Field->GetStringField(TEXT("value"));Entry.Text=Field->GetStringField(TEXT("text"));
+            Entry.Enabled=Field->GetBoolField(TEXT("enabled"));Entry.Color=Field->GetIntegerField(TEXT("color"));
+            Status.Add(Field->GetStringField(TEXT("name")),MoveTemp(Entry));
+        }
+        for(const auto& Value:O->GetArrayField(TEXT("conditions")))Conditions.Add(Value->AsString());
+        return;
+    }
     if(Type==TEXT("state"))
     {
         O->TryGetStringField(TEXT("hero_race"),HeroRace);

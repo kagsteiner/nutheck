@@ -1,0 +1,45 @@
+{
+  "backup": "Backups/NetHackSaves/20261102T075209.966214Z.zip",
+  "baseline_file_count": 1077,
+  "player_file_count": 1068,
+  "all_player_files_unchanged": true,
+  "played_file_set_unchanged": true,
+  "last_session_pointer_unchanged": true,
+  "runtime_changes": [
+    "Runtime/NetHackBridge.exe"
+  ],
+  "new_backend_sha256": "7773f59f3fcfb09e3988cdc0f1605e953bbca2171bdb6ff60fe958e44939b5cc",
+  "native_test": {
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\status-1181fc95182a43509e5609f9500c14bc",
+    "fields": 27,
+    "hunger_states": [
+      "",
+      "Hungry",
+      "Weak"
+    ],
+    "blind_condition_set_and_cleared": true,
+    "burden": "Overloaded",
+    "polymorphed": true,
+    "hp_matches_native": true
+  },
+  "compatibility_test": {
+    "backup": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Backups\\NetHackSaves\\20261102T075209.966214Z.zip",
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\backend-compatibility-c0c4ba451f364cc8b05b9ea47063f7db\\session",
+    "state": [
+      [
+        21,
+        6
+      ],
+      2,
+      16
+    ]
+  },
+  "captures": [
+    "STATUS_HUD_CHECK PASS viewport=1600x900 scenario=normal fields=27 conditions=0 rows=2 footer=214.0 hp=13/13 hunger=Normal",
+    "STATUS_HUD_CHECK PASS viewport=1280x720 scenario=warning fields=27 conditions=0 rows=2 footer=171.2 hp=8/20 hunger=Hungry",
+    "STATUS_HUD_CHECK PASS viewport=1600x900 scenario=critical fields=27 conditions=0 rows=2 footer=214.0 hp=3/20 hunger=Weak",
+    "STATUS_HUD_CHECK PASS viewport=800x600 scenario=stress fields=27 conditions=0 rows=6 footer=154.7 hp=1234/9999 hunger=Fainting",
+    "STATUS_HUD_CHECK PASS viewport=640x480 scenario=stress fields=27 conditions=0 rows=7 footer=169.0 hp=1234/9999 hunger=Fainting"
+  ],
+  "post_update_backup": "Backups/NetHackSaves/20261102T081208.519701Z.zip"
+}

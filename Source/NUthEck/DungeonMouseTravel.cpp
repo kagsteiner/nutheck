@@ -10,7 +10,8 @@ bool ADungeonPrototype::PickTravelCell(FVector2D Screen,FIntPoint& Cell) const
     if(!PC)return false;
     int32 W=0,H=0;PC->GetViewportSize(W,H);
     const float S=FMath::Clamp(W/1600.f,.65f,1.5f);
-    if(Screen.X<0 || Screen.X>=W || Screen.Y<84*S || Screen.Y>=H-112*S)return false;
+    const float Footer=LiveFooterHeight>0?LiveFooterHeight:232*S;
+    if(Screen.X<0 || Screen.X>=W || Screen.Y<84*S || Screen.Y>=H-Footer)return false;
     FVector Origin,Direction;
     if(!PC->DeprojectScreenPositionToWorld(Screen.X,Screen.Y,Origin,Direction) || Direction.Z>=-.001)return false;
     const double Distance=(8.-Origin.Z)/Direction.Z;

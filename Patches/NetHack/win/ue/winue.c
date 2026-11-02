@@ -17,6 +17,11 @@ static int sequence;
 static char reply[16384];
 static boolean ue_travel_pending;
 static coord ue_travel_target;
+extern const char *status_fieldnm[MAXBLSTATS], *status_fieldfmt[MAXBLSTATS];
+extern boolean status_activefields[MAXBLSTATS];
+static char ue_status_values[MAXBLSTATS][BUFSZ];
+static int ue_status_colors[MAXBLSTATS];
+static unsigned long ue_status_conditions;
 struct window_procs ue_procs = { "ue", wp_shim };
 
 static void quote(const char *s)
@@ -298,7 +303,43 @@ static int ue_ext(void)
 }
 static char *ue_history(boolean init) { return 0; }
 static void ue_puthistory(const char *s,boolean restoring) {}
-static void ue_status(int field,genericptr_t ptr,int chg,int percent,int color,unsigned long *masks) { if(field==BL_FLUSH) state(); }
+/* Copy the native window-port status snapshot. Never recalculate attributes,
+   nutrition, burden or conditions in the presentation layer. */
+static void ue_status(int field,genericptr_t ptr,int chg,int percent,int color,unsigned long *masks)
+{
+    int i,comma;
+    if (field>=0 && field<MAXBLSTATS && ptr) {
+        if (field==BL_CONDITION) ue_status_conditions=*(unsigned long *)ptr;
+        else {
+            char decoded[BUFSZ];
+            const char *text=(const char *)ptr;
+            if (field==BL_GOLD) text=decode_mixed(decoded,text);
+            Snprintf(ue_status_values[field],BUFSZ,"%s",text);
+        }
+        ue_status_colors[field]=color;
+    } else if (field==BL_FLUSH || field==BL_RESET) {
+        printf("{\"event\":\"status\",\"fields\":[");
+        for (i=0;i<MAXBLSTATS;++i) {
+            char formatted[BUFSZ];
+            Snprintf(formatted,BUFSZ,status_fieldfmt[i]?status_fieldfmt[i]:"%s",ue_status_values[i]);
+            if(i)putchar(',');
+            printf("{\"name\":");quote(status_fieldnm[i]);
+            printf(",\"enabled\":%s,\"value\":",status_activefields[i]?"true":"false");quote(ue_status_values[i]);
+            printf(",\"text\":");quote(formatted);
+            printf(",\"color\":%d}",ue_status_colors[i]);
+        }
+        printf("],\"conditions\":[");
+        for(i=0,comma=0;i<CONDITION_COUNT;++i) {
+            int c=cond_idx[i];
+            if(ue_status_conditions & conditions[c].mask) {
+                if(comma++)putchar(',');
+                quote(conditions[c].text[0]);
+            }
+        }
+        printf("]}\n");
+        state();
+    }
+}
 static void ue_inventory(int flags) {}
 static win_request_info *ue_ctrl(winid w,int request,win_request_info *info) { return info; }
 static void ue_position(char *s) {}
@@ -311,6 +352,7 @@ void ue_win_init(int direction)
     windowprocs=tty_procs;
     windowprocs.name="ue"; windowprocs.wp_id=wp_shim;
     windowprocs.wincap=WC_ASCII_MAP|WC_COLOR;
+    windowprocs.wincap2 |= WC2_FLUSH_STATUS;
     windowprocs.wincap2=WC2_FLUSH_STATUS|WC2_RESET_STATUS;
     windowprocs.win_init_nhwindows=ue_init; windowprocs.win_player_selection=ue_player;
     windowprocs.win_askname=ue_name; windowprocs.win_get_nh_event=ue_void;
