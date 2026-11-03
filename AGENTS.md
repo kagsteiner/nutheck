@@ -19,3 +19,8 @@ or replace development saves. This is now their actual NetHack installation.
   backend over the current installation. See `Docs/SaveProtection.md`.
 - Backups live outside `Saved`, under `Backups/NetHackSaves`. Do not prune them
   or delete them as build cleanup. Ordinary art work needs no save mutation.
+
+# Development task tracking
+
+- The user records tasks noticed during human testing that are not directly related to modeling in `dev_backlog.md`. Consult that file for non-modeling development work and preserve the user's notes and task status.
+
