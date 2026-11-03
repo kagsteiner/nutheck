@@ -9,6 +9,22 @@ turns, combat, movement, perception, item identity and outcomes. Presentation
 must preserve the player's available information, including remembered terrain,
 disguises and unidentified appearances.
 
+## Beautiful objects and rewarding loot (2026-11-02)
+
+Weapons, armor, jewelry, wands, consumables and tools should be beautiful and
+distinctive. Allow creative interpretation of blade profiles, fittings,
+craftsmanship, ornament and materials beyond literal tiny-tile reconstruction,
+while retaining recognizable physical type and a coherent visual language.
+Meaningful item differences matter; do not make every sword a recolour of one
+generic mesh. Ordinary loot deserves design attention alongside artifacts.
+
+Use a shallow category/visual-family organization with material and cultural
+facets. Preserve native appearance shuffling and indistinguishable items; never
+reveal unknown effects, enchantment, curse, artifact identity or value through
+ornament or invented rarity colours. Identification does not itself transform
+an object's physical design. See [ObjectArtDirection.md](ObjectArtDirection.md)
+and [object-backlog.md](../object-backlog.md) for source inventory and future work.
+
 ## Static presentation
 
 No character or object animation is planned: no idle, walking, attack, hit,

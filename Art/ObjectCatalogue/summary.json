@@ -1,0 +1,32 @@
+{
+  "named_object_types": 440,
+  "unconditional_named_types": 439,
+  "conditional_named_types": 1,
+  "verified_object_drafts": 4,
+  "remaining_named_types": 436,
+  "source_appearance_slots": 463,
+  "extra_appearance_only_slots": 23,
+  "display_auxiliaries": 18,
+  "deferred_types": 4,
+  "official_object_tiles": 483,
+  "deferred_source_tiles": 2,
+  "artifacts": 33,
+  "obsolete_artifacts": 1,
+  "by_category": {
+    "Weapons": 71,
+    "Armor": 84,
+    "Rings": 28,
+    "Amulets": 13,
+    "Tools": 50,
+    "Food": 33,
+    "Potions": 26,
+    "Scrolls": 23,
+    "Spellbooks": 44,
+    "Wands": 25,
+    "Coins": 1,
+    "Gems and stones": 36,
+    "Large rocks and statues": 2,
+    "Punishment gear": 2,
+    "Venom": 2
+  }
+}

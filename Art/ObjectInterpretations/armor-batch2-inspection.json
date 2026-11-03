@@ -1,0 +1,81 @@
+{
+  "plate_mail": {
+    "parts": 17,
+    "triangles": 21704,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "crystal_plate_mail": {
+    "parts": 17,
+    "triangles": 21704,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "bronze_plate_mail": {
+    "parts": 17,
+    "triangles": 21704,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "gray_dragon_scale_mail": {
+    "parts": 534,
+    "triangles": 23790,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "gold_dragon_scale_mail": {
+    "parts": 529,
+    "triangles": 23680,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "silver_dragon_scale_mail": {
+    "parts": 529,
+    "triangles": 23680,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "red_dragon_scale_mail": {
+    "parts": 529,
+    "triangles": 23680,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "white_dragon_scale_mail": {
+    "parts": 529,
+    "triangles": 23680,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "orange_dragon_scale_mail": {
+    "parts": 529,
+    "triangles": 23680,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "black_dragon_scale_mail": {
+    "parts": 529,
+    "triangles": 23680,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "blue_dragon_scale_mail": {
+    "parts": 529,
+    "triangles": 23680,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "green_dragon_scale_mail": {
+    "parts": 529,
+    "triangles": 23680,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "yellow_dragon_scale_mail": {
+    "parts": 529,
+    "triangles": 23680,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "previous_104_exports_unchanged": true
+}

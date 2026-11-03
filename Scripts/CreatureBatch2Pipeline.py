@@ -96,6 +96,10 @@ tile_entries={name:rows.strip().splitlines() for number,name,rows in re.findall(
 tile_entries.update(globals().get('SOURCE_TILE_ENTRIES',{}))
 report=[]
 for key in GROUPS:
+    # Partial revisions may preserve unrelated meshes in the same native scene.
+    # Hide those too, so they cannot contaminate a selected group's studio view.
+    for obj in bpy.context.scene.objects:
+        if obj.type=='MESH': obj.hide_render=obj.get('creature')!=key
     for group,parts in objects.items():
         for obj in parts: obj.hide_render=group!=key
     bpy.context.view_layer.update()
@@ -163,6 +167,11 @@ for key in GROUPS:
         spatial_shadow=[(14,9),(14,10),(14,11),(13,12),(2,13),(3,13),(8,13),(9,13)]
         target={(x,15-y) for y,row in enumerate(rows) for x,ch in enumerate(row) if ch!='.' and (x,y) not in spatial_shadow}
         excluded={'.'};mask_method='reviewed_panther_fringe_black_anatomy_retained'
+    if key in globals().get('SOURCE_FIGURE_MASKS',{}):
+        keep=set(SOURCE_FIGURE_MASKS[key])
+        target={(x,15-y) for x,y in keep if rows[y][x]!='.'}
+        spatial_shadow=sorted((x,y) for y,row in enumerate(rows) for x,ch in enumerate(row) if ch!='.' and (x,y) not in keep)
+        excluded={'.'};mask_method='explicit_reviewed_spatial_mask_dark_anatomy_retained'
     target_width=max(x for x,y in target)-min(x for x,y in target)+1
     target_height=max(y for x,y in target)-min(y for x,y in target)+1
     candidates=[]; scene.render.resolution_x=16; scene.render.resolution_y=16; scene.cycles.samples=8

@@ -1,0 +1,21 @@
+{
+  "long_sword": {
+    "parts": 22,
+    "triangles": 20044,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "scimitar": {
+    "parts": 12,
+    "triangles": 7708,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "katana": {
+    "parts": 56,
+    "triangles": 15692,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "previous_120_exports_unchanged": true
+}

@@ -1,0 +1,39 @@
+{
+  "leather_armor": {
+    "parts": 7,
+    "triangles": 17208,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "studded_leather_armor": {
+    "parts": 115,
+    "triangles": 148536,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "chain_mail": {
+    "parts": 8,
+    "triangles": 145656,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "banded_mail": {
+    "parts": 27,
+    "triangles": 24104,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "elven_mithril_coat": {
+    "parts": 10,
+    "triangles": 241888,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "dwarvish_mithril_coat": {
+    "parts": 10,
+    "triangles": 240784,
+    "closed_geometry": true,
+    "paint_valid": true
+  },
+  "previous_96_exports_unchanged": true
+}

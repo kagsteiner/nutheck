@@ -1,5 +1,5 @@
 {
-  "scope": "Selected fountain feature only; full terrain inventory remains pending.",
+  "scope": "Selected fountain and altar features; two terrain identities, six physical forms; full terrain inventory remains pending.",
   "features": [
     {
       "id": "FOUNTAIN",
@@ -13,6 +13,58 @@
       "asset_status": "generated and verified static draft",
       "evidence": "Docs/SpecialBatch1.md",
       "scope": "Known displayed/remembered fountain; static water; no magic/blessed/looted indication; sink excluded."
+    },
+    {
+      "id": "ALTAR",
+      "display_glyph": "GLYPH_ALTAR_OFF + displayed variant",
+      "name": "altar",
+      "official_tile_file": "upstream/NetHack/win/share/other.txt",
+      "native_source": "../SpecialBatch2/SpecialBatch2.blend",
+      "asset_status": "generated and verified static draft",
+      "evidence": "Docs/SpecialBatch2.md",
+      "scope": "Displayed/remembered glyph only; no player-relative allegiance or hidden deity/altar-mask lookup.",
+      "variants": [
+        {
+          "id": "unaligned",
+          "display_glyph_offset": 0,
+          "file_local_tile_index": 33,
+          "combined_atlas_index": 1305,
+          "fbx": "altar_unaligned.fbx",
+          "unreal_asset": "/Game/EnvironmentInterpretations/Meshes/SM_altar_unaligned"
+        },
+        {
+          "id": "chaotic",
+          "display_glyph_offset": 1,
+          "file_local_tile_index": 34,
+          "combined_atlas_index": 1306,
+          "fbx": "altar_chaotic.fbx",
+          "unreal_asset": "/Game/EnvironmentInterpretations/Meshes/SM_altar_chaotic"
+        },
+        {
+          "id": "neutral",
+          "display_glyph_offset": 2,
+          "file_local_tile_index": 35,
+          "combined_atlas_index": 1307,
+          "fbx": "altar_neutral.fbx",
+          "unreal_asset": "/Game/EnvironmentInterpretations/Meshes/SM_altar_neutral"
+        },
+        {
+          "id": "lawful",
+          "display_glyph_offset": 3,
+          "file_local_tile_index": 36,
+          "combined_atlas_index": 1308,
+          "fbx": "altar_lawful.fbx",
+          "unreal_asset": "/Game/EnvironmentInterpretations/Meshes/SM_altar_lawful"
+        },
+        {
+          "id": "other",
+          "display_glyph_offset": 4,
+          "file_local_tile_index": 37,
+          "combined_atlas_index": 1309,
+          "fbx": "altar_other.fbx",
+          "unreal_asset": "/Game/EnvironmentInterpretations/Meshes/SM_altar_other"
+        }
+      ]
     }
   ]
 }

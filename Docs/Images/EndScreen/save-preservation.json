@@ -1,0 +1,9 @@
+{
+  "backup": "Backups/NetHackSaves/20261101T132814.882773Z.zip",
+  "baseline_files": 1076,
+  "played_files": 1067,
+  "played_file_set_unchanged": true,
+  "last_session_pointer_unchanged": true,
+  "all_played_files_and_native_runtime_unchanged": true,
+  "all_ui_tests_used_isolated_capture_roots": true
+}

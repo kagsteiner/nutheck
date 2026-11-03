@@ -1,0 +1,72 @@
+{
+  "killer_bee": {
+    "parts": 27,
+    "triangles": 32220,
+    "bounds_m": [
+      [
+        -0.47190365195274353,
+        -0.4810989201068878,
+        0.1868646740913391
+      ],
+      [
+        0.44576820731163025,
+        0.4810989201068878,
+        0.7613478899002075
+      ]
+    ],
+    "closed_surfaces": true,
+    "paint_valid": true,
+    "thoracic_legs": 6,
+    "paired_eyes": true,
+    "wing_count": 4,
+    "hover_clearance_m": 0.1868646740913391
+  },
+  "queen_bee": {
+    "parts": 27,
+    "triangles": 32220,
+    "bounds_m": [
+      [
+        -0.47190365195274353,
+        -0.5509608387947083,
+        0.1868462711572647
+      ],
+      [
+        0.5607682466506958,
+        0.5509608387947083,
+        0.7613818049430847
+      ]
+    ],
+    "closed_surfaces": true,
+    "paint_valid": true,
+    "thoracic_legs": 6,
+    "paired_eyes": true,
+    "wing_count": 4,
+    "hover_clearance_m": 0.1868462711572647
+  },
+  "xan": {
+    "parts": 24,
+    "triangles": 12088,
+    "bounds_m": [
+      [
+        -0.5407285094261169,
+        -0.43163159489631653,
+        0.1581430435180664
+      ],
+      [
+        0.3941696882247925,
+        0.43163159489631653,
+        0.7113960385322571
+      ]
+    ],
+    "closed_surfaces": true,
+    "paint_valid": true,
+    "thoracic_legs": 6,
+    "paired_eyes": true,
+    "wing_count": 2,
+    "hover_clearance_m": 0.1581430435180664
+  },
+  "previous_83_exports_unchanged": true,
+  "source_sex_tiles_identical": true,
+  "independent_queen_proportions": true,
+  "separate_xan_body": true
+}

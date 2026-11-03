@@ -26,6 +26,11 @@ public:
     FNetHackSession* GetSession() const { return Session.Get(); }
     bool HandleLiveKey(FKey Key, bool Control);
     bool HandleLiveCharacter(TCHAR Character);
+    bool IsEndScreenVisible() const;
+    bool CanLeaveEndedSession() const;
+    bool ActivateEndScreenAt(FVector2D Position);
+    static FBox2D EndScreenButton(FVector2D ViewportSize,bool Quit);
+    void QuitEndedSession();
     void SetTextRepeatSuppressed(bool Suppressed) { TextRepeatSuppressed=Suppressed; }
     void CancelCameraDrag() { WasOrbiting=WasPanning=WasLooking=WasTravelHeld=false; }
     void AdjustZoom(float Steps);
@@ -82,8 +87,16 @@ private:
     UPROPERTY() TArray<TObjectPtr<class UPointLightComponent>> AtmosphereLights;
     UInstancedStaticMeshComponent* GetDefaultTileBatch(const FNetHackCell& Cell,bool Hero);
     UInstancedStaticMeshComponent* GetDisplayedObjectBatch(const FNetHackCell& Cell);
+    FTransform GetDisplayedObjectTransform(const FNetHackCell& Cell,int32 X,int32 Y,UStaticMesh* Mesh) const;
+    void VerifyObjectPlacement();
     UInstancedStaticMeshComponent* GetFountainBatch(const FNetHackCell& Cell);
     void VerifySpecialBatch1();
+    UInstancedStaticMeshComponent* GetAltarBatch(const FNetHackCell& Cell);
+    void VerifySpecialBatch2();
+    bool IsMinesCavern() const { return Session && Session->InMines && !Session->MinesTown; }
+    void CreateMinesBatches();
+    void AddMinesSurface(const FNetHackCell& Cell,int32 X,int32 Y);
+    void VerifyMines();
     void CreateStairBatches();
     void AddStair(const FNetHackCell& Cell,int32 X,int32 Y);
     void VerifyNavigation();
@@ -97,6 +110,9 @@ private:
     TSet<FString> MissingTileFigures;
     FString HeroVolumeKey;
     void TickLiveGame();
+    void TickEndScreenVerification();
+    int32 EndScreenCheckStage=0;
+    double EndScreenCheckTime=0;
     bool VerifyPresentationControls();
     void CaptureFirstPersonTransition();
     void VerifyAndCaptureHumanPlayers();

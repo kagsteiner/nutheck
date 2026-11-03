@@ -9,6 +9,11 @@
 
 FNetHackSession::~FNetHackSession() { Stop(); }
 
+bool FNetHackSession::IsBackendRunning()
+{
+    return Process.IsValid() && FPlatformProcess::IsProcRunning(Process);
+}
+
 bool FNetHackSession::Start(bool NewGame,bool Remember)
 {
     Cells.SetNum(79*21);
@@ -22,6 +27,11 @@ bool FNetHackSession::Start(bool NewGame,bool Remember)
     FString SessionId;
     FGuid ExistingId;
     if(Remember && !NewGame) FFileHelper::LoadFileToString(SessionId,*(SessionsRoot/TEXT("LastSession.txt")));
+    bool MinesCapture=false;
+    FString CaptureId;
+    if(!Remember && FParse::Value(FCommandLine::Get(),TEXT("MinesCaptureSession="),CaptureId)
+        && FGuid::ParseExact(CaptureId,EGuidFormats::Digits,ExistingId))
+    {SessionId=CaptureId;MinesCapture=true;}
     SessionId.TrimStartAndEndInline();
     if(!FGuid::ParseExact(SessionId,EGuidFormats::Digits,ExistingId)) SessionId=FGuid::NewGuid().ToString(EGuidFormats::Digits);
     SessionDirectory=SessionsRoot/SessionId;
@@ -46,7 +56,7 @@ bool FNetHackSession::Start(bool NewGame,bool Remember)
         OutputRead=InputWrite=nullptr;
         Error=TEXT("Unable to create NetHack pipes."); AddMessage(Error); Ended=true; return false;
     }
-    const FString Arguments=FString::Printf(TEXT("\"--ue-root=%s\" -uAdventurer"),*SessionDirectory);
+    const FString Arguments=FString::Printf(TEXT("\"--ue-root=%s\" %s"),*SessionDirectory,MinesCapture?TEXT("-D -uwizard"):TEXT("-uAdventurer"));
     const FString WorkingDirectory=FPaths::GetPath(Executable);
     Process=FPlatformProcess::CreateProc(*Executable,*Arguments,false,true,true,nullptr,0,*WorkingDirectory,OutputWrite,InputRead,OutputWrite);
     FPlatformProcess::ClosePipe(nullptr,OutputWrite);
@@ -126,7 +136,12 @@ void FNetHackSession::Event(const TSharedPtr<FJsonObject>& O)
         if(X<0 || X>=79 || Y<0 || Y>=21) return;
         FNetHackCell& Cell=Cells[Y*79+X];
         const FString Terrain=O->GetStringField(TEXT("terrain"));
+        const FString PreviousKind=Cell.Kind;
+        const int32 PreviousGlyph=Cell.Glyph;
         Cell.Kind=O->GetStringField(TEXT("kind")); Cell.Glyph=O->GetIntegerField(TEXT("glyph"));
+        if(Cell.Kind!=TEXT("item") || PreviousKind!=TEXT("item") || Cell.Glyph!=PreviousGlyph) Cell.DisplayArtifact.Empty();
+        O->TryGetStringField(TEXT("display_artifact"),Cell.DisplayArtifact);
+        if(Cell.Kind!=TEXT("item")) Cell.DisplayArtifact.Empty();
         Cell.TileIndex=-1;
         if(O->HasTypedField<EJson::Number>(TEXT("tile_index"))) Cell.TileIndex=O->GetIntegerField(TEXT("tile_index"));
         Cell.DisplayMonster.Empty(); Cell.Female=false;
@@ -156,6 +171,8 @@ void FNetHackSession::Event(const TSharedPtr<FJsonObject>& O)
     }
     if(Type==TEXT("state"))
     {
+        O->TryGetBoolField(TEXT("in_mines"),InMines);
+        O->TryGetBoolField(TEXT("mines_town"),MinesTown);
         O->TryGetStringField(TEXT("hero_race"),HeroRace);
         O->TryGetBoolField(TEXT("hero_polymorphed"),HeroPolymorphed);
         Hero=FIntPoint(O->GetIntegerField(TEXT("x")),O->GetIntegerField(TEXT("y")));

@@ -1,0 +1,104 @@
+{
+  "gray_dragon_scale_mail": {
+    "parts": 42,
+    "triangles": 364884,
+    "body_leaf_scales": 1006,
+    "total_leaf_scales": 1620,
+    "curved_shoulder_lames": 6,
+    "closed_geometry": true,
+    "paint_valid": true,
+    "large_slabs_removed": true
+  },
+  "gold_dragon_scale_mail": {
+    "parts": 40,
+    "triangles": 362224,
+    "body_leaf_scales": 1006,
+    "total_leaf_scales": 1606,
+    "curved_shoulder_lames": 6,
+    "closed_geometry": true,
+    "paint_valid": true,
+    "large_slabs_removed": true
+  },
+  "silver_dragon_scale_mail": {
+    "parts": 40,
+    "triangles": 362224,
+    "body_leaf_scales": 1006,
+    "total_leaf_scales": 1606,
+    "curved_shoulder_lames": 6,
+    "closed_geometry": true,
+    "paint_valid": true,
+    "large_slabs_removed": true
+  },
+  "red_dragon_scale_mail": {
+    "parts": 40,
+    "triangles": 362224,
+    "body_leaf_scales": 1006,
+    "total_leaf_scales": 1606,
+    "curved_shoulder_lames": 6,
+    "closed_geometry": true,
+    "paint_valid": true,
+    "large_slabs_removed": true
+  },
+  "white_dragon_scale_mail": {
+    "parts": 40,
+    "triangles": 362224,
+    "body_leaf_scales": 1006,
+    "total_leaf_scales": 1606,
+    "curved_shoulder_lames": 6,
+    "closed_geometry": true,
+    "paint_valid": true,
+    "large_slabs_removed": true
+  },
+  "orange_dragon_scale_mail": {
+    "parts": 40,
+    "triangles": 362224,
+    "body_leaf_scales": 1006,
+    "total_leaf_scales": 1606,
+    "curved_shoulder_lames": 6,
+    "closed_geometry": true,
+    "paint_valid": true,
+    "large_slabs_removed": true
+  },
+  "black_dragon_scale_mail": {
+    "parts": 40,
+    "triangles": 362224,
+    "body_leaf_scales": 1006,
+    "total_leaf_scales": 1606,
+    "curved_shoulder_lames": 6,
+    "closed_geometry": true,
+    "paint_valid": true,
+    "large_slabs_removed": true
+  },
+  "blue_dragon_scale_mail": {
+    "parts": 40,
+    "triangles": 362224,
+    "body_leaf_scales": 1006,
+    "total_leaf_scales": 1606,
+    "curved_shoulder_lames": 6,
+    "closed_geometry": true,
+    "paint_valid": true,
+    "large_slabs_removed": true
+  },
+  "green_dragon_scale_mail": {
+    "parts": 40,
+    "triangles": 362224,
+    "body_leaf_scales": 1006,
+    "total_leaf_scales": 1606,
+    "curved_shoulder_lames": 6,
+    "closed_geometry": true,
+    "paint_valid": true,
+    "large_slabs_removed": true
+  },
+  "yellow_dragon_scale_mail": {
+    "parts": 40,
+    "triangles": 362224,
+    "body_leaf_scales": 1006,
+    "total_leaf_scales": 1606,
+    "curved_shoulder_lames": 6,
+    "closed_geometry": true,
+    "paint_valid": true,
+    "large_slabs_removed": true
+  },
+  "previous_107_exports_unchanged": true,
+  "plate_geometry_and_paint_unchanged": true
+}

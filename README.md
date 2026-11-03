@@ -11,6 +11,10 @@ brief wand effects, such as lightning, remain a possible addition.
 The [dungeon lighting](Docs/Atmosphere.md) combines local candles, ambient light
 and a readable map overview while keeping NetHack authoritative for sight and illumination.
 
+The [Gnomish Mines](Docs/MinesEnvironment.md) use rough reddish rock, a continuous
+natural floor and sparse torches restricted to native-lit terrain. Minetown
+retains masonry and candles.
+
 [Framed doors](Docs/DoorFrames.md) use a side hinge so open leaves leave the
 passage centre clear, while preserving the high dungeon walls.
 
@@ -69,7 +73,14 @@ with exact saved orc anatomy, a separate source-painted shield, caster clothing 
 The [special mixed batch](Docs/SpecialBatch1.md) adds grid bug, generic corpse and a carved stone fountain
 with static blue-water arcs. Corpses use displayed-glyph mapping; fountain and sink terrain stay distinct.
 
+The [twenty-first creature batch](Docs/CreatureBatch21.md) adds orc mummy and orc zombie,
+with exact saved orc anatomy, fitted linen and source undead paint. Isolated capture tests
+preserve the played save folders and session pointer, verified against a fresh backup.
+
 ![Live dungeon](Docs/Images/LiveDungeon-1600x900.png)
+
+High dungeon walls are preserved in overview and first person. [Floors now use
+a darker tint](Docs/FloorContrast.md) while retaining their original stone texture.
 
 ## Play
 
@@ -166,6 +177,10 @@ and every other rule.
 after normal play, and native-backend builds back up first. [Backup and staged
 recovery instructions](Docs/SaveProtection.md). Direct editor launches bypass
 these launcher backups.
+
+After saving, quitting or dying, the **Session ended** panel offers **Quit app
+(Esc)** and **New game (F2)**, with clickable buttons. App exit waits for the
+native backend to finish. [End-screen controls and verification](Docs/EndScreen.md).
 
 Closing the game asks the backend to follow NetHack's save-on-EOF path.
 The next normal launch resumes that session if a save is available. Session

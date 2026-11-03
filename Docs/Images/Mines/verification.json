@@ -1,0 +1,31 @@
+{
+  "backup": "Backups/NetHackSaves/20261102T122329.845987Z.zip",
+  "baseline_file_count": 1090,
+  "player_file_count": 1081,
+  "all_player_files_unchanged": true,
+  "played_file_set_unchanged": true,
+  "last_session_pointer_unchanged": true,
+  "runtime_changes": [
+    "Runtime/NetHackBridge.exe"
+  ],
+  "original_dungeon_stone_assets_unchanged": true,
+  "new_backend_sha256": "56e2a215d7e42edf3091f9b9df70923ef4ae5031c2e6641dd6b9323b002b4dd6",
+  "lit": "MINES_CHECK PASS cavern=1 town=0 floors=481 walls=408 torches=3 native_unlit_receives_torch=0 turn_before=6 turn_after=6 sequence_before=2 sequence_after=2",
+  "dark": "MINES_CHECK PASS cavern=1 town=0 floors=493 walls=501 torches=0 native_unlit_receives_torch=0 turn_before=6 turn_after=6 sequence_before=2 sequence_after=2",
+  "town": "MINES_CHECK PASS cavern=0 town=1 floors=512 walls=300 torches=0 native_unlit_receives_torch=0 turn_before=6 turn_after=6 sequence_before=2 sequence_after=2",
+  "wide": "MINES_CHECK PASS cavern=1 town=0 floors=481 walls=408 torches=3 native_unlit_receives_torch=0 turn_before=6 turn_after=6 sequence_before=2 sequence_after=2",
+  "compatibility": "BRIDGE_BACKEND_COMPATIBILITY_PASS {\"backup\": \"C:\\\\Users\\\\agste\\\\OneDrive\\\\Development\\\\nUthEck\\\\Backups\\\\NetHackSaves\\\\20261102T122329.845987Z.zip\", \"session\": \"C:\\\\Users\\\\agste\\\\OneDrive\\\\Development\\\\nUthEck\\\\Saved\\\\NetHackGameplayTests\\\\backend-compatibility-e9c7eda0c3da429d8b092a2103bd1d7b\\\\session\", \"state\": [[13, 14], 2, 16]}",
+  "native-travel": "BRIDGE_MOUSE_TRAVEL_PASS {\"root\": \"C:\\\\Users\\\\agste\\\\OneDrive\\\\Development\\\\nUthEck\\\\Saved\\\\NetHackGameplayTests\\\\mouse-travel-d76eee2ac8414a72b3a2e9570f1cfe87\", \"cases\": [{\"threat\": false, \"result\": {\"position\": [29, 10], \"turns\": 22, \"hp\": 16, \"detoured\": true}}, {\"threat\": true, \"result\": {\"position\": [10, 9], \"turns\": 1, \"hp\": 16, \"detoured\": false}}], \"mouse_equals_native_keyboard\": true, \"invalid_coordinates_no_turn\": true}",
+  "lifecycle": "BRIDGE_LIFECYCLE_PASS ((73, 15), 3, 16) resumed and advanced to 4",
+  "post_update_backup": "Backups/NetHackSaves/20261102T132628.524817Z.zip",
+  "editor_build_passed": true,
+  "eye": "MINES_CHECK PASS cavern=1 town=0 floors=481 walls=408 torches=3 native_unlit_receives_torch=0 turn_before=6 turn_after=6 sequence_before=2 sequence_after=2",
+  "build-presentation-controls-live.log": "PRESENTATION_CONTROLS_CHECK PASS key=F7 return=Escape/Ctrl+F paths=240 headings=8 orbit=right_drag tilt_limits=20:85 roll=0 orbit_return=preserved interruption=continuous turn_before=5 turn_after=5 sequence_before=7 sequence_after=7",
+  "build-navigation-close.log": "NAVIGATION_CHECK PASS key=F6 views=18 exact_restore=1 f5_cancels=1 first_person_restore=1 stair_types=2 memory=2 styles=2 native_cells_unchanged=1 turn_before=5 turn_after=5 sequence_before=7 sequence_after=7",
+  "build-navigation-wide.log": "NAVIGATION_CHECK PASS key=F6 views=18 exact_restore=1 f5_cancels=1 first_person_restore=1 stair_types=2 memory=2 styles=2 native_cells_unchanged=1 turn_before=5 turn_after=5 sequence_before=7 sequence_after=7",
+  "mines_materials": {
+    "Content\\Mines\\M_MinesFloor.uasset": "b5c25a305ef633ee1838ae6574c32e920403b3a36a7ae0e67f76a360541e9e2b",
+    "Content\\Mines\\M_MinesRock.uasset": "8c004efbc9ad3893789d9ebff25fa5f5194f1fb120d6526a1d03e5bfabb4b6d0"
+  },
+  "exterior_face_fix": "Clockwise exterior winding; editor rebuild and isolated lit/eye checks passed; both screenshots visually inspected; player session untouched."
+}

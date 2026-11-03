@@ -1,10 +1,10 @@
 # Creature asset backlog
 
-Working checklist for anatomical creature and player-role assets. Based on the pinned NetHack source catalogue; updated 2026-10-31. This file is maintained by hand: preserve its checkboxes and notes when the catalogue is regenerated.
+Working checklist for anatomical creature and player-role assets. Based on the pinned NetHack source catalogue; updated 2026-11-02. This file is maintained by hand: preserve its checkboxes and notes when the catalogue is regenerated.
 
-**394 source identities: 60 generated creature drafts + 1 completed player-role presentation + 321 remaining creature identities + 12 remaining player-role presentations.** Creature forms include two additional beardless female appearances (gnomish wizard and gnome zombie), giving 62 physical creature forms across 60 identities. Two human player forms exist: female Valkyrie and male Barbarian. Barbarian remains partial because its female starting-sex target has not been generated. The player roles cover 25 permitted starting-sex variants; these are validation targets, not 25 mandatory separate sculpts.
+**394 source identities: 81 generated creature drafts + 1 completed player-role presentation + 300 remaining creature identities + 12 remaining player-role presentations.** Creature forms include four additional female appearances (beardless gnomish wizard/gnome zombie and independently proportioned soldier/fire ants), giving 85 physical creature forms across 81 identities. Two human player forms exist: female Valkyrie and male Barbarian. Barbarian remains partial because its female starting-sex target has not been generated. The player roles cover 25 permitted starting-sex variants; these are validation targets, not 25 mandatory separate sculpts.
 
-Verified static-draft coverage: **60/381 creatures (15.7%)**, or **61/394 creature/player identities (15.5%)**. This does not measure visual finishing or the separate object/terrain inventories. Static presentation is the finished target; see [Game vision](Docs/GameVision.md).
+Verified static-draft coverage: **81/381 creatures (21.3%)**, or **82/394 creature/player identities (20.8%)**. This does not measure visual finishing or the separate object/terrain inventories. Static presentation is the finished target; see [Game vision](Docs/GameVision.md).
 
 ## How to use this backlog
 
@@ -22,7 +22,8 @@ colours removed; eyes moved forward/inward and embedded with eyelids. See the
 
 ## Suggested next batches
 
-1. **Orc mummy and orc zombie** (`PM_ORC_MUMMY`, `PM_ORC_ZOMBIE`): extend the saved upright orc anatomy after reviewing both sex tiles and source traits; keep linen, undead paint, clothing and equipment separate.
+1. **Monkey, ape and carnivorous ape** (`PM_MONKEY`, `PM_APE`, `PM_CARNIVOROUS_APE`): inspect both sex tiles and source traits; use compatible primate anatomy with independent hands/feet, faces, sizes and poses. Preserve monkey tail versus tailless ape distinctions.
+
 
 
 ## Generated and verified static drafts
@@ -38,7 +39,7 @@ Jackal review correction: removed the raised back overlay; darker fur is painted
 
 ## Creature generation checklist by anatomy group
 
-Batch 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 and 20 completions are checked in place below; unchecked entries remain to generate.
+Batch 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 22, 23 and 24 completions, plus requested special batch 2 shopkeeper, are checked in place below; unchecked entries remain to generate.
 
 The family names below are modelling proposals, not scientific taxonomy or a requirement for shared runtime rigs. Conditional declarations are retained for completeness, not counted as confirmed runtime monsters.
 
@@ -90,8 +91,8 @@ The family names below are modelling proposals, not scientific taxonomy or a req
 
 ### Animals / Arthropods / Ants
 
-- [ ] **soldier ant** (`PM_SOLDIER_ANT`) — base `ants`.
-- [ ] **fire ant** (`PM_FIRE_ANT`) — base `ants`.
+- [x] **soldier ant** (`PM_SOLDIER_ANT`) — two source-supported sex forms; independently proportioned female thorax/leg reach. [Batch 22 artifacts and checks](Docs/CreatureBatch22.md).
+- [x] **fire ant** (`PM_FIRE_ANT`) — two source-supported sex forms; independently proportioned female thorax/leg reach. [Batch 22 artifacts and checks](Docs/CreatureBatch22.md).
 
 ### Animals / Arthropods / Arachnids
 
@@ -100,26 +101,26 @@ The family names below are modelling proposals, not scientific taxonomy or a req
 
 ### Animals / Arthropods / Bees
 
-- [ ] **killer bee** (`PM_KILLER_BEE`) — base `bees`.
-- [ ] **queen bee** (`PM_QUEEN_BEE`) — base `bees`.
+- [x] **killer bee** (`PM_KILLER_BEE`) — female-only source species, four-wing static flight form. [Batch 23 artifacts and checks](Docs/CreatureBatch23.md).
+- [x] **queen bee** (`PM_QUEEN_BEE`) — female-only source species, four-wing static flight form. [Batch 23 artifacts and checks](Docs/CreatureBatch23.md).
 
 ### Animals / Arthropods / Beetles
 
-- [ ] **giant beetle** (`PM_GIANT_BEETLE`) — base `beetles`.
+- [x] **giant beetle** (`PM_GIANT_BEETLE`) — shared-sex broad beetle body with fitted closed elytra. [Batch 22 artifacts and checks](Docs/CreatureBatch22.md).
 
 ### Animals / Arthropods / Flying insects
 
 - [x] **grid bug** (`PM_GRID_BUG`) — base `flying_insects` is a broad catalogue group, not a flight flag; six-legged static electronic arthropod, without wings. [FBX](Art/CreatureInterpretations/grid_bug.fbx), [special batch evidence](Docs/SpecialBatch1.md).
-- [ ] **xan** (`PM_XAN`) — base `flying_insects`.
+- [x] **xan** (`PM_XAN`) — separate mosquito-like body, two wings, long legs and proboscis. [Batch 23 artifacts and checks](Docs/CreatureBatch23.md).
 
 ### Animals / Arthropods / Scorpions
 
-- [ ] **scorpion** (`PM_SCORPION`) — base `scorpions`.
+- [x] **scorpion** (`PM_SCORPION`) — separate eight-legged body, two pincers and five-segment raised tail/telson. [Batch 24 artifacts and checks](Docs/CreatureBatch24.md).
 
 ### Animals / Arthropods / Spiders
 
-- [ ] **cave spider** (`PM_CAVE_SPIDER`) — base `spiders`.
-- [ ] **giant spider** (`PM_GIANT_SPIDER`) — base `spiders`.
+- [x] **cave spider** (`PM_CAVE_SPIDER`) — shared-sex eight-legged spider family; independent body dimensions. [Batch 24 artifacts and checks](Docs/CreatureBatch24.md).
+- [x] **giant spider** (`PM_GIANT_SPIDER`) — shared-sex eight-legged spider family; independent body dimensions. [Batch 24 artifacts and checks](Docs/CreatureBatch24.md).
 
 ### Animals / Invertebrates / Worms
 
@@ -176,12 +177,12 @@ The family names below are modelling proposals, not scientific taxonomy or a req
 
 ### Animals / Reptiles / Snakes
 
-- [ ] **garter snake** (`PM_GARTER_SNAKE`) — base `snakes`.
-- [ ] **snake** (`PM_SNAKE`) — base `snakes`.
-- [ ] **water moccasin** (`PM_WATER_MOCCASIN`) — base `snakes`.
-- [ ] **python** (`PM_PYTHON`) — base `snakes`.
-- [ ] **pit viper** (`PM_PIT_VIPER`) — base `snakes`.
-- [ ] **cobra** (`PM_COBRA`) — base `snakes`.
+- [x] **garter snake** (`PM_GARTER_SNAKE`) — shared-sex continuous snake body; distinct head, girth and coil. [Batch 26 artifacts and checks](Docs/CreatureBatch26.md).
+- [x] **snake** (`PM_SNAKE`) — shared-sex continuous snake body; distinct head, girth and coil. [Batch 26 artifacts and checks](Docs/CreatureBatch26.md).
+- [x] **water moccasin** (`PM_WATER_MOCCASIN`) — shared-sex continuous snake body; distinct head, girth and coil. [Batch 26 artifacts and checks](Docs/CreatureBatch26.md).
+- [x] **python** (`PM_PYTHON`) — shared-sex painted snake draft; distinct constrictor/viper/hood anatomy. [Batch 27 artifacts and checks](Docs/CreatureBatch27.md).
+- [x] **pit viper** (`PM_PIT_VIPER`) — shared-sex painted snake draft; distinct constrictor/viper/hood anatomy. [Batch 27 artifacts and checks](Docs/CreatureBatch27.md).
+- [x] **cobra** (`PM_COBRA`) — shared-sex painted snake draft; distinct constrictor/viper/hood anatomy. [Batch 27 artifacts and checks](Docs/CreatureBatch27.md).
 
 ### Animals / Reptiles and amphibians / Crocodilians
 
@@ -190,12 +191,12 @@ The family names below are modelling proposals, not scientific taxonomy or a req
 
 ### Animals / Reptiles and amphibians / Geckos
 
-- [ ] **gecko** (`PM_GECKO`) — base `geckos`.
+- [x] **gecko** (`PM_GECKO`) — shared-sex painted reptile draft; independent head, body, feet and tail proportions. [Batch 25 artifacts and checks](Docs/CreatureBatch25.md).
 
 ### Animals / Reptiles and amphibians / Mixed small reptiles
 
-- [ ] **iguana** (`PM_IGUANA`) — base `mixed_small_reptiles`.
-- [ ] **lizard** (`PM_LIZARD`) — base `mixed_small_reptiles`.
+- [x] **iguana** (`PM_IGUANA`) — shared-sex painted reptile draft; independent head, body, feet and tail proportions. [Batch 25 artifacts and checks](Docs/CreatureBatch25.md).
+- [x] **lizard** (`PM_LIZARD`) — shared-sex painted reptile draft; independent head, body, feet and tail proportions. [Batch 25 artifacts and checks](Docs/CreatureBatch25.md).
 - [ ] **chameleon** (`PM_CHAMELEON`) — base `mixed_small_reptiles`.
 - [ ] **salamander** (`PM_SALAMANDER`) — base `mixed_small_reptiles`.
 
@@ -307,7 +308,7 @@ The family names below are modelling proposals, not scientific taxonomy or a req
 
 - [ ] **human** (`PM_HUMAN`) — base `humans_and_special_identities`.
 - [ ] **doppelganger** (`PM_DOPPELGANGER`) — base `humans_and_special_identities`.
-- [ ] **shopkeeper** (`PM_SHOPKEEPER`) — base `humans_and_special_identities`.
+- [x] **shopkeeper** (`PM_SHOPKEEPER`) — shared icon appearance for both native sexes; black hat, blue/cyan jacket, green trousers. [Special batch 2 artifacts and checks](Docs/SpecialBatch2.md).
 - [ ] **guard** (`PM_GUARD`) — base `humans_and_special_identities`.
 - [ ] **prisoner** (`PM_PRISONER`) — base `humans_and_special_identities`.
 - [ ] **Oracle** (`PM_ORACLE`) — base `humans_and_special_identities`.
@@ -639,7 +640,7 @@ The family names below are modelling proposals, not scientific taxonomy or a req
 
 - [x] **kobold mummy** (`PM_KOBOLD_MUMMY`) — base `kobold_humanoid`; reuse kobold. [FBX](Art/CreatureInterpretations/kobold_mummy.fbx), [batch 14 evidence](Docs/CreatureBatch14.md).
 - [x] **gnome mummy** (`PM_GNOME_MUMMY`) — base `gnome_humanoid`; reuse gnome. [FBX](Art/CreatureInterpretations/gnome_mummy.fbx), [batch 15 evidence and forms](Docs/CreatureBatch15.md).
-- [ ] **orc mummy** (`PM_ORC_MUMMY`) — base `orc_humanoid`; reuse orc.
+- [x] **orc mummy** (`PM_ORC_MUMMY`) — base `orc_humanoid`; exact saved upright orc anatomy, fitted linen and shared sex appearance. [FBX](Art/CreatureInterpretations/orc_mummy.fbx), [batch 21 evidence](Docs/CreatureBatch21.md).
 - [x] **dwarf mummy** (`PM_DWARF_MUMMY`) — base `dwarf_humanoid`; exact saved dwarf ancestry, fitted linen and shared sex appearance. [FBX](Art/CreatureInterpretations/dwarf_mummy.fbx), [batch 17 evidence](Docs/CreatureBatch17.md).
 - [ ] **elf mummy** (`PM_ELF_MUMMY`) — base `elf_humanoid`; reuse elf.
 - [ ] **human mummy** (`PM_HUMAN_MUMMY`) — base `human_humanoid`; reuse human.
@@ -650,7 +651,7 @@ The family names below are modelling proposals, not scientific taxonomy or a req
 
 - [x] **kobold zombie** (`PM_KOBOLD_ZOMBIE`) — base `kobold_humanoid`; reuse kobold. [FBX](Art/CreatureInterpretations/kobold_zombie.fbx), [batch 14 evidence](Docs/CreatureBatch14.md).
 - [x] **gnome zombie** (`PM_GNOME_ZOMBIE`) — base `gnome_humanoid`; reuse gnome. [FBX](Art/CreatureInterpretations/gnome_zombie.fbx), [batch 15 evidence and forms](Docs/CreatureBatch15.md).
-- [ ] **orc zombie** (`PM_ORC_ZOMBIE`) — base `orc_humanoid`; reuse orc.
+- [x] **orc zombie** (`PM_ORC_ZOMBIE`) — base `orc_humanoid`; exact saved upright orc anatomy, source undead paint and shared sex appearance. [FBX](Art/CreatureInterpretations/orc_zombie.fbx), [batch 21 evidence](Docs/CreatureBatch21.md).
 - [x] **dwarf zombie** (`PM_DWARF_ZOMBIE`) — base `dwarf_humanoid`; exact saved dwarf anatomy/costume, green skin and shared sex appearance. [FBX](Art/CreatureInterpretations/dwarf_zombie.fbx), [batch 17 evidence](Docs/CreatureBatch17.md).
 - [ ] **elf zombie** (`PM_ELF_ZOMBIE`) — base `elf_humanoid`; reuse elf.
 - [ ] **human zombie** (`PM_HUMAN_ZOMBIE`) — base `human_humanoid`; reuse human.
@@ -731,6 +732,14 @@ Keep these separate from generation checkboxes. Nothing here is marked complete 
 - [ ] Orc family: refine goblin-derived face/clothing, upright orc sleeve transitions, helmet/held-item shapes and source-palette readability. Preserve saved goblin vertices, shared hill/Mordor anatomy and separate equipment. LOD/runtime review remains separate; animation is out of scope. [Batch 18](Docs/CreatureBatch18.md).
 - [ ] Early-level trio: refine eye/cornea shading, newt toes/skin/pose and lichen lobe/paint transitions. Preserve hover clearance, curved iris, four-limbed amphibian anatomy and eyeless fungal thallus. LOD/runtime review remains separate; animation is out of scope and effects remain optional. [Batch 19](Docs/CreatureBatch19.md).
 - [ ] Orc caster/rank states: refine shield/grip, cloth panels, helmet rim and face/cheek paint; preserve shared saved anatomy and source-specific modules. LOD/runtime review remains separate; animation is out of scope and effects remain optional. [Batch 20](Docs/CreatureBatch20.md).
+- [ ] Orc undead states: refine linen edges/folds, orange cloth accent and zombie face/cloth transitions; preserve saved anatomy, pale headwear, red mummy eyes and green/cyan/orange zombie palette. Static poses remain intended; LOD/runtime review stays separate. [Batch 21](Docs/CreatureBatch21.md).
+- [ ] Ant/beetle batch: refine shell/leg transitions, miniature surface paint and distant readability; preserve source-supported female ant forms and separate beetle anatomy. Static pose is intended; LOD/runtime costs remain separate. [Batch 22](Docs/CreatureBatch22.md).
+- [ ] Shopkeeper: refine face/neckline and tailored jacket/hip transitions, paint and LOD/runtime costs; preserve shared official sex appearance. Altars: refine stone/red-pigment and ray-inlay treatment; five displayed variants are separate from creature counts. [Special batch 2](Docs/SpecialBatch2.md).
+- [ ] Winged insects: refine wing roots/veins, bee thorax texture, leg/stinger and xan proboscis/eye details; preserve independent queen proportions and separate xan body. Static flight is intended; LOD/runtime costs remain separate. [Batch 23](Docs/CreatureBatch23.md).
+- [ ] Arachnids: refine leg/root/joint transitions, eye/fang details, scorpion plates/tail joints and paint; preserve eight walking legs, separate pedipalps/pincers, source palettes and independent spider dimensions. Review tiny readability and LOD/runtime costs. [Batch 24](Docs/CreatureBatch24.md).
+- [ ] Reptiles: refine limb roots, scale paint, mouth/eye integration, toe-pad separation and tiny readability; reduce dense draft topology with reviewed LODs. Preserve distinct gecko/iguana/lizard anatomy and source colours. [Batch 25](Docs/CreatureBatch25.md).
+- [ ] Snakes: refine head/neck transitions, eye seating, ventral scutes and close scale paint; review dark-body contrast and LODs. Preserve limbless anatomy, source palettes and independent heads/girth/coils. [Batch 26](Docs/CreatureBatch26.md).
+- [ ] Advanced snakes: refine constrictor coil clearance, head/mouth/eye seating, viper pit marks and cobra hood transition; preserve source colours, native display boundary and three independent body plans. Review scale paint and LODs. [Batch 27](Docs/CreatureBatch27.md).
 - [ ] Establish a reviewed finish target for one creature before calling any draft production-ready.
 - Static models are the final presentation target; family rigs, skinning and character/object animation are out of scope.
 - [ ] Evaluate optional brief action effects, especially wand lightning, without changing NetHack turns or requiring character animation.
@@ -741,7 +750,7 @@ Keep these separate from generation checkboxes. Nothing here is marked complete 
 
 This is complete for the current creature source catalogue, not for all game artwork. The following still need their own source-derived rosters and completion criteria; existing study meshes and tile proxies do not automatically finish them.
 
-- [ ] Objects/items: inventory the official object tiles and source identities, including unidentified appearances.
+- [x] Objects/items: inventory the official object tiles and source identities, including unidentified appearances. [Object checklist](object-backlog.md): 440 named types (439 unconditional + conditional mail), 463 source appearance slots and 33 current artifact overlays. [Source inventory](Art/ObjectCatalogue/Inventory.md), [art direction](Docs/ObjectArtDirection.md). This completes inventory work, not asset generation.
 - [ ] Terrain/features: inventory doors, stairs, traps, fountains and branch-specific architecture/materials.
 - [ ] Effects: inventory beams, explosions, spell/attack visuals and other displayed effects.
 - [ ] Player ancestry modules: scope the compatible body/role combinations before expanding the roster.
@@ -749,8 +758,13 @@ This is complete for the current creature source catalogue, not for all game art
 
 ## Object drafts (separate from the 394 creature/player identities)
 
-Four selected object presentations are generated and verified; the complete
-object/unidentified-appearance inventory above remains pending. [Batch 1](Docs/ObjectBatch1.md), [generic corpse](Docs/SpecialBatch1.md).
+Four selected object presentations are generated and verified. The complete
+source list and future work now live in [object-backlog.md](object-backlog.md)
+and [Art/ObjectCatalogue](Art/ObjectCatalogue/Inventory.md). Object progress stays
+separate from creature percentages. User direction: beautiful, distinctive loot;
+creative craftsmanship and clear physical differences, with native unknown
+appearances preserved. [Art direction](Docs/ObjectArtDirection.md).
+[Batch 1](Docs/ObjectBatch1.md), [generic corpse](Docs/SpecialBatch1.md).
 
 - [x] **large box** (`LARGE_BOX`) — [painted FBX](Art/ObjectInterpretations/large_box.fbx), flat plank lid; native display, normal/memory materials and live checks passed.
 - [x] **chest** (`CHEST`) — [painted FBX](Art/ObjectInterpretations/chest.fbx), rounded lid; native display, normal/memory materials and live checks passed.
@@ -769,3 +783,13 @@ quantity-aware coin layouts, wood/metal refinement, LODs and performance.
 General presentation fallback: [official tile cards](Docs/TileFallback.md) now
 cover unsupported entities while individual models are missing. This does not
 check off any creature/object modelling item or change the source-ID inventory.
+
+
+- [x] **altar** (`ALTAR` / native altar glyph family) — five verified displayed
+  forms: unaligned, chaotic, neutral, lawful and special other/high altar.
+  Shared complete stone construction, source palettes, visible/memory materials,
+  native glyph/covered-terrain and F9 checks. “Opposed to player” is not an
+  additional altar type. [Evidence](Docs/SpecialBatch2.md).
+
+Terrain draft coverage now comprises two feature identities / six forms:
+fountain and five altar variants. Complete terrain inventory remains pending.

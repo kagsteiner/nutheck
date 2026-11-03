@@ -26,7 +26,7 @@ try:
         assert g.position!=old,'No safe adjacent floor for object reveal'
         tile=g.cells[old];assert tile['kind']=='item' and tile.get('display_object')==name,(name,tile,g.messages[-8:])
         seen.append(dict(name=name,glyph=tile['glyph'],x=old[0],y=old[1]))
-        assert all(t.get('display_object') in (None,'large box','chest','gold piece','corpse') for t in g.cells.values())
+        assert all(not t.get('display_artifact') for t in g.cells.values())
         assert all('display_object' not in t for t in g.cells.values() if t['kind']!='item')
     report=dict(objects=seen,session=str(g.root),only_displayed_glyphs=True)
     (g.root/'object-check.json').write_text(json.dumps(report,indent=2))

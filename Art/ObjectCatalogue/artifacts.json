@@ -1,0 +1,957 @@
+{
+  "source_revision": "16ff59115315917b93185d026aeefea06db9b0f4",
+  "artifacts": [
+    {
+      "id": "ART_EXCALIBUR",
+      "name": "Excalibur",
+      "base_object_id": "LONG_SWORD",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 84
+      },
+      "native_flags": [
+        "(SPFX_NOGEN | SPFX_RESTR | SPFX_SEEK\n                                | SPFX_DEFN | SPFX_INTEL | SPFX_SEARCH)",
+        "0",
+        "0"
+      ],
+      "attacks": [
+        "PHYS(5, 10)",
+        "DRLI(0, 0)",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_LAWFUL",
+      "role": "PM_KNIGHT",
+      "ancestry": "NON_PM",
+      "native_cost": "4000L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_STORMBRINGER",
+      "name": "Stormbringer",
+      "base_object_id": "RUNESWORD",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 89
+      },
+      "native_flags": [
+        "(SPFX_RESTR | SPFX_ATTK | SPFX_DEFN | SPFX_INTEL | SPFX_DRLI)",
+        "0",
+        "0"
+      ],
+      "attacks": [
+        "DRLI(5, 2)",
+        "DRLI(0, 0)",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_CHAOTIC",
+      "role": "NON_PM",
+      "ancestry": "NON_PM",
+      "native_cost": "8000L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_MJOLLNIR",
+      "name": "Mjollnir",
+      "base_object_id": "WAR_HAMMER",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 97
+      },
+      "native_flags": [
+        "(SPFX_RESTR | SPFX_ATTK)",
+        "0",
+        "0"
+      ],
+      "attacks": [
+        "ELEC(5, 24)",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_NEUTRAL",
+      "role": "PM_VALKYRIE",
+      "ancestry": "NON_PM",
+      "native_cost": "4000L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "MVP live placement and native visible name verified; extended verification pending",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_CLEAVER",
+      "name": "Cleaver",
+      "base_object_id": "BATTLE_AXE",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 113
+      },
+      "native_flags": [
+        "SPFX_RESTR",
+        "0",
+        "0"
+      ],
+      "attacks": [
+        "PHYS(3, 6)",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_NEUTRAL",
+      "role": "PM_BARBARIAN",
+      "ancestry": "NON_PM",
+      "native_cost": "1500L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "MVP live placement and native visible name verified; extended verification pending",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_GRIMTOOTH",
+      "name": "Grimtooth",
+      "base_object_id": "ORCISH_DAGGER",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 117
+      },
+      "native_flags": [
+        "(SPFX_RESTR | SPFX_WARN | SPFX_DFLAG2)",
+        "0",
+        "M2_ELF"
+      ],
+      "attacks": [
+        "PHYS(2, 6)",
+        "POIS(0,0)",
+        "NO_CARY"
+      ],
+      "invoked_property": "FLING_POISON",
+      "alignment": "A_CHAOTIC",
+      "role": "NON_PM",
+      "ancestry": "PM_ORC",
+      "native_cost": "1200L",
+      "glow_colour": "CLR_RED",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_ORCRIST",
+      "name": "Orcrist",
+      "base_object_id": "ELVEN_BROADSWORD",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 127
+      },
+      "native_flags": [
+        "(SPFX_WARN | SPFX_DFLAG2)",
+        "0",
+        "M2_ORC"
+      ],
+      "attacks": [
+        "PHYS(5, 0)",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_CHAOTIC",
+      "role": "NON_PM",
+      "ancestry": "PM_ELF",
+      "native_cost": "2000L",
+      "glow_colour": "CLR_BRIGHT_BLUE",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_STING",
+      "name": "Sting",
+      "base_object_id": "ELVEN_DAGGER",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 137
+      },
+      "native_flags": [
+        "(SPFX_WARN | SPFX_DFLAG2)",
+        "0",
+        "M2_ORC"
+      ],
+      "attacks": [
+        "PHYS(5, 0)",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_CHAOTIC",
+      "role": "NON_PM",
+      "ancestry": "PM_ELF",
+      "native_cost": "800L",
+      "glow_colour": "CLR_BRIGHT_BLUE",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_MAGICBANE",
+      "name": "Magicbane",
+      "base_object_id": "ATHAME",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 141
+      },
+      "native_flags": [
+        "(SPFX_RESTR | SPFX_ATTK | SPFX_DEFN)",
+        "0",
+        "0"
+      ],
+      "attacks": [
+        "STUN(3, 4)",
+        "DFNS(AD_MAGM)",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_NEUTRAL",
+      "role": "PM_WIZARD",
+      "ancestry": "NON_PM",
+      "native_cost": "3500L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_FROST_BRAND",
+      "name": "Frost Brand",
+      "base_object_id": "LONG_SWORD",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 148
+      },
+      "native_flags": [
+        "(SPFX_RESTR | SPFX_ATTK | SPFX_DEFN)",
+        "0",
+        "0"
+      ],
+      "attacks": [
+        "COLD(5, 0)",
+        "COLD(0, 0)",
+        "NO_CARY"
+      ],
+      "invoked_property": "SNOWSTORM",
+      "alignment": "A_NONE",
+      "role": "NON_PM",
+      "ancestry": "NON_PM",
+      "native_cost": "3000L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_FIRE_BRAND",
+      "name": "Fire Brand",
+      "base_object_id": "LONG_SWORD",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 152
+      },
+      "native_flags": [
+        "(SPFX_RESTR | SPFX_ATTK | SPFX_DEFN)",
+        "0",
+        "0"
+      ],
+      "attacks": [
+        "FIRE(5, 0)",
+        "FIRE(0, 0)",
+        "NO_CARY"
+      ],
+      "invoked_property": "FIRESTORM",
+      "alignment": "A_NONE",
+      "role": "NON_PM",
+      "ancestry": "NON_PM",
+      "native_cost": "3000L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_DRAGONBANE",
+      "name": "Dragonbane",
+      "base_object_id": "BROADSWORD",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 156
+      },
+      "native_flags": [
+        "(SPFX_RESTR | SPFX_DCLAS | SPFX_REFLECT)",
+        "0",
+        "S_DRAGON"
+      ],
+      "attacks": [
+        "PHYS(5, 0)",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_NONE",
+      "role": "NON_PM",
+      "ancestry": "NON_PM",
+      "native_cost": "500L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_DEMONBANE",
+      "name": "Demonbane",
+      "base_object_id": "SILVER_MACE",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 161
+      },
+      "native_flags": [
+        "(SPFX_RESTR | SPFX_DFLAG2)",
+        "0",
+        "M2_DEMON"
+      ],
+      "attacks": [
+        "PHYS(5, 0)",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "BANISH",
+      "alignment": "A_LAWFUL",
+      "role": "PM_CLERIC",
+      "ancestry": "NON_PM",
+      "native_cost": "2500L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_WEREBANE",
+      "name": "Werebane",
+      "base_object_id": "SILVER_SABER",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 165
+      },
+      "native_flags": [
+        "(SPFX_RESTR | SPFX_DFLAG2)",
+        "0",
+        "M2_WERE"
+      ],
+      "attacks": [
+        "PHYS(5, 0)",
+        "DFNS(AD_WERE)",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_NONE",
+      "role": "NON_PM",
+      "ancestry": "NON_PM",
+      "native_cost": "1500L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_GRAYSWANDIR",
+      "name": "Grayswandir",
+      "base_object_id": "SILVER_SABER",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 169
+      },
+      "native_flags": [
+        "(SPFX_RESTR | SPFX_HALRES)",
+        "0",
+        "0"
+      ],
+      "attacks": [
+        "PHYS(5, 0)",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_LAWFUL",
+      "role": "NON_PM",
+      "ancestry": "NON_PM",
+      "native_cost": "8000L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_GIANTSLAYER",
+      "name": "Giantslayer",
+      "base_object_id": "LONG_SWORD",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 173
+      },
+      "native_flags": [
+        "(SPFX_RESTR | SPFX_DFLAG2)",
+        "0",
+        "M2_GIANT"
+      ],
+      "attacks": [
+        "PHYS(5, 0)",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_NEUTRAL",
+      "role": "NON_PM",
+      "ancestry": "NON_PM",
+      "native_cost": "200L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_OGRESMASHER",
+      "name": "Ogresmasher",
+      "base_object_id": "WAR_HAMMER",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 177
+      },
+      "native_flags": [
+        "(SPFX_RESTR | SPFX_DCLAS)",
+        "0",
+        "S_OGRE"
+      ],
+      "attacks": [
+        "PHYS(5, 0)",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_NONE",
+      "role": "NON_PM",
+      "ancestry": "NON_PM",
+      "native_cost": "200L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_TROLLSBANE",
+      "name": "Trollsbane",
+      "base_object_id": "MORNING_STAR",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 181
+      },
+      "native_flags": [
+        "(SPFX_RESTR | SPFX_DCLAS | SPFX_REGEN)",
+        "0",
+        "S_TROLL"
+      ],
+      "attacks": [
+        "PHYS(5, 0)",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_NONE",
+      "role": "NON_PM",
+      "ancestry": "NON_PM",
+      "native_cost": "200L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_VORPAL_BLADE",
+      "name": "Vorpal Blade",
+      "base_object_id": "LONG_SWORD",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 185
+      },
+      "native_flags": [
+        "(SPFX_RESTR | SPFX_BEHEAD)",
+        "0",
+        "0"
+      ],
+      "attacks": [
+        "PHYS(5, 1)",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_NEUTRAL",
+      "role": "NON_PM",
+      "ancestry": "NON_PM",
+      "native_cost": "4000L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_SNICKERSNEE",
+      "name": "Snickersnee",
+      "base_object_id": "KATANA",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 194
+      },
+      "native_flags": [
+        "SPFX_RESTR",
+        "0",
+        "0"
+      ],
+      "attacks": [
+        "PHYS(0, 8)",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_LAWFUL",
+      "role": "PM_SAMURAI",
+      "ancestry": "NON_PM",
+      "native_cost": "1200L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_SUNSWORD",
+      "name": "Sunsword",
+      "base_object_id": "LONG_SWORD",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 206
+      },
+      "native_flags": [
+        "(SPFX_RESTR | SPFX_DFLAG2)",
+        "0",
+        "M2_UNDEAD"
+      ],
+      "attacks": [
+        "PHYS(5, 0)",
+        "DFNS(AD_BLND)",
+        "NO_CARY"
+      ],
+      "invoked_property": "BLINDING_RAY",
+      "alignment": "A_LAWFUL",
+      "role": "NON_PM",
+      "ancestry": "NON_PM",
+      "native_cost": "1500L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_ORB_OF_DETECTION",
+      "name": "The Orb of Detection",
+      "base_object_id": "CRYSTAL_BALL",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 213
+      },
+      "native_flags": [
+        "(SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL)",
+        "(SPFX_ESP | SPFX_HSPDAM)",
+        "0"
+      ],
+      "attacks": [
+        "NO_ATTK",
+        "NO_DFNS",
+        "CARY(AD_MAGM)"
+      ],
+      "invoked_property": "INVIS",
+      "alignment": "A_LAWFUL",
+      "role": "PM_ARCHEOLOGIST",
+      "ancestry": "NON_PM",
+      "native_cost": "2500L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_HEART_OF_AHRIMAN",
+      "name": "The Heart of Ahriman",
+      "base_object_id": "LUCKSTONE",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 224
+      },
+      "native_flags": [
+        "(SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL)",
+        "SPFX_STLTH",
+        "0"
+      ],
+      "attacks": [
+        "PHYS(5, 0)",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "LEVITATION",
+      "alignment": "A_NEUTRAL",
+      "role": "PM_BARBARIAN",
+      "ancestry": "NON_PM",
+      "native_cost": "2500L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_SCEPTRE_OF_MIGHT",
+      "name": "The Sceptre of Might",
+      "base_object_id": "MACE",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 231
+      },
+      "native_flags": [
+        "(SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_DALIGN)",
+        "0",
+        "0"
+      ],
+      "attacks": [
+        "PHYS(5, 0)",
+        "DFNS(AD_MAGM)",
+        "NO_CARY"
+      ],
+      "invoked_property": "CONFLICT",
+      "alignment": "A_LAWFUL",
+      "role": "PM_CAVE_DWELLER",
+      "ancestry": "NON_PM",
+      "native_cost": "2500L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_PALANTIR_OF_WESTERNESSE",
+      "name": "The Palantir of Westernesse",
+      "base_object_id": "CRYSTAL_BALL",
+      "scope": "obsolete",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 238
+      },
+      "native_flags": [
+        "(SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL)",
+        "(SPFX_ESP | SPFX_REGEN | SPFX_HSPDAM)",
+        "0"
+      ],
+      "attacks": [
+        "NO_ATTK",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "TAMING",
+      "alignment": "A_CHAOTIC",
+      "role": "NON_PM",
+      "ancestry": "PM_ELF",
+      "native_cost": "8000L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_STAFF_OF_AESCULAPIUS",
+      "name": "The Staff of Aesculapius",
+      "base_object_id": "QUARTERSTAFF",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 247
+      },
+      "native_flags": [
+        "(SPFX_NOGEN | SPFX_RESTR | SPFX_ATTK | SPFX_INTEL | SPFX_DRLI\n       | SPFX_REGEN)",
+        "0",
+        "0"
+      ],
+      "attacks": [
+        "DRLI(0, 0)",
+        "DRLI(0, 0)",
+        "NO_CARY"
+      ],
+      "invoked_property": "HEALING",
+      "alignment": "A_NEUTRAL",
+      "role": "PM_HEALER",
+      "ancestry": "NON_PM",
+      "native_cost": "5000L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_MAGIC_MIRROR_OF_MERLIN",
+      "name": "The Magic Mirror of Merlin",
+      "base_object_id": "MIRROR",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 254
+      },
+      "native_flags": [
+        "(SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_SPEAK)",
+        "SPFX_ESP",
+        "0"
+      ],
+      "attacks": [
+        "NO_ATTK",
+        "NO_DFNS",
+        "CARY(AD_MAGM)"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_LAWFUL",
+      "role": "PM_KNIGHT",
+      "ancestry": "NON_PM",
+      "native_cost": "1500L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_EYES_OF_THE_OVERWORLD",
+      "name": "The Eyes of the Overworld",
+      "base_object_id": "LENSES",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 259
+      },
+      "native_flags": [
+        "(SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_XRAY)",
+        "0",
+        "0"
+      ],
+      "attacks": [
+        "NO_ATTK",
+        "DFNS(AD_MAGM)",
+        "NO_CARY"
+      ],
+      "invoked_property": "ENLIGHTENING",
+      "alignment": "A_NEUTRAL",
+      "role": "PM_MONK",
+      "ancestry": "NON_PM",
+      "native_cost": "2500L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_MITRE_OF_HOLINESS",
+      "name": "The Mitre of Holiness",
+      "base_object_id": "HELM_OF_BRILLIANCE",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 264
+      },
+      "native_flags": [
+        "(SPFX_NOGEN | SPFX_RESTR | SPFX_DFLAG2 | SPFX_INTEL | SPFX_PROTECT)",
+        "0",
+        "M2_UNDEAD"
+      ],
+      "attacks": [
+        "NO_ATTK",
+        "NO_DFNS",
+        "CARY(AD_FIRE)"
+      ],
+      "invoked_property": "ENERGY_BOOST",
+      "alignment": "A_LAWFUL",
+      "role": "PM_CLERIC",
+      "ancestry": "NON_PM",
+      "native_cost": "2000L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_LONGBOW_OF_DIANA",
+      "name": "The Longbow of Diana",
+      "base_object_id": "BOW",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 270
+      },
+      "native_flags": [
+        "(SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_REFLECT)",
+        "SPFX_ESP",
+        "0"
+      ],
+      "attacks": [
+        "PHYS(5, 0)",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "CREATE_AMMO",
+      "alignment": "A_CHAOTIC",
+      "role": "PM_RANGER",
+      "ancestry": "NON_PM",
+      "native_cost": "4000L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_MASTER_KEY_OF_THIEVERY",
+      "name": "The Master Key of Thievery",
+      "base_object_id": "SKELETON_KEY",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 275
+      },
+      "native_flags": [
+        "(SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_SPEAK)",
+        "(SPFX_WARN | SPFX_TCTRL | SPFX_HPHDAM)",
+        "0"
+      ],
+      "attacks": [
+        "NO_ATTK",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "UNTRAP",
+      "alignment": "A_CHAOTIC",
+      "role": "PM_ROGUE",
+      "ancestry": "NON_PM",
+      "native_cost": "3500L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_TSURUGI_OF_MURAMASA",
+      "name": "The Tsurugi of Muramasa",
+      "base_object_id": "TSURUGI",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 284
+      },
+      "native_flags": [
+        "(SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_BEHEAD | SPFX_LUCK\n       | SPFX_PROTECT)",
+        "0",
+        "0"
+      ],
+      "attacks": [
+        "PHYS(0, 8)",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "0",
+      "alignment": "A_LAWFUL",
+      "role": "PM_SAMURAI",
+      "ancestry": "NON_PM",
+      "native_cost": "4500L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_YENDORIAN_EXPRESS_CARD",
+      "name": "The Platinum Yendorian Express Card",
+      "base_object_id": "CREDIT_CARD",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 290
+      },
+      "native_flags": [
+        "(SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_DEFN)",
+        "(SPFX_ESP | SPFX_HSPDAM)",
+        "0"
+      ],
+      "attacks": [
+        "NO_ATTK",
+        "NO_DFNS",
+        "CARY(AD_MAGM)"
+      ],
+      "invoked_property": "CHARGE_OBJ",
+      "alignment": "A_NEUTRAL",
+      "role": "PM_TOURIST",
+      "ancestry": "NON_PM",
+      "native_cost": "7000L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_ORB_OF_FATE",
+      "name": "The Orb of Fate",
+      "base_object_id": "CRYSTAL_BALL",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 296
+      },
+      "native_flags": [
+        "(SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_LUCK)",
+        "(SPFX_WARN | SPFX_HSPDAM | SPFX_HPHDAM)",
+        "0"
+      ],
+      "attacks": [
+        "NO_ATTK",
+        "NO_DFNS",
+        "NO_CARY"
+      ],
+      "invoked_property": "LEV_TELE",
+      "alignment": "A_NEUTRAL",
+      "role": "PM_VALKYRIE",
+      "ancestry": "NON_PM",
+      "native_cost": "3500L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    },
+    {
+      "id": "ART_EYE_OF_THE_AETHIOPICA",
+      "name": "The Eye of the Aethiopica",
+      "base_object_id": "AMULET_OF_ESP",
+      "scope": "normal",
+      "source": {
+        "path": "upstream/NetHack/include/artilist.h",
+        "line": 302
+      },
+      "native_flags": [
+        "(SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL)",
+        "(SPFX_EREGEN | SPFX_HSPDAM)",
+        "0"
+      ],
+      "attacks": [
+        "NO_ATTK",
+        "DFNS(AD_MAGM)",
+        "NO_CARY"
+      ],
+      "invoked_property": "CREATE_PORTAL",
+      "alignment": "A_NEUTRAL",
+      "role": "PM_WIZARD",
+      "ancestry": "NON_PM",
+      "native_cost": "4000L",
+      "glow_colour": "NO_COLOR",
+      "asset_status": "not modelled",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+    }
+  ]
+}

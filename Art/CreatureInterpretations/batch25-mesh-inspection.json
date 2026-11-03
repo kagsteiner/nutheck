@@ -1,0 +1,67 @@
+{
+  "gecko": {
+    "parts": 9,
+    "triangles": 112048,
+    "bounds_m": [
+      [
+        -0.3429490327835083,
+        -0.24979431927204132,
+        0.0073632970452308655
+      ],
+      [
+        0.5454658269882202,
+        0.24979430437088013,
+        0.18676450848579407
+      ]
+    ],
+    "closed_geometry": true,
+    "paint_valid": true,
+    "digits": 20,
+    "eyes": 2,
+    "source_sex_shared": true
+  },
+  "iguana": {
+    "parts": 26,
+    "triangles": 141844,
+    "bounds_m": [
+      [
+        -0.40860122442245483,
+        -0.2830442786216736,
+        0.008231177926063538
+      ],
+      [
+        0.7008841037750244,
+        0.28304430842399597,
+        0.2821909785270691
+      ]
+    ],
+    "closed_geometry": true,
+    "paint_valid": true,
+    "digits": 20,
+    "eyes": 2,
+    "source_sex_shared": true
+  },
+  "lizard": {
+    "parts": 12,
+    "triangles": 111096,
+    "bounds_m": [
+      [
+        -0.3830012381076813,
+        -0.25142696499824524,
+        0.008259043097496033
+      ],
+      [
+        0.6148034334182739,
+        0.2514269948005676,
+        0.19176888465881348
+      ]
+    ],
+    "closed_geometry": true,
+    "paint_valid": true,
+    "digits": 20,
+    "eyes": 2,
+    "source_sex_shared": true
+  },
+  "previous_89_exports_unchanged": true,
+  "source_sex_tiles_identical": true
+}

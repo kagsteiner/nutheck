@@ -2,7 +2,7 @@
 
 Read this file first for creature-art work. Open other documents/code only as
 needed; do not load the entire project history or full catalogue into context.
-Last updated: 2026-10-31. This file records decisions, not a request to run tools.
+Last updated: 2026-11-02. This file records decisions, not a request to run tools.
 
 ## Current instruction and status
 
@@ -19,16 +19,26 @@ Last updated: 2026-10-31. This file records decisions, not a request to run tool
   proposals. Female Valkyrie has fitted brown legwear; male Barbarian has a short
   brown waist garment, with no added skirts, long flap or decorative buckle.
 
+- **Object direction (2026-11-02):** make loot beautiful and distinctive, with
+  creative weapon/equipment craftsmanship beyond literal tiny-tile extrusion.
+  Use category → visual family, with material/cultural facets; meaningful shape
+  differences matter. Preserve native unidentified appearances and shuffle pools;
+  never decorate an unknown item according to its hidden effect or artifact ID.
+  `object-backlog.md` is the manual checklist; `Art/ObjectCatalogue/` contains
+  the full source inventory. Read `Docs/ObjectArtDirection.md` for the rules.
+  User will revisit detailed object art direction later; divine-gift weapons
+  must look especially amazing. Keep this as a future priority, not current work.
+
 - Two human player forms also exist: **female Valkyrie and male Barbarian**.
   See `Docs/HumanPlayers.md`. They are hero-only, ancestry/sex-specific static
   drafts. Valkyrie's permitted starting-sex target is complete; Barbarian remains
   partial at role level because female Barbarian was not requested/generated.
 
-- Sixty creature identities have static drafts: **giant ant, little dog, goblin,
+- Eighty-one creature identities have static drafts: **giant ant, little dog, goblin,
   jackal, fox, gnome, sewer rat, giant rat, gnome ruler, kitten, housecat,
   large cat, wolf, winter wolf cub, winter wolf, dog, large dog, dingo, coyote,
-  warg, rabid rat, bat, giant bat, vampire bat, jaguar, lynx, panther, tiger, hell hound pup, hell hound, pony, horse, warhorse, white unicorn, gray unicorn and black unicorn, kobold, large kobold, kobold leader, kobold shaman, kobold mummy, kobold zombie, gnomish wizard, gnome mummy, gnome zombie, dwarf, dwarf leader, dwarf ruler, dwarf mummy, dwarf zombie, hobgoblin, hill orc, Mordor orc, floating eye, newt, lichen, Uruk-hai, orc shaman, orc-captain and grid bug**.
-  See `Docs/SpecialBatch1.md` for the latest artifacts and checks; batches 5/6 document wolf/dog families
+  warg, rabid rat, bat, giant bat, vampire bat, jaguar, lynx, panther, tiger, hell hound pup, hell hound, pony, horse, warhorse, white unicorn, gray unicorn and black unicorn, kobold, large kobold, kobold leader, kobold shaman, kobold mummy, kobold zombie, gnomish wizard, gnome mummy, gnome zombie, dwarf, dwarf leader, dwarf ruler, dwarf mummy, dwarf zombie, hobgoblin, hill orc, Mordor orc, floating eye, newt, lichen, Uruk-hai, orc shaman, orc-captain, grid bug, orc mummy, orc zombie, soldier ant, fire ant, giant beetle, shopkeeper, killer bee, queen bee, xan, cave spider, giant spider, scorpion, gecko, iguana, lizard, garter snake, snake, water moccasin, python, pit viper and cobra**.
+  See `Docs/SpecialBatch2.md` for the latest mixed artifacts and checks; `Docs/CreatureBatch27.md` covers the latest regular batch; batches 5/6 document wolf/dog families
   and batch 7 documents coyote/warg/rabid rat. Both winter wolves
   have been revised to remove cyan cast-shadow colours and use smaller, more
   forward/inward skull-conforming red eyes with pale lids and dark pupils.
@@ -115,11 +125,19 @@ Last updated: 2026-10-31. This file records decisions, not a request to run tool
   Zoom and experimental player-eye view also exist. Models must read at overview
   scale and remain complete/credible when viewed close up or from behind.
 - Real geometry and real-time shadows matter. Walls were deliberately raised.
+  **User reaffirmed 2026-11-01:** keep high walls in overview and first person
+  for the enclosed/claustrophobic dungeon feeling. No cutaways/lowering/fading.
+  The first readability adjustment is a 0.75 floor tint multiplier, with the
+  texture, lighting and wall geometry unchanged. See `Docs/FloorContrast.md`.
 - **Presentation controls:** F7 hides/shows floating entity glyphs/badges (default
   shown); menus/messages/targeting stay visible. Ctrl+F uses a reversible .8s quartic
   approach ending in the latest movement/mouse-look direction, with no corridor
   override or horizon banking. F5 resets the overview. These consume no turn.
   `Docs/PresentationControls.md` records the math, keys and live verification.
+- **End screen:** after saving, native quit or death, a centred panel offers
+  clickable Quit app (Esc) and New game (F2). Actions wait until native prompts
+  are complete and the backend process has exited; never force-stop it. Active
+  play Escape/camera/native bindings remain unchanged. See `Docs/EndScreen.md`.
 - **Save policy changed by the user (2026-10-31): this is now their actual
   NetHack installation. Saves matter. All previous permission to reset or replace
   development saves is revoked. Preserve played sessions and the last-session
@@ -168,18 +186,20 @@ by hand and must not be overwritten by catalogue regeneration.
    totals. Player-role identities appear once in the player section; their 25
    permitted starting-sex variants are validation targets, not mandatory unique
    meshes. Objects, terrain and effects have separate inventory tasks; four objects
-   and one fountain feature now have drafts, while full inventories remain pending. Do not describe the
+   and two terrain-feature identities (fountain and five altar forms) now have drafts.
+   The object source inventory/checklist now exists in `Art/ObjectCatalogue/`
+   and `object-backlog.md`; full terrain/effect inventories remain pending. Do not describe the
    creature backlog as a complete game-art inventory.
 
-Current baseline: **394 source identities = 60 verified creature drafts + 1 completed player role
-+ 321 remaining creatures + 12 remaining player roles**. There are 64 physical
-static forms: 62 creature forms (60 identities plus two beardless female variants)
+Current baseline: **394 source identities = 81 verified creature drafts + 1 completed player role
++ 300 remaining creatures + 12 remaining player roles**. There are 87 physical
+static forms: 85 creature forms (81 identities plus four additional female variants)
 plus two human player variants (Barbarian is partial).
-Static-draft coverage is **60/381 creatures = 15.7%**, or **61/394 creature/player
-identities = 15.5%**; finishing/rigging/animation and objects/terrain remain separate.
-The next suggested batch is **orc mummy and orc zombie**
-(review both sex tiles and source traits; reuse saved upright orc anatomy only
-where compatible, with separate linen/undead/clothing/equipment modules). These are
+Static-draft coverage is **81/381 creatures = 21.3%**, or **82/394 creature/player
+identities = 20.8%**; finishing/rigging/animation and objects/terrain remain separate.
+The next suggested batch is **monkey, ape and carnivorous ape**
+(review both sex tiles/source traits; compatible primate bodies with independent
+hands/feet, faces, proportions, poses and monkey-tail/tailless-ape distinction). These are
 planning recommendations; future progress must update the baseline and queue.
 
 ## Catalogue: how to use it without consuming context
@@ -243,9 +263,11 @@ planning recommendations; future progress must update the baseline and queue.
 7. Abstract NetHack size/weight do not supply literal metre dimensions. ASCII
    colour is not automatically skin/fur colour; actual default-tile colour
    masses are the visual reference. Keep source traits separate from guesses.
-8. Sixty creature identities have drafts. Gnomish wizard and gnome zombie
-   include beardless female appearances supported by their actual tiles; the other
-   58 use shared sex-neutral forms. Player forms are sex/ancestry-specific as
+8. Eighty-one creature identities have drafts. Gnomish wizard and gnome zombie
+   include beardless female appearances; soldier/fire ants have independently
+   proportioned female forms supported by their actual tiles. The other
+   77 have one form per identity, including female-only bee species and the
+   shared shopkeeper appearance. Player forms are sex/ancestry-specific as
    described above. Do not claim further sex anatomy was reconstructed. Review
    both sex tiles in new batches and preserve aliases/sex metadata.
 
@@ -255,6 +277,14 @@ All paths below are project-relative.
 
 | Path | Purpose |
 |---|---|
+| `Art/SpecialBatch2/SpecialBatch2.blend` | Shared-sex shopkeeper and five native altar appearances; full source/paint/import/live/native/compatibility/save checks |
+| `Art/CreatureInterpretations/CreatureBatch27.blend` | Python, pit viper and cobra; constrictor coil, broad viper head, integrated hood, source/native/import/live/save checks |
+| `Art/CreatureInterpretations/CreatureBatch26.blend` | Garter snake, snake and water moccasin; complete continuous coils, dark anatomy retained, source/native/import/live/save checks |
+| `Art/CreatureInterpretations/CreatureBatch25.blend` | Gecko, iguana and lizard; complete four-legged bodies, source/native/import/live/save checks |
+| `Art/CreatureInterpretations/CreatureBatch24.blend` | Cave/giant spiders and separate scorpion; eight legs, pincers/tail, closed geometry, source/native/import/live/save checks |
+| `Art/CreatureInterpretations/CreatureBatch23.blend` | Killer bee/queen bee/xan; four/two closed wings, static flight, independent queen anatomy, source/native/import/live/save checks |
+| `Art/CreatureInterpretations/CreatureBatch22.blend` | Soldier/fire ants with female forms and separate beetle anatomy; five forms, fitted closed elytra, source/native/import/live/save checks |
+| `Art/CreatureInterpretations/CreatureBatch21.blend` | Orc mummy/zombie; exact saved ancestry, fitted linen, source undead paint, shared sexes, native/import/live checks and verified played-save preservation |
 | `Art/SpecialBatch1/SpecialBatch1.blend` | Grid bug, generic corpse and carved fountain; mixed source references, static water, separate namespaces, displayed corpse mapping and fountain/sink distinction; native/import/live evidence |
 | `Art/CreatureInterpretations/CreatureBatch20.blend` | Uruk-hai/shaman/captain; exact saved orc anatomy, separate red-centred shield and helmet rim, caster/rank paint and source/native/import/live evidence |
 | `Art/CreatureInterpretations/CreatureBatch19.blend` | Requested floating eye/newt/lichen; curved hovering eye, complete four-legged amphibian and eyeless foliose thallus, original palettes and source/native/import/live evidence |
@@ -342,11 +372,11 @@ they are a useful fidelity baseline, not anatomical reconstructions.
 - Material slot name requires `get_editor_property('imported_material_slot_name')`;
   direct attribute access failed. Assign shared material by original pigment.
 - Required import markers: `SCULPTED_CREATURE_IMPORTED` for each mesh and
-  `SCULPTED_CREATURES_READY count=64` for the full current script
-  (mixed `ImportSpecialBatch1.py` reports creature count 1 and `SPECIAL_BATCH1_IMPORT_READY count=3`). Immediate explicit editor
+  `SCULPTED_CREATURES_READY count=87` for the full current script
+  (targeted `ImportCreatureBatch27.py` reports count 3). Immediate explicit editor
   quit caused Slate shutdown problems; startup script normally exits itself.
 - `Source/NUthEck/DungeonLive.cpp::GetDefaultTileBatch` currently hardcodes the
-  sixty sculpted identities, two female creature variants and two human player forms. Future expansion must extend/generalise selection;
+  eighty-one sculpted identities, four female creature variants and two human player forms. Future expansion must extend/generalise selection;
   simply dropping a new FBX does not integrate it. Current sculpted yaw is 15°
   for goblin/gnomes/dwarfs/kobolds/orcs/floating eye and -75° for ant/dog/jackal/fox/rats/cats/wolves. New families need explicit orientation data.
 - `-SculptedCreatures` launch option or **F9** selects optional sculpted candidates.
@@ -1030,3 +1060,385 @@ they are a useful fidelity baseline, not anatomical reconstructions.
   orc mummy/orc zombie. Refinement, LOD/runtime cost remain finish work; rigs and
   animation are out of scope. Preserve F7/F9/camera, fixed player clothing,
   tile fallback and the latest carved-stone environment materials/shadows.
+
+
+## Batch 21: orc undead, protected player saves (2026-11-01)
+
+- Orc mummy and orc zombie have verified shared-sex static drafts; each source
+  sex tile pair is identical. `OrcUndead.py` appends the exact saved batch-18
+  upright orc anatomy. Both body hashes match; all held rods/blades are omitted.
+- Mummy omits costume modules, retains pale helmet and adds twelve closed linen
+  ribbons, pale skin/feet and red eyes. Ordinary linen fits within 4.6mm of the
+  body; orange diagonal cloth accent within 7.6mm. Orange pixels are ambiguous,
+  not treated as an invented weapon/gore. Zombie retains costume geometry with
+  orange/brown cloth, cyan exposed arms, gray legs/headwear, green belt/eyes/
+  brows/lids/lower-face accent and two small dark pupils. Static pose is art.
+- Native geometry/paint/floor/eye/closed-wrap/exact-ancestry checks pass. All 70
+  prior exports (64 creature/player, four objects, fountain and tile quad) retain
+  their hashes. Native triangles: 91292 mummy / 104036 zombie. Four studio views,
+  four heads and all twelve true 16x16 projections were inspected.
+- Editor build and two imports pass. Four displayed sex cases, four respective
+  official tile fallbacks, unknown identity and paint buffers pass. F9 both ways
+  preserves turn 5/sequence 7; native map, hero centring and 8x zoom pass. Actual
+  engine capture inspected; both fixtures clearly visible. Orientation remains
+  15 degrees. No native gameplay/backend change is needed for this art batch.
+- **Save evidence:** verified backup `Backups/NetHackSaves/20261101T131621.286474Z.zip`
+  was created before integration. Capture used a fresh `Saved/NetHackCaptures`
+  session (`Remember=false`); no played session was launched/stopped/advanced.
+  Final audit of all 1076 baseline files confirms complete played-session file
+  set, `LastSession.txt` and native runtime unchanged. Audit JSON is beside the
+  art. Keep this isolation and backup/hash workflow for future batches.
+- Evidence: `Docs/CreatureBatch21.md`, `Art/CreatureInterpretations/Batch21-Models.png`,
+  `batch21-{mesh-inspection,save-preservation}.json` and `build-creature-batch21-*.log`.
+  Inspect saved work with Render/ReviewCreatureBatch21 scripts; do not regenerate.
+- Baseline: 62 completed creatures + one completed role + 319 remaining creatures
+  + 12 remaining roles = 394 IDs; 66 physical creature/player forms. Four object
+  presentations and one fountain stay separate. Creature coverage 62/381 = 16.3%;
+  creature/player identity coverage 63/394 = 16.0%. Next suggestion: soldier ant,
+  fire ant and giant beetle, reviewing source/sex tiles and separating beetle
+  anatomy from ant reuse. Linen/face/cloth refinements and LOD/runtime review
+  remain; rigs/animation are out of scope. Preserve player saves, F7/F9/camera,
+  fixed player clothing, tile fallback and the current carved-stone environment.
+
+
+## End-of-session app exit (2026-11-01)
+
+- Added a centred Session ended panel with clickable Quit app [Esc] and New
+  game [F2]. Only enabled after terminal state, no awaited prompt and stopped
+  backend. Busy panel waits for NetHack; native menus remain native until done.
+  Quit uses Unreal's normal quit command, not native Q or a forced process kill.
+  Active Escape remains camera/native input; Q remains quiver, #quit native quit.
+- `DungeonEndScreen.cpp` shares layout/hit bounds and guards keyboard/mouse/new
+  game. Session-ended footer no longer displays native terminal HP values.
+- Editor build, real isolated S save + Esc app exit, native #quit + button exit,
+  and isolated native death's common terminal event pass. Save file preserved,
+  app exit code 0, active guard and three viewport sizes verified. Existing
+  presentation checks pass 240 paths/eight headings at turn 5/sequence 7.
+- Before changing shutdown UI, backup `Backups/NetHackSaves/20261101T132814.882773Z.zip`
+  was verified. Final audit confirms all 1076 original player/runtime files,
+  played file set and last-session pointer unchanged. Tests use fresh capture/
+  gameplay-test roots; no played game was launched/stopped/advanced.
+- Evidence: `Docs/EndScreen.md`, `Docs/Images/EndScreen/`,
+  `build-end-screen-{unreal,save,quit,death}.log`, presentation-controls live log.
+  `VerifyEndScreen.ps1` and `BridgeDeathEnd.py` are explicit isolated tests.
+  Asset counts/queue stay unchanged at 62 creature IDs; preserve these controls.
+
+
+## Floor contrast while retaining high walls (2026-11-01)
+
+- User explicitly prefers high walls and their claustrophobic feel. Retain them
+  in overhead and first person; do not implement the earlier suggested cutaways.
+- Live Floor/FloorMemory RGB tint now multiplies by 0.75 in MakeBatch. Original
+  PNG/texture/material assets, projection, stone detail, lighting, wall tint and
+  full wall geometry are unchanged. This is an initial contrast adjustment.
+- Build and isolated default-tile/live/zoom checks pass; actual capture reviewed.
+  Backup `Backups/NetHackSaves/20261101T140724.870261Z.zip` precedes the change.
+  All 1076 original save/runtime files, played file set and last-session pointer
+  remain unchanged. No played game was launched/advanced/stopped.
+- Evidence: `Docs/FloorContrast.md`, `Docs/Images/FloorContrast/`,
+  `build-floor-contrast-{unreal,live}.log`. Asset counts and queue are unchanged.
+
+
+## Batch 22: ants and separate beetle anatomy (2026-11-02)
+
+- Soldier ant, fire ant and giant beetle have verified static drafts. Actual
+  source sex review requires independently proportioned female ants; beetle
+  tiles are identical. Five physical forms serve three IDs. Soldier follows
+  brown/cyan pixels, fire ant red/orange/green, beetle red/orange/peach/cyan;
+  blue/black ASCII colours are not shell pigments. No wings/flames were added.
+- `AntBeetleFamily.py` parameterises the existing giant-ant construction with
+  thoracic six-leg roots, narrow waist, independent soldier head/mandibles and
+  static sting. Females vary thorax and leg reach without uniform body scaling.
+  Beetle has its own broad abdomen/pronotum and fitted closed paired elytra,
+  narrow central seam and contained abdomen. Fresh generation includes the
+  saved shell-intersection correction; do not repeat the repair to inspect.
+- Saved closed topology/paint/floor/sex proportions/six-leg checks pass. All 72
+  previous canonical FBX hashes remain unchanged. Ten studio views, ten close
+  views and thirty true 16x16 renders were inspected. Native triangles:
+  17916 each soldier form / 17848 each fire-ant form / 11636 beetle.
+- Editor build and five final imports pass. Six displayed sex cases, six
+  official fallbacks, unknown identity and paint buffers pass. Both real F9
+  switches preserve turn 5/sequence 7; map, hero centring and 8x zoom pass.
+  Actual final engine capture inspected. A taller test viewport keeps fixtures
+  above the status HUD. The foreground wall partially hides fire ant; the
+  retained staircase capture shows that form fully. Studio views are unobstructed.
+  Runtime uses only displayed identity/sex and -75 degree family orientation.
+- Required verified backup: `Backups/NetHackSaves/20261102T141755.766497Z.zip`.
+  Final audit confirms all 1090 baseline played/runtime files and pointer are
+  unchanged. Only fresh `Saved/NetHackCaptures` sessions were launched; native
+  backend was not rebuilt, and no played game was advanced/stopped/resumed.
+- Evidence: `Docs/CreatureBatch22.md`, `Art/CreatureInterpretations/Batch22-Models.png`,
+  `batch22-mesh-inspection.json`, `batch22-save-preservation.json` and
+  `build-creature-batch22-*.log`. Inspect saved work with Render/ReviewBatch22.
+- Baseline: 65 completed creatures + one completed role + 316 remaining
+  creatures + 12 remaining roles = 394 IDs. There are 71 creature/player forms
+  (65 primary + four female variants + two human players). Four objects and
+  one fountain remain separate. Coverage: 65/381 = 17.1%; 66/394 = 16.8%.
+  Static draft finishing and runtime/LOD costs remain separate; no rigs or
+  animation are planned. Next suggestion: killer bee/queen bee/xan, reviewing
+  sex tiles/source traits and separate wing/body anatomy before modelling.
+  Preserve F7/F9/camera, fixed player clothing, status HUD, tile fallback,
+  high walls/floor tint/doors and DX12/SM6 shadows.
+
+
+## Special batch 2: requested altar and shopkeeper (2026-11-02)
+
+- Shopkeepers can be female (`shknam.c::nameshk`); official tiles 554/555 are
+  identical. One shared form follows black hat, cyan/blue jacket, green trousers
+  and brown shoes. Compatible human construction, complete hands and seated eyes
+  are reused; existing players remain unchanged. No shadow-derived held item.
+- Native altar glyphs have five appearances: unaligned/chaotic/neutral/lawful/
+  other (other.txt 33..37, atlas 1305..1309). Opposing the player does not mean
+  unaligned. `AM_SANCTUM` selects the special other/high-altar glyph. Five meshes
+  share complete stepped stone construction; pigments follow source, with red
+  mineral/inlay interpretation and static white ray inlay on the magenta other
+  altar. No hidden deity, priest, blessing, sacrifice or allegiance status.
+- Bridge `terrain()` maps only displayed altar glyphs, including provided
+  background glyphs. Existing parser retains previously displayed terrain when
+  covered; it does not manufacture knowledge of an altar created under an actor.
+  `DungeonAltars.cpp` selects only explicit known terrain variants, with dim memory
+  materials. Altars appear in both F9 styles; shopkeeper uses sculpted selection
+  and 15-degree yaw for both displayed sexes. Keep native information boundaries.
+- Saved paint/floor/closed-cloth/altar topology, shared structure/sex-tile checks
+  pass; all 77 preceding canonical FBX hashes are unchanged. Twelve studio views,
+  twelve details and all 36 true 16x16 projections inspected. Native triangles:
+  shopkeeper 249536, ordinary altars 50656 each, other altar 51184. Garment/face,
+  pigment/stone/ray refinement and LOD/runtime budgets remain finishing work.
+- Bridge/editor builds, six imports, native wishes/reveal/covered-hero checks,
+  both sex glyphs and native Astral high-altar glyph pass. Existing smoke and
+  corpse/fountain/sink tests pass. Both isolated live runs pass five altars in
+  both styles/visible-memory, both shopkeeper sexes/fallbacks, unknown guards,
+  material paint, F9 without turn/sequence advance, map, hero centring and 8x zoom.
+  Actual captures inspected; foreground wall hides the lower other-altar base.
+  Studio views provide unobstructed evidence.
+- Verified pre-change backup: `20261102T144236.531581Z.zip`; bridge build also
+  backed up to `20261102T144609.300079Z.zip`; final matching runtime/saves snapshot
+  is `20261102T150439.106734Z.zip`, all under `Backups/NetHackSaves`. All 1081
+  player-session files and pointer are unchanged. Only the display bridge EXE
+  changed among 1090 baseline files; data/save format unchanged. A newly created
+  old-runtime disposable save restores correctly in the new runtime. No played
+  session was resumed, advanced, stopped or replaced.
+- Evidence: `Docs/SpecialBatch2.md`, `Art/SpecialBatch2/`, `build-special-batch2-*.log`.
+  Saved Render/ReviewSpecialBatch2 scripts are for inspection; do not repeat
+  one-time repair/repaint to inspect. Fresh generation has the final corrections.
+- Current baseline: 66 creatures + one completed player role + 315 remaining
+  creatures + 12 remaining roles = 394 IDs. There are 72 creature/player forms,
+  four objects and two terrain identities / six forms (fountain plus five altars).
+  Coverage: 66/381 = 17.3%; 67/394 = 17.0%. Regular next batch stays killer bee,
+  queen bee and xan. Static finishing is separate; rigs/animation are out of scope.
+  Preserve F7/F9/camera, fixed player clothing, full status HUD, high walls/floor/
+  doors, tile fallback and DX12/SM6 shadows.
+
+
+## Batch 23: bees and separate xan anatomy (2026-11-02)
+
+- Killer bee, queen bee and xan have verified static flight drafts. Both bee
+  species are native female-only; all three official sex tile pairs are identical.
+  Three physical forms serve three IDs. Synthetic male display tests do not
+  assert that NetHack normally generates male bees.
+- `WingedInsects.py` shares compatible bee construction: brown head/thorax,
+  cyan eyes, continuous yellow/black painted abdomen, six thoracic legs, four
+  closed blue-gray wings, antennae/mandibles and static sting. Thorax uses only
+  approved texture fur. Queen independently varies thorax, larger/lower abdomen,
+  wing span/chord and leg reach; no crown or uniform-only scaling.
+- Xan follows source encyclopedia's mosquito cue and actual green/white/yellow
+  tile rather than red ASCII colour: separate raised slender abdomen, two closed
+  gold wings, white/dark eyes, long six-legged stance, proboscis and balancing
+  knobs. Exact wing/leg interpretation and hidden anatomy are artistic assumptions.
+  Wings are thin closed geometry with veins and real shadows, never alpha cards.
+  Native flight/poison/leg attacks stay in NetHack; no animation/effect is added.
+- Saved geometry/paint/closure/hover/leg/wing/eye checks pass, including independent
+  queen proportions and bee fur UV/materials. All 83 previous exports match
+  saved hashes. Native triangles: 32220 each bee, 12088 xan. Six studio, six
+  head, three underside and eighteen true 16x16 views inspected; actual engine
+  capture shows all three fixtures. Shadow masks preserve bee bands and xan pupils.
+- Editor build and three targeted imports pass. Six displayed aliases, six
+  official fallbacks, unknown identity, paint/fur/UV and actual F9 both ways pass
+  at unchanged turn 5/sequence 7; native map, hero centring and 8x zoom pass.
+  Both preview and normal placement use -75-degree orientation. No bridge rebuild.
+- Required backup `Backups/NetHackSaves/20261102T150827.273748Z.zip` verifies all
+  1090 baseline save/runtime files. Final audit confirms identical hashes, complete
+  played file set and pointer. Only a fresh `Saved/NetHackCaptures` test was run;
+  no played session was resumed/advanced/stopped/replaced.
+- Evidence: `Docs/CreatureBatch23.md`, `Art/CreatureInterpretations/Batch23-Models.png`,
+  `batch23-mesh-inspection.json`, `batch23-save-preservation.json` and
+  `build-creature-batch23-*.log`. Saved Render/ReviewBatch23 scripts inspect existing
+  work. Fresh generation contains final band-sampling correction; do not repeat
+  the saved one-time band refinement merely to inspect.
+- Baseline: 69 creatures + one completed role + 312 remaining creatures + 12
+  remaining roles = 394 IDs. There are 75 creature/player forms (69 primary,
+  four additional female variants, two human players). Four objects and two
+  terrain IDs / six forms remain separate. Creature draft coverage: 69/381 =
+  18.1%; creature/player coverage: 70/394 = 17.8%. This is draft generation,
+  not visual finishing. Wing roots/veins, eye/leg/stinger/proboscis detail,
+  thorax texture flow and LOD/runtime cost remain finish work. No rigs or animation.
+  Next suggestion: cave spider/giant spider/scorpion with a separate reviewed
+  scorpion body. Preserve altar/shopkeeper integration, F7/F9/camera, fixed player
+  clothing, full status HUD, walls/floor/doors, tile fallback and DX12/SM6 shadows.
+
+## Object inventory and beautiful loot (2026-11-02)
+
+- User asked for the full object list/backlog and encouraged more creative,
+  beautiful weapon/equipment interpretation: rewarding loot and meaningful item
+  differences, not interchangeable generic swords. Direction is recorded in
+  `Docs/GameVision.md` and `Docs/ObjectArtDirection.md`; it does not request
+  object generation yet or alter established creature assets.
+- Full source inventory now exists in `Art/ObjectCatalogue/`: objects, appearances
+  and artifact JSON/CSV, generated `Inventory.md`, and `summary.json`.
+  `Scripts/CreateObjectCatalogue.py` is source-only and never rewrites the manual
+  `object-backlog.md`. `InitializeObjectBacklog.py` refuses an existing checklist.
+- Scope: 440 named source types (439 unconditional plus conditional mail), four
+  verified drafts / 436 remaining; 463 non-auxiliary appearance slots including
+  23 extras; 18 display auxiliaries; four deferred types; 33 current artifact
+  overlays plus one obsolete one. All 483 official object tiles accounted for,
+  including two deferred shimmering-dragon armor tiles. These scopes are not
+  additive mesh counts. Creature totals remain 69/381 = 18.1%.
+- Organization is shallow category → visual family. Materials/cultural cues are
+  facets, and reuse must retain meaningful silhouette/shape differences. Source
+  identity and physical appearance are separate: respect `o_init.c` shuffle
+  groups/exceptions and same-look items; never encode an unknown effect, curse,
+  artifact, hidden contents or value in ornament/glow/rarity colours. Identifying
+  an item does not itself change its physical design. No runtime protocol changes.
+- Current object registry remains the four selected verified drafts; main backlog
+  now links the full manual object checklist and checks only the inventory task.
+  Proposed first study: long sword/scimitar/katana, followed by jewelry/wand and
+  potion/scroll appearance studies; artifact visibility rules need explicit review.
+- `Tests/ObjectCatalogue.py` checks macro expansion, scope, shuffle exceptions,
+  source tiles, artifacts and existing drafts. Independent MSVC preprocessing in
+  both MAIL_STRUCTURES configurations matches every active enum/name/description.
+  Evidence: `build-object-catalogue-tests.log`. No models, runtime or saves changed.
+
+
+## Batch 24: spiders and separate scorpion (2026-11-02)
+
+- Cave spider, giant spider and scorpion have verified shared-sex static drafts;
+  each actual tile pair is identical. Cave spider is blue-gray/cyan; giant spider
+  and scorpion are brown/orange, not their magenta/red ASCII colours. Green eye
+  accents and red fang/claw/sting details follow the source. Shadow fringe is
+  excluded spatially while enclosed dark details remain in comparisons.
+- `ArachnidFamily.py` independently parameterises spider cephalothorax, abdomen,
+  height and leg reach, with eight thoracic walking legs, paired pedipalps/fangs,
+  spinnerets and two primary/six interpreted small eyes. Scorpion has its own
+  prosoma/mesosoma, six simplified plates, eight legs, two pedipalp pincers with
+  separated fingers, five tail segments, joint masses, telson and curved sting.
+  Hidden anatomy/eye layout/plate simplification and pose are artistic choices.
+  No webs, wings or poison effects were added. Static poses remain intended.
+- Saved paint/finite/nonzero/closed geometry/floor, leg/eye/pincer/tail and distinct
+  spider-proportion checks pass. All 86 previous FBX exports remain unchanged.
+  Native triangles: 26544 each spider / 22128 scorpion. Six studio, six face,
+  three underside and eighteen true 16x16 views inspected, plus actual live
+  capture. First wall-obscured engine capture retained separately.
+- Editor build and three targeted imports pass. Six displayed sex aliases, six
+  official fallbacks, unknown identity and paint buffers pass. Both real F9
+  switches preserve native turn/input sequence; map, hero centring and 8x zoom
+  pass. Normal and preview orientation are -75 degrees. No bridge rebuild.
+- Required verified backup: `Backups/NetHackSaves/20261102T154654.148400Z.zip`.
+  Final audit confirms all 1090 baseline save/runtime files, file set and pointer
+  unchanged. Only fresh `Saved/NetHackCaptures` sessions were launched; no played
+  game was resumed, advanced, stopped or replaced.
+- Evidence: `Docs/CreatureBatch24.md`, `Art/CreatureInterpretations/Batch24-Models.png`,
+  `batch24-mesh-inspection.json`, `batch24-save-preservation.json` and
+  `build-creature-batch24-*.log`. Use saved Render/ReviewBatch24 for inspection.
+- Baseline: 72 creatures + one completed role + 309 remaining creatures + 12
+  remaining roles = 394 IDs. There are 78 creature/player forms (72 primary,
+  four female variants and two human players). Four objects and two terrain IDs /
+  six forms remain separate. Creature draft coverage: 72/381 = 18.9%; including
+  completed player role: 73/394 = 18.5%. Leg/joint/eye/fang and plate/tail seams,
+  paint, small-scale readability and LOD/runtime costs remain finish work.
+  Next: gecko/iguana/lizard with reviewed reptile family compatibility.
+- User will revisit weapon art direction later; divine-gift weapons must look
+  especially amazing. That priority is recorded in object docs/checklist, with
+  no weapon generation now. Preserve the object inventory, altar/shopkeeper and
+  previous creatures, F7/F9/camera, fixed player clothing, full status HUD,
+  high walls/floor/doors, tile fallback and DX12/SM6 shadows.
+
+
+## Batch 25: gecko, iguana and lizard (2026-11-02)
+
+- Three shared-sex static drafts follow identical official sex tile pairs: gecko
+  660/661, iguana 662/663, lizard 666/667. Gecko is pale peach, iguana green/lime,
+  lizard green/brown; ASCII colour is not the body palette. Spatial dark-fringe
+  exclusion is approximate; no shadow geometry or blue rim was added.
+- New `ReptileFamily.py` supplies independent dimensions, four legs, twenty
+  inferred digits, fitted eyes/mouths and complete tapered tails. Gecko has broad
+  pads; iguana has a dewlap and thirteen spines; slender lizard has no crest.
+  Small static red tongue tips interpret iguana/lizard source accents. These
+  anatomical completions are artistic assumptions, not precise species claims.
+- Saved closed topology/paint/floor/toe checks, actual front/rear/head/underside
+  and eighteen 16x16 projections, editor build/import and isolated live six-sex/
+  six-fallback/unknown/paint/F9/no-turn/map/8x zoom checks pass. See
+  `Docs/CreatureBatch25.md`. Dense topology, limb joins, toe pads and tiny-scale
+  contrast remain finishing/LOD work; no animation is planned.
+- The 89 prior canonical exports and all 1,090 save/runtime baseline files are
+  unchanged. Backup: `20261102T161037.219275Z.zip`; native backend not rebuilt.
+- Current coverage: 75/381 creatures = 19.7%; with Valkyrie 76/394 = 19.3%.
+  81 physical creature/player forms. Next queue: garter snake/snake/water moccasin.
+
+
+## Batch 26: first snake family (2026-11-02)
+
+- Garter snake, snake and water moccasin have verified shared-sex static drafts;
+  official pairs 438/439, 440/441 and 442/443 are identical. Actual palettes are
+  orange-brown/orange-brown/black. Blue-gray garter fringe is treated as cast
+  shading; an explicit mask retains the moccasin’s black anatomical silhouette.
+- `SnakeFamily.py` supplies continuous sampled coils, tapered tails and fitted
+  closed heads with independent scale, girth, head dimensions and tail hooks.
+  No limbs, cobra hood or effects. Pale eyes, green ordinary-snake tongue and
+  red moccasin tongue follow tile accents. Exact anatomy/pose/pigment patterns
+  are artistic assumptions. No hostility or poison state is encoded as a glow.
+- Closed connected body, finite/nonzero topology, paint, floor, paired eyes,
+  tail and protected-export checks pass. Actual front/rear/head/underside and
+  eighteen 16x16 renders were inspected. Unreal compile/import and isolated
+  six-alias/six-fallback/unknown/paint/F9/no-turn/map/8x checks pass.
+  Evidence: `Docs/CreatureBatch26.md`; head/scale finish, dark readability and
+  LODs remain separate. No animation is planned.
+- All 92 previous canonical exports and 1,090 baseline save/runtime files are
+  unchanged. Verified backup: `20261102T162533.043395Z.zip`; backend not rebuilt.
+- Coverage: 78/381 creatures = 20.5%; with Valkyrie 79/394 = 20.1%; 84 physical
+  creature/player forms. Next suggestion: python, pit viper and cobra.
+
+## Mjollnir design (2026-11-02)
+
+Requested named hammer design now exists: Art/ObjectInterpretations/Mjollnir.blend and mjollnir.fbx, with myth/archaeological sources and actual multi-angle renders. See Docs/Mjollnir.md. Imported under /Game/ArtifactInterpretations, separate from ordinary objects. Artifact checklist stays unchecked: native known-artifact eligibility and live knowledge/memory/hallucination/save/fallback checks remain. Never select it from hidden artifact identity. Creature and live object counts unchanged; no player session launched or modified.
+
+
+## Requested armor study
+Seven design/import drafts: leather armor, studded leather armor, chain mail, banded mail, elven/dwarvish mithril-coats, and user-clarified dwarvish cloak. See Docs/ArmorStudy.md; source scenes ArmorStudy.blend and DwarvishCloak.blend. Assets under /Game/ArmorStudy. Native live mapping/appearance tests remain, so checkboxes stay unchecked and live object/creature counts unchanged. No player clothing or save mutations.
+
+
+## Cleaver named battle-axe design
+Requested huge barbarian divine-gift interpretation: twin iron crescent blades, broad sharpened bevels, long haft, two hide grips, bronze socket bindings and ivory fang motifs. Art/ObjectInterpretations/Cleaver.blend and cleaver.fbx; Docs/Cleaver.md records source and evidence. Imported separately under /Game/ArtifactInterpretations/Cleaver. Same pending known-artifact/native-live eligibility as Mjollnir; checkboxes and live counts stay unchanged. All 103 preceding canonical exports preserved; no gameplay/save/backend mutation.
+
+
+## Plate and dragon mail study
+
+Requested three basic plate armors (steel/crystal/bronze) and all ten active dragon mail colours now have editable design/import drafts. Art/ObjectInterpretations/ArmorBatch2.blend, thirteen FBX files, actual multiview and 78 tiny renders; Docs/ArmorBatch2.md has evidence. Crystal uses a polished clearcoat shader; gray dragon mail has extra silver crest, horn and chest-scale detailing. Native correction: gray grants magic resistance, black disintegration resistance; gold is active, shimmering deferred. All 104 preceding exports unchanged; thirteen final imports/paint/material checks and source-catalogue tests pass. Assets under /Game/ArmorBatch2. Backlog/catalogue distinguish designs from pending native-live appearance verification. No gameplay/backend/save changes, counts unchanged. Suggested next basic batch: splint mail, scale mail, ring mail. Recommended default batch size: three related designs; complete colour families can use dedicated larger batches.
+
+## Dragon-mail reference correction
+
+The user rejected the large slab-like chest scales and supplied two armor photographs. Current DragonMailFamily.py uses small smooth overlapping leaf scales, a fitted waist and curved layered pauldrons across all ten colours. Remove/reject the previous great chest scutes, pectoral badge, collar slabs and tall horns. Gray keeps fine silver leaf-spine detailing. See Docs/DragonMailReferenceRevision.md and Art/ObjectInterpretations/References/DragonMail-user-reference-{1,2}.jpg. Previous scene/exports/views are archived in DragonMail-v1. Plate/crystal/bronze geometry, paint and canonical exports are preserved; no player saves, runtime or native mapping changed. Model/import draft status remains; live eligibility still pending.
+
+
+## Batch 27: advanced snake family
+
+- Python, pit viper and cobra have verified shared-sex static drafts; actual
+  pairs 444/445, 446/447, 448/449 are identical. Python follows brown/orange
+  and green eyes; viper/cobra retain their actual black anatomy with explicit
+  non-background source masks. ASCII magenta/blue are not body pigment.
+- AdvancedSnakeFamily.py supplies a heavy low double coil, a broad tapered
+  viper head with paired pit marks, and a genuinely integrated expanded cobra
+  hood. Paired fitted eyes, mouths, tapered tails and static tongue accents
+  complete the forms. Exact species, pose and fine anatomy are artistic guesses.
+- Closed connected topology/paint/floor/hood/coil/protected-export checks pass.
+  Actual front/rear/head/underside and eighteen tiny renders were inspected.
+  Unreal compile/import, six sex aliases, six fallbacks, unknown/paint, actual
+  no-turn F9 both ways, native map/hero and 8x zoom checks pass. See
+  Docs/CreatureBatch27.md. Coil/eye/hood finish and LODs remain; no animation.
+- All 117 prior exports and 1,090 baseline save/runtime files are unchanged.
+  Backup: 20261102T201016.119063Z.zip; no native backend rebuilt or played
+  session resumed. Coverage: 81/381 creatures = 21.3%; with Valkyrie 82/394 =
+  20.8%; 87 physical creature/player forms. Next: monkey/ape/carnivorous ape.
+
+## Standard weapon study
+
+Long sword, scimitar and katana now have editable design/import drafts in Art/ObjectInterpretations/WeaponBatch1.blend and named FBX exports. Distinct blade sections/fullers/curves, guards, grips and pommels follow ordinary craftsmanship; Docs/WeaponBatch1.md records source/museum references and evidence. Unreal folder /Game/WeaponBatch1 preserves artifact/armor materials. Native displayed-appearance/live mapping remains pending and checkboxes stay unchecked; four live objects and 81/381 creatures remain unchanged. All 120 preceding canonical exports are protected. No gameplay/backend/save changes. Suggested next weapons: dagger, short sword and spear.

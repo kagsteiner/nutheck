@@ -1,0 +1,111 @@
+{
+  "soldier_ant": {
+    "parts": 25,
+    "triangles": 17916,
+    "bounds_m": [
+      [
+        -0.6651716232299805,
+        -0.4365644156932831,
+        0.022868068888783455
+      ],
+      [
+        0.5318275690078735,
+        0.4365644156932831,
+        0.43875718116760254
+      ]
+    ],
+    "closed_surfaces": true,
+    "paint_valid": true,
+    "thoracic_legs": 6,
+    "paired_eyes": true,
+    "elytra": 0
+  },
+  "soldier_ant_female": {
+    "parts": 25,
+    "triangles": 17916,
+    "bounds_m": [
+      [
+        -0.6651716232299805,
+        -0.4794767200946808,
+        0.02277376502752304
+      ],
+      [
+        0.5318275690078735,
+        0.4794767200946808,
+        0.43875718116760254
+      ]
+    ],
+    "closed_surfaces": true,
+    "paint_valid": true,
+    "thoracic_legs": 6,
+    "paired_eyes": true,
+    "elytra": 0
+  },
+  "fire_ant": {
+    "parts": 24,
+    "triangles": 17848,
+    "bounds_m": [
+      [
+        -0.5617203712463379,
+        -0.4365644156932831,
+        0.022868068888783455
+      ],
+      [
+        0.489999920129776,
+        0.4365644156932831,
+        0.43875718116760254
+      ]
+    ],
+    "closed_surfaces": true,
+    "paint_valid": true,
+    "thoracic_legs": 6,
+    "paired_eyes": true,
+    "elytra": 0
+  },
+  "fire_ant_female": {
+    "parts": 24,
+    "triangles": 17848,
+    "bounds_m": [
+      [
+        -0.5617203712463379,
+        -0.4794767200946808,
+        0.02277376502752304
+      ],
+      [
+        0.489999920129776,
+        0.4794767200946808,
+        0.43875718116760254
+      ]
+    ],
+    "closed_surfaces": true,
+    "paint_valid": true,
+    "thoracic_legs": 6,
+    "paired_eyes": true,
+    "elytra": 0
+  },
+  "giant_beetle": {
+    "parts": 19,
+    "triangles": 11636,
+    "bounds_m": [
+      [
+        -0.6125549674034119,
+        -0.44815683364868164,
+        0.019365886226296425
+      ],
+      [
+        0.5199999809265137,
+        0.44815683364868164,
+        0.5350000262260437
+      ]
+    ],
+    "closed_surfaces": true,
+    "paint_valid": true,
+    "thoracic_legs": 6,
+    "paired_eyes": true,
+    "elytra": 2
+  },
+  "previous_72_exports_unchanged": true,
+  "source_sexes_reviewed": true,
+  "independent_ant_female_proportions": true,
+  "separate_beetle_body": true
+}

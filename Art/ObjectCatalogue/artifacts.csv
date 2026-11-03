@@ -1,0 +1,35 @@
+﻿id,name,base_object_id,scope,alignment,role,ancestry,asset_status
+ART_EXCALIBUR,Excalibur,LONG_SWORD,normal,A_LAWFUL,PM_KNIGHT,NON_PM,not modelled
+ART_STORMBRINGER,Stormbringer,RUNESWORD,normal,A_CHAOTIC,NON_PM,NON_PM,not modelled
+ART_MJOLLNIR,Mjollnir,WAR_HAMMER,normal,A_NEUTRAL,PM_VALKYRIE,NON_PM,MVP live placement and native visible name verified; extended verification pending
+ART_CLEAVER,Cleaver,BATTLE_AXE,normal,A_NEUTRAL,PM_BARBARIAN,NON_PM,MVP live placement and native visible name verified; extended verification pending
+ART_GRIMTOOTH,Grimtooth,ORCISH_DAGGER,normal,A_CHAOTIC,NON_PM,PM_ORC,not modelled
+ART_ORCRIST,Orcrist,ELVEN_BROADSWORD,normal,A_CHAOTIC,NON_PM,PM_ELF,not modelled
+ART_STING,Sting,ELVEN_DAGGER,normal,A_CHAOTIC,NON_PM,PM_ELF,not modelled
+ART_MAGICBANE,Magicbane,ATHAME,normal,A_NEUTRAL,PM_WIZARD,NON_PM,not modelled
+ART_FROST_BRAND,Frost Brand,LONG_SWORD,normal,A_NONE,NON_PM,NON_PM,not modelled
+ART_FIRE_BRAND,Fire Brand,LONG_SWORD,normal,A_NONE,NON_PM,NON_PM,not modelled
+ART_DRAGONBANE,Dragonbane,BROADSWORD,normal,A_NONE,NON_PM,NON_PM,not modelled
+ART_DEMONBANE,Demonbane,SILVER_MACE,normal,A_LAWFUL,PM_CLERIC,NON_PM,not modelled
+ART_WEREBANE,Werebane,SILVER_SABER,normal,A_NONE,NON_PM,NON_PM,not modelled
+ART_GRAYSWANDIR,Grayswandir,SILVER_SABER,normal,A_LAWFUL,NON_PM,NON_PM,not modelled
+ART_GIANTSLAYER,Giantslayer,LONG_SWORD,normal,A_NEUTRAL,NON_PM,NON_PM,not modelled
+ART_OGRESMASHER,Ogresmasher,WAR_HAMMER,normal,A_NONE,NON_PM,NON_PM,not modelled
+ART_TROLLSBANE,Trollsbane,MORNING_STAR,normal,A_NONE,NON_PM,NON_PM,not modelled
+ART_VORPAL_BLADE,Vorpal Blade,LONG_SWORD,normal,A_NEUTRAL,NON_PM,NON_PM,not modelled
+ART_SNICKERSNEE,Snickersnee,KATANA,normal,A_LAWFUL,PM_SAMURAI,NON_PM,not modelled
+ART_SUNSWORD,Sunsword,LONG_SWORD,normal,A_LAWFUL,NON_PM,NON_PM,not modelled
+ART_ORB_OF_DETECTION,The Orb of Detection,CRYSTAL_BALL,normal,A_LAWFUL,PM_ARCHEOLOGIST,NON_PM,not modelled
+ART_HEART_OF_AHRIMAN,The Heart of Ahriman,LUCKSTONE,normal,A_NEUTRAL,PM_BARBARIAN,NON_PM,not modelled
+ART_SCEPTRE_OF_MIGHT,The Sceptre of Might,MACE,normal,A_LAWFUL,PM_CAVE_DWELLER,NON_PM,not modelled
+ART_PALANTIR_OF_WESTERNESSE,The Palantir of Westernesse,CRYSTAL_BALL,obsolete,A_CHAOTIC,NON_PM,PM_ELF,not modelled
+ART_STAFF_OF_AESCULAPIUS,The Staff of Aesculapius,QUARTERSTAFF,normal,A_NEUTRAL,PM_HEALER,NON_PM,not modelled
+ART_MAGIC_MIRROR_OF_MERLIN,The Magic Mirror of Merlin,MIRROR,normal,A_LAWFUL,PM_KNIGHT,NON_PM,not modelled
+ART_EYES_OF_THE_OVERWORLD,The Eyes of the Overworld,LENSES,normal,A_NEUTRAL,PM_MONK,NON_PM,not modelled
+ART_MITRE_OF_HOLINESS,The Mitre of Holiness,HELM_OF_BRILLIANCE,normal,A_LAWFUL,PM_CLERIC,NON_PM,not modelled
+ART_LONGBOW_OF_DIANA,The Longbow of Diana,BOW,normal,A_CHAOTIC,PM_RANGER,NON_PM,not modelled
+ART_MASTER_KEY_OF_THIEVERY,The Master Key of Thievery,SKELETON_KEY,normal,A_CHAOTIC,PM_ROGUE,NON_PM,not modelled
+ART_TSURUGI_OF_MURAMASA,The Tsurugi of Muramasa,TSURUGI,normal,A_LAWFUL,PM_SAMURAI,NON_PM,not modelled
+ART_YENDORIAN_EXPRESS_CARD,The Platinum Yendorian Express Card,CREDIT_CARD,normal,A_NEUTRAL,PM_TOURIST,NON_PM,not modelled
+ART_ORB_OF_FATE,The Orb of Fate,CRYSTAL_BALL,normal,A_NEUTRAL,PM_VALKYRIE,NON_PM,not modelled
+ART_EYE_OF_THE_AETHIOPICA,The Eye of the Aethiopica,AMULET_OF_ESP,normal,A_NEUTRAL,PM_WIZARD,NON_PM,not modelled

@@ -1,0 +1,66 @@
+{
+  "orc_mummy": {
+    "parts": 24,
+    "triangles": 91292,
+    "bounds_m": [
+      [
+        -0.2706609070301056,
+        -0.15380382537841797,
+        0.0010000020265579224
+      ],
+      [
+        0.2701462507247925,
+        0.11185256391763687,
+        1.1649999618530273
+      ]
+    ],
+    "paint_valid": true,
+    "paired_eyes_surface_gaps_m": [
+      0.0025401224847882986,
+      0.0025388100184500217
+    ],
+    "body_vertex_hash": "c19a04650c305e95c3c883b11fb46bbdead8f9f66a21380b693ea5acc4d5f6f3",
+    "wrap_count": 12,
+    "wrap_max_surface_gaps_m": {
+      "orc_mummy_forearm_linen": 0.004500013310462236,
+      "orc_mummy_forearm_linen.001": 0.004500007256865501,
+      "orc_mummy_forehead_linen": 0.004499694798141718,
+      "orc_mummy_jaw_linen": 0.004498700611293316,
+      "orc_mummy_lower_leg_linen": 0.0045000119134783745,
+      "orc_mummy_lower_leg_linen.001": 0.004500017501413822,
+      "orc_mummy_orange_linen_accent": 0.0074999975040555,
+      "orc_mummy_torso_linen": 0.004499997477978468,
+      "orc_mummy_upper_arm_linen": 0.0045000058598816395,
+      "orc_mummy_upper_arm_linen.001": 0.004500014241784811,
+      "orc_mummy_upper_leg_linen": 0.004500001668930054,
+      "orc_mummy_upper_leg_linen.001": 0.0045000109821558
+    }
+  },
+  "orc_zombie": {
+    "parts": 20,
+    "triangles": 104036,
+    "bounds_m": [
+      [
+        -0.268960565328598,
+        -0.15380382537841797,
+        0.0010000020265579224
+      ],
+      [
+        0.2689605951309204,
+        0.12700000405311584,
+        1.1649999618530273
+      ]
+    ],
+    "paint_valid": true,
+    "paired_eyes_surface_gaps_m": [
+      0.0025401224847882986,
+      0.0025388100184500217
+    ],
+    "body_vertex_hash": "c19a04650c305e95c3c883b11fb46bbdead8f9f66a21380b693ea5acc4d5f6f3",
+    "wrap_count": 0,
+    "wrap_max_surface_gaps_m": {}
+  },
+  "previous_70_exports_unchanged": true,
+  "source_sex_tiles_identical": true,
+  "saved_orc_ancestry_exact": true
+}

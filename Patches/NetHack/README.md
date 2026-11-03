@@ -23,3 +23,7 @@ travel command's bound key, then returns one mouse selection to that command's
 The additive `status` event copies all native status field values, formatting,
 enabled flags and active condition names at status flush/reset. It does not
 derive new gameplay state or change the save format. See [StatusHUD.md](../../Docs/StatusHUD.md).
+
+`state` also reports `in_mines` and `mines_town` for the hero's current setting.
+They select the cavern/settlement presentation without hard-coded dungeon IDs;
+no unseen level contents are exported. See [MinesEnvironment.md](../../Docs/MinesEnvironment.md).

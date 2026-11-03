@@ -10,6 +10,7 @@ struct FNetHackCell
     int32 Symbol=0;
     FString DisplayMonster;
     FString DisplayObject;
+    FString DisplayArtifact;
     bool Female=false;
     bool Visible=false,Horizontal=false;
     bool PermanentLight=false,TemporaryLight=false;
@@ -45,6 +46,7 @@ public:
     bool TakeMapDirty() { bool Result=MapDirty; MapDirty=false; return Result; }
     bool IsCommand() const { return Awaiting && PromptType==TEXT("command"); }
     bool IsReady() const { return Hero.X>=0 && Turn>0; }
+    bool IsBackendRunning();
     int32 KnownCellCount() const;
 
     TMap<FString,FNetHackStatusField> Status;
@@ -58,7 +60,7 @@ public:
     FString PromptType, PromptText, Line, CountPrefix, Error, SessionDirectory;
     FIntPoint Hero=FIntPoint(-1,-1);
     FString HeroRace;
-    bool HeroPolymorphed=false;
+    bool HeroPolymorphed=false,InMines=false,MinesTown=false;
     FIntPoint Cursor=FIntPoint(-1,-1);
     int32 Turn=0,HP=0,MaxHP=0,AC=0,Level=0,Depth=0,Dungeon=0;
     int32 Sequence=0,MenuMode=0,MenuScroll=0,MenuPageSize=20;

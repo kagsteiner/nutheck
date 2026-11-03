@@ -1,0 +1,71 @@
+{
+  "python": {
+    "parts": 9,
+    "triangles": 170132,
+    "bounds_m": [
+      [
+        -0.41556644439697266,
+        -0.38524168729782104,
+        0.020206118002533913
+      ],
+      [
+        0.4434130787849426,
+        0.4299669861793518,
+        0.304797887802124
+      ]
+    ],
+    "closed_geometry": true,
+    "paint_valid": true,
+    "connected_body": true,
+    "source_sex_shared": true,
+    "head_width": 0.06,
+    "body_radius": 0.068
+  },
+  "pit_viper": {
+    "parts": 14,
+    "triangles": 80460,
+    "bounds_m": [
+      [
+        -0.44242286682128906,
+        -0.26698827743530273,
+        0.021452661603689194
+      ],
+      [
+        0.34160611033439636,
+        0.24108701944351196,
+        0.41718921065330505
+      ]
+    ],
+    "closed_geometry": true,
+    "paint_valid": true,
+    "connected_body": true,
+    "source_sex_shared": true,
+    "head_width": 0.079,
+    "body_radius": 0.052
+  },
+  "cobra": {
+    "parts": 12,
+    "triangles": 76848,
+    "bounds_m": [
+      [
+        -0.44242286682128906,
+        -0.2687538266181946,
+        0.02285892143845558
+      ],
+      [
+        0.3504375219345093,
+        0.2343977987766266,
+        0.5647357702255249
+      ]
+    ],
+    "closed_geometry": true,
+    "paint_valid": true,
+    "connected_body": true,
+    "source_sex_shared": true,
+    "head_width": 0.054,
+    "body_radius": 0.042
+  },
+  "previous_117_exports_unchanged": true,
+  "black_anatomy_retained": true,
+  "source_sex_tiles_identical": true
+}

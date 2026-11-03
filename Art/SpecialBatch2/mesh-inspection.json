@@ -1,0 +1,120 @@
+{
+  "shopkeeper": {
+    "parts": 43,
+    "triangles": 249536,
+    "bounds_m": [
+      [
+        -0.3532940447330475,
+        -0.1629999279975891,
+        0.0010000020265579224
+      ],
+      [
+        0.353294312953949,
+        0.15842849016189575,
+        1.7940000295639038
+      ]
+    ],
+    "paint_valid": true,
+    "static": true,
+    "canonical_fbx": "Art\\CreatureInterpretations\\shopkeeper.fbx"
+  },
+  "altar_unaligned": {
+    "parts": 9,
+    "triangles": 50656,
+    "bounds_m": [
+      [
+        -0.44000008702278137,
+        -0.3200000524520874,
+        0.0
+      ],
+      [
+        0.44000008702278137,
+        0.3200000524520874,
+        0.5820000171661377
+      ]
+    ],
+    "paint_valid": true,
+    "static": true,
+    "canonical_fbx": "Art\\EnvironmentInterpretations\\altar_unaligned.fbx"
+  },
+  "altar_chaotic": {
+    "parts": 9,
+    "triangles": 50656,
+    "bounds_m": [
+      [
+        -0.44000008702278137,
+        -0.3200000524520874,
+        0.0
+      ],
+      [
+        0.44000008702278137,
+        0.3200000524520874,
+        0.5820000171661377
+      ]
+    ],
+    "paint_valid": true,
+    "static": true,
+    "canonical_fbx": "Art\\EnvironmentInterpretations\\altar_chaotic.fbx"
+  },
+  "altar_neutral": {
+    "parts": 9,
+    "triangles": 50656,
+    "bounds_m": [
+      [
+        -0.44000008702278137,
+        -0.3200000524520874,
+        0.0
+      ],
+      [
+        0.44000008702278137,
+        0.3200000524520874,
+        0.5820000171661377
+      ]
+    ],
+    "paint_valid": true,
+    "static": true,
+    "canonical_fbx": "Art\\EnvironmentInterpretations\\altar_neutral.fbx"
+  },
+  "altar_lawful": {
+    "parts": 9,
+    "triangles": 50656,
+    "bounds_m": [
+      [
+        -0.44000008702278137,
+        -0.3200000524520874,
+        0.0
+      ],
+      [
+        0.44000008702278137,
+        0.3200000524520874,
+        0.5820000171661377
+      ]
+    ],
+    "paint_valid": true,
+    "static": true,
+    "canonical_fbx": "Art\\EnvironmentInterpretations\\altar_lawful.fbx"
+  },
+  "altar_other": {
+    "parts": 21,
+    "triangles": 51184,
+    "bounds_m": [
+      [
+        -0.44000008702278137,
+        -0.3200000524520874,
+        0.0
+      ],
+      [
+        0.44000008702278137,
+        0.3200000524520874,
+        0.5820000171661377
+      ]
+    ],
+    "paint_valid": true,
+    "static": true,
+    "canonical_fbx": "Art\\EnvironmentInterpretations\\altar_other.fbx"
+  },
+  "previous_77_exports_unchanged": true,
+  "shopkeeper_sex_tiles_identical": true,
+  "altar_structure_shared": true,
+  "source_hat_dark_pixels_retained": true
+}

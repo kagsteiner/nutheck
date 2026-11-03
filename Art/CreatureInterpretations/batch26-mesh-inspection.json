@@ -1,0 +1,74 @@
+{
+  "garter_snake": {
+    "parts": 9,
+    "triangles": 59776,
+    "bounds_m": [
+      [
+        -0.3028257191181183,
+        -0.18913738429546356,
+        0.008254164829850197
+      ],
+      [
+        0.22692374885082245,
+        0.16488006711006165,
+        0.35891193151474
+      ]
+    ],
+    "closed_geometry": true,
+    "paint_valid": true,
+    "continuous_body": true,
+    "eyes": 2,
+    "source_sex_shared": true,
+    "head_width": 0.0288,
+    "body_radius": 0.0296
+  },
+  "snake": {
+    "parts": 12,
+    "triangles": 78208,
+    "bounds_m": [
+      [
+        -0.44442808628082275,
+        -0.2388291358947754,
+        0.011480314657092094
+      ],
+      [
+        0.2933546304702759,
+        0.21846404671669006,
+        0.4487520456314087
+      ]
+    ],
+    "closed_geometry": true,
+    "paint_valid": true,
+    "continuous_body": true,
+    "eyes": 2,
+    "source_sex_shared": true,
+    "head_width": 0.051,
+    "body_radius": 0.05
+  },
+  "water_moccasin": {
+    "parts": 12,
+    "triangles": 98232,
+    "bounds_m": [
+      [
+        -0.48887091875076294,
+        -0.2846858501434326,
+        0.014019466936588287
+      ],
+      [
+        0.3350923955440521,
+        0.2560407221317291,
+        0.49369335174560547
+      ]
+    ],
+    "closed_geometry": true,
+    "paint_valid": true,
+    "continuous_body": true,
+    "eyes": 2,
+    "source_sex_shared": true,
+    "head_width": 0.0825,
+    "body_radius": 0.07150000000000001
+  },
+  "previous_92_exports_unchanged": true,
+  "source_sex_tiles_identical": true,
+  "black_moccasin_anatomy_retained": true
+}

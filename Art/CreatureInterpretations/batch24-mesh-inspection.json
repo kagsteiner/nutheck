@@ -1,0 +1,69 @@
+{
+  "cave_spider": {
+    "parts": 33,
+    "triangles": 26544,
+    "bounds_m": [
+      [
+        -0.3055441975593567,
+        -0.31726884841918945,
+        0.013948517851531506
+      ],
+      [
+        0.25,
+        0.31726884841918945,
+        0.3100000023841858
+      ]
+    ],
+    "closed_geometry": true,
+    "paint_valid": true,
+    "walking_legs": 8,
+    "primary_eyes": 2,
+    "source_sex_shared": true
+  },
+  "giant_spider": {
+    "parts": 33,
+    "triangles": 26544,
+    "bounds_m": [
+      [
+        -0.4665828347206116,
+        -0.49373874068260193,
+        0.013576528988778591
+      ],
+      [
+        0.42000001668930054,
+        0.49373874068260193,
+        0.4649999737739563
+      ]
+    ],
+    "closed_geometry": true,
+    "paint_valid": true,
+    "walking_legs": 8,
+    "primary_eyes": 2,
+    "source_sex_shared": true
+  },
+  "scorpion": {
+    "parts": 37,
+    "triangles": 22128,
+    "bounds_m": [
+      [
+        -0.6315314173698425,
+        -0.38791295886039734,
+        0.010731874033808708
+      ],
+      [
+        0.390999972820282,
+        0.38791295886039734,
+        0.6019999980926514
+      ]
+    ],
+    "closed_geometry": true,
+    "paint_valid": true,
+    "walking_legs": 8,
+    "primary_eyes": 2,
+    "source_sex_shared": true
+  },
+  "previous_86_exports_unchanged": true,
+  "source_sex_tiles_identical": true,
+  "independent_spider_proportions": true,
+  "separate_scorpion_body": true
+}

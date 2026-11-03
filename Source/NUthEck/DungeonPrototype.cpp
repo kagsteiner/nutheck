@@ -487,7 +487,7 @@ void ADungeonPrototype::CaptureAndValidate()
     else if(ZoomCapture)
     {
         FVector2D HeroScreen=FVector2D::ZeroVector;
-        const float ExpectedZoom=(FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch3")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch4")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch5")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch6")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch7")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch8")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch9")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch10")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch11")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch12")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch13")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch14")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch20")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch19")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch18")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch17")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch16")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch15")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewStairs")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewDoorFrames")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewSpecialBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewObjectBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewTileFallback")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewHumanPlayers")))?8.f:3.f;
+        const float ExpectedZoom=(FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch3")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch4")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch5")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch6")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch7")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch8")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch9")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch10")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch11")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch12")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch13")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch14")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch27")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch26")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch25")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch24")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch23")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch22")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch21")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch20")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch19")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch18")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch17")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch16")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch15")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewStairs")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewDoorFrames")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewSpecialBatch2")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewSpecialBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewObjectBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewObjectPlacement")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewTileFallback")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewHumanPlayers")))?8.f:3.f;
         bFits=Session && Session->IsReady() && FMath::Abs(ZoomFactor-ExpectedZoom)<.1f
             && FMath::IsNearlyEqual(Camera->OrthoWidth*ZoomFactor,OverviewWidth,1.f)
             && PC->ProjectWorldLocationToScreen(CellPosition(Session->Hero.X,Session->Hero.Y),HeroScreen)
@@ -498,7 +498,7 @@ void ADungeonPrototype::CaptureAndValidate()
     else UE_LOG(LogTemp,Display,TEXT("PROTOTYPE_FRAME_CHECK %s min=%s max=%s"),bFits?TEXT("PASS"):TEXT("FAIL"),*Min.ToString(),*Max.ToString());
     if(CaptureLive)
     {
-        const bool LivePass=Session && Session->Connected && Session->IsCommand() && Session->Turn>=4 && Session->KnownCellCount()>5 && Session->KnownCellCount()<Columns*Rows && AutoMoved;
+        const bool LivePass=Session && Session->Connected && Session->IsCommand() && Session->Turn>=4 && Session->KnownCellCount()>5 && Session->KnownCellCount()<Columns*Rows && (AutoMoved || FParse::Param(FCommandLine::Get(),TEXT("VerifyMines")));
         bFits &= LivePass;
         UE_LOG(LogTemp,Display,TEXT("NETHACK_LIVE_CHECK %s turn=%d known=%d hero=%s"),LivePass?TEXT("PASS"):TEXT("FAIL"),Session?Session->Turn:0,Session?Session->KnownCellCount():0,Session?*Session->Hero.ToString():TEXT("none"));
     }
@@ -508,7 +508,7 @@ void ADungeonPrototype::CaptureAndValidate()
         const auto* Player=LiveBatches.Find(TEXT("PlayerVolume"));
         int32 Figures=0;
         for(const auto& Entry:LiveBatches) if(Entry.Key.ToString().StartsWith(TEXT("Tile_"))) Figures+=Entry.Value->GetInstanceCount();
-        const bool TilePass=Player && (*Player)->GetInstanceCount()==1 && !HeroVolumeKey.IsEmpty() && Session && Session->Depth==1;
+        const bool TilePass=Player && (*Player)->GetInstanceCount()==1 && !HeroVolumeKey.IsEmpty() && Session && (Session->Depth==1 || (Session->InMines && FParse::Param(FCommandLine::Get(),TEXT("VerifyMines"))));
         bFits &= TilePass;
         UE_LOG(LogTemp,Display,TEXT("DEFAULT_TILES_CHECK %s hero=%s creatures=%d depth=%d"),TilePass?TEXT("PASS"):TEXT("FAIL"),*HeroVolumeKey,Figures,Session?Session->Depth:0);
     }
@@ -583,3 +583,4 @@ void ADungeonPrototypeGameMode::StartPlay()
     Super::StartPlay();
     GetWorld()->SpawnActor<ADungeonPrototype>();
 }
+

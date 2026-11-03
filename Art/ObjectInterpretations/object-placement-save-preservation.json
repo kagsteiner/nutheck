@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "backup": "Backups/NetHackSaves/20261102T210044.523805Z.zip",
+  "baseline_files": 1090,
+  "unchanged_files": 1089,
+  "played_files": 1081,
+  "all_played_files_and_pointer_unchanged": true,
+  "file_set_unchanged": true,
+  "runtime_changes": [
+    {
+      "path": "Runtime/NetHackBridge.exe",
+      "before": "d8a1c058af44e5a68e422e8f741632c9d878745cbfb5dc3c6c6dd33539cee388",
+      "after": "6a4bf05553a5796d996d87c5f69de79656b414d2f3c61761048c774aacdc85c5"
+    }
+  ],
+  "isolated_old_save_new_runtime_compatibility": true
+}

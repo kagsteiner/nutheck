@@ -54,7 +54,7 @@ static void state(void)
         putchar('0' + (cansee(x,y) ? ((levl[x][y].lit ? 1 : 0)
                                   | (templit(x,y) ? 2 : 0)) : 0));
     printf("\",\"hero_race\":"); quote(gu.urace.noun ? gu.urace.noun : "");
-    printf(",\"hero_polymorphed\":%s}\n",Upolyd ? "true" : "false");
+    printf(",\"hero_polymorphed\":%s,\"in_mines\":%s,\"mines_town\":%s}\n",Upolyd ? "true" : "false",In_mines(&u.uz)?"true":"false",(In_mines(&u.uz) && Is_special(&u.uz) && Is_special(&u.uz)->flags.town)?"true":"false");
 }
 
 static const char *request(const char *type, const char *text)
