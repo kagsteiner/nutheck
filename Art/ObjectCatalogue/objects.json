@@ -1820,8 +1820,8 @@
       "category": "Weapons",
       "visual_family": "Polearms and thrusting weapons",
       "shuffle_group": null,
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch2.md",
       "design_tags": [
         "IRON",
         "P_SPEAR"
@@ -2218,8 +2218,8 @@
       "category": "Weapons",
       "visual_family": "Daggers and short blades",
       "shuffle_group": null,
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch2.md",
       "design_tags": [
         "IRON",
         "P_DAGGER"
@@ -2894,8 +2894,8 @@
       "category": "Weapons",
       "visual_family": "Swords and long blades",
       "shuffle_group": null,
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch2.md",
       "design_tags": [
         "IRON",
         "P_SHORT_SWORD"

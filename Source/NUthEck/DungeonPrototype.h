@@ -89,6 +89,7 @@ private:
     UInstancedStaticMeshComponent* GetDisplayedObjectBatch(const FNetHackCell& Cell);
     FTransform GetDisplayedObjectTransform(const FNetHackCell& Cell,int32 X,int32 Y,UStaticMesh* Mesh) const;
     void VerifyObjectPlacement();
+    void VerifyTopmostPresentation();
     UInstancedStaticMeshComponent* GetFountainBatch(const FNetHackCell& Cell);
     void VerifySpecialBatch1();
     UInstancedStaticMeshComponent* GetAltarBatch(const FNetHackCell& Cell);

@@ -2,7 +2,7 @@
 from BridgeGameplay import Game,DIRS,WALK
 import json
 
-NAMES=['long sword', 'scimitar', 'katana', 'leather armor', 'studded leather armor', 'chain mail', 'banded mail', 'elven mithril-coat', 'dwarvish mithril-coat', 'dwarvish cloak', 'plate mail', 'crystal plate mail', 'bronze plate mail', 'gray dragon scale mail', 'gold dragon scale mail', 'silver dragon scale mail', 'red dragon scale mail', 'white dragon scale mail', 'orange dragon scale mail', 'black dragon scale mail', 'blue dragon scale mail', 'green dragon scale mail', 'yellow dragon scale mail']
+NAMES=['dagger', 'short sword', 'spear', 'long sword', 'scimitar', 'katana', 'leather armor', 'studded leather armor', 'chain mail', 'banded mail', 'elven mithril-coat', 'dwarvish mithril-coat', 'dwarvish cloak', 'plate mail', 'crystal plate mail', 'bronze plate mail', 'gray dragon scale mail', 'gold dragon scale mail', 'silver dragon scale mail', 'red dragon scale mail', 'white dragon scale mail', 'orange dragon scale mail', 'black dragon scale mail', 'blue dragon scale mail', 'green dragon scale mail', 'yellow dragon scale mail']
 g=Game(debug=True);seen=[]
 try:
     g.settle()

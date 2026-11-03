@@ -8,14 +8,14 @@ APPEARANCE_CROSSBOW_BOLT,CROSSBOW_BOLT,Weapons,Ammunition and thrown weapons,cro
 APPEARANCE_DART,DART,Weapons,Ammunition and thrown weapons,dart,,not modelled,
 APPEARANCE_SHURIKEN,SHURIKEN,Weapons,Ammunition and thrown weapons,throwing star,,not modelled,
 APPEARANCE_BOOMERANG,BOOMERANG,Weapons,Ammunition and thrown weapons,boomerang,,not modelled,
-APPEARANCE_SPEAR,SPEAR,Weapons,Polearms and thrusting weapons,spear,,not modelled,
+APPEARANCE_SPEAR,SPEAR,Weapons,Polearms and thrusting weapons,spear,,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch2.md
 APPEARANCE_ELVEN_SPEAR,ELVEN_SPEAR,Weapons,Polearms and thrusting weapons,runed spear,,not modelled,
 APPEARANCE_ORCISH_SPEAR,ORCISH_SPEAR,Weapons,Polearms and thrusting weapons,crude spear,,not modelled,
 APPEARANCE_DWARVISH_SPEAR,DWARVISH_SPEAR,Weapons,Polearms and thrusting weapons,stout spear,,not modelled,
 APPEARANCE_SILVER_SPEAR,SILVER_SPEAR,Weapons,Polearms and thrusting weapons,silver spear,,not modelled,
 APPEARANCE_JAVELIN,JAVELIN,Weapons,Polearms and thrusting weapons,throwing spear,,not modelled,
 APPEARANCE_TRIDENT,TRIDENT,Weapons,Polearms and thrusting weapons,trident,,not modelled,
-APPEARANCE_DAGGER,DAGGER,Weapons,Daggers and short blades,dagger,,not modelled,
+APPEARANCE_DAGGER,DAGGER,Weapons,Daggers and short blades,dagger,,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch2.md
 APPEARANCE_ELVEN_DAGGER,ELVEN_DAGGER,Weapons,Daggers and short blades,runed dagger,,not modelled,
 APPEARANCE_ORCISH_DAGGER,ORCISH_DAGGER,Weapons,Daggers and short blades,crude dagger,,not modelled,
 APPEARANCE_SILVER_DAGGER,SILVER_DAGGER,Weapons,Daggers and short blades,silver dagger,,not modelled,
@@ -27,7 +27,7 @@ APPEARANCE_WORM_TOOTH,WORM_TOOTH,Weapons,Daggers and short blades,worm tooth,,no
 APPEARANCE_CRYSKNIFE,CRYSKNIFE,Weapons,Daggers and short blades,crysknife,,not modelled,
 APPEARANCE_AXE,AXE,Weapons,Axes and picks,axe,,not modelled,
 APPEARANCE_BATTLE_AXE,BATTLE_AXE,Weapons,Axes and picks,double-headed axe,,not modelled,
-APPEARANCE_SHORT_SWORD,SHORT_SWORD,Weapons,Swords and long blades,short sword,,not modelled,
+APPEARANCE_SHORT_SWORD,SHORT_SWORD,Weapons,Swords and long blades,short sword,,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch2.md
 APPEARANCE_ELVEN_SHORT_SWORD,ELVEN_SHORT_SWORD,Weapons,Swords and long blades,runed short sword,,not modelled,
 APPEARANCE_ORCISH_SHORT_SWORD,ORCISH_SHORT_SWORD,Weapons,Swords and long blades,crude short sword,,not modelled,
 APPEARANCE_DWARVISH_SHORT_SWORD,DWARVISH_SHORT_SWORD,Weapons,Swords and long blades,broad short sword,,not modelled,

@@ -6,12 +6,13 @@ Working checklist, created 2026-11-02. Maintained by hand: catalogue regeneratio
 There are also 463 non-auxiliary default appearance slots (including 23 extra shuffled descriptions), 18 display auxiliaries, 4 deferred types and 33 current artifact overlays. These scopes are not additive unique-mesh counts.
 
 MVP integration update: the three swords, twenty armor/cloak models, Cleaver and
-Mjollnir now have [live placement](Docs/MVPObjectPlacement.md). That is 27 ordinary
+Mjollnir now have [live placement](Docs/MVPObjectPlacement.md). Dagger, short sword and spear now also have [MVP live placement](Docs/WeaponBatch2.md). That is 30 ordinary
 presentations including the four older models, plus two artifact treatments.
 Full art/edge-case completion counts and checkboxes above remain separate.
 
 
-Read [Object art direction](Docs/ObjectArtDirection.md) before modelling. User direction: make loot beautiful, distinctive and rewarding; allow more creative craftsmanship while preserving visible type/material cues and NetHack information boundaries.
+Read [Object art direction](Docs/ObjectArtDirection.md) and follow the
+[Object creation workflow](Docs/ObjectCreationWorkflow.md) before modelling. User direction: make loot beautiful, distinctive and rewarding; allow more creative craftsmanship while preserving visible type/material cues and NetHack information boundaries.
 
 ## How to use this checklist
 
@@ -26,7 +27,7 @@ Read [Object art direction](Docs/ObjectArtDirection.md) before modelling. User d
 
 ## Suggested object work
 
-1. Long sword, scimitar and katana now have a [design/import craftsmanship study](Docs/WeaponBatch1.md). Review finish and native live mapping separately. Suggested next physical weapon family: dagger, short sword and spear, with independent proportions and construction.
+1. Long sword, scimitar and katana now have a [design/import craftsmanship study](Docs/WeaponBatch1.md). Review finish and native live mapping separately. Dagger, short sword and spear now have an [editable/imported and MVP live verified batch](Docs/WeaponBatch2.md), with independent proportions and construction. Full edge-case completion remains separate.
 2. A ring, amulet and wand appearance study: coherent jewelry/metal/wood language; choose physical source appearances, not effect-coded ornament.
 3. Potion/scroll appearance pipeline: bottles, liquids and labels; verify native shuffling and persistence before completing effect identities.
 4. Artifact designs linked to base types, with an explicit native-knowledge eligibility rule before unique live visuals.
@@ -69,7 +70,7 @@ These are future priorities, not an instruction to generate assets automatically
 
 #### Polearms and thrusting weapons
 
-- [ ] **spear** (`SPEAR`).
+- [ ] **spear** (`SPEAR`) — editable, imported and MVP live verified; [models, review boards and safe native/Unreal evidence](Docs/WeaponBatch2.md). Remaining: extended hallucination/mimic/pile/memory transitions, finishing and LOD review.
 - [ ] **elven spear** (`ELVEN_SPEAR`) — default appearance: runed spear.
 - [ ] **orcish spear** (`ORCISH_SPEAR`) — default appearance: crude spear.
 - [ ] **dwarvish spear** (`DWARVISH_SPEAR`) — default appearance: stout spear.
@@ -92,7 +93,7 @@ These are future priorities, not an instruction to generate assets automatically
 
 #### Daggers and short blades
 
-- [ ] **dagger** (`DAGGER`).
+- [ ] **dagger** (`DAGGER`) — editable, imported and MVP live verified; [models, review boards and safe native/Unreal evidence](Docs/WeaponBatch2.md). Remaining: extended hallucination/mimic/pile/memory transitions, finishing and LOD review.
 - [ ] **elven dagger** (`ELVEN_DAGGER`) — default appearance: runed dagger.
 - [ ] **orcish dagger** (`ORCISH_DAGGER`) — default appearance: crude dagger.
 - [ ] **silver dagger** (`SILVER_DAGGER`).
@@ -111,7 +112,7 @@ These are future priorities, not an instruction to generate assets automatically
 
 #### Swords and long blades
 
-- [ ] **short sword** (`SHORT_SWORD`).
+- [ ] **short sword** (`SHORT_SWORD`) — editable, imported and MVP live verified; [models, review boards and safe native/Unreal evidence](Docs/WeaponBatch2.md). Remaining: extended hallucination/mimic/pile/memory transitions, finishing and LOD review.
 - [ ] **elven short sword** (`ELVEN_SHORT_SWORD`) — default appearance: runed short sword.
 - [ ] **orcish short sword** (`ORCISH_SHORT_SWORD`) — default appearance: crude short sword.
 - [ ] **dwarvish short sword** (`DWARVISH_SHORT_SWORD`) — default appearance: broad short sword.

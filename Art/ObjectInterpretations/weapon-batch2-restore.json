@@ -1,0 +1,29 @@
+[
+  {
+    "name": "dagger",
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\e27ab26d082b41f1b663b6e3c547697d",
+    "position": [
+      51,
+      17
+    ],
+    "glyph": 3482
+  },
+  {
+    "name": "short sword",
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\897f6f16ac45433abf5566e03356e550",
+    "position": [
+      73,
+      14
+    ],
+    "glyph": 3494
+  },
+  {
+    "name": "spear",
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\d60633a5339f488fab16be9a8612555c",
+    "position": [
+      29,
+      17
+    ],
+    "glyph": 3475
+  }
+]

@@ -13,6 +13,26 @@ extern struct window_procs tty_procs;
 typedef struct { anything id; char accelerator, group; char *text; unsigned int flags; } UEEntry;
 typedef struct { int type, count; UEEntry *entries; char prompt[BUFSZ]; } UEWindow;
 static UEWindow ue_windows[64];
+/* Presentation knowledge captured by the native object display path.
+   xname reveals ONAME when dknown, even before full artifact identification. */
+static int ue_object_level[COLNO][ROWNO], ue_object_glyph[COLNO][ROWNO];
+static const char *ue_object_name[COLNO][ROWNO];
+void ue_observe_display_object(struct obj *obj, int glyph)
+{
+    coordxy x = obj->ox, y = obj->oy;
+    const char *name = "";
+    if (!isok(x,y)) return;
+    if (!Hallucination && !Blind && cansee(x,y) && obj->where == OBJ_FLOOR
+        && obj->dknown && obj->oartifact && has_oname(obj)) {
+        const char *canonical = artiname(obj->oartifact);
+        if ((obj->otyp == WAR_HAMMER && !strcmp(canonical,"Mjollnir"))
+            || (obj->otyp == BATTLE_AXE && !strcmp(canonical,"Cleaver")))
+            name = canonical;
+    }
+    ue_object_level[x][y] = ledger_no(&u.uz);
+    ue_object_glyph[x][y] = glyph;
+    ue_object_name[x][y] = name;
+}
 static int sequence;
 static char reply[16384];
 static boolean ue_travel_pending;
@@ -173,6 +193,15 @@ static const char *terrain(int glyph)
 {
     int s;
     if(!glyph_is_cmap(glyph)) return "none";
+    /* Altar variants come solely from the displayed foreground/background
+       glyph. Never inspect levl[].altarmask or infer a god from player alignment. */
+    if (glyph_is_cmap_altar(glyph)) {
+        static const char *const names[] = {
+            "altar_unaligned", "altar_chaotic", "altar_neutral",
+            "altar_lawful", "altar_other"
+        };
+        return names[glyph - GLYPH_ALTAR_OFF];
+    }
     s=glyph_to_cmap(glyph);
     if(s>=S_vwall && s<=S_trwall) return "wall";
     if(s==S_stone) return "stone";
@@ -216,15 +245,49 @@ static void ue_glyph(winid w,coordxy x,coordxy y,const glyph_info *fg,const glyp
             printf(",\"female\":%s",female?"true":"false");
         }
     }
-    /* Whitelist non-randomised appearances from the displayed glyph only.
-       Never inspect floor objects, contents, quantity, traps or lock state. */
+    /* Fixed physical appearances come from the displayed glyph, including
+       hallucinated appearances. Never derive an unidentified effect from type. */
     if (glyph_is_object(g)) {
         int o = glyph_to_obj(g);
         const char *appearance = o == LARGE_BOX ? "large box"
             : o == CHEST ? "chest" : o == GOLD_PIECE ? "gold piece"
-            : o == CORPSE ? "corpse" : 0;
+            : o == CORPSE ? "corpse"
+            : o == DAGGER ? "dagger" : o == SHORT_SWORD ? "short sword"
+            : o == SPEAR ? "spear"
+            : o == LONG_SWORD ? "long sword" : o == SCIMITAR ? "scimitar"
+            : o == KATANA ? "katana" : o == WAR_HAMMER ? "war hammer"
+            : o == BATTLE_AXE ? "battle-axe"
+            : o == LEATHER_ARMOR ? "leather armor"
+            : o == STUDDED_LEATHER_ARMOR ? "studded leather armor"
+            : o == CHAIN_MAIL ? "chain mail" : o == BANDED_MAIL ? "banded mail"
+            : o == ELVEN_MITHRIL_COAT ? "elven mithril-coat"
+            : o == DWARVISH_MITHRIL_COAT ? "dwarvish mithril-coat"
+            : o == DWARVISH_CLOAK ? "dwarvish cloak"
+            : o == PLATE_MAIL ? "plate mail"
+            : o == CRYSTAL_PLATE_MAIL ? "crystal plate mail"
+            : o == BRONZE_PLATE_MAIL ? "bronze plate mail"
+            : o == GRAY_DRAGON_SCALE_MAIL ? "gray dragon scale mail"
+            : o == GOLD_DRAGON_SCALE_MAIL ? "gold dragon scale mail"
+            : o == SILVER_DRAGON_SCALE_MAIL ? "silver dragon scale mail"
+            : o == RED_DRAGON_SCALE_MAIL ? "red dragon scale mail"
+            : o == WHITE_DRAGON_SCALE_MAIL ? "white dragon scale mail"
+            : o == ORANGE_DRAGON_SCALE_MAIL ? "orange dragon scale mail"
+            : o == BLACK_DRAGON_SCALE_MAIL ? "black dragon scale mail"
+            : o == BLUE_DRAGON_SCALE_MAIL ? "blue dragon scale mail"
+            : o == GREEN_DRAGON_SCALE_MAIL ? "green dragon scale mail"
+            : o == YELLOW_DRAGON_SCALE_MAIL ? "yellow dragon scale mail" : 0;
         if (appearance) {
             printf(",\"display_object\":"); quote(appearance);
+        }
+        /* Knowledge comes only from the core display path, including fake
+           mimic objects. Never inspect a hidden floor pile in the window port. */
+        if (Hallucination || Blind || cansee(x,y)) {
+            const char *named = "";
+            if (!Hallucination && !Blind && cansee(x,y)
+                && ue_object_level[x][y] == ledger_no(&u.uz)
+                && ue_object_glyph[x][y] == g && ue_object_name[x][y])
+                named = ue_object_name[x][y];
+            printf(",\"display_artifact\":"); quote(named);
         }
     }
     {

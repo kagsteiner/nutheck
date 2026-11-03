@@ -35,14 +35,14 @@ Hierarchy: native category → useful visual family. Materials, culture and fini
 - `DART` — dart | Weapons / Ammunition and thrown weapons | normal | not modelled
 - `SHURIKEN` — shuriken | Weapons / Ammunition and thrown weapons | normal | not modelled
 - `BOOMERANG` — boomerang | Weapons / Ammunition and thrown weapons | normal | not modelled
-- `SPEAR` — spear | Weapons / Polearms and thrusting weapons | normal | not modelled
+- `SPEAR` — spear | Weapons / Polearms and thrusting weapons | normal | MVP live placement verified; finishing and extended verification pending
 - `ELVEN_SPEAR` — elven spear | Weapons / Polearms and thrusting weapons | normal | not modelled
 - `ORCISH_SPEAR` — orcish spear | Weapons / Polearms and thrusting weapons | normal | not modelled
 - `DWARVISH_SPEAR` — dwarvish spear | Weapons / Polearms and thrusting weapons | normal | not modelled
 - `SILVER_SPEAR` — silver spear | Weapons / Polearms and thrusting weapons | normal | not modelled
 - `JAVELIN` — javelin | Weapons / Polearms and thrusting weapons | normal | not modelled
 - `TRIDENT` — trident | Weapons / Polearms and thrusting weapons | normal | not modelled
-- `DAGGER` — dagger | Weapons / Daggers and short blades | normal | not modelled
+- `DAGGER` — dagger | Weapons / Daggers and short blades | normal | MVP live placement verified; finishing and extended verification pending
 - `ELVEN_DAGGER` — elven dagger | Weapons / Daggers and short blades | normal | not modelled
 - `ORCISH_DAGGER` — orcish dagger | Weapons / Daggers and short blades | normal | not modelled
 - `SILVER_DAGGER` — silver dagger | Weapons / Daggers and short blades | normal | not modelled
@@ -54,7 +54,7 @@ Hierarchy: native category → useful visual family. Materials, culture and fini
 - `CRYSKNIFE` — crysknife | Weapons / Daggers and short blades | normal | not modelled
 - `AXE` — axe | Weapons / Axes and picks | normal | not modelled
 - `BATTLE_AXE` — battle-axe | Weapons / Axes and picks | normal | not modelled
-- `SHORT_SWORD` — short sword | Weapons / Swords and long blades | normal | not modelled
+- `SHORT_SWORD` — short sword | Weapons / Swords and long blades | normal | MVP live placement verified; finishing and extended verification pending
 - `ELVEN_SHORT_SWORD` — elven short sword | Weapons / Swords and long blades | normal | not modelled
 - `ORCISH_SHORT_SWORD` — orcish short sword | Weapons / Swords and long blades | normal | not modelled
 - `DWARVISH_SHORT_SWORD` — dwarvish short sword | Weapons / Swords and long blades | normal | not modelled

@@ -1,0 +1,70 @@
+{
+  "dagger": {
+    "asset": "/Game/WeaponBatch2/Meshes/SM_dagger",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "weapon2_iron",
+        "normal": "/Game/WeaponBatch2/M_ObjectIron.M_ObjectIron",
+        "memory": "/Game/WeaponBatch2/M_ObjectIronMemory.M_ObjectIronMemory"
+      },
+      {
+        "source": "weapon2_brass",
+        "normal": "/Game/WeaponBatch2/M_ObjectGold.M_ObjectGold",
+        "memory": "/Game/WeaponBatch2/M_ObjectGoldMemory.M_ObjectGoldMemory"
+      },
+      {
+        "source": "weapon2_leather",
+        "normal": "/Game/WeaponBatch2/M_ObjectPaint.M_ObjectPaint",
+        "memory": "/Game/WeaponBatch2/M_ObjectPaintMemory.M_ObjectPaintMemory"
+      }
+    ]
+  },
+  "short_sword": {
+    "asset": "/Game/WeaponBatch2/Meshes/SM_short_sword",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "weapon2_brass",
+        "normal": "/Game/WeaponBatch2/M_ObjectGold.M_ObjectGold",
+        "memory": "/Game/WeaponBatch2/M_ObjectGoldMemory.M_ObjectGoldMemory"
+      },
+      {
+        "source": "weapon2_wood",
+        "normal": "/Game/WeaponBatch2/M_ObjectPaint.M_ObjectPaint",
+        "memory": "/Game/WeaponBatch2/M_ObjectPaintMemory.M_ObjectPaintMemory"
+      },
+      {
+        "source": "weapon2_iron",
+        "normal": "/Game/WeaponBatch2/M_ObjectIron.M_ObjectIron",
+        "memory": "/Game/WeaponBatch2/M_ObjectIronMemory.M_ObjectIronMemory"
+      }
+    ]
+  },
+  "spear": {
+    "asset": "/Game/WeaponBatch2/Meshes/SM_spear",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "weapon2_iron",
+        "normal": "/Game/WeaponBatch2/M_ObjectIron.M_ObjectIron",
+        "memory": "/Game/WeaponBatch2/M_ObjectIronMemory.M_ObjectIronMemory"
+      },
+      {
+        "source": "weapon2_leather",
+        "normal": "/Game/WeaponBatch2/M_ObjectPaint.M_ObjectPaint",
+        "memory": "/Game/WeaponBatch2/M_ObjectPaintMemory.M_ObjectPaintMemory"
+      },
+      {
+        "source": "weapon2_brass",
+        "normal": "/Game/WeaponBatch2/M_ObjectGold.M_ObjectGold",
+        "memory": "/Game/WeaponBatch2/M_ObjectGoldMemory.M_ObjectGoldMemory"
+      },
+      {
+        "source": "weapon2_wood",
+        "normal": "/Game/WeaponBatch2/M_ObjectPaint.M_ObjectPaint",
+        "memory": "/Game/WeaponBatch2/M_ObjectPaintMemory.M_ObjectPaintMemory"
+      }
+    ]
+  }
+}

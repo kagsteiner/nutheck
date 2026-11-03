@@ -1,4 +1,5 @@
 #include "DungeonPrototype.h"
+#include "DungeonTopmost.h"
 #include "Components/InstancedStaticMeshComponent.h"
 #include "Components/PointLightComponent.h"
 #include "Materials/MaterialInterface.h"
@@ -105,7 +106,7 @@ void ADungeonPrototype::UpdateAtmosphere()
     }
     for(int32 Y=0;Y<Rows;++Y) for(int32 X=0;X<Columns;++X)
     {
-        const auto& Cell=Session->Cells[Y*Columns+X];
+        const auto Cell=TopmostRenderCell(Session->Cells[Y*Columns+X],Session->Hero==FIntPoint(X,Y));
         if(!Cell.Visible || Cell.Kind==TEXT("unknown") || Cell.Terrain==TEXT("none") || Cell.Terrain==TEXT("stone")) continue;
         if(Cell.Terrain==TEXT("wall"))
         {

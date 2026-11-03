@@ -1,4 +1,5 @@
 #include "DungeonPrototype.h"
+#include "DungeonTopmost.h"
 #include "Components/InstancedStaticMeshComponent.h"
 #include "Engine/StaticMesh.h"
 #include "Materials/MaterialInstanceDynamic.h"
@@ -100,7 +101,7 @@ void ADungeonPrototype::AddMinesSurface(const FNetHackCell& C,int32 X,int32 Y)
         {
             const auto P=FIntPoint(X,Y)+D;
             if(P.X>=0 && P.X<Columns && P.Y>=0 && P.Y<Rows)
-            {const auto& N=Session->Cells[P.Y*Columns+P.X];if(N.Kind!=TEXT("unknown") && N.Terrain==TEXT("wall"))Mask|=Bit;}
+            {const auto N=TopmostRenderCell(Session->Cells[P.Y*Columns+P.X],Session->Hero==P);if(N.Kind!=TEXT("unknown") && N.Terrain==TEXT("wall"))Mask|=Bit;}
             Bit<<=1;
         }
         Part(FString::Printf(TEXT("MinesRock%d"),Mask),CellPosition(X,Y,60),FVector(1));
@@ -118,8 +119,9 @@ void ADungeonPrototype::VerifyMines()
         int32 N=0;for(const auto& B:LiveBatches)if(B.Key.ToString().StartsWith(Prefix))N+=B.Value->GetInstanceCount();return N;
     };
     int32 Floors=0,Walls=0;
-    for(const auto& C:Session->Cells)
+    for(int32 I=0;I<Session->Cells.Num();++I)
     {
+        const auto C=TopmostRenderCell(Session->Cells[I],Session->Hero==FIntPoint(I%Columns,I/Columns));
         if(C.Kind==TEXT("unknown") || C.Terrain==TEXT("none") || C.Terrain==TEXT("stone"))continue;
         if(C.Terrain==TEXT("wall"))++Walls;else if(C.Terrain!=TEXT("down"))++Floors;
     }

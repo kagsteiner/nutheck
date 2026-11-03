@@ -61,3 +61,22 @@ ONAME whenever `has_oname && dknown`; `obj_is_pname` only controls whether the
 fully identified artifact can omit its base type. Thus "war hammer named Mjollnir"
 already qualifies for the artifact pose. Magical armor effects such as a cloak of
 displacement follow ordinary identification rules and are a separate issue.
+
+## Weapon batch 2 and floor support correction (2026-11-03)
+
+Dagger, short sword and spear add three fixed ordinary presentations; see
+[WeaponBatch2.md](WeaponBatch2.md) for editable models, import, native restore and
+Unreal evidence. Visual review exposed that the original clearance calculation
+used cell Z=0, while the 16 cm floor cube surface is Z=8. Thin flat weapons were
+buried. Bounds placement now adds that support height: ordinary nonlegacy models
+have minimum Z=12 (4 cm above the floor), hovering models Z=26 (18 cm above it).
+The verifier checks these corrected bounds, real colour buffers and nonnull
+materials for all 32 presentations in both styles and visibility states.
+
+## Strict topmost presentation (2026-11-03)
+
+Foreground entities suppress background feature geometry and use the neutral
+floor presentation, including over altars, stairs and fountains. This applies to
+known named weapons too. The original native terrain remains available to game
+rules and navigation; it is not changed by the renderer. See
+[TopmostPresentation.md](TopmostPresentation.md) for layer, memory and style checks.

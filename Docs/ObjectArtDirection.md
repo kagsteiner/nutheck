@@ -1,5 +1,10 @@
 # Objects: beautiful, distinctive loot
 
+Start here for a new build session: read this file and follow the complete
+[Object creation workflow](ObjectCreationWorkflow.md). That workflow specifies
+batch selection, editable modelling, export, visual review, Unreal/live integration,
+save-safe validation and progress updates. This file supplies the art direction.
+
 User direction, 2026-11-02: build a complete object list and backlog. Objects
 deserve focused work alongside creatures. Loot should be beautiful and rewarding
 to discover; interpret weapons and equipment more creatively than a literal
@@ -125,8 +130,11 @@ The corpse is generic; the statue/corpse species cross-product remains a separat
 display-scope task. Artifact designs and physical appearance slots are not extra
 ordinary object types. Source family groups are modelling proposals.
 
-Next object work should establish a reviewed finish target with three ordinary
-blades (long sword, scimitar, katana), then a jewelry/consumable appearance study.
+Long sword, scimitar and katana already have editable models and MVP live
+placement, alongside twenty armor/cloak models and Cleaver/Mjollnir. Dagger, short sword and spear now also have editable models and
+[MVP live verification](WeaponBatch2.md); finishing and extended transitions remain
+explicitly separate in the backlog. A jewelry/consumable appearance study follows
+as a separate family task.
 This is a queue, not a request to generate objects automatically. Verify each
 asset with editable geometry, painted export, actual multi-angle/tiny renders,
 Unreal material/import checks, displayed mapping/fallback, memory and no-turn
@@ -137,5 +145,17 @@ presentation checks. Keep visual finishing and LOD/runtime review separate.
 Armor and cloaks stand upright. Ordinary weapons lie flat. Known named weapons
 hover upright; the first two implemented treatments are Cleaver and Mjollnir.
 Use static poses for now. Native displayed knowledge decides identity; presentation
-must not reveal hidden pile contents or an undiscovered artifact. See
+must not reveal hidden pile contents or a name the player cannot yet see.
+A visible artifact name qualifies before full identification; do not gate its
+special pose on the full-identification discovery list. See
 [MVP implementation and verification](MVPObjectPlacement.md).
+
+## Strict topmost presentation (2026-11-03)
+
+Only NetHack's displayed foreground is presented above a neutral floor. Raised
+terrain features (including altars) disappear beneath items, creatures, effects
+and the hero, and return when uncovered. A pile of ten or a hundred objects still
+shows just its native displayed top item. Known named weapons keep their static
+hover pose but do not reveal an altar underneath. The user likes the idea of a
+named weapon hovering over an altar as a future artistic possibility; it is not
+an exception to this rule. See [implementation and verification](TopmostPresentation.md).

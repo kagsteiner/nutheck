@@ -1,5 +1,5 @@
 {
-  "scope": "Four selected verified object presentations; full source inventory is Art/ObjectCatalogue and the manual checklist is object-backlog.md. This registry tracks existing assets, not the entire object roster.",
+  "scope": "Verified object presentations and explicitly scoped MVP live drafts; full source inventory is Art/ObjectCatalogue and completion checklist is object-backlog.md.",
   "objects": [
     {
       "id": "LARGE_BOX",
@@ -49,6 +49,39 @@
       "unreal_asset": "/Game/ObjectInterpretations/Meshes/SM_corpse",
       "evidence": "Docs/SpecialBatch1.md",
       "scope": "Generic displayed corpse only; no species, freshness, size or edibility claim."
+    },
+    {
+      "id": "DAGGER",
+      "name": "dagger",
+      "source_material": "IRON",
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "fbx": "dagger.fbx",
+      "native_source": "WeaponBatch2.blend",
+      "unreal_asset": "/Game/WeaponBatch2/Meshes/SM_dagger",
+      "evidence": "Docs/WeaponBatch2.md",
+      "scope": "Fixed native displayed appearance; full edge-case and LOD review pending."
+    },
+    {
+      "id": "SHORT_SWORD",
+      "name": "short sword",
+      "source_material": "IRON",
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "fbx": "short_sword.fbx",
+      "native_source": "WeaponBatch2.blend",
+      "unreal_asset": "/Game/WeaponBatch2/Meshes/SM_short_sword",
+      "evidence": "Docs/WeaponBatch2.md",
+      "scope": "Fixed native displayed appearance; full edge-case and LOD review pending."
+    },
+    {
+      "id": "SPEAR",
+      "name": "spear",
+      "source_material": "IRON",
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "fbx": "spear.fbx",
+      "native_source": "WeaponBatch2.blend",
+      "unreal_asset": "/Game/WeaponBatch2/Meshes/SM_spear",
+      "evidence": "Docs/WeaponBatch2.md",
+      "scope": "Fixed native displayed appearance; full edge-case and LOD review pending."
     }
   ]
 }

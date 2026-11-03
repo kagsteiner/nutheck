@@ -17,6 +17,9 @@ const FObjectPresentation ObjectPresentations[]={
     {TEXT("long sword"),TEXT("long_sword"),TEXT("/Game/WeaponBatch1"),EObjectPose::Lying,0.66f},
     {TEXT("scimitar"),TEXT("scimitar"),TEXT("/Game/WeaponBatch1"),EObjectPose::Lying,0.66f},
     {TEXT("katana"),TEXT("katana"),TEXT("/Game/WeaponBatch1"),EObjectPose::Lying,0.66f},
+    {TEXT("dagger"),TEXT("dagger"),TEXT("/Game/WeaponBatch2"),EObjectPose::Lying,1.0f},
+    {TEXT("short sword"),TEXT("short_sword"),TEXT("/Game/WeaponBatch2"),EObjectPose::Lying,0.85f},
+    {TEXT("spear"),TEXT("spear"),TEXT("/Game/WeaponBatch2"),EObjectPose::Lying,0.42f},
     {TEXT("leather armor"),TEXT("leather_armor"),TEXT("/Game/ArmorStudy"),EObjectPose::Standing,1.0f},
     {TEXT("studded leather armor"),TEXT("studded_leather_armor"),TEXT("/Game/ArmorStudy"),EObjectPose::Standing,1.0f},
     {TEXT("chain mail"),TEXT("chain_mail"),TEXT("/Game/ArmorStudy"),EObjectPose::Standing,1.0f},
@@ -92,7 +95,9 @@ FTransform ADungeonPrototype::GetDisplayedObjectTransform(const FNetHackCell& Ce
     const float Yaw=Lying?float((X*37+Y*17)%120)-60.f:15.f;
     const FTransform Local(FRotator(0,Yaw,Lying?90.f:0.f),FVector::ZeroVector,FVector(Spec->Scale));
     const FBox Bounds=Mesh->GetBoundingBox().TransformBy(Local);
-    const float Clearance=Spec->Pose==EObjectPose::Hover?18.f:4.f;
+    // Floor cubes are 16 cm deep and centered at cell Z=0.
+    const float SupportPlane=8.f;
+    const float Clearance=SupportPlane+(Spec->Pose==EObjectPose::Hover?18.f:4.f);
     const FVector Center=Bounds.GetCenter();
     return FTransform(Local.GetRotation(),CellPosition(X,Y,Clearance)-FVector(Center.X,Center.Y,Bounds.Min.Z),Local.GetScale3D());
 }
@@ -113,16 +118,23 @@ void ADungeonPrototype::VerifyObjectPlacement()
             if(Good)
             {
                 UStaticMesh* Mesh=Batch->GetStaticMesh();
+                const auto* RenderData=Mesh->GetRenderData();
+                Good &= RenderData && RenderData->LODResources.Num()>0;
+                if(RenderData && RenderData->LODResources.Num()>0)
+                    Good &= RenderData->LODResources[0].VertexBuffers.ColorVertexBuffer.GetNumVertices()>0;
                 const auto Transform=GetDisplayedObjectTransform(Cell,0,0,Mesh);
                 if(Spec.Pose!=EObjectPose::Legacy)
                 {
                     const FBox Bounds=Mesh->GetBoundingBox().TransformBy(Transform);
-                    Good &= FMath::IsNearlyEqual(Bounds.Min.Z,Spec.Pose==EObjectPose::Hover?18.0:4.0,0.01);
+                    Good &= FMath::IsNearlyEqual(Bounds.Min.Z,Spec.Pose==EObjectPose::Hover?26.0:12.0,0.01);
                     const FVector Axis=Transform.TransformVectorNoScale(FVector::UpVector);
                     Good &= Spec.Pose==EObjectPose::Lying?FMath::Abs(Axis.Z)<0.01:Axis.Z>0.99;
                 }
                 for(int32 Slot=0;Slot<Mesh->GetStaticMaterials().Num();++Slot)
+                {
+                    Good &= Batch->GetMaterial(Slot)!=nullptr;
                     Good &= Visible || GetNameSafe(Batch->GetMaterial(Slot)).EndsWith(TEXT("Memory"));
+                }
             }
             Passed &= Good;
             UE_LOG(LogTemp,Display,TEXT("OBJECT_PLACEMENT_CASE %s visible=%d %s"),Spec.Key,Visible,Good?TEXT("PASS"):TEXT("FAIL"));
@@ -147,6 +159,13 @@ void ADungeonPrototype::VerifyObjectPlacement()
         }
         const auto Score=[this](const FIntPoint& At) {
             int32 Penalty=(At-Session->Hero).SizeSquared();
+            // Keep capture fixtures clear of the hero and native glyph billboards.
+            if(Penalty<5) Penalty+=2000;
+            for(int32 DY=-1;DY<=1;++DY) for(int32 DX=-1;DX<=1;++DX) {
+                const FIntPoint Near=At+FIntPoint(DX,DY);
+                if(Near.X>=0 && Near.X<Columns && Near.Y>=0 && Near.Y<Rows &&
+                    Session->Cells[Near.Y*Columns+Near.X].Kind!=TEXT("terrain")) Penalty+=1000;
+            }
             for(int32 DY=-1;DY<=1;++DY) for(int32 DX=-1;DX<=1;++DX) {
                 const FIntPoint Near=At+FIntPoint(DX,DY);
                 if(Near.X<0 || Near.X>=Columns || Near.Y<0 || Near.Y>=Rows) {Penalty+=40;continue;}
@@ -156,12 +175,12 @@ void ADungeonPrototype::VerifyObjectPlacement()
             return Penalty;
         };
         Floors.Sort([&Score](const FIntPoint& A,const FIntPoint& B){return Score(A)<Score(B);});
-        const TCHAR* Names[]={TEXT("long sword"),TEXT("gray dragon scale mail"),TEXT("war hammer"),TEXT("battle-axe"),TEXT("crystal plate mail")};
-        Passed &= Floors.Num()>=5;
-        if(Floors.Num()>=5) for(int32 I=0;I<5;++I)
+        const TCHAR* Names[]={TEXT("dagger"),TEXT("short sword"),TEXT("spear"),TEXT("battle-axe"),TEXT("crystal plate mail")};
+        const int32 PreviewCount=FParse::Param(FCommandLine::Get(),TEXT("PreviewWeaponBatch2"))?3:5;
+        Passed &= Floors.Num()>=PreviewCount;
+        if(Floors.Num()>=PreviewCount) for(int32 I=0;I<PreviewCount;++I)
         {
             FNetHackCell Cell;Cell.Kind=TEXT("item");Cell.DisplayObject=Names[I];Cell.Visible=true;
-            if(I==2) Cell.DisplayArtifact=TEXT("Mjollnir");
             if(I==3) Cell.DisplayArtifact=TEXT("Cleaver");
             if(auto* Batch=GetDisplayedObjectBatch(Cell)) Batch->AddInstance(GetDisplayedObjectTransform(Cell,Floors[I].X,Floors[I].Y,Batch->GetStaticMesh()));
         }

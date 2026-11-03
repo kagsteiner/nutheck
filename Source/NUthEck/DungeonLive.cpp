@@ -1,4 +1,5 @@
 #include "DungeonPrototype.h"
+#include "DungeonTopmost.h"
 #include "Camera/CameraComponent.h"
 #include "Camera/PlayerCameraManager.h"
 #include "Components/InstancedStaticMeshComponent.h"
@@ -213,7 +214,7 @@ void ADungeonPrototype::RebuildLiveMap()
         const auto* Presented=&Session->Cells[Y*Columns+X];
         if(const auto* Terrain=StairPreview.Find(FIntPoint(X,Y)))
         {Preview=*Presented;Preview.Kind=TEXT("terrain");Preview.Terrain=*Terrain;Presented=&Preview;}
-        const auto& Cell=*Presented;
+        const auto Cell=TopmostRenderCell(*Presented,Session->Hero==FIntPoint(X,Y));
         if(Cell.Kind==TEXT("unknown") || Cell.Terrain==TEXT("stone") || Cell.Terrain==TEXT("none")) continue;
         const FString Suffix=Cell.Visible?TEXT(""):TEXT("Memory");
         if(Cell.Terrain==TEXT("wall"))
@@ -229,7 +230,7 @@ void ADungeonPrototype::RebuildLiveMap()
             {
                 const int32 NX=X+Step.X,NY=Y+Step.Y;
                 if(NX>=Columns || NY>=Rows) continue;
-                const auto& Near=Session->Cells[NY*Columns+NX];
+                const auto Near=TopmostRenderCell(Session->Cells[NY*Columns+NX],Session->Hero==FIntPoint(NX,NY));
                 if(Near.Kind==TEXT("unknown") || Near.Terrain!=TEXT("wall")) continue;
                 const FString JointSuffix=Cell.Visible && Near.Visible?TEXT(""):TEXT("Memory");
                 if(auto* Mortar=LiveBatches.Find(FName(*(TEXT("Mortar")+JointSuffix))))
@@ -523,6 +524,7 @@ void ADungeonPrototype::TickLiveGame()
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyTileFallback"))) VerifyTileFallback();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyObjectBatch1"))) VerifyObjectBatch1();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyObjectPlacement"))) VerifyObjectPlacement();
+            if(FParse::Param(FCommandLine::Get(),TEXT("VerifyTopmost"))) VerifyTopmostPresentation();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifySpecialBatch1"))) VerifySpecialBatch1();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifySpecialBatch2"))) VerifySpecialBatch2();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyDoorFrames"))) VerifyDoorFrames();
@@ -542,7 +544,18 @@ void ADungeonPrototype::TickLiveGame()
             if(FParse::Param(FCommandLine::Get(),TEXT("CaptureZoom")))
             {
                 ResetOverview();
-                AdjustZoom((FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch3")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch4")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch5")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch6")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch7")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch8")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch9")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch10")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch11")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch12")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch13")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch14")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch27")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch26")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch25")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch24")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch23")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch22")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch21")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch20")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch19")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch18")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch17")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch16")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch15")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewStairs")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewDoorFrames")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewSpecialBatch2")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewSpecialBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewObjectBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewObjectPlacement")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewTileFallback")))?12.f:6.f);
+                AdjustZoom((FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch3")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch4")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch5")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch6")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch7")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch8")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch9")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch10")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch11")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch12")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch13")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch14")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch27")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch26")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch25")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch24")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch23")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch22")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch21")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch20")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch19")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch18")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch17")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch16")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch15")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewStairs")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewDoorFrames")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewSpecialBatch2")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewSpecialBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewObjectBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewObjectPlacement")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewTopmost")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewTileFallback")))?12.f:6.f);
+            }
+            if(FParse::Param(FCommandLine::Get(),TEXT("PreviewWeaponBatch2")))
+            {
+                FVector Center=FVector::ZeroVector;int32 Count=0;
+                for(const TCHAR* Key:{TEXT("dagger"),TEXT("short_sword"),TEXT("spear")})
+                    if(auto* Batch=LiveBatches.Find(FName(*(FString(TEXT("Object_"))+Key))))
+                        for(int32 I=0;I<(*Batch)->GetInstanceCount();++I) {
+                            FTransform Pose;(*Batch)->GetInstanceTransform(I,Pose,true);
+                            Center+=Pose.GetLocation();++Count;
+                        }
+                if(Count>0) {FollowHero=false;CameraFocus=Center/Count;FitCamera();}
             }
             // Let the updated meshes render before capturing.
             FTimerHandle Handle;

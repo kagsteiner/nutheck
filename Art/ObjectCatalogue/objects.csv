@@ -26,14 +26,14 @@ CROSSBOW_BOLT,crossbow bolt,,Weapons,Ammunition and thrown weapons,IRON,-P_CROSS
 DART,dart,,Weapons,Ammunition and thrown weapons,IRON,-P_DART,normal,object_type,,24,160,not modelled,
 SHURIKEN,shuriken,throwing star,Weapons,Ammunition and thrown weapons,IRON,-P_SHURIKEN,normal,object_type,,25,163,not modelled,
 BOOMERANG,boomerang,,Weapons,Ammunition and thrown weapons,WOOD,-P_BOOMERANG,normal,object_type,,26,166,not modelled,
-SPEAR,spear,,Weapons,Polearms and thrusting weapons,IRON,P_SPEAR,normal,object_type,,27,174,not modelled,
+SPEAR,spear,,Weapons,Polearms and thrusting weapons,IRON,P_SPEAR,normal,object_type,,27,174,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch2.md
 ELVEN_SPEAR,elven spear,runed spear,Weapons,Polearms and thrusting weapons,WOOD,P_SPEAR,normal,object_type,,28,177,not modelled,
 ORCISH_SPEAR,orcish spear,crude spear,Weapons,Polearms and thrusting weapons,IRON,P_SPEAR,normal,object_type,,29,180,not modelled,
 DWARVISH_SPEAR,dwarvish spear,stout spear,Weapons,Polearms and thrusting weapons,IRON,P_SPEAR,normal,object_type,,30,183,not modelled,
 SILVER_SPEAR,silver spear,,Weapons,Polearms and thrusting weapons,SILVER,P_SPEAR,normal,object_type,,31,186,not modelled,
 JAVELIN,javelin,throwing spear,Weapons,Polearms and thrusting weapons,IRON,P_SPEAR,normal,object_type,,32,189,not modelled,
 TRIDENT,trident,,Weapons,Polearms and thrusting weapons,IRON,P_TRIDENT,normal,object_type,,33,194,not modelled,
-DAGGER,dagger,,Weapons,Daggers and short blades,IRON,P_DAGGER,normal,object_type,,34,200,not modelled,
+DAGGER,dagger,,Weapons,Daggers and short blades,IRON,P_DAGGER,normal,object_type,,34,200,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch2.md
 ELVEN_DAGGER,elven dagger,runed dagger,Weapons,Daggers and short blades,WOOD,P_DAGGER,normal,object_type,,35,203,not modelled,
 ORCISH_DAGGER,orcish dagger,crude dagger,Weapons,Daggers and short blades,IRON,P_DAGGER,normal,object_type,,36,206,not modelled,
 SILVER_DAGGER,silver dagger,,Weapons,Daggers and short blades,SILVER,P_DAGGER,normal,object_type,,37,209,not modelled,
@@ -45,7 +45,7 @@ WORM_TOOTH,worm tooth,,Weapons,Daggers and short blades,BONE,P_KNIFE,normal,obje
 CRYSKNIFE,crysknife,,Weapons,Daggers and short blades,BONE,P_KNIFE,normal,object_type,,43,231,not modelled,
 AXE,axe,,Weapons,Axes and picks,IRON,P_AXE,normal,object_type,,44,236,not modelled,
 BATTLE_AXE,battle-axe,double-headed axe,Weapons,Axes and picks,IRON,P_AXE,normal,object_type,,45,239,not modelled,
-SHORT_SWORD,short sword,,Weapons,Swords and long blades,IRON,P_SHORT_SWORD,normal,object_type,,46,244,not modelled,
+SHORT_SWORD,short sword,,Weapons,Swords and long blades,IRON,P_SHORT_SWORD,normal,object_type,,46,244,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch2.md
 ELVEN_SHORT_SWORD,elven short sword,runed short sword,Weapons,Swords and long blades,WOOD,P_SHORT_SWORD,normal,object_type,,47,247,not modelled,
 ORCISH_SHORT_SWORD,orcish short sword,crude short sword,Weapons,Swords and long blades,IRON,P_SHORT_SWORD,normal,object_type,,48,250,not modelled,
 DWARVISH_SHORT_SWORD,dwarvish short sword,broad short sword,Weapons,Swords and long blades,IRON,P_SHORT_SWORD,normal,object_type,,49,253,not modelled,

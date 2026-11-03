@@ -1,3 +1,22 @@
+diff --git a/src/display.c b/src/display.c
+index 6f4f5f74a..816bdcb35 100644
+--- a/src/display.c
++++ b/src/display.c
+@@ -351,6 +351,14 @@ map_object(struct obj *obj, int show)
+         }
+     }
+ 
++#ifdef UEBRIDGE
++    /* The real display object (or a mimic's fake object), before glyph flush. */
++    {
++        extern void ue_observe_display_object(struct obj *, int);
++        ue_observe_display_object(obj, glyph);
++    }
++#endif
++
+     if (svl.level.flags.hero_memory) {
+         /* MRKR: While hallucinating, statues are seen as random monsters */
+         /*       but remembered as random objects.                        */
 diff --git a/src/windows.c b/src/windows.c
 index f8490f9b5..434bb7714 100644
 --- a/src/windows.c

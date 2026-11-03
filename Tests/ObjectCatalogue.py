@@ -27,6 +27,10 @@ def main():
         assert data['summary']['named_object_types']==440 and data['summary']['verified_object_drafts']==4
         assert data['summary']['official_object_tiles']==483
         assert {r['id'] for r in data['objects'] if r['asset_status']=='generated and verified static draft'}=={'LARGE_BOX','CHEST','GOLD_PIECE','CORPSE'}
+        for key in ['DAGGER','SHORT_SWORD','SPEAR']:
+            entry=next(r for r in data['objects'] if r['id']==key)
+            assert entry['asset_status']=='MVP live placement verified; finishing and extended verification pending'
+            assert entry['evidence']=='Docs/WeaponBatch2.md'
         appearances=json.loads((c.OUT/'appearances.json').read_text(encoding='utf-8'))['appearances'];assert len(appearances)==463
         assert next(a for a in appearances if a['source_slot_id']=='POT_HEALING')['label']=='purple-red'
         assert next(r for r in data['objects'] if r['id']=='SPE_POLYMORPH')['official_tile']['file_local_index']==401

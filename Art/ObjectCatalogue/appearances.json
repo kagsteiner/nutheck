@@ -422,8 +422,8 @@
         "combined_atlas_index": 816,
         "label": "spear"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch2.md",
       "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
     },
     {
@@ -541,8 +541,8 @@
         "combined_atlas_index": 823,
         "label": "dagger"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch2.md",
       "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
     },
     {
@@ -745,8 +745,8 @@
         "combined_atlas_index": 835,
         "label": "short sword"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch2.md",
       "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
     },
     {
