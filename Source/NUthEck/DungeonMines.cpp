@@ -70,7 +70,7 @@ void ADungeonPrototype::CreateMinesBatches()
             if(Mesh)B->SetStaticMesh(Mesh);
             auto* Base=LoadObject<UMaterialInterface>(nullptr,Material);check(Base);
             auto* M=UMaterialInstanceDynamic::Create(Base,this);
-            M->SetVectorParameterValue(TEXT("Tint"),Memory?FLinearColor(.25f,.27f,.29f):FLinearColor::White);
+            M->SetVectorParameterValue(TEXT("Tint"),Memory?FLinearColor(.4f,.4f,.4f):FLinearColor::White);
             B->SetBoundsScale(1.15f);B->SetMaterial(0,M);B->SetLightingChannels(!Memory,Memory,Suffix==TEXT("Lit"));
             LiveBatches.Add(FName(*(Name+Suffix)),B);
         };

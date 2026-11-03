@@ -2,4 +2,14 @@
 
 This backlog contains development items that are not directly related to modeling but came up in human testing.
 
-* the parts of the level that are not currently visible but remembered should be rendered a bit brighter. They are hard to see.
+## Open
+
+
+
+## Implemented
+
+* Remembered areas were hard to see: raised remembered stone tint to 40% in regular dungeons and the Mines, including remembered floors. Awaiting human visual testing.
+
+
+## Tested by human
+

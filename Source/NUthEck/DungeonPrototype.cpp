@@ -114,12 +114,12 @@ UInstancedStaticMeshComponent* ADungeonPrototype::MakeBatch(const TCHAR* Name, c
         if (auto* Stone = LoadObject<UMaterialInterface>(nullptr, *StonePath))
         {
             Base = Stone;
-            Color = BatchName.EndsWith(TEXT("Memory")) ? FLinearColor(.27f,.28f,.29f) : FLinearColor::White;
+            Color = BatchName.EndsWith(TEXT("Memory")) ? FLinearColor(.4f,.4f,.4f) : FLinearColor::White;
         }
     }
     // Keep the textured full-height walls; darken only live floor albedo so
     // room boundaries and entrances read more clearly from the overhead view.
-    if(BatchName==TEXT("Floor") || BatchName==TEXT("FloorMemory"))
+    if(BatchName==TEXT("Floor"))
     {
         Color.R*=.75f;Color.G*=.75f;Color.B*=.75f;
     }
