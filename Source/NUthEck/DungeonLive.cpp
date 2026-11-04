@@ -55,7 +55,7 @@ void ADungeonPrototype::StartLiveGame(bool NewGame)
         Add(TEXT("TrapMemory"),TEXT("/Engine/BasicShapes/Cone.Cone"),FLinearColor(.21f,.1f,.04f));
     }
     Session=MakeUnique<FNetHackSession>();
-    Session->Start(NewGame || FParse::Param(FCommandLine::Get(),TEXT("NewGame")),!CaptureLive);
+    Session->Start(NewGame || FParse::Param(FCommandLine::Get(),TEXT("NewGame")),!CaptureLive && !FParse::Param(FCommandLine::Get(),TEXT("QuestPreview")));
     LiveStartedTime=FPlatformTime::Seconds();
 }
 
@@ -240,8 +240,11 @@ void ADungeonPrototype::RebuildLiveMap()
         if(const auto* Terrain=StairPreview.Find(FIntPoint(X,Y)))
         {Preview=*Presented;Preview.Kind=TEXT("terrain");Preview.Terrain=*Terrain;Presented=&Preview;}
         const auto Cell=TopmostRenderCell(*Presented,Session->Hero==FIntPoint(X,Y));
+        if(Session->ValkyrieQuest && Session->ValkyrieStage==3 && Cell.Kind==TEXT("terrain") && Cell.Terrain==TEXT("stone"))
+        {AddValkyrieArchitecture(Cell,X,Y);continue;}
         if(Cell.Kind==TEXT("unknown") || Cell.Terrain==TEXT("stone") || Cell.Terrain==TEXT("none")) continue;
         const FString Suffix=Cell.Visible?TEXT(""):TEXT("Memory");
+        if(AddValkyrieArchitecture(Cell,X,Y)) continue;
         if(AddSokobanArchitecture(Cell,X,Y)) continue;
         if(AddOracleArchitecture(Cell,X,Y)) continue;
         if(Cell.Terrain==TEXT("wall"))
@@ -268,7 +271,7 @@ void ADungeonPrototype::RebuildLiveMap()
             continue;
         }
         if(IsMinesCavern())AddMinesSurface(Cell,X,Y);
-        else if(!Session->InSokoban && Cell.Terrain!=TEXT("down"))Put((IsOracleCell(X,Y)?TEXT("OracleFloor"):TEXT("Floor"))+Suffix,X,Y,0,FVector(.96f,.96f,.16f));
+        else if(!Session->InSokoban && !Session->ValkyrieQuest && Cell.Terrain!=TEXT("down"))Put((IsOracleCell(X,Y)?TEXT("OracleFloor"):TEXT("Floor"))+Suffix,X,Y,0,FVector(.96f,.96f,.16f));
         if(Cell.Terrain==TEXT("closed") || Cell.Terrain==TEXT("open")) AddFramedDoor(Cell,X,Y);
         else if(Cell.Terrain==TEXT("water")) Put(TEXT("Water")+Suffix,X,Y,10,FVector(.95f,.95f,.06f));
         else if(Cell.Terrain==TEXT("lava")) Put(TEXT("Lava")+Suffix,X,Y,10,FVector(.95f,.95f,.06f));
@@ -353,7 +356,7 @@ void ADungeonPrototype::TickLiveGame()
         if(AutoFirstPosition.X<0) AutoFirstPosition=Session->Hero;
         // The camera experiment needs only a few movement events; avoid a long
         // random combat sequence before a test that is about camera state.
-        const int32 CaptureCommands=(FParse::Param(FCommandLine::Get(),TEXT("VerifySokoban")) || FParse::Param(FCommandLine::Get(),TEXT("VerifyMines")) || FParse::Param(FCommandLine::Get(),TEXT("VerifyOracle")) || (FParse::Param(FCommandLine::Get(),TEXT("VerifyAppearanceBatch1")) || (FParse::Param(FCommandLine::Get(),TEXT("VerifyAppearanceBatch2")) || (FParse::Param(FCommandLine::Get(),TEXT("VerifyWeaponBatch4")) || FParse::Param(FCommandLine::Get(),TEXT("VerifySnickersnee"))))))?0:(FParse::Param(FCommandLine::Get(),TEXT("CaptureFirstPerson")) || FParse::Param(FCommandLine::Get(),TEXT("CaptureDefaultTiles")))?4:12;
+        const int32 CaptureCommands=(FParse::Param(FCommandLine::Get(),TEXT("VerifyValkyrieQuest")) || FParse::Param(FCommandLine::Get(),TEXT("VerifySokoban")) || FParse::Param(FCommandLine::Get(),TEXT("VerifyMines")) || FParse::Param(FCommandLine::Get(),TEXT("VerifyOracle")) || (FParse::Param(FCommandLine::Get(),TEXT("VerifyAppearanceBatch1")) || (FParse::Param(FCommandLine::Get(),TEXT("VerifyAppearanceBatch2")) || (FParse::Param(FCommandLine::Get(),TEXT("VerifyWeaponBatch4")) || FParse::Param(FCommandLine::Get(),TEXT("VerifySnickersnee"))))))?0:(FParse::Param(FCommandLine::Get(),TEXT("CaptureFirstPerson")) || FParse::Param(FCommandLine::Get(),TEXT("CaptureDefaultTiles")))?4:12;
         // Fast roles can take multiple movement inputs within one native turn.
         // Wait for the same minimum turn required by CaptureAndValidate.
         if(AutoCommands>=CaptureCommands && Session->Turn>=4)
@@ -576,6 +579,7 @@ void ADungeonPrototype::TickLiveGame()
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyMouseTravel"))) VerifyMouseTravel();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyNavigation"))) VerifyNavigation();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyMines"))) VerifyMines();
+            if(FParse::Param(FCommandLine::Get(),TEXT("VerifyValkyrieQuest"))) VerifyValkyrieQuest();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyHumanPlayers")))
             {
                 VerifyAndCaptureHumanPlayers();

@@ -8,6 +8,8 @@ This backlog contains development items that are not directly related to modelin
 
 ## Implemented
 
+* Valkyrie quest first scenery pass: frozen sanctuary, fractured ice, volcanic valley/basalt and lava treatments; isolated wizard preview presets and known Orb of Fate model. Locate cave boundary corrected to high rough basalt walls after human review; home level and locate share the outdoor moonlit presentation: large pale moon, stars, directional blue moonlight and lava accents, visibility/channel and sky lifecycle checks, isolated -Inside preview; awaiting further human art review. See Docs/ValkyrieQuest.md.
+
 * Minetown: warm local-stone masonry and paving, enclosed iron-and-brass amber lanterns. Unreal build and fresh isolated Minetown checks pass in both F9 styles; awaiting human visual testing. See Docs/Minetown.md.
 
 * Snickersnee: unique named katana, upright hover once native name is known, including before full identification. Ordinary katana fallback, pile/restore, blind/hallucination/mimic guards, memory/F9/topmost and live native scene pass; awaiting human visual testing. See Docs/Snickersnee.md.

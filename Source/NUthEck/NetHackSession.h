@@ -12,6 +12,7 @@ struct FNetHackCell
     FString DisplayObject;
     FString DisplayStatue;
     FString DisplayTrap;
+    FString DisplaySurface;
     FString DisplayArtifact;
     bool Female=false;
     bool Visible=false,Horizontal=false;
@@ -64,6 +65,8 @@ public:
     FIntPoint Hero=FIntPoint(-1,-1);
     FString HeroRace;
     bool HeroPolymorphed=false,InMines=false,MinesTown=false,InSokoban=false;
+    bool ValkyrieQuest=false;
+    int32 ValkyrieStage=0;
     int32 SokobanStage=0;
     FIntPoint Cursor=FIntPoint(-1,-1);
     int32 Turn=0,HP=0,MaxHP=0,AC=0,Level=0,Depth=0,Dungeon=0;

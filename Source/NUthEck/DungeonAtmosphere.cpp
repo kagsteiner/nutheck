@@ -1,5 +1,7 @@
 #include "DungeonPrototype.h"
 #include "DungeonTopmost.h"
+#include "Camera/CameraComponent.h"
+#include "Components/StaticMeshComponent.h"
 #include "Components/InstancedStaticMeshComponent.h"
 #include "Components/PointLightComponent.h"
 #include "Materials/MaterialInterface.h"
@@ -20,6 +22,7 @@ void ADungeonPrototype::CreateAmbientLight()
     Mip.BulkData.Unlock();
     Environment->UpdateResource();
     auto* Ambient=GetWorld()->SpawnActor<ASkyLight>()->GetLightComponent();
+    EnvironmentLight=Ambient;
     Ambient->SetMobility(EComponentMobility::Movable);
     Ambient->SourceType=SLS_SpecifiedCubemap;
     Ambient->bLowerHemisphereIsBlack=false;
@@ -65,6 +68,8 @@ void ADungeonPrototype::UpdateOverviewLighting()
 // or gameplay RNG. No presentation state needs to be written to native saves.
 void ADungeonPrototype::UpdateAtmosphere()
 {
+    UpdateValkyrieSky();
+    if(Session && Session->ValkyrieQuest){UpdateValkyrieAtmosphere();return;}
     if(Session && Session->InSokoban){UpdateSokobanAtmosphere();return;}
     const bool Cavern=IsMinesCavern();
     const bool Town=Session && Session->InMines && Session->MinesTown;
@@ -197,8 +202,16 @@ void ADungeonPrototype::UpdateAtmosphere()
 
 void ADungeonPrototype::TickAtmosphere()
 {
+    if(ValkyrieSky && ValkyrieSky->IsVisible())ValkyrieSky->SetWorldLocation(Camera->GetComponentLocation());
     // Gentle continuous flicker is decorative; it never advances a NH turn.
     const double Time=GetWorld()->GetTimeSeconds();
+    if(IsMoonlitValkyrieLevel())
+        for(auto& Light:AtmosphereLights)
+            if(Light->IsVisible() && Light->AttenuationRadius==420.f) {
+                const FVector P=Light->GetComponentLocation();
+                const double Phase=P.X*.013+P.Y*.019;
+                Light->SetIntensity(260.f*(1.f+.055f*FMath::Sin(Time*.75+Phase)+.025f*FMath::Sin(Time*1.13+Phase*1.7)));
+            }
     const auto FlickerAt=[Time](FVector P) {
         const double Phase=P.X*.07+P.Y*.11;
         return float(.55*FMath::Sin(Time*5.3+Phase)

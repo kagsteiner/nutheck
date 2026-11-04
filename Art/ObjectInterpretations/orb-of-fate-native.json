@@ -1,0 +1,11 @@
+{
+  "visible_before_full_identification": "a glass orb named the Orb of Fate",
+  "restore": true,
+  "identification_keeps_identity": "the blessed Orb of Fate (0:7)",
+  "pile_cover_uncover": true,
+  "fake_katana_clears_same_square_artifact_observation": true,
+  "blind_hides_artifact_identity": true,
+  "hallucination_hides_artifact_identity": true,
+  "ordinary_player_name_does_not_qualify": true,
+  "status": "PASS"
+}

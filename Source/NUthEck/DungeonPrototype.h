@@ -116,6 +116,14 @@ private:
     void CreateMinesBatches();
     void AddMinesSurface(const FNetHackCell& Cell,int32 X,int32 Y);
     void VerifyMines();
+    bool AddValkyrieArchitecture(const FNetHackCell& Cell,int32 X,int32 Y);
+    void UpdateValkyrieAtmosphere();
+    void UpdateValkyrieSky();
+    bool IsMoonlitValkyrieLevel() const { return Session && Session->ValkyrieQuest && (Session->ValkyrieStage==1 || Session->ValkyrieStage==3); }
+    UPROPERTY() TObjectPtr<class UStaticMeshComponent> ValkyrieSky;
+    UPROPERTY() TObjectPtr<class UDirectionalLightComponent> ValkyrieMoon;
+    UPROPERTY() TObjectPtr<class USkyLightComponent> EnvironmentLight;
+    void VerifyValkyrieQuest();
     void CreateStairBatches();
     void AddStair(const FNetHackCell& Cell,int32 X,int32 Y);
     void VerifyNavigation();

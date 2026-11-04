@@ -8,7 +8,7 @@
 #include "Components/PointLightComponent.h"
 
 namespace {
-UStaticMesh* MineRock(UObject* Outer,int32 Mask)
+UStaticMesh* MineRock(UObject* Outer,int32 Mask,bool Rough=false)
 {
     FMeshDescription D;FStaticMeshAttributes A(D);A.Register();
     auto Positions=A.GetVertexPositions();auto Normals=A.GetVertexInstanceNormals();
@@ -18,6 +18,13 @@ UStaticMesh* MineRock(UObject* Outer,int32 Mask)
     A.GetPolygonGroupMaterialSlotNames()[Group]=TEXT("StairStone");
     const auto Triangle=[&](FVector3f P,FVector3f Q,FVector3f R)
     {
+        if(Rough) {
+            const auto Shape=[](FVector3f V) {
+                const float Bulge=1.025f+.02f*FMath::Sin(V.Z*.085f+V.X*.04f+V.Y*.06f);
+                return FVector3f(V.X*Bulge,V.Y*Bulge,V.Z+(V.Z>0?3.f*FMath::Sin(V.X*.06f)*FMath::Cos(V.Y*.05f):0.f));
+            };
+            P=Shape(P);Q=Shape(Q);R=Shape(R);
+        }
         const FVector3f N=FVector3f::CrossProduct(Q-P,R-P).GetSafeNormal();
         const FVector3f T=FMath::Abs(N.Z)>.9f?FVector3f(1,0,0):FVector3f::CrossProduct(FVector3f(0,0,1),N).GetSafeNormal();
         TArray<FVertexInstanceID> Instances;
@@ -58,6 +65,9 @@ UStaticMesh* MineRock(UObject* Outer,int32 Mask)
     check(Mesh->BuildFromMeshDescriptions({&D},P));return Mesh;
 }
 }
+
+// Shared closed, uneven rock geometry; branch materials remain separate.
+UStaticMesh* CreateDungeonCaveRock(UObject* Outer) { return MineRock(Outer,0,true); }
 
 void ADungeonPrototype::CreateMinesBatches()
 {

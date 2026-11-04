@@ -7,6 +7,6 @@ inline FNetHackCell TopmostRenderCell(const FNetHackCell& Native,bool Hero=false
 {
     FNetHackCell Result=Native;
     if(Result.Kind!=TEXT("unknown") && (Hero || Result.Kind!=TEXT("terrain")))
-        Result.Terrain=TEXT("floor");
+    {Result.Terrain=TEXT("floor");Result.DisplaySurface.Empty();}
     return Result;
 }

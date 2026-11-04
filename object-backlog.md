@@ -714,7 +714,7 @@ do not start weapon generation from this note. Preserve native knowledge rules.
 - [ ] **Vorpal Blade** (`ART_VORPAL_BLADE`) — base `LONG_SWORD`; design and visibility-rule review pending.
 - [ ] **Snickersnee** (`ART_SNICKERSNEE`) — base `KATANA`; exceptional editable/painted/imported katana with indigo wrap, pierced black/gold guard and wave fittings. Native visible-name-before-identification, restore, pile, blind/hallucination/fake-mimic guards and upright hover/both-style/topmost checks pass. [Evidence](Docs/Snickersnee.md). Human visual/finish, broader transitions and LOD review remain; MVP artifact treatment, not an extra ordinary type.
 - [ ] **Sunsword** (`ART_SUNSWORD`) — base `LONG_SWORD`; design and visibility-rule review pending.
-- [ ] **The Orb of Detection** (`ART_ORB_OF_DETECTION`) — base `CRYSTAL_BALL`; design and visibility-rule review pending.
+- [ ] **The Orb of Detection** (`ART_ORB_OF_DETECTION`) — base `CRYSTAL_BALL`; first silver-ringed blue crystal design imported, known-name hover and memory integration plus native identification/restore/pile/blind/hallucination/mimic tests pass; awaiting human art review. See Docs/ValkyrieQuest.md.
 - [ ] **The Heart of Ahriman** (`ART_HEART_OF_AHRIMAN`) — base `LUCKSTONE`; design and visibility-rule review pending.
 - [ ] **The Sceptre of Might** (`ART_SCEPTRE_OF_MIGHT`) — base `MACE`; design and visibility-rule review pending.
 - [ ] **The Staff of Aesculapius** (`ART_STAFF_OF_AESCULAPIUS`) — base `QUARTERSTAFF`; design and visibility-rule review pending.
@@ -725,7 +725,7 @@ do not start weapon generation from this note. Preserve native knowledge rules.
 - [ ] **The Master Key of Thievery** (`ART_MASTER_KEY_OF_THIEVERY`) — base `SKELETON_KEY`; design and visibility-rule review pending.
 - [ ] **The Tsurugi of Muramasa** (`ART_TSURUGI_OF_MURAMASA`) — base `TSURUGI`; design and visibility-rule review pending.
 - [ ] **The Platinum Yendorian Express Card** (`ART_YENDORIAN_EXPRESS_CARD`) — base `CREDIT_CARD`; design and visibility-rule review pending.
-- [ ] **The Orb of Fate** (`ART_ORB_OF_FATE`) — base `CRYSTAL_BALL`; design and visibility-rule review pending.
+- [ ] **The Orb of Fate** (`ART_ORB_OF_FATE`) — base `CRYSTAL_BALL`; first silver-ringed blue crystal design imported, known-name hover and memory integration plus native identification/restore/pile/blind/hallucination/mimic tests pass; awaiting human art review. See Docs/ValkyrieQuest.md.
 - [ ] **The Eye of the Aethiopica** (`ART_EYE_OF_THE_AETHIOPICA`) — base `AMULET_OF_ESP`; design and visibility-rule review pending.
 
 ## Conditional, deferred and auxiliary scope

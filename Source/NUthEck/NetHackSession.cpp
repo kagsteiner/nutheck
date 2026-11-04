@@ -32,6 +32,9 @@ bool FNetHackSession::Start(bool NewGame,bool Remember)
     if(!Remember && FParse::Value(FCommandLine::Get(),TEXT("MinesCaptureSession="),CaptureId)
         && FGuid::ParseExact(CaptureId,EGuidFormats::Digits,ExistingId))
     {SessionId=CaptureId;MinesCapture=true;}
+    if(!Remember && FParse::Value(FCommandLine::Get(),TEXT("QuestPreviewSession="),CaptureId)
+        && FGuid::ParseExact(CaptureId,EGuidFormats::Digits,ExistingId))
+    {SessionId=CaptureId;MinesCapture=true;}
     SessionId.TrimStartAndEndInline();
     if(!FGuid::ParseExact(SessionId,EGuidFormats::Digits,ExistingId)) SessionId=FGuid::NewGuid().ToString(EGuidFormats::Digits);
     SessionDirectory=SessionsRoot/SessionId;
@@ -150,6 +153,7 @@ void FNetHackSession::Event(const TSharedPtr<FJsonObject>& O)
         O->TryGetStringField(TEXT("display_object"),Cell.DisplayObject);
         O->TryGetStringField(TEXT("display_statue"),Cell.DisplayStatue);
         O->TryGetStringField(TEXT("display_trap"),Cell.DisplayTrap);
+        Cell.DisplaySurface.Empty();O->TryGetStringField(TEXT("display_surface"),Cell.DisplaySurface);
         O->TryGetStringField(TEXT("display_monster"),Cell.DisplayMonster);
         O->TryGetBoolField(TEXT("female"),Cell.Female);
         Cell.Symbol=O->GetIntegerField(TEXT("symbol")); Cell.Horizontal=O->GetBoolField(TEXT("horizontal"));
@@ -174,6 +178,9 @@ void FNetHackSession::Event(const TSharedPtr<FJsonObject>& O)
     }
     if(Type==TEXT("state"))
     {
+        ValkyrieQuest=false;ValkyrieStage=0;
+        O->TryGetBoolField(TEXT("valkyrie_quest"),ValkyrieQuest);
+        if(O->HasField(TEXT("valkyrie_stage")))ValkyrieStage=O->GetIntegerField(TEXT("valkyrie_stage"));
         InSokoban=false;SokobanStage=0;
         O->TryGetBoolField(TEXT("in_sokoban"),InSokoban);
         if(InSokoban && O->HasTypedField<EJson::Number>(TEXT("sokoban_stage")))SokobanStage=FMath::Clamp(int32(O->GetIntegerField(TEXT("sokoban_stage"))),1,4);

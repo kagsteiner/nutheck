@@ -27,7 +27,8 @@ void ue_observe_display_object(struct obj *obj, int glyph)
         const char *canonical = artiname(obj->oartifact);
         if ((obj->otyp == WAR_HAMMER && !strcmp(canonical,"Mjollnir"))
             || (obj->otyp == BATTLE_AXE && !strcmp(canonical,"Cleaver"))
-            || (obj->otyp == KATANA && !strcmp(canonical,"Snickersnee")))
+            || (obj->otyp == KATANA && !strcmp(canonical,"Snickersnee"))
+            || (obj->otyp == CRYSTAL_BALL && !strcmp(canonical,"The Orb of Fate")))
             name = canonical;
     }
     ue_object_level[x][y] = ledger_no(&u.uz);
@@ -85,6 +86,8 @@ static void state(void)
                                   | (templit(x,y) ? 2 : 0)) : 0));
     printf("\",\"hero_race\":"); quote(gu.urace.noun ? gu.urace.noun : "");
     printf(",\"in_sokoban\":%s,\"sokoban_stage\":%d", In_sokoban(&u.uz)?"true":"false", In_sokoban(&u.uz)?5-u.uz.dlevel:0);
+    printf(",\"valkyrie_quest\":%s,\"valkyrie_stage\":%d", (In_quest(&u.uz) && Role_if(PM_VALKYRIE))?"true":"false",
+        !In_quest(&u.uz) || !Role_if(PM_VALKYRIE) ? 0 : Is_qstart(&u.uz) ? 1 : Is_qlocate(&u.uz) ? 3 : Is_nemesis(&u.uz) ? 5 : u.uz.dlevel < qlocate_level.dlevel ? 2 : 4);
     printf(",\"oracle_x\":%d,\"oracle_y\":%d", sanctuary ? (sanctuary->lx+sanctuary->hx)/2-1 : -1, sanctuary ? (sanctuary->ly+sanctuary->hy)/2 : -1);
     printf(",\"hero_polymorphed\":%s,\"in_mines\":%s,\"mines_town\":%s}\n",Upolyd ? "true" : "false",In_mines(&u.uz)?"true":"false",(In_mines(&u.uz) && Is_special(&u.uz) && Is_special(&u.uz)->flags.town)?"true":"false");
 }
@@ -242,6 +245,7 @@ static void ue_glyph(winid w,coordxy x,coordxy y,const glyph_info *fg,const glyp
     if(!strcmp(t,"none") && bg) t=terrain(bg->glyph);
     printf("{\"event\":\"tile\",\"x\":%d,\"y\":%d,\"glyph\":%d,\"kind\":",x-1,y,g); quote(kind);
     printf(",\"terrain\":"); quote(t);
+    printf(",\"display_surface\":"); quote(glyph_to_cmap(g)==S_ice ? "ice" : "");
     /* nUthEck 2026-10-31: resolved by NetHack's native tile map, which also
        shuffles unidentified object appearances. No object/monster world lookup. */
     if (g >= 0 && g < MAX_GLYPH)
@@ -288,6 +292,7 @@ static void ue_glyph(winid w,coordxy x,coordxy y,const glyph_info *fg,const glyp
             : o == STETHOSCOPE ? "stethoscope"
             : o == LONG_SWORD ? "long sword" : o == SCIMITAR ? "scimitar"
             : o == KATANA ? "katana" : o == WAR_HAMMER ? "war hammer"
+            : o == CRYSTAL_BALL ? "crystal ball"
             : o == BATTLE_AXE ? "battle-axe"
             : o == LEATHER_ARMOR ? "leather armor"
             : o == STUDDED_LEATHER_ARMOR ? "studded leather armor"

@@ -10,6 +10,7 @@ namespace {
 enum class EObjectPose { Legacy, Standing, Lying, Hover };
 struct FObjectPresentation { const TCHAR* Name; const TCHAR* Key; const TCHAR* Folder; EObjectPose Pose; float Scale; int32 AppearanceTile=-1; bool FaceUp=false; const TCHAR* ArtifactName=nullptr; };
 const FObjectPresentation ObjectPresentations[]={
+    {TEXT("crystal ball"),TEXT("orb_of_fate"),TEXT("/Game/OrbOfFate"),EObjectPose::Hover,1.f,-1,false,TEXT("The Orb of Fate")},
     {TEXT("boulder"),TEXT("soko_boulder"),TEXT("/Game/Sokoban"),EObjectPose::Legacy,1.f},
     {TEXT("ruby ring"),TEXT("ruby_ring"),TEXT("/Game/AppearanceBatch1"),EObjectPose::Standing,11.f,977,false},
     {TEXT("spherical amulet"),TEXT("spherical_amulet"),TEXT("/Game/AppearanceBatch1"),EObjectPose::Lying,3.6f,993,true},

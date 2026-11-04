@@ -499,7 +499,7 @@ void ADungeonPrototype::CaptureAndValidate()
     else UE_LOG(LogTemp,Display,TEXT("PROTOTYPE_FRAME_CHECK %s min=%s max=%s"),bFits?TEXT("PASS"):TEXT("FAIL"),*Min.ToString(),*Max.ToString());
     if(CaptureLive)
     {
-        const bool LivePass=Session && Session->Connected && Session->IsCommand() && Session->Turn>=4 && Session->KnownCellCount()>5 && Session->KnownCellCount()<Columns*Rows && (AutoMoved || FParse::Param(FCommandLine::Get(),TEXT("VerifySokoban")) || (FParse::Param(FCommandLine::Get(),TEXT("VerifyAppearanceBatch1")) || (FParse::Param(FCommandLine::Get(),TEXT("VerifyAppearanceBatch2")) || (FParse::Param(FCommandLine::Get(),TEXT("VerifyWeaponBatch4")) || FParse::Param(FCommandLine::Get(),TEXT("VerifySnickersnee"))))) || FParse::Param(FCommandLine::Get(),TEXT("VerifyOracle")) || FParse::Param(FCommandLine::Get(),TEXT("VerifyMines")));
+        const bool LivePass=Session && Session->Connected && Session->IsCommand() && Session->Turn>=4 && Session->KnownCellCount()>5 && (Session->KnownCellCount()<Columns*Rows || (Session->ValkyrieQuest && FParse::Param(FCommandLine::Get(),TEXT("VerifyValkyrieQuest")))) && (AutoMoved || FParse::Param(FCommandLine::Get(),TEXT("VerifySokoban")) || (FParse::Param(FCommandLine::Get(),TEXT("VerifyAppearanceBatch1")) || (FParse::Param(FCommandLine::Get(),TEXT("VerifyAppearanceBatch2")) || (FParse::Param(FCommandLine::Get(),TEXT("VerifyWeaponBatch4")) || FParse::Param(FCommandLine::Get(),TEXT("VerifySnickersnee"))))) || FParse::Param(FCommandLine::Get(),TEXT("VerifyOracle")) || FParse::Param(FCommandLine::Get(),TEXT("VerifyMines")) || FParse::Param(FCommandLine::Get(),TEXT("VerifyValkyrieQuest")));
         bFits &= LivePass;
         UE_LOG(LogTemp,Display,TEXT("NETHACK_LIVE_CHECK %s turn=%d known=%d hero=%s"),LivePass?TEXT("PASS"):TEXT("FAIL"),Session?Session->Turn:0,Session?Session->KnownCellCount():0,Session?*Session->Hero.ToString():TEXT("none"));
     }
@@ -509,7 +509,7 @@ void ADungeonPrototype::CaptureAndValidate()
         const auto* Player=LiveBatches.Find(TEXT("PlayerVolume"));
         int32 Figures=0;
         for(const auto& Entry:LiveBatches) if(Entry.Key.ToString().StartsWith(TEXT("Tile_"))) Figures+=Entry.Value->GetInstanceCount();
-        const bool TilePass=Player && (*Player)->GetInstanceCount()==1 && !HeroVolumeKey.IsEmpty() && Session && (Session->Depth==1 || (Session->InSokoban && FParse::Param(FCommandLine::Get(),TEXT("VerifySokoban"))) || (Session->OracleCenter.X>=0 && FParse::Param(FCommandLine::Get(),TEXT("VerifyOracle"))) || (Session->InMines && FParse::Param(FCommandLine::Get(),TEXT("VerifyMines"))));
+        const bool TilePass=Player && (*Player)->GetInstanceCount()==1 && !HeroVolumeKey.IsEmpty() && Session && (Session->Depth==1 || (Session->InSokoban && FParse::Param(FCommandLine::Get(),TEXT("VerifySokoban"))) || (Session->OracleCenter.X>=0 && FParse::Param(FCommandLine::Get(),TEXT("VerifyOracle"))) || (Session->InMines && FParse::Param(FCommandLine::Get(),TEXT("VerifyMines"))) || (Session->ValkyrieQuest && FParse::Param(FCommandLine::Get(),TEXT("VerifyValkyrieQuest"))));
         bFits &= TilePass;
         UE_LOG(LogTemp,Display,TEXT("DEFAULT_TILES_CHECK %s hero=%s creatures=%d depth=%d"),TilePass?TEXT("PASS"):TEXT("FAIL"),*HeroVolumeKey,Figures,Session?Session->Depth:0);
     }
