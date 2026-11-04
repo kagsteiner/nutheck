@@ -17,7 +17,7 @@ ART_GIANTSLAYER,Giantslayer,LONG_SWORD,normal,A_NEUTRAL,NON_PM,NON_PM,not modell
 ART_OGRESMASHER,Ogresmasher,WAR_HAMMER,normal,A_NONE,NON_PM,NON_PM,not modelled
 ART_TROLLSBANE,Trollsbane,MORNING_STAR,normal,A_NONE,NON_PM,NON_PM,not modelled
 ART_VORPAL_BLADE,Vorpal Blade,LONG_SWORD,normal,A_NEUTRAL,NON_PM,NON_PM,not modelled
-ART_SNICKERSNEE,Snickersnee,KATANA,normal,A_LAWFUL,PM_SAMURAI,NON_PM,not modelled
+ART_SNICKERSNEE,Snickersnee,KATANA,normal,A_LAWFUL,PM_SAMURAI,NON_PM,MVP live placement and native visible name verified; extended verification pending
 ART_SUNSWORD,Sunsword,LONG_SWORD,normal,A_LAWFUL,NON_PM,NON_PM,not modelled
 ART_ORB_OF_DETECTION,The Orb of Detection,CRYSTAL_BALL,normal,A_LAWFUL,PM_ARCHEOLOGIST,NON_PM,not modelled
 ART_HEART_OF_AHRIMAN,The Heart of Ahriman,LUCKSTONE,normal,A_NEUTRAL,PM_BARBARIAN,NON_PM,not modelled

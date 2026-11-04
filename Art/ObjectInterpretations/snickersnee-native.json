@@ -1,0 +1,11 @@
+{
+  "visible_before_full_identification": "a katana named Snickersnee",
+  "restore": true,
+  "identification_keeps_identity": "the +0 Snickersnee",
+  "pile_cover_uncover": true,
+  "fake_katana_clears_same_square_artifact_observation": true,
+  "blind_hides_artifact_identity": true,
+  "hallucination_hides_artifact_identity": true,
+  "ordinary_player_name_does_not_qualify": true,
+  "status": "PASS"
+}

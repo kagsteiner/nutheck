@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "check": "[2026.11.04-06.37.38:271][ 75]LogTemp: Display: CREATURE_BATCH30_CHECK PASS forms=6 fallback=6 turn_before=5 turn_after=5 sequence_before=7 sequence_after=7",
+  "native_sex": "neuter",
+  "synthetic_aliases": 6,
+  "fallbacks": 6,
+  "player_session_used": false,
+  "capture": "Batch30-Unreal-fixtures.png"
+}

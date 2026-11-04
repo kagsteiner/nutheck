@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": [
+    "CREATURE_BATCH28_CHECK PASS",
+    "NETHACK_LIVE_CHECK PASS",
+    "DUNGEON_ZOOM_CHECK PASS",
+    "DEFAULT_TILES_CHECK PASS"
+  ],
+  "displayed_forms": 6,
+  "official_fallbacks": 6,
+  "turn_before": 4,
+  "turn_after": 4,
+  "sequence_before": 7,
+  "sequence_after": 7,
+  "texture_only_fur": true,
+  "uv_channels": 2,
+  "player_session_used": false,
+  "capture": "Batch28-Unreal-fixtures.png"
+}

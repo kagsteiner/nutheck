@@ -1,0 +1,71 @@
+{
+  "plains_centaur": {
+    "parts": 38,
+    "triangles": 266280,
+    "bounds_m": [
+      [
+        -0.5018006563186646,
+        -0.2907414138317108,
+        0.0
+      ],
+      [
+        0.6817485094070435,
+        0.3445920944213867,
+        1.9059878587722778
+      ]
+    ],
+    "four_hooves": true,
+    "complete_hands": true,
+    "fitted_eyes": 2,
+    "paint_valid": true,
+    "closed_solids_except_fitted_eye_patches": true,
+    "connected_human_and_equine_bodies": true
+  },
+  "forest_centaur": {
+    "parts": 38,
+    "triangles": 247080,
+    "bounds_m": [
+      [
+        -0.4827427864074707,
+        -0.258526086807251,
+        0.0
+      ],
+      [
+        0.6619784235954285,
+        0.2879466712474823,
+        1.9059878587722778
+      ]
+    ],
+    "four_hooves": true,
+    "complete_hands": true,
+    "fitted_eyes": 2,
+    "paint_valid": true,
+    "closed_solids_except_fitted_eye_patches": true,
+    "connected_human_and_equine_bodies": true
+  },
+  "mountain_centaur": {
+    "parts": 39,
+    "triangles": 299904,
+    "bounds_m": [
+      [
+        -0.5208637714385986,
+        -0.33726251125335693,
+        0.0
+      ],
+      [
+        0.7015565037727356,
+        0.33708655834198,
+        1.985987901687622
+      ]
+    ],
+    "four_hooves": true,
+    "complete_hands": true,
+    "fitted_eyes": 2,
+    "paint_valid": true,
+    "closed_solids_except_fitted_eye_patches": true,
+    "connected_human_and_equine_bodies": true
+  },
+  "status": "PASS",
+  "protected_exports_unchanged": 234,
+  "source_sex_tiles_identical": true
+}

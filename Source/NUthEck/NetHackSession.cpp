@@ -40,10 +40,11 @@ bool FNetHackSession::Start(bool NewGame,bool Remember)
     if(NewGame && FParse::Value(FCommandLine::Get(),TEXT("HumanPlayerPreview="),Preview))
     {
         const bool Valkyrie=Preview==TEXT("valkyrie_female_human");
-        if(Valkyrie || Preview==TEXT("barbarian_male_human"))
+        const bool Samurai=Preview==TEXT("samurai_male_human") || Preview==TEXT("samurai_female_human");
+        if(Valkyrie || Samurai || Preview==TEXT("barbarian_male_human"))
         {
             const FString Profile=FString::Printf(TEXT("OPTIONS=number_pad:0,!tutorial,!legacy,!news,time,lit_corridor,!autopickup\nOPTIONS=role:%s,race:human,gender:%s,align:%s\n"),
-                Valkyrie?TEXT("Valkyrie"):TEXT("Barbarian"),Valkyrie?TEXT("female"):TEXT("male"),Valkyrie?TEXT("lawful"):TEXT("neutral"));
+                Samurai?TEXT("Samurai"):(Valkyrie?TEXT("Valkyrie"):TEXT("Barbarian")),(Valkyrie || Preview==TEXT("samurai_female_human"))?TEXT("female"):TEXT("male"),(Valkyrie || Samurai)?TEXT("lawful"):TEXT("neutral"));
             FFileHelper::SaveStringToFile(Profile,*(SessionDirectory/TEXT(".nethackrc")));
         }
     }
@@ -129,7 +130,7 @@ void FNetHackSession::Event(const TSharedPtr<FJsonObject>& O)
     if(Type==TEXT("cursor")) { Cursor=FIntPoint(O->GetIntegerField(TEXT("x")),O->GetIntegerField(TEXT("y"))); return; }
     if(Type==TEXT("message")) { AddMessage(O->GetStringField(TEXT("text"))); return; }
     if(Type==TEXT("end")) { Ended=true; Awaiting=false; AddMessage(TEXT("Game ended. Press F2 for a new game.")); return; }
-    if(Type==TEXT("clear")) { for(auto& Cell:Cells) Cell=FNetHackCell(); MapDirty=true; return; }
+    if(Type==TEXT("clear")) { InSokoban=false;SokobanStage=0;OracleCenter=FIntPoint(-1,-1); for(auto& Cell:Cells) Cell=FNetHackCell(); MapDirty=true; return; }
     if(Type==TEXT("tile"))
     {
         const int32 X=O->GetIntegerField(TEXT("x")),Y=O->GetIntegerField(TEXT("y"));
@@ -145,8 +146,10 @@ void FNetHackSession::Event(const TSharedPtr<FJsonObject>& O)
         Cell.TileIndex=-1;
         if(O->HasTypedField<EJson::Number>(TEXT("tile_index"))) Cell.TileIndex=O->GetIntegerField(TEXT("tile_index"));
         Cell.DisplayMonster.Empty(); Cell.Female=false;
-        Cell.DisplayObject.Empty();
+        Cell.DisplayObject.Empty(); Cell.DisplayStatue.Empty();Cell.DisplayTrap.Empty();
         O->TryGetStringField(TEXT("display_object"),Cell.DisplayObject);
+        O->TryGetStringField(TEXT("display_statue"),Cell.DisplayStatue);
+        O->TryGetStringField(TEXT("display_trap"),Cell.DisplayTrap);
         O->TryGetStringField(TEXT("display_monster"),Cell.DisplayMonster);
         O->TryGetBoolField(TEXT("female"),Cell.Female);
         Cell.Symbol=O->GetIntegerField(TEXT("symbol")); Cell.Horizontal=O->GetBoolField(TEXT("horizontal"));
@@ -171,6 +174,11 @@ void FNetHackSession::Event(const TSharedPtr<FJsonObject>& O)
     }
     if(Type==TEXT("state"))
     {
+        InSokoban=false;SokobanStage=0;
+        O->TryGetBoolField(TEXT("in_sokoban"),InSokoban);
+        if(InSokoban && O->HasTypedField<EJson::Number>(TEXT("sokoban_stage")))SokobanStage=FMath::Clamp(int32(O->GetIntegerField(TEXT("sokoban_stage"))),1,4);
+        OracleCenter=FIntPoint(-1,-1);
+        if(O->HasField(TEXT("oracle_x")) && O->HasField(TEXT("oracle_y"))) OracleCenter=FIntPoint(O->GetIntegerField(TEXT("oracle_x")),O->GetIntegerField(TEXT("oracle_y")));
         O->TryGetBoolField(TEXT("in_mines"),InMines);
         O->TryGetBoolField(TEXT("mines_town"),MinesTown);
         O->TryGetStringField(TEXT("hero_race"),HeroRace);

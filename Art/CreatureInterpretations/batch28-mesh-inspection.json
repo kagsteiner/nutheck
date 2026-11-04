@@ -1,0 +1,81 @@
+{
+  "monkey": {
+    "parts": 17,
+    "triangles": 177424,
+    "bounds_m": [
+      [
+        -0.13101018965244293,
+        -0.19662246108055115,
+        0.0
+      ],
+      [
+        0.2280343621969223,
+        0.17084240913391113,
+        0.7128148078918457
+      ]
+    ],
+    "closed_solids": true,
+    "paint_valid": true,
+    "connected_body": true,
+    "eye_fit_mm": 3,
+    "hands": 2,
+    "feet": 2,
+    "digits_per_extremity": 5,
+    "shoulder_width": 0.2,
+    "source_sex_shared": true,
+    "texture_only_fur": true
+  },
+  "ape": {
+    "parts": 16,
+    "triangles": 219592,
+    "bounds_m": [
+      [
+        -0.19117499887943268,
+        -0.32518526911735535,
+        0.0
+      ],
+      [
+        0.15434730052947998,
+        0.3251892626285553,
+        1.1584537029266357
+      ]
+    ],
+    "closed_solids": true,
+    "paint_valid": true,
+    "connected_body": true,
+    "eye_fit_mm": 3,
+    "hands": 2,
+    "feet": 2,
+    "digits_per_extremity": 5,
+    "shoulder_width": 0.44,
+    "source_sex_shared": true,
+    "texture_only_fur": true
+  },
+  "carnivorous_ape": {
+    "parts": 18,
+    "triangles": 275000,
+    "bounds_m": [
+      [
+        -0.38180676102638245,
+        -0.4236893951892853,
+        0.0
+      ],
+      [
+        0.1716345101594925,
+        0.42365533113479614,
+        1.2873249053955078
+      ]
+    ],
+    "closed_solids": true,
+    "paint_valid": true,
+    "connected_body": true,
+    "eye_fit_mm": 3,
+    "hands": 2,
+    "feet": 2,
+    "digits_per_extremity": 5,
+    "shoulder_width": 0.54,
+    "source_sex_shared": true,
+    "texture_only_fur": true
+  },
+  "protected_exports_unchanged": 240
+}

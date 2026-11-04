@@ -1,0 +1,23 @@
+{
+  "oracle_wall": {
+    "asset": "/Game/OracleSanctuary/Meshes/SM_oracle_wall",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "oracle_marble",
+        "normal": "/Game/OracleSanctuary/M_ObjectPaint.M_ObjectPaint",
+        "memory": "/Game/OracleSanctuary/M_ObjectPaintMemory.M_ObjectPaintMemory"
+      },
+      {
+        "source": "oracle_bronze",
+        "normal": "/Game/OracleSanctuary/M_ObjectGold.M_ObjectGold",
+        "memory": "/Game/OracleSanctuary/M_ObjectGoldMemory.M_ObjectGoldMemory"
+      },
+      {
+        "source": "oracle_base",
+        "normal": "/Game/OracleSanctuary/M_ObjectPaint.M_ObjectPaint",
+        "memory": "/Game/OracleSanctuary/M_ObjectPaintMemory.M_ObjectPaintMemory"
+      }
+    ]
+  }
+}

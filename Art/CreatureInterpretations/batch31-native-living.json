@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "forms": [
+    {
+      "name": "blue jelly",
+      "requested_female": false,
+      "displayed_female": false,
+      "glyph": 56,
+      "tile_index": 116,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\709275dcb7a54e19a767aff95df916c2"
+    },
+    {
+      "name": "blue jelly",
+      "requested_female": true,
+      "displayed_female": false,
+      "glyph": 56,
+      "tile_index": 116,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\6e4ffcd3767c4907b9a8e131d8619bfe"
+    },
+    {
+      "name": "spotted jelly",
+      "requested_female": false,
+      "displayed_female": false,
+      "glyph": 57,
+      "tile_index": 118,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\6e30029d7b4f4ac9a7b32bb8a9594802"
+    },
+    {
+      "name": "spotted jelly",
+      "requested_female": true,
+      "displayed_female": false,
+      "glyph": 57,
+      "tile_index": 118,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\382dc662c6384a1d88ad12572f7cc692"
+    },
+    {
+      "name": "ochre jelly",
+      "requested_female": false,
+      "displayed_female": false,
+      "glyph": 58,
+      "tile_index": 120,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\86e98ca6db4d4d35b725c8d09020295c"
+    },
+    {
+      "name": "ochre jelly",
+      "requested_female": true,
+      "displayed_female": false,
+      "glyph": 58,
+      "tile_index": 120,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\a493bfea6a894b66bb2716f6f7720e46"
+    }
+  ]
+}

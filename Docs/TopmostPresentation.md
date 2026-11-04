@@ -34,3 +34,11 @@ Evidence:
 The development backlog records implementation and automated verification while leaving human visual testing pending. Earlier asset finishing/LOD work remains separate.
 
 ![Strict topmost rendering — synthetic fixtures](../Art/ObjectInterpretations/Topmost-Unreal.png)
+
+## Utility-tool coverage (2026-11-03)
+
+ToolBatch1 expands the verifier above from its original 840 cases to **1,200**.
+Pick-axe, grappling hook and stethoscope each have explicit foreground cases and
+exactly-one-model checks across all 15 terrains, two visibility states, two styles
+and regular/Mines rendering. `build-tool-batch1-topmost.log` passes; see
+[ToolBatch1.md](ToolBatch1.md) for the new batch evidence.

@@ -1,10 +1,10 @@
 # Creature asset backlog
 
-Working checklist for anatomical creature and player-role assets. Based on the pinned NetHack source catalogue; updated 2026-11-02. This file is maintained by hand: preserve its checkboxes and notes when the catalogue is regenerated.
+Working checklist for anatomical creature and player-role assets. Based on the pinned NetHack source catalogue; updated 2026-11-04. This file is maintained by hand: preserve its checkboxes and notes when the catalogue is regenerated.
 
-**394 source identities: 81 generated creature drafts + 1 completed player-role presentation + 300 remaining creature identities + 12 remaining player-role presentations.** Creature forms include four additional female appearances (beardless gnomish wizard/gnome zombie and independently proportioned soldier/fire ants), giving 85 physical creature forms across 81 identities. Two human player forms exist: female Valkyrie and male Barbarian. Barbarian remains partial because its female starting-sex target has not been generated. The player roles cover 25 permitted starting-sex variants; these are validation targets, not 25 mandatory separate sculpts.
+**394 source identities: 100 generated creature drafts + 2 completed player-role presentations + 281 remaining creature identities + 11 remaining player-role presentations.** Creature forms include four additional female appearances (beardless gnomish wizard/gnome zombie and independently proportioned soldier/fire ants), giving 104 physical creature forms across 100 identities. Four human player forms exist: female Valkyrie, male Barbarian, male Samurai and female Samurai. Barbarian remains partial because its female starting-sex target has not been generated. The player roles cover 25 permitted starting-sex variants; these are validation targets, not 25 mandatory separate sculpts.
 
-Verified static-draft coverage: **81/381 creatures (21.3%)**, or **82/394 creature/player identities (20.8%)**. This does not measure visual finishing or the separate object/terrain inventories. Static presentation is the finished target; see [Game vision](Docs/GameVision.md).
+Verified static-draft coverage: **100/381 creatures (26.2%)**, or **102/394 creature/player identities (25.9%)**. This does not measure visual finishing or the separate object/terrain inventories. Static presentation is the finished target; see [Game vision](Docs/GameVision.md).
 
 ## How to use this backlog
 
@@ -22,7 +22,7 @@ colours removed; eyes moved forward/inward and embedded with eyelids. See the
 
 ## Suggested next batches
 
-1. **Monkey, ape and carnivorous ape** (`PM_MONKEY`, `PM_APE`, `PM_CARNIVOROUS_APE`): inspect both sex tiles and source traits; use compatible primate anatomy with independent hands/feet, faces, sizes and poses. Preserve monkey tail versus tailless ape distinctions.
+1. **Brown mold, yellow mold and green mold** (`PM_BROWN_MOLD`, `PM_YELLOW_MOLD`, `PM_GREEN_MOLD`): inspect source/sex tiles and fungal growth forms; distinct surface/silhouette construction rather than gel recolours.
 
 
 
@@ -51,22 +51,22 @@ The family names below are modelling proposals, not scientific taxonomy or a req
 
 ### Amorphous life / Soft bodies / Blobs
 
-- [ ] **acid blob** (`PM_ACID_BLOB`) — base `blobs`.
-- [ ] **quivering blob** (`PM_QUIVERING_BLOB`) — base `blobs`.
-- [ ] **gelatinous cube** (`PM_GELATINOUS_CUBE`) — base `blobs`.
+- [x] **acid blob** (`PM_ACID_BLOB`) — neuter shared-art gel draft, saved geometry/paint/native/import/live/fallback/F9 verified. [Batch 30 evidence](Docs/CreatureBatch30.md).
+- [x] **quivering blob** (`PM_QUIVERING_BLOB`) — neuter shared-art gel draft, saved geometry/paint/native/import/live/fallback/F9 verified. [Batch 30 evidence](Docs/CreatureBatch30.md).
+- [x] **gelatinous cube** (`PM_GELATINOUS_CUBE`) — neuter shared-art gel draft, saved geometry/paint/native/import/live/fallback/F9 verified. [Batch 30 evidence](Docs/CreatureBatch30.md).
 
 ### Amorphous life / Soft bodies / Jellies
 
-- [ ] **blue jelly** (`PM_BLUE_JELLY`) — base `jellies`.
-- [ ] **spotted jelly** (`PM_SPOTTED_JELLY`) — base `jellies`.
-- [ ] **ochre jelly** (`PM_OCHRE_JELLY`) — base `jellies`.
+- [x] **blue jelly** (`PM_BLUE_JELLY`) — neuter shared-art jelly draft; geometry/paint/native/import/live/fallback/F9 verified. [Batch 31 evidence](Docs/CreatureBatch31.md).
+- [x] **spotted jelly** (`PM_SPOTTED_JELLY`) — neuter shared-art jelly draft; geometry/paint/native/import/live/fallback/F9 verified. [Batch 31 evidence](Docs/CreatureBatch31.md).
+- [x] **ochre jelly** (`PM_OCHRE_JELLY`) — neuter shared-art jelly draft; geometry/paint/native/import/live/fallback/F9 verified. [Batch 31 evidence](Docs/CreatureBatch31.md).
 
 ### Amorphous life / Soft bodies / Puddings and oozes
 
-- [ ] **gray ooze** (`PM_GRAY_OOZE`) — base `puddings_and_oozes`.
-- [ ] **brown pudding** (`PM_BROWN_PUDDING`) — base `puddings_and_oozes`.
+- [x] **gray ooze** (`PM_GRAY_OOZE`) — shared-art draft; source/geometry/paint/native/import/live/fallback/F9 verified. [Batch 32 evidence](Docs/CreatureBatch32.md).
+- [x] **brown pudding** (`PM_BROWN_PUDDING`) — shared-art draft; source/geometry/paint/native/import/live/fallback/F9 verified. [Batch 32 evidence](Docs/CreatureBatch32.md).
 - [ ] **green slime** (`PM_GREEN_SLIME`) — base `puddings_and_oozes`.
-- [ ] **black pudding** (`PM_BLACK_PUDDING`) — base `puddings_and_oozes`.
+- [x] **black pudding** (`PM_BLACK_PUDDING`) — shared-art draft; source/geometry/paint/native/import/live/fallback/F9 verified. [Batch 32 evidence](Docs/CreatureBatch32.md).
 
 ### Animals / Aquatic bodies / Aquatic animals
 
@@ -163,9 +163,9 @@ The family names below are modelling proposals, not scientific taxonomy or a req
 
 ### Animals / Mammals / Primates
 
-- [ ] **monkey** (`PM_MONKEY`) — base `primates`.
-- [ ] **ape** (`PM_APE`) — base `primates`.
-- [ ] **carnivorous ape** (`PM_CARNIVOROUS_APE`) — base `primates`.
+- [x] **monkey** (`PM_MONKEY`) — shared-sex static primate; independent proportions, complete hands/feet and texture-only fur. [Batch 28 artifacts and checks](Docs/CreatureBatch28.md).
+- [x] **ape** (`PM_APE`) — shared-sex static primate; independent proportions, complete hands/feet and texture-only fur. [Batch 28 artifacts and checks](Docs/CreatureBatch28.md).
+- [x] **carnivorous ape** (`PM_CARNIVOROUS_APE`) — shared-sex static primate; independent proportions, complete hands/feet and texture-only fur. [Batch 28 artifacts and checks](Docs/CreatureBatch28.md).
 
 ### Animals / Mammals / Rodents
 
@@ -206,8 +206,8 @@ The family names below are modelling proposals, not scientific taxonomy or a req
 
 ### Animals and mythic beasts / Primate and hybrid bodies / Apes and hairy bipeds
 
-- [ ] **yeti** (`PM_YETI`) — base `apes_and_hairy_bipeds`.
-- [ ] **sasquatch** (`PM_SASQUATCH`) — base `apes_and_hairy_bipeds`.
+- [x] **yeti** (`PM_YETI`) — shared-sex static draft; source/geometry/paint/native/import/live/fallback/F9 verified. [Batch 29 evidence](Docs/CreatureBatch29.md).
+- [x] **sasquatch** (`PM_SASQUATCH`) — shared-sex static draft; source/geometry/paint/native/import/live/fallback/F9 verified. [Batch 29 evidence](Docs/CreatureBatch29.md).
 
 ### Animals and mythic beasts / Quadruped bodies / Large ungulate bodies
 
@@ -311,7 +311,7 @@ The family names below are modelling proposals, not scientific taxonomy or a req
 - [x] **shopkeeper** (`PM_SHOPKEEPER`) — shared icon appearance for both native sexes; black hat, blue/cyan jacket, green trousers. [Special batch 2 artifacts and checks](Docs/SpecialBatch2.md).
 - [ ] **guard** (`PM_GUARD`) — base `humans_and_special_identities`.
 - [ ] **prisoner** (`PM_PRISONER`) — base `humans_and_special_identities`.
-- [ ] **Oracle** (`PM_ORACLE`) — base `humans_and_special_identities`.
+- [x] **Oracle** (`PM_ORACLE`) — seated human Pythia, raised hands, white hair/laurel and cyan/blue folded chiton; saved geometry, true tiny projections, imported paint/materials, displayed identity/fallback/F9 and real Oracle-room capture verified. [Evidence](Docs/OracleCreature.md).
 - [ ] **aligned cleric** (`PM_ALIGNED_CLERIC`) — base `humans_and_special_identities`; aliases: priest, priestess.
 - [ ] **high cleric** (`PM_HIGH_CLERIC`) — base `humans_and_special_identities`; aliases: high priest, high priestess.
 - [ ] **soldier** (`PM_SOLDIER`) — base `humans_and_special_identities`.
@@ -443,9 +443,9 @@ The family names below are modelling proposals, not scientific taxonomy or a req
 
 ### Mythic bodies / Composite bodies / Centaurs
 
-- [ ] **plains centaur** (`PM_PLAINS_CENTAUR`) — base `centaurs`.
-- [ ] **forest centaur** (`PM_FOREST_CENTAUR`) — base `centaurs`.
-- [ ] **mountain centaur** (`PM_MOUNTAIN_CENTAUR`) — base `centaurs`.
+- [x] **plains centaur** (`PM_PLAINS_CENTAUR`) — complete horse/human anatomy, identical source sex tiles share one sculpt; paint, actual tiny/detail views, native living aliases, imported mesh and pure-white Oracle statue rendering verified. [Evidence](Docs/CentaursAndStatues.md).
+- [x] **forest centaur** (`PM_FOREST_CENTAUR`) — complete horse/human anatomy, identical source sex tiles share one sculpt; paint, actual tiny/detail views, native living aliases, imported mesh and pure-white Oracle statue rendering verified. [Evidence](Docs/CentaursAndStatues.md).
+- [x] **mountain centaur** (`PM_MOUNTAIN_CENTAUR`) — complete horse/human anatomy, identical source sex tiles share one sculpt; paint, actual tiny/detail views, native living aliases, imported mesh and pure-white Oracle statue rendering verified. [Evidence](Docs/CentaursAndStatues.md).
 
 ### Mythic bodies / Composite bodies / Jabberwocks
 
@@ -458,7 +458,7 @@ The family names below are modelling proposals, not scientific taxonomy or a req
 
 ### Mythic bodies / Composite bodies / Owlbears
 
-- [ ] **owlbear** (`PM_OWLBEAR`) — base `owlbears`.
+- [x] **owlbear** (`PM_OWLBEAR`) — shared-sex static draft; source/geometry/paint/native/import/live/fallback/F9 verified. [Batch 29 evidence](Docs/CreatureBatch29.md).
 
 ### Mythic bodies / Composite bodies / Winged serpents
 
@@ -698,7 +698,7 @@ Existing tile-volume proxies are not anatomical drafts. Reuse compatible anatomy
 - [ ] **Cleric** (`PM_CLERIC`) — fixed icon appearance; validate Priest (male), Priestess (female).
 - [ ] **Rogue** (`PM_ROGUE`) — fixed icon appearance; validate Rogue (male), Rogue (female).
 - [ ] **Ranger** (`PM_RANGER`) — fixed icon appearance; validate Ranger (male), Ranger (female).
-- [ ] **Samurai** (`PM_SAMURAI`) — fixed icon appearance; validate Samurai (male), Samurai (female).
+- [x] **Samurai** (`PM_SAMURAI`) — distinct human male/female fixed characters, fitted uniform and faces; both legal starting-sex targets verified with native selection/fallback/F9/first-person tests. [Artifacts and evidence](Docs/SamuraiPlayers.md).
 - [ ] **Tourist** (`PM_TOURIST`) — fixed icon appearance; validate Tourist (male), Tourist (female).
 - [x] **Valkyrie** (`PM_VALKYRIE`) — fixed icon appearance; validate Valkyrie (female). Human female form generated and verified. Other ancestries retain proxies; no ancestry cross-product is claimed. [Human player artifacts and checks](Docs/HumanPlayers.md).
 - [ ] **Wizard** (`PM_WIZARD`) — fixed icon appearance; validate Wizard (male), Wizard (female).
@@ -793,3 +793,15 @@ check off any creature/object modelling item or change the source-ID inventory.
 
 Terrain draft coverage now comprises two feature identities / six forms:
 fountain and five altar variants. Complete terrain inventory remains pending.
+
+Batch 28 finishing: refine primate face/brow/mouth and digit seating, coat flow, compact source-pose readability and LOD/runtime costs. Static drafts are verified; no animation is planned. See Docs/CreatureBatch28.md.
+
+Batch 29 finishing: hairy-biped faces/coat and owlbear shoulder/hip transitions, facial discs, beak/claws and runtime/LOD costs. See Docs/CreatureBatch29.md.
+
+Batch 30 finishing: lobe continuity and silhouettes, source palette/inclusion placement, gel material and LOD/runtime costs. See Docs/CreatureBatch30.md.
+
+Batch 31 finishing: fold-root transitions, silhouette/source palette balance, spot distribution and LOD/runtime costs. See Docs/CreatureBatch31.md.
+
+Batch 32 finishing: body transitions, eye seating, source palette/shape balance, dark readability and LOD/runtime costs. Brown/black pudding eyes follow explicit user tile interpretation; preserve them despite native NOEYES. See Docs/CreatureBatch32.md.
+
+Samurai finishing: skin/cloth/hair and shoulder/hip refinement, dark hair/readability and LOD/runtime costs. Both forms share costume identity but female proportions/ponytail intentionally differ despite identical source tiles (user direction). See Docs/SamuraiPlayers.md.

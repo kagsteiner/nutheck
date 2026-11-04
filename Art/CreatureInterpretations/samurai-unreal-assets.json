@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "meshes": {
+    "samurai_male_human": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_samurai_male_human.SM_samurai_male_human",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "human_skin",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "human_dark",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "human_sclera",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "human_green",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "glint",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "human_brow",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "human_lip",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "human_gold",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "samurai_magenta",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "samurai_cyan",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "samurai_red",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "samurai_hair",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        }
+      ]
+    },
+    "samurai_female_human": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_samurai_female_human.SM_samurai_female_human",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "human_skin",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "human_dark",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "human_sclera",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "human_blue",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "glint",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "human_brow",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "human_lip",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "human_gold",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "samurai_magenta",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "samurai_cyan",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "samurai_red",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "samurai_hair",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        }
+      ]
+    }
+  }
+}

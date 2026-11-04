@@ -1,0 +1,160 @@
+{
+  "plains_centaur": {
+    "asset": "/Game/CreatureInterpretations/Meshes/SM_plains_centaur",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "centaur_hair",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "centaur_coat",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "human_sclera",
+        "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+      },
+      {
+        "source": "glint",
+        "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+      },
+      {
+        "source": "human_brow",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "human_skin",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "centaur_horn",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "human_blue",
+        "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+      },
+      {
+        "source": "human_dark",
+        "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+      }
+    ]
+  },
+  "forest_centaur": {
+    "asset": "/Game/CreatureInterpretations/Meshes/SM_forest_centaur",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "centaur_hair",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "centaur_coat",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "human_sclera",
+        "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+      },
+      {
+        "source": "glint",
+        "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+      },
+      {
+        "source": "human_brow",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "human_skin",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "centaur_horn",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "human_blue",
+        "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+      },
+      {
+        "source": "human_dark",
+        "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+      }
+    ]
+  },
+  "mountain_centaur": {
+    "asset": "/Game/CreatureInterpretations/Meshes/SM_mountain_centaur",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "centaur_hair",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "centaur_jerkin",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "centaur_coat",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "human_sclera",
+        "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+      },
+      {
+        "source": "glint",
+        "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+      },
+      {
+        "source": "human_brow",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "human_skin",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "centaur_horn",
+        "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+      },
+      {
+        "source": "human_blue",
+        "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+      },
+      {
+        "source": "human_dark",
+        "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+      }
+    ]
+  },
+  "M_WhiteMarble": {
+    "asset": "/Game/Statues/M_WhiteMarble.M_WhiteMarble",
+    "expressions": 5,
+    "verified_constant_rgb": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.28,
+    "metallic": 0.0,
+    "no_vertex_color_input": true
+  },
+  "M_WhiteMarbleMemory": {
+    "asset": "/Game/Statues/M_WhiteMarbleMemory.M_WhiteMarbleMemory",
+    "expressions": 5,
+    "verified_constant_rgb": [
+      0.20000000298023224,
+      0.20000000298023224,
+      0.20000000298023224
+    ],
+    "roughness": 0.28,
+    "metallic": 0.0,
+    "no_vertex_color_input": true
+  },
+  "status": "PASS",
+  "supported_statue_display_forms": 202,
+  "supported_creature_ids": 101,
+  "missing_model_display_forms": 586
+}

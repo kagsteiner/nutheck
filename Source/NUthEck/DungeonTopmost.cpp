@@ -36,16 +36,20 @@ void ADungeonPrototype::VerifyTopmostPresentation()
                 Session->Cells[Index]=Ground;RebuildLiveMap();const auto Empty=Snapshot();
                 Session->Cells[Index].Terrain=TEXT("floor");RebuildLiveMap();
                 Passed &= !Equal(Empty,Snapshot());
-                for(int32 Foreground=0;Foreground<7;++Foreground) {
+                for(int32 Foreground=0;Foreground<10;++Foreground) {
                     FNetHackCell Top=Ground;Top.Terrain=TEXT("floor");Top.TileIndex=OfficialTileDemoItem;
-                    Top.Kind=Foreground<4?TEXT("item"):Foreground==4?TEXT("monster"):Foreground==5?TEXT("pet"):TEXT("effect");
+                    Top.Kind=Foreground<7?TEXT("item"):Foreground==7?TEXT("monster"):Foreground==8?TEXT("pet"):TEXT("effect");
                     if(Foreground==0)Top.DisplayObject=TEXT("dagger");
                     if(Foreground==1){Top.DisplayObject=TEXT("war hammer");Top.DisplayArtifact=TEXT("Mjollnir");}
-                    if(Foreground==4)Top.DisplayMonster=TEXT("goblin");
+                    if(Foreground==7)Top.DisplayMonster=TEXT("goblin");
+                    if(Foreground==4)Top.DisplayObject=TEXT("pick-axe");
+                    if(Foreground==5)Top.DisplayObject=TEXT("grappling hook");
+                    if(Foreground==6)Top.DisplayObject=TEXT("stethoscope");
                     Session->Hero=Foreground==3?At:FIntPoint(5,5);
                     Session->Cells[Index]=Top;RebuildLiveMap();const auto Floor=Snapshot();
-                    if(Foreground==0 || Foreground==1) {
-                        const FName Name(*(FString(TEXT("Object_"))+(Foreground==0?TEXT("dagger"):TEXT("mjollnir"))+(Visible?TEXT(""):TEXT("_Memory"))));
+                    if(Foreground==0 || Foreground==1 || (Foreground>=4 && Foreground<=6)) {
+                        const TArray<const TCHAR*> Keys={TEXT("dagger"),TEXT("mjollnir"),TEXT(""),TEXT(""),TEXT("pick_axe"),TEXT("grappling_hook"),TEXT("stethoscope")};
+                        const FName Name(*(FString(TEXT("Object_"))+Keys[Foreground]+(Visible?TEXT(""):TEXT("_Memory"))));
                         const auto* Count=Floor.Find(Name);Passed &= Count && *Count==1;
                     }
                     Top.Terrain=Terrain;Session->Cells[Index]=Top;RebuildLiveMap();

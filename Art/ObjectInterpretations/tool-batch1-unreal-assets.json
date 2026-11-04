@@ -1,0 +1,75 @@
+{
+  "pick_axe": {
+    "asset": "/Game/ToolBatch1/Meshes/SM_pick_axe",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "tool1_iron",
+        "normal": "/Game/ToolBatch1/M_ObjectIron.M_ObjectIron",
+        "memory": "/Game/ToolBatch1/M_ObjectIronMemory.M_ObjectIronMemory"
+      },
+      {
+        "source": "tool1_edge",
+        "normal": "/Game/ToolBatch1/M_ObjectSilver.M_ObjectSilver",
+        "memory": "/Game/ToolBatch1/M_ObjectSilverMemory.M_ObjectSilverMemory"
+      },
+      {
+        "source": "tool1_leather",
+        "normal": "/Game/ToolBatch1/M_ObjectPaint.M_ObjectPaint",
+        "memory": "/Game/ToolBatch1/M_ObjectPaintMemory.M_ObjectPaintMemory"
+      },
+      {
+        "source": "tool1_wood",
+        "normal": "/Game/ToolBatch1/M_ObjectPaint.M_ObjectPaint",
+        "memory": "/Game/ToolBatch1/M_ObjectPaintMemory.M_ObjectPaintMemory"
+      },
+      {
+        "source": "tool1_brass",
+        "normal": "/Game/ToolBatch1/M_ObjectGold.M_ObjectGold",
+        "memory": "/Game/ToolBatch1/M_ObjectGoldMemory.M_ObjectGoldMemory"
+      }
+    ]
+  },
+  "grappling_hook": {
+    "asset": "/Game/ToolBatch1/Meshes/SM_grappling_hook",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "tool1_iron",
+        "normal": "/Game/ToolBatch1/M_ObjectIron.M_ObjectIron",
+        "memory": "/Game/ToolBatch1/M_ObjectIronMemory.M_ObjectIronMemory"
+      },
+      {
+        "source": "tool1_brass",
+        "normal": "/Game/ToolBatch1/M_ObjectGold.M_ObjectGold",
+        "memory": "/Game/ToolBatch1/M_ObjectGoldMemory.M_ObjectGoldMemory"
+      }
+    ]
+  },
+  "stethoscope": {
+    "asset": "/Game/ToolBatch1/Meshes/SM_stethoscope",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "tool1_iron",
+        "normal": "/Game/ToolBatch1/M_ObjectIron.M_ObjectIron",
+        "memory": "/Game/ToolBatch1/M_ObjectIronMemory.M_ObjectIronMemory"
+      },
+      {
+        "source": "tool1_edge",
+        "normal": "/Game/ToolBatch1/M_ObjectSilver.M_ObjectSilver",
+        "memory": "/Game/ToolBatch1/M_ObjectSilverMemory.M_ObjectSilverMemory"
+      },
+      {
+        "source": "tool1_tube",
+        "normal": "/Game/ToolBatch1/M_ObjectPaint.M_ObjectPaint",
+        "memory": "/Game/ToolBatch1/M_ObjectPaintMemory.M_ObjectPaintMemory"
+      },
+      {
+        "source": "tool1_brass",
+        "normal": "/Game/ToolBatch1/M_ObjectGold.M_ObjectGold",
+        "memory": "/Game/ToolBatch1/M_ObjectGoldMemory.M_ObjectGoldMemory"
+      }
+    ]
+  }
+}

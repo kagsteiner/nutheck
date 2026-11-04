@@ -1,0 +1,50 @@
+{
+  "ruby_ring": {
+    "asset": "/Game/AppearanceBatch1/Meshes/SM_ruby_ring",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "app1_ruby",
+        "normal": "/Game/AppearanceBatch1/M_ObjectRuby.M_ObjectRuby",
+        "memory": "/Game/AppearanceBatch1/M_ObjectRubyMemory.M_ObjectRubyMemory"
+      },
+      {
+        "source": "app1_gold",
+        "normal": "/Game/AppearanceBatch1/M_ObjectGold.M_ObjectGold",
+        "memory": "/Game/AppearanceBatch1/M_ObjectGoldMemory.M_ObjectGoldMemory"
+      }
+    ]
+  },
+  "spherical_amulet": {
+    "asset": "/Game/AppearanceBatch1/Meshes/SM_spherical_amulet",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "app1_dark_iron",
+        "normal": "/Game/AppearanceBatch1/M_ObjectDarkIron.M_ObjectDarkIron",
+        "memory": "/Game/AppearanceBatch1/M_ObjectDarkIronMemory.M_ObjectDarkIronMemory"
+      },
+      {
+        "source": "app1_iron",
+        "normal": "/Game/AppearanceBatch1/M_ObjectIron.M_ObjectIron",
+        "memory": "/Game/AppearanceBatch1/M_ObjectIronMemory.M_ObjectIronMemory"
+      }
+    ]
+  },
+  "oak_wand": {
+    "asset": "/Game/AppearanceBatch1/Meshes/SM_oak_wand",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "app1_gold",
+        "normal": "/Game/AppearanceBatch1/M_ObjectGold.M_ObjectGold",
+        "memory": "/Game/AppearanceBatch1/M_ObjectGoldMemory.M_ObjectGoldMemory"
+      },
+      {
+        "source": "app1_oak",
+        "normal": "/Game/AppearanceBatch1/M_ObjectOak.M_ObjectOak",
+        "memory": "/Game/AppearanceBatch1/M_ObjectOakMemory.M_ObjectOakMemory"
+      }
+    ]
+  }
+}

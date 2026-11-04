@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "player_session_used": false,
+  "appearance_check": "APPEARANCE_BATCH1_CHECK PASS cases=12 native_appearances=3 turn=11 sequence=2",
+  "fixture": {
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\8c2b4412427a4b138a1cfaadb506549f",
+    "hero": [
+      42,
+      15
+    ],
+    "items": [
+      {
+        "name": "ruby ring",
+        "tile": 977,
+        "position": [
+          41,
+          14
+        ]
+      },
+      {
+        "name": "spherical amulet",
+        "tile": 993,
+        "position": [
+          43,
+          14
+        ]
+      },
+      {
+        "name": "oak wand",
+        "tile": 1207,
+        "position": [
+          42,
+          16
+        ]
+      }
+    ],
+    "fixture": "native wished physical appearances; lighting controlled, monsters/traps disabled in isolated game"
+  },
+  "checks": [
+    "APPEARANCE_BATCH1_CHECK PASS",
+    "OBJECT_PLACEMENT_CHECK PASS",
+    "TOPMOST_PRESENTATION_CHECK PASS",
+    "NETHACK_LIVE_CHECK PASS",
+    "DUNGEON_ZOOM_CHECK PASS",
+    "DEFAULT_TILES_CHECK PASS"
+  ]
+}

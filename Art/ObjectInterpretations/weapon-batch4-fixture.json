@@ -1,0 +1,34 @@
+{
+  "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\5b61dbf843cc4ab496def7f2b54331a8",
+  "hero": [
+    62,
+    16
+  ],
+  "items": [
+    {
+      "name": "silver saber",
+      "tile": 840,
+      "position": [
+        61,
+        15
+      ]
+    },
+    {
+      "name": "broadsword",
+      "tile": 841,
+      "position": [
+        63,
+        15
+      ]
+    },
+    {
+      "name": "two-handed sword",
+      "tile": 844,
+      "position": [
+        62,
+        17
+      ]
+    }
+  ],
+  "fixture": "native wished physical appearances; lighting controlled, monsters/traps disabled in isolated game"
+}

@@ -1,0 +1,197 @@
+[
+  {
+    "key": "silver_saber",
+    "mask_method": "palette_heuristic",
+    "excluded_shadow_pixels": [],
+    "excluded_shadow_palette": [
+      "A"
+    ],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.12210351973772049,
+        -0.03720000013709068,
+        0.0
+      ],
+      [
+        0.13017280399799347,
+        0.03720000013709068,
+        1.1026368141174316
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 25,
+      "silhouette_iou": 0.0294,
+      "file": "silver_saber-pixel--90-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.0286,
+        "file": "silver_saber-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.0278,
+        "file": "silver_saber-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.0294,
+        "file": "silver_saber-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.027,
+        "file": "silver_saber-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.0294,
+        "file": "silver_saber-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.0286,
+        "file": "silver_saber-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "broadsword",
+    "mask_method": "palette_heuristic",
+    "excluded_shadow_pixels": [],
+    "excluded_shadow_palette": [
+      "A"
+    ],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.14847296476364136,
+        -0.024000000208616257,
+        0.0
+      ],
+      [
+        0.14847296476364136,
+        0.024000000208616257,
+        1.0980000495910645
+      ]
+    ],
+    "best_projection": {
+      "yaw": -65,
+      "elevation": 25,
+      "silhouette_iou": 0.2059,
+      "file": "broadsword-pixel--65-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.2,
+        "file": "broadsword-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.186,
+        "file": "broadsword-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.1951,
+        "file": "broadsword-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.1818,
+        "file": "broadsword-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.2059,
+        "file": "broadsword-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.1951,
+        "file": "broadsword-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "two_handed_sword",
+    "mask_method": "palette_heuristic",
+    "excluded_shadow_pixels": [],
+    "excluded_shadow_palette": [
+      "A"
+    ],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.23021571338176727,
+        -0.026000000536441803,
+        0.0
+      ],
+      [
+        0.23021571338176727,
+        0.026000000536441803,
+        1.656000018119812
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 45,
+      "silhouette_iou": 0.0938,
+      "file": "two_handed_sword-pixel--90-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.0625,
+        "file": "two_handed_sword-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.0909,
+        "file": "two_handed_sword-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.0312,
+        "file": "two_handed_sword-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.0938,
+        "file": "two_handed_sword-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.0625,
+        "file": "two_handed_sword-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.0312,
+        "file": "two_handed_sword-pixel--65-45.png"
+      }
+    ]
+  }
+]

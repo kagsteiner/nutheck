@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "meshes": {
+    "monkey": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_monkey.SM_monkey",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "Fur_primate_coat",
+          "material": "/Game/FurStudy/M_PaintedFur.M_PaintedFur"
+        },
+        {
+          "source": "primate_skin",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "primate_dark",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "black",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        }
+      ]
+    },
+    "ape": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_ape.SM_ape",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "Fur_primate_coat",
+          "material": "/Game/FurStudy/M_PaintedFur.M_PaintedFur"
+        },
+        {
+          "source": "primate_skin",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "primate_blue",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "primate_dark",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "black",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        }
+      ]
+    },
+    "carnivorous_ape": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_carnivorous_ape.SM_carnivorous_ape",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "primate_ivory",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "Fur_primate_coat",
+          "material": "/Game/FurStudy/M_PaintedFur.M_PaintedFur"
+        },
+        {
+          "source": "primate_skin",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "primate_blue",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "primate_red",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "primate_dark",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "black",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        }
+      ]
+    }
+  }
+}

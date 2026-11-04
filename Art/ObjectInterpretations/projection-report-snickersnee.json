@@ -1,0 +1,50 @@
+[
+  {
+    "key": "snickersnee",
+    "comparison": "Actual 16x16 physical-appearance readability; no official-tile fidelity score",
+    "bounds_m": [
+      [
+        -0.07050000131130219,
+        -0.05781000107526779,
+        0.0
+      ],
+      [
+        0.10265904664993286,
+        0.05781000107526779,
+        1.2940000295639038
+      ]
+    ],
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "file": "snickersnee-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "file": "snickersnee-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "file": "snickersnee-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "file": "snickersnee-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "file": "snickersnee-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "file": "snickersnee-pixel--65-45.png"
+      }
+    ]
+  }
+]

@@ -55,7 +55,8 @@ void ADungeonPrototype::UpdateOverviewLighting()
 {
     // Full support at level scale, smoothly gone by room scale. Never alter
     // the candle-lit current view, native visibility, or first-person lighting.
-    const float Amount=(1.f-FMath::SmoothStep(1.f,2.5f,ZoomFactor))*(1.f-FirstPersonBlend);
+    const bool Soko=Session && Session->InSokoban;
+    const float Amount=(1.f-FMath::SmoothStep(Soko?2.5f:1.f,Soko?5.f:2.5f,ZoomFactor))*(1.f-FirstPersonBlend);
     for(int32 I=0;I<MapFillLights.Num();++I)
         MapFillLights[I]->SetIntensity(Amount*(I==0?1.8f:.6f));
 }
@@ -64,7 +65,9 @@ void ADungeonPrototype::UpdateOverviewLighting()
 // or gameplay RNG. No presentation state needs to be written to native saves.
 void ADungeonPrototype::UpdateAtmosphere()
 {
+    if(Session && Session->InSokoban){UpdateSokobanAtmosphere();return;}
     const bool Cavern=IsMinesCavern();
+    const bool Town=Session && Session->InMines && Session->MinesTown;
     int32 LightCount=0;
     const auto Light=[&](FVector Position,float Radius,float Lumens,bool Shadows) {
         if(LightCount==AtmosphereLights.Num())
@@ -104,6 +107,15 @@ void ADungeonPrototype::UpdateAtmosphere()
         if(auto* M=LoadObject<UMaterialInterface>(nullptr,TEXT("/Game/Materials/M_CandleFlame.M_CandleFlame")))TorchFlame->SetMaterial(0,M);
         TorchFlame->SetCastShadow(false);
     }
+    UInstancedStaticMeshComponent* LanternIron=nullptr,*LanternBrass=nullptr,*LanternGlass=nullptr;
+    if(Town)
+    {
+        LanternIron=Batch(TEXT("TownLanternIron"),TEXT("/Engine/BasicShapes/Cube.Cube"),FLinearColor(.065f,.055f,.045f));
+        LanternBrass=Batch(TEXT("TownLanternBrass"),TEXT("/Engine/BasicShapes/Cube.Cube"),FLinearColor(.40f,.24f,.075f));
+        LanternGlass=Batch(TEXT("TownLanternGlass"),TEXT("/Engine/BasicShapes/Cube.Cube"),FLinearColor(1.f,.48f,.12f));
+        if(auto* M=LoadObject<UMaterialInterface>(nullptr,TEXT("/Game/Materials/M_CandleFlame.M_CandleFlame")))LanternGlass->SetMaterial(0,M);
+        LanternGlass->SetCastShadow(false);
+    }
     for(int32 Y=0;Y<Rows;++Y) for(int32 X=0;X<Columns;++X)
     {
         const auto Cell=TopmostRenderCell(Session->Cells[Y*Columns+X],Session->Hero==FIntPoint(X,Y));
@@ -115,9 +127,16 @@ void ADungeonPrototype::UpdateAtmosphere()
             const uint32 Seed=uint32(X)*73856093u ^ uint32(Y)*19349663u
                 ^ uint32(Session->Depth)*83492791u ^ uint32(Session->Dungeon)*2654435761u;
             // Retain all original candidates and add a second seeded subset.
-            if(Cavern?Seed%5!=0:Seed%3==2) continue;
+            if(!IsOracleCell(X,Y) && (Cavern?Seed%5!=0:Seed%3==2)) continue;
+            if(IsOracleCell(X,Y) && (X+Y)%2)continue;
             const FIntPoint Directions[]={FIntPoint(1,0),FIntPoint(0,1),FIntPoint(-1,0),FIntPoint(0,-1)};
             auto D=Directions[(Seed/3)%4];
+            if(IsOracleCell(X,Y)) {
+                const auto Delta=FIntPoint(X,Y)-Session->OracleCenter;
+                const bool Outer=FMath::Abs(Delta.X)==6 || FMath::Abs(Delta.Y)==5;
+                D=FMath::Abs(Delta.X)>FMath::Abs(Delta.Y)?FIntPoint(Delta.X>0?-1:1,0):FIntPoint(0,Delta.Y>0?-1:1);
+                if(!Outer)D=FIntPoint(-D.X,-D.Y);
+            }
             if(Cavern)
                 for(int32 Face=0;Face<4;++Face)
                 {
@@ -139,11 +158,33 @@ void ADungeonPrototype::UpdateAtmosphere()
                 Light(Position+FVector(0,0,18),380.f,240.f,true);
                 continue;
             }
+            if(Town)
+            {
+                const auto Part=[&](UInstancedStaticMeshComponent* B,FVector Offset,FVector Scale) {
+                    B->AddInstance(FTransform(FQuat::Identity,Position+Offset,Scale));
+                };
+                // Iron cage, brass collars, amber panes and a stepped vent cap.
+                Part(LanternIron,FVector(-D.X*5,-D.Y*5,-3),FVector(.22f,.22f,.035f));
+                Part(LanternBrass,FVector(0,0,0),FVector(.19f,.19f,.035f));
+                Part(LanternGlass,FVector(0,0,11),FVector(.135f,.135f,.19f));
+                for(float A:{-8.f,8.f})for(float B:{-8.f,8.f})
+                    Part(LanternIron,FVector(A,B,11),FVector(.022f,.022f,.22f));
+                Part(LanternBrass,FVector(0,0,22),FVector(.19f,.19f,.035f));
+                Part(LanternIron,FVector(0,0,25),FVector(.23f,.23f,.04f));
+                Part(LanternIron,FVector(0,0,29),FVector(.13f,.13f,.045f));
+                Part(LanternBrass,FVector(0,0,33),FVector(.07f,.07f,.025f));
+                Light(Position+FVector(0,0,11),340.f,180.f,true);
+                continue;
+            }
             Iron->AddInstance(FTransform(FQuat::Identity,Position-FVector(0,0,10),FVector(.20f,.20f,.045f)));
             Wax->AddInstance(FTransform(FQuat::Identity,Position,FVector(.055f,.055f,.18f)));
             Flame->AddInstance(FTransform(FQuat::Identity,Position+FVector(0,0,12),FVector(.045f,.045f,.09f)));
             Light(Position+FVector(0,0,14),340.f,180.f,true);
             continue;
+        }
+        if(IsOracleCell(X,Y) && Cell.Terrain==TEXT("fountain") && Cell.PermanentLight) {
+            Light(CellPosition(X,Y,80),140.f,65.f,false);
+            AtmosphereLights[LightCount-1]->SetLightColor(FLinearColor(.55f,.72f,1.f));
         }
         // Temporary light retains a warm accent within NH's visibility. Room
         // illumination comes from ambient light and actual candle fixtures.

@@ -2,7 +2,7 @@
 from BridgeGameplay import Game,DIRS,WALK
 import json
 
-NAMES=['dagger', 'short sword', 'spear', 'long sword', 'scimitar', 'katana', 'leather armor', 'studded leather armor', 'chain mail', 'banded mail', 'elven mithril-coat', 'dwarvish mithril-coat', 'dwarvish cloak', 'plate mail', 'crystal plate mail', 'bronze plate mail', 'gray dragon scale mail', 'gold dragon scale mail', 'silver dragon scale mail', 'red dragon scale mail', 'white dragon scale mail', 'orange dragon scale mail', 'black dragon scale mail', 'blue dragon scale mail', 'green dragon scale mail', 'yellow dragon scale mail']
+NAMES=['pick-axe', 'grappling hook', 'stethoscope', 'axe', 'mace', 'war hammer', 'dagger', 'short sword', 'spear', 'long sword', 'scimitar', 'katana', 'leather armor', 'studded leather armor', 'chain mail', 'banded mail', 'elven mithril-coat', 'dwarvish mithril-coat', 'dwarvish cloak', 'plate mail', 'crystal plate mail', 'bronze plate mail', 'gray dragon scale mail', 'gold dragon scale mail', 'silver dragon scale mail', 'red dragon scale mail', 'white dragon scale mail', 'orange dragon scale mail', 'black dragon scale mail', 'blue dragon scale mail', 'green dragon scale mail', 'yellow dragon scale mail']
 g=Game(debug=True);seen=[]
 try:
     g.settle()
@@ -13,7 +13,7 @@ try:
         g.command('i')
         if name=='gold piece':key=ord('$')
         else:
-            item=next(i for i in g.menu['items'] if (wish.lower() in i['text'].lower() or name in i['text'].lower() or (name=='dwarvish cloak' and 'hooded cloak' in i['text'].lower())))
+            item=next(i for i in g.menu['items'] if ((wish.lower() in i['text'].lower()) if wish in ('Mjollnir','Cleaver') else (name in i['text'].lower() or (name=='dwarvish cloak' and 'hooded cloak' in i['text'].lower()))))
             if wish in ('Mjollnir','Cleaver'):
                 assert ' named '+wish in item['text'],item # native name visible before full identification
             key=item['key']

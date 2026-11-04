@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "meshes": {
+    "yeti": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_yeti.SM_yeti",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "Fur_yeti_white",
+          "material": "/Game/FurStudy/M_PaintedFur.M_PaintedFur"
+        },
+        {
+          "source": "yeti_white",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "primate_dark",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "primate_red",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "black",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "club_wood",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        }
+      ]
+    },
+    "sasquatch": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_sasquatch.SM_sasquatch",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "Fur_sasquatch_brown",
+          "material": "/Game/FurStudy/M_PaintedFur.M_PaintedFur"
+        },
+        {
+          "source": "sasquatch_brown",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "sasquatch_eye",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "primate_dark",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "black",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        }
+      ]
+    },
+    "owlbear": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_owlbear.SM_owlbear",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "Fur_owl_coat",
+          "material": "/Game/FurStudy/M_PaintedFur.M_PaintedFur"
+        },
+        {
+          "source": "owl_eye",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "owl_disc",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "owl_claw",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "owl_beak",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        },
+        {
+          "source": "primate_dark",
+          "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+        },
+        {
+          "source": "owl_coat",
+          "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+        }
+      ]
+    }
+  }
+}

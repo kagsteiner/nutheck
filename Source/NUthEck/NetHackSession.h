@@ -10,6 +10,8 @@ struct FNetHackCell
     int32 Symbol=0;
     FString DisplayMonster;
     FString DisplayObject;
+    FString DisplayStatue;
+    FString DisplayTrap;
     FString DisplayArtifact;
     bool Female=false;
     bool Visible=false,Horizontal=false;
@@ -58,9 +60,11 @@ public:
     TArray<FNetHackMenuItem> Menu;
     TMap<int32,int32> Selection;
     FString PromptType, PromptText, Line, CountPrefix, Error, SessionDirectory;
+    FIntPoint OracleCenter=FIntPoint(-1,-1);
     FIntPoint Hero=FIntPoint(-1,-1);
     FString HeroRace;
-    bool HeroPolymorphed=false,InMines=false,MinesTown=false;
+    bool HeroPolymorphed=false,InMines=false,MinesTown=false,InSokoban=false;
+    int32 SokobanStage=0;
     FIntPoint Cursor=FIntPoint(-1,-1);
     int32 Turn=0,HP=0,MaxHP=0,AC=0,Level=0,Depth=0,Dungeon=0;
     int32 Sequence=0,MenuMode=0,MenuScroll=0,MenuPageSize=20;

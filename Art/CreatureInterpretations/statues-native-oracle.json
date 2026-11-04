@@ -1,0 +1,95 @@
+{
+  "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\532deb523b7844188f07a8bef7d00fb2",
+  "center": [
+    39,
+    11
+  ],
+  "hero": [
+    42,
+    13
+  ],
+  "depth": 5,
+  "statues": [
+    {
+      "position": [
+        34,
+        7
+      ],
+      "creature": "plains centaur",
+      "female": false,
+      "glyph": 7356,
+      "tile_index": 1779
+    },
+    {
+      "position": [
+        34,
+        15
+      ],
+      "creature": "plains centaur",
+      "female": false,
+      "glyph": 7356,
+      "tile_index": 1779
+    },
+    {
+      "position": [
+        44,
+        7
+      ],
+      "creature": "plains centaur",
+      "female": false,
+      "glyph": 7356,
+      "tile_index": 1779
+    },
+    {
+      "position": [
+        44,
+        15
+      ],
+      "creature": "plains centaur",
+      "female": false,
+      "glyph": 7356,
+      "tile_index": 1779
+    },
+    {
+      "position": [
+        39,
+        8
+      ],
+      "creature": "plains centaur",
+      "female": false,
+      "glyph": 7356,
+      "tile_index": 1779
+    },
+    {
+      "position": [
+        39,
+        14
+      ],
+      "creature": "forest centaur",
+      "female": false,
+      "glyph": 7357,
+      "tile_index": 1781
+    },
+    {
+      "position": [
+        36,
+        11
+      ],
+      "creature": "plains centaur",
+      "female": false,
+      "glyph": 7356,
+      "tile_index": 1779
+    },
+    {
+      "position": [
+        42,
+        11
+      ],
+      "creature": "mountain centaur",
+      "female": false,
+      "glyph": 7358,
+      "tile_index": 1783
+    }
+  ],
+  "restore": true
+}

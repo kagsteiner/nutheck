@@ -1,0 +1,22 @@
+"""Render saved geometry detail views without regeneration."""
+import sys,math,bpy
+from pathlib import Path
+from mathutils import Vector
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from CreatureBatch28Config import *
+bpy.ops.wm.open_mainfile(filepath=str(OUT/BLEND_NAME))
+for c in bpy.data.collections:c.hide_viewport=False
+bpy.context.view_layer.update();scene=bpy.context.scene;cam=scene.camera
+scene.render.resolution_x=600;scene.render.resolution_y=600;scene.cycles.samples=16
+for key in GROUPS:
+ parts=[o for o in bpy.data.objects if o.type=='MESH' and o.get('creature')==key]
+ for o in bpy.data.objects:
+  if o.type=='MESH':o.hide_render=o not in parts
+ pts=[o.matrix_world@v.co for o in parts for v in o.data.vertices];height=max(p.z for p in pts);body=next(o for o in parts if o.get('anatomy'));r=height*.12
+ for label,yaw,elev in [('front',180,5),('profile',-90,0),('underside',-125,-35),('hands',180,10)]:
+  target=Vector((-.04,0,body['head_z'])) if label in ['front','profile'] else Vector((0,0,height*.38))
+  scale=r*3.5 if label in ['front','profile'] else height*1.4
+  a=math.radians(yaw);e=math.radians(elev);cam.location=target+Vector((math.cos(a)*math.cos(e),math.sin(a)*math.cos(e),math.sin(e)))*3
+  cam.rotation_euler=(target-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=scale;cam.data.shift_x=0;cam.data.shift_y=0
+  scene.render.filepath=str(OUT/(key+'-head-'+label+'.png'));bpy.ops.render.render(write_still=True)
+print('CREATURE_BATCH28_DETAIL_REVIEW_READY')

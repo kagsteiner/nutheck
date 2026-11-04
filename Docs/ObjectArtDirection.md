@@ -62,6 +62,21 @@ Colour and texture alone should not carry every distinction. Static objects
 remain the intended finished presentation; no opening/swinging animation is
 required. Beauty does not change native damage, price, rarity or rules.
 
+## Ring construction: crown orientation (user correction, 2026-11-03)
+
+A ring's crown sits above the outside of its shank and faces **radially outward**
+from the band. The ruby looks upward, not sideways like a pendant facing through
+its finger hole. Rotate and support the entire setting correctly: stone, gallery
+and prongs must agree.
+
+In the standard authored frame, the band lies in XZ, its finger-hole axis is Y,
+and the crown axis is **+Z**. The gemstone table lies in XY, perpendicular to +Z.
+The table normal is perpendicular to the finger-hole axis, not parallel to it.
+Check this in geometry and in side/three-quarter renders before importing.
+Use a crown-up standing presentation for this ring in the dungeon; do not apply
+its former generic flat-loot rotation. Other jewelry and weapons keep their own
+placement policies. This supersedes the first ruby-ring setting orientation.
+
 ## Identity and appearance are different inventories
 
 The generated source inventory has **440 named object types**: 439 unconditional
@@ -150,6 +165,13 @@ A visible artifact name qualifies before full identification; do not gate its
 special pose on the full-identification discovery list. See
 [MVP implementation and verification](MVPObjectPlacement.md).
 
+Snickersnee now has a distinct katana treatment with a pierced black/gold guard,
+indigo diamond wrap over pale underlay, wave fittings and polished temper-line
+blade. Its upright hover requires the real native visible artifact name and
+matching katana base. An ordinary player name never qualifies; retain the base
+katana when that knowledge is absent. No emitted magic light was added.
+See [Snickersnee](Snickersnee.md).
+
 ## Strict topmost presentation (2026-11-03)
 
 Only NetHack's displayed foreground is presented above a neutral floor. Raised
@@ -159,3 +181,59 @@ shows just its native displayed top item. Known named weapons keep their static
 hover pose but do not reveal an altar underneath. The user likes the idea of a
 named weapon hovering over an altar as a future artistic possibility; it is not
 an exception to this rule. See [implementation and verification](TopmostPresentation.md).
+
+Axe, mace and ordinary war hammer also have editable models and
+[MVP live verification](WeaponBatch3.md). The ordinary hammer lies flat; native
+visible Mjollnir knowledge continues to select the separate hovering artifact model.
+
+Pick-axe, grappling hook and stethoscope now have editable models and
+[MVP live verification](ToolBatch1.md). These fixed utility-tool appearances lie
+flat above neutral floor and obey strict topmost presentation in both styles.
+
+Silver saber, broadsword and two-handed sword now have [MVP live verification](WeaponBatch4.md).
+Their curved single-edge, broad double-fuller and long ricasso/diamond-section
+constructions must remain distinct. Fixed public native tiles select these
+known physical types; added craftsmanship does not encode enchantment or an
+artifact identity. Ordinary models lie flat in both styles.
+
+
+## Statue direction (2026-11-03)
+
+Every statue should use the respective creature's shape in pure white marble.
+Reuse the canonical creature mesh and override all surface materials on the
+statue component, including eyes, hair, clothes and equipment. Do not recolour
+existing living assets. NetHack's displayed statue glyph decides species/sex;
+never inspect a hidden creature, pile or contents. Preserve native hallucination,
+memory and strict topmost presentation. The three centaur sculpts and eight Oracle
+statues now use this renderer; all-species coverage grows with the creature
+inventory. Unmodelled species retain native tiles. See [Centaurs and statues](CentaursAndStatues.md).
+
+
+## First shuffled appearance batch (2026-11-03)
+
+Ruby ring, spherical iron amulet and oak wand now have editable, imported and
+live-verified physical designs. Selection uses the native shuffled tile index,
+never a magical effect identity. Permanent identification changes native text
+without replacing the physical model. Nine new-game/identify/restore cases,
+pile cover/uncover, blind memory, hallucination and UE checks pass. The three
+source slots are tracked separately from named effect types in the catalogue
+and backlog. See [AppearanceBatch1](AppearanceBatch1.md).
+
+The second batch adds a sapphire ring, open triangular iron amulet and worked
+silver wand. Native displayed tiles select all three independently of magical
+effect. The sapphire ring follows the same permanent +Z crown rule, with a
+different round faceted setting and silver gallery. Iron openwork/chain and
+silver fluting/ferrules are physical craftsmanship, not effect symbols.
+See [AppearanceBatch2](AppearanceBatch2.md).
+
+## Sokoban boulders and architecture (2026-11-03)
+
+Sokoban uses an ancient stone puzzle vault: warm sandstone, dark foundations,
+matte square paving and restrained bronze, with more craftsmanship toward its
+upper vault. Keep the high walls and native layouts. Boulders remain heavy,
+natural grey rocks with clear cell margins. Every displayed boulder, including
+an unrevealed mimic, uses the same sculpt, scale and pose throughout the game.
+Known pits and holes have distinct recessed geometry; foregrounds hide them
+under strict topmost presentation. Do not add target marks, solution paths,
+hidden-trap cues or reward hints. Quiet wall lamps respect native visible and
+permanently lit cells. See [Sokoban](Sokoban.md).

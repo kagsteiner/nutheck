@@ -1,0 +1,15 @@
+{
+  "pile_cover_and_uncover": true,
+  "blind_remembered_appearance_and_restore": true,
+  "hallucination_uses_native_random_tiles": [
+    818,
+    889,
+    971,
+    1226,
+    955,
+    852,
+    1237,
+    849
+  ],
+  "status": "PASS"
+}

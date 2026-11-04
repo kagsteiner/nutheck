@@ -145,7 +145,14 @@ void ADungeonPrototype::VerifyMines()
                     Passed &= C.Visible && C.PermanentLight && C.Terrain==TEXT("floor");
                 }
         }
-        else Passed &= Session->MinesTown && Count(TEXT("MinesRock"))==0 && Count(TEXT("TorchFlame"))==0;
+        else
+        {
+            Passed &= Session->MinesTown && Count(TEXT("MinesRock"))==0 && Count(TEXT("TorchFlame"))==0;
+            Passed &= Count(TEXT("WallTown"))==Walls && Count(TEXT("FloorTown"))==Floors;
+            Passed &= Count(TEXT("CandleFlame"))==0;
+            const int32 Lanterns=Count(TEXT("TownLanternGlass"));
+            Passed &= Count(TEXT("TownLanternIron"))==Lanterns*7 && Count(TEXT("TownLanternBrass"))==Lanterns*3;
+        }
         HandleLiveKey(EKeys::F9,false);
     }
     Passed &= Style==SculptedCreatures && Session->Turn==Turn && Session->Sequence==Sequence;

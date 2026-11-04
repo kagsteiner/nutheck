@@ -11,6 +11,7 @@
 #include "Engine/StaticMesh.h"
 #include "StaticMeshResources.h"
 #include "Materials/MaterialInterface.h"
+#include "Materials/MaterialInstanceDynamic.h"
 #include "TimerManager.h"
 
 void ADungeonPrototype::StartLiveGame(bool NewGame)
@@ -73,6 +74,7 @@ UInstancedStaticMeshComponent* ADungeonPrototype::GetDefaultTileBatch(const FNet
     FString PlayerAsset;
     if(Hero && Session && Session->HeroRace==TEXT("human") && !Session->HeroPolymorphed)
     {
+        if(Species==TEXT("samurai")) PlayerAsset=Cell.Female?TEXT("samurai_female_human"):TEXT("samurai_male_human");
         if(Species==TEXT("valkyrie") && Cell.Female) PlayerAsset=TEXT("valkyrie_female_human");
         if(Species==TEXT("barbarian") && !Cell.Female) PlayerAsset=TEXT("barbarian_male_human");
     }
@@ -80,7 +82,7 @@ UInstancedStaticMeshComponent* ADungeonPrototype::GetDefaultTileBatch(const FNet
     if(Cell.Female && (Species==TEXT("gnomish_wizard") || Species==TEXT("gnome_zombie") || Species==TEXT("soldier_ant") || Species==TEXT("fire_ant"))) CreatureAsset+=TEXT("_female");
     const FString AssetKey=PlayerAsset.IsEmpty()?CreatureAsset:PlayerAsset;
     const FString SculptedPackage=TEXT("/Game/CreatureInterpretations/Meshes/SM_")+AssetKey;
-    const bool Sculpted=SculptedCreatures && (!PlayerAsset.IsEmpty() || Species==TEXT("python") || Species==TEXT("pit_viper") || Species==TEXT("cobra") || Species==TEXT("garter_snake") || Species==TEXT("snake") || Species==TEXT("water_moccasin") || Species==TEXT("gecko") || Species==TEXT("iguana") || Species==TEXT("lizard") || Species==TEXT("cave_spider") || Species==TEXT("giant_spider") || Species==TEXT("scorpion") || Species==TEXT("killer_bee") || Species==TEXT("queen_bee") || Species==TEXT("xan") || Species==TEXT("shopkeeper") || Species==TEXT("giant_ant") || Species==TEXT("little_dog") || Species==TEXT("goblin")
+    const bool Sculpted=SculptedCreatures && (!PlayerAsset.IsEmpty() || Species==TEXT("gray_ooze") || Species==TEXT("brown_pudding") || Species==TEXT("black_pudding") || Species==TEXT("blue_jelly") || Species==TEXT("spotted_jelly") || Species==TEXT("ochre_jelly") || Species==TEXT("acid_blob") || Species==TEXT("quivering_blob") || Species==TEXT("gelatinous_cube") || Species==TEXT("yeti") || Species==TEXT("sasquatch") || Species==TEXT("owlbear") || Species==TEXT("monkey") || Species==TEXT("ape") || Species==TEXT("carnivorous_ape") || Species==TEXT("plains_centaur") || Species==TEXT("forest_centaur") || Species==TEXT("mountain_centaur") || Species==TEXT("oracle") || Species==TEXT("python") || Species==TEXT("pit_viper") || Species==TEXT("cobra") || Species==TEXT("garter_snake") || Species==TEXT("snake") || Species==TEXT("water_moccasin") || Species==TEXT("gecko") || Species==TEXT("iguana") || Species==TEXT("lizard") || Species==TEXT("cave_spider") || Species==TEXT("giant_spider") || Species==TEXT("scorpion") || Species==TEXT("killer_bee") || Species==TEXT("queen_bee") || Species==TEXT("xan") || Species==TEXT("shopkeeper") || Species==TEXT("giant_ant") || Species==TEXT("little_dog") || Species==TEXT("goblin")
         || Species==TEXT("jackal") || Species==TEXT("fox") || Species==TEXT("gnome")
         || Species==TEXT("sewer_rat") || Species==TEXT("giant_rat") || Species==TEXT("gnome_ruler")
         || Species==TEXT("kitten") || Species==TEXT("housecat") || Species==TEXT("large_cat")
@@ -202,11 +204,34 @@ void ADungeonPrototype::EndPlay(const EEndPlayReason::Type Reason)
 
 void ADungeonPrototype::RebuildLiveMap()
 {
+    const bool Town=Session->InMines && Session->MinesTown;
+    if(Town && !LiveBatches.Contains(TEXT("WallTown")))
+    {
+        // Local stone palette on the existing dressed masonry and paving.
+        for(const FString Base:{FString(TEXT("Wall")),FString(TEXT("Floor")),FString(TEXT("Mortar"))})
+        for(bool Memory:{false,true})
+        {
+            const FString Name=Base+TEXT("Town")+(Memory?TEXT("Memory"):TEXT(""));
+            const TCHAR* Mesh=Base==TEXT("Wall")?TEXT("/Game/DefaultTiles/Meshes/SM_GreyWall.SM_GreyWall"):
+                Base==TEXT("Floor")?TEXT("/Game/DefaultTiles/Meshes/SM_GreyFloor.SM_GreyFloor"):TEXT("/Engine/BasicShapes/Cube.Cube");
+            auto* B=MakeBatch(*Name,Mesh,FLinearColor::White);
+            const FLinearColor Tint=Base==TEXT("Wall")?FLinearColor(.90f,.60f,.36f):
+                Base==TEXT("Floor")?FLinearColor(.65f,.53f,.38f):FLinearColor(.115f,.075f,.045f);
+            if(auto* M=Cast<UMaterialInstanceDynamic>(B->GetMaterial(0)))
+                M->SetVectorParameterValue(TEXT("Tint"),Tint*(Memory?.4f:1.f));
+            LiveBatches.Add(FName(*Name),B);
+        }
+    }
+    const auto ArchitectureName=[Town](FString Name) {
+        if(Town) for(const FString Base:{FString(TEXT("Wall")),FString(TEXT("Floor")),FString(TEXT("Mortar"))})
+            if(Name==Base || Name==Base+TEXT("Memory")) return Base+TEXT("Town")+Name.Mid(Base.Len());
+        return Name;
+    };
     if(IsMinesCavern() && !LiveBatches.Contains(TEXT("MinesFloor")))CreateMinesBatches();
     for(auto& Batch:LiveBatches) Batch.Value->ClearInstances();
     UpdateAtmosphere();
-    const auto Put=[this](const FString& Name,int32 X,int32 Y,float Z,FVector Scale,FQuat Rotation=FQuat::Identity) {
-        if(auto* Batch=LiveBatches.Find(FName(*Name))) (*Batch)->AddInstance(FTransform(Rotation,CellPosition(X,Y,Z),Scale));
+    const auto Put=[this,&ArchitectureName](const FString& Name,int32 X,int32 Y,float Z,FVector Scale,FQuat Rotation=FQuat::Identity) {
+        if(auto* Batch=LiveBatches.Find(FName(*ArchitectureName(Name)))) (*Batch)->AddInstance(FTransform(Rotation,CellPosition(X,Y,Z),Scale));
     };
     for(int32 Y=0;Y<Rows;++Y) for(int32 X=0;X<Columns;++X)
     {
@@ -217,6 +242,8 @@ void ADungeonPrototype::RebuildLiveMap()
         const auto Cell=TopmostRenderCell(*Presented,Session->Hero==FIntPoint(X,Y));
         if(Cell.Kind==TEXT("unknown") || Cell.Terrain==TEXT("stone") || Cell.Terrain==TEXT("none")) continue;
         const FString Suffix=Cell.Visible?TEXT(""):TEXT("Memory");
+        if(AddSokobanArchitecture(Cell,X,Y)) continue;
+        if(AddOracleArchitecture(Cell,X,Y)) continue;
         if(Cell.Terrain==TEXT("wall"))
         {
             if(IsMinesCavern()){AddMinesSurface(Cell,X,Y);continue;}
@@ -233,7 +260,7 @@ void ADungeonPrototype::RebuildLiveMap()
                 const auto Near=TopmostRenderCell(Session->Cells[NY*Columns+NX],Session->Hero==FIntPoint(NX,NY));
                 if(Near.Kind==TEXT("unknown") || Near.Terrain!=TEXT("wall")) continue;
                 const FString JointSuffix=Cell.Visible && Near.Visible?TEXT(""):TEXT("Memory");
-                if(auto* Mortar=LiveBatches.Find(FName(*(TEXT("Mortar")+JointSuffix))))
+                if(auto* Mortar=LiveBatches.Find(FName(*ArchitectureName(TEXT("Mortar")+JointSuffix))))
                     (*Mortar)->AddInstance(FTransform(FQuat::Identity,
                         CellPosition(X,Y,60)+FVector(Step.X*50.f,Step.Y*50.f,0),
                         Step.X?FVector(.10f,.93f,1.182f):FVector(.93f,.10f,1.182f)));
@@ -241,7 +268,7 @@ void ADungeonPrototype::RebuildLiveMap()
             continue;
         }
         if(IsMinesCavern())AddMinesSurface(Cell,X,Y);
-        else if(Cell.Terrain!=TEXT("down"))Put(TEXT("Floor")+Suffix,X,Y,0,FVector(.96f,.96f,.16f));
+        else if(!Session->InSokoban && Cell.Terrain!=TEXT("down"))Put((IsOracleCell(X,Y)?TEXT("OracleFloor"):TEXT("Floor"))+Suffix,X,Y,0,FVector(.96f,.96f,.16f));
         if(Cell.Terrain==TEXT("closed") || Cell.Terrain==TEXT("open")) AddFramedDoor(Cell,X,Y);
         else if(Cell.Terrain==TEXT("water")) Put(TEXT("Water")+Suffix,X,Y,10,FVector(.95f,.95f,.06f));
         else if(Cell.Terrain==TEXT("lava")) Put(TEXT("Lava")+Suffix,X,Y,10,FVector(.95f,.95f,.06f));
@@ -262,6 +289,11 @@ void ADungeonPrototype::RebuildLiveMap()
         }
         else if(Cell.Terrain==TEXT("trap")) Put(TEXT("Trap")+Suffix,X,Y,12,FVector(.65f,.65f,.10f));
         if(Session->Hero==FIntPoint(X,Y)) continue;
+        if(auto* Statue=GetDisplayedStatueBatch(Cell))
+        {
+            Statue->AddInstance(GetDisplayedStatueTransform(X,Y,Statue->GetStaticMesh()));
+            continue;
+        }
         if(auto* Object=GetDisplayedObjectBatch(Cell))
         {
             Object->AddInstance(GetDisplayedObjectTransform(Cell,X,Y,Object->GetStaticMesh()));
@@ -271,8 +303,8 @@ void ADungeonPrototype::RebuildLiveMap()
             if(auto* Figure=GetDefaultTileBatch(Cell,false))
             {
                 const bool Sculpted=Figure->GetFName().ToString().StartsWith(TEXT("Tile_Sculpted_"));
-                const float Yaw=Sculpted?((Cell.DisplayMonster==TEXT("shopkeeper") || Cell.DisplayMonster==TEXT("Uruk-hai") || Cell.DisplayMonster==TEXT("orc mummy") || Cell.DisplayMonster==TEXT("orc zombie") || Cell.DisplayMonster==TEXT("orc shaman") || Cell.DisplayMonster==TEXT("orc-captain") || Cell.DisplayMonster==TEXT("floating eye") || Cell.DisplayMonster==TEXT("hobgoblin") || Cell.DisplayMonster==TEXT("hill orc") || Cell.DisplayMonster==TEXT("Mordor orc") || Cell.DisplayMonster==TEXT("dwarf") || Cell.DisplayMonster.StartsWith(TEXT("dwarf ")) || Cell.DisplayMonster==TEXT("goblin") || Cell.DisplayMonster==TEXT("gnome") || Cell.DisplayMonster.StartsWith(TEXT("gnome ")) || Cell.DisplayMonster==TEXT("gnomish wizard") || Cell.DisplayMonster==TEXT("kobold") || Cell.DisplayMonster==TEXT("large kobold") || Cell.DisplayMonster.StartsWith(TEXT("kobold ")))?15.f:-75.f):105.f;
-                Figure->AddInstance(FTransform(FRotator(0,Yaw,0),CellPosition(X,Y,8),FVector(1)));
+                const float Yaw=Sculpted?((Cell.DisplayMonster==TEXT("Oracle") || Cell.DisplayMonster==TEXT("shopkeeper") || Cell.DisplayMonster==TEXT("Uruk-hai") || Cell.DisplayMonster==TEXT("orc mummy") || Cell.DisplayMonster==TEXT("orc zombie") || Cell.DisplayMonster==TEXT("orc shaman") || Cell.DisplayMonster==TEXT("orc-captain") || Cell.DisplayMonster==TEXT("floating eye") || Cell.DisplayMonster==TEXT("hobgoblin") || Cell.DisplayMonster==TEXT("hill orc") || Cell.DisplayMonster==TEXT("Mordor orc") || Cell.DisplayMonster==TEXT("dwarf") || Cell.DisplayMonster.StartsWith(TEXT("dwarf ")) || Cell.DisplayMonster==TEXT("goblin") || Cell.DisplayMonster==TEXT("gnome") || Cell.DisplayMonster.StartsWith(TEXT("gnome ")) || Cell.DisplayMonster==TEXT("gnomish wizard") || Cell.DisplayMonster==TEXT("kobold") || Cell.DisplayMonster==TEXT("large kobold") || Cell.DisplayMonster.StartsWith(TEXT("kobold ")))?15.f:-75.f):105.f;
+                Figure->AddInstance(FTransform(FRotator(0,Yaw,0),CellPosition(X,Y,8),FVector(Sculpted && Cell.DisplayMonster.EndsWith(TEXT(" centaur"))?.72f:1.f)));
                 continue;
             }
         if(AddTileFallback(Cell,X,Y)) continue;
@@ -321,7 +353,7 @@ void ADungeonPrototype::TickLiveGame()
         if(AutoFirstPosition.X<0) AutoFirstPosition=Session->Hero;
         // The camera experiment needs only a few movement events; avoid a long
         // random combat sequence before a test that is about camera state.
-        const int32 CaptureCommands=FParse::Param(FCommandLine::Get(),TEXT("VerifyMines"))?0:(FParse::Param(FCommandLine::Get(),TEXT("CaptureFirstPerson")) || FParse::Param(FCommandLine::Get(),TEXT("CaptureDefaultTiles")))?4:12;
+        const int32 CaptureCommands=(FParse::Param(FCommandLine::Get(),TEXT("VerifySokoban")) || FParse::Param(FCommandLine::Get(),TEXT("VerifyMines")) || FParse::Param(FCommandLine::Get(),TEXT("VerifyOracle")) || (FParse::Param(FCommandLine::Get(),TEXT("VerifyAppearanceBatch1")) || (FParse::Param(FCommandLine::Get(),TEXT("VerifyAppearanceBatch2")) || (FParse::Param(FCommandLine::Get(),TEXT("VerifyWeaponBatch4")) || FParse::Param(FCommandLine::Get(),TEXT("VerifySnickersnee"))))))?0:(FParse::Param(FCommandLine::Get(),TEXT("CaptureFirstPerson")) || FParse::Param(FCommandLine::Get(),TEXT("CaptureDefaultTiles")))?4:12;
         // Fast roles can take multiple movement inputs within one native turn.
         // Wait for the same minimum turn required by CaptureAndValidate.
         if(AutoCommands>=CaptureCommands && Session->Turn>=4)
@@ -329,6 +361,11 @@ void ADungeonPrototype::TickLiveGame()
             LiveCaptureRequested=true;
             // Explicit capture-only fixtures exercise displayed identity, both sex
             // aliases, fallback and real F9 rebuilds without querying world monsters.
+            const bool VerifyBatch32=FParse::Param(FCommandLine::Get(),TEXT("VerifyCreatureBatch32"));
+            const bool VerifyBatch31=FParse::Param(FCommandLine::Get(),TEXT("VerifyCreatureBatch31"));
+            const bool VerifyBatch30=FParse::Param(FCommandLine::Get(),TEXT("VerifyCreatureBatch30"));
+            const bool VerifyBatch29=FParse::Param(FCommandLine::Get(),TEXT("VerifyCreatureBatch29"));
+            const bool VerifyBatch28=FParse::Param(FCommandLine::Get(),TEXT("VerifyCreatureBatch28"));
             const bool VerifyBatch27=FParse::Param(FCommandLine::Get(),TEXT("VerifyCreatureBatch27"));
             const bool VerifyBatch26=FParse::Param(FCommandLine::Get(),TEXT("VerifyCreatureBatch26"));
             const bool VerifyBatch25=FParse::Param(FCommandLine::Get(),TEXT("VerifyCreatureBatch25"));
@@ -354,12 +391,12 @@ void ADungeonPrototype::TickLiveGame()
             const bool VerifyBatch5=FParse::Param(FCommandLine::Get(),TEXT("VerifyCreatureBatch5"));
             const bool VerifyBatch4=FParse::Param(FCommandLine::Get(),TEXT("VerifyCreatureBatch4"));
             const bool VerifyBatch3=FParse::Param(FCommandLine::Get(),TEXT("VerifyCreatureBatch3"));
-            if(VerifyBatch27 || VerifyBatch26 || VerifyBatch25 || VerifyBatch24 || VerifyBatch23 || VerifyBatch22 || VerifyBatch21 || VerifyBatch20 || VerifyBatch19 || VerifyBatch18 || VerifyBatch17 || VerifyBatch16 || VerifyBatch15 || VerifyBatch14 || VerifyBatch13 || VerifyBatch12 || VerifyBatch11 || VerifyBatch10 || VerifyBatch9 || VerifyBatch8 || VerifyBatch7 || VerifyBatch6 || VerifyBatch5 || VerifyBatch4 || VerifyBatch3 || FParse::Param(FCommandLine::Get(),TEXT("VerifyCreatureBatch2")))
+            if(VerifyBatch32 || VerifyBatch31 || VerifyBatch30 || VerifyBatch29 || VerifyBatch28 || VerifyBatch27 || VerifyBatch26 || VerifyBatch25 || VerifyBatch24 || VerifyBatch23 || VerifyBatch22 || VerifyBatch21 || VerifyBatch20 || VerifyBatch19 || VerifyBatch18 || VerifyBatch17 || VerifyBatch16 || VerifyBatch15 || VerifyBatch14 || VerifyBatch13 || VerifyBatch12 || VerifyBatch11 || VerifyBatch10 || VerifyBatch9 || VerifyBatch8 || VerifyBatch7 || VerifyBatch6 || VerifyBatch5 || VerifyBatch4 || VerifyBatch3 || FParse::Param(FCommandLine::Get(),TEXT("VerifyCreatureBatch2")))
             {
                 const int32 SavedTurn=Session->Turn,SavedSequence=Session->Sequence;
                 const bool OriginalStyle=SculptedCreatures;
-                const int32 BatchNumber=VerifyBatch27?27:VerifyBatch26?26:VerifyBatch25?25:VerifyBatch24?24:VerifyBatch23?23:VerifyBatch22?22:VerifyBatch21?21:VerifyBatch20?20:VerifyBatch19?19:VerifyBatch18?18:VerifyBatch17?17:VerifyBatch16?16:VerifyBatch15?15:VerifyBatch14?14:VerifyBatch13?13:VerifyBatch12?12:VerifyBatch11?11:VerifyBatch10?10:VerifyBatch9?9:VerifyBatch8?8:VerifyBatch7?7:VerifyBatch6?6:VerifyBatch5?5:VerifyBatch4?4:VerifyBatch3?3:2;
-                const TArray<FString> SpeciesNames=VerifyBatch27 ? TArray<FString>{TEXT("python"),TEXT("pit viper"),TEXT("cobra")} : VerifyBatch26 ? TArray<FString>{TEXT("garter snake"),TEXT("snake"),TEXT("water moccasin")} : VerifyBatch25 ? TArray<FString>{TEXT("gecko"),TEXT("iguana"),TEXT("lizard")} : VerifyBatch24
+                const int32 BatchNumber=VerifyBatch32?32:VerifyBatch31?31:VerifyBatch30?30:VerifyBatch29?29:VerifyBatch28?28:VerifyBatch27?27:VerifyBatch26?26:VerifyBatch25?25:VerifyBatch24?24:VerifyBatch23?23:VerifyBatch22?22:VerifyBatch21?21:VerifyBatch20?20:VerifyBatch19?19:VerifyBatch18?18:VerifyBatch17?17:VerifyBatch16?16:VerifyBatch15?15:VerifyBatch14?14:VerifyBatch13?13:VerifyBatch12?12:VerifyBatch11?11:VerifyBatch10?10:VerifyBatch9?9:VerifyBatch8?8:VerifyBatch7?7:VerifyBatch6?6:VerifyBatch5?5:VerifyBatch4?4:VerifyBatch3?3:2;
+                const TArray<FString> SpeciesNames=VerifyBatch32 ? TArray<FString>{TEXT("gray ooze"),TEXT("brown pudding"),TEXT("black pudding")} : VerifyBatch31 ? TArray<FString>{TEXT("blue jelly"),TEXT("spotted jelly"),TEXT("ochre jelly")} : VerifyBatch30 ? TArray<FString>{TEXT("acid blob"),TEXT("quivering blob"),TEXT("gelatinous cube")} : VerifyBatch29 ? TArray<FString>{TEXT("yeti"),TEXT("sasquatch"),TEXT("owlbear")} : VerifyBatch28 ? TArray<FString>{TEXT("monkey"),TEXT("ape"),TEXT("carnivorous ape")} : VerifyBatch27 ? TArray<FString>{TEXT("python"),TEXT("pit viper"),TEXT("cobra")} : VerifyBatch26 ? TArray<FString>{TEXT("garter snake"),TEXT("snake"),TEXT("water moccasin")} : VerifyBatch25 ? TArray<FString>{TEXT("gecko"),TEXT("iguana"),TEXT("lizard")} : VerifyBatch24
                     ? TArray<FString>{TEXT("cave spider"),TEXT("giant spider"),TEXT("scorpion")}
                     : VerifyBatch23
                     ? TArray<FString>{TEXT("killer bee"),TEXT("queen bee"),TEXT("xan")}
@@ -414,7 +451,7 @@ void ADungeonPrototype::TickLiveGame()
                         const FString Expected=FString(TEXT("/Game/CreatureInterpretations/Meshes/SM_"))+Name.Replace(TEXT(" "),TEXT("_")).Replace(TEXT("-"),TEXT("_")).ToLower()
                             +((Female && ((VerifyBatch15 && (Name==TEXT("gnomish wizard") || Name==TEXT("gnome zombie"))) || (VerifyBatch22 && (Name==TEXT("soldier ant") || Name==TEXT("fire ant")))))?TEXT("_female"):TEXT(""));
                         Passed &= Figure && Figure->GetStaticMesh() && Figure->GetStaticMesh()->GetPathName().StartsWith(Expected+TEXT("."));
-                        if((VerifyBatch27 || VerifyBatch26 || VerifyBatch25 || VerifyBatch24 || VerifyBatch23 || VerifyBatch22 || VerifyBatch21 || VerifyBatch20 || VerifyBatch19 || VerifyBatch18 || VerifyBatch17 || VerifyBatch16 || VerifyBatch15 || VerifyBatch14 || VerifyBatch13) && Figure && Figure->GetStaticMesh())
+                        if((VerifyBatch32 || VerifyBatch31 || VerifyBatch30 || VerifyBatch29 || VerifyBatch28 || VerifyBatch27 || VerifyBatch26 || VerifyBatch25 || VerifyBatch24 || VerifyBatch23 || VerifyBatch22 || VerifyBatch21 || VerifyBatch20 || VerifyBatch19 || VerifyBatch18 || VerifyBatch17 || VerifyBatch16 || VerifyBatch15 || VerifyBatch14 || VerifyBatch13) && Figure && Figure->GetStaticMesh())
                         {
                             const auto* Data=Figure->GetStaticMesh()->GetRenderData();
                             bool PaintValid=Data && Data->LODResources.Num()>0;
@@ -422,7 +459,7 @@ void ADungeonPrototype::TickLiveGame()
                             Passed &= PaintValid;
                             UE_LOG(LogTemp,Display,TEXT("CREATURE_BATCH%d_PAINT %s valid=%d"),BatchNumber,*Name,PaintValid);
                         }
-                        if(((VerifyBatch23 && Name!=TEXT("xan")) || VerifyBatch5 || VerifyBatch6 || VerifyBatch7 || VerifyBatch8 || VerifyBatch9 || VerifyBatch10 || VerifyBatch11 || VerifyBatch12) && Figure && Figure->GetStaticMesh())
+                        if((VerifyBatch29 || VerifyBatch28 || (VerifyBatch23 && Name!=TEXT("xan")) || VerifyBatch5 || VerifyBatch6 || VerifyBatch7 || VerifyBatch8 || VerifyBatch9 || VerifyBatch10 || VerifyBatch11 || VerifyBatch12) && Figure && Figure->GetStaticMesh())
                         {
                             UStaticMesh* Mesh=Figure->GetStaticMesh();
                             const auto* Data=Mesh->GetRenderData();
@@ -454,9 +491,9 @@ void ADungeonPrototype::TickLiveGame()
                             ? Figure && Figure->GetStaticMesh() && Figure->GetStaticMesh()->GetPathName().StartsWith(Package+TEXT("."))
                             : Figure==nullptr;
                     }
-                if(VerifyBatch27 || VerifyBatch26 || VerifyBatch25 || VerifyBatch24 || VerifyBatch23 || VerifyBatch22 || VerifyBatch21 || VerifyBatch20 || VerifyBatch19 || VerifyBatch18 || VerifyBatch17 || VerifyBatch16 || VerifyBatch15 || VerifyBatch14)
+                if(VerifyBatch32 || VerifyBatch31 || VerifyBatch30 || VerifyBatch29 || VerifyBatch28 || VerifyBatch27 || VerifyBatch26 || VerifyBatch25 || VerifyBatch24 || VerifyBatch23 || VerifyBatch22 || VerifyBatch21 || VerifyBatch20 || VerifyBatch19 || VerifyBatch18 || VerifyBatch17 || VerifyBatch16 || VerifyBatch15 || VerifyBatch14)
                 {
-                    const TArray<int32> TileIndices=VerifyBatch27?TArray<int32>{444,446,448}:VerifyBatch26?TArray<int32>{438,440,442}:VerifyBatch25?TArray<int32>{660,662,666}:VerifyBatch24?TArray<int32>{192,196,198}:VerifyBatch23?TArray<int32>{2,10,238}:VerifyBatch22?TArray<int32>{4,6,8}:VerifyBatch21?TArray<int32>{388,494}:VerifyBatch20?TArray<int32>{154,156,158}:VerifyBatch19?TArray<int32>{58,658,324}:VerifyBatch18?TArray<int32>{146,150,152}:VerifyBatch17?TArray<int32>{390,496}:VerifyBatch16?TArray<int32>{92,96,98}:VerifyBatch15?TArray<int32>{342,386,492}:TArray<int32>{128,384,490};
+                    const TArray<int32> TileIndices=VerifyBatch32?TArray<int32>{422,424,428}:VerifyBatch31?TArray<int32>{116,118,120}:VerifyBatch30?TArray<int32>{12,14,16}:VerifyBatch29?TArray<int32>{484,488,482}:VerifyBatch28?TArray<int32>{478,480,486}:VerifyBatch27?TArray<int32>{444,446,448}:VerifyBatch26?TArray<int32>{438,440,442}:VerifyBatch25?TArray<int32>{660,662,666}:VerifyBatch24?TArray<int32>{192,196,198}:VerifyBatch23?TArray<int32>{2,10,238}:VerifyBatch22?TArray<int32>{4,6,8}:VerifyBatch21?TArray<int32>{388,494}:VerifyBatch20?TArray<int32>{154,156,158}:VerifyBatch19?TArray<int32>{58,658,324}:VerifyBatch18?TArray<int32>{146,150,152}:VerifyBatch17?TArray<int32>{390,496}:VerifyBatch16?TArray<int32>{92,96,98}:VerifyBatch15?TArray<int32>{342,386,492}:TArray<int32>{128,384,490};
                     for(int32 I=0;I<SpeciesNames.Num();++I) for(bool Female:{false,true})
                     {
                         FNetHackCell Probe;Probe.Kind=TEXT("monster");Probe.Visible=true;
@@ -524,6 +561,14 @@ void ADungeonPrototype::TickLiveGame()
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyTileFallback"))) VerifyTileFallback();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyObjectBatch1"))) VerifyObjectBatch1();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyObjectPlacement"))) VerifyObjectPlacement();
+            if(FParse::Param(FCommandLine::Get(),TEXT("VerifyAppearanceBatch1"))) VerifyAppearanceBatch1();
+            if(FParse::Param(FCommandLine::Get(),TEXT("VerifyAppearanceBatch2"))) VerifyAppearanceBatch2();
+            if(FParse::Param(FCommandLine::Get(),TEXT("VerifyWeaponBatch4"))) VerifyWeaponBatch4();
+            if(FParse::Param(FCommandLine::Get(),TEXT("VerifySnickersnee"))) VerifySnickersnee();
+            if(FParse::Param(FCommandLine::Get(),TEXT("VerifySokoban"))) VerifySokoban();
+            if(FParse::Param(FCommandLine::Get(),TEXT("VerifyOracle"))) VerifyOracleSanctuary();
+            if(FParse::Param(FCommandLine::Get(),TEXT("VerifyOracleCreature"))) VerifyOracleCreature();
+            if(FParse::Param(FCommandLine::Get(),TEXT("VerifyStatues"))) VerifyStatues();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifyTopmost"))) VerifyTopmostPresentation();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifySpecialBatch1"))) VerifySpecialBatch1();
             if(FParse::Param(FCommandLine::Get(),TEXT("VerifySpecialBatch2"))) VerifySpecialBatch2();
@@ -544,19 +589,31 @@ void ADungeonPrototype::TickLiveGame()
             if(FParse::Param(FCommandLine::Get(),TEXT("CaptureZoom")))
             {
                 ResetOverview();
-                AdjustZoom((FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch3")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch4")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch5")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch6")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch7")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch8")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch9")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch10")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch11")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch12")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch13")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch14")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch27")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch26")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch25")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch24")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch23")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch22")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch21")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch20")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch19")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch18")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch17")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch16")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch15")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewStairs")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewDoorFrames")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewSpecialBatch2")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewSpecialBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewObjectBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewObjectPlacement")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewTopmost")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewTileFallback")))?12.f:6.f);
+                AdjustZoom((FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch3")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch4")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch5")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch6")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch7")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch8")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch9")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch10")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch11")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch12")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch13")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch14")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch32")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch31")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch30")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch29")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch28")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch27")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch26")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch25")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch24")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch23")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch22")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch21")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch20")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch19")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch18")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch17")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch16")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewCreatureBatch15")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewStairs")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewDoorFrames")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewSpecialBatch2")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewSpecialBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewObjectBatch1")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewObjectPlacement")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewTopmost")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewTileFallback")))?12.f:6.f);
             }
-            if(FParse::Param(FCommandLine::Get(),TEXT("PreviewWeaponBatch2")))
+            if(FParse::Param(FCommandLine::Get(),TEXT("PreviewWeaponBatch2")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewWeaponBatch3")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewToolBatch1")))
             {
                 FVector Center=FVector::ZeroVector;int32 Count=0;
-                for(const TCHAR* Key:{TEXT("dagger"),TEXT("short_sword"),TEXT("spear")})
+                for(const TCHAR* Key:FParse::Param(FCommandLine::Get(),TEXT("PreviewToolBatch1"))?TArray<const TCHAR*>{TEXT("pick_axe"),TEXT("grappling_hook"),TEXT("stethoscope")}:FParse::Param(FCommandLine::Get(),TEXT("PreviewWeaponBatch3"))?TArray<const TCHAR*>{TEXT("axe"),TEXT("mace"),TEXT("war_hammer")}:TArray<const TCHAR*>{TEXT("dagger"),TEXT("short_sword"),TEXT("spear")})
                     if(auto* Batch=LiveBatches.Find(FName(*(FString(TEXT("Object_"))+Key))))
                         for(int32 I=0;I<(*Batch)->GetInstanceCount();++I) {
                             FTransform Pose;(*Batch)->GetInstanceTransform(I,Pose,true);
                             Center+=Pose.GetLocation();++Count;
                         }
-                if(Count>0) {FollowHero=false;CameraFocus=Center/Count;FitCamera();}
+                if(Count>0) {
+                    FollowHero=false;CameraFocus=Center/Count;
+                    // A legal steeper orbit exposes flat loot near room walls in this capture.
+                    if(FParse::Param(FCommandLine::Get(),TEXT("PreviewWeaponBatch3")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewToolBatch1"))) OverviewOrbitOffset.Pitch=-22.f;
+                    FitCamera();
+                }
             }
+            if(FParse::Param(FCommandLine::Get(),TEXT("VerifyOracle"))) {
+                FollowHero=false;CameraFocus=CellPosition(Session->OracleCenter.X,Session->OracleCenter.Y);
+                ZoomFactor=4.f;OverviewOrbitOffset.Pitch=-12.f;FitCamera();
+            }
+            if(FParse::Param(FCommandLine::Get(),TEXT("PreviewAppearanceBatch1")) || (FParse::Param(FCommandLine::Get(),TEXT("PreviewAppearanceBatch2")) || FParse::Param(FCommandLine::Get(),TEXT("PreviewWeaponBatch4")))) { ZoomFactor=8.f;OverviewOrbitOffset.Pitch=-22.f;FitCamera(); }
+            if(FParse::Param(FCommandLine::Get(),TEXT("PreviewSnickersnee"))) { ZoomFactor=8.f;OverviewOrbitOffset.Pitch=10.f;FitCamera(); }
+            if(FParse::Param(FCommandLine::Get(),TEXT("VerifySokoban")))FrameSokobanCapture();
             // Let the updated meshes render before capturing.
             FTimerHandle Handle;
             GetWorldTimerManager().SetTimer(Handle,this,&ADungeonPrototype::CaptureAndValidate,2.f,false);
@@ -616,19 +673,19 @@ bool ADungeonPrototype::HandleLiveKey(FKey Key,bool Control)
         UE_LOG(LogTemp,Display,TEXT("CREATURE_STYLE %s turn=%d"),SculptedCreatures?TEXT("sculpted candidates"):TEXT("default tile volumes"),Session?Session->Turn:0);
         return true;
     }
-    if(Control && Key==EKeys::F) { ToggleFirstPerson(); return true; }
+    if(Key==EKeys::Home || (Control && Key==EKeys::F)) { ToggleFirstPerson(); return true; }
     if(Key==EKeys::F5) { ResetOverview(); return true; }
     if(Key==EKeys::F6) { ToggleLevelOverview(); return true; }
     if(Key==EKeys::F8) { FollowHero=true; FitCamera(); return true; }
-    if(Key==EKeys::MouseScrollUp || Key==EKeys::MouseScrollDown)
+    if(Key==EKeys::MouseScrollUp || Key==EKeys::MouseScrollDown || Key==EKeys::PageUp || Key==EKeys::PageDown)
     {
-        if(MenuOpen) Session->Scroll(Key==EKeys::MouseScrollUp?-Session->MenuPageSize:Session->MenuPageSize);
-        else AdjustZoom(Key==EKeys::MouseScrollUp?1.f:-1.f);
+        const bool ZoomIn=Key==EKeys::MouseScrollUp || Key==EKeys::PageUp;
+        if(MenuOpen) Session->Scroll(ZoomIn?-Session->MenuPageSize:Session->MenuPageSize);
+        else AdjustZoom(ZoomIn?1.f:-1.f);
         return true;
     }
     if(!Session) return false;
     SuppressedNumpadCharacter=0;
-    if(MenuOpen && (Key==EKeys::PageDown || Key==EKeys::PageUp)) { Session->Scroll(Key==EKeys::PageDown?Session->MenuPageSize:-Session->MenuPageSize); return true; }
     if(MenuOpen && (Key==EKeys::Up || Key==EKeys::Down)) { Session->Scroll(Key==EKeys::Down?1:-1); return true; }
     int32 C=0;
     const FString Name=Key.GetFName().ToString();
@@ -643,10 +700,10 @@ bool ADungeonPrototype::HandleLiveKey(FKey Key,bool Control)
     else if(Key==EKeys::Down || Key==EKeys::NumPadTwo) C='j';
     else if(Key==EKeys::Up || Key==EKeys::NumPadEight) C='k';
     else if(Key==EKeys::Right || Key==EKeys::NumPadSix) C='l';
-    else if(Key==EKeys::Home || Key==EKeys::NumPadSeven) C='y';
-    else if(Key==EKeys::NumPadNine || Key==EKeys::PageUp) C='u';
+    else if(Key==EKeys::NumPadSeven) C='y';
+    else if(Key==EKeys::NumPadNine) C='u';
     else if(Key==EKeys::End || Key==EKeys::NumPadOne) C='b';
-    else if(Key==EKeys::NumPadThree || Key==EKeys::PageDown) C='n';
+    else if(Key==EKeys::NumPadThree) C='n';
     else if(Key==EKeys::NumPadFive || Key==EKeys::Decimal) C='.';
     const FKey PadKeys[]={EKeys::NumPadZero,EKeys::NumPadOne,EKeys::NumPadTwo,EKeys::NumPadThree,EKeys::NumPadFour,EKeys::NumPadFive,EKeys::NumPadSix,EKeys::NumPadSeven,EKeys::NumPadEight,EKeys::NumPadNine};
     for(int32 I=0;I<10;++I) if(Key==PadKeys[I]) SuppressedNumpadCharacter=TCHAR('0'+I);
@@ -720,7 +777,7 @@ void ADungeonPrototypeHUD::DrawLiveHUD(FNetHackSession& Live)
     DrawText(TEXT("THE DUNGEONS OF DOOM"),Muted,49*S,53*S,GEngine->GetSmallFont(),.9f*S);
     DrawText(Live.IsReady()?FString::Printf(TEXT("DLVL %d  /  TURN %d"),Live.Depth,Live.Turn):TEXT("A NEW ADVENTURE"),Gold,W-290*S,31*S,GEngine->GetSmallFont(),S);
     if(auto* View=Cast<ADungeonPrototype>(GetOwningPlayerController()->GetViewTarget()))
-        DrawText(View->IsFirstPerson()?TEXT("FIRST PERSON  |  Esc / Ctrl+F Return  |  Right-drag Look"):FString::Printf(TEXT("%.1fx | F5 Reset | F6 %s | F8 Follow | Ctrl+F Eye"),View->GetZoomFactor(),View->IsLevelOverview()?TEXT("Back"):TEXT("Level")),Muted,W-460*S,54*S,GEngine->GetSmallFont(),.85f*S);
+        DrawText(View->IsFirstPerson()?TEXT("FIRST PERSON  |  Esc / Home Return  |  Right-drag Look"):FString::Printf(TEXT("%.1fx | F5 Reset | F6 %s | F8 Follow | Home Eye"),View->GetZoomFactor(),View->IsLevelOverview()?TEXT("Back"):TEXT("Level")),Muted,W-460*S,54*S,GEngine->GetSmallFont(),.85f*S);
     DrawLiveFooter(Live);
 
     // Labels remain readable when a tall foreground wall obscures a small token.

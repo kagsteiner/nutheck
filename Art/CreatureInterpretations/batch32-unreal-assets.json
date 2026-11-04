@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "meshes": {
+    "gray_ooze": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_gray_ooze.SM_gray_ooze",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "ooze_slate",
+          "material": "/Game/CreatureInterpretations/M_Gel.M_Gel"
+        }
+      ]
+    },
+    "brown_pudding": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_brown_pudding.SM_brown_pudding",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "pudding_brown",
+          "material": "/Game/CreatureInterpretations/M_Gel.M_Gel"
+        },
+        {
+          "source": "pudding_eye_pale",
+          "material": "/Game/CreatureInterpretations/M_Gel.M_Gel"
+        },
+        {
+          "source": "pudding_eye_dark",
+          "material": "/Game/CreatureInterpretations/M_Gel.M_Gel"
+        }
+      ]
+    },
+    "black_pudding": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_black_pudding.SM_black_pudding",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "pudding_black",
+          "material": "/Game/CreatureInterpretations/M_Gel.M_Gel"
+        },
+        {
+          "source": "pudding_eye_hot",
+          "material": "/Game/CreatureInterpretations/M_Gel.M_Gel"
+        }
+      ]
+    }
+  }
+}

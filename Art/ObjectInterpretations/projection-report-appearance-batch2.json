@@ -1,0 +1,146 @@
+[
+  {
+    "key": "sapphire_ring",
+    "comparison": "Actual 16x16 physical-appearance readability; no official-tile fidelity score",
+    "bounds_m": [
+      [
+        -0.013399999588727951,
+        -0.008750000037252903,
+        0.0
+      ],
+      [
+        0.013399999588727951,
+        0.008750000037252903,
+        0.03540535643696785
+      ]
+    ],
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "file": "sapphire_ring-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "file": "sapphire_ring-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "file": "sapphire_ring-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "file": "sapphire_ring-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "file": "sapphire_ring-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "file": "sapphire_ring-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "triangular_amulet",
+    "comparison": "Actual 16x16 physical-appearance readability; no official-tile fidelity score",
+    "bounds_m": [
+      [
+        -0.031210456043481827,
+        -0.0036499996203929186,
+        0.0
+      ],
+      [
+        0.031210456043481827,
+        0.003649999387562275,
+        0.1300821453332901
+      ]
+    ],
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "file": "triangular_amulet-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "file": "triangular_amulet-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "file": "triangular_amulet-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "file": "triangular_amulet-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "file": "triangular_amulet-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "file": "triangular_amulet-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "silver_wand",
+    "comparison": "Actual 16x16 physical-appearance readability; no official-tile fidelity score",
+    "bounds_m": [
+      [
+        -0.011620000004768372,
+        -0.011620000004768372,
+        0.0
+      ],
+      [
+        0.011620000004768372,
+        0.011620000004768372,
+        0.3815000057220459
+      ]
+    ],
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "file": "silver_wand-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "file": "silver_wand-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "file": "silver_wand-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "file": "silver_wand-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "file": "silver_wand-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "file": "silver_wand-pixel--65-45.png"
+      }
+    ]
+  }
+]

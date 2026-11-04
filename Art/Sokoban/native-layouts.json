@@ -1,0 +1,468 @@
+{
+  "status": "PASS",
+  "layouts": {
+    "soko4-2": {
+      "variant": "soko4-2",
+      "stage": 1,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\ba7495a87289478d8601b151c23ae32f",
+      "boulders": 11,
+      "known_traps": 10,
+      "hero": [
+        36,
+        12
+      ]
+    },
+    "soko3-2": {
+      "variant": "soko3-2",
+      "stage": 2,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\820414e641134f91bbf02df14c6af6ae",
+      "boulders": 16,
+      "known_traps": 12,
+      "hero": [
+        48,
+        17
+      ]
+    },
+    "soko2-2": {
+      "variant": "soko2-2",
+      "stage": 3,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\6808c25a7ac74f20b6852a0a0192b419",
+      "boulders": 16,
+      "known_traps": 11,
+      "hero": [
+        31,
+        9
+      ]
+    },
+    "soko1-1": {
+      "variant": "soko1-1",
+      "stage": 4,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\6808c25a7ac74f20b6852a0a0192b419",
+      "boulders": 18,
+      "known_traps": 16,
+      "hero": [
+        30,
+        15
+      ]
+    },
+    "soko2-1": {
+      "variant": "soko2-1",
+      "stage": 3,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\ba7495a87289478d8601b151c23ae32f",
+      "boulders": 12,
+      "known_traps": 10,
+      "hero": [
+        38,
+        8
+      ]
+    },
+    "soko1-2": {
+      "variant": "soko1-2",
+      "stage": 4,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\ba7495a87289478d8601b151c23ae32f",
+      "boulders": 20,
+      "known_traps": 18,
+      "hero": [
+        34,
+        15
+      ]
+    },
+    "soko4-1": {
+      "variant": "soko4-1",
+      "stage": 1,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\6808c25a7ac74f20b6852a0a0192b419",
+      "boulders": 10,
+      "known_traps": 9,
+      "hero": [
+        44,
+        9
+      ]
+    },
+    "soko3-1": {
+      "variant": "soko3-1",
+      "stage": 2,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\ba7495a87289478d8601b151c23ae32f",
+      "boulders": 20,
+      "known_traps": 15,
+      "hero": [
+        49,
+        11
+      ]
+    }
+  },
+  "visits": [
+    {
+      "variant": "soko4-2",
+      "stage": 1,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\557156fe81e4481a8daa14e063053946",
+      "boulders": 11,
+      "known_traps": 10,
+      "hero": [
+        37,
+        10
+      ]
+    },
+    {
+      "variant": "soko4-2",
+      "stage": 1,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\2745230b4c8947b281e4410df9933889",
+      "boulders": 12,
+      "known_traps": 10,
+      "hero": [
+        40,
+        13
+      ]
+    },
+    {
+      "variant": "soko3-2",
+      "stage": 2,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\2745230b4c8947b281e4410df9933889",
+      "boulders": 16,
+      "known_traps": 12,
+      "hero": [
+        43,
+        16
+      ]
+    },
+    {
+      "variant": "soko2-2",
+      "stage": 3,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\2745230b4c8947b281e4410df9933889",
+      "boulders": 16,
+      "known_traps": 11,
+      "hero": [
+        34,
+        9
+      ]
+    },
+    {
+      "variant": "soko1-1",
+      "stage": 4,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\2745230b4c8947b281e4410df9933889",
+      "boulders": 18,
+      "known_traps": 16,
+      "hero": [
+        49,
+        12
+      ]
+    },
+    {
+      "variant": "soko4-2",
+      "stage": 1,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\4cf4310d4fe34d849e348685a414914c",
+      "boulders": 12,
+      "known_traps": 10,
+      "hero": [
+        36,
+        9
+      ]
+    },
+    {
+      "variant": "soko3-2",
+      "stage": 2,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\4cf4310d4fe34d849e348685a414914c",
+      "boulders": 15,
+      "known_traps": 12,
+      "hero": [
+        29,
+        13
+      ]
+    },
+    {
+      "variant": "soko2-1",
+      "stage": 3,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\4cf4310d4fe34d849e348685a414914c",
+      "boulders": 13,
+      "known_traps": 10,
+      "hero": [
+        46,
+        9
+      ]
+    },
+    {
+      "variant": "soko1-2",
+      "stage": 4,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\4cf4310d4fe34d849e348685a414914c",
+      "boulders": 20,
+      "known_traps": 18,
+      "hero": [
+        38,
+        9
+      ]
+    },
+    {
+      "variant": "soko4-2",
+      "stage": 1,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\a95cd289d141431a802fdc7eb2688c0c",
+      "boulders": 12,
+      "known_traps": 10,
+      "hero": [
+        35,
+        7
+      ]
+    },
+    {
+      "variant": "soko3-2",
+      "stage": 2,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\a95cd289d141431a802fdc7eb2688c0c",
+      "boulders": 16,
+      "known_traps": 12,
+      "hero": [
+        42,
+        13
+      ]
+    },
+    {
+      "variant": "soko2-2",
+      "stage": 3,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\a95cd289d141431a802fdc7eb2688c0c",
+      "boulders": 16,
+      "known_traps": 11,
+      "hero": [
+        41,
+        11
+      ]
+    },
+    {
+      "variant": "soko1-1",
+      "stage": 4,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\a95cd289d141431a802fdc7eb2688c0c",
+      "boulders": 18,
+      "known_traps": 16,
+      "hero": [
+        47,
+        13
+      ]
+    },
+    {
+      "variant": "soko4-2",
+      "stage": 1,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\ce0dfa6f15cf43a1b92153f797c08245",
+      "boulders": 12,
+      "known_traps": 10,
+      "hero": [
+        38,
+        6
+      ]
+    },
+    {
+      "variant": "soko3-2",
+      "stage": 2,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\ce0dfa6f15cf43a1b92153f797c08245",
+      "boulders": 16,
+      "known_traps": 12,
+      "hero": [
+        29,
+        16
+      ]
+    },
+    {
+      "variant": "soko2-1",
+      "stage": 3,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\ce0dfa6f15cf43a1b92153f797c08245",
+      "boulders": 13,
+      "known_traps": 10,
+      "hero": [
+        48,
+        11
+      ]
+    },
+    {
+      "variant": "soko1-2",
+      "stage": 4,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\ce0dfa6f15cf43a1b92153f797c08245",
+      "boulders": 20,
+      "known_traps": 18,
+      "hero": [
+        28,
+        8
+      ]
+    },
+    {
+      "variant": "soko4-2",
+      "stage": 1,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\61e0781ca2ce4171b21b77db235d5596",
+      "boulders": 12,
+      "known_traps": 10,
+      "hero": [
+        43,
+        9
+      ]
+    },
+    {
+      "variant": "soko3-2",
+      "stage": 2,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\61e0781ca2ce4171b21b77db235d5596",
+      "boulders": 16,
+      "known_traps": 12,
+      "hero": [
+        29,
+        14
+      ]
+    },
+    {
+      "variant": "soko2-2",
+      "stage": 3,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\61e0781ca2ce4171b21b77db235d5596",
+      "boulders": 15,
+      "known_traps": 11,
+      "hero": [
+        31,
+        10
+      ]
+    },
+    {
+      "variant": "soko1-1",
+      "stage": 4,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\61e0781ca2ce4171b21b77db235d5596",
+      "boulders": 18,
+      "known_traps": 16,
+      "hero": [
+        45,
+        13
+      ]
+    },
+    {
+      "variant": "soko4-1",
+      "stage": 1,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\6808c25a7ac74f20b6852a0a0192b419",
+      "boulders": 10,
+      "known_traps": 9,
+      "hero": [
+        44,
+        9
+      ]
+    },
+    {
+      "variant": "soko3-2",
+      "stage": 2,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\6808c25a7ac74f20b6852a0a0192b419",
+      "boulders": 16,
+      "known_traps": 12,
+      "hero": [
+        45,
+        7
+      ]
+    },
+    {
+      "variant": "soko2-2",
+      "stage": 3,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\6808c25a7ac74f20b6852a0a0192b419",
+      "boulders": 16,
+      "known_traps": 11,
+      "hero": [
+        31,
+        9
+      ]
+    },
+    {
+      "variant": "soko1-1",
+      "stage": 4,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\6808c25a7ac74f20b6852a0a0192b419",
+      "boulders": 18,
+      "known_traps": 16,
+      "hero": [
+        30,
+        15
+      ]
+    },
+    {
+      "variant": "soko4-2",
+      "stage": 1,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\820414e641134f91bbf02df14c6af6ae",
+      "boulders": 12,
+      "known_traps": 10,
+      "hero": [
+        43,
+        8
+      ]
+    },
+    {
+      "variant": "soko3-2",
+      "stage": 2,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\820414e641134f91bbf02df14c6af6ae",
+      "boulders": 16,
+      "known_traps": 12,
+      "hero": [
+        48,
+        17
+      ]
+    },
+    {
+      "variant": "soko2-1",
+      "stage": 3,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\820414e641134f91bbf02df14c6af6ae",
+      "boulders": 13,
+      "known_traps": 10,
+      "hero": [
+        42,
+        10
+      ]
+    },
+    {
+      "variant": "soko1-2",
+      "stage": 4,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\820414e641134f91bbf02df14c6af6ae",
+      "boulders": 20,
+      "known_traps": 18,
+      "hero": [
+        29,
+        8
+      ]
+    },
+    {
+      "variant": "soko4-2",
+      "stage": 1,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\ba7495a87289478d8601b151c23ae32f",
+      "boulders": 11,
+      "known_traps": 10,
+      "hero": [
+        36,
+        12
+      ]
+    },
+    {
+      "variant": "soko3-1",
+      "stage": 2,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\ba7495a87289478d8601b151c23ae32f",
+      "boulders": 20,
+      "known_traps": 15,
+      "hero": [
+        49,
+        11
+      ]
+    },
+    {
+      "variant": "soko2-1",
+      "stage": 3,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\ba7495a87289478d8601b151c23ae32f",
+      "boulders": 12,
+      "known_traps": 10,
+      "hero": [
+        38,
+        8
+      ]
+    },
+    {
+      "variant": "soko1-2",
+      "stage": 4,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\ba7495a87289478d8601b151c23ae32f",
+      "boulders": 20,
+      "known_traps": 18,
+      "hero": [
+        34,
+        15
+      ]
+    }
+  ],
+  "branch_restore_leave_return": true,
+  "capture": {
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\557156fe81e4481a8daa14e063053946",
+    "variant": "soko4-2",
+    "stage": 1,
+    "hero": [
+      37,
+      10
+    ]
+  }
+}

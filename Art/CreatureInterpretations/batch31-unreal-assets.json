@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "meshes": {
+    "blue_jelly": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_blue_jelly.SM_blue_jelly",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "blue_gel",
+          "material": "/Game/CreatureInterpretations/M_Gel.M_Gel"
+        }
+      ]
+    },
+    "spotted_jelly": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_spotted_jelly.SM_spotted_jelly",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "spotted_gel",
+          "material": "/Game/CreatureInterpretations/M_Gel.M_Gel"
+        }
+      ]
+    },
+    "ochre_jelly": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_ochre_jelly.SM_ochre_jelly",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "ochre_gel",
+          "material": "/Game/CreatureInterpretations/M_Gel.M_Gel"
+        }
+      ]
+    }
+  }
+}

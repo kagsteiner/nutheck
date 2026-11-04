@@ -1,0 +1,197 @@
+[
+  {
+    "key": "ruby_ring",
+    "mask_method": "palette_heuristic",
+    "excluded_shadow_pixels": [],
+    "excluded_shadow_palette": [
+      "A"
+    ],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.013199999928474426,
+        -0.009848718531429768,
+        0.0
+      ],
+      [
+        0.013199999928474426,
+        0.009848718531429768,
+        0.035731375217437744
+      ]
+    ],
+    "best_projection": {
+      "yaw": -115,
+      "elevation": 45,
+      "silhouette_iou": 0.4754,
+      "file": "ruby_ring-pixel--115-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.3433,
+        "file": "ruby_ring-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.4754,
+        "file": "ruby_ring-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.2208,
+        "file": "ruby_ring-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.2619,
+        "file": "ruby_ring-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.3284,
+        "file": "ruby_ring-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.45,
+        "file": "ruby_ring-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "spherical_amulet",
+    "mask_method": "palette_heuristic",
+    "excluded_shadow_pixels": [],
+    "excluded_shadow_palette": [
+      "A"
+    ],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.03018980845808983,
+        -0.015700001269578934,
+        0.0
+      ],
+      [
+        0.03018980845808983,
+        0.015700001269578934,
+        0.13125000894069672
+      ]
+    ],
+    "best_projection": {
+      "yaw": -115,
+      "elevation": 45,
+      "silhouette_iou": 0.4103,
+      "file": "spherical_amulet-pixel--115-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.2857,
+        "file": "spherical_amulet-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.4103,
+        "file": "spherical_amulet-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.2432,
+        "file": "spherical_amulet-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.4103,
+        "file": "spherical_amulet-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.2778,
+        "file": "spherical_amulet-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.3659,
+        "file": "spherical_amulet-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "oak_wand",
+    "mask_method": "palette_heuristic",
+    "excluded_shadow_pixels": [],
+    "excluded_shadow_palette": [
+      "A"
+    ],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.0142000000923872,
+        -0.0142000000923872,
+        0.0
+      ],
+      [
+        0.0142000000923872,
+        0.014199999161064625,
+        0.36800000071525574
+      ]
+    ],
+    "best_projection": {
+      "yaw": -115,
+      "elevation": 25,
+      "silhouette_iou": 0.0811,
+      "file": "oak_wand-pixel--115-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.0811,
+        "file": "oak_wand-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.0769,
+        "file": "oak_wand-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.0811,
+        "file": "oak_wand-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.0769,
+        "file": "oak_wand-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.0811,
+        "file": "oak_wand-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.0769,
+        "file": "oak_wand-pixel--65-45.png"
+      }
+    ]
+  }
+]

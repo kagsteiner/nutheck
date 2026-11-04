@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "meshes": {
+    "acid_blob": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_acid_blob.SM_acid_blob",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "acid_gel",
+          "material": "/Game/CreatureInterpretations/M_Gel.M_Gel"
+        }
+      ]
+    },
+    "quivering_blob": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_quivering_blob.SM_quivering_blob",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "quiver_gel",
+          "material": "/Game/CreatureInterpretations/M_Gel.M_Gel"
+        }
+      ]
+    },
+    "gelatinous_cube": {
+      "asset": "/Game/CreatureInterpretations/Meshes/SM_gelatinous_cube.SM_gelatinous_cube",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "cube_gel",
+          "material": "/Game/CreatureInterpretations/M_Gel.M_Gel"
+        }
+      ]
+    }
+  }
+}

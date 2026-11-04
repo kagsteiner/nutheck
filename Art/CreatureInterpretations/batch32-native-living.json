@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "forms": [
+    {
+      "name": "gray ooze",
+      "requested_female": false,
+      "displayed_female": false,
+      "glyph": 206,
+      "tile_index": 422,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\b6f0dbb908814732a4ceeeed8d55811b"
+    },
+    {
+      "name": "gray ooze",
+      "requested_female": true,
+      "displayed_female": false,
+      "glyph": 206,
+      "tile_index": 422,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\444e1d30d970499a89e7deab04953db8"
+    },
+    {
+      "name": "brown pudding",
+      "requested_female": false,
+      "displayed_female": false,
+      "glyph": 207,
+      "tile_index": 424,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\b14fe9d55714466db15964c81f5baa6a"
+    },
+    {
+      "name": "brown pudding",
+      "requested_female": true,
+      "displayed_female": false,
+      "glyph": 207,
+      "tile_index": 424,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\0352ccdce6544d00acef39291776aec9"
+    },
+    {
+      "name": "black pudding",
+      "requested_female": false,
+      "displayed_female": false,
+      "glyph": 209,
+      "tile_index": 428,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\13afcda4510344349b1ebc531dc571ed"
+    },
+    {
+      "name": "black pudding",
+      "requested_female": true,
+      "displayed_female": false,
+      "glyph": 209,
+      "tile_index": 428,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\f0cdb8602f9b4204a93ed2ead983773e"
+    }
+  ]
+}

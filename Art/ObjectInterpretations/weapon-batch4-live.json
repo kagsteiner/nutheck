@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "player_session_used": false,
+  "fixture": {
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\5b61dbf843cc4ab496def7f2b54331a8",
+    "hero": [
+      62,
+      16
+    ],
+    "items": [
+      {
+        "name": "silver saber",
+        "tile": 840,
+        "position": [
+          61,
+          15
+        ]
+      },
+      {
+        "name": "broadsword",
+        "tile": 841,
+        "position": [
+          63,
+          15
+        ]
+      },
+      {
+        "name": "two-handed sword",
+        "tile": 844,
+        "position": [
+          62,
+          17
+        ]
+      }
+    ],
+    "fixture": "native wished physical appearances; lighting controlled, monsters/traps disabled in isolated game"
+  },
+  "weapon_check": "WEAPON_BATCH4_CHECK PASS cases=12 covered_features=48 native_appearances=3 turn=11 sequence=2",
+  "checks": [
+    "WEAPON_BATCH4_CHECK PASS",
+    "OBJECT_PLACEMENT_CHECK PASS",
+    "TOPMOST_PRESENTATION_CHECK PASS",
+    "NETHACK_LIVE_CHECK PASS",
+    "DUNGEON_ZOOM_CHECK PASS",
+    "DEFAULT_TILES_CHECK PASS"
+  ]
+}

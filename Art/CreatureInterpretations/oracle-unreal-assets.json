@@ -1,0 +1,51 @@
+{
+  "asset": "/Game/CreatureInterpretations/Meshes/SM_oracle",
+  "vertex_colors": true,
+  "slots": [
+    {
+      "source": "oracle_cyan",
+      "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+    },
+    {
+      "source": "human_sclera",
+      "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+    },
+    {
+      "source": "glint",
+      "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+    },
+    {
+      "source": "human_brow",
+      "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+    },
+    {
+      "source": "oracle_white",
+      "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+    },
+    {
+      "source": "human_blue",
+      "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+    },
+    {
+      "source": "oracle_leaf_dark",
+      "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+    },
+    {
+      "source": "oracle_leaf",
+      "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+    },
+    {
+      "source": "human_skin",
+      "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+    },
+    {
+      "source": "oracle_lip",
+      "material": "/Game/CreatureInterpretations/M_Paint.M_Paint"
+    },
+    {
+      "source": "human_dark",
+      "material": "/Game/CreatureInterpretations/M_Eye.M_Eye"
+    }
+  ],
+  "status": "PASS"
+}

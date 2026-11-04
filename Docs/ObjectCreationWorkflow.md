@@ -10,9 +10,12 @@ stopping after a plan or a design-only draft.
 ## 1. Choose the batch and inspect existing work
 
 For “the next three weapons,” use an explicit user selection first, otherwise the
-next unbuilt group in the backlog's suggested queue. The current next group is
-**dagger (`DAGGER`), short sword (`SHORT_SWORD`), spear (`SPEAR`)**. Recheck that
-these are still unbuilt: unchecked means incomplete, not necessarily unmodelled.
+next unbuilt group in the backlog's suggested queue. Dagger, short sword and spear
+(WeaponBatch2), and axe, mace and ordinary war hammer (WeaponBatch3), are now
+modelled and MVP live verified. Recheck asset status: unchecked means incomplete,
+not necessarily unmodelled.
+Silver saber, broadsword and two-handed sword (WeaponBatch4) are also modelled
+and MVP live verified. Continue with a new unbuilt family when weapons are requested.
 Read their catalogue status, batch documents, scripts, FBX and Unreal assets before
 choosing. Finish existing work when requested; do not rebuild completed swords.
 If this group is already built, choose the next coherent group of three unbuilt
@@ -62,6 +65,18 @@ Before generation, save hashes of all existing canonical FBX exports in the art
 folders. Verify them afterward. Never reuse an old manifest's hard-coded asset
 count as the new baseline. Avoid editing shared helpers or material assets unless
 needed; if changed, verify affected existing assets as well.
+
+### Rings: establish the crown axis before modelling
+
+Follow the user's crown-orientation correction in `ObjectArtDirection.md`.
+With the shank in XZ and finger-hole axis Y, build the crown toward +Z: the gem
+looks upward from the band's outer top, with its table in XY. The crown/table
+normal must be perpendicular to the hole axis. Build the gallery and prongs to
+support that orientation; do not make a sideways pendant on a ring band.
+Assert that the gem's table is its upper +Z face and inspect a three-quarter
+view. Preserve crown-up orientation when choosing the runtime transform. The
+ruby ring uses a standing pose; the old blanket flat-jewelry pose is superseded
+for rings of this construction.
 
 ## 3. Export, inspect and visually review
 

@@ -1,0 +1,518 @@
+[
+  {
+    "key": "monkey",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        5,
+        11
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        7,
+        14
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        10,
+        6
+      ],
+      [
+        10,
+        7
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        13,
+        12
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.13101020455360413,
+        -0.19662247598171234,
+        0.0
+      ],
+      [
+        0.2280343770980835,
+        0.17084240913391113,
+        0.7128148078918457
+      ]
+    ],
+    "best_projection": {
+      "yaw": -180,
+      "elevation": 25,
+      "silhouette_iou": 0.7174,
+      "file": "monkey-pixel--180-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -180,
+        "elevation": 25,
+        "silhouette_iou": 0.7174,
+        "file": "monkey-pixel--180-25.png"
+      },
+      {
+        "yaw": -180,
+        "elevation": 45,
+        "silhouette_iou": 0.6596,
+        "file": "monkey-pixel--180-45.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 25,
+        "silhouette_iou": 0.4894,
+        "file": "monkey-pixel--155-25.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 45,
+        "silhouette_iou": 0.4894,
+        "file": "monkey-pixel--155-45.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 25,
+        "silhouette_iou": 0.4667,
+        "file": "monkey-pixel--125-25.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 45,
+        "silhouette_iou": 0.4167,
+        "file": "monkey-pixel--125-45.png"
+      }
+    ]
+  },
+  {
+    "key": "ape",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        12,
+        5
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        4
+      ],
+      [
+        13,
+        5
+      ],
+      [
+        13,
+        6
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        14,
+        4
+      ],
+      [
+        14,
+        5
+      ],
+      [
+        14,
+        6
+      ],
+      [
+        14,
+        7
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        14,
+        12
+      ],
+      [
+        14,
+        13
+      ],
+      [
+        15,
+        5
+      ],
+      [
+        15,
+        6
+      ],
+      [
+        15,
+        7
+      ],
+      [
+        15,
+        8
+      ],
+      [
+        15,
+        9
+      ],
+      [
+        15,
+        10
+      ],
+      [
+        15,
+        11
+      ],
+      [
+        15,
+        12
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.19117499887943268,
+        -0.32518529891967773,
+        0.0
+      ],
+      [
+        0.15434731543064117,
+        0.3251892626285553,
+        1.1584537029266357
+      ]
+    ],
+    "best_projection": {
+      "yaw": -180,
+      "elevation": 25,
+      "silhouette_iou": 0.5321,
+      "file": "ape-pixel--180-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -180,
+        "elevation": 25,
+        "silhouette_iou": 0.5321,
+        "file": "ape-pixel--180-25.png"
+      },
+      {
+        "yaw": -180,
+        "elevation": 45,
+        "silhouette_iou": 0.5315,
+        "file": "ape-pixel--180-45.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 25,
+        "silhouette_iou": 0.4587,
+        "file": "ape-pixel--155-25.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 45,
+        "silhouette_iou": 0.4182,
+        "file": "ape-pixel--155-45.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 25,
+        "silhouette_iou": 0.3211,
+        "file": "ape-pixel--125-25.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 45,
+        "silhouette_iou": 0.2752,
+        "file": "ape-pixel--125-45.png"
+      }
+    ]
+  },
+  {
+    "key": "carnivorous_ape",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        4,
+        13
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        12,
+        5
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        4
+      ],
+      [
+        13,
+        5
+      ],
+      [
+        13,
+        6
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        14,
+        4
+      ],
+      [
+        14,
+        5
+      ],
+      [
+        14,
+        6
+      ],
+      [
+        14,
+        7
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        14,
+        12
+      ],
+      [
+        14,
+        13
+      ],
+      [
+        15,
+        5
+      ],
+      [
+        15,
+        6
+      ],
+      [
+        15,
+        7
+      ],
+      [
+        15,
+        8
+      ],
+      [
+        15,
+        9
+      ],
+      [
+        15,
+        10
+      ],
+      [
+        15,
+        11
+      ],
+      [
+        15,
+        12
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.38180676102638245,
+        -0.42368942499160767,
+        0.0
+      ],
+      [
+        0.17163453996181488,
+        0.42365533113479614,
+        1.2873249053955078
+      ]
+    ],
+    "best_projection": {
+      "yaw": -180,
+      "elevation": 45,
+      "silhouette_iou": 0.5357,
+      "file": "carnivorous_ape-pixel--180-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -180,
+        "elevation": 25,
+        "silhouette_iou": 0.5,
+        "file": "carnivorous_ape-pixel--180-25.png"
+      },
+      {
+        "yaw": -180,
+        "elevation": 45,
+        "silhouette_iou": 0.5357,
+        "file": "carnivorous_ape-pixel--180-45.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 25,
+        "silhouette_iou": 0.3628,
+        "file": "carnivorous_ape-pixel--155-25.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 45,
+        "silhouette_iou": 0.3596,
+        "file": "carnivorous_ape-pixel--155-45.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 25,
+        "silhouette_iou": 0.2696,
+        "file": "carnivorous_ape-pixel--125-25.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 45,
+        "silhouette_iou": 0.2105,
+        "file": "carnivorous_ape-pixel--125-45.png"
+      }
+    ]
+  }
+]

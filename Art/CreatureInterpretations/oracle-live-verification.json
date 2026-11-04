@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "checks": [
+    "ORACLE_CREATURE_CHECK PASS",
+    "ORACLE_SANCTUARY_CHECK PASS",
+    "NETHACK_LIVE_CHECK PASS",
+    "DUNGEON_ZOOM_CHECK PASS",
+    "DEFAULT_TILES_CHECK PASS"
+  ],
+  "oracle_check": "ORACLE_CREATURE_CHECK PASS native=1 aliases=2 fallback=2 turn=6 sequence=2",
+  "capture": "Oracle-Unreal.png",
+  "fixture": {
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\abfea41f0c5f4d359710a1767a72832f",
+    "center": [
+      39,
+      11
+    ],
+    "hero": [
+      40,
+      12
+    ],
+    "depth": 7
+  },
+  "player_session_used": false
+}

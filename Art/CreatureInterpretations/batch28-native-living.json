@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "forms": [
+    {
+      "name": "monkey",
+      "female": false,
+      "glyph": 233,
+      "tile_index": 478,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\3b1e244a553a4c4d8abbaa4a072137de"
+    },
+    {
+      "name": "monkey",
+      "female": true,
+      "glyph": 616,
+      "tile_index": 479,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\328d4c97074849d9baca4005278c0538"
+    },
+    {
+      "name": "ape",
+      "female": false,
+      "glyph": 234,
+      "tile_index": 480,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\24207cbc54124a4ca9a4941595217703"
+    },
+    {
+      "name": "ape",
+      "female": true,
+      "glyph": 617,
+      "tile_index": 481,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\a4af7ba4e64d49d6be78df9fce78fc87"
+    },
+    {
+      "name": "carnivorous ape",
+      "female": false,
+      "glyph": 237,
+      "tile_index": 486,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\f3ba2a254a484373b10f02c06c1e97bc"
+    },
+    {
+      "name": "carnivorous ape",
+      "female": true,
+      "glyph": 620,
+      "tile_index": 487,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\6b5ad800ce694662895c9aea63af4e3f"
+    }
+  ]
+}

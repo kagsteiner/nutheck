@@ -31,12 +31,41 @@ def main():
             entry=next(r for r in data['objects'] if r['id']==key)
             assert entry['asset_status']=='MVP live placement verified; finishing and extended verification pending'
             assert entry['evidence']=='Docs/WeaponBatch2.md'
+        for key in ['AXE','MACE','WAR_HAMMER']:
+            entry=next(r for r in data['objects'] if r['id']==key)
+            assert entry['asset_status']=='MVP live placement verified; finishing and extended verification pending'
+            assert entry['evidence']=='Docs/WeaponBatch3.md'
+        for key in ['SILVER_SABER','BROADSWORD','TWO_HANDED_SWORD']:
+            entry=next(r for r in data['objects'] if r['id']==key)
+            assert entry['asset_status']=='MVP live placement verified; finishing and extended verification pending'
+            assert entry['evidence']=='Docs/WeaponBatch4.md' and entry['shuffle_group'] is None
+        for key in ['PICK_AXE','GRAPPLING_HOOK','STETHOSCOPE']:
+            entry=next(r for r in data['objects'] if r['id']==key)
+            assert entry['asset_status']=='MVP live placement verified; finishing and extended verification pending'
+            assert entry['evidence']=='Docs/ToolBatch1.md'
+        boulder=next(r for r in data['objects'] if r['id']=='BOULDER')
+        assert boulder['asset_status'].startswith('MVP live placement verified;') and boulder['evidence']=='Docs/Sokoban.md'
+        statue=next(r for r in data['objects'] if r['id']=='STATUE')
+        assert statue['asset_status'].startswith('Partial species coverage:') and statue['evidence']=='Docs/CentaursAndStatues.md'
         appearances=json.loads((c.OUT/'appearances.json').read_text(encoding='utf-8'))['appearances'];assert len(appearances)==463
         assert next(a for a in appearances if a['source_slot_id']=='POT_HEALING')['label']=='purple-red'
+        for slot,key in [('RIN_CONFLICT','ruby_ring'),('AMULET_OF_LIFE_SAVING','spherical_amulet'),('WAN_NOTHING','oak_wand')]:
+            appearance=next(a for a in appearances if a['source_slot_id']==slot)
+            assert appearance['asset_key']==key and appearance['evidence']=='Docs/AppearanceBatch1.md'
+            assert next(r for r in data['objects'] if r['id']==slot)['asset_status']=='not modelled'
+        for slot,key in [('RIN_AGGRAVATE_MONSTER','sapphire_ring'),('AMULET_OF_RESTFUL_SLEEP','triangular_amulet'),('WAN_POLYMORPH','silver_wand')]:
+            appearance=next(a for a in appearances if a['source_slot_id']==slot)
+            assert appearance['asset_key']==key and appearance['evidence']=='Docs/AppearanceBatch2.md'
+            effect=next(r for r in data['objects'] if r['id']==slot)
+            assert effect['asset_status']=='not modelled' and effect['appearance_evidence']=='Docs/AppearanceBatch2.md'
+
         assert next(r for r in data['objects'] if r['id']=='SPE_POLYMORPH')['official_tile']['file_local_index']==401
         assert next(r for r in data['objects'] if r['id']=='WAN_POLYMORPH')['official_tile']['file_local_index']==424
         art=json.loads((c.OUT/'artifacts.json').read_text())['artifacts'];assert sum(a['scope']=='normal' for a in art)==33
         assert next(a for a in art if a['id']=='ART_EXCALIBUR')['base_object_id']=='LONG_SWORD'
+        snickersnee=next(a for a in art if a['id']=='ART_SNICKERSNEE')
+        assert snickersnee['base_object_id']=='KATANA' and snickersnee['evidence']=='Docs/Snickersnee.md'
+        assert snickersnee['asset_key']=='snickersnee' and snickersnee['asset_status'].startswith('MVP live')
     c.OUT=old
     if '--cpp' in sys.argv:
         compiler=Path(sys.argv[sys.argv.index('--cpp')+1])

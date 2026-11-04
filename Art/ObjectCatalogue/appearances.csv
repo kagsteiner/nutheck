@@ -25,18 +25,18 @@ APPEARANCE_KNIFE,KNIFE,Weapons,Daggers and short blades,knife,,not modelled,
 APPEARANCE_STILETTO,STILETTO,Weapons,Daggers and short blades,stiletto,,not modelled,
 APPEARANCE_WORM_TOOTH,WORM_TOOTH,Weapons,Daggers and short blades,worm tooth,,not modelled,
 APPEARANCE_CRYSKNIFE,CRYSKNIFE,Weapons,Daggers and short blades,crysknife,,not modelled,
-APPEARANCE_AXE,AXE,Weapons,Axes and picks,axe,,not modelled,
+APPEARANCE_AXE,AXE,Weapons,Axes and picks,axe,,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch3.md
 APPEARANCE_BATTLE_AXE,BATTLE_AXE,Weapons,Axes and picks,double-headed axe,,not modelled,
 APPEARANCE_SHORT_SWORD,SHORT_SWORD,Weapons,Swords and long blades,short sword,,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch2.md
 APPEARANCE_ELVEN_SHORT_SWORD,ELVEN_SHORT_SWORD,Weapons,Swords and long blades,runed short sword,,not modelled,
 APPEARANCE_ORCISH_SHORT_SWORD,ORCISH_SHORT_SWORD,Weapons,Swords and long blades,crude short sword,,not modelled,
 APPEARANCE_DWARVISH_SHORT_SWORD,DWARVISH_SHORT_SWORD,Weapons,Swords and long blades,broad short sword,,not modelled,
 APPEARANCE_SCIMITAR,SCIMITAR,Weapons,Swords and long blades,curved sword,,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch1.md
-APPEARANCE_SILVER_SABER,SILVER_SABER,Weapons,Swords and long blades,silver saber,,not modelled,
-APPEARANCE_BROADSWORD,BROADSWORD,Weapons,Swords and long blades,broadsword,,not modelled,
+APPEARANCE_SILVER_SABER,SILVER_SABER,Weapons,Swords and long blades,silver saber,,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch4.md
+APPEARANCE_BROADSWORD,BROADSWORD,Weapons,Swords and long blades,broadsword,,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch4.md
 APPEARANCE_ELVEN_BROADSWORD,ELVEN_BROADSWORD,Weapons,Swords and long blades,runed broadsword,,not modelled,
 APPEARANCE_LONG_SWORD,LONG_SWORD,Weapons,Swords and long blades,long sword,,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch1.md
-APPEARANCE_TWO_HANDED_SWORD,TWO_HANDED_SWORD,Weapons,Swords and long blades,two-handed sword,,not modelled,
+APPEARANCE_TWO_HANDED_SWORD,TWO_HANDED_SWORD,Weapons,Swords and long blades,two-handed sword,,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch4.md
 APPEARANCE_KATANA,KATANA,Weapons,Swords and long blades,samurai sword,,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch1.md
 APPEARANCE_TSURUGI,TSURUGI,Weapons,Swords and long blades,long samurai sword,,not modelled,
 APPEARANCE_RUNESWORD,RUNESWORD,Weapons,Swords and long blades,runed broadsword,,not modelled,
@@ -54,10 +54,10 @@ APPEARANCE_LUCERN_HAMMER,LUCERN_HAMMER,Weapons,Polearms and thrusting weapons,pr
 APPEARANCE_BEC_DE_CORBIN,BEC_DE_CORBIN,Weapons,Polearms and thrusting weapons,beaked polearm,,not modelled,
 APPEARANCE_DWARVISH_MATTOCK,DWARVISH_MATTOCK,Weapons,Axes and picks,broad pick,,not modelled,
 APPEARANCE_LANCE,LANCE,Weapons,Polearms and thrusting weapons,lance,,not modelled,
-APPEARANCE_MACE,MACE,Weapons,"Clubs, hammers and staves",mace,,not modelled,
+APPEARANCE_MACE,MACE,Weapons,"Clubs, hammers and staves",mace,,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch3.md
 APPEARANCE_SILVER_MACE,SILVER_MACE,Weapons,"Clubs, hammers and staves",silver mace,,not modelled,
 APPEARANCE_MORNING_STAR,MORNING_STAR,Weapons,"Clubs, hammers and staves",morning star,,not modelled,
-APPEARANCE_WAR_HAMMER,WAR_HAMMER,Weapons,"Clubs, hammers and staves",war hammer,,not modelled,
+APPEARANCE_WAR_HAMMER,WAR_HAMMER,Weapons,"Clubs, hammers and staves",war hammer,,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch3.md
 APPEARANCE_CLUB,CLUB,Weapons,"Clubs, hammers and staves",club,,not modelled,
 APPEARANCE_RUBBER_HOSE,RUBBER_HOSE,Weapons,Flexible weapons,rubber hose,,not modelled,
 APPEARANCE_QUARTERSTAFF,QUARTERSTAFF,Weapons,"Clubs, hammers and staves",staff,,not modelled,
@@ -166,8 +166,8 @@ APPEARANCE_RIN_STEALTH,RIN_STEALTH,Rings,Bands and settings,jade,ring_appearance
 APPEARANCE_RIN_SUSTAIN_ABILITY,RIN_SUSTAIN_ABILITY,Rings,Bands and settings,bronze,ring_appearances,not modelled,
 APPEARANCE_RIN_LEVITATION,RIN_LEVITATION,Rings,Bands and settings,agate,ring_appearances,not modelled,
 APPEARANCE_RIN_HUNGER,RIN_HUNGER,Rings,Bands and settings,topaz,ring_appearances,not modelled,
-APPEARANCE_RIN_AGGRAVATE_MONSTER,RIN_AGGRAVATE_MONSTER,Rings,Bands and settings,sapphire,ring_appearances,not modelled,
-APPEARANCE_RIN_CONFLICT,RIN_CONFLICT,Rings,Bands and settings,ruby,ring_appearances,not modelled,
+APPEARANCE_RIN_AGGRAVATE_MONSTER,RIN_AGGRAVATE_MONSTER,Rings,Bands and settings,sapphire,ring_appearances,MVP shuffled physical appearance verified; finishing and full category coverage pending,Docs/AppearanceBatch2.md
+APPEARANCE_RIN_CONFLICT,RIN_CONFLICT,Rings,Bands and settings,ruby,ring_appearances,MVP shuffled physical appearance verified; finishing and full category coverage pending,Docs/AppearanceBatch1.md
 APPEARANCE_RIN_WARNING,RIN_WARNING,Rings,Bands and settings,diamond,ring_appearances,not modelled,
 APPEARANCE_RIN_POISON_RESISTANCE,RIN_POISON_RESISTANCE,Rings,Bands and settings,pearl,ring_appearances,not modelled,
 APPEARANCE_RIN_FIRE_RESISTANCE,RIN_FIRE_RESISTANCE,Rings,Bands and settings,iron,ring_appearances,not modelled,
@@ -183,9 +183,9 @@ APPEARANCE_RIN_INVISIBILITY,RIN_INVISIBILITY,Rings,Bands and settings,wire,ring_
 APPEARANCE_RIN_SEE_INVISIBLE,RIN_SEE_INVISIBLE,Rings,Bands and settings,engagement,ring_appearances,not modelled,
 APPEARANCE_RIN_PROTECTION_FROM_SHAPE_CHAN,RIN_PROTECTION_FROM_SHAPE_CHAN,Rings,Bands and settings,shiny,ring_appearances,not modelled,
 APPEARANCE_AMULET_OF_ESP,AMULET_OF_ESP,Amulets,Pendants,circular,amulet_appearances,not modelled,
-APPEARANCE_AMULET_OF_LIFE_SAVING,AMULET_OF_LIFE_SAVING,Amulets,Pendants,spherical,amulet_appearances,not modelled,
+APPEARANCE_AMULET_OF_LIFE_SAVING,AMULET_OF_LIFE_SAVING,Amulets,Pendants,spherical,amulet_appearances,MVP shuffled physical appearance verified; finishing and full category coverage pending,Docs/AppearanceBatch1.md
 APPEARANCE_AMULET_OF_STRANGULATION,AMULET_OF_STRANGULATION,Amulets,Pendants,oval,amulet_appearances,not modelled,
-APPEARANCE_AMULET_OF_RESTFUL_SLEEP,AMULET_OF_RESTFUL_SLEEP,Amulets,Pendants,triangular,amulet_appearances,not modelled,
+APPEARANCE_AMULET_OF_RESTFUL_SLEEP,AMULET_OF_RESTFUL_SLEEP,Amulets,Pendants,triangular,amulet_appearances,MVP shuffled physical appearance verified; finishing and full category coverage pending,Docs/AppearanceBatch2.md
 APPEARANCE_AMULET_VERSUS_POISON,AMULET_VERSUS_POISON,Amulets,Pendants,pyramidal,amulet_appearances,not modelled,
 APPEARANCE_AMULET_OF_CHANGE,AMULET_OF_CHANGE,Amulets,Pendants,square,amulet_appearances,not modelled,
 APPEARANCE_AMULET_OF_UNCHANGING,AMULET_OF_UNCHANGING,Amulets,Pendants,concave,amulet_appearances,not modelled,
@@ -218,7 +218,7 @@ APPEARANCE_BLINDFOLD,BLINDFOLD,Tools,Eyewear,blindfold,,not modelled,
 APPEARANCE_TOWEL,TOWEL,Tools,Eyewear,towel,,not modelled,
 APPEARANCE_SADDLE,SADDLE,Tools,Hand tools and equipment,saddle,,not modelled,
 APPEARANCE_LEASH,LEASH,Tools,Hand tools and equipment,leash,,not modelled,
-APPEARANCE_STETHOSCOPE,STETHOSCOPE,Tools,Hand tools and equipment,stethoscope,,not modelled,
+APPEARANCE_STETHOSCOPE,STETHOSCOPE,Tools,Hand tools and equipment,stethoscope,,MVP live placement verified; finishing and extended verification pending,Docs/ToolBatch1.md
 APPEARANCE_TINNING_KIT,TINNING_KIT,Tools,Hand tools and equipment,tinning kit,,not modelled,
 APPEARANCE_TIN_OPENER,TIN_OPENER,Tools,Special tools and devices,tin opener,,not modelled,
 APPEARANCE_CAN_OF_GREASE,CAN_OF_GREASE,Tools,Special tools and devices,can of grease,,not modelled,
@@ -240,8 +240,8 @@ APPEARANCE_BELL,BELL,Tools,Instruments and sound tools,bell,,not modelled,
 APPEARANCE_BUGLE,BUGLE,Tools,Instruments and sound tools,bugle,,not modelled,
 APPEARANCE_LEATHER_DRUM,LEATHER_DRUM,Tools,Instruments and sound tools,drum,,not modelled,
 APPEARANCE_DRUM_OF_EARTHQUAKE,DRUM_OF_EARTHQUAKE,Tools,Instruments and sound tools,drum,,not modelled,
-APPEARANCE_PICK_AXE,PICK_AXE,Tools,Axes and picks,pick-axe,,not modelled,
-APPEARANCE_GRAPPLING_HOOK,GRAPPLING_HOOK,Tools,Flexible weapons,grappling hook,,not modelled,
+APPEARANCE_PICK_AXE,PICK_AXE,Tools,Axes and picks,pick-axe,,MVP live placement verified; finishing and extended verification pending,Docs/ToolBatch1.md
+APPEARANCE_GRAPPLING_HOOK,GRAPPLING_HOOK,Tools,Flexible weapons,grappling hook,,MVP live placement verified; finishing and extended verification pending,Docs/ToolBatch1.md
 APPEARANCE_UNICORN_HORN,UNICORN_HORN,Tools,"Clubs, hammers and staves",unicorn horn,,not modelled,
 APPEARANCE_CANDELABRUM_OF_INVOCATION,CANDELABRUM_OF_INVOCATION,Tools,Special tools and devices,candelabrum,,not modelled,
 APPEARANCE_BELL_OF_OPENING,BELL_OF_OPENING,Tools,Special tools and devices,silver bell,,not modelled,
@@ -397,13 +397,13 @@ APPEARANCE_WAN_ENLIGHTENMENT,WAN_ENLIGHTENMENT,Wands,Rods and handles,crystal,wa
 APPEARANCE_WAN_CREATE_MONSTER,WAN_CREATE_MONSTER,Wands,Rods and handles,maple,wand_appearances,not modelled,
 APPEARANCE_WAN_WISHING,WAN_WISHING,Wands,Rods and handles,pine,wand_appearances,not modelled,
 APPEARANCE_WAN_STASIS,WAN_STASIS,Wands,Rods and handles,redwood,wand_appearances,not modelled,
-APPEARANCE_WAN_NOTHING,WAN_NOTHING,Wands,Rods and handles,oak,wand_appearances,not modelled,
+APPEARANCE_WAN_NOTHING,WAN_NOTHING,Wands,Rods and handles,oak,wand_appearances,MVP shuffled physical appearance verified; finishing and full category coverage pending,Docs/AppearanceBatch1.md
 APPEARANCE_WAN_STRIKING,WAN_STRIKING,Wands,Rods and handles,ebony,wand_appearances,not modelled,
 APPEARANCE_WAN_MAKE_INVISIBLE,WAN_MAKE_INVISIBLE,Wands,Rods and handles,marble,wand_appearances,not modelled,
 APPEARANCE_WAN_SLOW_MONSTER,WAN_SLOW_MONSTER,Wands,Rods and handles,tin,wand_appearances,not modelled,
 APPEARANCE_WAN_SPEED_MONSTER,WAN_SPEED_MONSTER,Wands,Rods and handles,brass,wand_appearances,not modelled,
 APPEARANCE_WAN_UNDEAD_TURNING,WAN_UNDEAD_TURNING,Wands,Rods and handles,copper,wand_appearances,not modelled,
-APPEARANCE_WAN_POLYMORPH,WAN_POLYMORPH,Wands,Rods and handles,silver,wand_appearances,not modelled,
+APPEARANCE_WAN_POLYMORPH,WAN_POLYMORPH,Wands,Rods and handles,silver,wand_appearances,MVP shuffled physical appearance verified; finishing and full category coverage pending,Docs/AppearanceBatch2.md
 APPEARANCE_WAN_CANCELLATION,WAN_CANCELLATION,Wands,Rods and handles,platinum,wand_appearances,not modelled,
 APPEARANCE_WAN_TELEPORTATION,WAN_TELEPORTATION,Wands,Rods and handles,iridium,wand_appearances,not modelled,
 APPEARANCE_WAN_OPENING,WAN_OPENING,Wands,Rods and handles,zinc,wand_appearances,not modelled,
@@ -456,8 +456,8 @@ APPEARANCE_LOADSTONE,LOADSTONE,Gems and stones,Faceted gems and rough stones,gra
 APPEARANCE_TOUCHSTONE,TOUCHSTONE,Gems and stones,Faceted gems and rough stones,gray,,not modelled,
 APPEARANCE_FLINT,FLINT,Gems and stones,Faceted gems and rough stones,gray,,not modelled,
 APPEARANCE_ROCK,ROCK,Gems and stones,Faceted gems and rough stones,rock,,not modelled,
-APPEARANCE_BOULDER,BOULDER,Large rocks and statues,Large stone forms,boulder,,not modelled,
-APPEARANCE_STATUE,STATUE,Large rocks and statues,Large stone forms,statue,,not modelled,
+APPEARANCE_BOULDER,BOULDER,Large rocks and statues,Large stone forms,boulder,,MVP live placement verified; finishing and extended verification pending,Docs/Sokoban.md
+APPEARANCE_STATUE,STATUE,Large rocks and statues,Large stone forms,statue,,Partial species coverage: shared white-marble renderer and Oracle centaurs verified; unmodelled species use native tiles,Docs/CentaursAndStatues.md
 APPEARANCE_HEAVY_IRON_BALL,HEAVY_IRON_BALL,Punishment gear,Balls,heavy iron ball,,not modelled,
 APPEARANCE_IRON_CHAIN,IRON_CHAIN,Punishment gear,Chains,iron chain,,not modelled,
 APPEARANCE_BLINDING_VENOM,BLINDING_VENOM,Venom,Splashes,splash of venom,venom_appearances,not modelled,

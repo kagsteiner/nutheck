@@ -1,0 +1,23 @@
+{
+  "fixture": {
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\557156fe81e4481a8daa14e063053946",
+    "variant": "soko4-2",
+    "stage": 1,
+    "hero": [
+      37,
+      10
+    ]
+  },
+  "sokoban_check": "SOKOBAN_CHECK PASS stage=1 native_boulders=11 turn=4 sequence=2",
+  "status": "PASS",
+  "checks": [
+    "SOKOBAN_CHECK PASS",
+    "OBJECT_PLACEMENT_CHECK PASS",
+    "TOPMOST_PRESENTATION_CHECK PASS",
+    "NETHACK_LIVE_CHECK PASS",
+    "SOKOBAN_CAMERA_CHECK PASS",
+    "DEFAULT_TILES_CHECK PASS"
+  ],
+  "capture": "Sokoban-Unreal.png",
+  "player_session_used": false
+}

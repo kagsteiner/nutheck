@@ -55,6 +55,15 @@ textures and their prompts are recorded in
 Earlier painted-miniature studies remain historical references; existing
 creature-specific palette, anatomy and static-pose decisions remain applicable.
 
+## Sokoban architecture (2026-11-03)
+
+Sokoban now has its own ancient puzzle-vault treatment: warm sandstone ashlar,
+dark foundations, matte square paving, natural grey boulders and quiet recessed
+bronze lamps. Higher floors add restrained bronze craftsmanship. Keep the native
+layouts and high walls; architecture never marks a solution, hidden trap or
+reward. Branch identity comes from the saved native dungeon coordinate, not
+occupants. See [Sokoban](Sokoban.md) for implementation and actual engine captures.
+
 ## Player saves
 
 This is now the user's actual NetHack installation. Saves must be preserved,

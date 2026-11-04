@@ -726,7 +726,7 @@
             "line": 413,
             "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL"
           },
-          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+          "asset_status": "existing anatomical draft (human player)"
         },
         {
           "id": "PLAYER_ROLE_SAMURAI_FEMALE",
@@ -747,7 +747,7 @@
             "line": 413,
             "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL"
           },
-          "asset_status": "existing tile-volume proxy; no anatomical player draft"
+          "asset_status": "existing anatomical draft (human player)"
         }
       ],
       "model_recipe": {
@@ -758,8 +758,12 @@
           "Reuse compatible anatomy/rig; fit role silhouette and official default-tile colours",
           "Fixed icon appearance; no detachable clothing (explicit user correction); sex variants may share compatible anatomy"
         ],
-        "status": "planning only; existing tile-volume proxies are separate"
-      }
+        "status": "human male and female drafts verified"
+      },
+      "generated_ancestries": [
+        "human"
+      ],
+      "asset_status": "human male and female drafts verified"
     },
     {
       "id": "PLAYER_ROLE_TOURIST",

@@ -24,6 +24,15 @@ Hierarchy: native category → useful visual family. Materials, culture and fini
 | Punishment gear | 2 | 0 |
 | Venom | 2 | 0 |
 
+## Shuffled physical appearance drafts
+
+- ruby ring (`APPEARANCE_RIN_CONFLICT`): MVP shuffled physical appearance verified; finishing and full category coverage pending; [Docs/AppearanceBatch1.md](../../Docs/AppearanceBatch1.md). The linked source slot is not a fixed live magical effect.
+- spherical amulet (`APPEARANCE_AMULET_OF_LIFE_SAVING`): MVP shuffled physical appearance verified; finishing and full category coverage pending; [Docs/AppearanceBatch1.md](../../Docs/AppearanceBatch1.md). The linked source slot is not a fixed live magical effect.
+- oak wand (`APPEARANCE_WAN_NOTHING`): MVP shuffled physical appearance verified; finishing and full category coverage pending; [Docs/AppearanceBatch1.md](../../Docs/AppearanceBatch1.md). The linked source slot is not a fixed live magical effect.
+- sapphire ring (`APPEARANCE_RIN_AGGRAVATE_MONSTER`): MVP shuffled physical appearance verified; finishing and full category coverage pending; [Docs/AppearanceBatch2.md](../../Docs/AppearanceBatch2.md). The linked source slot is not a fixed live magical effect.
+- triangular amulet (`APPEARANCE_AMULET_OF_RESTFUL_SLEEP`): MVP shuffled physical appearance verified; finishing and full category coverage pending; [Docs/AppearanceBatch2.md](../../Docs/AppearanceBatch2.md). The linked source slot is not a fixed live magical effect.
+- silver wand (`APPEARANCE_WAN_POLYMORPH`): MVP shuffled physical appearance verified; finishing and full category coverage pending; [Docs/AppearanceBatch2.md](../../Docs/AppearanceBatch2.md). The linked source slot is not a fixed live magical effect.
+
 ## Named object types
 
 - `ARROW` — arrow | Weapons / Ammunition and thrown weapons | normal | not modelled
@@ -52,18 +61,18 @@ Hierarchy: native category → useful visual family. Materials, culture and fini
 - `STILETTO` — stiletto | Weapons / Daggers and short blades | normal | not modelled
 - `WORM_TOOTH` — worm tooth | Weapons / Daggers and short blades | normal | not modelled
 - `CRYSKNIFE` — crysknife | Weapons / Daggers and short blades | normal | not modelled
-- `AXE` — axe | Weapons / Axes and picks | normal | not modelled
+- `AXE` — axe | Weapons / Axes and picks | normal | MVP live placement verified; finishing and extended verification pending
 - `BATTLE_AXE` — battle-axe | Weapons / Axes and picks | normal | not modelled
 - `SHORT_SWORD` — short sword | Weapons / Swords and long blades | normal | MVP live placement verified; finishing and extended verification pending
 - `ELVEN_SHORT_SWORD` — elven short sword | Weapons / Swords and long blades | normal | not modelled
 - `ORCISH_SHORT_SWORD` — orcish short sword | Weapons / Swords and long blades | normal | not modelled
 - `DWARVISH_SHORT_SWORD` — dwarvish short sword | Weapons / Swords and long blades | normal | not modelled
 - `SCIMITAR` — scimitar | Weapons / Swords and long blades | normal | MVP live placement verified; finishing and extended verification pending
-- `SILVER_SABER` — silver saber | Weapons / Swords and long blades | normal | not modelled
-- `BROADSWORD` — broadsword | Weapons / Swords and long blades | normal | not modelled
+- `SILVER_SABER` — silver saber | Weapons / Swords and long blades | normal | MVP live placement verified; finishing and extended verification pending
+- `BROADSWORD` — broadsword | Weapons / Swords and long blades | normal | MVP live placement verified; finishing and extended verification pending
 - `ELVEN_BROADSWORD` — elven broadsword | Weapons / Swords and long blades | normal | not modelled
 - `LONG_SWORD` — long sword | Weapons / Swords and long blades | normal | MVP live placement verified; finishing and extended verification pending
-- `TWO_HANDED_SWORD` — two-handed sword | Weapons / Swords and long blades | normal | not modelled
+- `TWO_HANDED_SWORD` — two-handed sword | Weapons / Swords and long blades | normal | MVP live placement verified; finishing and extended verification pending
 - `KATANA` — katana | Weapons / Swords and long blades | normal | MVP live placement verified; finishing and extended verification pending
 - `TSURUGI` — tsurugi | Weapons / Swords and long blades | normal | not modelled
 - `RUNESWORD` — runesword | Weapons / Swords and long blades | normal | not modelled
@@ -81,10 +90,10 @@ Hierarchy: native category → useful visual family. Materials, culture and fini
 - `BEC_DE_CORBIN` — bec de corbin | Weapons / Polearms and thrusting weapons | normal | not modelled
 - `DWARVISH_MATTOCK` — dwarvish mattock | Weapons / Axes and picks | normal | not modelled
 - `LANCE` — lance | Weapons / Polearms and thrusting weapons | normal | not modelled
-- `MACE` — mace | Weapons / Clubs, hammers and staves | normal | not modelled
+- `MACE` — mace | Weapons / Clubs, hammers and staves | normal | MVP live placement verified; finishing and extended verification pending
 - `SILVER_MACE` — silver mace | Weapons / Clubs, hammers and staves | normal | not modelled
 - `MORNING_STAR` — morning star | Weapons / Clubs, hammers and staves | normal | not modelled
-- `WAR_HAMMER` — war hammer | Weapons / Clubs, hammers and staves | normal | not modelled
+- `WAR_HAMMER` — war hammer | Weapons / Clubs, hammers and staves | normal | MVP live placement verified; finishing and extended verification pending
 - `CLUB` — club | Weapons / Clubs, hammers and staves | normal | not modelled
 - `RUBBER_HOSE` — rubber hose | Weapons / Flexible weapons | normal | not modelled
 - `QUARTERSTAFF` — quarterstaff | Weapons / Clubs, hammers and staves | normal | not modelled
@@ -247,7 +256,7 @@ Hierarchy: native category → useful visual family. Materials, culture and fini
 - `TOWEL` — towel | Tools / Eyewear | normal | not modelled
 - `SADDLE` — saddle | Tools / Hand tools and equipment | normal | not modelled
 - `LEASH` — leash | Tools / Hand tools and equipment | normal | not modelled
-- `STETHOSCOPE` — stethoscope | Tools / Hand tools and equipment | normal | not modelled
+- `STETHOSCOPE` — stethoscope | Tools / Hand tools and equipment | normal | MVP live placement verified; finishing and extended verification pending
 - `TINNING_KIT` — tinning kit | Tools / Hand tools and equipment | normal | not modelled
 - `TIN_OPENER` — tin opener | Tools / Special tools and devices | normal | not modelled
 - `CAN_OF_GREASE` — can of grease | Tools / Special tools and devices | normal | not modelled
@@ -269,8 +278,8 @@ Hierarchy: native category → useful visual family. Materials, culture and fini
 - `BUGLE` — bugle | Tools / Instruments and sound tools | normal | not modelled
 - `LEATHER_DRUM` — leather drum | Tools / Instruments and sound tools | normal | not modelled
 - `DRUM_OF_EARTHQUAKE` — drum of earthquake | Tools / Instruments and sound tools | normal | not modelled
-- `PICK_AXE` — pick-axe | Tools / Axes and picks | normal | not modelled
-- `GRAPPLING_HOOK` — grappling hook | Tools / Flexible weapons | normal | not modelled
+- `PICK_AXE` — pick-axe | Tools / Axes and picks | normal | MVP live placement verified; finishing and extended verification pending
+- `GRAPPLING_HOOK` — grappling hook | Tools / Flexible weapons | normal | MVP live placement verified; finishing and extended verification pending
 - `UNICORN_HORN` — unicorn horn | Tools / Clubs, hammers and staves | normal | not modelled
 - `CANDELABRUM_OF_INVOCATION` — Candelabrum of Invocation | Tools / Special tools and devices | normal | not modelled
 - `BELL_OF_OPENING` — Bell of Opening | Tools / Special tools and devices | normal | not modelled
@@ -464,8 +473,8 @@ Hierarchy: native category → useful visual family. Materials, culture and fini
 - `TOUCHSTONE` — touchstone | Gems and stones / Faceted gems and rough stones | normal | not modelled
 - `FLINT` — flint | Gems and stones / Faceted gems and rough stones | normal | not modelled
 - `ROCK` — rock | Gems and stones / Faceted gems and rough stones | normal | not modelled
-- `BOULDER` — boulder | Large rocks and statues / Large stone forms | normal | not modelled
-- `STATUE` — statue | Large rocks and statues / Large stone forms | normal | not modelled
+- `BOULDER` — boulder | Large rocks and statues / Large stone forms | normal | MVP live placement verified; finishing and extended verification pending
+- `STATUE` — statue | Large rocks and statues / Large stone forms | normal | Partial species coverage: shared white-marble renderer and Oracle centaurs verified; unmodelled species use native tiles
 - `HEAVY_IRON_BALL` — heavy iron ball | Punishment gear / Balls | normal | not modelled
 - `IRON_CHAIN` — iron chain | Punishment gear / Chains | normal | not modelled
 - `BLINDING_VENOM` — splash of blinding venom | Venom / Splashes | normal | not modelled

@@ -1,0 +1,29 @@
+[
+  {
+    "name": "silver saber",
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\cf326a83406c40ea993638e21d6a24ef",
+    "position": [
+      70,
+      13
+    ],
+    "glyph": 3499
+  },
+  {
+    "name": "broadsword",
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\311282a0033247908cf9cf7413dde199",
+    "position": [
+      57,
+      16
+    ],
+    "glyph": 3500
+  },
+  {
+    "name": "two-handed sword",
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\290c880f894e43369cd8b57aa86ebebc",
+    "position": [
+      42,
+      7
+    ],
+    "glyph": 3503
+  }
+]

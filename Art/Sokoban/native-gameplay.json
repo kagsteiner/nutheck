@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "trap": "pit",
+      "consumed_boulder": true,
+      "filled_floor_survives_restore": true,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\754ec23f4ef743d482fd797676f4b3b4"
+    },
+    {
+      "unrevealed_mimic_same_public_boulder": true,
+      "glyph": 3923,
+      "tile_index": 1266
+    },
+    {
+      "trap": "hole",
+      "consumed_boulder": true,
+      "filled_floor_survives_restore": true,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\db89f2ba00294077b839551db5b2ee62"
+    }
+  ]
+}

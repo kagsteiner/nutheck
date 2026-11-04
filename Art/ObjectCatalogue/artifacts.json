@@ -530,8 +530,11 @@
       "ancestry": "NON_PM",
       "native_cost": "1200L",
       "glow_colour": "NO_COLOR",
-      "asset_status": "not modelled",
-      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance."
+      "asset_status": "MVP live placement and native visible name verified; extended verification pending",
+      "design_policy": "Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance.",
+      "evidence": "Docs/Snickersnee.md",
+      "asset_key": "snickersnee",
+      "unreal_asset": "/Game/Snickersnee/Meshes/SM_snickersnee"
     },
     {
       "id": "ART_SUNSWORD",

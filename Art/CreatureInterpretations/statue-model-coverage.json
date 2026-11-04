@@ -1,0 +1,4936 @@
+{
+  "supported": [
+    {
+      "id": "PM_GIANT_ANT",
+      "name": "giant ant",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_giant_ant",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GIANT_ANT",
+      "name": "giant ant",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_giant_ant",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_KILLER_BEE",
+      "name": "killer bee",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_killer_bee",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_KILLER_BEE",
+      "name": "killer bee",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_killer_bee",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_SOLDIER_ANT",
+      "name": "soldier ant",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_soldier_ant",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_SOLDIER_ANT",
+      "name": "soldier ant",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_soldier_ant_female",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_FIRE_ANT",
+      "name": "fire ant",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_fire_ant",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_FIRE_ANT",
+      "name": "fire ant",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_fire_ant_female",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GIANT_BEETLE",
+      "name": "giant beetle",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_giant_beetle",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GIANT_BEETLE",
+      "name": "giant beetle",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_giant_beetle",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_QUEEN_BEE",
+      "name": "queen bee",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_queen_bee",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_QUEEN_BEE",
+      "name": "queen bee",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_queen_bee",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_ACID_BLOB",
+      "name": "acid blob",
+      "female": false,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_acid_blob_male",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_ACID_BLOB",
+      "name": "acid blob",
+      "female": true,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_acid_blob_female",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_JACKAL",
+      "name": "jackal",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_jackal",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_JACKAL",
+      "name": "jackal",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_jackal",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_FOX",
+      "name": "fox",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_fox",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_FOX",
+      "name": "fox",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_fox",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_COYOTE",
+      "name": "coyote",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_coyote",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_COYOTE",
+      "name": "coyote",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_coyote",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_LITTLE_DOG",
+      "name": "little dog",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_little_dog",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_LITTLE_DOG",
+      "name": "little dog",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_little_dog",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_DINGO",
+      "name": "dingo",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_dingo",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_DINGO",
+      "name": "dingo",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_dingo",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_DOG",
+      "name": "dog",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_dog",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_DOG",
+      "name": "dog",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_dog",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_LARGE_DOG",
+      "name": "large dog",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_large_dog",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_LARGE_DOG",
+      "name": "large dog",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_large_dog",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_WOLF",
+      "name": "wolf",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_wolf",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_WOLF",
+      "name": "wolf",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_wolf",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_WINTER_WOLF_CUB",
+      "name": "winter wolf cub",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_winter_wolf_cub",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_WINTER_WOLF_CUB",
+      "name": "winter wolf cub",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_winter_wolf_cub",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_WARG",
+      "name": "warg",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_warg",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_WARG",
+      "name": "warg",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_warg",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_WINTER_WOLF",
+      "name": "winter wolf",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_winter_wolf",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_WINTER_WOLF",
+      "name": "winter wolf",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_winter_wolf",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_HELL_HOUND_PUP",
+      "name": "hell hound pup",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_hell_hound_pup",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_HELL_HOUND_PUP",
+      "name": "hell hound pup",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_hell_hound_pup",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_HELL_HOUND",
+      "name": "hell hound",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_hell_hound",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_HELL_HOUND",
+      "name": "hell hound",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_hell_hound",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_FLOATING_EYE",
+      "name": "floating eye",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_floating_eye",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_FLOATING_EYE",
+      "name": "floating eye",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_floating_eye",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_KITTEN",
+      "name": "kitten",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_kitten",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_KITTEN",
+      "name": "kitten",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_kitten",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_HOUSECAT",
+      "name": "housecat",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_housecat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_HOUSECAT",
+      "name": "housecat",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_housecat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_JAGUAR",
+      "name": "jaguar",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_jaguar",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_JAGUAR",
+      "name": "jaguar",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_jaguar",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_LYNX",
+      "name": "lynx",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_lynx",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_LYNX",
+      "name": "lynx",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_lynx",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_PANTHER",
+      "name": "panther",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_panther",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_PANTHER",
+      "name": "panther",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_panther",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_LARGE_CAT",
+      "name": "large cat",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_large_cat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_LARGE_CAT",
+      "name": "large cat",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_large_cat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_TIGER",
+      "name": "tiger",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_tiger",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_TIGER",
+      "name": "tiger",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_tiger",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_DWARF",
+      "name": "dwarf",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_dwarf",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_DWARF",
+      "name": "dwarf",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_dwarf",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_DWARF_LEADER",
+      "name": "dwarf leader",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_dwarf_leader",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_DWARF_LEADER",
+      "name": "dwarf leader",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_dwarf_leader",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_DWARF_RULER",
+      "name": "dwarf ruler",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_dwarf_ruler",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_DWARF_RULER",
+      "name": "dwarf ruler",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_dwarf_ruler",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_BLUE_JELLY",
+      "name": "blue jelly",
+      "female": false,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_blue_jelly_male",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_BLUE_JELLY",
+      "name": "blue jelly",
+      "female": true,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_blue_jelly_female",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_KOBOLD",
+      "name": "kobold",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_kobold",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_KOBOLD",
+      "name": "kobold",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_kobold",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_LARGE_KOBOLD",
+      "name": "large kobold",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_large_kobold",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_LARGE_KOBOLD",
+      "name": "large kobold",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_large_kobold",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_KOBOLD_LEADER",
+      "name": "kobold leader",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_kobold_leader",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_KOBOLD_LEADER",
+      "name": "kobold leader",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_kobold_leader",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_KOBOLD_SHAMAN",
+      "name": "kobold shaman",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_kobold_shaman",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_KOBOLD_SHAMAN",
+      "name": "kobold shaman",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_kobold_shaman",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GOBLIN",
+      "name": "goblin",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_goblin",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GOBLIN",
+      "name": "goblin",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_goblin",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_HOBGOBLIN",
+      "name": "hobgoblin",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_hobgoblin",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_HOBGOBLIN",
+      "name": "hobgoblin",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_hobgoblin",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_ORC",
+      "name": "orc",
+      "female": false,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_orc_male",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_ORC",
+      "name": "orc",
+      "female": true,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_orc_female",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_HILL_ORC",
+      "name": "hill orc",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_hill_orc",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_HILL_ORC",
+      "name": "hill orc",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_hill_orc",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_MORDOR_ORC",
+      "name": "Mordor orc",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_mordor_orc",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_MORDOR_ORC",
+      "name": "Mordor orc",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_mordor_orc",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_URUK_HAI",
+      "name": "Uruk-hai",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_uruk_hai",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_URUK_HAI",
+      "name": "Uruk-hai",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_uruk_hai",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_ORC_SHAMAN",
+      "name": "orc shaman",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_orc_shaman",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_ORC_SHAMAN",
+      "name": "orc shaman",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_orc_shaman",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_ORC_CAPTAIN",
+      "name": "orc-captain",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_orc_captain",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_ORC_CAPTAIN",
+      "name": "orc-captain",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_orc_captain",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_SEWER_RAT",
+      "name": "sewer rat",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_sewer_rat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_SEWER_RAT",
+      "name": "sewer rat",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_sewer_rat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GIANT_RAT",
+      "name": "giant rat",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_giant_rat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GIANT_RAT",
+      "name": "giant rat",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_giant_rat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_RABID_RAT",
+      "name": "rabid rat",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_rabid_rat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_RABID_RAT",
+      "name": "rabid rat",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_rabid_rat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_CAVE_SPIDER",
+      "name": "cave spider",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_cave_spider",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_CAVE_SPIDER",
+      "name": "cave spider",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_cave_spider",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GIANT_SPIDER",
+      "name": "giant spider",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_giant_spider",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GIANT_SPIDER",
+      "name": "giant spider",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_giant_spider",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_SCORPION",
+      "name": "scorpion",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_scorpion",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_SCORPION",
+      "name": "scorpion",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_scorpion",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_PONY",
+      "name": "pony",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_pony",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_PONY",
+      "name": "pony",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_pony",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_WHITE_UNICORN",
+      "name": "white unicorn",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_white_unicorn",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_WHITE_UNICORN",
+      "name": "white unicorn",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_white_unicorn",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GRAY_UNICORN",
+      "name": "gray unicorn",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_gray_unicorn",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GRAY_UNICORN",
+      "name": "gray unicorn",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_gray_unicorn",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_BLACK_UNICORN",
+      "name": "black unicorn",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_black_unicorn",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_BLACK_UNICORN",
+      "name": "black unicorn",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_black_unicorn",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_HORSE",
+      "name": "horse",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_horse",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_HORSE",
+      "name": "horse",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_horse",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_WARHORSE",
+      "name": "warhorse",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_warhorse",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_WARHORSE",
+      "name": "warhorse",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_warhorse",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GRID_BUG",
+      "name": "grid bug",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_grid_bug",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GRID_BUG",
+      "name": "grid bug",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_grid_bug",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_XAN",
+      "name": "xan",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_xan",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_XAN",
+      "name": "xan",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_xan",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_BAT",
+      "name": "bat",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_bat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_BAT",
+      "name": "bat",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_bat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GIANT_BAT",
+      "name": "giant bat",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_giant_bat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GIANT_BAT",
+      "name": "giant bat",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_giant_bat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_VAMPIRE_BAT",
+      "name": "vampire bat",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_vampire_bat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_VAMPIRE_BAT",
+      "name": "vampire bat",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_vampire_bat",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_PLAINS_CENTAUR",
+      "name": "plains centaur",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_plains_centaur",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_PLAINS_CENTAUR",
+      "name": "plains centaur",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_plains_centaur",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_FOREST_CENTAUR",
+      "name": "forest centaur",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_forest_centaur",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_FOREST_CENTAUR",
+      "name": "forest centaur",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_forest_centaur",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_MOUNTAIN_CENTAUR",
+      "name": "mountain centaur",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_mountain_centaur",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_MOUNTAIN_CENTAUR",
+      "name": "mountain centaur",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_mountain_centaur",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_LICHEN",
+      "name": "lichen",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_lichen",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_LICHEN",
+      "name": "lichen",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_lichen",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GNOME",
+      "name": "gnome",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_gnome",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GNOME",
+      "name": "gnome",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_gnome",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GNOMISH_WIZARD",
+      "name": "gnomish wizard",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_gnomish_wizard",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GNOMISH_WIZARD",
+      "name": "gnomish wizard",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_gnomish_wizard_female",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GNOME_RULER",
+      "name": "gnome ruler",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_gnome_ruler",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GNOME_RULER",
+      "name": "gnome ruler",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_gnome_ruler",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_KOBOLD_MUMMY",
+      "name": "kobold mummy",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_kobold_mummy",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_KOBOLD_MUMMY",
+      "name": "kobold mummy",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_kobold_mummy",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GNOME_MUMMY",
+      "name": "gnome mummy",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_gnome_mummy",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GNOME_MUMMY",
+      "name": "gnome mummy",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_gnome_mummy",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_ORC_MUMMY",
+      "name": "orc mummy",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_orc_mummy",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_ORC_MUMMY",
+      "name": "orc mummy",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_orc_mummy",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_DWARF_MUMMY",
+      "name": "dwarf mummy",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_dwarf_mummy",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_DWARF_MUMMY",
+      "name": "dwarf mummy",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_dwarf_mummy",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GARTER_SNAKE",
+      "name": "garter snake",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_garter_snake",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GARTER_SNAKE",
+      "name": "garter snake",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_garter_snake",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_SNAKE",
+      "name": "snake",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_snake",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_SNAKE",
+      "name": "snake",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_snake",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_WATER_MOCCASIN",
+      "name": "water moccasin",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_water_moccasin",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_WATER_MOCCASIN",
+      "name": "water moccasin",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_water_moccasin",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_PYTHON",
+      "name": "python",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_python",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_PYTHON",
+      "name": "python",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_python",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_PIT_VIPER",
+      "name": "pit viper",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_pit_viper",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_PIT_VIPER",
+      "name": "pit viper",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_pit_viper",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_COBRA",
+      "name": "cobra",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_cobra",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_COBRA",
+      "name": "cobra",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_cobra",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_KOBOLD_ZOMBIE",
+      "name": "kobold zombie",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_kobold_zombie",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_KOBOLD_ZOMBIE",
+      "name": "kobold zombie",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_kobold_zombie",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GNOME_ZOMBIE",
+      "name": "gnome zombie",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_gnome_zombie",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GNOME_ZOMBIE",
+      "name": "gnome zombie",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_gnome_zombie_female",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_ORC_ZOMBIE",
+      "name": "orc zombie",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_orc_zombie",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_ORC_ZOMBIE",
+      "name": "orc zombie",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_orc_zombie",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_DWARF_ZOMBIE",
+      "name": "dwarf zombie",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_dwarf_zombie",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_DWARF_ZOMBIE",
+      "name": "dwarf zombie",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_dwarf_zombie",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_SHOPKEEPER",
+      "name": "shopkeeper",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_shopkeeper",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_SHOPKEEPER",
+      "name": "shopkeeper",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_shopkeeper",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_ORACLE",
+      "name": "Oracle",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_oracle",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_ORACLE",
+      "name": "Oracle",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_oracle",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_NEWT",
+      "name": "newt",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_newt",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_NEWT",
+      "name": "newt",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_newt",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GECKO",
+      "name": "gecko",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_gecko",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_GECKO",
+      "name": "gecko",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_gecko",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_IGUANA",
+      "name": "iguana",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_iguana",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_IGUANA",
+      "name": "iguana",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_iguana",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_LIZARD",
+      "name": "lizard",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_lizard",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_LIZARD",
+      "name": "lizard",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_lizard",
+      "kind": "sculpted"
+    },
+    {
+      "id": "PM_ARCHEOLOGIST",
+      "name": "archeologist",
+      "female": false,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_archeologist_male",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_ARCHEOLOGIST",
+      "name": "archeologist",
+      "female": true,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_archeologist_female",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_BARBARIAN",
+      "name": "barbarian",
+      "female": false,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_barbarian_male_human",
+      "kind": "human player"
+    },
+    {
+      "id": "PM_BARBARIAN",
+      "name": "barbarian",
+      "female": true,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_barbarian_female",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_CAVE_DWELLER",
+      "name": "cave dweller",
+      "female": false,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_cave_dweller_male",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_CAVE_DWELLER",
+      "name": "cave dweller",
+      "female": true,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_cave_dweller_female",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_HEALER",
+      "name": "healer",
+      "female": false,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_healer_male",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_HEALER",
+      "name": "healer",
+      "female": true,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_healer_female",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_KNIGHT",
+      "name": "knight",
+      "female": false,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_knight_male",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_KNIGHT",
+      "name": "knight",
+      "female": true,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_knight_female",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_MONK",
+      "name": "monk",
+      "female": false,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_monk_male",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_MONK",
+      "name": "monk",
+      "female": true,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_monk_female",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_CLERIC",
+      "name": "cleric",
+      "female": false,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_cleric_male",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_CLERIC",
+      "name": "cleric",
+      "female": true,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_cleric_female",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_RANGER",
+      "name": "ranger",
+      "female": false,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_ranger_male",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_RANGER",
+      "name": "ranger",
+      "female": true,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_ranger_female",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_ROGUE",
+      "name": "rogue",
+      "female": false,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_rogue_male",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_ROGUE",
+      "name": "rogue",
+      "female": true,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_rogue_female",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_SAMURAI",
+      "name": "samurai",
+      "female": false,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_samurai_male",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_SAMURAI",
+      "name": "samurai",
+      "female": true,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_samurai_female",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_TOURIST",
+      "name": "tourist",
+      "female": false,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_tourist_male",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_TOURIST",
+      "name": "tourist",
+      "female": true,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_tourist_female",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_VALKYRIE",
+      "name": "valkyrie",
+      "female": false,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_valkyrie_male",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_VALKYRIE",
+      "name": "valkyrie",
+      "female": true,
+      "mesh": "/Game/CreatureInterpretations/Meshes/SM_valkyrie_female_human",
+      "kind": "human player"
+    },
+    {
+      "id": "PM_WIZARD",
+      "name": "wizard",
+      "female": false,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_wizard_male",
+      "kind": "legacy volume"
+    },
+    {
+      "id": "PM_WIZARD",
+      "name": "wizard",
+      "female": true,
+      "mesh": "/Game/DefaultTiles/Meshes/SM_wizard_female",
+      "kind": "legacy volume"
+    }
+  ],
+  "native_tile_fallback": [
+    {
+      "id": "PM_QUIVERING_BLOB",
+      "name": "quivering blob",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_QUIVERING_BLOB",
+      "name": "quivering blob",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GELATINOUS_CUBE",
+      "name": "gelatinous cube",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GELATINOUS_CUBE",
+      "name": "gelatinous cube",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CHICKATRICE",
+      "name": "chickatrice",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CHICKATRICE",
+      "name": "chickatrice",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_COCKATRICE",
+      "name": "cockatrice",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_COCKATRICE",
+      "name": "cockatrice",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PYROLISK",
+      "name": "pyrolisk",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PYROLISK",
+      "name": "pyrolisk",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WEREJACKAL",
+      "name": "werejackal",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WEREJACKAL",
+      "name": "werejackal",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WEREWOLF",
+      "name": "werewolf",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WEREWOLF",
+      "name": "werewolf",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CERBERUS",
+      "name": "Cerberus",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CERBERUS",
+      "name": "Cerberus",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GAS_SPORE",
+      "name": "gas spore",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GAS_SPORE",
+      "name": "gas spore",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FREEZING_SPHERE",
+      "name": "freezing sphere",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FREEZING_SPHERE",
+      "name": "freezing sphere",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FLAMING_SPHERE",
+      "name": "flaming sphere",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FLAMING_SPHERE",
+      "name": "flaming sphere",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SHOCKING_SPHERE",
+      "name": "shocking sphere",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SHOCKING_SPHERE",
+      "name": "shocking sphere",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BEHOLDER",
+      "name": "beholder",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BEHOLDER",
+      "name": "beholder",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DISPLACER_BEAST",
+      "name": "displacer beast",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DISPLACER_BEAST",
+      "name": "displacer beast",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GREMLIN",
+      "name": "gremlin",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GREMLIN",
+      "name": "gremlin",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GARGOYLE",
+      "name": "gargoyle",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GARGOYLE",
+      "name": "gargoyle",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WINGED_GARGOYLE",
+      "name": "winged gargoyle",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WINGED_GARGOYLE",
+      "name": "winged gargoyle",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HOBBIT",
+      "name": "hobbit",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HOBBIT",
+      "name": "hobbit",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BUGBEAR",
+      "name": "bugbear",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BUGBEAR",
+      "name": "bugbear",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MIND_FLAYER",
+      "name": "mind flayer",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MIND_FLAYER",
+      "name": "mind flayer",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MASTER_MIND_FLAYER",
+      "name": "master mind flayer",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MASTER_MIND_FLAYER",
+      "name": "master mind flayer",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MANES",
+      "name": "manes",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MANES",
+      "name": "manes",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HOMUNCULUS",
+      "name": "homunculus",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HOMUNCULUS",
+      "name": "homunculus",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_IMP",
+      "name": "imp",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_IMP",
+      "name": "imp",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LEMURE",
+      "name": "lemure",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LEMURE",
+      "name": "lemure",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_QUASIT",
+      "name": "quasit",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_QUASIT",
+      "name": "quasit",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_TENGU",
+      "name": "tengu",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_TENGU",
+      "name": "tengu",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SPOTTED_JELLY",
+      "name": "spotted jelly",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SPOTTED_JELLY",
+      "name": "spotted jelly",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_OCHRE_JELLY",
+      "name": "ochre jelly",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_OCHRE_JELLY",
+      "name": "ochre jelly",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LEPRECHAUN",
+      "name": "leprechaun",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LEPRECHAUN",
+      "name": "leprechaun",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SMALL_MIMIC",
+      "name": "small mimic",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SMALL_MIMIC",
+      "name": "small mimic",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LARGE_MIMIC",
+      "name": "large mimic",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LARGE_MIMIC",
+      "name": "large mimic",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GIANT_MIMIC",
+      "name": "giant mimic",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GIANT_MIMIC",
+      "name": "giant mimic",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WOOD_NYMPH",
+      "name": "wood nymph",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WOOD_NYMPH",
+      "name": "wood nymph",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WATER_NYMPH",
+      "name": "water nymph",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WATER_NYMPH",
+      "name": "water nymph",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MOUNTAIN_NYMPH",
+      "name": "mountain nymph",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MOUNTAIN_NYMPH",
+      "name": "mountain nymph",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ROCK_PIERCER",
+      "name": "rock piercer",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ROCK_PIERCER",
+      "name": "rock piercer",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_IRON_PIERCER",
+      "name": "iron piercer",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_IRON_PIERCER",
+      "name": "iron piercer",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GLASS_PIERCER",
+      "name": "glass piercer",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GLASS_PIERCER",
+      "name": "glass piercer",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ROTHE",
+      "name": "rothe",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ROTHE",
+      "name": "rothe",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MUMAK",
+      "name": "mumak",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MUMAK",
+      "name": "mumak",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LEOCROTTA",
+      "name": "leocrotta",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LEOCROTTA",
+      "name": "leocrotta",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WUMPUS",
+      "name": "wumpus",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WUMPUS",
+      "name": "wumpus",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_TITANOTHERE",
+      "name": "titanothere",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_TITANOTHERE",
+      "name": "titanothere",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BALUCHITHERIUM",
+      "name": "baluchitherium",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BALUCHITHERIUM",
+      "name": "baluchitherium",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MASTODON",
+      "name": "mastodon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MASTODON",
+      "name": "mastodon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WERERAT",
+      "name": "wererat",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WERERAT",
+      "name": "wererat",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ROCK_MOLE",
+      "name": "rock mole",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ROCK_MOLE",
+      "name": "rock mole",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WOODCHUCK",
+      "name": "woodchuck",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WOODCHUCK",
+      "name": "woodchuck",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CENTIPEDE",
+      "name": "centipede",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CENTIPEDE",
+      "name": "centipede",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LURKER_ABOVE",
+      "name": "lurker above",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LURKER_ABOVE",
+      "name": "lurker above",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_TRAPPER",
+      "name": "trapper",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_TRAPPER",
+      "name": "trapper",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FOG_CLOUD",
+      "name": "fog cloud",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FOG_CLOUD",
+      "name": "fog cloud",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DUST_VORTEX",
+      "name": "dust vortex",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DUST_VORTEX",
+      "name": "dust vortex",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ICE_VORTEX",
+      "name": "ice vortex",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ICE_VORTEX",
+      "name": "ice vortex",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ENERGY_VORTEX",
+      "name": "energy vortex",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ENERGY_VORTEX",
+      "name": "energy vortex",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_STEAM_VORTEX",
+      "name": "steam vortex",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_STEAM_VORTEX",
+      "name": "steam vortex",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FIRE_VORTEX",
+      "name": "fire vortex",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FIRE_VORTEX",
+      "name": "fire vortex",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_LONG_WORM",
+      "name": "baby long worm",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_LONG_WORM",
+      "name": "baby long worm",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_PURPLE_WORM",
+      "name": "baby purple worm",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_PURPLE_WORM",
+      "name": "baby purple worm",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LONG_WORM",
+      "name": "long worm",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LONG_WORM",
+      "name": "long worm",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PURPLE_WORM",
+      "name": "purple worm",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PURPLE_WORM",
+      "name": "purple worm",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_YELLOW_LIGHT",
+      "name": "yellow light",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_YELLOW_LIGHT",
+      "name": "yellow light",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BLACK_LIGHT",
+      "name": "black light",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BLACK_LIGHT",
+      "name": "black light",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ZRUTY",
+      "name": "zruty",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ZRUTY",
+      "name": "zruty",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_COUATL",
+      "name": "couatl",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_COUATL",
+      "name": "couatl",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ALEAX",
+      "name": "Aleax",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ALEAX",
+      "name": "Aleax",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ANGEL",
+      "name": "Angel",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ANGEL",
+      "name": "Angel",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_KI_RIN",
+      "name": "ki-rin",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_KI_RIN",
+      "name": "ki-rin",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ARCHON",
+      "name": "Archon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ARCHON",
+      "name": "Archon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_RAVEN",
+      "name": "raven",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_RAVEN",
+      "name": "raven",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_GRAY_DRAGON",
+      "name": "baby gray dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_GRAY_DRAGON",
+      "name": "baby gray dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_GOLD_DRAGON",
+      "name": "baby gold dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_GOLD_DRAGON",
+      "name": "baby gold dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_SILVER_DRAGON",
+      "name": "baby silver dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_SILVER_DRAGON",
+      "name": "baby silver dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_SHIMMERING_DRAGON",
+      "name": "baby shimmering dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_SHIMMERING_DRAGON",
+      "name": "baby shimmering dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_RED_DRAGON",
+      "name": "baby red dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_RED_DRAGON",
+      "name": "baby red dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_WHITE_DRAGON",
+      "name": "baby white dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_WHITE_DRAGON",
+      "name": "baby white dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_ORANGE_DRAGON",
+      "name": "baby orange dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_ORANGE_DRAGON",
+      "name": "baby orange dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_BLACK_DRAGON",
+      "name": "baby black dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_BLACK_DRAGON",
+      "name": "baby black dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_BLUE_DRAGON",
+      "name": "baby blue dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_BLUE_DRAGON",
+      "name": "baby blue dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_GREEN_DRAGON",
+      "name": "baby green dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_GREEN_DRAGON",
+      "name": "baby green dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_YELLOW_DRAGON",
+      "name": "baby yellow dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_YELLOW_DRAGON",
+      "name": "baby yellow dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GRAY_DRAGON",
+      "name": "gray dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GRAY_DRAGON",
+      "name": "gray dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GOLD_DRAGON",
+      "name": "gold dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GOLD_DRAGON",
+      "name": "gold dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SILVER_DRAGON",
+      "name": "silver dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SILVER_DRAGON",
+      "name": "silver dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SHIMMERING_DRAGON",
+      "name": "shimmering dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SHIMMERING_DRAGON",
+      "name": "shimmering dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_RED_DRAGON",
+      "name": "red dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_RED_DRAGON",
+      "name": "red dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WHITE_DRAGON",
+      "name": "white dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WHITE_DRAGON",
+      "name": "white dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ORANGE_DRAGON",
+      "name": "orange dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ORANGE_DRAGON",
+      "name": "orange dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BLACK_DRAGON",
+      "name": "black dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BLACK_DRAGON",
+      "name": "black dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BLUE_DRAGON",
+      "name": "blue dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BLUE_DRAGON",
+      "name": "blue dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GREEN_DRAGON",
+      "name": "green dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GREEN_DRAGON",
+      "name": "green dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_YELLOW_DRAGON",
+      "name": "yellow dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_YELLOW_DRAGON",
+      "name": "yellow dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_STALKER",
+      "name": "stalker",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_STALKER",
+      "name": "stalker",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_AIR_ELEMENTAL",
+      "name": "air elemental",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_AIR_ELEMENTAL",
+      "name": "air elemental",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FIRE_ELEMENTAL",
+      "name": "fire elemental",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FIRE_ELEMENTAL",
+      "name": "fire elemental",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_EARTH_ELEMENTAL",
+      "name": "earth elemental",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_EARTH_ELEMENTAL",
+      "name": "earth elemental",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WATER_ELEMENTAL",
+      "name": "water elemental",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WATER_ELEMENTAL",
+      "name": "water elemental",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BROWN_MOLD",
+      "name": "brown mold",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BROWN_MOLD",
+      "name": "brown mold",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_YELLOW_MOLD",
+      "name": "yellow mold",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_YELLOW_MOLD",
+      "name": "yellow mold",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GREEN_MOLD",
+      "name": "green mold",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GREEN_MOLD",
+      "name": "green mold",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_RED_MOLD",
+      "name": "red mold",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_RED_MOLD",
+      "name": "red mold",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SHRIEKER",
+      "name": "shrieker",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SHRIEKER",
+      "name": "shrieker",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_VIOLET_FUNGUS",
+      "name": "violet fungus",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_VIOLET_FUNGUS",
+      "name": "violet fungus",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GNOME_LEADER",
+      "name": "gnome leader",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GNOME_LEADER",
+      "name": "gnome leader",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GIANT",
+      "name": "giant",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GIANT",
+      "name": "giant",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_STONE_GIANT",
+      "name": "stone giant",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_STONE_GIANT",
+      "name": "stone giant",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HILL_GIANT",
+      "name": "hill giant",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HILL_GIANT",
+      "name": "hill giant",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FIRE_GIANT",
+      "name": "fire giant",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FIRE_GIANT",
+      "name": "fire giant",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FROST_GIANT",
+      "name": "frost giant",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FROST_GIANT",
+      "name": "frost giant",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ETTIN",
+      "name": "ettin",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ETTIN",
+      "name": "ettin",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_STORM_GIANT",
+      "name": "storm giant",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_STORM_GIANT",
+      "name": "storm giant",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_TITAN",
+      "name": "titan",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_TITAN",
+      "name": "titan",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MINOTAUR",
+      "name": "minotaur",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MINOTAUR",
+      "name": "minotaur",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_JABBERWOCK",
+      "name": "jabberwock",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_JABBERWOCK",
+      "name": "jabberwock",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_VORPAL_JABBERWOCK",
+      "name": "vorpal jabberwock",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_VORPAL_JABBERWOCK",
+      "name": "vorpal jabberwock",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_KEYSTONE_KOP",
+      "name": "Keystone Kop",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_KEYSTONE_KOP",
+      "name": "Keystone Kop",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_KOP_SERGEANT",
+      "name": "Kop Sergeant",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_KOP_SERGEANT",
+      "name": "Kop Sergeant",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_KOP_LIEUTENANT",
+      "name": "Kop Lieutenant",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_KOP_LIEUTENANT",
+      "name": "Kop Lieutenant",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_KOP_KAPTAIN",
+      "name": "Kop Kaptain",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_KOP_KAPTAIN",
+      "name": "Kop Kaptain",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LICH",
+      "name": "lich",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LICH",
+      "name": "lich",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DEMILICH",
+      "name": "demilich",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DEMILICH",
+      "name": "demilich",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MASTER_LICH",
+      "name": "master lich",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MASTER_LICH",
+      "name": "master lich",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ARCH_LICH",
+      "name": "arch-lich",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ARCH_LICH",
+      "name": "arch-lich",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ELF_MUMMY",
+      "name": "elf mummy",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ELF_MUMMY",
+      "name": "elf mummy",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HUMAN_MUMMY",
+      "name": "human mummy",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HUMAN_MUMMY",
+      "name": "human mummy",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ETTIN_MUMMY",
+      "name": "ettin mummy",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ETTIN_MUMMY",
+      "name": "ettin mummy",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GIANT_MUMMY",
+      "name": "giant mummy",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GIANT_MUMMY",
+      "name": "giant mummy",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_RED_NAGA_HATCHLING",
+      "name": "red naga hatchling",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_RED_NAGA_HATCHLING",
+      "name": "red naga hatchling",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BLACK_NAGA_HATCHLING",
+      "name": "black naga hatchling",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BLACK_NAGA_HATCHLING",
+      "name": "black naga hatchling",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GOLDEN_NAGA_HATCHLING",
+      "name": "golden naga hatchling",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GOLDEN_NAGA_HATCHLING",
+      "name": "golden naga hatchling",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GUARDIAN_NAGA_HATCHLING",
+      "name": "guardian naga hatchling",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GUARDIAN_NAGA_HATCHLING",
+      "name": "guardian naga hatchling",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_RED_NAGA",
+      "name": "red naga",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_RED_NAGA",
+      "name": "red naga",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BLACK_NAGA",
+      "name": "black naga",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BLACK_NAGA",
+      "name": "black naga",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GOLDEN_NAGA",
+      "name": "golden naga",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GOLDEN_NAGA",
+      "name": "golden naga",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GUARDIAN_NAGA",
+      "name": "guardian naga",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GUARDIAN_NAGA",
+      "name": "guardian naga",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_OGRE",
+      "name": "ogre",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_OGRE",
+      "name": "ogre",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_OGRE_LEADER",
+      "name": "ogre leader",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_OGRE_LEADER",
+      "name": "ogre leader",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_OGRE_TYRANT",
+      "name": "ogre tyrant",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_OGRE_TYRANT",
+      "name": "ogre tyrant",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GRAY_OOZE",
+      "name": "gray ooze",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GRAY_OOZE",
+      "name": "gray ooze",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BROWN_PUDDING",
+      "name": "brown pudding",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BROWN_PUDDING",
+      "name": "brown pudding",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GREEN_SLIME",
+      "name": "green slime",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GREEN_SLIME",
+      "name": "green slime",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BLACK_PUDDING",
+      "name": "black pudding",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BLACK_PUDDING",
+      "name": "black pudding",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_QUANTUM_MECHANIC",
+      "name": "quantum mechanic",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_QUANTUM_MECHANIC",
+      "name": "quantum mechanic",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GENETIC_ENGINEER",
+      "name": "genetic engineer",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GENETIC_ENGINEER",
+      "name": "genetic engineer",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_RUST_MONSTER",
+      "name": "rust monster",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_RUST_MONSTER",
+      "name": "rust monster",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DISENCHANTER",
+      "name": "disenchanter",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DISENCHANTER",
+      "name": "disenchanter",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_TROLL",
+      "name": "troll",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_TROLL",
+      "name": "troll",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ICE_TROLL",
+      "name": "ice troll",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ICE_TROLL",
+      "name": "ice troll",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ROCK_TROLL",
+      "name": "rock troll",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ROCK_TROLL",
+      "name": "rock troll",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WATER_TROLL",
+      "name": "water troll",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WATER_TROLL",
+      "name": "water troll",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_OLOG_HAI",
+      "name": "Olog-hai",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_OLOG_HAI",
+      "name": "Olog-hai",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_UMBER_HULK",
+      "name": "umber hulk",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_UMBER_HULK",
+      "name": "umber hulk",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_VAMPIRE",
+      "name": "vampire",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_VAMPIRE",
+      "name": "vampire",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_VAMPIRE_LEADER",
+      "name": "vampire leader",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_VAMPIRE_LEADER",
+      "name": "vampire leader",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_VAMPIRE_MAGE",
+      "name": "vampire mage",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_VAMPIRE_MAGE",
+      "name": "vampire mage",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_VLAD_THE_IMPALER",
+      "name": "Vlad the Impaler",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_VLAD_THE_IMPALER",
+      "name": "Vlad the Impaler",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BARROW_WIGHT",
+      "name": "barrow wight",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BARROW_WIGHT",
+      "name": "barrow wight",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WRAITH",
+      "name": "wraith",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WRAITH",
+      "name": "wraith",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NAZGUL",
+      "name": "Nazgul",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NAZGUL",
+      "name": "Nazgul",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_XORN",
+      "name": "xorn",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_XORN",
+      "name": "xorn",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MONKEY",
+      "name": "monkey",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MONKEY",
+      "name": "monkey",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_APE",
+      "name": "ape",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_APE",
+      "name": "ape",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_OWLBEAR",
+      "name": "owlbear",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_OWLBEAR",
+      "name": "owlbear",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_YETI",
+      "name": "yeti",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_YETI",
+      "name": "yeti",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CARNIVOROUS_APE",
+      "name": "carnivorous ape",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CARNIVOROUS_APE",
+      "name": "carnivorous ape",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SASQUATCH",
+      "name": "sasquatch",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SASQUATCH",
+      "name": "sasquatch",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ELF_ZOMBIE",
+      "name": "elf zombie",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ELF_ZOMBIE",
+      "name": "elf zombie",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HUMAN_ZOMBIE",
+      "name": "human zombie",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HUMAN_ZOMBIE",
+      "name": "human zombie",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ETTIN_ZOMBIE",
+      "name": "ettin zombie",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ETTIN_ZOMBIE",
+      "name": "ettin zombie",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GHOUL",
+      "name": "ghoul",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GHOUL",
+      "name": "ghoul",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GIANT_ZOMBIE",
+      "name": "giant zombie",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GIANT_ZOMBIE",
+      "name": "giant zombie",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SKELETON",
+      "name": "skeleton",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SKELETON",
+      "name": "skeleton",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_STRAW_GOLEM",
+      "name": "straw golem",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_STRAW_GOLEM",
+      "name": "straw golem",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PAPER_GOLEM",
+      "name": "paper golem",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PAPER_GOLEM",
+      "name": "paper golem",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ROPE_GOLEM",
+      "name": "rope golem",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ROPE_GOLEM",
+      "name": "rope golem",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GOLD_GOLEM",
+      "name": "gold golem",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GOLD_GOLEM",
+      "name": "gold golem",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LEATHER_GOLEM",
+      "name": "leather golem",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LEATHER_GOLEM",
+      "name": "leather golem",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WOOD_GOLEM",
+      "name": "wood golem",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WOOD_GOLEM",
+      "name": "wood golem",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FLESH_GOLEM",
+      "name": "flesh golem",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FLESH_GOLEM",
+      "name": "flesh golem",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CLAY_GOLEM",
+      "name": "clay golem",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CLAY_GOLEM",
+      "name": "clay golem",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_STONE_GOLEM",
+      "name": "stone golem",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_STONE_GOLEM",
+      "name": "stone golem",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GLASS_GOLEM",
+      "name": "glass golem",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GLASS_GOLEM",
+      "name": "glass golem",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_IRON_GOLEM",
+      "name": "iron golem",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_IRON_GOLEM",
+      "name": "iron golem",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HUMAN",
+      "name": "human",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HUMAN",
+      "name": "human",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HUMAN_WERERAT",
+      "name": "wererat",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HUMAN_WERERAT",
+      "name": "wererat",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HUMAN_WEREJACKAL",
+      "name": "werejackal",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HUMAN_WEREJACKAL",
+      "name": "werejackal",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HUMAN_WEREWOLF",
+      "name": "werewolf",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HUMAN_WEREWOLF",
+      "name": "werewolf",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ELF",
+      "name": "elf",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ELF",
+      "name": "elf",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WOODLAND_ELF",
+      "name": "Woodland-elf",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WOODLAND_ELF",
+      "name": "Woodland-elf",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GREEN_ELF",
+      "name": "Green-elf",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GREEN_ELF",
+      "name": "Green-elf",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GREY_ELF",
+      "name": "Grey-elf",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GREY_ELF",
+      "name": "Grey-elf",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ELF_NOBLE",
+      "name": "elf-noble",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ELF_NOBLE",
+      "name": "elf-noble",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ELVEN_MONARCH",
+      "name": "elven monarch",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ELVEN_MONARCH",
+      "name": "elven monarch",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DOPPELGANGER",
+      "name": "doppelganger",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DOPPELGANGER",
+      "name": "doppelganger",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GUARD",
+      "name": "guard",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GUARD",
+      "name": "guard",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PRISONER",
+      "name": "prisoner",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PRISONER",
+      "name": "prisoner",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ALIGNED_CLERIC",
+      "name": "aligned cleric",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ALIGNED_CLERIC",
+      "name": "aligned cleric",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HIGH_CLERIC",
+      "name": "high cleric",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HIGH_CLERIC",
+      "name": "high cleric",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SOLDIER",
+      "name": "soldier",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SOLDIER",
+      "name": "soldier",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SERGEANT",
+      "name": "sergeant",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SERGEANT",
+      "name": "sergeant",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NURSE",
+      "name": "nurse",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NURSE",
+      "name": "nurse",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LIEUTENANT",
+      "name": "lieutenant",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LIEUTENANT",
+      "name": "lieutenant",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CAPTAIN",
+      "name": "captain",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CAPTAIN",
+      "name": "captain",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WATCHMAN",
+      "name": "watchman",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WATCHMAN",
+      "name": "watchman",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WATCH_CAPTAIN",
+      "name": "watch captain",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WATCH_CAPTAIN",
+      "name": "watch captain",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MEDUSA",
+      "name": "Medusa",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MEDUSA",
+      "name": "Medusa",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WIZARD_OF_YENDOR",
+      "name": "Wizard of Yendor",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WIZARD_OF_YENDOR",
+      "name": "Wizard of Yendor",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CROESUS",
+      "name": "Croesus",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CROESUS",
+      "name": "Croesus",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CHARON",
+      "name": "Charon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CHARON",
+      "name": "Charon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GHOST",
+      "name": "ghost",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GHOST",
+      "name": "ghost",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SHADE",
+      "name": "shade",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SHADE",
+      "name": "shade",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WATER_DEMON",
+      "name": "water demon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WATER_DEMON",
+      "name": "water demon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_AMOROUS_DEMON",
+      "name": "amorous demon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_AMOROUS_DEMON",
+      "name": "amorous demon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HORNED_DEVIL",
+      "name": "horned devil",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HORNED_DEVIL",
+      "name": "horned devil",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ERINYS",
+      "name": "erinys",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ERINYS",
+      "name": "erinys",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BARBED_DEVIL",
+      "name": "barbed devil",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BARBED_DEVIL",
+      "name": "barbed devil",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MARILITH",
+      "name": "marilith",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MARILITH",
+      "name": "marilith",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_VROCK",
+      "name": "vrock",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_VROCK",
+      "name": "vrock",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HEZROU",
+      "name": "hezrou",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HEZROU",
+      "name": "hezrou",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BONE_DEVIL",
+      "name": "bone devil",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BONE_DEVIL",
+      "name": "bone devil",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ICE_DEVIL",
+      "name": "ice devil",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ICE_DEVIL",
+      "name": "ice devil",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NALFESHNEE",
+      "name": "nalfeshnee",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NALFESHNEE",
+      "name": "nalfeshnee",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PIT_FIEND",
+      "name": "pit fiend",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PIT_FIEND",
+      "name": "pit fiend",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SANDESTIN",
+      "name": "sandestin",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SANDESTIN",
+      "name": "sandestin",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BALROG",
+      "name": "balrog",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BALROG",
+      "name": "balrog",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_JUIBLEX",
+      "name": "Juiblex",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_JUIBLEX",
+      "name": "Juiblex",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_YEENOGHU",
+      "name": "Yeenoghu",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_YEENOGHU",
+      "name": "Yeenoghu",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ORCUS",
+      "name": "Orcus",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ORCUS",
+      "name": "Orcus",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GERYON",
+      "name": "Geryon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GERYON",
+      "name": "Geryon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DISPATER",
+      "name": "Dispater",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DISPATER",
+      "name": "Dispater",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BAALZEBUB",
+      "name": "Baalzebub",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BAALZEBUB",
+      "name": "Baalzebub",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ASMODEUS",
+      "name": "Asmodeus",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ASMODEUS",
+      "name": "Asmodeus",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DEMOGORGON",
+      "name": "Demogorgon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DEMOGORGON",
+      "name": "Demogorgon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DEATH",
+      "name": "Death",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DEATH",
+      "name": "Death",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PESTILENCE",
+      "name": "Pestilence",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PESTILENCE",
+      "name": "Pestilence",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FAMINE",
+      "name": "Famine",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_FAMINE",
+      "name": "Famine",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MAIL_DAEMON",
+      "name": "mail daemon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MAIL_DAEMON",
+      "name": "mail daemon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DJINNI",
+      "name": "djinni",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DJINNI",
+      "name": "djinni",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_JELLYFISH",
+      "name": "jellyfish",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_JELLYFISH",
+      "name": "jellyfish",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PIRANHA",
+      "name": "piranha",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PIRANHA",
+      "name": "piranha",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SHARK",
+      "name": "shark",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SHARK",
+      "name": "shark",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GIANT_EEL",
+      "name": "giant eel",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GIANT_EEL",
+      "name": "giant eel",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ELECTRIC_EEL",
+      "name": "electric eel",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ELECTRIC_EEL",
+      "name": "electric eel",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_KRAKEN",
+      "name": "kraken",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_KRAKEN",
+      "name": "kraken",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_CROCODILE",
+      "name": "baby crocodile",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_BABY_CROCODILE",
+      "name": "baby crocodile",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CHAMELEON",
+      "name": "chameleon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CHAMELEON",
+      "name": "chameleon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CROCODILE",
+      "name": "crocodile",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CROCODILE",
+      "name": "crocodile",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SALAMANDER",
+      "name": "salamander",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SALAMANDER",
+      "name": "salamander",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LONG_WORM_TAIL",
+      "name": "long worm tail",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LONG_WORM_TAIL",
+      "name": "long worm tail",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LORD_CARNARVON",
+      "name": "Lord Carnarvon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LORD_CARNARVON",
+      "name": "Lord Carnarvon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PELIAS",
+      "name": "Pelias",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PELIAS",
+      "name": "Pelias",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SHAMAN_KARNOV",
+      "name": "Shaman Karnov",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SHAMAN_KARNOV",
+      "name": "Shaman Karnov",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_EARENDIL",
+      "name": "Earendil",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_EARENDIL",
+      "name": "Earendil",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ELWING",
+      "name": "Elwing",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ELWING",
+      "name": "Elwing",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HIPPOCRATES",
+      "name": "Hippocrates",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HIPPOCRATES",
+      "name": "Hippocrates",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_KING_ARTHUR",
+      "name": "King Arthur",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_KING_ARTHUR",
+      "name": "King Arthur",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GRAND_MASTER",
+      "name": "Grand Master",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GRAND_MASTER",
+      "name": "Grand Master",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ARCH_PRIEST",
+      "name": "Arch Priest",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ARCH_PRIEST",
+      "name": "Arch Priest",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ORION",
+      "name": "Orion",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ORION",
+      "name": "Orion",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MASTER_OF_THIEVES",
+      "name": "Master of Thieves",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MASTER_OF_THIEVES",
+      "name": "Master of Thieves",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LORD_SATO",
+      "name": "Lord Sato",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LORD_SATO",
+      "name": "Lord Sato",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_TWOFLOWER",
+      "name": "Twoflower",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_TWOFLOWER",
+      "name": "Twoflower",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NORN",
+      "name": "Norn",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NORN",
+      "name": "Norn",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NEFERET_THE_GREEN",
+      "name": "Neferet the Green",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NEFERET_THE_GREEN",
+      "name": "Neferet the Green",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MINION_OF_HUHETOTL",
+      "name": "Minion of Huhetotl",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MINION_OF_HUHETOTL",
+      "name": "Minion of Huhetotl",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_THOTH_AMON",
+      "name": "Thoth Amon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_THOTH_AMON",
+      "name": "Thoth Amon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CHROMATIC_DRAGON",
+      "name": "Chromatic Dragon",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CHROMATIC_DRAGON",
+      "name": "Chromatic Dragon",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GOBLIN_KING",
+      "name": "Goblin King",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GOBLIN_KING",
+      "name": "Goblin King",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CYCLOPS",
+      "name": "Cyclops",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CYCLOPS",
+      "name": "Cyclops",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_IXOTH",
+      "name": "Ixoth",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_IXOTH",
+      "name": "Ixoth",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MASTER_KAEN",
+      "name": "Master Kaen",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MASTER_KAEN",
+      "name": "Master Kaen",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NALZOK",
+      "name": "Nalzok",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NALZOK",
+      "name": "Nalzok",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SCORPIUS",
+      "name": "Scorpius",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_SCORPIUS",
+      "name": "Scorpius",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MASTER_ASSASSIN",
+      "name": "Master Assassin",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_MASTER_ASSASSIN",
+      "name": "Master Assassin",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ASHIKAGA_TAKAUJI",
+      "name": "Ashikaga Takauji",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ASHIKAGA_TAKAUJI",
+      "name": "Ashikaga Takauji",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LORD_SURTUR",
+      "name": "Lord Surtur",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_LORD_SURTUR",
+      "name": "Lord Surtur",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DARK_ONE",
+      "name": "Dark One",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_DARK_ONE",
+      "name": "Dark One",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_STUDENT",
+      "name": "student",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_STUDENT",
+      "name": "student",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CHIEFTAIN",
+      "name": "chieftain",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_CHIEFTAIN",
+      "name": "chieftain",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NEANDERTHAL",
+      "name": "neanderthal",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NEANDERTHAL",
+      "name": "neanderthal",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HIGH_ELF",
+      "name": "High-elf",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HIGH_ELF",
+      "name": "High-elf",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ATTENDANT",
+      "name": "attendant",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ATTENDANT",
+      "name": "attendant",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PAGE",
+      "name": "page",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_PAGE",
+      "name": "page",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ABBOT",
+      "name": "abbot",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ABBOT",
+      "name": "abbot",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ACOLYTE",
+      "name": "acolyte",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ACOLYTE",
+      "name": "acolyte",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HUNTER",
+      "name": "hunter",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_HUNTER",
+      "name": "hunter",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_THUG",
+      "name": "thug",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_THUG",
+      "name": "thug",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NINJA",
+      "name": "ninja",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_NINJA",
+      "name": "ninja",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ROSHI",
+      "name": "roshi",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_ROSHI",
+      "name": "roshi",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GUIDE",
+      "name": "guide",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_GUIDE",
+      "name": "guide",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WARRIOR",
+      "name": "warrior",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_WARRIOR",
+      "name": "warrior",
+      "female": true,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_APPRENTICE",
+      "name": "apprentice",
+      "female": false,
+      "fallback": "native official statue tile"
+    },
+    {
+      "id": "PM_APPRENTICE",
+      "name": "apprentice",
+      "female": true,
+      "fallback": "native official statue tile"
+    }
+  ]
+}

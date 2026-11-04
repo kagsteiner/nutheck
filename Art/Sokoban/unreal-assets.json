@@ -1,0 +1,172 @@
+{
+  "status": "PASS",
+  "meshes": {
+    "soko_wall": {
+      "asset": "/Game/Sokoban/Meshes/SM_soko_wall",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "soko_bronze",
+          "normal": "/Game/Sokoban/M_ObjectBronze.M_ObjectBronze",
+          "memory": "/Game/Sokoban/M_ObjectBronzeMemory.M_ObjectBronzeMemory"
+        },
+        {
+          "source": "soko_basalt",
+          "normal": "/Game/Sokoban/M_ObjectBasalt.M_ObjectBasalt",
+          "memory": "/Game/Sokoban/M_ObjectBasaltMemory.M_ObjectBasaltMemory"
+        },
+        {
+          "source": "soko_sandstone",
+          "normal": "/Game/Sokoban/M_ObjectMasonry.M_ObjectMasonry",
+          "memory": "/Game/Sokoban/M_ObjectMasonryMemory.M_ObjectMasonryMemory"
+        }
+      ]
+    },
+    "soko_floor": {
+      "asset": "/Game/Sokoban/Meshes/SM_soko_floor",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "soko_floor",
+          "normal": "/Game/Sokoban/M_ObjectFloor.M_ObjectFloor",
+          "memory": "/Game/Sokoban/M_ObjectFloorMemory.M_ObjectFloorMemory"
+        }
+      ]
+    },
+    "soko_boulder": {
+      "asset": "/Game/Sokoban/Meshes/SM_soko_boulder",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "soko_rock",
+          "normal": "/Game/Sokoban/M_ObjectBoulder.M_ObjectBoulder",
+          "memory": "/Game/Sokoban/M_ObjectBoulderMemory.M_ObjectBoulderMemory"
+        }
+      ]
+    },
+    "soko_pit": {
+      "asset": "/Game/Sokoban/Meshes/SM_soko_pit",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "soko_basalt",
+          "normal": "/Game/Sokoban/M_ObjectBasalt.M_ObjectBasalt",
+          "memory": "/Game/Sokoban/M_ObjectBasaltMemory.M_ObjectBasaltMemory"
+        },
+        {
+          "source": "soko_pit_earth",
+          "normal": "/Game/Sokoban/M_ObjectEarth.M_ObjectEarth",
+          "memory": "/Game/Sokoban/M_ObjectEarthMemory.M_ObjectEarthMemory"
+        },
+        {
+          "source": "soko_floor",
+          "normal": "/Game/Sokoban/M_ObjectFloor.M_ObjectFloor",
+          "memory": "/Game/Sokoban/M_ObjectFloorMemory.M_ObjectFloorMemory"
+        }
+      ]
+    },
+    "soko_hole": {
+      "asset": "/Game/Sokoban/Meshes/SM_soko_hole",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "soko_dark",
+          "normal": "/Game/Sokoban/M_ObjectDark.M_ObjectDark",
+          "memory": "/Game/Sokoban/M_ObjectDarkMemory.M_ObjectDarkMemory"
+        },
+        {
+          "source": "soko_basalt",
+          "normal": "/Game/Sokoban/M_ObjectBasalt.M_ObjectBasalt",
+          "memory": "/Game/Sokoban/M_ObjectBasaltMemory.M_ObjectBasaltMemory"
+        },
+        {
+          "source": "soko_floor",
+          "normal": "/Game/Sokoban/M_ObjectFloor.M_ObjectFloor",
+          "memory": "/Game/Sokoban/M_ObjectFloorMemory.M_ObjectFloorMemory"
+        }
+      ]
+    },
+    "soko_frame": {
+      "asset": "/Game/Sokoban/Meshes/SM_soko_frame",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "soko_basalt",
+          "normal": "/Game/Sokoban/M_ObjectBasalt.M_ObjectBasalt",
+          "memory": "/Game/Sokoban/M_ObjectBasaltMemory.M_ObjectBasaltMemory"
+        },
+        {
+          "source": "soko_sandstone",
+          "normal": "/Game/Sokoban/M_ObjectMasonry.M_ObjectMasonry",
+          "memory": "/Game/Sokoban/M_ObjectMasonryMemory.M_ObjectMasonryMemory"
+        },
+        {
+          "source": "soko_bronze",
+          "normal": "/Game/Sokoban/M_ObjectBronze.M_ObjectBronze",
+          "memory": "/Game/Sokoban/M_ObjectBronzeMemory.M_ObjectBronzeMemory"
+        }
+      ]
+    },
+    "soko_trim": {
+      "asset": "/Game/Sokoban/Meshes/SM_soko_trim",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "soko_bronze",
+          "normal": "/Game/Sokoban/M_ObjectBronze.M_ObjectBronze",
+          "memory": "/Game/Sokoban/M_ObjectBronzeMemory.M_ObjectBronzeMemory"
+        }
+      ]
+    },
+    "soko_lamp": {
+      "asset": "/Game/Sokoban/Meshes/SM_soko_lamp",
+      "vertex_colors": true,
+      "slots": [
+        {
+          "source": "soko_lamp",
+          "normal": "/Game/Sokoban/M_ObjectLamp.M_ObjectLamp",
+          "memory": "/Game/Sokoban/M_ObjectLampMemory.M_ObjectLampMemory"
+        },
+        {
+          "source": "soko_bronze",
+          "normal": "/Game/Sokoban/M_ObjectBronze.M_ObjectBronze",
+          "memory": "/Game/Sokoban/M_ObjectBronzeMemory.M_ObjectBronzeMemory"
+        }
+      ]
+    }
+  },
+  "material_families": {
+    "Masonry": [
+      0.86,
+      0
+    ],
+    "Floor": [
+      0.89,
+      0
+    ],
+    "Basalt": [
+      0.83,
+      0
+    ],
+    "Bronze": [
+      0.32,
+      0.82
+    ],
+    "Boulder": [
+      0.94,
+      0
+    ],
+    "Earth": [
+      0.95,
+      0
+    ],
+    "Dark": [
+      1.0,
+      0
+    ],
+    "Lamp": [
+      0.4,
+      0
+    ]
+  }
+}

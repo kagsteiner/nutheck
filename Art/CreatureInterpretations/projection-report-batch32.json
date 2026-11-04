@@ -1,0 +1,373 @@
+[
+  {
+    "key": "gray_ooze",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        7,
+        12
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        10,
+        5
+      ],
+      [
+        11,
+        5
+      ],
+      [
+        11,
+        6
+      ],
+      [
+        11,
+        7
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        12,
+        7
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        13,
+        6
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.4888322949409485,
+        -0.2589171528816223,
+        0.0
+      ],
+      [
+        0.4989437460899353,
+        0.2589171230792999,
+        0.36926761269569397
+      ]
+    ],
+    "best_projection": {
+      "yaw": -125,
+      "elevation": 45,
+      "silhouette_iou": 0.4364,
+      "file": "gray_ooze-pixel--125-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -180,
+        "elevation": 25,
+        "silhouette_iou": 0.3929,
+        "file": "gray_ooze-pixel--180-25.png"
+      },
+      {
+        "yaw": -180,
+        "elevation": 45,
+        "silhouette_iou": 0.375,
+        "file": "gray_ooze-pixel--180-45.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 25,
+        "silhouette_iou": 0.4,
+        "file": "gray_ooze-pixel--155-25.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 45,
+        "silhouette_iou": 0.3303,
+        "file": "gray_ooze-pixel--155-45.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 25,
+        "silhouette_iou": 0.3942,
+        "file": "gray_ooze-pixel--125-25.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 45,
+        "silhouette_iou": 0.4364,
+        "file": "gray_ooze-pixel--125-45.png"
+      }
+    ]
+  },
+  {
+    "key": "brown_pudding",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        5,
+        13
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        13,
+        11
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.339093953371048,
+        -0.28911805152893066,
+        0.0
+      ],
+      [
+        0.439006507396698,
+        0.29936137795448303,
+        0.6145720481872559
+      ]
+    ],
+    "best_projection": {
+      "yaw": -125,
+      "elevation": 25,
+      "silhouette_iou": 0.4795,
+      "file": "brown_pudding-pixel--125-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -180,
+        "elevation": 25,
+        "silhouette_iou": 0.4658,
+        "file": "brown_pudding-pixel--180-25.png"
+      },
+      {
+        "yaw": -180,
+        "elevation": 45,
+        "silhouette_iou": 0.4444,
+        "file": "brown_pudding-pixel--180-45.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 25,
+        "silhouette_iou": 0.4306,
+        "file": "brown_pudding-pixel--155-25.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 45,
+        "silhouette_iou": 0.3472,
+        "file": "brown_pudding-pixel--155-45.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 25,
+        "silhouette_iou": 0.4795,
+        "file": "brown_pudding-pixel--125-25.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 45,
+        "silhouette_iou": 0.3611,
+        "file": "brown_pudding-pixel--125-45.png"
+      }
+    ]
+  },
+  {
+    "key": "black_pudding",
+    "mask_method": "explicit_reviewed_spatial_mask_dark_anatomy_retained",
+    "excluded_shadow_pixels": [],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.32624566555023193,
+        -0.13057155907154083,
+        0.0
+      ],
+      [
+        0.4821517765522003,
+        0.1498452126979828,
+        1.026193618774414
+      ]
+    ],
+    "best_projection": {
+      "yaw": -125,
+      "elevation": 25,
+      "silhouette_iou": 0.5125,
+      "file": "black_pudding-pixel--125-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -180,
+        "elevation": 25,
+        "silhouette_iou": 0.1489,
+        "file": "black_pudding-pixel--180-25.png"
+      },
+      {
+        "yaw": -180,
+        "elevation": 45,
+        "silhouette_iou": 0.1136,
+        "file": "black_pudding-pixel--180-45.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 25,
+        "silhouette_iou": 0.2892,
+        "file": "black_pudding-pixel--155-25.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 45,
+        "silhouette_iou": 0.2169,
+        "file": "black_pudding-pixel--155-45.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 25,
+        "silhouette_iou": 0.5125,
+        "file": "black_pudding-pixel--125-25.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 45,
+        "silhouette_iou": 0.3976,
+        "file": "black_pudding-pixel--125-45.png"
+      }
+    ]
+  }
+]

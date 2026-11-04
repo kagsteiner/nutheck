@@ -130,6 +130,7 @@ def shuffle_groups(records):
     return groups
 
 def artifacts():
+    drafts={r['id']:r for r in json.loads((ROOT/'Art/ObjectInterpretations/object-assets.json').read_text(encoding='utf-8')).get('artifacts',[])}
     raw=clean((ROOT/'upstream/NetHack/include/artilist.h').read_text());result=[]
     for m in re.finditer(r'^\s*A\(',raw,re.M):
         name,args,_=call(raw[m.start():]);assert len(args)==17
@@ -139,6 +140,10 @@ def artifacts():
         # Preserve the explicitly obsolete artifact separately from current ones.
         preceding=raw[:m.start()];scope='obsolete' if preceding.rfind('#if 0')>preceding.rfind('#endif') else 'normal'
         result.append(dict(id='ART_'+args[16],name=label,base_object_id=args[1],scope=scope,source=dict(path='upstream/NetHack/include/artilist.h',line=line),native_flags=args[2:5],attacks=args[5:8],invoked_property=args[8],alignment=args[9],role=args[10],ancestry=args[11],native_cost=args[14],glow_colour=args[15],asset_status='MVP live placement and native visible name verified; extended verification pending' if args[16] in {'MJOLLNIR','CLEAVER'} else 'not modelled',design_policy='Distinctive named treatment only when native displayed knowledge permits; otherwise retain the legal base appearance.'))
+    for artifact in result:
+        if artifact['id'] in drafts:
+            draft=drafts[artifact['id']]
+            artifact.update(asset_status=draft['asset_status'],evidence=draft['evidence'],asset_key=draft['key'],unreal_asset=draft['unreal_asset'])
     assert len({a['id'] for a in result})==len(result);return result
 
 def write_csv(path,rows,fields):
@@ -149,6 +154,7 @@ def write_csv(path,rows,fields):
 def main():
     OUT.mkdir(parents=True,exist_ok=True);records=source_objects();groups=shuffle_groups(records)
     registry=json.loads((ROOT/'Art/ObjectInterpretations/object-assets.json').read_text())
+    appearance_drafts={r['source_slot_id']:r for r in registry.get('appearances',[])}
     completed={r['id']:r for r in registry['objects'] if r['asset_status']=='generated and verified static draft'}
     tiletext=(ROOT/'upstream/NetHack/win/share/objects.txt').read_text()
     tiles=[dict(index=int(i),label=label) for i,label in re.findall(r'^# tile (\d+) \(([^\n]+)\)',tiletext,re.M)]
@@ -188,11 +194,34 @@ def main():
         if r['id'] in {'DAGGER','SHORT_SWORD','SPEAR'}:
             r['asset_status']='MVP live placement verified; finishing and extended verification pending'
             r['evidence']='Docs/WeaponBatch2.md'
+        if r['id'] in {'AXE','MACE','WAR_HAMMER'}:
+            r['asset_status']='MVP live placement verified; finishing and extended verification pending'
+            r['evidence']='Docs/WeaponBatch3.md'
+        if r['id'] in {'PICK_AXE','GRAPPLING_HOOK','STETHOSCOPE'}:
+            r['asset_status']='MVP live placement verified; finishing and extended verification pending'
+            r['evidence']='Docs/ToolBatch1.md'
+        if r['id']=='BOULDER':
+            r['asset_status']='MVP live placement verified; finishing and extended verification pending'
+            r['evidence']='Docs/Sokoban.md'
+        if r['id'] in {'SILVER_SABER','BROADSWORD','TWO_HANDED_SWORD'}:
+            r['asset_status']='MVP live placement verified; finishing and extended verification pending'
+            r['evidence']='Docs/WeaponBatch4.md'
+        if r['id']=='STATUE':
+            r['asset_status']='Partial species coverage: shared white-marble renderer and Oracle centaurs verified; unmodelled species use native tiles'
+            r['evidence']='Docs/CentaursAndStatues.md'
         if r['id'] in completed:r['draft_scope']=completed[r['id']].get('scope','Selected fixed object presentation; see evidence.')
         r['design_tags']=[r['fields']['material'],r['fields']['subtype']]
         r['style_tags']=[tag for tag in ['elven','orcish','dwarvish'] if (r['name'] or '').startswith(tag+' ')]
         if r['record_kind'] in ['object_type','appearance_only'] and r['scope']!='deferred':
             appearances.append(dict(id='APPEARANCE_'+r['id'],source_slot_id=r['id'],category=r['category'],visual_family=r['visual_family'],label=r['default_description'] or r['name'],shuffle_group=r['shuffle_group'],official_tile=r['official_tile'],asset_status=r['asset_status'],evidence=r['evidence'],policy='Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed.'))
+    # Physical source-slot progress is independent of the effect identity row.
+    for appearance in appearances:
+        draft=appearance_drafts.get(appearance['source_slot_id'])
+        if draft:
+            appearance.update(asset_status=draft['asset_status'],evidence=draft['evidence'],asset_key=draft['key'],unreal_asset=draft['unreal_asset'])
+    for record in records:
+        draft=appearance_drafts.get(record['id'])
+        if draft:record.update(appearance_asset_status=draft['asset_status'],appearance_evidence=draft['evidence'])
     art=artifacts();ids={r['id'] for r in records}
     assert all(a['base_object_id'] in ids for a in art)
     named=[r for r in records if r['record_kind']=='object_type' and r['scope']!='deferred']
@@ -204,14 +233,16 @@ def main():
     write_csv(OUT/'objects.csv',flat,list(flat[0]))
     write_csv(OUT/'appearances.csv',appearances,['id','source_slot_id','category','visual_family','label','shuffle_group','asset_status','evidence'])
     write_csv(OUT/'artifacts.csv',art,['id','name','base_object_id','scope','alignment','role','ancestry','asset_status'])
-    md=['# Object source inventory','',f"{len(named)} named types ({summary['conditional_named_types']} conditional), {len(appearances)} source appearance slots, {summary['artifacts']} current artifact overlays.",'','Generated by `Scripts/CreateObjectCatalogue.py`; progress lives in [object-backlog.md](../../object-backlog.md). This file is regenerated; the manual backlog is not.','', 'Hierarchy: native category â†’ useful visual family. Materials, culture and finish are facets, not a mandatory inheritance tree. Default appearance/effect pairings are not live bindings.','', '| Category | Named source types | Verified drafts |','| --- | ---: | ---: |']
+    md=['# Object source inventory','',f"{len(named)} named types ({summary['conditional_named_types']} conditional), {len(appearances)} source appearance slots, {summary['artifacts']} current artifact overlays.",'','Generated by `Scripts/CreateObjectCatalogue.py`; progress lives in [object-backlog.md](../../object-backlog.md). This file is regenerated; the manual backlog is not.','', 'Hierarchy: native category → useful visual family. Materials, culture and finish are facets, not a mandatory inheritance tree. Default appearance/effect pairings are not live bindings.','', '| Category | Named source types | Verified drafts |','| --- | ---: | ---: |']
     for cat,count in summary['by_category'].items():md.append(f"| {cat} | {count} | {sum(r['id'] in completed for r in named if r['category']==cat)} |")
+    if appearance_drafts:
+        md+=['','## Shuffled physical appearance drafts','']+[f"- {a['name']} (`{a['appearance_id']}`): {a['asset_status']}; [{a['evidence']}]({a['evidence'].replace('Docs/','../../Docs/')}). The linked source slot is not a fixed live magical effect." for a in appearance_drafts.values()]
     for kind,heading in [('object_type','Named object types'),('appearance_only','Extra shuffled appearance slots'),('generic_display','Generic display auxiliaries'),('dummy','Dummy source entry')]:
         md+=['',f'## {heading}','']
         for r in records:
             if r['record_kind']!=kind:continue
-            md.append(f"- `{r['id']}` â€” {r['name'] or r['default_description']} | {r['category']} / {r['visual_family']} | {r['scope']} | {r['asset_status']}")
-    md+=['','## Artifact overlays','']+[f"- `{a['id']}` â€” {a['name']} â†’ `{a['base_object_id']}` ({a['scope']}); appearance gated by native knowledge." for a in art]
+            md.append(f"- `{r['id']}` — {r['name'] or r['default_description']} | {r['category']} / {r['visual_family']} | {r['scope']} | {r['asset_status']}")
+    md+=['','## Artifact overlays','']+[f"- `{a['id']}` — {a['name']} → `{a['base_object_id']}` ({a['scope']}); appearance gated by native knowledge." for a in art]
     (OUT/'Inventory.md').write_text('\n'.join(md)+'\n',encoding='utf-8')
     print('OBJECT_CATALOGUE_READY '+json.dumps(summary),flush=True)
 

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "check": "[2026.11.03-19.08.23:582][107]LogTemp: Display: CREATURE_BATCH29_CHECK PASS forms=6 fallback=6 turn_before=4 turn_after=4 sequence_before=7 sequence_after=7",
+  "forms": 6,
+  "fallbacks": 6,
+  "player_session_used": false,
+  "capture": "Batch29-Unreal-fixtures.png"
+}

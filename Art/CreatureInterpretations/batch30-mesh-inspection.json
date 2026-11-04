@@ -1,0 +1,66 @@
+{
+  "acid_blob": {
+    "parts": 1,
+    "triangles": 77776,
+    "bounds_m": [
+      [
+        -0.2805401682853699,
+        -0.2515302300453186,
+        0.0
+      ],
+      [
+        0.2992647886276245,
+        0.2515302002429962,
+        0.37917837500572205
+      ]
+    ],
+    "closed_solids": true,
+    "paint_valid": true,
+    "connected_body": true,
+    "source_sex_shared": true,
+    "texture_only_fur": false
+  },
+  "quivering_blob": {
+    "parts": 1,
+    "triangles": 148224,
+    "bounds_m": [
+      [
+        -0.3596878945827484,
+        -0.3322857618331909,
+        0.0
+      ],
+      [
+        0.4092724919319153,
+        0.33228570222854614,
+        0.5591380596160889
+      ]
+    ],
+    "closed_solids": true,
+    "paint_valid": true,
+    "connected_body": true,
+    "source_sex_shared": true,
+    "texture_only_fur": false
+  },
+  "gelatinous_cube": {
+    "parts": 1,
+    "triangles": 55476,
+    "bounds_m": [
+      [
+        -0.41999998688697815,
+        -0.39500001072883606,
+        0.0
+      ],
+      [
+        0.41999998688697815,
+        0.39500001072883606,
+        0.8134869933128357
+      ]
+    ],
+    "closed_solids": true,
+    "paint_valid": true,
+    "connected_body": true,
+    "source_sex_shared": true,
+    "texture_only_fur": false
+  },
+  "protected_exports_unchanged": 257
+}

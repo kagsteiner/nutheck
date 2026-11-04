@@ -1,0 +1,29 @@
+[
+  {
+    "name": "axe",
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\63da7d34137447899f3f9bd7e4ac7849",
+    "position": [
+      9,
+      5
+    ],
+    "glyph": 3492
+  },
+  {
+    "name": "mace",
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\c7542bcacdf94c2aaa0753f9c184a0b8",
+    "position": [
+      36,
+      7
+    ],
+    "glyph": 3521
+  },
+  {
+    "name": "war hammer",
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\c1e23cea1ab3498b9503815522baa782",
+    "position": [
+      8,
+      9
+    ],
+    "glyph": 3524
+  }
+]

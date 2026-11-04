@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "forms": [
+    {
+      "name": "yeti",
+      "female": false,
+      "glyph": 236,
+      "tile_index": 484,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\908ef3b9992c49b49929f6309cb118d4"
+    },
+    {
+      "name": "yeti",
+      "female": true,
+      "glyph": 619,
+      "tile_index": 485,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\722eddda8c40472c8f570ef4ab017278"
+    },
+    {
+      "name": "sasquatch",
+      "female": false,
+      "glyph": 238,
+      "tile_index": 488,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\5a190768c6c44786800eab7b31dcb891"
+    },
+    {
+      "name": "sasquatch",
+      "female": true,
+      "glyph": 621,
+      "tile_index": 489,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\27647d4b0b9e4082bc0d225de3e010c6"
+    },
+    {
+      "name": "owlbear",
+      "female": false,
+      "glyph": 235,
+      "tile_index": 482,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\8cf0a5a70395450986a264d7496ce85a"
+    },
+    {
+      "name": "owlbear",
+      "female": true,
+      "glyph": 618,
+      "tile_index": 483,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\687ce9d03d7a4289a4bc942961848cf2"
+    }
+  ]
+}

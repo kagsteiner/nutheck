@@ -1,0 +1,66 @@
+{
+  "gray_ooze": {
+    "parts": 1,
+    "triangles": 84984,
+    "bounds_m": [
+      [
+        -0.4888322949409485,
+        -0.2589171528816223,
+        0.0
+      ],
+      [
+        0.4989437460899353,
+        0.2589171230792999,
+        0.36926761269569397
+      ]
+    ],
+    "closed_solids": true,
+    "paint_valid": true,
+    "connected_body": true,
+    "source_sex_shared": true,
+    "texture_only_fur": false
+  },
+  "brown_pudding": {
+    "parts": 5,
+    "triangles": 110456,
+    "bounds_m": [
+      [
+        -0.339093953371048,
+        -0.28911805152893066,
+        0.0
+      ],
+      [
+        0.439006507396698,
+        0.29936137795448303,
+        0.6145720481872559
+      ]
+    ],
+    "closed_solids": true,
+    "paint_valid": true,
+    "connected_body": true,
+    "source_sex_shared": true,
+    "texture_only_fur": false
+  },
+  "black_pudding": {
+    "parts": 3,
+    "triangles": 3804,
+    "bounds_m": [
+      [
+        -0.32624566555023193,
+        -0.13057155907154083,
+        0.0
+      ],
+      [
+        0.4821517765522003,
+        0.1498452126979828,
+        1.026193618774414
+      ]
+    ],
+    "closed_solids": true,
+    "paint_valid": true,
+    "connected_body": true,
+    "source_sex_shared": true,
+    "texture_only_fur": false
+  },
+  "protected_exports_unchanged": 263
+}

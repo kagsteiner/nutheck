@@ -1,0 +1,65 @@
+{
+  "silver_saber": {
+    "asset": "/Game/WeaponBatch4/Meshes/SM_silver_saber",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "w4_silver",
+        "normal": "/Game/WeaponBatch4/M_ObjectSilver.M_ObjectSilver",
+        "memory": "/Game/WeaponBatch4/M_ObjectSilverMemory.M_ObjectSilverMemory"
+      },
+      {
+        "source": "w4_blue_wrap",
+        "normal": "/Game/WeaponBatch4/M_ObjectBlueWrap.M_ObjectBlueWrap",
+        "memory": "/Game/WeaponBatch4/M_ObjectBlueWrapMemory.M_ObjectBlueWrapMemory"
+      }
+    ]
+  },
+  "broadsword": {
+    "asset": "/Game/WeaponBatch4/Meshes/SM_broadsword",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "w4_steel",
+        "normal": "/Game/WeaponBatch4/M_ObjectSteel.M_ObjectSteel",
+        "memory": "/Game/WeaponBatch4/M_ObjectSteelMemory.M_ObjectSteelMemory"
+      },
+      {
+        "source": "w4_brass",
+        "normal": "/Game/WeaponBatch4/M_ObjectBrass.M_ObjectBrass",
+        "memory": "/Game/WeaponBatch4/M_ObjectBrassMemory.M_ObjectBrassMemory"
+      },
+      {
+        "source": "w4_dark",
+        "normal": "/Game/WeaponBatch4/M_ObjectDark.M_ObjectDark",
+        "memory": "/Game/WeaponBatch4/M_ObjectDarkMemory.M_ObjectDarkMemory"
+      },
+      {
+        "source": "w4_leather",
+        "normal": "/Game/WeaponBatch4/M_ObjectLeather.M_ObjectLeather",
+        "memory": "/Game/WeaponBatch4/M_ObjectLeatherMemory.M_ObjectLeatherMemory"
+      }
+    ]
+  },
+  "two_handed_sword": {
+    "asset": "/Game/WeaponBatch4/Meshes/SM_two_handed_sword",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "w4_steel",
+        "normal": "/Game/WeaponBatch4/M_ObjectSteel.M_ObjectSteel",
+        "memory": "/Game/WeaponBatch4/M_ObjectSteelMemory.M_ObjectSteelMemory"
+      },
+      {
+        "source": "w4_dark",
+        "normal": "/Game/WeaponBatch4/M_ObjectDark.M_ObjectDark",
+        "memory": "/Game/WeaponBatch4/M_ObjectDarkMemory.M_ObjectDarkMemory"
+      },
+      {
+        "source": "w4_leather",
+        "normal": "/Game/WeaponBatch4/M_ObjectLeather.M_ObjectLeather",
+        "memory": "/Game/WeaponBatch4/M_ObjectLeatherMemory.M_ObjectLeatherMemory"
+      }
+    ]
+  }
+}

@@ -6,9 +6,18 @@ Working checklist, created 2026-11-02. Maintained by hand: catalogue regeneratio
 There are also 463 non-auxiliary default appearance slots (including 23 extra shuffled descriptions), 18 display auxiliaries, 4 deferred types and 33 current artifact overlays. These scopes are not additive unique-mesh counts.
 
 MVP integration update: the three swords, twenty armor/cloak models, Cleaver and
-Mjollnir now have [live placement](Docs/MVPObjectPlacement.md). Dagger, short sword and spear now also have [MVP live placement](Docs/WeaponBatch2.md). That is 30 ordinary
+Mjollnir now have [live placement](Docs/MVPObjectPlacement.md). Dagger, short sword and spear now also have [MVP live placement](Docs/WeaponBatch2.md). Axe, mace and ordinary war hammer also have [MVP live placement](Docs/WeaponBatch3.md). Pick-axe, grappling hook and stethoscope have [MVP live placement](Docs/ToolBatch1.md). The shared natural boulder has [MVP live placement](Docs/Sokoban.md). That is 37 ordinary
 presentations including the four older models, plus two artifact treatments.
-Full art/edge-case completion counts and checkboxes above remain separate.
+Silver saber, broadsword and two-handed sword add [three more ordinary MVP
+presentations](Docs/WeaponBatch4.md), bringing the current ordinary total to **40**.
+Snickersnee adds the [third named artifact treatment](Docs/Snickersnee.md), selected
+only through native visible-name knowledge. Ordinary and appearance totals stay separate.
+Three shuffled physical appearance designs—ruby ring, spherical amulet and oak wand—now also have [native/live verification](Docs/AppearanceBatch1.md). These are appearance slots, not three completed magical effect identities. Full art/edge-case completion counts and checkboxes above remain separate.
+
+The second appearance batch adds sapphire ring, triangular iron amulet and silver
+wand with [native/live verification](Docs/AppearanceBatch2.md): **six physical
+appearance slots** across the two batches. Ordinary-object and artifact totals
+are unchanged; a source effect paired with an appearance is not completed by it.
 
 
 Read [Object art direction](Docs/ObjectArtDirection.md) and follow the
@@ -27,8 +36,8 @@ Read [Object art direction](Docs/ObjectArtDirection.md) and follow the
 
 ## Suggested object work
 
-1. Long sword, scimitar and katana now have a [design/import craftsmanship study](Docs/WeaponBatch1.md). Review finish and native live mapping separately. Dagger, short sword and spear now have an [editable/imported and MVP live verified batch](Docs/WeaponBatch2.md), with independent proportions and construction. Full edge-case completion remains separate.
-2. A ring, amulet and wand appearance study: coherent jewelry/metal/wood language; choose physical source appearances, not effect-coded ornament.
+1. Long sword, scimitar and katana now have a [design/import craftsmanship study](Docs/WeaponBatch1.md). Review finish and native live mapping separately. Dagger, short sword and spear now have an [editable/imported and MVP live verified batch](Docs/WeaponBatch2.md), with independent proportions and construction. Axe, mace and ordinary war hammer now have a [hafted weapon batch](Docs/WeaponBatch3.md). A fixed utility-tool batch (pick-axe, grappling hook, stethoscope) now also has [editable models and MVP integration](Docs/ToolBatch1.md). Full edge-case completion remains separate.
+2. Two ring/amulet/wand appearance batches are verified: ruby/sapphire rings, spherical/triangular iron amulets and oak/silver wands. Continue physical appearance coverage while keeping effects independent; see Docs/AppearanceBatch1.md and Docs/AppearanceBatch2.md.
 3. Potion/scroll appearance pipeline: bottles, liquids and labels; verify native shuffling and persistence before completing effect identities.
 4. Artifact designs linked to base types, with an explicit native-knowledge eligibility rule before unique live visuals.
 
@@ -106,7 +115,7 @@ These are future priorities, not an instruction to generate assets automatically
 
 #### Axes and picks
 
-- [ ] **axe** (`AXE`).
+- [ ] **axe** (`AXE`) — editable, imported and MVP live verified; [models and verification](Docs/WeaponBatch3.md). Remaining: extended hallucination/mimic/pile/memory transitions, finishing and LOD review.
 - [ ] **battle-axe** (`BATTLE_AXE`) — default appearance: double-headed axe.
 - [ ] **dwarvish mattock** (`DWARVISH_MATTOCK`) — default appearance: broad pick.
 
@@ -117,21 +126,21 @@ These are future priorities, not an instruction to generate assets automatically
 - [ ] **orcish short sword** (`ORCISH_SHORT_SWORD`) — default appearance: crude short sword.
 - [ ] **dwarvish short sword** (`DWARVISH_SHORT_SWORD`) — default appearance: broad short sword.
 - [ ] **scimitar** (`SCIMITAR`) — design/import draft; [model and craftsmanship study](Docs/WeaponBatch1.md). Remaining: native displayed-appearance/pile/memory/hallucination/save/fallback/no-turn live checks.
-- [ ] **silver saber** (`SILVER_SABER`).
-- [ ] **broadsword** (`BROADSWORD`).
+- [ ] **silver saber** (`SILVER_SABER`) — editable, painted/imported and MVP live verified; curved single-edge blade, blue grip and silver knuckle guard. [Models and native/live checks](Docs/WeaponBatch4.md). Finishing, additional mimic cases and LOD/performance review remain.
+- [ ] **broadsword** (`BROADSWORD`) — editable, painted/imported and MVP live verified; broad double-fuller blade, leather grip and wheel pommel. [Models and native/live checks](Docs/WeaponBatch4.md). Finishing, additional mimic cases and LOD/performance review remain.
 - [ ] **elven broadsword** (`ELVEN_BROADSWORD`) — default appearance: runed broadsword.
 - [ ] **long sword** (`LONG_SWORD`) — design/import draft; [model and craftsmanship study](Docs/WeaponBatch1.md). Remaining: native displayed-appearance/pile/memory/hallucination/save/fallback/no-turn live checks.
-- [ ] **two-handed sword** (`TWO_HANDED_SWORD`).
+- [ ] **two-handed sword** (`TWO_HANDED_SWORD`) — editable, painted/imported and MVP live verified; long grip, ricasso, side rings and parrying hooks. [Models and native/live checks](Docs/WeaponBatch4.md). Finishing, additional mimic cases and LOD/performance review remain.
 - [ ] **katana** (`KATANA`) — design/import draft; [model and craftsmanship study](Docs/WeaponBatch1.md). Remaining: native displayed-appearance/pile/memory/hallucination/save/fallback/no-turn live checks.
 - [ ] **tsurugi** (`TSURUGI`) — default appearance: long samurai sword.
 - [ ] **runesword** (`RUNESWORD`) — default appearance: runed broadsword.
 
 #### Clubs, hammers and staves
 
-- [ ] **mace** (`MACE`).
+- [ ] **mace** (`MACE`) — editable, imported and MVP live verified; [models and verification](Docs/WeaponBatch3.md). Remaining: extended hallucination/mimic/pile/memory transitions, finishing and LOD review.
 - [ ] **silver mace** (`SILVER_MACE`).
 - [ ] **morning star** (`MORNING_STAR`).
-- [ ] **war hammer** (`WAR_HAMMER`).
+- [ ] **war hammer** (`WAR_HAMMER`) — editable, imported and MVP live verified; [models and verification](Docs/WeaponBatch3.md). Remaining: extended hallucination/mimic/pile/memory transitions, finishing and LOD review.
 - [ ] **club** (`CLUB`).
 - [ ] **quarterstaff** (`QUARTERSTAFF`) — default appearance: staff.
 - [ ] **aklys** (`AKLYS`) — default appearance: thonged club.
@@ -276,8 +285,8 @@ These are future priorities, not an instruction to generate assets automatically
 - [ ] **sustain ability** (`RIN_SUSTAIN_ABILITY`) — default appearance: bronze; shuffled pool `ring_appearances`.
 - [ ] **levitation** (`RIN_LEVITATION`) — default appearance: agate; shuffled pool `ring_appearances`.
 - [ ] **hunger** (`RIN_HUNGER`) — default appearance: topaz; shuffled pool `ring_appearances`.
-- [ ] **aggravate monster** (`RIN_AGGRAVATE_MONSTER`) — default appearance: sapphire; shuffled pool `ring_appearances`.
-- [ ] **conflict** (`RIN_CONFLICT`) — default appearance: ruby; shuffled pool `ring_appearances`.
+- [ ] **aggravate monster** (`RIN_AGGRAVATE_MONSTER`) — default appearance: sapphire; shuffled pool `ring_appearances`. Sapphire physical appearance is an editable/imported, MVP live verified draft; [evidence](Docs/AppearanceBatch2.md). This does not complete the effect identity or every appearance it can receive. Finishing/LOD work remains.
+- [ ] **conflict** (`RIN_CONFLICT`) — default appearance: ruby; shuffled pool `ring_appearances`. Appearance design verified separately; this effect identity remains incomplete. See [AppearanceBatch1](Docs/AppearanceBatch1.md).
 - [ ] **warning** (`RIN_WARNING`) — default appearance: diamond; shuffled pool `ring_appearances`.
 - [ ] **poison resistance** (`RIN_POISON_RESISTANCE`) — default appearance: pearl; shuffled pool `ring_appearances`.
 - [ ] **fire resistance** (`RIN_FIRE_RESISTANCE`) — default appearance: iron; shuffled pool `ring_appearances`.
@@ -299,9 +308,9 @@ These are future priorities, not an instruction to generate assets automatically
 #### Pendants
 
 - [ ] **amulet of ESP** (`AMULET_OF_ESP`) — default appearance: circular; shuffled pool `amulet_appearances`.
-- [ ] **amulet of life saving** (`AMULET_OF_LIFE_SAVING`) — default appearance: spherical; shuffled pool `amulet_appearances`.
+- [ ] **amulet of life saving** (`AMULET_OF_LIFE_SAVING`) — default appearance: spherical; shuffled pool `amulet_appearances`. Appearance design verified separately; this effect identity remains incomplete. See [AppearanceBatch1](Docs/AppearanceBatch1.md).
 - [ ] **amulet of strangulation** (`AMULET_OF_STRANGULATION`) — default appearance: oval; shuffled pool `amulet_appearances`.
-- [ ] **amulet of restful sleep** (`AMULET_OF_RESTFUL_SLEEP`) — default appearance: triangular; shuffled pool `amulet_appearances`.
+- [ ] **amulet of restful sleep** (`AMULET_OF_RESTFUL_SLEEP`) — default appearance: triangular; shuffled pool `amulet_appearances`. Triangular iron physical appearance is an editable/imported, MVP live verified draft; [evidence](Docs/AppearanceBatch2.md). This does not complete the effect identity or every appearance it can receive. Finishing/LOD work remains.
 - [ ] **amulet versus poison** (`AMULET_VERSUS_POISON`) — default appearance: pyramidal; shuffled pool `amulet_appearances`.
 - [ ] **amulet of change** (`AMULET_OF_CHANGE`) — default appearance: square; shuffled pool `amulet_appearances`.
 - [ ] **amulet of unchanging** (`AMULET_OF_UNCHANGING`) — default appearance: concave; shuffled pool `amulet_appearances`.
@@ -333,7 +342,7 @@ These are future priorities, not an instruction to generate assets automatically
 - [ ] **mirror** (`MIRROR`) — default appearance: looking glass.
 - [ ] **saddle** (`SADDLE`).
 - [ ] **leash** (`LEASH`).
-- [ ] **stethoscope** (`STETHOSCOPE`).
+- [ ] **stethoscope** (`STETHOSCOPE`) — editable, imported and MVP live verified; [models and verification](Docs/ToolBatch1.md). Remaining: extended hallucination/mimic/pile/memory transitions, finishing and LOD review.
 - [ ] **tinning kit** (`TINNING_KIT`).
 - [ ] **tin whistle** (`TIN_WHISTLE`) — default appearance: whistle.
 - [ ] **magic whistle** (`MAGIC_WHISTLE`) — default appearance: whistle.
@@ -382,11 +391,11 @@ These are future priorities, not an instruction to generate assets automatically
 
 #### Axes and picks
 
-- [ ] **pick-axe** (`PICK_AXE`).
+- [ ] **pick-axe** (`PICK_AXE`) — editable, imported and MVP live verified; [models and verification](Docs/ToolBatch1.md). Remaining: extended hallucination/mimic/pile/memory transitions, finishing and LOD review.
 
 #### Flexible weapons
 
-- [ ] **grappling hook** (`GRAPPLING_HOOK`).
+- [ ] **grappling hook** (`GRAPPLING_HOOK`) — editable, imported and MVP live verified; [models and verification](Docs/ToolBatch1.md). Remaining: extended hallucination/mimic/pile/memory transitions, finishing and LOD review.
 
 #### Clubs, hammers and staves
 
@@ -553,13 +562,13 @@ These are future priorities, not an instruction to generate assets automatically
 - [ ] **create monster** (`WAN_CREATE_MONSTER`) — default appearance: maple; shuffled pool `wand_appearances`.
 - [ ] **wishing** (`WAN_WISHING`) — default appearance: pine; shuffled pool `wand_appearances`.
 - [ ] **stasis** (`WAN_STASIS`) — default appearance: redwood; shuffled pool `wand_appearances`.
-- [ ] **nothing** (`WAN_NOTHING`) — default appearance: oak; shuffled pool `wand_appearances`.
+- [ ] **nothing** (`WAN_NOTHING`) — default appearance: oak; shuffled pool `wand_appearances`. Appearance design verified separately; this effect identity remains incomplete. See [AppearanceBatch1](Docs/AppearanceBatch1.md).
 - [ ] **striking** (`WAN_STRIKING`) — default appearance: ebony; shuffled pool `wand_appearances`.
 - [ ] **make invisible** (`WAN_MAKE_INVISIBLE`) — default appearance: marble; shuffled pool `wand_appearances`.
 - [ ] **slow monster** (`WAN_SLOW_MONSTER`) — default appearance: tin; shuffled pool `wand_appearances`.
 - [ ] **speed monster** (`WAN_SPEED_MONSTER`) — default appearance: brass; shuffled pool `wand_appearances`.
 - [ ] **undead turning** (`WAN_UNDEAD_TURNING`) — default appearance: copper; shuffled pool `wand_appearances`.
-- [ ] **polymorph** (`WAN_POLYMORPH`) — default appearance: silver; shuffled pool `wand_appearances`.
+- [ ] **polymorph** (`WAN_POLYMORPH`) — default appearance: silver; shuffled pool `wand_appearances`. Silver physical appearance is an editable/imported, MVP live verified draft; [evidence](Docs/AppearanceBatch2.md). This does not complete the effect identity or every appearance it can receive. Finishing/LOD work remains.
 - [ ] **cancellation** (`WAN_CANCELLATION`) — default appearance: platinum; shuffled pool `wand_appearances`.
 - [ ] **teleportation** (`WAN_TELEPORTATION`) — default appearance: iridium; shuffled pool `wand_appearances`.
 - [ ] **opening** (`WAN_OPENING`) — default appearance: zinc; shuffled pool `wand_appearances`.
@@ -627,8 +636,8 @@ These are future priorities, not an instruction to generate assets automatically
 
 #### Large stone forms
 
-- [ ] **boulder** (`BOULDER`).
-- [ ] **statue** (`STATUE`).
+- [ ] **boulder** (`BOULDER`). Editable painted natural stone and global shared real/mimic appearance; Sokoban pushes, pit/hole filling, blind memory, hallucination, restore and both-style live placement verified. See [Sokoban](Docs/Sokoban.md). Human visual refinement, extended pile cases and LOD/performance review remain; MVP status, not full checklist completion.
+- [ ] **statue** (`STATUE`) — shared pure-white marble renderer implemented and Oracle centaurs live verified. Automatically reuses available creature meshes (202 displayed sex forms / 101 source IDs, including legacy volumes); unmodelled species retain official tiles. Full species scope remains incomplete. [Evidence](Docs/CentaursAndStatues.md).
 
 
 ### Punishment gear
@@ -703,7 +712,7 @@ do not start weapon generation from this note. Preserve native knowledge rules.
 - [ ] **Ogresmasher** (`ART_OGRESMASHER`) — base `WAR_HAMMER`; design and visibility-rule review pending.
 - [ ] **Trollsbane** (`ART_TROLLSBANE`) — base `MORNING_STAR`; design and visibility-rule review pending.
 - [ ] **Vorpal Blade** (`ART_VORPAL_BLADE`) — base `LONG_SWORD`; design and visibility-rule review pending.
-- [ ] **Snickersnee** (`ART_SNICKERSNEE`) — base `KATANA`; design and visibility-rule review pending.
+- [ ] **Snickersnee** (`ART_SNICKERSNEE`) — base `KATANA`; exceptional editable/painted/imported katana with indigo wrap, pierced black/gold guard and wave fittings. Native visible-name-before-identification, restore, pile, blind/hallucination/fake-mimic guards and upright hover/both-style/topmost checks pass. [Evidence](Docs/Snickersnee.md). Human visual/finish, broader transitions and LOD review remain; MVP artifact treatment, not an extra ordinary type.
 - [ ] **Sunsword** (`ART_SUNSWORD`) — base `LONG_SWORD`; design and visibility-rule review pending.
 - [ ] **The Orb of Detection** (`ART_ORB_OF_DETECTION`) — base `CRYSTAL_BALL`; design and visibility-rule review pending.
 - [ ] **The Heart of Ahriman** (`ART_HEART_OF_AHRIMAN`) — base `LUCKSTONE`; design and visibility-rule review pending.
@@ -737,3 +746,14 @@ do not start weapon generation from this note. Preserve native knowledge rules.
 
 Creature completion counts remain separate. No new objects are generated by creating this inventory.
 
+
+## Shuffled appearance designs (separate from named effect identities)
+
+- [x] **Ruby ring** (`APPEARANCE_RIN_CONFLICT`, physical tile 977) — carved ruby band, upward-facing crown and supported gold gallery (2026-11-03 orientation correction); actual geometry, import, nine-game shuffle/identification/restore evidence, pile/blind/hallucination and native live checks. [Evidence](Docs/AppearanceBatch1.md).
+- [x] **Spherical amulet** (`APPEARANCE_AMULET_OF_LIFE_SAVING`, physical tile 993) — closed iron globe with polished ribs and interlocking chain; same verification. This does not complete life saving as a live identity. [Evidence](Docs/AppearanceBatch1.md).
+- [x] **Oak wand** (`APPEARANCE_WAN_NOTHING`, physical tile 1207) — turned oak shaft, carved grip, metal collar/ferrule; same verification. Oak can be assigned to any active wand effect or an unused description slot. [Evidence](Docs/AppearanceBatch1.md).
+
+These checkboxes cover generated and verified static appearance drafts. They do
+not establish three fixed effect-to-model bindings or full ring/amulet/wand
+coverage. Unbuilt appearances retain native fallback. Visual refinement, gemstone
+transmission and LOD work remain separate.

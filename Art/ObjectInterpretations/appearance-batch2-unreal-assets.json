@@ -1,0 +1,50 @@
+{
+  "sapphire_ring": {
+    "asset": "/Game/AppearanceBatch2/Meshes/SM_sapphire_ring",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "app2_sapphire",
+        "normal": "/Game/AppearanceBatch2/M_ObjectSapphire.M_ObjectSapphire",
+        "memory": "/Game/AppearanceBatch2/M_ObjectSapphireMemory.M_ObjectSapphireMemory"
+      },
+      {
+        "source": "app2_silver",
+        "normal": "/Game/AppearanceBatch2/M_ObjectSilver.M_ObjectSilver",
+        "memory": "/Game/AppearanceBatch2/M_ObjectSilverMemory.M_ObjectSilverMemory"
+      }
+    ]
+  },
+  "triangular_amulet": {
+    "asset": "/Game/AppearanceBatch2/Meshes/SM_triangular_amulet",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "app2_iron",
+        "normal": "/Game/AppearanceBatch2/M_ObjectIron.M_ObjectIron",
+        "memory": "/Game/AppearanceBatch2/M_ObjectIronMemory.M_ObjectIronMemory"
+      },
+      {
+        "source": "app2_dark_iron",
+        "normal": "/Game/AppearanceBatch2/M_ObjectDarkIron.M_ObjectDarkIron",
+        "memory": "/Game/AppearanceBatch2/M_ObjectDarkIronMemory.M_ObjectDarkIronMemory"
+      }
+    ]
+  },
+  "silver_wand": {
+    "asset": "/Game/AppearanceBatch2/Meshes/SM_silver_wand",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "app2_silver",
+        "normal": "/Game/AppearanceBatch2/M_ObjectSilver.M_ObjectSilver",
+        "memory": "/Game/AppearanceBatch2/M_ObjectSilverMemory.M_ObjectSilverMemory"
+      },
+      {
+        "source": "app2_dark_silver",
+        "normal": "/Game/AppearanceBatch2/M_ObjectDarkSilver.M_ObjectDarkSilver",
+        "memory": "/Game/AppearanceBatch2/M_ObjectDarkSilverMemory.M_ObjectDarkSilverMemory"
+      }
+    ]
+  }
+}

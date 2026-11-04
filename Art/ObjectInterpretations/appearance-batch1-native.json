@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "appearance": "ruby ring",
+      "tile": 977,
+      "trial": 0,
+      "unknown_inventory": "a ruby ring",
+      "identified_inventory": "a cursed -1 ring of gain constitution",
+      "glyph": 3623,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\5277878fcab54c249723d27a5b342feb",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "ruby ring",
+      "tile": 977,
+      "trial": 1,
+      "unknown_inventory": "a ruby ring",
+      "identified_inventory": "an uncursed ring of warning",
+      "glyph": 3635,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\6d49f3ff34e84704a08443f064e382b1",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "ruby ring",
+      "tile": 977,
+      "trial": 2,
+      "unknown_inventory": "a ruby ring",
+      "identified_inventory": "an uncursed ring of warning",
+      "glyph": 3635,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\04e970a691e0455883bc270f7c677c32",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "spherical amulet",
+      "tile": 993,
+      "trial": 0,
+      "unknown_inventory": "a spherical amulet",
+      "identified_inventory": "a cursed amulet of change",
+      "glyph": 3654,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\bcd1ae0050ae43aba6153f548bf28b5b",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "spherical amulet",
+      "tile": 993,
+      "trial": 1,
+      "unknown_inventory": "a spherical amulet",
+      "identified_inventory": "a cursed amulet of change",
+      "glyph": 3654,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\325bcde837374f5882656fa84034a105",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "spherical amulet",
+      "tile": 993,
+      "trial": 2,
+      "unknown_inventory": "a spherical amulet",
+      "identified_inventory": "an uncursed amulet versus poison",
+      "glyph": 3653,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\c326e545b35946e389aa8b79717ebb5c",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "oak wand",
+      "tile": 1207,
+      "trial": 0,
+      "unknown_inventory": "an oak wand",
+      "identified_inventory": "a wand of fire (0:4)",
+      "glyph": 3878,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\b7b5cff75729483bbb4647b952077402",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "oak wand",
+      "tile": 1207,
+      "trial": 1,
+      "unknown_inventory": "an oak wand",
+      "identified_inventory": "a wand of nothing (0:14)",
+      "glyph": 3864,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\d501507463554fb9a3284143f7d14295",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "oak wand",
+      "tile": 1207,
+      "trial": 2,
+      "unknown_inventory": "an oak wand",
+      "identified_inventory": "a wand of create monster (0:13)",
+      "glyph": 3861,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\be036f0acae74d2a8c2571f06071880e",
+      "identification_preserves_appearance": true,
+      "restore": true
+    }
+  ],
+  "unassigned_oak_fixture_attempts": []
+}

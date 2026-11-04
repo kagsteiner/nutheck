@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "appearance": "sapphire ring",
+      "tile": 976,
+      "trial": 0,
+      "unknown_inventory": "a sapphire ring",
+      "identified_inventory": "a cursed -1 ring of gain strength",
+      "glyph": 3622,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\498993a227614e0789d70bb94bf08d19",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "sapphire ring",
+      "tile": 976,
+      "trial": 1,
+      "unknown_inventory": "a sapphire ring",
+      "identified_inventory": "an uncursed ring of conflict",
+      "glyph": 3634,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\8dfec59c2024439a99045ba04a18e46e",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "sapphire ring",
+      "tile": 976,
+      "trial": 2,
+      "unknown_inventory": "a sapphire ring",
+      "identified_inventory": "an uncursed ring of warning",
+      "glyph": 3635,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\1c858251065d43d887b5e96e79d291fa",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "triangular amulet",
+      "tile": 995,
+      "trial": 0,
+      "unknown_inventory": "a triangular amulet",
+      "identified_inventory": "an uncursed amulet of reflection",
+      "glyph": 3656,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\54800c0dc2cc4484926babb078717f7b",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "triangular amulet",
+      "tile": 995,
+      "trial": 1,
+      "unknown_inventory": "a triangular amulet",
+      "identified_inventory": "a cursed amulet of restful sleep",
+      "glyph": 3652,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\59a81561003b4fb38654521c3253c270",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "triangular amulet",
+      "tile": 995,
+      "trial": 2,
+      "unknown_inventory": "a triangular amulet",
+      "identified_inventory": "a cursed amulet of change",
+      "glyph": 3654,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\01f9bed561104aeb84f5847bbcab029a",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "silver wand",
+      "tile": 1213,
+      "trial": 0,
+      "unknown_inventory": "a silver wand",
+      "identified_inventory": "a wand of make invisible (0:5)",
+      "glyph": 3866,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\2d61a900f239405f9cb40ba1b3d53842",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "silver wand",
+      "tile": 1213,
+      "trial": 1,
+      "unknown_inventory": "a silver wand",
+      "identified_inventory": "a wand of death (0:7)",
+      "glyph": 3881,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\8c4289d7fd6843c4ba9df6583704f62d",
+      "identification_preserves_appearance": true,
+      "restore": true
+    },
+    {
+      "appearance": "silver wand",
+      "tile": 1213,
+      "trial": 2,
+      "unknown_inventory": "a silver wand",
+      "identified_inventory": "a wand of death (0:4)",
+      "glyph": 3881,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\697de2ff012b4cbdbf432f5ed660c4fa",
+      "identification_preserves_appearance": true,
+      "restore": true
+    }
+  ],
+  "unassigned_wand_fixture_attempts": []
+}

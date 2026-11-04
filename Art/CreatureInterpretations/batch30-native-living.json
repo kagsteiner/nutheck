@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "forms": [
+    {
+      "name": "acid blob",
+      "requested_female": false,
+      "displayed_female": false,
+      "glyph": 6,
+      "tile_index": 12,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\6a84edc206e24c1ca5694187d990bf3c"
+    },
+    {
+      "name": "acid blob",
+      "requested_female": true,
+      "displayed_female": false,
+      "glyph": 6,
+      "tile_index": 12,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\f9b93bdeddb141a6afb34788715297c6"
+    },
+    {
+      "name": "quivering blob",
+      "requested_female": false,
+      "displayed_female": false,
+      "glyph": 7,
+      "tile_index": 14,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\f546cac982b94ff6bbd0fd1b31694afe"
+    },
+    {
+      "name": "quivering blob",
+      "requested_female": true,
+      "displayed_female": false,
+      "glyph": 7,
+      "tile_index": 14,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\67582398196c4f96b7be2f1f910f204b"
+    },
+    {
+      "name": "gelatinous cube",
+      "requested_female": false,
+      "displayed_female": false,
+      "glyph": 8,
+      "tile_index": 16,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\c4cc5093fe464469b9fa1494c3c0087b"
+    },
+    {
+      "name": "gelatinous cube",
+      "requested_female": true,
+      "displayed_female": false,
+      "glyph": 8,
+      "tile_index": 16,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\5fc78035ac954a1b93eda1e2c437a25d"
+    }
+  ]
+}

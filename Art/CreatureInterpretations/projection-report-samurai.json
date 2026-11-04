@@ -1,0 +1,306 @@
+[
+  {
+    "key": "samurai_male_human",
+    "mask_method": "explicit_reviewed_spatial_mask_dark_anatomy_retained",
+    "excluded_shadow_pixels": [
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.33435535430908203,
+        -0.153999924659729,
+        0.0009999871253967285
+      ],
+      [
+        0.33435535430908203,
+        0.12999999523162842,
+        1.8162767887115479
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 45,
+      "silhouette_iou": 0.662,
+      "file": "samurai_male_human-pixel--90-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.4493,
+        "file": "samurai_male_human-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.5634,
+        "file": "samurai_male_human-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.5972,
+        "file": "samurai_male_human-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.662,
+        "file": "samurai_male_human-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.4286,
+        "file": "samurai_male_human-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.5139,
+        "file": "samurai_male_human-pixel--65-45.png"
+      }
+    ]
+  },
+  {
+    "key": "samurai_female_human",
+    "mask_method": "explicit_reviewed_spatial_mask_dark_anatomy_retained",
+    "excluded_shadow_pixels": [
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.28026026487350464,
+        -0.156078040599823,
+        0.0009999871253967285
+      ],
+      [
+        0.28026026487350464,
+        0.19466157257556915,
+        1.7662768363952637
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 45,
+      "silhouette_iou": 0.6389,
+      "file": "samurai_female_human-pixel--90-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.4348,
+        "file": "samurai_female_human-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.5072,
+        "file": "samurai_female_human-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.4493,
+        "file": "samurai_female_human-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.6389,
+        "file": "samurai_female_human-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.4143,
+        "file": "samurai_female_human-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.4493,
+        "file": "samurai_female_human-pixel--65-45.png"
+      }
+    ]
+  }
+]

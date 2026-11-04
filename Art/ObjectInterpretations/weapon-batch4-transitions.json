@@ -1,0 +1,45 @@
+{
+  "silver saber": {
+    "pile_cover_and_uncover": true,
+    "blind_memory_and_restore": true,
+    "hallucinated_tiles": [
+      1051,
+      831,
+      882,
+      865,
+      1180,
+      1109,
+      1035,
+      1247
+    ]
+  },
+  "broadsword": {
+    "pile_cover_and_uncover": true,
+    "blind_memory_and_restore": true,
+    "hallucinated_tiles": [
+      1145,
+      1066,
+      1017,
+      1151,
+      1108,
+      895,
+      1224,
+      929
+    ]
+  },
+  "two-handed sword": {
+    "pile_cover_and_uncover": true,
+    "blind_memory_and_restore": true,
+    "hallucinated_tiles": [
+      1042,
+      930,
+      815,
+      1087,
+      1246,
+      998,
+      898,
+      856
+    ]
+  },
+  "status": "PASS"
+}

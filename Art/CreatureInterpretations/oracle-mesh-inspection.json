@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "parts": 62,
+  "triangles": 275852,
+  "bounds_m": [
+    [
+      -0.4628896415233612,
+      -0.28446298837661743,
+      0.0
+    ],
+    [
+      0.4628896415233612,
+      0.16166271269321442,
+      1.1184446811676025
+    ]
+  ],
+  "connected_anatomy": true,
+  "closed_geometry_except_fitted_eye_surfaces": true,
+  "paint_valid": true,
+  "static": true,
+  "protected_exports_unchanged": 233,
+  "fingers": 8,
+  "thumbs": 2,
+  "toes": 10,
+  "eyes": 2
+}

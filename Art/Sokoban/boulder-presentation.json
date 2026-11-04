@@ -1,0 +1,15 @@
+{
+  "blind_memory_and_restore": true,
+  "hallucinated_tiles": [
+    878,
+    1079,
+    917,
+    923,
+    923,
+    1104,
+    1205,
+    882
+  ],
+  "hidden_real_boulder_not_forced": true,
+  "status": "PASS"
+}

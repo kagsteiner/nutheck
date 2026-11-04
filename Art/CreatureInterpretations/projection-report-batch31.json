@@ -1,0 +1,326 @@
+[
+  {
+    "key": "blue_jelly",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        11,
+        13
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        14,
+        12
+      ],
+      [
+        15,
+        10
+      ],
+      [
+        15,
+        11
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.33897072076797485,
+        -0.2692658305168152,
+        0.0
+      ],
+      [
+        0.3840985894203186,
+        0.3119189739227295,
+        0.7484369277954102
+      ]
+    ],
+    "best_projection": {
+      "yaw": -180,
+      "elevation": 25,
+      "silhouette_iou": 0.4624,
+      "file": "blue_jelly-pixel--180-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -180,
+        "elevation": 25,
+        "silhouette_iou": 0.4624,
+        "file": "blue_jelly-pixel--180-25.png"
+      },
+      {
+        "yaw": -180,
+        "elevation": 45,
+        "silhouette_iou": 0.3763,
+        "file": "blue_jelly-pixel--180-45.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 25,
+        "silhouette_iou": 0.3978,
+        "file": "blue_jelly-pixel--155-25.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 45,
+        "silhouette_iou": 0.3333,
+        "file": "blue_jelly-pixel--155-45.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 25,
+        "silhouette_iou": 0.4516,
+        "file": "blue_jelly-pixel--125-25.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 45,
+        "silhouette_iou": 0.3333,
+        "file": "blue_jelly-pixel--125-45.png"
+      }
+    ]
+  },
+  {
+    "key": "spotted_jelly",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        11,
+        13
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        14,
+        12
+      ],
+      [
+        15,
+        10
+      ],
+      [
+        15,
+        11
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.2892010807991028,
+        -0.28920117020606995,
+        0.0
+      ],
+      [
+        0.3450849652290344,
+        0.32956525683403015,
+        0.8677777647972107
+      ]
+    ],
+    "best_projection": {
+      "yaw": -180,
+      "elevation": 25,
+      "silhouette_iou": 0.4624,
+      "file": "spotted_jelly-pixel--180-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -180,
+        "elevation": 25,
+        "silhouette_iou": 0.4624,
+        "file": "spotted_jelly-pixel--180-25.png"
+      },
+      {
+        "yaw": -180,
+        "elevation": 45,
+        "silhouette_iou": 0.4086,
+        "file": "spotted_jelly-pixel--180-45.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 25,
+        "silhouette_iou": 0.3978,
+        "file": "spotted_jelly-pixel--155-25.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 45,
+        "silhouette_iou": 0.3333,
+        "file": "spotted_jelly-pixel--155-45.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 25,
+        "silhouette_iou": 0.3763,
+        "file": "spotted_jelly-pixel--125-25.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 45,
+        "silhouette_iou": 0.3118,
+        "file": "spotted_jelly-pixel--125-45.png"
+      }
+    ]
+  },
+  {
+    "key": "ochre_jelly",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        11,
+        13
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        14,
+        12
+      ],
+      [
+        15,
+        10
+      ],
+      [
+        15,
+        11
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.3788622319698334,
+        -0.2593570053577423,
+        0.0
+      ],
+      [
+        0.41514432430267334,
+        0.3029922842979431,
+        0.9377480745315552
+      ]
+    ],
+    "best_projection": {
+      "yaw": -125,
+      "elevation": 25,
+      "silhouette_iou": 0.3763,
+      "file": "ochre_jelly-pixel--125-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -180,
+        "elevation": 25,
+        "silhouette_iou": 0.3656,
+        "file": "ochre_jelly-pixel--180-25.png"
+      },
+      {
+        "yaw": -180,
+        "elevation": 45,
+        "silhouette_iou": 0.3118,
+        "file": "ochre_jelly-pixel--180-45.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 25,
+        "silhouette_iou": 0.3226,
+        "file": "ochre_jelly-pixel--155-25.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 45,
+        "silhouette_iou": 0.2581,
+        "file": "ochre_jelly-pixel--155-45.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 25,
+        "silhouette_iou": 0.3763,
+        "file": "ochre_jelly-pixel--125-25.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 45,
+        "silhouette_iou": 0.3226,
+        "file": "ochre_jelly-pixel--125-45.png"
+      }
+    ]
+  }
+]

@@ -43,18 +43,18 @@ KNIFE,knife,,Weapons,Daggers and short blades,IRON,P_KNIFE,normal,object_type,,4
 STILETTO,stiletto,,Weapons,Daggers and short blades,IRON,P_KNIFE,normal,object_type,,41,221,not modelled,
 WORM_TOOTH,worm tooth,,Weapons,Daggers and short blades,BONE,P_KNIFE,normal,object_type,,42,228,not modelled,
 CRYSKNIFE,crysknife,,Weapons,Daggers and short blades,BONE,P_KNIFE,normal,object_type,,43,231,not modelled,
-AXE,axe,,Weapons,Axes and picks,IRON,P_AXE,normal,object_type,,44,236,not modelled,
+AXE,axe,,Weapons,Axes and picks,IRON,P_AXE,normal,object_type,,44,236,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch3.md
 BATTLE_AXE,battle-axe,double-headed axe,Weapons,Axes and picks,IRON,P_AXE,normal,object_type,,45,239,not modelled,
 SHORT_SWORD,short sword,,Weapons,Swords and long blades,IRON,P_SHORT_SWORD,normal,object_type,,46,244,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch2.md
 ELVEN_SHORT_SWORD,elven short sword,runed short sword,Weapons,Swords and long blades,WOOD,P_SHORT_SWORD,normal,object_type,,47,247,not modelled,
 ORCISH_SHORT_SWORD,orcish short sword,crude short sword,Weapons,Swords and long blades,IRON,P_SHORT_SWORD,normal,object_type,,48,250,not modelled,
 DWARVISH_SHORT_SWORD,dwarvish short sword,broad short sword,Weapons,Swords and long blades,IRON,P_SHORT_SWORD,normal,object_type,,49,253,not modelled,
 SCIMITAR,scimitar,curved sword,Weapons,Swords and long blades,IRON,P_SABER,normal,object_type,,50,256,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch1.md
-SILVER_SABER,silver saber,,Weapons,Swords and long blades,SILVER,P_SABER,normal,object_type,,51,259,not modelled,
-BROADSWORD,broadsword,,Weapons,Swords and long blades,IRON,P_BROAD_SWORD,normal,object_type,,52,262,not modelled,
+SILVER_SABER,silver saber,,Weapons,Swords and long blades,SILVER,P_SABER,normal,object_type,,51,259,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch4.md
+BROADSWORD,broadsword,,Weapons,Swords and long blades,IRON,P_BROAD_SWORD,normal,object_type,,52,262,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch4.md
 ELVEN_BROADSWORD,elven broadsword,runed broadsword,Weapons,Swords and long blades,WOOD,P_BROAD_SWORD,normal,object_type,,53,266,not modelled,
 LONG_SWORD,long sword,,Weapons,Swords and long blades,IRON,P_LONG_SWORD,normal,object_type,,54,270,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch1.md
-TWO_HANDED_SWORD,two-handed sword,,Weapons,Swords and long blades,IRON,P_TWO_HANDED_SWORD,normal,object_type,,55,273,not modelled,
+TWO_HANDED_SWORD,two-handed sword,,Weapons,Swords and long blades,IRON,P_TWO_HANDED_SWORD,normal,object_type,,55,273,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch4.md
 KATANA,katana,samurai sword,Weapons,Swords and long blades,IRON,P_LONG_SWORD,normal,object_type,,56,278,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch1.md
 TSURUGI,tsurugi,long samurai sword,Weapons,Swords and long blades,METAL,P_TWO_HANDED_SWORD,normal,object_type,,57,282,not modelled,
 RUNESWORD,runesword,runed broadsword,Weapons,Swords and long blades,IRON,P_BROAD_SWORD,normal,object_type,,58,287,not modelled,
@@ -72,10 +72,10 @@ LUCERN_HAMMER,lucern hammer,pronged polearm,Weapons,Polearms and thrusting weapo
 BEC_DE_CORBIN,bec de corbin,beaked polearm,Weapons,Polearms and thrusting weapons,IRON,P_POLEARMS,normal,object_type,,70,339,not modelled,
 DWARVISH_MATTOCK,dwarvish mattock,broad pick,Weapons,Axes and picks,IRON,P_PICK_AXE,normal,object_type,,71,345,not modelled,
 LANCE,lance,,Weapons,Polearms and thrusting weapons,IRON,P_LANCE,normal,object_type,,72,348,not modelled,
-MACE,mace,,Weapons,"Clubs, hammers and staves",IRON,P_MACE,normal,object_type,,73,355,not modelled,
+MACE,mace,,Weapons,"Clubs, hammers and staves",IRON,P_MACE,normal,object_type,,73,355,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch3.md
 SILVER_MACE,silver mace,,Weapons,"Clubs, hammers and staves",SILVER,P_MACE,normal,object_type,,74,359,not modelled,
 MORNING_STAR,morning star,,Weapons,"Clubs, hammers and staves",IRON,P_MORNING_STAR,normal,object_type,,75,363,not modelled,
-WAR_HAMMER,war hammer,,Weapons,"Clubs, hammers and staves",IRON,P_HAMMER,normal,object_type,,76,367,not modelled,
+WAR_HAMMER,war hammer,,Weapons,"Clubs, hammers and staves",IRON,P_HAMMER,normal,object_type,,76,367,MVP live placement verified; finishing and extended verification pending,Docs/WeaponBatch3.md
 CLUB,club,,Weapons,"Clubs, hammers and staves",WOOD,P_CLUB,normal,object_type,,77,371,not modelled,
 RUBBER_HOSE,rubber hose,,Weapons,Flexible weapons,PLASTIC,P_WHIP,normal,object_type,,78,374,not modelled,
 QUARTERSTAFF,quarterstaff,staff,Weapons,"Clubs, hammers and staves",WOOD,P_QUARTERSTAFF,normal,object_type,,79,377,not modelled,
@@ -238,7 +238,7 @@ BLINDFOLD,blindfold,,Tools,Eyewear,CLOTH,P_NONE,normal,object_type,,235,946,not 
 TOWEL,towel,,Tools,Eyewear,CLOTH,P_NONE,normal,object_type,,236,948,not modelled,
 SADDLE,saddle,,Tools,Hand tools and equipment,LEATHER,P_NONE,normal,object_type,,237,953,not modelled,
 LEASH,leash,,Tools,Hand tools and equipment,LEATHER,P_NONE,normal,object_type,,238,955,not modelled,
-STETHOSCOPE,stethoscope,,Tools,Hand tools and equipment,IRON,P_NONE,normal,object_type,,239,957,not modelled,
+STETHOSCOPE,stethoscope,,Tools,Hand tools and equipment,IRON,P_NONE,normal,object_type,,239,957,MVP live placement verified; finishing and extended verification pending,Docs/ToolBatch1.md
 TINNING_KIT,tinning kit,,Tools,Hand tools and equipment,IRON,P_NONE,normal,object_type,,240,959,not modelled,
 TIN_OPENER,tin opener,,Tools,Special tools and devices,IRON,P_NONE,normal,object_type,,241,961,not modelled,
 CAN_OF_GREASE,can of grease,,Tools,Special tools and devices,IRON,P_NONE,normal,object_type,,242,963,not modelled,
@@ -260,8 +260,8 @@ BELL,bell,,Tools,Instruments and sound tools,COPPER,P_NONE,normal,object_type,,2
 BUGLE,bugle,,Tools,Instruments and sound tools,COPPER,P_NONE,normal,object_type,,258,1000,not modelled,
 LEATHER_DRUM,leather drum,drum,Tools,Instruments and sound tools,LEATHER,P_NONE,normal,object_type,,259,1002,not modelled,
 DRUM_OF_EARTHQUAKE,drum of earthquake,drum,Tools,Instruments and sound tools,LEATHER,P_NONE,normal,object_type,,260,1004,not modelled,
-PICK_AXE,pick-axe,,Tools,Axes and picks,IRON,P_PICK_AXE,normal,object_type,,261,1007,not modelled,
-GRAPPLING_HOOK,grappling hook,,Tools,Flexible weapons,IRON,P_FLAIL,normal,object_type,,262,1010,not modelled,
+PICK_AXE,pick-axe,,Tools,Axes and picks,IRON,P_PICK_AXE,normal,object_type,,261,1007,MVP live placement verified; finishing and extended verification pending,Docs/ToolBatch1.md
+GRAPPLING_HOOK,grappling hook,,Tools,Flexible weapons,IRON,P_FLAIL,normal,object_type,,262,1010,MVP live placement verified; finishing and extended verification pending,Docs/ToolBatch1.md
 UNICORN_HORN,unicorn horn,,Tools,"Clubs, hammers and staves",BONE,P_UNICORN_HORN,normal,object_type,,263,1013,not modelled,
 CANDELABRUM_OF_INVOCATION,Candelabrum of Invocation,candelabrum,Tools,Special tools and devices,GOLD,P_NONE,normal,object_type,,264,1021,not modelled,
 BELL_OF_OPENING,Bell of Opening,silver bell,Tools,Special tools and devices,SILVER,P_NONE,normal,object_type,,265,1025,not modelled,
@@ -478,8 +478,8 @@ LOADSTONE,loadstone,gray,Gems and stones,Faceted gems and rough stones,MINERAL,-
 TOUCHSTONE,touchstone,gray,Gems and stones,Faceted gems and rough stones,MINERAL,-P_SLING,normal,object_type,,474,1602,not modelled,
 FLINT,flint,gray,Gems and stones,Faceted gems and rough stones,MINERAL,-P_SLING,normal,object_type,,475,1604,not modelled,
 ROCK,rock,,Gems and stones,Faceted gems and rough stones,MINERAL,-P_SLING,normal,object_type,,476,1606,not modelled,
-BOULDER,boulder,,Large rocks and statues,Large stone forms,MINERAL,P_NONE,normal,object_type,,477,1617,not modelled,
-STATUE,statue,,Large rocks and statues,Large stone forms,MINERAL,P_NONE,normal,object_type,,478,1620,not modelled,
+BOULDER,boulder,,Large rocks and statues,Large stone forms,MINERAL,P_NONE,normal,object_type,,477,1617,MVP live placement verified; finishing and extended verification pending,Docs/Sokoban.md
+STATUE,statue,,Large rocks and statues,Large stone forms,MINERAL,P_NONE,normal,object_type,,478,1620,Partial species coverage: shared white-marble renderer and Oracle centaurs verified; unmodelled species use native tiles,Docs/CentaursAndStatues.md
 HEAVY_IRON_BALL,heavy iron ball,,Punishment gear,Balls,IRON,P_NONE,normal,object_type,,479,1624,not modelled,
 IRON_CHAIN,iron chain,,Punishment gear,Chains,IRON,P_NONE,normal,object_type,,480,1629,not modelled,
 BLINDING_VENOM,splash of blinding venom,splash of venom,Venom,Splashes,LIQUID,P_NONE,normal,object_type,venom_appearances,481,1637,not modelled,

@@ -14,7 +14,9 @@ void ADungeonPrototype::VerifyAndCaptureHumanPlayers()
     const auto Actual=Session->Cells[Session->Hero.Y*Columns+Session->Hero.X];
     Passed &= Race==TEXT("human") && !Poly
         && ((Preview==TEXT("valkyrie_female_human") && Actual.DisplayMonster==TEXT("valkyrie") && Actual.Female)
-        || (Preview==TEXT("barbarian_male_human") && Actual.DisplayMonster==TEXT("barbarian") && !Actual.Female));
+        || (Preview==TEXT("barbarian_male_human") && Actual.DisplayMonster==TEXT("barbarian") && !Actual.Female)
+        || (Preview==TEXT("samurai_male_human") && Actual.DisplayMonster==TEXT("samurai") && !Actual.Female)
+        || (Preview==TEXT("samurai_female_human") && Actual.DisplayMonster==TEXT("samurai") && Actual.Female));
     if(!SculptedCreatures) HandleLiveKey(EKeys::F9,false);
     const auto Probe=[this,&Passed,&Cases](const FString& Name,bool Female,const FString& Ancestry,bool Polymorphed,bool Hero,const FString& Expected)
     {
@@ -43,8 +45,17 @@ void ADungeonPrototype::VerifyAndCaptureHumanPlayers()
     Probe(TEXT("valkyrie"),true,TEXT(""),false,true,TEXT(""));
     Probe(TEXT("valkyrie"),true,TEXT("human"),true,true,TEXT(""));
     Probe(TEXT("valkyrie"),true,TEXT("human"),false,false,TEXT(""));
+    for(bool Female:{false,true}) {
+        Probe(TEXT("samurai"),Female,TEXT("human"),false,true,Female?TEXT("samurai_female_human"):TEXT("samurai_male_human"));
+        Probe(TEXT("samurai"),Female,TEXT("orc"),false,true,TEXT(""));
+        Probe(TEXT("samurai"),Female,TEXT(""),false,true,TEXT(""));
+        Probe(TEXT("samurai"),Female,TEXT("human"),true,true,TEXT(""));
+        Probe(TEXT("samurai"),Female,TEXT("human"),false,false,TEXT(""));
+    }
     Session->HeroRace=Race;Session->HeroPolymorphed=Poly;
     HandleLiveKey(EKeys::F9,false);
+    Probe(TEXT("samurai"),false,TEXT("human"),false,true,TEXT(""));
+    Probe(TEXT("samurai"),true,TEXT("human"),false,true,TEXT(""));
     Probe(TEXT("valkyrie"),true,TEXT("human"),false,true,TEXT(""));
     Probe(TEXT("barbarian"),false,TEXT("human"),false,true,TEXT(""));
     HandleLiveKey(EKeys::F9,false);

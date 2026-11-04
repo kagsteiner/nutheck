@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "forms": [
+    {
+      "name": "plains centaur",
+      "female": false,
+      "glyph": 130,
+      "tile_index": 264,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\8beb20eb742942bc8b40373fef46e5ab"
+    },
+    {
+      "name": "plains centaur",
+      "female": true,
+      "glyph": 513,
+      "tile_index": 265,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\7975adf1cedf48d3a9edecee9d9299c0"
+    },
+    {
+      "name": "forest centaur",
+      "female": false,
+      "glyph": 131,
+      "tile_index": 266,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\e179a7d0c2cb43c7941b9410ecea8ca9"
+    },
+    {
+      "name": "forest centaur",
+      "female": true,
+      "glyph": 514,
+      "tile_index": 267,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\3ea2735330104674b489d414d88e3ecf"
+    },
+    {
+      "name": "mountain centaur",
+      "female": false,
+      "glyph": 132,
+      "tile_index": 268,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\420bcb658c4642738d1d50ec493d8574"
+    },
+    {
+      "name": "mountain centaur",
+      "female": true,
+      "glyph": 515,
+      "tile_index": 269,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\75a2cf24492e4bad82095ff50dbfb3b0"
+    }
+  ]
+}

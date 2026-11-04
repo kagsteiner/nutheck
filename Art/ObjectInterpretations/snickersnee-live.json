@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "player_session_used": false,
+  "weapon_check": "SNICKERSNEE_CHECK PASS cases=4 covered_features=16 turn=12 sequence=2",
+  "fixture": {
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\72884802bb034c80be7d72ddeca7d93c",
+    "hero": [
+      10,
+      14
+    ],
+    "named_sword": [
+      9,
+      13
+    ],
+    "ordinary_katana": [
+      11,
+      13
+    ],
+    "uncovered_altar": [
+      11,
+      15
+    ],
+    "native_name": "a katana named Snickersnee",
+    "fixture": "Actual native wishes in generated room; lighting/monsters/traps controlled only in isolated root; named sword covers an already-seen altar"
+  },
+  "checks": [
+    "SNICKERSNEE_CHECK PASS",
+    "OBJECT_PLACEMENT_CHECK PASS",
+    "TOPMOST_PRESENTATION_CHECK PASS",
+    "NETHACK_LIVE_CHECK PASS",
+    "DUNGEON_ZOOM_CHECK PASS",
+    "DEFAULT_TILES_CHECK PASS"
+  ]
+}

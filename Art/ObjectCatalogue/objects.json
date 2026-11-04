@@ -2782,8 +2782,8 @@
       "category": "Weapons",
       "visual_family": "Axes and picks",
       "shuffle_group": null,
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch3.md",
       "design_tags": [
         "IRON",
         "P_AXE"
@@ -3180,8 +3180,8 @@
       "category": "Weapons",
       "visual_family": "Swords and long blades",
       "shuffle_group": null,
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch4.md",
       "design_tags": [
         "SILVER",
         "P_SABER"
@@ -3236,8 +3236,8 @@
       "category": "Weapons",
       "visual_family": "Swords and long blades",
       "shuffle_group": null,
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch4.md",
       "design_tags": [
         "IRON",
         "P_BROAD_SWORD"
@@ -3406,8 +3406,8 @@
       "category": "Weapons",
       "visual_family": "Swords and long blades",
       "shuffle_group": null,
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch4.md",
       "design_tags": [
         "IRON",
         "P_TWO_HANDED_SWORD"
@@ -4416,8 +4416,8 @@
       "category": "Weapons",
       "visual_family": "Clubs, hammers and staves",
       "shuffle_group": null,
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch3.md",
       "design_tags": [
         "IRON",
         "P_MACE"
@@ -4584,8 +4584,8 @@
       "category": "Weapons",
       "visual_family": "Clubs, hammers and staves",
       "shuffle_group": null,
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch3.md",
       "design_tags": [
         "IRON",
         "P_HAMMER"
@@ -10842,7 +10842,9 @@
         "GEMSTONE",
         "P_NONE"
       ],
-      "style_tags": []
+      "style_tags": [],
+      "appearance_asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "appearance_evidence": "Docs/AppearanceBatch2.md"
     },
     {
       "id": "RIN_CONFLICT",
@@ -10898,7 +10900,9 @@
         "GEMSTONE",
         "P_NONE"
       ],
-      "style_tags": []
+      "style_tags": [],
+      "appearance_asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "appearance_evidence": "Docs/AppearanceBatch1.md"
     },
     {
       "id": "RIN_WARNING",
@@ -11794,7 +11798,9 @@
         "IRON",
         "P_NONE"
       ],
-      "style_tags": []
+      "style_tags": [],
+      "appearance_asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "appearance_evidence": "Docs/AppearanceBatch1.md"
     },
     {
       "id": "AMULET_OF_STRANGULATION",
@@ -11906,7 +11912,9 @@
         "IRON",
         "P_NONE"
       ],
-      "style_tags": []
+      "style_tags": [],
+      "appearance_asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "appearance_evidence": "Docs/AppearanceBatch2.md"
     },
     {
       "id": "AMULET_VERSUS_POISON",
@@ -13750,8 +13758,8 @@
       "category": "Tools",
       "visual_family": "Hand tools and equipment",
       "shuffle_group": null,
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/ToolBatch1.md",
       "design_tags": [
         "IRON",
         "P_NONE"
@@ -14982,8 +14990,8 @@
       "category": "Tools",
       "visual_family": "Axes and picks",
       "shuffle_group": null,
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/ToolBatch1.md",
       "design_tags": [
         "IRON",
         "P_PICK_AXE"
@@ -15038,8 +15046,8 @@
       "category": "Tools",
       "visual_family": "Flexible weapons",
       "shuffle_group": null,
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/ToolBatch1.md",
       "design_tags": [
         "IRON",
         "P_FLAIL"
@@ -23887,7 +23895,9 @@
         "WOOD",
         "P_NONE"
       ],
-      "style_tags": []
+      "style_tags": [],
+      "appearance_asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "appearance_evidence": "Docs/AppearanceBatch1.md"
     },
     {
       "id": "WAN_STRIKING",
@@ -24223,7 +24233,9 @@
         "SILVER",
         "P_NONE"
       ],
-      "style_tags": []
+      "style_tags": [],
+      "appearance_asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "appearance_evidence": "Docs/AppearanceBatch2.md"
     },
     {
       "id": "WAN_CANCELLATION",
@@ -27186,8 +27198,8 @@
       "category": "Large rocks and statues",
       "visual_family": "Large stone forms",
       "shuffle_group": null,
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/Sokoban.md",
       "design_tags": [
         "MINERAL",
         "P_NONE"
@@ -27242,8 +27254,8 @@
       "category": "Large rocks and statues",
       "visual_family": "Large stone forms",
       "shuffle_group": null,
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "Partial species coverage: shared white-marble renderer and Oracle centaurs verified; unmodelled species use native tiles",
+      "evidence": "Docs/CentaursAndStatues.md",
       "design_tags": [
         "MINERAL",
         "P_NONE"

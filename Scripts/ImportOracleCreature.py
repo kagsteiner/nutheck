@@ -1,0 +1,15 @@
+"""Targeted Oracle import, reusing existing creature materials without rewriting them."""
+import unreal
+from pathlib import Path
+r=Path(unreal.Paths.project_dir()).resolve();dest='/Game/CreatureInterpretations'
+materials={k:unreal.load_asset(dest+'/M_'+k) for k in ['Paint','Eye']};assert all(materials.values())
+task=unreal.AssetImportTask()
+for n,v in dict(filename=str(r/'Art/CreatureInterpretations/oracle.fbx'),destination_path=dest+'/Meshes',destination_name='SM_oracle',automated=True,replace_existing=True,replace_existing_settings=True,save=True).items():task.set_editor_property(n,v)
+opt=unreal.FbxImportUI()
+for n,v in dict(import_mesh=True,import_as_skeletal=False,import_materials=False,import_textures=False,automated_import_should_detect_type=False,mesh_type_to_import=unreal.FBXImportType.FBXIT_STATIC_MESH).items():opt.set_editor_property(n,v)
+for n,v in dict(combine_meshes=True,auto_generate_collision=False,transform_vertex_to_absolute=True,normal_import_method=unreal.FBXNormalImportMethod.FBXNIM_IMPORT_NORMALS,vertex_color_import_option=unreal.VertexColorImportOption.REPLACE).items():opt.static_mesh_import_data.set_editor_property(n,v)
+task.set_editor_property('options',opt);unreal.AssetToolsHelpers.get_asset_tools().import_asset_tasks([task]);mesh=unreal.load_asset(dest+'/Meshes/SM_oracle');assert mesh
+for i,slot in enumerate(mesh.static_materials):
+ name=str(slot.get_editor_property('imported_material_slot_name'));mesh.set_material(i,materials['Eye' if name in ['human_dark','human_sclera','human_blue','glint'] else 'Paint'])
+assert unreal.get_editor_subsystem(unreal.StaticMeshEditorSubsystem).has_vertex_colors(mesh)
+unreal.EditorAssetLibrary.save_loaded_asset(mesh);unreal.log('ORACLE_CREATURE_IMPORT_PASS')

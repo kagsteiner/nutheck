@@ -175,7 +175,7 @@ for key in GROUPS:
     target_width=max(x for x,y in target)-min(x for x,y in target)+1
     target_height=max(y for x,y in target)-min(y for x,y in target)+1
     candidates=[]; scene.render.resolution_x=16; scene.render.resolution_y=16; scene.cycles.samples=8
-    for yaw in ([-180,-155,-125] if is_bat else [-115,-90,-65]):
+    for yaw in globals().get('PROJECTION_YAWS',([-180,-155,-125] if is_bat else [-115,-90,-65])):
         for elevation in [25,45]:
             aim(yaw,elevation,1)
             inverse=camera.rotation_euler.to_matrix().transposed()

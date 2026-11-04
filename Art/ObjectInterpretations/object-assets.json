@@ -82,6 +82,227 @@
       "unreal_asset": "/Game/WeaponBatch2/Meshes/SM_spear",
       "evidence": "Docs/WeaponBatch2.md",
       "scope": "Fixed native displayed appearance; full edge-case and LOD review pending."
+    },
+    {
+      "id": "AXE",
+      "name": "axe",
+      "source_material": "IRON",
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "fbx": "axe.fbx",
+      "native_source": "WeaponBatch3.blend",
+      "unreal_asset": "/Game/WeaponBatch3/Meshes/SM_axe",
+      "evidence": "Docs/WeaponBatch3.md",
+      "scope": "Fixed native displayed appearance; full edge-case and LOD review pending."
+    },
+    {
+      "id": "MACE",
+      "name": "mace",
+      "source_material": "IRON",
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "fbx": "mace.fbx",
+      "native_source": "WeaponBatch3.blend",
+      "unreal_asset": "/Game/WeaponBatch3/Meshes/SM_mace",
+      "evidence": "Docs/WeaponBatch3.md",
+      "scope": "Fixed native displayed appearance; full edge-case and LOD review pending."
+    },
+    {
+      "id": "WAR_HAMMER",
+      "name": "war hammer",
+      "source_material": "IRON",
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "fbx": "war_hammer.fbx",
+      "native_source": "WeaponBatch3.blend",
+      "unreal_asset": "/Game/WeaponBatch3/Meshes/SM_war_hammer",
+      "evidence": "Docs/WeaponBatch3.md",
+      "scope": "Fixed native displayed appearance; full edge-case and LOD review pending."
+    },
+    {
+      "id": "PICK_AXE",
+      "name": "pick-axe",
+      "source_material": "IRON",
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "fbx": "pick_axe.fbx",
+      "native_source": "ToolBatch1.blend",
+      "unreal_asset": "/Game/ToolBatch1/Meshes/SM_pick_axe",
+      "evidence": "Docs/ToolBatch1.md",
+      "scope": "Fixed native displayed appearance; full edge-case and LOD review pending."
+    },
+    {
+      "id": "GRAPPLING_HOOK",
+      "name": "grappling hook",
+      "source_material": "IRON",
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "fbx": "grappling_hook.fbx",
+      "native_source": "ToolBatch1.blend",
+      "unreal_asset": "/Game/ToolBatch1/Meshes/SM_grappling_hook",
+      "evidence": "Docs/ToolBatch1.md",
+      "scope": "Fixed native displayed appearance; full edge-case and LOD review pending."
+    },
+    {
+      "id": "STETHOSCOPE",
+      "name": "stethoscope",
+      "source_material": "IRON",
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "fbx": "stethoscope.fbx",
+      "native_source": "ToolBatch1.blend",
+      "unreal_asset": "/Game/ToolBatch1/Meshes/SM_stethoscope",
+      "evidence": "Docs/ToolBatch1.md",
+      "scope": "Fixed native displayed appearance; full edge-case and LOD review pending."
+    },
+    {
+      "id": "STATUE",
+      "name": "species-specific statue family",
+      "source_material": "MINERAL",
+      "asset_status": "Partial species coverage: shared white-marble renderer and Oracle centaurs verified; unmodelled species use native tiles",
+      "native_source": "CreatureInterpretations/Centaurs.blend and existing creature source scenes",
+      "unreal_material": "/Game/Statues/M_WhiteMarble",
+      "geometry_policy": "Reuse matching creature mesh with component material overrides; no independent statue FBX",
+      "evidence": "Docs/CentaursAndStatues.md",
+      "scope": "202 display-sex forms / 101 source IDs have sculpted or legacy volume geometry; remaining source forms retain native statue tiles. Full STATUE generation remains incomplete."
+    },
+    {
+      "id": "BOULDER",
+      "name": "boulder",
+      "source_material": "MINERAL",
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "fbx": "../Sokoban/soko_boulder.fbx",
+      "native_source": "../Sokoban/Sokoban.blend",
+      "unreal_asset": "/Game/Sokoban/Meshes/SM_soko_boulder",
+      "evidence": "Docs/Sokoban.md",
+      "scope": "Fixed displayed boulder only, including unrevealed mimics. Shared global pose; native glyph selection, blind memory, hallucination, restore and native pit/hole filling verified. Extended pile and performance review remain."
+    },
+    {
+      "id": "SILVER_SABER",
+      "name": "silver saber",
+      "source_material": "SILVER",
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "fbx": "silver_saber.fbx",
+      "native_source": "WeaponBatch4.blend",
+      "unreal_asset": "/Game/WeaponBatch4/Meshes/SM_silver_saber",
+      "evidence": "Docs/WeaponBatch4.md",
+      "scope": "Fixed native displayed tile 840; ordinary flat presentation, no hidden object/enchanted/artifact identity. Native restore, piles, blindness, hallucination and UE checks verified. Finishing and extended mimic/LOD review remain."
+    },
+    {
+      "id": "BROADSWORD",
+      "name": "broadsword",
+      "source_material": "IRON",
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "fbx": "broadsword.fbx",
+      "native_source": "WeaponBatch4.blend",
+      "unreal_asset": "/Game/WeaponBatch4/Meshes/SM_broadsword",
+      "evidence": "Docs/WeaponBatch4.md",
+      "scope": "Fixed native displayed tile 841; ordinary flat presentation, no hidden object/enchanted/artifact identity. Native restore, piles, blindness, hallucination and UE checks verified. Finishing and extended mimic/LOD review remain."
+    },
+    {
+      "id": "TWO_HANDED_SWORD",
+      "name": "two-handed sword",
+      "source_material": "IRON",
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "fbx": "two_handed_sword.fbx",
+      "native_source": "WeaponBatch4.blend",
+      "unreal_asset": "/Game/WeaponBatch4/Meshes/SM_two_handed_sword",
+      "evidence": "Docs/WeaponBatch4.md",
+      "scope": "Fixed native displayed tile 844; ordinary flat presentation, no hidden object/enchanted/artifact identity. Native restore, piles, blindness, hallucination and UE checks verified. Finishing and extended mimic/LOD review remain."
+    }
+  ],
+  "appearances": [
+    {
+      "source_slot_id": "RIN_CONFLICT",
+      "appearance_id": "APPEARANCE_RIN_CONFLICT",
+      "name": "ruby ring",
+      "key": "ruby_ring",
+      "tile_index": 977,
+      "source_material": "GEMSTONE",
+      "asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "fbx": "ruby_ring.fbx",
+      "native_source": "AppearanceBatch1.blend",
+      "unreal_asset": "/Game/AppearanceBatch1/Meshes/SM_ruby_ring",
+      "evidence": "Docs/AppearanceBatch1.md",
+      "selection": "Native displayed item tile only; source slot is not a live effect binding"
+    },
+    {
+      "source_slot_id": "AMULET_OF_LIFE_SAVING",
+      "appearance_id": "APPEARANCE_AMULET_OF_LIFE_SAVING",
+      "name": "spherical amulet",
+      "key": "spherical_amulet",
+      "tile_index": 993,
+      "source_material": "IRON",
+      "asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "fbx": "spherical_amulet.fbx",
+      "native_source": "AppearanceBatch1.blend",
+      "unreal_asset": "/Game/AppearanceBatch1/Meshes/SM_spherical_amulet",
+      "evidence": "Docs/AppearanceBatch1.md",
+      "selection": "Native displayed item tile only; source slot is not a live effect binding"
+    },
+    {
+      "source_slot_id": "WAN_NOTHING",
+      "appearance_id": "APPEARANCE_WAN_NOTHING",
+      "name": "oak wand",
+      "key": "oak_wand",
+      "tile_index": 1207,
+      "source_material": "WOOD",
+      "asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "fbx": "oak_wand.fbx",
+      "native_source": "AppearanceBatch1.blend",
+      "unreal_asset": "/Game/AppearanceBatch1/Meshes/SM_oak_wand",
+      "evidence": "Docs/AppearanceBatch1.md",
+      "selection": "Native displayed item tile only; source slot is not a live effect binding"
+    },
+    {
+      "source_slot_id": "RIN_AGGRAVATE_MONSTER",
+      "appearance_id": "APPEARANCE_RIN_AGGRAVATE_MONSTER",
+      "name": "sapphire ring",
+      "key": "sapphire_ring",
+      "tile_index": 976,
+      "source_material": "GEMSTONE",
+      "asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "fbx": "sapphire_ring.fbx",
+      "native_source": "AppearanceBatch2.blend",
+      "unreal_asset": "/Game/AppearanceBatch2/Meshes/SM_sapphire_ring",
+      "evidence": "Docs/AppearanceBatch2.md",
+      "selection": "Native displayed item tile only; source slot is not a live effect binding"
+    },
+    {
+      "source_slot_id": "AMULET_OF_RESTFUL_SLEEP",
+      "appearance_id": "APPEARANCE_AMULET_OF_RESTFUL_SLEEP",
+      "name": "triangular amulet",
+      "key": "triangular_amulet",
+      "tile_index": 995,
+      "source_material": "IRON",
+      "asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "fbx": "triangular_amulet.fbx",
+      "native_source": "AppearanceBatch2.blend",
+      "unreal_asset": "/Game/AppearanceBatch2/Meshes/SM_triangular_amulet",
+      "evidence": "Docs/AppearanceBatch2.md",
+      "selection": "Native displayed item tile only; source slot is not a live effect binding"
+    },
+    {
+      "source_slot_id": "WAN_POLYMORPH",
+      "appearance_id": "APPEARANCE_WAN_POLYMORPH",
+      "name": "silver wand",
+      "key": "silver_wand",
+      "tile_index": 1213,
+      "source_material": "SILVER",
+      "asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "fbx": "silver_wand.fbx",
+      "native_source": "AppearanceBatch2.blend",
+      "unreal_asset": "/Game/AppearanceBatch2/Meshes/SM_silver_wand",
+      "evidence": "Docs/AppearanceBatch2.md",
+      "selection": "Native displayed item tile only; source slot is not a live effect binding"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "ART_SNICKERSNEE",
+      "name": "Snickersnee",
+      "base_object_id": "KATANA",
+      "key": "snickersnee",
+      "asset_status": "MVP live placement and native visible name verified; extended verification pending",
+      "fbx": "snickersnee.fbx",
+      "native_source": "Snickersnee.blend",
+      "unreal_asset": "/Game/Snickersnee/Meshes/SM_snickersnee",
+      "evidence": "Docs/Snickersnee.md",
+      "selection": "Real native canonical artifact name plus matching displayed katana, visible-name knowledge before full identification; ordinary player naming, hallucination and fake mimics do not qualify."
     }
   ]
 }

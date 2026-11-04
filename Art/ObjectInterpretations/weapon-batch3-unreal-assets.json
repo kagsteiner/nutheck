@@ -1,0 +1,80 @@
+{
+  "axe": {
+    "asset": "/Game/WeaponBatch3/Meshes/SM_axe",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "weapon3_iron",
+        "normal": "/Game/WeaponBatch3/M_ObjectIron.M_ObjectIron",
+        "memory": "/Game/WeaponBatch3/M_ObjectIronMemory.M_ObjectIronMemory"
+      },
+      {
+        "source": "weapon3_brass",
+        "normal": "/Game/WeaponBatch3/M_ObjectGold.M_ObjectGold",
+        "memory": "/Game/WeaponBatch3/M_ObjectGoldMemory.M_ObjectGoldMemory"
+      },
+      {
+        "source": "weapon3_wood",
+        "normal": "/Game/WeaponBatch3/M_ObjectPaint.M_ObjectPaint",
+        "memory": "/Game/WeaponBatch3/M_ObjectPaintMemory.M_ObjectPaintMemory"
+      },
+      {
+        "source": "weapon3_leather",
+        "normal": "/Game/WeaponBatch3/M_ObjectPaint.M_ObjectPaint",
+        "memory": "/Game/WeaponBatch3/M_ObjectPaintMemory.M_ObjectPaintMemory"
+      }
+    ]
+  },
+  "mace": {
+    "asset": "/Game/WeaponBatch3/Meshes/SM_mace",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "weapon3_iron",
+        "normal": "/Game/WeaponBatch3/M_ObjectIron.M_ObjectIron",
+        "memory": "/Game/WeaponBatch3/M_ObjectIronMemory.M_ObjectIronMemory"
+      },
+      {
+        "source": "weapon3_brass",
+        "normal": "/Game/WeaponBatch3/M_ObjectGold.M_ObjectGold",
+        "memory": "/Game/WeaponBatch3/M_ObjectGoldMemory.M_ObjectGoldMemory"
+      },
+      {
+        "source": "weapon3_leather",
+        "normal": "/Game/WeaponBatch3/M_ObjectPaint.M_ObjectPaint",
+        "memory": "/Game/WeaponBatch3/M_ObjectPaintMemory.M_ObjectPaintMemory"
+      }
+    ]
+  },
+  "war_hammer": {
+    "asset": "/Game/WeaponBatch3/Meshes/SM_war_hammer",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "weapon3_iron",
+        "normal": "/Game/WeaponBatch3/M_ObjectIron.M_ObjectIron",
+        "memory": "/Game/WeaponBatch3/M_ObjectIronMemory.M_ObjectIronMemory"
+      },
+      {
+        "source": "weapon3_brass",
+        "normal": "/Game/WeaponBatch3/M_ObjectGold.M_ObjectGold",
+        "memory": "/Game/WeaponBatch3/M_ObjectGoldMemory.M_ObjectGoldMemory"
+      },
+      {
+        "source": "weapon3_edge",
+        "normal": "/Game/WeaponBatch3/M_ObjectSilver.M_ObjectSilver",
+        "memory": "/Game/WeaponBatch3/M_ObjectSilverMemory.M_ObjectSilverMemory"
+      },
+      {
+        "source": "weapon3_leather",
+        "normal": "/Game/WeaponBatch3/M_ObjectPaint.M_ObjectPaint",
+        "memory": "/Game/WeaponBatch3/M_ObjectPaintMemory.M_ObjectPaintMemory"
+      },
+      {
+        "source": "weapon3_wood",
+        "normal": "/Game/WeaponBatch3/M_ObjectPaint.M_ObjectPaint",
+        "memory": "/Game/WeaponBatch3/M_ObjectPaintMemory.M_ObjectPaintMemory"
+      }
+    ]
+  }
+}

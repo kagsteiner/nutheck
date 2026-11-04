@@ -1,0 +1,34 @@
+{
+  "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\3e2866ea82834666b046f547d34df42d",
+  "hero": [
+    38,
+    15
+  ],
+  "items": [
+    {
+      "name": "sapphire ring",
+      "tile": 976,
+      "position": [
+        37,
+        14
+      ]
+    },
+    {
+      "name": "triangular amulet",
+      "tile": 995,
+      "position": [
+        39,
+        14
+      ]
+    },
+    {
+      "name": "silver wand",
+      "tile": 1213,
+      "position": [
+        38,
+        16
+      ]
+    }
+  ],
+  "fixture": "native wished physical appearances; lighting controlled, monsters/traps disabled in isolated game"
+}

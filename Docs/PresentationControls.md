@@ -22,7 +22,9 @@ Implemented for the user's request before continuing creature generation.
   (hero, pets and monsters). Labels start visible on a fresh launch. The setting
   stays in effect across camera changes, map rebuilds and creature-style changes.
   Menus, messages, status text and the targeting cursor remain usable.
-- **Ctrl+F** enters/leaves first person over .8 seconds. Entry follows the most
+- **PgUp / PgDown** zoom in/out like the mouse wheel, or page through open menus.
+  Diagonal movement remains on numpad 7/9/3 (or y/u/n).
+- **Home (Pos1) / Ctrl+F** enters/leaves first person over .8 seconds. Entry follows the most
   recent actual movement direction, or the last right-drag look direction if the
   player looked around more recently. With no movement/look history, the default
   is north. The former first-entry longest-corridor override has been removed.

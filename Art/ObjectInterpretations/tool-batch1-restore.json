@@ -1,0 +1,29 @@
+[
+  {
+    "name": "pick-axe",
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\309156fc16754c33b23d56449952b052",
+    "position": [
+      68,
+      17
+    ],
+    "glyph": 3707
+  },
+  {
+    "name": "grappling hook",
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\bda2f162c1f74574b3f89dfae3c3a3c4",
+    "position": [
+      20,
+      5
+    ],
+    "glyph": 3708
+  },
+  {
+    "name": "stethoscope",
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\60de584589484227a6c5d0364fd13887",
+    "position": [
+      69,
+      6
+    ],
+    "glyph": 3685
+  }
+]

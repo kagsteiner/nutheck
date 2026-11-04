@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "creature": "plains centaur",
+      "female": false,
+      "glyph": 7356,
+      "restore": true,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\9595af9d270a4cec93d3caf5d4a89626"
+    },
+    {
+      "creature": "plains centaur",
+      "female": true,
+      "glyph": 7739,
+      "restore": true,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\eb6f11ca3f1844f49dac349375d903a1"
+    },
+    {
+      "creature": "forest centaur",
+      "female": false,
+      "glyph": 7357,
+      "restore": true,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\cc3ddbcde2db4a4abda84096b2c62cc0"
+    },
+    {
+      "creature": "forest centaur",
+      "female": true,
+      "glyph": 7740,
+      "restore": true,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\69de716802b74906b3b3de32a7a3d4e9"
+    },
+    {
+      "creature": "mountain centaur",
+      "female": false,
+      "glyph": 7358,
+      "restore": true,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\58ded20bc6374174b279e91c09903f7d"
+    },
+    {
+      "creature": "mountain centaur",
+      "female": true,
+      "glyph": 7741,
+      "restore": true,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\8808afec749c4fd88c78c5923bec9682"
+    },
+    {
+      "creature": "goblin",
+      "female": false,
+      "glyph": 7296,
+      "restore": true,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\514a7512e9b64f13854b72b514c2e1e6"
+    },
+    {
+      "creature": "red dragon",
+      "female": false,
+      "glyph": 7372,
+      "restore": true,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\6ee5a332f35b4c1fb17dfb7e7465481b"
+    },
+    {
+      "pile_top": "dagger",
+      "statue_metadata_absent": true,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\ee834203cb74411e8089fb0304c211f0"
+    },
+    {
+      "hallucination_native_monster": true,
+      "statue_metadata_absent": true,
+      "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackGameplayTests\\096fd671d23b4f7a98ea8e401f805aa1"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "fixture": {
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\3e2866ea82834666b046f547d34df42d",
+    "hero": [
+      38,
+      15
+    ],
+    "items": [
+      {
+        "name": "sapphire ring",
+        "tile": 976,
+        "position": [
+          37,
+          14
+        ]
+      },
+      {
+        "name": "triangular amulet",
+        "tile": 995,
+        "position": [
+          39,
+          14
+        ]
+      },
+      {
+        "name": "silver wand",
+        "tile": 1213,
+        "position": [
+          38,
+          16
+        ]
+      }
+    ],
+    "fixture": "native wished physical appearances; lighting controlled, monsters/traps disabled in isolated game"
+  },
+  "status": "PASS",
+  "appearance_check": "APPEARANCE_BATCH2_CHECK PASS cases=12 covered_features=48 native_appearances=3 turn=11 sequence=2",
+  "checks": [
+    "APPEARANCE_BATCH2_CHECK PASS",
+    "OBJECT_PLACEMENT_CHECK PASS",
+    "TOPMOST_PRESENTATION_CHECK PASS",
+    "NETHACK_LIVE_CHECK PASS",
+    "DUNGEON_ZOOM_CHECK PASS",
+    "DEFAULT_TILES_CHECK PASS"
+  ],
+  "player_session_used": false
+}

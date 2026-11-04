@@ -711,8 +711,8 @@
         "combined_atlas_index": 833,
         "label": "axe"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch3.md",
       "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
     },
     {
@@ -830,8 +830,8 @@
         "combined_atlas_index": 840,
         "label": "silver saber"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch4.md",
       "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
     },
     {
@@ -847,8 +847,8 @@
         "combined_atlas_index": 841,
         "label": "broadsword"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch4.md",
       "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
     },
     {
@@ -898,8 +898,8 @@
         "combined_atlas_index": 844,
         "label": "two-handed sword"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch4.md",
       "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
     },
     {
@@ -1204,8 +1204,8 @@
         "combined_atlas_index": 862,
         "label": "mace"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch3.md",
       "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
     },
     {
@@ -1255,8 +1255,8 @@
         "combined_atlas_index": 865,
         "label": "war hammer"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/WeaponBatch3.md",
       "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
     },
     {
@@ -3108,9 +3108,11 @@
         "combined_atlas_index": 976,
         "label": "sapphire / aggravate monster"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
-      "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
+      "asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "evidence": "Docs/AppearanceBatch2.md",
+      "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed.",
+      "asset_key": "sapphire_ring",
+      "unreal_asset": "/Game/AppearanceBatch2/Meshes/SM_sapphire_ring"
     },
     {
       "id": "APPEARANCE_RIN_CONFLICT",
@@ -3125,9 +3127,11 @@
         "combined_atlas_index": 977,
         "label": "ruby / conflict"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
-      "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
+      "asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "evidence": "Docs/AppearanceBatch1.md",
+      "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed.",
+      "asset_key": "ruby_ring",
+      "unreal_asset": "/Game/AppearanceBatch1/Meshes/SM_ruby_ring"
     },
     {
       "id": "APPEARANCE_RIN_WARNING",
@@ -3397,9 +3401,11 @@
         "combined_atlas_index": 993,
         "label": "spherical / amulet of life saving"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
-      "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
+      "asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "evidence": "Docs/AppearanceBatch1.md",
+      "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed.",
+      "asset_key": "spherical_amulet",
+      "unreal_asset": "/Game/AppearanceBatch1/Meshes/SM_spherical_amulet"
     },
     {
       "id": "APPEARANCE_AMULET_OF_STRANGULATION",
@@ -3431,9 +3437,11 @@
         "combined_atlas_index": 995,
         "label": "triangular / amulet of restful sleep"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
-      "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
+      "asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "evidence": "Docs/AppearanceBatch2.md",
+      "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed.",
+      "asset_key": "triangular_amulet",
+      "unreal_asset": "/Game/AppearanceBatch2/Meshes/SM_triangular_amulet"
     },
     {
       "id": "APPEARANCE_AMULET_VERSUS_POISON",
@@ -3992,8 +4000,8 @@
         "combined_atlas_index": 1028,
         "label": "stethoscope"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/ToolBatch1.md",
       "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
     },
     {
@@ -4366,8 +4374,8 @@
         "combined_atlas_index": 1050,
         "label": "pick-axe"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/ToolBatch1.md",
       "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
     },
     {
@@ -4383,8 +4391,8 @@
         "combined_atlas_index": 1051,
         "label": "grappling hook"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/ToolBatch1.md",
       "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
     },
     {
@@ -7035,9 +7043,11 @@
         "combined_atlas_index": 1207,
         "label": "oak / nothing"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
-      "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
+      "asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "evidence": "Docs/AppearanceBatch1.md",
+      "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed.",
+      "asset_key": "oak_wand",
+      "unreal_asset": "/Game/AppearanceBatch1/Meshes/SM_oak_wand"
     },
     {
       "id": "APPEARANCE_WAN_STRIKING",
@@ -7137,9 +7147,11 @@
         "combined_atlas_index": 1213,
         "label": "silver / polymorph"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
-      "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
+      "asset_status": "MVP shuffled physical appearance verified; finishing and full category coverage pending",
+      "evidence": "Docs/AppearanceBatch2.md",
+      "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed.",
+      "asset_key": "silver_wand",
+      "unreal_asset": "/Game/AppearanceBatch2/Meshes/SM_silver_wand"
     },
     {
       "id": "APPEARANCE_WAN_CANCELLATION",
@@ -8038,8 +8050,8 @@
         "combined_atlas_index": 1266,
         "label": "boulder"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "MVP live placement verified; finishing and extended verification pending",
+      "evidence": "Docs/Sokoban.md",
       "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
     },
     {
@@ -8055,8 +8067,8 @@
         "combined_atlas_index": 1267,
         "label": "statue"
       },
-      "asset_status": "not modelled",
-      "evidence": null,
+      "asset_status": "Partial species coverage: shared white-marble renderer and Oracle centaurs verified; unmodelled species use native tiles",
+      "evidence": "Docs/CentaursAndStatues.md",
       "policy": "Source slot, not a live identity-to-look binding. Resolve the native displayed appearance/tile at runtime; default source effect pairing is not fixed."
     },
     {

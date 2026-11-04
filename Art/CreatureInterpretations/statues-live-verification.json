@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "fixture": {
+    "session": "C:\\Users\\agste\\OneDrive\\Development\\nUthEck\\Saved\\NetHackCaptures\\532deb523b7844188f07a8bef7d00fb2",
+    "center": [
+      39,
+      11
+    ],
+    "hero": [
+      42,
+      13
+    ],
+    "depth": 5,
+    "statues": [
+      {
+        "position": [
+          34,
+          7
+        ],
+        "creature": "plains centaur",
+        "female": false,
+        "glyph": 7356,
+        "tile_index": 1779
+      },
+      {
+        "position": [
+          34,
+          15
+        ],
+        "creature": "plains centaur",
+        "female": false,
+        "glyph": 7356,
+        "tile_index": 1779
+      },
+      {
+        "position": [
+          44,
+          7
+        ],
+        "creature": "plains centaur",
+        "female": false,
+        "glyph": 7356,
+        "tile_index": 1779
+      },
+      {
+        "position": [
+          44,
+          15
+        ],
+        "creature": "plains centaur",
+        "female": false,
+        "glyph": 7356,
+        "tile_index": 1779
+      },
+      {
+        "position": [
+          39,
+          8
+        ],
+        "creature": "plains centaur",
+        "female": false,
+        "glyph": 7356,
+        "tile_index": 1779
+      },
+      {
+        "position": [
+          39,
+          14
+        ],
+        "creature": "forest centaur",
+        "female": false,
+        "glyph": 7357,
+        "tile_index": 1781
+      },
+      {
+        "position": [
+          36,
+          11
+        ],
+        "creature": "plains centaur",
+        "female": false,
+        "glyph": 7356,
+        "tile_index": 1779
+      },
+      {
+        "position": [
+          42,
+          11
+        ],
+        "creature": "mountain centaur",
+        "female": false,
+        "glyph": 7358,
+        "tile_index": 1783
+      }
+    ],
+    "restore": true
+  },
+  "player_session_used": false,
+  "checks": [
+    "STATUES_CHECK PASS",
+    "ORACLE_SANCTUARY_CHECK PASS",
+    "NETHACK_LIVE_CHECK PASS",
+    "DUNGEON_ZOOM_CHECK PASS",
+    "DEFAULT_TILES_CHECK PASS"
+  ],
+  "capture": "Statues-Unreal.png",
+  "statue_check": "STATUES_CHECK PASS native_oracle=8 model_cases=56 centaur_aliases=6 turn=18 sequence=2"
+}

@@ -1,0 +1,158 @@
+[
+  {
+    "key": "oracle",
+    "mask_method": "explicit_reviewed_spatial_mask_dark_anatomy_retained",
+    "excluded_shadow_pixels": [
+      [
+        3,
+        10
+      ],
+      [
+        10,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        14,
+        7
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        12
+      ],
+      [
+        14,
+        13
+      ],
+      [
+        15,
+        8
+      ],
+      [
+        15,
+        9
+      ],
+      [
+        15,
+        11
+      ],
+      [
+        15,
+        12
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.4628896415233612,
+        -0.28446298837661743,
+        0.0
+      ],
+      [
+        0.4628896415233612,
+        0.16166271269321442,
+        1.1184446811676025
+      ]
+    ],
+    "best_projection": {
+      "yaw": -90,
+      "elevation": 25,
+      "silhouette_iou": 0.5766,
+      "file": "oracle-pixel--90-25.png"
+    },
+    "candidates": [
+      {
+        "yaw": -115,
+        "elevation": 25,
+        "silhouette_iou": 0.4455,
+        "file": "oracle-pixel--115-25.png"
+      },
+      {
+        "yaw": -115,
+        "elevation": 45,
+        "silhouette_iou": 0.4167,
+        "file": "oracle-pixel--115-45.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 25,
+        "silhouette_iou": 0.5766,
+        "file": "oracle-pixel--90-25.png"
+      },
+      {
+        "yaw": -90,
+        "elevation": 45,
+        "silhouette_iou": 0.5678,
+        "file": "oracle-pixel--90-45.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 25,
+        "silhouette_iou": 0.4636,
+        "file": "oracle-pixel--65-25.png"
+      },
+      {
+        "yaw": -65,
+        "elevation": 45,
+        "silhouette_iou": 0.4273,
+        "file": "oracle-pixel--65-45.png"
+      }
+    ]
+  }
+]

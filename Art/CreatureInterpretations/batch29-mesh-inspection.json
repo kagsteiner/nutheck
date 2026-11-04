@@ -1,0 +1,69 @@
+{
+  "yeti": {
+    "parts": 17,
+    "triangles": 266648,
+    "bounds_m": [
+      [
+        -0.2167176604270935,
+        -0.616021454334259,
+        0.0
+      ],
+      [
+        0.1659097671508789,
+        0.3423210084438324,
+        1.4159655570983887
+      ]
+    ],
+    "closed_solids": true,
+    "paint_valid": true,
+    "connected_body": true,
+    "shoulder_width": 0.47,
+    "source_sex_shared": true,
+    "texture_only_fur": true
+  },
+  "sasquatch": {
+    "parts": 16,
+    "triangles": 284708,
+    "bounds_m": [
+      [
+        -0.2048249989748001,
+        -0.35060474276542664,
+        0.0
+      ],
+      [
+        0.16595041751861572,
+        0.3506070375442505,
+        1.5545222759246826
+      ]
+    ],
+    "closed_solids": true,
+    "paint_valid": true,
+    "connected_body": true,
+    "shoulder_width": 0.48,
+    "source_sex_shared": true,
+    "texture_only_fur": true
+  },
+  "owlbear": {
+    "parts": 25,
+    "triangles": 201076,
+    "bounds_m": [
+      [
+        -0.37418168783187866,
+        -0.46848899126052856,
+        0.000288158655166626
+      ],
+      [
+        0.37999993562698364,
+        0.4685676693916321,
+        1.4489670991897583
+      ]
+    ],
+    "closed_solids": true,
+    "paint_valid": true,
+    "connected_body": true,
+    "shoulder_width": 0.62,
+    "source_sex_shared": true,
+    "texture_only_fur": true
+  },
+  "protected_exports_unchanged": 251
+}

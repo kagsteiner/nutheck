@@ -1,0 +1,45 @@
+{
+  "sapphire ring": {
+    "pile_cover_and_uncover": true,
+    "blind_memory_and_restore": true,
+    "hallucinated_tiles": [
+      927,
+      1074,
+      1034,
+      1266,
+      1128,
+      1249,
+      1171,
+      907
+    ]
+  },
+  "triangular amulet": {
+    "pile_cover_and_uncover": true,
+    "blind_memory_and_restore": true,
+    "hallucinated_tiles": [
+      986,
+      973,
+      1226,
+      943,
+      861,
+      1145,
+      886,
+      971
+    ]
+  },
+  "silver wand": {
+    "pile_cover_and_uncover": true,
+    "blind_memory_and_restore": true,
+    "hallucinated_tiles": [
+      870,
+      943,
+      1034,
+      1252,
+      886,
+      953,
+      1221,
+      1254
+    ]
+  },
+  "status": "PASS"
+}

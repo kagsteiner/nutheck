@@ -26,7 +26,8 @@ void ue_observe_display_object(struct obj *obj, int glyph)
         && obj->dknown && obj->oartifact && has_oname(obj)) {
         const char *canonical = artiname(obj->oartifact);
         if ((obj->otyp == WAR_HAMMER && !strcmp(canonical,"Mjollnir"))
-            || (obj->otyp == BATTLE_AXE && !strcmp(canonical,"Cleaver")))
+            || (obj->otyp == BATTLE_AXE && !strcmp(canonical,"Cleaver"))
+            || (obj->otyp == KATANA && !strcmp(canonical,"Snickersnee")))
             name = canonical;
     }
     ue_object_level[x][y] = ledger_no(&u.uz);
@@ -64,6 +65,15 @@ static void message(const char *s)
 static void state(void)
 {
     int x,y;
+    struct mkroom *sanctuary = 0;
+    int room_index;
+    /* Entering Delphi converts rtype to OROOM; orig_rtype survives save/restore. */
+    if (Is_oracle_level(&u.uz)) {
+        for (room_index=0;room_index<SIZE(svr.rooms);++room_index)
+            if(svr.rooms[room_index].orig_rtype==DELPHI) sanctuary=&svr.rooms[room_index];
+        for (room_index=0;room_index<SIZE(gs.subrooms);++room_index)
+            if(gs.subrooms[room_index].orig_rtype==DELPHI) sanctuary=&gs.subrooms[room_index];
+    }
     if (u.ux < 1 || u.ux >= COLNO) return;
     printf("{\"event\":\"state\",\"x\":%d,\"y\":%d,\"moves\":%ld,\"hp\":%d,\"maxhp\":%d,\"ac\":%d,\"level\":%d,\"depth\":%d,\"dungeon\":%d,\"vision\":\"",
         u.ux-1,u.uy,svm.moves,Upolyd ? u.mh : u.uhp,Upolyd ? u.mhmax : u.uhpmax,u.uac,u.ulevel,depth(&u.uz),u.uz.dnum);
@@ -74,6 +84,8 @@ static void state(void)
         putchar('0' + (cansee(x,y) ? ((levl[x][y].lit ? 1 : 0)
                                   | (templit(x,y) ? 2 : 0)) : 0));
     printf("\",\"hero_race\":"); quote(gu.urace.noun ? gu.urace.noun : "");
+    printf(",\"in_sokoban\":%s,\"sokoban_stage\":%d", In_sokoban(&u.uz)?"true":"false", In_sokoban(&u.uz)?5-u.uz.dlevel:0);
+    printf(",\"oracle_x\":%d,\"oracle_y\":%d", sanctuary ? (sanctuary->lx+sanctuary->hx)/2-1 : -1, sanctuary ? (sanctuary->ly+sanctuary->hy)/2 : -1);
     printf(",\"hero_polymorphed\":%s,\"in_mines\":%s,\"mines_town\":%s}\n",Upolyd ? "true" : "false",In_mines(&u.uz)?"true":"false",(In_mines(&u.uz) && Is_special(&u.uz) && Is_special(&u.uz)->flags.town)?"true":"false");
 }
 
@@ -234,6 +246,14 @@ static void ue_glyph(winid w,coordxy x,coordxy y,const glyph_info *fg,const glyp
        shuffles unidentified object appearances. No object/monster world lookup. */
     if (g >= 0 && g < MAX_GLYPH)
         printf(",\"tile_index\":%d", (int) fg->gm.tileidx);
+    /* Known trap type is public in the foreground glyph only, never the
+       hidden trap at this coordinate or underneath an object/creature. */
+    if (glyph_is_cmap(g)) {
+        int c = glyph_to_cmap(g);
+        if (c == S_pit || c == S_hole) {
+            printf(",\"display_trap\":"); quote(c == S_pit ? "pit" : "hole");
+        }
+    }
     /* Resolve only the displayed glyph, never the hidden monster at (x,y). */
     if (glyph_is_monster(g)) {
         int m = glyph_to_mon(g);
@@ -245,15 +265,27 @@ static void ue_glyph(winid w,coordxy x,coordxy y,const glyph_info *fg,const glyp
             printf(",\"female\":%s",female?"true":"false");
         }
     }
+    /* Statue species and sex are already public in the displayed glyph.
+       This also handles pile-top and remembered glyphs without a world lookup. */
+    if (glyph_is_statue(g)) {
+        int m = glyph_to_statue_corpsenm(g);
+        if (m >= LOW_PM && m < NUMMONS) {
+            printf(",\"display_statue\":"); quote(mons[m].pmnames[NEUTRAL]);
+            printf(",\"female\":%s",glyph_is_fem_statue(g)?"true":"false");
+        }
+    }
     /* Fixed physical appearances come from the displayed glyph, including
        hallucinated appearances. Never derive an unidentified effect from type. */
     if (glyph_is_object(g)) {
         int o = glyph_to_obj(g);
         const char *appearance = o == LARGE_BOX ? "large box"
             : o == CHEST ? "chest" : o == GOLD_PIECE ? "gold piece"
-            : o == CORPSE ? "corpse"
+            : o == CORPSE ? "corpse" : o == STATUE ? "statue" : o == BOULDER ? "boulder"
             : o == DAGGER ? "dagger" : o == SHORT_SWORD ? "short sword"
             : o == SPEAR ? "spear"
+            : o == AXE ? "axe" : o == MACE ? "mace"
+            : o == PICK_AXE ? "pick-axe" : o == GRAPPLING_HOOK ? "grappling hook"
+            : o == STETHOSCOPE ? "stethoscope"
             : o == LONG_SWORD ? "long sword" : o == SCIMITAR ? "scimitar"
             : o == KATANA ? "katana" : o == WAR_HAMMER ? "war hammer"
             : o == BATTLE_AXE ? "battle-axe"

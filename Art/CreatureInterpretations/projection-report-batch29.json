@@ -1,0 +1,594 @@
+[
+  {
+    "key": "yeti",
+    "mask_method": "explicit_reviewed_spatial_mask_dark_anatomy_retained",
+    "excluded_shadow_pixels": [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        5,
+        14
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        7,
+        6
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        8,
+        6
+      ],
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        10,
+        6
+      ],
+      [
+        10,
+        7
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        10,
+        14
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        14,
+        7
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        14,
+        12
+      ],
+      [
+        14,
+        13
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.2167176604270935,
+        -0.616021454334259,
+        0.0
+      ],
+      [
+        0.1659097820520401,
+        0.3423210084438324,
+        1.4159655570983887
+      ]
+    ],
+    "best_projection": {
+      "yaw": -180,
+      "elevation": 45,
+      "silhouette_iou": 0.4397,
+      "file": "yeti-pixel--180-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -180,
+        "elevation": 25,
+        "silhouette_iou": 0.4259,
+        "file": "yeti-pixel--180-25.png"
+      },
+      {
+        "yaw": -180,
+        "elevation": 45,
+        "silhouette_iou": 0.4397,
+        "file": "yeti-pixel--180-45.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 25,
+        "silhouette_iou": 0.3922,
+        "file": "yeti-pixel--155-25.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 45,
+        "silhouette_iou": 0.3689,
+        "file": "yeti-pixel--155-45.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 25,
+        "silhouette_iou": 0.2917,
+        "file": "yeti-pixel--125-25.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 45,
+        "silhouette_iou": 0.2809,
+        "file": "yeti-pixel--125-45.png"
+      }
+    ]
+  },
+  {
+    "key": "sasquatch",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        6,
+        11
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        6,
+        14
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        14,
+        12
+      ],
+      [
+        15,
+        9
+      ],
+      [
+        15,
+        11
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.2048249989748001,
+        -0.350604772567749,
+        0.0
+      ],
+      [
+        0.16595043241977692,
+        0.3506070375442505,
+        1.5545222759246826
+      ]
+    ],
+    "best_projection": {
+      "yaw": -180,
+      "elevation": 45,
+      "silhouette_iou": 0.5547,
+      "file": "sasquatch-pixel--180-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -180,
+        "elevation": 25,
+        "silhouette_iou": 0.5078,
+        "file": "sasquatch-pixel--180-25.png"
+      },
+      {
+        "yaw": -180,
+        "elevation": 45,
+        "silhouette_iou": 0.5547,
+        "file": "sasquatch-pixel--180-45.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 25,
+        "silhouette_iou": 0.4297,
+        "file": "sasquatch-pixel--155-25.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 45,
+        "silhouette_iou": 0.4453,
+        "file": "sasquatch-pixel--155-45.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 25,
+        "silhouette_iou": 0.2824,
+        "file": "sasquatch-pixel--125-25.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 45,
+        "silhouette_iou": 0.3053,
+        "file": "sasquatch-pixel--125-45.png"
+      }
+    ]
+  },
+  {
+    "key": "owlbear",
+    "mask_method": "coloured_figure_with_enclosed_black_marks",
+    "excluded_shadow_pixels": [
+      [
+        7,
+        13
+      ],
+      [
+        7,
+        14
+      ],
+      [
+        12,
+        5
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        13,
+        6
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        14,
+        6
+      ],
+      [
+        14,
+        7
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        14,
+        12
+      ],
+      [
+        15,
+        5
+      ],
+      [
+        15,
+        6
+      ],
+      [
+        15,
+        7
+      ],
+      [
+        15,
+        8
+      ],
+      [
+        15,
+        9
+      ],
+      [
+        15,
+        10
+      ],
+      [
+        15,
+        11
+      ]
+    ],
+    "excluded_shadow_palette": [],
+    "excluded_shadow_rows": [],
+    "bounds_m": [
+      [
+        -0.37418168783187866,
+        -0.46848899126052856,
+        0.000288158655166626
+      ],
+      [
+        0.37999993562698364,
+        0.4685676693916321,
+        1.4489670991897583
+      ]
+    ],
+    "best_projection": {
+      "yaw": -180,
+      "elevation": 45,
+      "silhouette_iou": 0.6825,
+      "file": "owlbear-pixel--180-45.png"
+    },
+    "candidates": [
+      {
+        "yaw": -180,
+        "elevation": 25,
+        "silhouette_iou": 0.6279,
+        "file": "owlbear-pixel--180-25.png"
+      },
+      {
+        "yaw": -180,
+        "elevation": 45,
+        "silhouette_iou": 0.6825,
+        "file": "owlbear-pixel--180-45.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 25,
+        "silhouette_iou": 0.5234,
+        "file": "owlbear-pixel--155-25.png"
+      },
+      {
+        "yaw": -155,
+        "elevation": 45,
+        "silhouette_iou": 0.4841,
+        "file": "owlbear-pixel--155-45.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 25,
+        "silhouette_iou": 0.3643,
+        "file": "owlbear-pixel--125-25.png"
+      },
+      {
+        "yaw": -125,
+        "elevation": 45,
+        "silhouette_iou": 0.3386,
+        "file": "owlbear-pixel--125-45.png"
+      }
+    ]
+  }
+]

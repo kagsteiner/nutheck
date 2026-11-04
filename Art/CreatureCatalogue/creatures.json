@@ -548,7 +548,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_QUIVERING_BLOB",
@@ -627,7 +627,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_GELATINOUS_CUBE",
@@ -708,7 +708,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_CHICKATRICE",
@@ -4816,7 +4816,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_SPOTTED_JELLY",
@@ -4893,7 +4893,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_OCHRE_JELLY",
@@ -4976,7 +4976,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_KOBOLD",
@@ -10764,7 +10764,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_FOREST_CENTAUR",
@@ -10845,7 +10845,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_MOUNTAIN_CENTAUR",
@@ -10932,7 +10932,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_BABY_GRAY_DRAGON",
@@ -17139,7 +17139,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_BROWN_PUDDING",
@@ -17218,7 +17218,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_GREEN_SLIME",
@@ -17388,7 +17388,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_QUANTUM_MECHANIC",
@@ -19484,7 +19484,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_APE",
@@ -19573,7 +19573,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_OWLBEAR",
@@ -19660,7 +19660,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_YETI",
@@ -19747,7 +19747,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_CARNIVOROUS_APE",
@@ -19836,7 +19836,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_SASQUATCH",
@@ -19923,7 +19923,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_KOBOLD_ZOMBIE",
@@ -22849,7 +22849,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical draft"
     },
     {
       "id": "PM_ALIGNED_CLERIC",
@@ -28691,7 +28691,7 @@
         "review_required": true,
         "status": "planning only"
       },
-      "asset_status": "not modelled in sculpted pipeline"
+      "asset_status": "existing anatomical drafts (human player, male and female)"
     },
     {
       "id": "PM_TOURIST",
@@ -33504,7 +33504,7 @@
               "line": 413,
               "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL"
             },
-            "asset_status": "existing tile-volume proxy; no anatomical player draft"
+            "asset_status": "existing anatomical draft (human player)"
           },
           {
             "id": "PLAYER_ROLE_SAMURAI_FEMALE",
@@ -33525,7 +33525,7 @@
               "line": 413,
               "allow_mask": "MH_HUMAN | ROLE_MALE | ROLE_FEMALE | ROLE_LAWFUL"
             },
-            "asset_status": "existing tile-volume proxy; no anatomical player draft"
+            "asset_status": "existing anatomical draft (human player)"
           }
         ],
         "model_recipe": {
@@ -33536,8 +33536,12 @@
             "Reuse compatible anatomy/rig; fit role silhouette and official default-tile colours",
             "Fixed icon appearance; no detachable clothing (explicit user correction); sex variants may share compatible anatomy"
           ],
-          "status": "planning only; existing tile-volume proxies are separate"
-        }
+          "status": "human male and female drafts verified"
+        },
+        "generated_ancestries": [
+          "human"
+        ],
+        "asset_status": "human male and female drafts verified"
       },
       {
         "id": "PLAYER_ROLE_TOURIST",

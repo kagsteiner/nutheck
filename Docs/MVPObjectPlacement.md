@@ -80,3 +80,27 @@ floor presentation, including over altars, stairs and fountains. This applies to
 known named weapons too. The original native terrain remains available to game
 rules and navigation; it is not changed by the renderer. See
 [TopmostPresentation.md](TopmostPresentation.md) for layer, memory and style checks.
+
+## Weapon batch 3 (2026-11-03)
+
+Axe, mace and ordinary war hammer add three flat, fixed-appearance models.
+There are now 33 ordinary presentations plus two artifact treatments. The known
+Mjollnir match precedes the ordinary hammer match; an unnamed or player-named
+ordinary hammer uses the flat ordinary model. See [WeaponBatch3.md](WeaponBatch3.md).
+
+## Tool batch 1 (2026-11-03)
+
+Pick-axe, grappling hook and stethoscope add three fixed ordinary presentations,
+all static and flat. There are now 36 ordinary presentations plus two artifact
+treatments. [ToolBatch1.md](ToolBatch1.md) records source facts, geometry, import,
+native restore and the expanded 1,200-case strict-topmost verification.
+
+
+## Shuffled physical appearances (2026-11-03)
+
+Ruby ring, spherical amulet and oak wand now use optional native displayed tile
+keys in the same item registry. The ring stands with its crown facing +Z; the amulet and wand lie flat,
+and preserve fixed examination geometry through per-presentation scale and
+bounds-based floor clearance. They never select a hidden magical effect. Native
+identification, restore, pile, blind memory and hallucination checks plus live
+UE validation pass; see [AppearanceBatch1](AppearanceBatch1.md).

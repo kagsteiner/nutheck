@@ -1,0 +1,33 @@
+{
+  "snickersnee": {
+    "asset": "/Game/Snickersnee/Meshes/SM_snickersnee",
+    "vertex_colors": true,
+    "slots": [
+      {
+        "source": "sn_black",
+        "normal": "/Game/Snickersnee/M_ObjectBlack.M_ObjectBlack",
+        "memory": "/Game/Snickersnee/M_ObjectBlackMemory.M_ObjectBlackMemory"
+      },
+      {
+        "source": "sn_gold",
+        "normal": "/Game/Snickersnee/M_ObjectGold.M_ObjectGold",
+        "memory": "/Game/Snickersnee/M_ObjectGoldMemory.M_ObjectGoldMemory"
+      },
+      {
+        "source": "sn_steel",
+        "normal": "/Game/Snickersnee/M_ObjectSteel.M_ObjectSteel",
+        "memory": "/Game/Snickersnee/M_ObjectSteelMemory.M_ObjectSteelMemory"
+      },
+      {
+        "source": "sn_indigo",
+        "normal": "/Game/Snickersnee/M_ObjectIndigo.M_ObjectIndigo",
+        "memory": "/Game/Snickersnee/M_ObjectIndigoMemory.M_ObjectIndigoMemory"
+      },
+      {
+        "source": "sn_ray",
+        "normal": "/Game/Snickersnee/M_ObjectRay.M_ObjectRay",
+        "memory": "/Game/Snickersnee/M_ObjectRayMemory.M_ObjectRayMemory"
+      }
+    ]
+  }
+}
